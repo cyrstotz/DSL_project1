@@ -1,0 +1,31 @@
+The equation for energy balance is written as:  
+dE/dt equals the sum of m dot h plus the sum of Q dot minus the sum of W dot.  
+
+The heat flow equation is:  
+O equals m dot times (h_in minus h_out) plus Q dot_R minus Q dot_out.  
+
+Q dot_out equals Q dot_R minus m dot times (h_in minus h_out).  
+
+h_in equals h at 70 degrees Celsius (saturated liquid). From the water table (A-2), h at 70 degrees Celsius and 0.31482 bar equals 292.88 kilojoules per kilogram.  
+
+h_out equals h at 100 degrees Celsius (saturated liquid). From the water table (A-2), h at 100 degrees Celsius and 1.01 bar equals 419.04 kilojoules per kilogram.  
+
+Therefore, Q dot_out equals 100 minus 0.3 times (292.88 minus 419.04), which equals negative 62.2 kilowatts.  
+
+---
+
+Entropy balance around the reactor:  
+
+dS/dt = Σṁ_in * s_in - Σṁ_out * s_out + Q̇/T + Ṡ_gen  
+
+At steady state:  
+0 = ṁ_in * (s_in - s_out) + Q̇_out/T_KF + Ṡ_gen  
+
+Ṡ_gen = Q̇_out/T_KF + ṁ_in * (s_out - s_in)  
+
+s_out = s(100°C, saturated liquid, F1) = s(100°C, 0.014 bar) = 1.3062 kJ/kg·K (from Table A-2)  
+s_in = s(30°C, reduced pressure, F1) = s(30°C, 0.031 bar) = 0.2549 kJ/kg·K (from Table A-2)  
+
+=> Ṡ_gen = 22.4 kJ/K  
+
+---

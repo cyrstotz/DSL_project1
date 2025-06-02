@@ -1,0 +1,21 @@
+The specific exergy for a series process, denoted as \( e_{x, \text{ser}, s} \), is given by the formula:
+\[ e_{x, \text{ser}, s} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{1}{2} v_6^2 \]
+
+The change in enthalpy from state 0 to state 6, \( h_6 - h_0 \), is calculated using the specific heat at constant pressure \( c_p \) and the temperature difference \( T_6 - T_0 \), resulting in:
+\[ h_6 - h_0 = c_p (T_6 - T_0) = 97.9 \frac{\text{kJ}}{\text{kg}} \]
+
+The change in entropy from state 0 to state 6, \( s_6 - s_0 \), is calculated using \( c_p \) and the natural logarithm of the temperature ratio \( \frac{T_6}{T_0} \), resulting in:
+\[ s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) = 0.3373 \frac{\text{kJ}}{\text{kg K}} \]
+
+The calculation for \( c_p \) times the temperature difference between 340 K and 293.15 K is:
+\[ c_p (340 \text{K} - 293.15 \text{K}) = 97.9 \frac{\text{kJ}}{\text{kg}} \]
+
+Substituting the values into the formula for \( e_{x, \text{ser}, s} \) gives:
+\[ e_{x, \text{ser}, s} = 97.9 \frac{\text{kJ}}{\text{kg}} - 293.15 \text{K} \cdot 0.3373 \frac{\text{kJ}}{\text{kg K}} + \frac{1}{2} \cdot 5 \frac{\text{m}^2}{\text{s}^2} \]
+\[ = 130 \frac{\text{kJ}}{\text{kg}} \]
+
+The specific exergy at state 0, \( e_{x, \text{ser}, 0} \), is calculated as:
+\[ e_{x, \text{ser}, 0} = 0 + \frac{1}{2} \cdot 200 \frac{\text{m}^2}{\text{s}^2} = 20 \frac{\text{kJ}}{\text{kg}} \]
+
+The change in specific exergy, \( \Delta e_{x, \text{ser}} \), is then:
+\[ \Delta e_{x, \text{ser}} = 130 \frac{\text{kJ}}{\text{kg}} - 20 \frac{\text{kJ}}{\text{kg}} = 110 \frac{\text{kJ}}{\text{kg}} \]

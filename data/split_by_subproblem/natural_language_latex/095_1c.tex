@@ -1,0 +1,32 @@
+Required: \( \dot{S}_{erz} \)
+
+From the equation \( ST \cdot FP \), we have:
+\[ 0 = \dot{m}(s_e - s_a) + \frac{\dot{Q}}{T} + \dot{S}_{erz} \]
+
+Rearranging gives:
+\[ \dot{S}_{erz} = \dot{m}(s_a - s_e) - \frac{\dot{Q}}{T} \]
+
+Where:
+\[ \dot{m} = 0.3 \frac{kg}{s} \]
+
+The heat transfer \( \dot{Q}_{ab} = 65 kW \) is expelled, hence it should be inserted negatively.
+
+The temperature \( T \) is \( 100^\circ C \).
+
+For \( s_a \) at \( 100^\circ C \):
+\[ s_a = s_{a,f} + x \cdot (s_{a,g} - s_{a,f}) \]
+
+From table [AZ]:
+\[ s_{a,f} = 1.3069 + 0.0005 \cdot (7.3543 - 1.3069) \frac{kJ}{kg \cdot K} = 1.33714 \frac{kJ}{kg \cdot K} \]
+
+For \( s_e \) at \( 70^\circ C \):
+\[ s_e = s_{e,f} + x \cdot (s_{e,g} - s_{e,f}) \]
+
+From table [AZ]:
+\[ s_{e,f} = 0.8569 + 0.005 \cdot (7.7553 - 0.8569) \frac{kJ}{kg \cdot K} = 0.8589 \frac{kJ}{kg \cdot K} \]
+
+Substituting the values, we get:
+\[ \dot{S}_{erz} = 0.3 \left( \frac{kg}{s} \right) \cdot (1.33714 - 0.8589) - \frac{65 kW}{373.15 K} \]
+
+Finally:
+\[ \dot{S}_{erz} = 0.279 \frac{kW}{K} \]

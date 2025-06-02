@@ -1,0 +1,26 @@
+The exergy destruction is calculated using the following equation:  
+\[
+ex_{\text{ver}} = T_0 \cdot S_{\text{gen}}
+\]  
+
+Expanded form:  
+\[
+ex_{\text{ver}} = ex_{\text{str}} + \sum Q_{\text{zu}} \left( 1 - \frac{T_0}{T_i} \right) - W - ex_{\text{ver1}}
+\]  
+
+Values used:  
+- \( T_0 = 243.75 \, \text{K} \)  
+- \( Q_{\text{zu}} = 7795.47 \, \frac{\text{kJ}}{\text{kg}} \)  
+- \( T_i = 2284 \, \text{K} \)  
+
+Calculation:  
+\[
+ex_{\text{ver}} = -725.46 \, \frac{\text{kJ}}{\text{kg}} + 7795 \left( 1 - \frac{243.75}{2284} \right)
+\]  
+
+Final result:  
+\[
+ex_{\text{ver}} = -725.46 + 7795 \cdot \left( 1 - 0.1068 \right)
+\]  
+
+No further simplification is shown on the page.

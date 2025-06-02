@@ -1,0 +1,33 @@
+TASK 2c  
+The mass-specific increase in flow exergy is expressed as:  
+\[
+\Delta ex_{\text{istr}} = (h_e - h_0 - T_0 (s_e - s_0)) + \frac{w_e^2 - w_0^2}{2}
+\]  
+This can be simplified using specific heat capacity \( c_p \):  
+\[
+\Delta ex_{\text{istr}} = c_p (T_e - T_0) - T_0 \left( c_p \cdot \ln \left( \frac{T_e}{T_0} \right) \right) + \frac{w_e^2 - w_0^2}{2}
+\]  
+Substituting values, the result is:  
+\[
+\Delta ex_{\text{istr}} = 110.065 \, \frac{\text{W}}{\text{kg}}
+\]  
+
+---
+
+TASK 2d  
+The exergy balance for a stationary flow process is described as:  
+\[
+0 = \dot{m} \cdot (-\Delta ex_{\text{istr}}) + \left( 1 - \frac{T_0}{T} \right) \cdot \dot{Q} - \dot{\Psi}_{\text{in}} - \dot{E}_{\text{ex,in}}
+\]  
+For the specific exergy at the outlet, the equation becomes:  
+\[
+ex_{\text{out}} = -\Delta ex_{\text{istr}} + \left( 1 - \frac{T_0}{T_B} \right) \cdot q_B
+\]  
+Substituting values:  
+\[
+ex_{\text{out}} = -100 \, \frac{\text{W}}{\text{kg}} + \left( 1 - \frac{243 \, \text{K}}{1289 \, \text{K}} \right) \cdot 1195 \, \frac{\text{W}}{\text{kg}}
+\]  
+The final result is:  
+\[
+ex_{\text{out}} = 869.72 \, \frac{\text{W}}{\text{kg}}
+\]  

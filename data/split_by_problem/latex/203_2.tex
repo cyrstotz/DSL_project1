@@ -1,0 +1,95 @@
+
+``````latex
+
+
+\section*{2a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a Temperature-Entropy (T-S) diagram. The x-axis is labeled $S \left[ \frac{kJ}{kg \cdot K} \right]$ and the y-axis is labeled $T \left[ K \right]$. The graph shows a cycle with six points labeled 1 through 6. The process between points 1 and 2 is labeled "isobar", between points 2 and 3 is labeled "isobar", between points 3 and 4 is labeled "isentrop", between points 4 and 5 is labeled "isobar", between points 5 and 6 is labeled "isobar", and between points 6 and 1 is labeled "isentrop". The cycle is drawn with a combination of curved and straight lines.
+\end{description}
+
+\section*{2b)}
+
+\begin{align*}
+    p_5 &= 0{,}5 \, \text{bar} \\
+    p_6 &= 0{,}197 \, \text{bar} \\
+    T_5 &= 437{,}9 \, K \\
+    w_5 &= 220 \, \frac{m}{s}
+\end{align*}
+
+\begin{align*}
+    h_6 - h_5 &= c_p \left( T_6 - T_5 \right) \\
+    \frac{T_6}{T_5} &= \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} \Rightarrow T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} = 437{,}9 \, K \left( \frac{0{,}197 \, \text{bar}}{0{,}5 \, \text{bar}} \right)^{\frac{0{,}4}{1{,}4}} = 328{,}075 \, K
+\end{align*}
+
+\subsection*{1. HS über Schubdüse:}
+
+\begin{align*}
+    \dot{Q} &= \dot{m} \left[ h_e - h_a + \frac{w_e^2 - w_a^2}{2} \right] \\
+    0 &= \dot{m} \left[ h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right] \\
+    w_6^2 &= 2 \cdot \cancel{h_5 - h_6} + w_5^2 \\
+    w_6 &= \sqrt{2 c_p \left( T_5 - T_6 \right) + w_5^2} = \sqrt{2 \cdot 1000 \left[ \frac{kJ}{kg \cdot K} \right] \left( 437{,}9 \, K - 328{,}075 \, K \right) + \left( 220 \frac{m}{s} \right)^2} = 507{,}29 \frac{m}{s}
+\end{align*}
+
+``````latex
+
+
+\section*{c)}
+
+\[
+\Delta e_{x,istr} = e_{x,istrc} - e_{x,istrs} = [h_c - h_s - T_0 (s_c - s_s) + \Delta ke + \frac{\Delta pe}{\rho}]
+\]
+
+\[
+= c_p (T_c - T_s) - T_0 (s_c - s_s) + \frac{w_c^2}{2} - \frac{w_s^2}{2}
+\]
+
+\[
+\Rightarrow s_c - s_s = c_p \int_{T_s}^{T_c} \frac{1}{T} dT - R \ln \left( \frac{p_c}{p_s} \right) = c_p \ln \left( \frac{T_c}{T_s} \right) - R \ln \left( \frac{p_c}{p_s} \right)
+\]
+
+\[
+\Rightarrow \Delta e_{x,istr} = c_p (T_c - T_s) - T_0 \left( c_p \ln \left( \frac{T_c}{T_s} \right) - R \ln \left( \frac{p_c}{p_s} \right) \right) + \frac{w_c^2 - w_s^2}{2}
+\]
+
+\[
+T_0 = -30^\circ C = 243.15 K \Rightarrow R = c_p - c_v = c_p - \frac{c_p}{k}
+\]
+
+\[
+\Delta e_{x,istr} = 1.006 \frac{kJ}{kgK} (340 K - 293.9 K) - 243.15 K \left( 1.006 \frac{kJ}{kgK} \ln \left( \frac{340 K}{293.9 K} \right) - \left( 1.006 \frac{kJ}{kgK} - \frac{1.006 \frac{kJ}{kgK}}{1.4} \right) \ln \left( \frac{0.997 bar}{0.5 bar} \right) \right) + \frac{(320 \frac{m^2}{s^2} - 220 \frac{m^2}{s^2})}{2}
+\]
+
+\[
+= -4669.79 \frac{kJ}{kg}
+\]
+
+\textit{Unrealistisch}
+
+\section*{d)}
+
+\[
+e_{x,irrevers} = T_0 s_{\sigma 2}
+\]
+
+\[
+s_{\sigma 2} = \frac{q}{\dot{m} T} + (s_a - s_e) = s_0 - s_0 = \frac{q_B}{T_B}
+\]
+
+\[
+= c_p \left( \ln \left( \frac{T_c}{T_0} \right) - R \ln \left( \frac{p_0}{p_0} \right) \right) - \frac{q_B}{T_B} = c_p \ln \left( \frac{T_c}{T_0} \right) - \frac{q_B}{T_B}
+\]
+
+\[
+= 1.006 \frac{kJ}{kgK} \ln \left( \frac{340 K}{243.15 K} \right) - \frac{2795 kJ}{1289 K} = 0.5898 \frac{kJ}{kgK}
+\]
+
+\textit{Ich nehme einen Vorzeichen Fehler an}
+
+\[
+e_{x,irrevers} = T_0 |s_{\sigma 2}| = 243.15 K \cdot 0.5898 \frac{kJ}{kgK} = 143.41 \frac{kJ}{kg}
+\]
+
+``````latex
+
+

@@ -1,0 +1,53 @@
+TASK 2a  
+A graph is drawn showing a qualitative \( T \)-\( s \) diagram for the jet engine process. The diagram includes labeled isobars for \( p = p_0 \), \( p = p_5 \), and \( p = p_2 \). The process is depicted with numbered states (1 through 6) connected by arrows. The bypass stream is indicated with a dashed line. The axes are labeled as \( T[\text{K}] \) for temperature and \( s[\frac{\text{kJ}}{\text{kg·K}}] \) for entropy.
+
+---
+
+TASK 2b  
+The following calculations are performed:  
+\[
+p_5 = 2 \, p_0 \quad \Rightarrow \quad v_5 = \frac{2 \, T_5}{p_5} = 3.476 \, \frac{\text{m}^3}{\text{kg}}
+\]  
+Using the ideal gas law:  
+\[
+m_{1} \, R = n \, c_v - c_v = c_v \, (n-1) \approx 402.4 \, \frac{\text{J}}{\text{kg·K}}
+\]  
+The temperature ratio is calculated:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} \quad \Rightarrow \quad T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} \approx 328.07 \, \text{K}
+\]  
+The first law of thermodynamics is applied:  
+\[
+\Delta U = \text{const.} \quad \Rightarrow \quad v_5 = v_6 + \text{KE}_6 - \text{KE}_5 = 0
+\]  
+Using:  
+\[
+c_v \, (T_6 - T_5) = \frac{1}{2} \, (w_6^2 - w_5^2) \quad \Rightarrow \quad w_6 = \sqrt{w_5^2 - 2 \, c_v \, (T_6 - T_5)} \approx 50.244 \, \frac{\text{m}}{\text{s}}
+\]
+
+---
+
+TASK 2c  
+The mass-specific increase in flow exergy is calculated:  
+\[
+e_{\text{ex,st}} = h_6 - h_0 - T_0 \, (s_6 - s_0) + \frac{1}{2} \, (w_6^2 - w_0^2)
+\]  
+Substituting values:  
+\[
+= n \, c_v \, (T_6 - T_0) - T_0 \, c_p \, \ln \left( \frac{T_6}{T_0} \right) - T_0 \, c_p \, \ln \left( \frac{p_6}{p_0} \right) + \frac{1}{2} \, (w_6^2 - w_0^2)
+\]  
+The result is approximated:  
+\[
+\approx 725.67 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+---
+
+TASK 2d  
+The mass-specific exergy destruction is computed using the exergy balance:  
+\[
+\text{Ex.-Bil. Triebwerk (stationary)}  
+\]  
+\[
+e_{\text{ex,vert}} = -e_{\text{ex,st}} + \left( 1 - \frac{T_0}{T_B} \right) \dot{Q}_B \quad \Rightarrow \quad \approx 843.973 \, \frac{\text{kJ}}{\text{kg}}
+\]

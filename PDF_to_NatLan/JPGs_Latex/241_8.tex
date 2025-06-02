@@ -1,0 +1,50 @@
+TASK 2c  
+The mass-specific increase in flow exergy is calculated using the following formula:  
+\[
+\Delta ex_{\text{st}} = w_6 - w_0 - T_0 \left( s^0(T_6) - s^0(T_0) \right) + \frac{1}{2} \left( w_6^2 - w_0^2 \right)
+\]  
+
+The entropy difference is expressed as:  
+\[
+s^0(T_6) - s^0(T_0)
+\]  
+
+From the tables:  
+\[
+s^0(T_6) = 2.106977 \, \text{kJ/kg·K}
+\]  
+\[
+s^0(T_0) = 1.47814 + \frac{1.51917 - 1.47824}{250 - 240} \cdot (243.15 - 240)
+\]  
+This results in:  
+\[
+s^0(T_0) = 1.4911 \, \text{kJ/kg·K}
+\]  
+
+Using Table A-22, the flow exergy is calculated as:  
+\[
+\Delta ex_{\text{st}} = 109.995 \, \text{kJ/kg}
+\]  
+
+---
+
+TASK 2d  
+The exergy destruction rate is calculated using the formula:  
+\[
+\dot{ex}_{\text{dest}} = T_0 \frac{\dot{S}_{\text{gen}}}{\dot{m}}
+\]  
+
+The entropy generation rate is given by:  
+\[
+\dot{S}_{\text{gen}} = s_6 - s_0 + \frac{\dot{Q}}{T_0}
+\]  
+
+Here, the heat transfer term is neglected, leading to:  
+\[
+\dot{S}_{\text{gen}} = s_6 - s_0 = 0.157867 \, \text{kJ/kg·K}
+\]  
+
+Thus, the exergy destruction rate is:  
+\[
+\dot{ex}_{\text{dest}} = 1 + (0.1704) \, \text{kJ/kg}
+\]  

@@ -1,0 +1,89 @@
+Determine the heat output, $\dot{Q}_{\text{aus}}$:
+
+Using the balance equation for a steady flow process:
+\[
+0 = \dot{m} (h_e - h_a) + \dot{Q}_r - \dot{Q}_{\text{aus}}
+\]
+\[
+\Rightarrow \dot{Q}_{\text{aus}} = \dot{m} [h_e - h_a + \dot{Q}_r]
+\]
+
+**State of the liquid:** Total superheated water
+
+Interpolated $p_e$ from 0.35 bar and 0.06 bar (Table A-9):
+\[
+= 0.06 + \frac{0.23 - 0.06}{22.60 - 36.16} (20 - 36.16)
+\]
+\[
+= 0.328 \text{ bar}
+\]
+
+Interpolated $p_a$ from 1 bar, 1.15 bar:
+\[
+= 1 + \frac{1.5 - 1}{100 - 99.63} (100 - 99.63)
+\]
+\[
+= 1.045 \text{ bar}
+\]
+
+\[
+h_e = h_f (73) + 0.005 (h_{g} - h_{f})
+\]
+\[
+= 292.98 + 0.005 (2626.8 - 292.98) = 304.65
+\]
+
+\[
+h_a = 419.04 + 0.005 (2257 - 419.04)
+\]
+\[
+= 428.23
+\]
+
+\[
+\Rightarrow \dot{Q}_{\text{aus}} = 0.3 \, \text{kg} \left[ 304.65 - 428.23 \right] + \dot{Q}_r
+\]
+\[
+= -37.079 \, \text{kW} + 100 \, \text{kW} = 62.94 \, \text{kW}
+\]
+
+For the additional equations:
+\[
+\Delta E = \Delta m h_{12} + \dot{Q}_{\text{aus}}
+\]
+
+\[
+\dot{m}_{12}
+\]
+
+\[
+m_{12} - m_{1} u_{1} = \dot{Q}_{\text{aus}}
+\]
+
+\[
+m_{12} - m_{1} (u_{2} + u_{1}) = \dot{Q}_{\text{aus}}
+\]
+
+\[
+= \Delta m_{12} (u_{2} + u_{1}) = \dot{Q}_{\text{aus}}
+\]
+
+\[
+\Rightarrow \Delta m_{12} = \frac{\dot{Q}_{\text{aus}}}{(u_{2} + u_{1})} = \frac{35 \, \text{MJ}}{(399.37)}
+\]
+
+Internal energy $u_2$ for saturated water at 70°C:
+\[
+= 292.95 + 0.025 (249.6 - 292.95)
+\]
+\[
+= 303.83
+\]
+
+Internal energy $u_1$ for saturated water at 20°C:
+\[
+= 83.95 + 0.005 (248.9 - 83.95)
+\]
+\[
+= 95.5
+\]

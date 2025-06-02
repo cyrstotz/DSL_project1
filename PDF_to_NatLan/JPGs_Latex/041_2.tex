@@ -1,0 +1,53 @@
+TASK 2a  
+The process is drawn qualitatively in a \( T \)-\( S \) diagram. The diagram shows the thermodynamic process of the jet engine with labeled isobars and states. Key features include:  
+- State 0: Ambient conditions (\( p_0 = 0.191 \, \text{bar} \)).  
+- State 1: Isentropic compression.  
+- State 2: Isobaric heat addition.  
+- State 3: Reversible adiabatic expansion.  
+- State 5: Mixing chamber (\( p_5 = 0.5 \, \text{bar} \)).  
+- State 6: Nozzle exit (\( p_6 = p_0 \)).  
+
+The diagram includes arrows indicating the direction of processes, labeled states (0, 1, 2, 3, 5, 6), and regions for bypass (\( \dot{m}_M \)) and core (\( \dot{m}_K \)) streams. The axes are labeled as \( T \) (temperature in Kelvin) and \( S \) (entropy in \( \text{kJ}/\text{kg·K} \)).  
+
+---
+
+TASK 2b  
+The energy balance for the process from state 5 to state 6 is written as:  
+\[
+\frac{dE}{dt} = \dot{m}_{\text{mix}} \left[ h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right] + \sum_i \dot{Q}_i - \sum_n \dot{W}_{\text{turbine},n}.
+\]  
+
+For steady-state operation, the equation simplifies to:  
+\[
+0 = \dot{m}_{\text{mix}} \left[ h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right] - \dot{W}_v.
+\]  
+
+The enthalpy difference \( h_6 - h_5 \) is expressed as:  
+\[
+h_6 - h_5 = \int_{T_5}^{T_6} c_p \, dT = c_p (T_6 - T_5).
+\]  
+
+Additional considerations include:  
+- \( T_6 \) is unknown and needs to be determined.  
+- The process is modeled as an ideal gas.  
+
+Entropy balance is also noted:  
+\[
+\frac{dS}{dt} = \sum_i \dot{m}_i s_i + \sum_i \frac{\dot{Q}_i}{T_i}.
+\]  
+
+For steady-state and adiabatic conditions:  
+\[
+0 = m (s_5 - s_6) \quad \text{(isentropic process)}.
+\]  
+
+Exergy balance is written as:  
+\[
+\frac{dE_{\text{ex}}}{dt} = \sum_i \dot{E}_{\text{ex,in},i} + \sum_i \dot{E}_{\text{ex,out},i} - \sum_n \dot{W}_{n} - \dot{E}_{\text{ex,rev}}.
+\]  
+
+For steady-state operation:  
+\[
+0 = \dot{m}_{\text{mix}} \left[ h_6 - h_5 - T_0 (s_6 - s_5) + \frac{w_5^2 - w_6^2}{2} \right] - \dot{W}_v.
+\]  
+

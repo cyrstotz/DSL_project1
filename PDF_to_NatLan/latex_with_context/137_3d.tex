@@ -1,0 +1,43 @@
+The calculation continues with \( Q_{12} = 1500 \, \text{J} \).  
+
+The ice fraction in state 2 is calculated using the formula:  
+\[
+x_2 = \frac{u_2 - u_{sf2}}{u_{g2} - u_{sf2}}
+\]  
+
+The temperature in state 2 is \( T_2 = 0^\circ\text{C} \), and the pressure is \( p_2 = 1.385 \, \text{bar} \).  
+
+The specific internal energy \( u_2 \) is determined using the interpolation formula:  
+\[
+u_2 = u_{sf2} + x_1 (u_{g1} - u_{sf1})
+\]  
+Interpolation is performed using table values.  
+
+The relationship between \( u_2 \) and \( u_1 \) is given by:  
+\[
+u_2 - u_1 = c_V (T_2 - T_1)
+\]  
+Rearranging for \( u_2 \):  
+\[
+u_2 = c_V (T_2 - T_1) + u_1
+\]  
+
+Substituting into the formula for \( x_2 \):  
+\[
+x_2 = \frac{u_2 - u_{sf2}}{u_{g2} - u_{sf2}}
+\]  
+
+Values from the table are used for interpolation:  
+\[
+u_{sf2} = -353.626 \, \text{kJ/kg}, \quad u_{g2} = -352.658 \, \text{kJ/kg}
+\]  
+\[
+u_{sf1} = -0.033 \, \text{kJ/kg}, \quad u_{g1} = -0.045 \, \text{kJ/kg}
+\]  
+
+The final interpolated values are:  
+\[
+x_1 = 0.6, \quad x_2 = 1.95
+\]  
+
+The process involves substituting values into the equations and using interpolation from the tables to determine the specific internal energy and ice fraction.

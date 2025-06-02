@@ -1,0 +1,121 @@
+
+``````latex
+
+\section*{Aufgabe 1:}
+
+\subsection*{a) Energiebilanz:}
+
+\begin{align*}
+0 &= \dot{m} \left( h_{\text{ein}} - h_{\text{aus}} \right) + \dot{Q}_{\text{aus}} + \cancel{\dot{W}}^0 \\
+\dot{Q}_{\text{aus}} &= \dot{m} \left( h_{\text{aus}} - h_{\text{ein}} \right) = \dot{m} \int_{T_{\text{ein}}}^{T_{\text{aus}}} c^f dT + \cancel{v^f (p_{\text{aus}} - p_{\text{ein}})}^0 \\
+&= \dot{m} \, c^f \left( T_{\text{aus}} - T_{\text{ein}} \right)
+\end{align*}
+
+``````latex
+
+\section*{b)}
+
+\[
+\dot{Q}_{\text{aus}} = 65 \text{kW}
+\]
+
+\[
+\overline{T}_{\text{MF}} = \frac{\int_{s_{\text{ein}}}^{s_{\text{aus}}} T ds}{s_{\text{aus}} - s_{\text{ein}}} = \frac{q_{\text{kV}}}{s_{\text{aus}} - s_{\text{ein}}}
+\]
+
+\[
+\text{aus Energiebilanz:} \quad q_{\text{kV}} = h_{\text{aus}} - h_{\text{ein}} = c \dot{m} (T_{\text{aus}} - T_{\text{ein}})
+\]
+
+\[
+s_{\text{aus}} - s_{\text{ein}} = \int_{T_{\text{ein}}}^{T_{\text{aus}}} \frac{c \dot{m}}{T} dT = c \dot{m} \ln \left( \frac{T_{\text{aus}}}{T_{\text{ein}}} \right)
+\]
+
+\[
+\Rightarrow \overline{T}_{\text{MF}} = \frac{T_{\text{aus}} - T_{\text{ein}}}{\ln \left( \frac{T_{\text{aus}}}{T_{\text{ein}}} \right)} = 293.123 \text{K}
+\]
+
+\section*{c) Entropiebilanz:}
+
+\[
+0 = \dot{m}_k \left( s_{\text{ein}} - s_{\text{aus}} \right) + \frac{\dot{Q}_{\text{aus}}}{\overline{T}_{\text{MF}}} + \dot{S}_{\text{erz}}
+\]
+
+\[
+\Rightarrow \dot{S}_{\text{erz}} = \dot{m}_k \left( s_{\text{aus}} - s_{\text{ein}} \right) - \frac{\dot{Q}_{\text{aus}}}{\overline{T}_{\text{MF}}}
+\]
+
+\[
+= \dot{m}_k c \ln \left( \frac{T_{\text{aus}}}{T_{\text{ein}}} \right) - \frac{\dot{Q}_{\text{aus}}}{\overline{T}_{\text{MF}}}
+\]
+
+``````latex
+
+
+d) Energiebilanz - Hülloffenes System
+
+\[
+\Delta E = m_2 u_2 - m_1 u_1 = \Delta m_{12} h_{f12} + Q_{R,12} - Q_{aus,12}
+\]
+
+\begin{itemize}
+    \item $m_1 = m_{ges,1} = 5755 \, \text{kg}$
+    \item $m_2 = m_1 + \Delta m_{12}$
+    \item $T_1 = 100^\circ \text{C}$
+    \item $T_2 = 70^\circ \text{C}$
+\end{itemize}
+
+\[
+-u_1 = u_f (100^\circ \text{C}) = (\text{TAB-A2}) = 418.44 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+-u_2 = u_f (70^\circ \text{C}) = (\text{TAB-A2}) = 232.95 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_{f12} = h_f (20^\circ \text{C}) = (\text{TAB-A2}) = 83.96 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+(m_1 + \Delta m_{12}) u_2 - m_1 u_1 = \Delta m_{12} h_{12}
+\]
+
+\[
+m_1 u_2 - m_1 u_1 = \Delta m_{12} (h_{12} - u_2)
+\]
+
+\[
+\Delta m_{12} = m_1 \frac{u_2 - u_1}{h_{12} - u_2} = 3459.48 \, \text{kg} \quad \underline{3761.52 \, \text{kg}}
+\]
+
+\[
+u_1 = u_f (100^\circ \text{C}) + x_0 (u_g (100^\circ \text{C}) - u_f (100^\circ \text{C})) = 429.58 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+``````latex
+
+
+e) \quad \Delta m_{12} = 3600 \, \text{kg}
+
+\textbf{Entropiebilanz:}
+
+\[
+\Delta S = m_2 \, s_2 - m_1 \, s_1
+\]
+
+\[
+s_1 = (TAB - A - Z) = s_f(100^\circ C) + x_0 \left( s_g(100^\circ C) - s_f(100^\circ C) \right) = 1.33 + 14 \, \frac{\text{kJ}}{\text{kg K}}
+\]
+
+\[
+s_2 = (TAB - A - Z) = s_f(70^\circ C) = 0.9549 \, \frac{\text{kJ}}{\text{kg K}}
+\]
+
+\[
+\Rightarrow \Delta s = \left( m_1 + \Delta m_{12} \right) s_2 - m_1 \, s_1 = 1237.85 \, \frac{\text{kJ}}{\text{kg K}}
+\]
+
+``````latex
+
+

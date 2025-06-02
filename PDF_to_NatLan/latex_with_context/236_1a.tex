@@ -1,0 +1,28 @@
+Energy balance for the reactor under steady-state flow conditions:  
+\[
+0 = \dot{m} \left( h_e - h_a \right) + \frac{w_e^2 - w_a^2}{2} + g \left( z - z_a \right) + \dot{Q}_{\text{out}} + \dot{W} + \dot{Q}_R
+\]  
+
+Simplified energy balance (neglecting kinetic and potential energy terms):  
+\[
+0 = \dot{m} \left( h_e - h_a \right) - \dot{Q}_{\text{out}} + \dot{Q}_R
+\]  
+
+Rearranging for the heat flow removed by the coolant:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \left( h_e - h_a \right) + \dot{Q}_R
+\]  
+
+From water tables:  
+- At \( T = 70^\circ\text{C} \), \( h_e = h_f = 292.98 \, \frac{\text{kJ}}{\text{kg}} \).  
+- At \( T = 100^\circ\text{C} \), \( h_a = h_f = 419.04 \, \frac{\text{kJ}}{\text{kg}} \).  
+
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \frac{\text{kg}}{\text{s}} \left( 292.98 \, \frac{\text{kJ}}{\text{kg}} - 419.04 \, \frac{\text{kJ}}{\text{kg}} \right) + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = 62.182 \, \text{kW}
+\]  
+
+---

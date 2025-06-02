@@ -1,0 +1,50 @@
+TASK 4a  
+A diagram is drawn showing a temperature (\( T \)) versus entropy (\( S \)) graph. The graph includes phase regions labeled as "solid," "vapor," and "vapor-gas mixture." The curve represents the phase boundaries, with points \( z_1 \), \( z_2 \), \( z_3 \), and \( z_4 \) marked. The region between \( z_2 \) and \( z_3 \) is labeled "mass dampf gebiet" (mass vapor region). The axes are labeled as follows:  
+- \( T \) (temperature) on the vertical axis in Kelvin (\( K \)).  
+- \( S \) (entropy) on the horizontal axis in \( \frac{\text{kJ}}{\text{kg·K}} \).  
+
+TASK 4b  
+The energy balance equation is written as:  
+\[
+0 = \dot{m}_{\text{R134a}} \left[ h_2 - h_4 \right] + \dot{Q} - \dot{W}
+\]  
+The mass flow rate of the refrigerant is expressed as:  
+\[
+\dot{m}_{\text{R134a}} = \frac{-\dot{W}_K}{h_2 - h_3}
+\]  
+The enthalpy \( h_2 \) is determined using Table A-10 and linear interpolation (LERP):  
+\[
+h_2 = 243.72 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+The interpolation formula is given as:  
+\[
+h_2 = y_2 - y_1 \cdot \frac{x - x_1}{x_2 - x_1} + y_1
+\]  
+Values for interpolation are provided:  
+\[
+x_2 = -8, \, y_2 = 242.54  
+\]  
+\[
+x_1 = -1, \, y_1 = 249.50  
+\]  
+
+Additional notes reference Table A-10 for further calculations and interpolation steps. The text indicates continuation on the next page.  
+
+TASK 4  
+A table is provided with thermodynamic properties at different states (\( z_1 \) to \( z_4 \)):  
+- \( T \): Temperature in \( ^\circ \text{C} \).  
+- \( p \): Pressure in bar.  
+- \( V \): Specific volume.  
+- \( U \): Internal energy.  
+- \( S \): Entropy.  
+
+Values are filled in for some states:  
+- \( z_1 \): \( T = 0^\circ \text{C} \), \( p = 1 \).  
+- \( z_2 \): \( T = -6^\circ \text{C} \), \( p = 1 \), \( U = 243.72 \), \( S = 0.9226 \).  
+- \( z_3 \): \( T = -6^\circ \text{C} \), \( p = 8 \), \( S = S_2 = 0.9226 \).  
+- \( z_4 \): \( T = -6^\circ \text{C} \), \( p = 8 \).  
+
+Additional notes state:  
+\[
+T_i = 0^\circ \text{C} \rightarrow T(z_2) = -6^\circ \text{C}
+\]

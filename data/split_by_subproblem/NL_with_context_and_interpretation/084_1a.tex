@@ -1,0 +1,28 @@
+Determine \( Q_{out} \):  
+
+Balance equation for steady-state FP:  
+0 = \( \dot{m} \) (h_e - h_a) + \( \dot{Q}_R \) - \( \dot{Q}_{out} \)  
+
+\( \dot{Q}_{out} \) = \( \dot{m} \) [h_e - h_a]  
+
+Saturated liquid: Treat superheated water vapor.  
+
+p_e interpolated from 0.35 bar and 0.06 bar (A-9):  
+= 0.06 + \( \frac{0.23 - 0.06}{22.60 - 36.16} \) (20 - 36.16)  
+= 0.326 bar  
+
+p_a interpolated from 1 bar, 1.15 bar:  
+= 1 + \( \frac{1.15 - 1}{100 - 99.63} \) (100 - 99.63)  
+= 1.045 bar  
+
+h_e = interpolated from A-2:  
+h_e = h_f (73) + 0.005 (h_fg - h_f)  
+= 292.38 + 0.005 (2626.8 - 292.38)  
+= 304.65  
+
+h_a = 419.04 + 0.005 (2257 - 419.04)  
+= 428.23  
+
+\( \dot{Q}_{out} \) = 0.3 kg/s [304.65 - 428.23] + \( \dot{Q}_R \)  
+= -37.079 kW + 100 kW  
+= 62.94 kW

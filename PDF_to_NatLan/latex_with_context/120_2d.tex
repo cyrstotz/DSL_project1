@@ -1,0 +1,27 @@
+The exergy balance equation is used to calculate the exergy destruction:  
+\[
+0 = \dot{m} \left( s_0 - s_6 \right) + \frac{Q}{T_0} + s_{\text{env}}
+\]  
+Expanding the entropy terms:  
+\[
+s_{\text{env}} = \dot{m} \left( s_6 - s_0 \right)
+\]  
+\[
+s_{\text{env}} = \dot{m} \cdot c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_2}{p_1} \right)
+\]  
+
+Substituting values:  
+\[
+\frac{s_{\text{env}}}{\dot{m}} = 1.006 \ln \left( \frac{340 \, \text{K}}{243.15 \, \text{K}} \right) = 0.33727 \, \text{kJ/kg}
+\]  
+
+Final exergy destruction:  
+\[
+\text{Ex} = T_0 \cdot s_{\text{env}}
+\]  
+\[
+\text{Ex} = \left( -301273.15 \right) + 0.33727 \, \text{kJ/kg}
+\]  
+\[
+\text{Ex} = 82,003 \, \text{kJ}
+\]

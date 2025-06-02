@@ -1,0 +1,73 @@
+TASK 2a  
+The diagram is a qualitative representation of the jet engine process on a temperature-entropy (\( T \)-\( s \)) diagram. It includes labeled isobars and process states:  
+- State 1: Start of the compression process.  
+- State 2: End of the compression process, showing an increase in temperature and entropy.  
+- State 3: Combustion process, represented as isobaric heat addition.  
+- State 4: Expansion in the turbine, shown as an adiabatic process (\( s = \text{const} \)).  
+- State 5: Mixing process, with entropy increasing.  
+- State 6: Nozzle exit, showing adiabatic expansion (\( s = \text{const} \)).  
+
+The diagram also includes arrows indicating the direction of processes and annotations such as "adiabatic \( s = \text{const} \)" and "isobaric \( p_0 = p_6 \)."  
+
+---
+
+TASK 2b  
+Energy balance equation:  
+\[
+0 = \dot{m} \left( h_e - h_a - \frac{w_e^2 - w_a^2}{2} + g(z_e - z_a) \right) + \dot{Q} - \dot{W}
+\]  
+Assumptions:  
+- \( g(z_e - z_a) = 0 \), as the change in elevation is negligible.  
+- \( \dot{W} = 0 \), as the volume work is not considered.  
+
+The heat transfer per unit mass flow rate is given as:  
+\[
+q_B = \frac{\dot{Q}_B}{\dot{m}_K}
+\]  
+From the problem setup:  
+\[
+q_B = \dot{Q}_B = 1195 \, \text{kJ/kg}
+\]  
+
+The mass flow rate ratio between the bypass and core streams is:  
+\[
+\frac{\dot{m}_M}{\dot{m}_K} = 5.293
+\]  
+Thus, the total mass flow rate is:  
+\[
+\dot{m}_{\text{total}} = \dot{m}_K + \dot{m}_M = \dot{m}_K \left( 1 + 5.293 \right) = 6.293 \dot{m}_K
+\]  
+
+---
+
+TASK 2c  
+Exergy balance for the stream:  
+\[
+\Delta ex_{\text{str}} = \dot{m} \left( h - h_0 - T_0 (s - s_0) + \text{ke} + \text{pe} \right)
+\]  
+Simplified exergy balance:  
+\[
+\Delta ex_{\text{str}} = \dot{m} \left( h - h_0 - T_0 (s - s_0) \right)
+\]  
+
+---
+
+TASK 2d  
+Exergy balance for the system:  
+\[
+\Delta E = \sum \dot{m} \left( h_i + \frac{w_i^2}{2} + q_B \right) - \dot{W}
+\]  
+At steady state:  
+\[
+0 = \dot{m} \left( h_e - h_a - \frac{w_e^2 - w_a^2}{2} + g(z_e - z_a) \right) + \dot{Q}_B - \dot{W}
+\]  
+Assumptions:  
+- \( g(z_e - z_a) = 0 \), as elevation changes are negligible.  
+- \( \dot{W} = 0 \), as work is not considered.  
+
+The velocity at the nozzle exit (\( w_a \)) is calculated as:  
+\[
+w_a = \sqrt{\frac{\dot{Q}_B}{\dot{m}} - (h_e - h_a) - 200^2}
+\]  
+
+This equation accounts for the energy transfer from state 6 to the ambient conditions.

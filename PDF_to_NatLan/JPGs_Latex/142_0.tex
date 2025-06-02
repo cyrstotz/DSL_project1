@@ -1,0 +1,44 @@
+TASK 1a  
+The reactor has the following parameters:  
+- Total mass: \( m_{\text{total}} = 5755 \, \text{kg} \)  
+- Inlet mass flow rate: \( \dot{m}_{\text{in}} = 0.3 \, \text{kg/s} \)  
+- Heat released by the chemical reaction: \( \dot{Q}_R = 100 \, \text{kW} \)  
+
+The inlet and outlet conditions are:  
+- Outlet temperature: \( T_{\text{out}} = 100^\circ\text{C} \)  
+- Inlet temperature: \( T_{\text{in}} = 70^\circ\text{C} \)  
+- Enthalpy at inlet: \( q_{\text{in}} = 292.93 \, \text{kJ/kg} \) (from water tables A-2 to A-3)  
+- Pressure: \( p = 10 \, \text{bar} \), density at inlet: \( \rho_{\text{in}} = 0.3713 \, \text{kg/L} \)  
+- Steam quality: \( x_D = 0.005 \)  
+
+The reactor temperature is \( T_{\text{Reactor}} = 100^\circ\text{C} \).  
+The enthalpy at outlet is calculated as \( q_{\text{out}} = 440.04 \, \text{kJ/kg} \) (from water tables A-2).  
+
+Coolant conditions:  
+- Coolant inlet temperature: \( T_{\text{KF,in}} = 288.15 \, \text{K} \)  
+- Coolant outlet temperature: \( T_{\text{KF,out}} = 298.15 \, \text{K} \)  
+
+---
+
+TASK 1a  
+a) The heat flow removed by the coolant is calculated using the energy balance:  
+\[
+Q = \dot{m} \left[ q_{\text{out}} - q_{\text{in}} \right] + \dot{Q}_R - \dot{Q}_{\text{out}}
+\]  
+The result is \( \dot{Q}_{\text{out}} = 62.182 \, \text{kW} \).  
+
+---
+
+TASK 1b  
+b) The thermodynamic mean temperature of the coolant is determined using the formula:  
+\[
+s_2(T) - s_1(T) = \int_{T_1}^{T_2} \frac{c}{T} \, dT
+\]  
+
+---
+
+TASK 1c  
+c) The entropy production due to heat transfer is calculated as:  
+\[
+Q = \dot{m} \left[ q_{\text{out}} - q_{\text{in}} \right] + \frac{\dot{Q}_{\text{out}}}{T} + \dot{S}_{\text{gen}}
+\]  

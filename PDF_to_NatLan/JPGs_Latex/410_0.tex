@@ -1,0 +1,66 @@
+TASK 1a  
+**Energy Balance:**  
+The energy balance equation is written as:  
+\[
+0 = \dot{m}_{\text{in}} \left( h_{\text{in}} - h_{\text{out}} \right) + \dot{Q}_{\text{out}} + \dot{Q}_R
+\]  
+Substituting the enthalpy values for saturated liquid water at \( T_{\text{in}} = 70^\circ\text{C} \) and \( T_{\text{out}} = 100^\circ\text{C} \):  
+\[
+0 = \dot{m}_{\text{in}} \left( h_f(70^\circ\text{C}) - h_f(100^\circ\text{C}) \right) - \dot{Q}_{\text{out}} + \dot{Q}_R
+\]  
+Rearranging to solve for \( \dot{Q}_{\text{out}} \):  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} \left( h_f(70^\circ\text{C}) - h_f(100^\circ\text{C}) \right) + \dot{Q}_R
+\]  
+Given data:  
+\[
+\dot{m}_{\text{in}} = 0.3 \, \text{kg/s}, \quad h_f(70^\circ\text{C}) = 292.85 \, \frac{\text{kJ}}{\text{kg}}, \quad h_f(100^\circ\text{C}) = 419.01 \, \frac{\text{kJ}}{\text{kg}}, \quad \dot{Q}_R = 100 \, \text{kW}
+\]  
+Substituting these values:  
+\[
+\dot{Q}_{\text{out}} = 62.182 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+**Thermodynamic Mean Temperature \( T_{\text{KF}} \):**  
+The mean temperature is calculated using:  
+\[
+T_{\text{KF}} = \frac{\int_{S_a}^{S_e} T \, dS}{S_a - S_e}
+\]  
+For an ideal liquid, entropy change \( S_a - S_e \) is determined by integrating:  
+\[
+S_a - S_e = \int_{T_{\text{KF,in}}}^{T_{\text{KF,out}}} \frac{c_p(T)}{T} \, dT
+\]  
+Assuming constant pressure and adiabatic conditions, the mean temperature is approximated as:  
+\[
+T_{\text{KF}} = \frac{T_{\text{KF,in}} + T_{\text{KF,out}}}{2}
+\]  
+Substituting the inlet and outlet temperatures:  
+\[
+T_{\text{KF}} = \frac{288.15 \, \text{K} + 298.15 \, \text{K}}{2} = 293.15 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+**Entropy Production \( \dot{S}_{\text{gen}} \):**  
+The entropy production is calculated using:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{out}}}{T_{\text{Reactor}}} - \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} + \dot{S}_{\text{ext}}
+\]  
+Substituting the values:  
+\[
+T_{\text{Reactor}} = 373.15 \, \text{K}, \quad T_{\text{KF}} = 293.15 \, \text{K}, \quad \dot{Q}_{\text{out}} = 62.182 \, \text{kW}
+\]  
+\[
+\dot{S}_{\text{gen}} = \frac{62.182}{293.15} - \frac{62.182}{373.15} + \dot{S}_{\text{ext}}
+\]  
+The entropy production is calculated as:  
+\[
+\dot{S}_{\text{gen}} = 46.146 \, \text{kJ}
+\]  
+
+**Figure Description:**  
+A diagram is drawn showing heat flow \( \dot{Q}_{\text{out}} \) from the reactor to the coolant. The reactor temperature is labeled as \( T_{\text{Reactor}} = 373.15 \, \text{K} \), and the coolant temperature is labeled as \( T_{\text{KF}} = 293.15 \, \text{K} \).

@@ -1,0 +1,37 @@
+The equation for energy balance is written as:  
+dE/dt = Σ_in m_dot(t) [h_i(t) + (u_i^2)/2 + g * z_i(t)] + Σ_Q_dot_in(t) - Σ_out m_dot(t) [h_e(t) + (u_e^2)/2 + g * z_e(t)] - Σ_Q_dot_out(t).  
+
+Simplified to:  
+0 = m_dot (h_e - h_a) + Q_dot_R - Q_dot_out.  
+
+Rearranged to solve for Q_dot_out:  
+Q_dot_out = m_dot (h_e - h_a) + Q_dot_R.  
+
+Values are determined from water tables:  
+h_e [100°C] = 292.94 kJ/kg (from Table A-2).  
+h_a [70°C] = 419.04 kJ/kg (from Table A-2).  
+
+Substituting into the equation:  
+Q_dot_out = 0.3 kg/s [(292.94 kJ/kg - 419.04 kJ/kg)] + 100 kW = 62.182 kW.
+
+dE over dQ equals the summation of m_i(t) multiplied by h_i(t) plus q_e(t) multiplied by c_p(t) minus the summation of m_o(t) multiplied by h_o(t).  
+
+Delta E equals m_2 multiplied by u_2 minus m_1 multiplied by u_1 plus the summation of Q_i equals Q_out,12 equals 35 MJ.  
+
+m_2 equals m_1 plus Delta m.  
+m_1 equals 5755 kg.  
+m_2 equals x multiplied by m_1 divided by m_2 equals m_1 multiplied by (1 minus x).  
+m_2 equals Delta m.  
+
+u_1 [100 degrees Celsius] equals 2506.5 kJ/kg.  
+u_2f [70 degrees Celsius] equals 429.94 kJ/kg.  
+u_2g [100 degrees Celsius] equals 2929.95 kJ/kg.  
+u_2f [20 degrees Celsius] equals 83.95 kJ/kg.  
+
+Delta E equals m_3 multiplied by u_3 plus m_2 multiplied by u_2 minus m_1 multiplied by u_1 equals 35 MJ equals Delta m multiplied by u_3 plus m_1 multiplied by u_2f plus Delta m multiplied by u_2 minus m_1 multiplied by u_1.  
+
+Delta m equals m_1 multiplied by u_1 minus m_1 multiplied by u_2 divided by u_3 plus u_2 equals m_1 multiplied by u_g plus m_1 multiplied by u_f minus m_1 multiplied by u_2f plus 35 MJ divided by u_3 plus u_2f.  
+
+Delta m equals 0.005 multiplied by 5755 kg multiplied by 2506.5 kJ/kg plus 5755 kg multiplied by (1 minus 0.005) multiplied by 429.94 kJ/kg minus 5755 kg multiplied by 2929.95 kJ/kg plus 35 MJ divided by 83.95 kJ/kg plus 2929.95 kJ/kg.  
+
+Delta m_12 equals 2.176.02 kg.

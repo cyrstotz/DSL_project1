@@ -1,0 +1,52 @@
+The temperature at state 2 is calculated as:  
+\[
+T_2 = T_i - 6 \, \text{K} = 257.15 \, \text{K} = -16^\circ\text{C}
+\]
+
+Using Table A-10:  
+The enthalpy at state 2 (\(h_2\)) is:  
+\[
+h_2 = h_{\text{fg}}(T_2) = 237.74 \, \text{kJ/kg}
+\]
+
+The entropy at state 2 (\(s_2\)) is:  
+\[
+s_2 = s_g(T_2) = 0.9298 \, \frac{\text{kJ}}{\text{kg·K}} = s_3
+\]
+
+The enthalpy at state 3 (\(h_3\)) is calculated using the entropy difference:  
+\[
+h_3 = h(8 \, \text{bar}, s_3) = h(8 \, \text{bar}, 0.9066 \, \frac{\text{kJ}}{\text{kg·K}}) + s_3 - 0.9066
+\]
+
+From Table A-12:  
+\[
+h(8 \, \text{bar}, 0.9066 \, \frac{\text{kJ}}{\text{kg·K}}) = 271.31 \, \text{kJ/kg}
+\]
+
+The enthalpy at state 3 (\(h_3\)) is further refined:  
+\[
+h(8 \, \text{bar}, 0.9066 \, \frac{\text{kJ}}{\text{kg·K}}) = 284.15 \, \text{kJ/kg}
+\]
+
+The enthalpy at state 1 (\(h_1\)) is:  
+\[
+h(8 \, \text{bar}, 0.9377 \, \frac{\text{kJ}}{\text{kg·K}}) = 273.66 \, \text{kJ/kg}
+\]
+
+The energy balance for the compressor is written as:  
+\[
+\frac{dE}{dt} = \sum \dot{m}_i \left( h_i + \text{ke} + \text{pe} \right) + \sum \dot{Q}_j - \sum \dot{W}_n
+\]  
+Under steady-state and adiabatic conditions, this simplifies to:  
+\[
+0 = \dot{m} \left( h_2 - h_3 \right) - \dot{W}_{23}
+\]  
+The work done by the compressor is expressed as:  
+\[
+\dot{W}_{23} = -\dot{W}_K
+\]  
+The mass flow rate is calculated using:  
+\[
+\dot{m} = \frac{-\dot{W}_K}{h_2 - h_3} = 2.89 \, \text{kg/h}
+\]

@@ -1,0 +1,56 @@
+Mass flow rate of R134a, denoted as \( \dot{m}_{R134a} \).
+
+Compressor, 1HS.
+
+The equation is zero equals the mass flow rate times the difference between enthalpy at exit and enthalpy at entry, plus the heat transfer rate at zero minus the compressor work rate:
+\[ 0 = \dot{m}(h_e - h_a) + \dot{Q}^0 - \dot{W}_k \]
+
+The entropy at state 2 equals the entropy at state 3:
+\[ s_2 = s_3 \]
+
+The temperature at state 2 equals the temperature at state 1 minus 6 Kelvin:
+\[ T_2 = T_1 - 6K \]
+
+The temperature at state 1 is 273.15 Kelvin plus 10 Kelvin equals 283.15 Kelvin:
+\[ T_1 = 273.15K + 10K = 283.15K \]
+
+The temperature at state 2 is 277.15 Kelvin:
+\[ T_2 = 277.15K \]
+
+The compressor work rate equals the mass flow rate of R134a times the difference between enthalpy at state 2 and enthalpy at state 3:
+\[ \dot{W}_k = \dot{m}_{R134a} (h_2 - h_3) \]
+
+The enthalpy at state 2 for a temperature of 277.15 Kelvin, where it is gas-saturated:
+\[ h_2 (T = 277.15K) \quad \text{-- gas-saturated} \]
+
+From Table A-10 at 4 degrees Celsius, the enthalpy \( h_{2g} \) at 4 degrees Celsius is 249.53 kilojoules per kilogram, and the entropy \( s_{2g} \) is 0.9169 kilojoules per kilogram Kelvin:
+\[ \text{TAB A-10 4°C} \quad h_{2g} (4°C) = 249.53 \frac{kJ}{kg} \quad s_{2g} = 0.9169 \frac{kJ}{kg \cdot K} \]
+
+The enthalpy at state 3 for 8 bar and entropy \( s_2 \).
+
+Wet steam:
+\[ s_3 = s_f (8 bar) + x (s_g (8 bar) - s_f (8 bar)) \]
+
+From Table A-11, \( s_f \) is 0.3459 and \( s_g \) is 0.9006:
+\[ \text{A-11} \quad s_f = 0.3459 \quad s_g = 0.9006 \]
+
+The quality \( x \) is 0.29999:
+\[ x = 0.29999 \]
+
+From Table, the enthalpy \( h_{3x} \) at 8 bar is \( h_f \) at 8 bar plus \( x \) times the difference between \( h_g \) at 8 bar and \( h_f \) at 8 bar:
+\[ \text{TAB} \quad h_{3x} (8 bar) = h_f (8 bar) + x (h_g (8 bar) - h_f (8 bar)) \]
+
+From Table A-11, \( h_f \) is 93.42 and \( h_g \) is 264.15:
+\[ \text{A-11} \quad h_f = 93.42 \quad h_g = 264.15 \]
+
+The enthalpy \( h_{3x} \) at 8 bar is 144.637 kilojoules per kilogram:
+\[ h_{3x} (8 bar) = 144.637 \frac{kJ}{kg} \]
+
+The compressor work rate \( \dot{W}_k \) equals the mass flow rate of R134a times 28 millijoules per second divided by the difference in enthalpy from state 2 to state 3 in kilojoules per kilogram, equals 4.9007 times 10 to the power of minus 4 kilograms per second, equals the mass flow rate of R134a:
+\[ \dot{W}_k = \dot{m}_{R134a} \frac{28 \cdot 10^{-3} \frac{kJ}{s}}{h_2 - h_3 \left( \frac{kJ}{kg} \right)} = 4.9007 \cdot 10^{-4} \frac{kg}{s} = \dot{m}_{R134a} \]
+
+The compressor work rate \( \dot{W}_k \) is 28 Watts, which is 28 Joules per second:
+\[ \dot{W}_k = 28W = 28 \frac{J}{s} \]
+
+The mass flow rate of R134a is 2.669 times 10 to the power of minus 4 kilograms per second:
+\[ 2.669 \cdot 10^{-4} \frac{kg}{s} = \dot{m}_{R134a} \]

@@ -1,0 +1,31 @@
+No content is provided for this subtask.
+
+The mass-specific exergy at ambient conditions is calculated as:  
+\[
+\dot{ex}_{\text{flow},0} = (h_0 - h_0 - T_0(s_0 - s_0)) + \frac{w_0^2}{2} = \frac{w_0^2}{2} = 20 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The mass-specific exergy at state 6 is calculated as:  
+\[
+\dot{ex}_{\text{flow},6} = h_6 - h_0 - T_0(s_6 - s_0) + \frac{w_6^2}{2}
+\]
+
+Expanding the terms:  
+\[
+\dot{ex}_{\text{flow},6} = c_p(T_6 - T_0) - T_0 \left( c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) \right) + \frac{w_6^2}{2}
+\]
+
+Substituting values:  
+\[
+\dot{ex}_{\text{flow},6} = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \left( 340 \, \text{K} - 243.15 \, \text{K} \right) - 243.15 \, \text{K} \cdot \ln \left( \frac{340 \, \text{K}}{243.15 \, \text{K}} \right) + \ln \left( \frac{0.5}{0.191} \right) + \frac{(540 \, \text{m/s})^2}{2}
+\]
+
+Final result:  
+\[
+\dot{ex}_{\text{flow},6} = 145.47 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The increase in flow exergy is:  
+\[
+\Delta \dot{ex}_{\text{flow}} = 125.47 \, \frac{\text{kJ}}{\text{kg}}
+\]

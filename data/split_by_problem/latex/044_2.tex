@@ -1,0 +1,63 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+\textbf{T(s)} \\
+
+\begin{description}
+    \item[Graph Description:] The graph is a 3D plot with three axes. The horizontal axis is labeled "s" and has a rightward arrow. The vertical axis is labeled "T(s)" and has an upward arrow. The third axis, which is diagonal, is labeled "p" and has an arrow pointing towards the back. There are six points labeled 1 to 6, connected by lines to form a surface. The points are connected as follows: 1 to 2, 2 to 3, 3 to 4, 4 to 5, 5 to 6, and 1 to 6. There is a note near point 4 indicating "p4 = 0.151 s". Another note near the s-axis indicates "s (kJ/kgK)". Below the s-axis, there is a note: "isentrope".
+\end{description}
+
+\begin{align*}
+    \text{b)} & \quad \dot{m}_5 = 220 \, \frac{\text{kg}}{\text{s}} \\
+    p_5 & = 0.5 \, \text{MPa} \\
+    T_5 & = 43.1 \, \text{K}
+\end{align*}
+
+\text{previously calculated:} \\
+\begin{align*}
+    \frac{T_6}{T_5} & = \left( \frac{p_6}{p_5} \right)^{\frac{k-1}{k}} \\
+    k & = 1.4 \\
+    T_6 & = \left( \frac{p_6}{p_5} \right)^{\frac{k-1}{k}} T_5 = 328.076 \, \text{K}
+\end{align*}
+
+\text{Energiegleichung:} \\
+\begin{align*}
+    \frac{dE}{dt} & = \dot{m} \left( h_2 - h_1 + \frac{w_2^2 - w_1^2}{2} \right) + \dot{Q} + \dot{W} \\
+    \dot{m} \cdot \dot{w}^{neu} & = \frac{1}{2} \dot{v} dp + d \dot{m} + \dot{w}^{alt}
+\end{align*}
+
+``````latex
+
+
+\section*{c)}
+
+\begin{align*}
+\Delta s_{tot} &= s_2 - s_0 - \frac{Q}{T_0}(s_3 - s_0) + \rho(v_2 - v_0) \\
+\frac{u_2}{c_p} - \frac{u_0}{c_p} &= c_v \ln \left( \frac{T}{T_0} \right) = \\
+&= c_v \left( T_0 \left( \frac{T_2}{T_0} \right) - T_0 \ln \left( \frac{T_2}{T_0} \right) \right)
+\end{align*}
+
+\textbf{T0-Break:}
+
+\begin{align*}
+\Delta s_{tot} &= u_2 - u_0 - T_0(s_2 - s_0) + k \cdot m \\
+&= c_p \left( T_2 - T_0 \right) - T_0 \cdot c_p \left( \frac{T_2}{T_0} \right) + \frac{v_0^2 - v_0^2}{2} \\
+&= -m \left( \frac{Q}{T_0} \right) \ln \left( \frac{T_2}{T_0} \right)
+\end{align*}
+
+\section*{d)}
+
+\textbf{adiabatic Process:} \(\dot{Q} = 0\)
+
+\textbf{Empirical:} \(\text{look:} \quad \dot{E}_{mech} = T_0 \cdot \dot{S}_{mech}\)
+
+\begin{align*}
+0 - \dot{Q}_{mech} + m \left( s_2 - s_0 \right) &= \text{process entirely under P-G-P} \\
+\frac{\dot{E}_{mech}}{\dot{m}} &= T_0 \cdot \dot{S}_{mech} = T_0 \cdot c_p \ln \left( \frac{T_2}{T_0} \right) = 8,1,5 \frac{kJ}{s}
+\end{align*}
+
+``````latex
+
+

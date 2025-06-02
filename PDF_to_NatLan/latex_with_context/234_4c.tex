@@ -1,0 +1,33 @@
+An energy balance equation for the compressor is written:  
+\[
+0 = \dot{m}_{\text{R134a}} \left( h_2 - h_3 \right) - \dot{W}_K
+\]  
+Where:  
+\[
+\dot{W}_K = \dot{m}_{\text{R134a}} \left( h_2 - h_3 \right)
+\]  
+
+From Table A-10:  
+\[
+h_2 = h_g(-16^\circ \text{C}) = 237.74  
+\]  
+\[
+s_2 = s_g(-16^\circ \text{C}) = 0.9298 \, \text{kJ/kg·K}  
+\]  
+\[
+s_3 = s_2 \, \text{(because the process is reversible)}  
+\]
+
+For the isenthalpic throttling process:  
+\[
+h_4 = h_1
+\]
+The enthalpy at state 4 is \( h_4 = h_f(8 \, \text{bar}) = 93.42 \, \frac{\text{kJ}}{\text{kg}} \), which is found in Table A-11.  
+
+The vapor quality \( x_1 \) at state 1 is calculated as:  
+\[
+x_1 = \frac{h_1 - h_f(-16^\circ \text{C})}{h_g(-16^\circ \text{C}) - h_f(-16^\circ \text{C})} = \frac{93.42 \, \frac{\text{kJ}}{\text{kg}} - 29.3 \, \frac{\text{kJ}}{\text{kg}}}{237.74 \, \frac{\text{kJ}}{\text{kg}} - 29.3 \, \frac{\text{kJ}}{\text{kg}}}
+\]
+This results in \( x_1 = 0.3076 \).  
+
+---

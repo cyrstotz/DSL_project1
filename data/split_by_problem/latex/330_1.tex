@@ -1,0 +1,161 @@
+
+``````latex
+
+
+\section*{7.1}
+
+\subsection*{a) Energiebilanz indem Wasser im Reaktor}
+
+\begin{align*}
+\text{SFP:} \quad \dot{Q} &= \dot{m} \left[ h_e - h_\alpha \right] + \dot{Q}_R - \dot{Q}_{\text{aus}} \\
+\dot{Q}_{\text{aus}} &= \dot{m} \left[ h_e^{H_2O} - h_\alpha^{H_2O} \right] + \dot{Q}_R
+\end{align*}
+
+\[
+h_e = h_f(70^\circ C) \rightarrow \text{TAB-A2:}
+\]
+
+\[
+h_e = 292.98 \frac{kJ}{kg}
+\]
+
+\[
+h_\alpha = h_f(700^\circ C) = 919.04 \frac{kJ}{kg}
+\]
+
+\[
+\dot{Q}_{\text{aus}} = 62.18 \text{kW}
+\]
+
+\subsection*{b)}
+
+\[
+\overline{T}_{KF} = \frac{\int_{s_\alpha}^{s_e} T ds}{s_e - s_\alpha}
+\]
+
+\text{Kühlmantel ist adiabol \& isobar}
+
+``````latex
+
+
+\section*{c)}
+
+\begin{figure}[h!]
+\centering
+\begin{minipage}{0.8\textwidth}
+\centering
+\textbf{Description of the diagram:} \\
+The diagram is a horizontal cross-section of a wall. The wall is represented by a rectangular box with a hatched pattern inside. The top and bottom boundaries of the wall are marked by dashed orange lines. There is an arrow labeled $\dot{Q}_{\text{aus}}$ pointing upwards from the middle of the wall, indicating heat flow. Below the wall, there is a label "H2O". The top of the wall is labeled "Kühlmittel" and the right side is labeled "Wand".
+\end{minipage}
+\end{figure}
+
+\textbf{Bilanzgleichung: Entropiebilanz um die Wand:}
+
+\[
+0 = \frac{\dot{Q}_{\text{aus}}}{T_{\text{H2O}}} - \frac{\dot{Q}_{\text{aus}}}{T_{\text{KF}}} + \dot{S}_{\text{erzeugt}}
+\]
+
+\[
+T_{\text{H2O}} = T_R = 100^\circ C = 373.15\,K
+\]
+
+\[
+\dot{S}_{\text{erzeugt}} = \dot{Q}_{\text{aus}} \left( \frac{1}{T_{\text{H2O}}} + \frac{1}{T_{\text{KF}}} \right)
+\]
+
+\[
+T_{\text{KF}} = 295\,K
+\]
+
+\[
+\dot{S}_{\text{erzeugt}} = 65\,\text{kW} \left( \frac{1}{295\,K} - \frac{1}{373.15\,K} \right) = 4.194 \times 10^{-2} \frac{\text{kJ}}{\text{K}}
+\]
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+$\Delta M_{12}$ & Q & W & Z & T \\
+\hline
+& $\dot{Q}_{\text{aus}}$ & & 0 & \\
+\hline
+& 35\,\text{MJ} & & 1 & 100$^\circ$C \\
+\hline
+& & & 2 & 70$^\circ$C \\
+\hline
+\end{tabular}
+\end{table}
+
+``````latex
+
+
+\section*{d) Eingießung von dem Reaktor (kein SFP)}
+
+\[
+\Delta E = \Delta m_{12} \left[ h_1 - h_2 \right] - Q_{\text{aus},12}
+\]
+
+\[
+U_2 - U_1 = \Delta m_{12} \left[ h_1 - h_2 \right] - Q_{\text{aus},12}
+\]
+
+\[
+= m_2 u_2 - m_1 u_1
+\]
+
+\[
+m_2 = m_1 + \Delta m_{12}
+\]
+
+\subsection*{TAB - A-2:}
+
+\[
+u_1 = u_f (100^\circ C) = 419.94 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+u_2 = u_f (70^\circ C) = 292.95 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+(m_1 + \Delta m_{12}) u_2 - m_1 u_1 = \Delta m_{12} \left[ h_1 - h_2 \right] - Q_{\text{aus},12}
+\]
+
+\[
+m_2 u_2 + \Delta m_{12} u_2 - \Delta m_{12} \left[ h_1 - h_2 \right] = m_1 u_1 - Q_{\text{aus},12}
+\]
+
+\[
+\Delta m_{12} \left[ u_2 - h_1 - h_2 \right] = m_1 (u_1 - u_2) - Q_{\text{aus},12}
+\]
+
+\[
+\Delta m_{12} = \frac{m_1 (u_1 - u_2) - Q_{\text{aus},12}}{u_2 - h_1 + h_2}
+\]
+
+``````latex
+
+
+\section*{e)}
+
+\textit{Gleichung}
+
+\[
+\Delta S = \Delta m_2 S
+\]
+
+\[
+\Delta S = m_2 S_2 - m_2 S_1 + \frac{Q_{um12}}{T_2} + S_{xy}
+\]
+
+\[
+\Delta S = \Delta m_2 \cdot S_2 + \frac{Q_{um12}}{T_2} + S_{xy}
+\]
+
+\[
+S_2 = S_1 (T_0 C) \rightarrow TAP \beta - 2 = 0,9549 \frac{kJ}{kgK}
+\]
+
+``````latex
+
+

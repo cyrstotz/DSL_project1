@@ -1,0 +1,69 @@
+TASK 2a  
+The process is described qualitatively in a \( T \)-\( s \) diagram. The diagram includes labeled isobars and process steps:  
+- From state 0 to 1: Isentropic compression.  
+- From state 1 to 2: Isentropic compression.  
+- From state 2 to 3: Isobaric heat addition.  
+- From state 3 to 4: Isentropic expansion.  
+- From state 4 to 5: Isobaric heat rejection.  
+- From state 5 to 6: Isentropic expansion.  
+
+The graph shows a curve with labeled states (0, 1, 2, 3, 4, 5, 6). The isobaric processes are horizontal lines, and the isentropic processes are vertical or curved lines. The axes are labeled as \( T \) (temperature) on the vertical axis and \( s \) (specific entropy, \( \text{kJ/kg·K} \)) on the horizontal axis.
+
+---
+
+TASK 2b  
+The energy balance equation is written as:  
+\[
+0 = \dot{m} \left[ h_0 - h_6 + \frac{w_e^2 - w_a^2}{2} \right] p_0 + \dot{Q}_j - \dot{W}_{\text{tn}}
+\]  
+Assuming the system is adiabatic to the surroundings (\( \dot{Q}_j = 0 \)), the equation simplifies to:  
+\[
+\dot{W}_{\text{tn}} = m \left[ h_5 - h_6 + \frac{w_e^2 - w_a^2}{2} \right]
+\]  
+
+Further derivations include:  
+\[
+\left[ \frac{\dot{W}_{\text{tn}}}{m} + h_6 - h_5 \right] \cdot 2 = w_e^2 - w_a^2
+\]  
+\[
+w_6^2 = w_5^2 - \frac{\dot{W}_{\text{tn}}}{\dot{m}} + \left[ h_5 - h_6 \right]
+\]  
+
+The specific volume \( v_5 \) is calculated using the ideal gas law:  
+\[
+v_5 = \frac{mRT_5}{p_5}
+\]  
+Substituting values:  
+\[
+v_5 = \frac{0.1286 \, \text{J/g} \cdot 431.13 \, \text{K} \cdot R}{0.5 \cdot 10^5 \, \text{Pa}}
+\]  
+\[
+R = \frac{8.314 \, \text{J/mol·K}}{28.97 \, \text{kg/kmol}} = 0.287 \, \text{J/g·K}
+\]  
+\[
+v_5 = 0.10024789 \, \text{m}^3/\text{g}
+\]  
+
+The temperature ratio is calculated as:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{4}{14}} = 328.107 \, \text{K}
+\]  
+
+The enthalpy difference is calculated as:  
+\[
+h_6 - h_5 = c_p \left( T_6 - T_5 \right)
+\]  
+\[
+h_5 - h_6 = c_p \left[ T_5 - T_6 \right]
+\]  
+Substituting values:  
+\[
+h_5 - h_6 = 1.006 \, \text{kJ/kg·K} \cdot \left( 431.13 \, \text{K} - 328.107 \, \text{K} \right)
+\]  
+\[
+h_5 - h_6 = 104.14 \, \text{kJ/kg}
+\]

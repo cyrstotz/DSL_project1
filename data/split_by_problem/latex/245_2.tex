@@ -1,0 +1,75 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a plot with the vertical axis labeled \( T[K] \) and the horizontal axis labeled \( S \left[ \frac{kJ}{kg \cdot K} \right] \). The graph contains a curve with several points marked and labeled as follows:
+    \begin{itemize}
+        \item Point 1 is at the bottom left.
+        \item Point 2 is slightly above and to the right of Point 1.
+        \item Point 3 is above Point 2, connected by a line labeled "isobar".
+        \item Point 4/5 is to the right of Point 2, connected by a line labeled "adiabat, irrev.".
+        \item Point 6 is to the right of Point 4/5, connected by a line labeled "adiabat, rev.".
+        \item Point 0 is to the right of Point 6.
+    \end{itemize}
+\end{description}
+
+\subsection*{b)}
+
+\[
+\frac{T_6}{T_5} = \left( \frac{P_6}{P_5} \right)^{\frac{n-1}{n}}
+\]
+
+\[
+T_6 = 7 \cdot 43.19 \cdot \left( \frac{0.15}{0.5} \right)^{\frac{0.9}{1.4}} = 328.07 \, K
+\]
+
+\[
+\omega = A \cdot \dot{V} \rightarrow \frac{\dot{V}_5}{\dot{V}_6} = \frac{\omega_5}{\omega_6}
+\]
+
+\[
+\frac{T_6}{T_5} = \left( \frac{\omega_5}{\omega_6} \right)^{n-1}
+\]
+
+\[
+\rightarrow \omega_6 = \omega_5 \cdot \left( \frac{T_5}{T_6} \right)^{\frac{1}{n-1}} = 437.486 \, \frac{m}{s}
+\]
+
+``````latex
+
+
+\section*{Problem c}
+
+\begin{align*}
+e_{x,st6} &= e_{x,st4} - \left( h_6 - h_0 - T_0 (s_6 - s_0) + \frac{\omega_6^2}{2} \right) - \left( h_5 - h_0 - T_0 (s_5 - s_0) + \frac{\omega_5^2}{2} \right) \\
+&= \left( h_6 - h_5 \right) - T_0 (s_6 - s_5) + \frac{\omega_6^2 - \omega_5^2}{2} \\
+&= \int c_p dT - T_0 \left( \int \frac{c_p}{T} dT - \ln \left( \frac{P_6}{P_5} \right) \right) + \frac{\omega_6^2 - \omega_5^2}{2}
+\end{align*}
+
+\begin{align*}
+R &= c_p - c_v = \frac{c_p}{c_p - c_v} = 0.28742 \frac{\text{kJ}}{\text{kg K}} \\
+T_0 &= 293.15 \text{ K}
+\end{align*}
+
+\begin{align*}
+\Delta e_{x,st4} &= c_p \left( T_6 - T_5 \right) - T_0 c_p \ln \left( \frac{T_6}{T_5} \right) - T_0 \ln \left( \frac{P_6}{P_5} \right) + \frac{\omega_6^2 - \omega_5^2}{2} \\
+&= -109.95 - 67.26 - 67.255 + 1 + 74.437 \\
+&= -167.97 \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+\section*{Problem d}
+
+\begin{align*}
+0 &= e_{x,st4} + e_{x,Q} - \left( \frac{W_{turbine}}{\dot{m}} \right)^0 - e_{x,vel} \\
+e_{x,Q} &= \left( 1 - \frac{T_0}{T_B} \right) Q_B = 969.58 \frac{\text{kJ}}{\text{kg}} \\
+e_{x,vel} &= e_{x,st4} + e_{x,Q} = -100 \frac{\text{kJ}}{\text{kg}} + 969.58 \frac{\text{kJ}}{\text{kg}} = 869.58 \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+``````latex
+
+

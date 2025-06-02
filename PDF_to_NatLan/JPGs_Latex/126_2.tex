@@ -1,0 +1,53 @@
+TASK 2a  
+The diagram is a qualitative representation of the jet engine process on a \( T \)-\( s \) diagram. It includes labeled isobars and process states:  
+- State 0 represents ambient conditions.  
+- State 1 shows the inlet air.  
+- State 2 corresponds to the compressed air.  
+- State 3 is the combustion chamber outlet.  
+- State 4 represents the turbine outlet.  
+- State 5 is the mixing chamber outlet.  
+- State 6 is the nozzle exit.  
+
+The diagram shows increasing entropy (\( s \)) along the horizontal axis and temperature (\( T \)) along the vertical axis. The isobars \( p_0 \), \( p_{4,5} \), and \( p_{2,3} \) are clearly marked. The processes include compression, combustion, expansion, and mixing.  
+
+---
+
+TASK 2b  
+The first law of thermodynamics is applied for a stationary system:  
+\[
+Q = \dot{m}_{\text{tot}} \left( h_5 - h_6 + \frac{W_5^2 - W_6^2}{2} \right) - W_t \quad \text{//isentropic}
+\]  
+
+The turbine work \( W_t \) is expressed as:  
+\[
+W_t = \int v \, dp
+\]  
+
+For the temperature difference between states 6 and 5:  
+\[
+T_6 - T_5 = \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} \quad \text{(isentropic)}
+\]  
+Substituting values:  
+\[
+T_6 = 1.006 \cdot (431.9 - 328.07) = 103.45 \, \text{kJ/kg·K}
+\]  
+
+The enthalpy difference \( h_5 - h_6 \) is calculated as:  
+\[
+h_5 - h_6 = c_p \cdot (T_5 - T_6) = 1.006 \cdot (431.9 - 328.07) = 103.45 \, \text{kJ/kg·K}
+\]  
+
+The energy balance equation becomes:  
+\[
+\Delta h + \frac{1}{2} W_5^2 - \frac{1}{2} W_6^2 = \int v \, dp - \Delta ke
+\]  
+
+Rearranging terms:  
+\[
+\Delta h + W_5^2 - W_6^2 = \int v \, dp
+\]  
+
+Final expression:  
+\[
+\Delta h + W_6^2 = W_5^2
+\]

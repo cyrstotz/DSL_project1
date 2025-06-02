@@ -1,0 +1,49 @@
+TASK 2c  
+The mass-specific exergy destruction \( ex_{\text{dest}} \) is calculated using the following expression:  
+\[
+ex_{\text{dest}} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2 - w_0^2}{2} + ex_{\text{rec}}
+\]  
+Breaking down the terms:  
+\[
+h_6 - h_0 = \int_{T_0}^{T_6} c_p \, dT = c_p (T_6 - T_0)
+\]  
+\[
+s_6 - s_0 = \int_{T_0}^{T_6} \frac{c_p}{T} \, dT - R \ln \left( \frac{p_6}{p_0} \right) = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+Substituting values:  
+\[
+T_0 = 243.15 \, \text{K}, \quad T_6 = 330 \, \text{K}, \quad p_0 = 0.191 \, \text{bar}, \quad p_6 = 0.5 \, \text{bar}
+\]  
+\[
+s_0 = c_p \ln \left( \frac{330}{243.15} \right) - R \ln \left( \frac{0.5}{0.191} \right)
+\]  
+\[
+s_0 = c_p \ln \left( \frac{330}{243.15} \right) - R \ln \left( \frac{0.5}{0.191} \right) = 2.7033 \, \text{kJ/kg·K}
+\]  
+\[
+s_6 = c_p \ln \left( \frac{330}{243.15} \right) - R \ln \left( \frac{0.5}{0.191} \right) = 2.654 \, \text{kJ/kg·K}
+\]  
+\[
+T_6 = 330 \, \text{K}, \quad T_0 = 243.15 \, \text{K}
+\]  
+\[
+ex_{\text{dest}} = 133.6 - \frac{h}{R}
+\]  
+
+---
+
+TASK 2d  
+The mass-specific exergy destruction \( ex_{\text{dest}} \) is calculated as follows:  
+\[
+O = -ex_{\text{dest}} + \left( 1 - \frac{T_0}{T_B} \right) q_B + ex_{\text{rec}}
+\]  
+Substituting values:  
+\[
+ex_{\text{rec}} = -ex_{\text{dest}} + \left( 1 - \frac{T_0}{T_B} \right) q_B
+\]  
+\[
+ex_{\text{rec}} = -869.58 + 25 \, \text{kJ/kg}
+\]  
+
+TASK 3  
+No additional content found.

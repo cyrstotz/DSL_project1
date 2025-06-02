@@ -1,0 +1,104 @@
+TASK 3a  
+The problem involves an ideal gas system and the equilibrium of forces in state 1.  
+
+### Force Equilibrium  
+A diagram is provided showing a piston resting on a membrane, separating a gas chamber below from an ice-water mixture above. The forces acting on the piston are:  
+- \( F_{\text{EW}} \): Force due to the ice-water mixture.  
+- \( F_{\text{amb}} \): Force due to ambient pressure.  
+- \( F_K \): Force due to the piston mass.  
+- \( F_g \): Force exerted by the gas.  
+
+The force equilibrium is expressed as:  
+\[
+F_g = F_{\text{EW}} + F_{\text{amb}} + F_K
+\]
+
+The cross-sectional area of the cylinder is calculated as:  
+\[
+A_z = \text{Diameter of cylinder} = \pi r^2
+\]
+Given \( r = 5 \, \text{cm} = 0.05 \, \text{m} \),  
+\[
+A_z = \pi \cdot (0.05 \, \text{m})^2 = 7.85 \cdot 10^{-3} \, \text{m}^2
+\]
+
+### Calculation of Forces  
+1. **Force due to ice-water mixture**:  
+\[
+F_{\text{EW}} = m_{\text{EW}} \cdot g
+\]
+Given \( m_{\text{EW}} = 0.1 \, \text{kg} \) and \( g = 9.81 \, \text{m/s}^2 \),  
+\[
+F_{\text{EW}} = 0.1 \, \text{kg} \cdot 9.81 \, \text{m/s}^2 = 0.981 \, \text{N}
+\]
+
+2. **Force due to piston mass**:  
+\[
+F_K = m_K \cdot g
+\]
+Given \( m_K = 32 \, \text{kg} \),  
+\[
+F_K = 32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2 = 313.92 \, \text{N}
+\]
+
+3. **Force due to ambient pressure**:  
+\[
+F_{\text{amb}} = p_{\text{amb}} \cdot A_z
+\]
+Given \( p_{\text{amb}} = 100 \, \text{kPa} = 100,000 \, \text{N/m}^2 \),  
+\[
+F_{\text{amb}} = 100,000 \, \text{N/m}^2 \cdot 7.85 \cdot 10^{-3} \, \text{m}^2 = 785 \, \text{N}
+\]
+
+4. **Total force exerted by the gas**:  
+\[
+F_g = F_{\text{EW}} + F_K + F_{\text{amb}}
+\]
+Substituting values:  
+\[
+F_g = 0.981 \, \text{N} + 313.92 \, \text{N} + 785 \, \text{N} = 1099.901 \, \text{N}
+\]
+
+### Gas Pressure Calculation  
+The gas pressure is calculated as:  
+\[
+F_g = p_{g,1} \cdot A_z \implies p_{g,1} = \frac{F_g}{A_z}
+\]
+Substituting values:  
+\[
+p_{g,1} = \frac{1099.901 \, \text{N}}{7.85 \cdot 10^{-3} \, \text{m}^2} = 140,144.78 \, \text{Pa}
+\]
+Converting to kilopascals and bar:  
+\[
+p_{g,1} = 140.14 \, \text{kPa} = 1.4 \, \text{bar}
+\]
+
+### Ideal Gas Law  
+The ideal gas law is applied:  
+\[
+pV = mRT \implies m = \frac{pV}{RT}
+\]
+
+1. **Specific gas constant**:  
+\[
+R_g = \frac{R}{M}
+\]
+Given \( R = 8.314 \, \text{kJ/kmol·K} \) and \( M = 50 \, \text{kg/kmol} \),  
+\[
+R_g = \frac{8.314 \, \text{kJ/kmol·K}}{50 \, \text{kg/kmol}} = 0.166 \, \text{kJ/kg·K}
+\]
+
+2. **Gas volume**:  
+\[
+V_{g,1} = 3.14 \, \text{L} = 3.14 \cdot 10^{-3} \, \text{m}^3
+\]
+
+3. **Gas temperature**:  
+\[
+T_{g,1} = 500^\circ\text{C} = 773.15 \, \text{K}
+\]
+
+Substituting into the ideal gas law:  
+\[
+m_g = \frac{p_{g,1} \cdot V_{g,1}}{R_g \cdot T_{g,1}}
+\]

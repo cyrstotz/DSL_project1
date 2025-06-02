@@ -1,0 +1,86 @@
+To calculate \( w_6 \) and \( T_6 \):  
+
+The entropy at states 5 and 6 is equal:  
+\[
+S_5 = S_6
+\]
+
+The entropy change is expressed as:  
+\[
+0 = \Delta S = \int_{T_5}^{T_6} \frac{c_p^{\text{air}}(T)}{T} \, dT - R \ln \left( \frac{p_0}{p_5} \right)
+\]
+
+Simplifying:  
+\[
+0 = c_p^{\text{air}} \left( \ln \left( \frac{T_6}{T_5} \right) \right) - R \ln \left( \frac{p_0}{p_5} \right)
+\]
+
+Rearranging:  
+\[
+\ln \left( \frac{T_6}{T_5} \right) = R \ln \left( \frac{p_0}{p_5} \right) / c_p^{\text{air}}
+\]
+
+Substituting the pressure ratio:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_0}{p_5} \right)^{\frac{R}{c_p^{\text{air}}}}
+\]
+
+Using the isentropic relation:  
+\[
+T_6 = T_5 \left( \frac{p_0}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]
+
+Substituting known values:  
+\[
+T_6 = T_5 \left( \frac{p_0}{p_5} \right)^{\frac{1.4 - 1}{1.4}}
+\]
+
+After calculation:  
+\[
+T_6 = 328.07 \, \text{K}
+\]
+
+For velocity \( w_6 \), the energy balance is:  
+\[
+0 = \dot{m} \left( h_5 - h_6 + \frac{w_5^2}{2} - \frac{w_6^2}{2} \right) - \dot{W}
+\]
+
+Simplifying:  
+\[
+0 = h_5 - h_6 + \frac{w_5^2}{2} - \frac{w_6^2}{2}
+\]
+
+Rearranging for \( w_6 \):  
+\[
+w_6 = \sqrt{2 \left( h_5 - h_6 - \dot{W} + \frac{w_5^2}{2} \right)}
+\]  
+
+Some terms are crossed out, but the equation for \( w_6 \) remains valid.
+
+The outlet velocity \( w_6 \) is calculated using the formula:  
+\[
+w = R \frac{(T_6 - T_5)}{1 - \eta}
+\]  
+where \( R = c_p - \frac{c_v}{\kappa} = 0.2879 \, \text{kJ/kg·K} \).  
+
+The calculated value for \( w_6 \) is:  
+\[
+w_6 = 259.56 \, \text{kJ}
+\]  
+
+The outlet temperature \( T_6 \) is determined using the following equation:  
+\[
+w_c = \sqrt{2 \left( (h_5 - h_c) - \dot{w}_6 \right) - \frac{w_5^2}{2}}
+\]  
+where \( h_5 - h_c = c_p (T_6 - T_5) \).  
+
+Substituting values:  
+\[
+w_c = \sqrt{2 \left( c_p (T_6 - T_5) - R \frac{(T_6 - T_5)}{1 - \eta} \right) - \frac{w_5^2}{2}}
+\]  
+The calculated value for \( w_c \) is:  
+\[
+w_c = 551.5 \, \text{m/s}
+\]  
+
+---

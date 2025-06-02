@@ -1,0 +1,37 @@
+TASK 4a  
+The diagram shows two pressure-temperature (\(p\)-\(T\)) plots related to the freeze-drying process.  
+
+1. The first plot illustrates the phase regions of solid, liquid, and vapor, with the triple point labeled. The curve separating solid and liquid phases slopes upward, while the curve separating liquid and vapor phases slopes downward. The process path is marked with numbered states (1, 2, 3, 4) forming a cycle.  
+
+2. The second plot zooms in on the liquid-vapor region, showing the same cycle (states 1, 2, 3, 4) with arrows indicating the direction of the process. The states are connected by lines representing transitions between liquid and vapor phases.  
+
+TASK 4b  
+The mass flow rate of the refrigerant (\( \dot{m}_{\text{R134a}} \)) is calculated using the energy balance equation:  
+\[
+0 = \dot{m}(h_2 - h_3) - \dot{W}_K
+\]
+Rearranging for \( \dot{m} \):  
+\[
+\dot{m} = \frac{\dot{W}_K}{h_2 - h_3} = 0.7437 \, \text{kg/s}
+\]  
+
+TASK 4c  
+The following conditions are noted:  
+1. At state 2: \( s_2 = s_5 \), \( p_1 = p_2 \), and \( x \leq 1 \).  
+2. At state 1: \( s_1 = s_4 \).  
+3. At state 3: \( p_3 = 8 \, \text{bar} \).  
+4. At state 4: \( x = 0 \), \( p_4 = 8 \, \text{bar} \).  
+
+Using the given data:  
+- \( T_2 = -40^\circ\text{C} \) (from Table A10).  
+- \( h_2 = h_g = 254.08 \, \text{kJ/kg} \).  
+- \( s_3 = s_2 = 0.835 \, \text{kJ/kg·K} \).  
+
+Interpolating for \( h_3 \):  
+\[
+h_3 = h(40^\circ\text{C}, 8 \, \text{bar}) = h(\text{sat}, 8 \, \text{bar}) + \left[ s(40^\circ\text{C}, 8 \, \text{bar}) - s(\text{sat}, 8 \, \text{bar}) \right] + h(\text{sat}, 8 \, \text{bar})
+\]
+The final value is:  
+\[
+h_3 = 271.72 \, \text{kJ/kg}
+\]

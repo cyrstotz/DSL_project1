@@ -1,0 +1,14 @@
+Table 1 at pressure equals 1.0025 bar  
+
+- Interpolation for \( u_{frost} \):  
+\( u_{frost} = (1.0025 \, \text{bar} - 1.000 \, \text{bar}) \cdot \frac{-333.458 \, \text{kilojoules per kilogram} + 333.492 \, \text{kilojoules per kilogram}}{1.400 \, \text{bar} - 1.000 \, \text{bar}} \)  
+\( u_{frost} = -333.492 \, \text{kilojoules per kilogram} \)  
+
+- Interpolation for \( u_{füssig} \):  
+\( u_{füssig} = (1.0025 \, \text{bar} - 1.000 \, \text{bar}) \cdot \frac{-0.0456 \, \text{kilojoules per kilogram} + 0.033 \, \text{kilojoules per kilogram}}{1.400 \, \text{bar} - 1.000 \, \text{bar}} \)  
+\( u_{füssig} = -0.033 \, \text{kilojoules per kilogram} \)  
+
+\( x_{Eis,1} = 0.6 \)  
+\( m_{Eis} = 0.6 \cdot 0.1 \, \text{kilograms} = 0.06 \, \text{kilograms} \)  
+
+\( u = u_{f} + x \cdot (u_{Eis} - u_{f}) \)

@@ -1,0 +1,85 @@
+TASK 1c  
+Entropy balance for the reactor:  
+
+\[
+Q = \dot{m} \, (S_{\text{out}} - S_{\text{in}}) + \frac{\dot{Q}_{\text{aus}}}{T_{\text{KW}}} + \dot{S}_{\text{erz}}
+\]
+
+Rewriting:  
+
+\[
+\dot{S}_{\text{erz}} = \dot{m} \, (S_{\text{aus}} - S_{\text{ein}}) + \frac{\dot{Q}_{\text{aus}}}{T_{\text{KW}}}
+\]
+
+Substituting values:  
+
+\[
+\dot{S}_{\text{erz}} = \frac{\dot{Q}_{\text{aus}}}{T_{\text{KW}}} = 0.317 \, \text{kW} = \dot{S}_{\text{erz}}
+\]
+
+Entropy values are calculated as follows:  
+
+\[
+S_{\text{aus}} = x_{\text{aus}} \, S_g + (1 - x_{\text{aus}}) \, S_f \quad \text{from Table A-2}
+\]
+
+\[
+S_{\text{aus}} = 1.33714 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+\[
+S_{\text{ein}} = x_{\text{ein}} \, S_g + (1 - x_{\text{ein}}) \, S_f \quad \text{from Table A-2}
+\]
+
+\[
+S_{\text{ein}} = 0.888902 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+---
+
+TASK 1d  
+Energy balance:  
+
+\[
+\Delta E = Q - W
+\]
+
+Using the energy balance equation:  
+
+\[
+-m_{\text{ges}} \, U_1 + (m_{\text{ges}} + \Delta m_{12}) \, U_2 = Q_{\text{aus,12}}
+\]
+
+Rewriting:  
+
+\[
+m_{\text{ges}} \, (U_2 - U_1) + \Delta m_{12} \, U_2 = Q_{\text{aus,12}}
+\]
+
+Solving for \( \Delta m_{12} \):  
+
+\[
+\Delta m_{12} = \frac{Q_{\text{aus,12}} + m_{\text{ges}} \, (U_1 - U_2)}{U_2}
+\]
+
+Substituting values:  
+
+\[
+\Delta m_{12} = \frac{Q_{\text{aus,12}} + m_{\text{ges}} \, (U_1 - U_2)}{U_2} = 2793.5971 \, \text{kg}
+\]
+
+Internal energy values are calculated as follows:  
+
+\[
+U_1 = x_0 \, U_g + (1 - x_0) \, U_f \quad \text{from Table A-2}
+\]
+
+\[
+U_1 = 428.3778 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+U_2 = 292.85 \, \frac{\text{kJ}}{\text{kg}} \quad \text{from Table A-2}
+\]
+
+Note: \( x_{\text{sieden}} = 0 \).

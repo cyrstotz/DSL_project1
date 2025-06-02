@@ -1,0 +1,61 @@
+TASK 2a  
+The process steps for the jet engine are described as follows:  
+- \( 0 \rightarrow 1 \): Adiabatic compression.  
+- \( 1 \rightarrow 2 \): Isentropic compression.  
+- \( 2 \rightarrow 3 \): Isobaric heat addition.  
+- \( 3 \rightarrow 4 \): Adiabatic and irreversible expansion.  
+- \( 4 \rightarrow 5 \): Mixing, isobaric.  
+- \( 5 \rightarrow 6 \): Isentropic expansion.  
+
+The pressure at state 5 is given as \( p_5 = p_6 = p_0 = 0.5 \, \text{bar} \).  
+
+A graph is drawn representing the process in a \( T \) vs. \( s \) diagram:  
+- The x-axis is labeled \( s \, [\text{kJ/kg·K}] \).  
+- The y-axis is labeled \( T \, [\text{K}] \).  
+- The diagram shows six states connected by curves and lines, with the following transitions:  
+  - \( 0 \rightarrow 1 \): Adiabatic compression.  
+  - \( 1 \rightarrow 2 \): Isentropic compression.  
+  - \( 2 \rightarrow 3 \): Isobaric heat addition.  
+  - \( 3 \rightarrow 4 \): Adiabatic and irreversible expansion.  
+  - \( 4 \rightarrow 5 \): Mixing, isobaric.  
+  - \( 5 \rightarrow 6 \): Isentropic expansion.  
+
+Dashed lines indicate isobars for \( p_3 = p_2 \), \( p_5 = p_6 \), and \( p_4 \).  
+
+---
+
+TASK 2b  
+The outlet temperature \( T_6 \) is calculated as follows:  
+The process \( 5 \rightarrow 6 \) is reversible and adiabatic, meaning it is isentropic. Thus, \( s_5 = s_6 \).  
+
+Using the isentropic relation:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = 431.9 \, \text{K} \left( \frac{0.491}{0.5} \right)^{\frac{0.4}{1.4}} = 328.07 \, \text{K}
+\]  
+
+Next, the outlet velocity \( w_6 \) is determined using the steady-flow energy equation:  
+\[
+0 = h_0 - h_c + \frac{w_6^2 - w_c^2}{2} + \dot{q}_{\text{out}} + \dot{W}_{\text{in}} + 90 \, m_c
+\]  
+
+Rewriting for \( w_6^2 \):  
+\[
+w_6^2 = 2 \, c_{p,\text{air}} (h_0 - h_c) + w_c^2 = 2 \, c_{p,\text{air}} (T_0 - T_6) + w_c^2
+\]  
+
+Substituting values:  
+\[
+w_6 = \sqrt{2 \cdot 1.006 \, \text{kJ/kg·K} \cdot (243.15 \, \text{K} + 328.07 \, \text{K}) + (200 \, \text{m/s})^2}
+\]  
+\[
+w_6 = 459.2 \, \text{m/s}
+\]  
+
+Additional notes:  
+- \( m_g = m_c + m_k \cdot (1.5/5.293) \).  
+- \( w_m = \frac{w_k}{6.293} \).  
+

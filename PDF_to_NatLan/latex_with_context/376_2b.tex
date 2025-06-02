@@ -1,0 +1,66 @@
+The following equations and derivations are presented to calculate the outlet velocity \( w_6 \) and related thermodynamic properties:
+
+1. The energy balance equation is written as:  
+\[
+\dot{m} c_p (T_5 - T_6) + \dot{m} \left( \frac{w_5^2 - w_6^2}{2} \right) + \dot{Q} - \dot{W}_+ = 0
+\]
+
+2. The work term for the turbine is expressed as:  
+\[
+W_t = -\frac{R (T_6 - T_5)}{\kappa - 1} - \text{other terms}
+\]
+
+3. The relationship for ideal gas behavior is noted:  
+\[
+\text{Air} \implies \text{Ideal Gas} \implies \text{specific equations for work and heat transfer.}
+\]
+
+4. Substituting into the energy balance equation:  
+\[
+\dot{m} c_p (T_5 - T_6) + \dot{m} (w_5^2 - w_6^2) - \frac{R (T_6 - T_5)}{\kappa - 1} = 0
+\]
+
+5. Rearranging and solving for \( w_6 \):  
+\[
+w_6 = \sqrt{c_p (T_5 - T_6) + w_5^2 - \frac{R (T_6 - T_5)}{\kappa - 1}}
+\]
+
+6. The calculated outlet velocity is:  
+\[
+w_6 = 350 \, \text{m/s}
+\]
+
+Additional thermodynamic properties are defined:  
+- \( c_v = \frac{c_p}{\kappa} = 0.7986 \, \frac{\text{kJ}}{\text{kg·K}} \)  
+- \( R = c_p - c_v = 289 \, \frac{\text{J}}{\text{kg·K}} \)
+
+No diagrams or figures are present on this page.
+
+The energy balance equation for the jet engine is written as:  
+\[
+0 = \dot{m} \left( h_6 - h_5 + \frac{w_6^2 - w_5^2}{2} \right) + \dot{Q} - \dot{W}
+\]  
+
+The process is described as **isentropic compression**.  
+
+From the isentropic relationship:  
+\[
+u = \eta = 1.9
+\]  
+
+The temperature ratio for the isentropic process is given by:  
+\[
+\frac{T_2}{T_1} = \left( \frac{v_1}{v_2} \right)^{\frac{n-1}{n}}
+\]  
+
+Here, the specific case is:  
+\[
+\frac{T_2}{T_5} = \left( \frac{v_6}{v_5} \right)^{\frac{\kappa-1}{\kappa}}
+\]  
+
+Substituting values:  
+\[
+T_6 = T_5 \left( \frac{v_0}{v_5} \right)^{\frac{\kappa-1}{\kappa}} = 328.07 \, \text{K}
+\]  
+
+The final temperature \( T_6 \) is calculated to be \( 328.07 \, \text{K} \).

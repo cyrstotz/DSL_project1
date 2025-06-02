@@ -1,0 +1,24 @@
+The energy balance equation for the reactor is written as:  
+\[
+0 = \dot{m}_{\text{in}} \cdot (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_{\text{out}} - \dot{Q}_R - \dot{W}_E
+\]  
+Rearranging to solve for the heat flow removed by the coolant:  
+\[
+\dot{Q}_{\text{out}} = \dot{Q}_R + \dot{m}_{\text{in}} \cdot (h_{\text{out}} - h_{\text{in}})
+\]  
+
+The enthalpy values are referenced from water tables:  
+\[
+h_{\text{out}} = 419.06 \, \text{kJ/kg}, \quad h_{\text{in}} = 292.98 \, \text{kJ/kg}
+\]  
+
+Substituting the values:  
+\[
+\dot{Q}_{\text{out}} = 100 \, \text{kW} + 0.3 \, \text{kg/s} \cdot (419.06 - 292.98) \, \text{kJ/kg}
+\]  
+\[
+\dot{Q}_{\text{out}} = 100 \, \text{kW} + 37.182 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = 62.182 \, \text{kW}
+\]

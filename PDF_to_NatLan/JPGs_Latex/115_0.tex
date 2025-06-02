@@ -1,0 +1,51 @@
+TASK 1a  
+The goal is to determine \( \dot{Q}_{\text{out}} \), the heat flow removed by the coolant.  
+
+Energy balance for a steady-state system with negligible kinetic and potential energy changes is expressed as:  
+\[
+0 = \dot{m} \left[ h_2 - h_a \right] + \sum Q_i - \sum E_{\text{in}} - \text{KE and PE terms (negligible)}  
+\]  
+
+The mass flow rate is given as:  
+\[
+\dot{m} = \dot{m}_{\text{in}} - \dot{m}_{\text{out}} = 0.3 \, \text{kg/s}  
+\]  
+The sum of energy inputs and outputs is zero:  
+\[
+\sum E_{\text{in}} = \sum E_{\text{out}} = 0  
+\]  
+
+For enthalpy values:  
+\[
+h_2 = h_{\text{water, saturated}}(70^\circ\text{C}), \quad h_a = h_{\text{water, saturated}}(100^\circ\text{C})  
+\]  
+
+The heat flow removed is calculated as:  
+\[
+\dot{Q}_{\text{out}} = \sum Q_i - \dot{Q}_R - \dot{Q}_a  
+\]  
+
+Substituting into the equation:  
+\[
+\dot{Q}_{\text{out}} = \dot{Q}_R + \dot{m} \left( h_{\text{water, saturated}}(70^\circ\text{C}) - h_{\text{water, saturated}}(100^\circ\text{C}) \right)  
+\]  
+
+From the water tables (Table A-2):  
+\[
+h_{\text{water, saturated}}(70^\circ\text{C}) = 292.98 \, \frac{\text{kJ}}{\text{kg}}, \quad h_{\text{water, saturated}}(100^\circ\text{C}) = 419.04 \, \frac{\text{kJ}}{\text{kg}}  
+\]  
+
+Substituting numerical values:  
+\[
+\dot{Q}_{\text{out}} = 100 \, \text{kW} + 0.3 \, \frac{\text{kg}}{\text{s}} \cdot \left( 292.98 \, \frac{\text{kJ}}{\text{kg}} - 419.04 \, \frac{\text{kJ}}{\text{kg}} \right)  
+\]  
+
+Simplifying:  
+\[
+\dot{Q}_{\text{out}} = 100 \, \text{kW} - 62.192 \, \text{kW}  
+\]  
+
+Final result:  
+\[
+\dot{Q}_{\text{out}} = 62.192 \, \text{kW}  
+\]

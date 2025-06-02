@@ -1,0 +1,83 @@
+TASK 1a  
+The energy balance equation for the reactor is written as:  
+\[
+\frac{dE}{dt} = \dot{m}(h_1 - h_2) + \dot{Q}_{\text{out}}
+\]  
+where \( h_1 \) and \( h_2 \) are the specific enthalpies at the inlet and outlet, respectively.  
+
+The heat flow removed by the coolant is calculated as:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}(h_1 - h_2)
+\]  
+Substituting values:  
+\[
+h_1 = T_{\text{in}} + h_{\text{sat}} = 70^\circ\text{C} + 292.49 \, \text{kJ/kg}
+\]  
+\[
+h_2 = T_{\text{out}} + h_{\text{sat}} = 100^\circ\text{C} + 277.01 \, \text{kJ/kg}
+\]  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \cdot (292.49 - 277.01) \, \text{kJ/kg}
+\]  
+\[
+\dot{Q}_{\text{out}} = 37.8 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant is calculated using:  
+\[
+T_{\text{KF}} = \frac{\dot{Q}_{\text{out}}}{\dot{m}_{\text{coolant}} \cdot c_p} + T_{\text{KF,in}}
+\]  
+Substituting values:  
+\[
+T_{\text{KF}} = \frac{37.8 \, \text{kW}}{0.55 \, \text{kg/s} \cdot 4.18 \, \text{kJ/kg·K}} + 288.15 \, \text{K}
+\]  
+\[
+T_{\text{KF}} = 295 \, \text{K}
+\]  
+
+TASK 1c  
+The entropy production due to heat transfer is given by:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} - \frac{\dot{Q}_{\text{out}}}{T_{\text{Reactor}}}
+\]  
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = \frac{37.8 \, \text{kW}}{295 \, \text{K}} - \frac{37.8 \, \text{kW}}{373 \, \text{K}}
+\]  
+\[
+\dot{S}_{\text{gen}} = 0.37 \, \text{kW/K}
+\]  
+
+TASK 1d  
+The energy balance for cooling from state 1 to state 2 is written as:  
+\[
+\Delta U = m_2 h_{\text{sat}} + Q
+\]  
+Rearranging to find \( \Delta m \):  
+\[
+\Delta m = \frac{m_2 h_{\text{sat}} - m_1 h_{\text{sat}} + Q}{h_{\text{in}}}
+\]  
+Substituting values:  
+\[
+m_1 = 5755 \, \text{kg}, \, m_2 = 5755 + \Delta m, \, h_{\text{sat}} = 292.95 \, \text{kJ/kg}, \, Q = 35 \, \text{MJ}
+\]  
+\[
+\Delta m = \frac{5755 \cdot 292.95 + 35 \cdot 10^3}{277.01}
+\]  
+\[
+\Delta m = 330 \, \text{kg}
+\]  
+
+TASK 1e  
+The entropy change of the reactor contents is calculated as:  
+\[
+\Delta S_{12} = \frac{\dot{Q}_{12}}{T_{\text{Reactor}}}
+\]  
+Substituting values:  
+\[
+\Delta S_{12} = \frac{35 \cdot 10^3}{373 \, \text{K}}
+\]  
+\[
+\Delta S_{12} = 77.2 \, \text{kJ/K}
+\]

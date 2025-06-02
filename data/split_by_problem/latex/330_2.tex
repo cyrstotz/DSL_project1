@@ -1,0 +1,156 @@
+
+``````latex
+
+
+\section*{Problem 2}
+\subsection*{a)}
+\[
+[k] \quad T
+\]
+
+\begin{description}
+    \item[Graph Description:] 
+    The graph is a plot with an upward-pointing arrow on the vertical axis and a rightward-pointing arrow on the horizontal axis. The vertical axis is labeled with $[k] \quad T$ and the horizontal axis is labeled with $[R2 \text{ by } k] \quad S$. There are three blue curves, each representing different pressure levels, labeled as $p_2 = p_3$, $p_5 = p_4$, and $p_{10}$. 
+
+    There are several points marked on the graph:
+    \begin{itemize}
+        \item Point 0 at the bottom left.
+        \item Point 1 slightly above and to the right of point 0.
+        \item Point 2 above point 1 on the first blue curve.
+        \item Point 3 above point 2 on the second blue curve.
+        \item Point 4 to the right of point 3 on the third blue curve.
+        \item Point 5 below point 4.
+        \item Point 6 below point 5 on the first blue curve.
+    \end{itemize}
+    
+    The points are connected by orange lines:
+    \begin{itemize}
+        \item A line from point 0 to point 2.
+        \item A line from point 2 to point 3.
+        \item A line from point 3 to point 4.
+        \item A line from point 4 to point 5.
+        \item A line from point 5 to point 6.
+    \end{itemize}
+    
+    There is a dashed vertical line from point 3 to point 4.5, and another dashed vertical line from point 4 to point 4.5.
+\end{description}
+
+\noindent
+Luft als ideales gas $\rightarrow$ kein Massenkraft Gebiet
+
+\subsection*{b)}
+\[
+5 \rightarrow 6 \text{ isentrope Zustandsänderung}
+\]
+\[
+h_e = \frac{w^2}{2} / \dot{m} = gAw
+\]
+\[
+k = 1.4
+\]
+\[
+\frac{T_6}{T_5} = \left( \frac{p_5}{p_6} \right)^{\frac{k-1}{k}}
+\]
+\[
+T_6 = T_5 \cdot \left( \frac{p_5}{p_6} \right)^{\frac{k-1}{k}} = 568.58 \, K
+\]
+
+\[
+p_6 = p_0 = 0.191 \, bar
+\]
+\[
+T_5 = 431.9 \, K
+\]
+\[
+p_5 = 0.5 \, bar
+\]
+
+``````latex
+
+\section*{2 (b) Energiebilanz SFP um Behälter}
+
+\[
+0 = \dot{m}_{\text{ges}} \left[ h_S - h_6 + \frac{w_S^2 - w_6^2}{2} \right] + 0
+\]
+
+\[
+0 = \dot{m}_{\text{ges}} \left[ c_p (T_5 - T_6) + \frac{w_S^2 - w_6^2}{2} \right]
+\]
+
+\[
+\left( \frac{w_6^2 - w_S^2}{2} \right) \dot{m}_{\text{ges}} = \dot{m}_{\text{ges}} \left[ c_p (T_5 - T_6) \right]
+\]
+
+\[
+w_6^2 = 2 \left( c_p (T_5 - T_6) \right) - w_S^2
+\]
+
+\[
+w_6 = \sqrt{2 \left( c_p (T_5 - T_6) - w_S^2 \right)}
+\]
+
+\section*{c) Energiebilanz SFP:}
+
+\[
+0 = \dot{m}_{\text{ges}} \Delta e_{x,\text{thr}}
+\]
+
+\[
+\Delta e_{x,\text{thr}} = \left[ h_7 - h_6 - T_0 (s_7 - s_6) + \frac{w_7^2 - w_6^2}{2} \right]
+\]
+
+\[
+h_7 - h_6 = c_p^w (T_7 - T_6)
+\]
+
+\[
+s_7 - s_6 = c_p \ln \left( \frac{T_7}{T_6} \right) - R \ln \left( \frac{p_7}{p_6} \right)
+\]
+
+``````latex
+
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+ & W & Q & Z & p & T & W &  \\ \hline
+0 & & & & 9797 \frac{da}{m^2} & -20^\circ C & &  \\ \hline
+1 & \textit{adiab.} & & & & & &  \\ \hline
+2 & \textit{m. adiab. rev.} & \textit{isotrop} & & & & &  \\ \hline
+3 & T_0 = 298 K & \textit{isobar} & & \frac{\dot{q}}{\dot{m}} = \frac{q}{m} = 1705 \frac{kJ}{kg} & & &  \\ \hline
+4 & \textit{adiab.} & \textit{nicht isotrop} & \textit{isobar} & & & &  \\ \hline
+5 & & & & 0.56 & 4319 & 220 \frac{m^3}{s} &  \\ \hline
+6 & \textit{isotrop} & & & & & &  \\ \hline
+\end{tabular}
+
+``````latex
+
+
+\section*{2 d) Energiebilanz: SFP:}
+
+\[
+\cancel{Q = \Delta e_{x, thr} + e_{x, Q} - e_{x, vel}}
+\]
+
+\[
+Q = \Delta e_{x, thr} + e_{x, Q} - e_{x, vel}
+\]
+
+\[
+e_{x, vel} = \Delta e_{x, thr} + e_{x, Q}
+\]
+
+\[
+\frac{n}{n} \left( \eta - \frac{T_0}{T} \right) Q
+\]
+
+\[
+\dot{=}\left( \eta - \frac{T_0}{T_B} \right) q_{B}
+\]
+
+\[
+e_{x, vel} = \Delta e_{x, thr} + \left( \eta - \frac{T_0}{T_B} \right) q_{B}
+\]
+
+``````latex
+
+

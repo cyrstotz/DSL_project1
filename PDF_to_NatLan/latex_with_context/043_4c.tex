@@ -1,0 +1,18 @@
+The vapor quality \( x_1 \) is calculated using the formula:  
+\[
+x_1 = \frac{s_1 - s_f}{s_g - s_f}
+\]  
+where \( T_1 = -10^\circ\text{C} \), \( s_1 = s_4 \), and \( s_4 = 0.3459 \, \text{kJ/kg·K} \) (given for 86 kPa and \( x = 0 \)).
+
+To determine \( s_f \) and \( s_g \) at \( T_1 = -10^\circ\text{C} \), interpolation is performed using Table A.10:  
+\[
+s_f = 0.2354 + \frac{0.2545 - 0.2354}{4} = 0.24495 \, \text{kJ/kg·K}
+\]  
+\[
+s_g = 0.8150 + \frac{0.8132 - 0.8150}{4} = 0.81441 \, \text{kJ/kg·K}
+\]  
+
+Substituting these values into the formula:  
+\[
+x_1 = \frac{0.3459 - 0.24495}{0.81441 - 0.24495} = 0.15086
+\]

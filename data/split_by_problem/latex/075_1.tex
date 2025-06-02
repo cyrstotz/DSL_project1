@@ -1,0 +1,185 @@
+
+``````latex
+
+
+\section*{Aufgabe 1: Reaktor}
+
+\subsection*{a) $\dot{Q}_{\text{aus}}$ ges.}
+
+\textbf{Stat. EP}
+
+\[
+0 = \dot{m} (h_e - h_a) + \dot{Q}_R + \dot{Q}_{\text{aus}}
+\]
+
+\[
+\dot{Q}_{\text{aus}} = \dot{m} (h_a - h_e) + \dot{Q}_R
+\]
+
+\textbf{(gestrichenes Symbol)}
+
+\[
+\dot{m} = \frac{0.5 \text{kg}}{\text{s}}
+\]
+
+\[
+h_a = h_f \text{ bei } 100^\circ \text{C} = 419.04 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_e = h_f \text{ bei } 70^\circ \text{C} = 292.68 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\dot{Q}_{\text{aus}} = 0.5 \frac{\text{kg}}{\text{s}} (419.04 - 292.68) + 1000 \text{kW}
+\]
+
+\[
+= 137.818 \text{kW}
+\]
+
+\subsection*{b)}
+
+\[
+\overline{T}_{\text{re}} = \frac{\int T dS}{S_a - S_e}
+\]
+
+\[
+T dS = \cancel{\int dQ}
+\]
+
+\textbf{(Cp = konst., p = konst.)}
+
+\[
+S_a - S_e = c_p \ln \left( \frac{T_2}{T_1} \right) - R \ln \left( \frac{p_2}{p_1} \right)
+\]
+
+\[
+\overline{T} = \frac{c_p (T_2 - T_1)}{c_p \ln \left( \frac{T_2}{T_1} \right)}
+\]
+
+\[
+\text{(weil cp = konst.)}
+\]
+
+\[
+\overline{T} = \frac{c_p (T_2 - T_1)}{c_p \ln \left( \frac{T_2}{T_1} \right)} = \frac{10 \text{K}}{\ln \left( \frac{293.15}{283.15} \right)} = 243.12 \text{K}
+\]
+
+\[
+= 19.97^\circ \text{C}
+\]
+
+\subsection*{c) $\dot{S}_{\text{erz}}$}
+
+\[
+0 = \dot{m} (s_c - s_a) + \dot{Q}_R + \dot{Q}_{\text{aus}}
+\]
+
+\[
+\dot{S}_{\text{erz}} = \dot{m} (s_a - s_e) - \frac{\dot{Q}_{\text{aus}}}{T_w}
+\]
+
+\[
+T_w \approx 850 = 385.15 \text{K}
+\]
+
+\[
+\dot{S}_{\text{erz}} = \frac{\dot{Q}_{\text{aus}}}{T_w}
+\]
+
+\[
+s_a = 0.54 \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+
+\[
+s_e = 0.5154 \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+
+\[
+\dot{S}_{\text{erz}} = 0.278 \frac{\text{kJ}}{\text{s} \cdot \text{K}}
+\]
+
+``````latex
+
+
+\section*{d) gas: \boxed{\text{AM}_{12}}}
+
+\begin{align*}
+&Z_1 \\
+&\quad T_1 = 100^\circ C \\
+&\quad x_1 = 0.005 \\
+&\quad \dot{m}_{\text{gas}} = 5795 \, \text{kg} \\
+&Z_2: \quad T_2 = 70^\circ C \\
+&\quad \text{AB Men:} \quad T_{\text{gn}} = 20^\circ C \\
+&\quad Q_{R,12} = Q_{\text{aus}} = 35000 \, \text{kJ} \\
+&Z_2^{1-m_2} \quad x = 0.100 \, \% \, ! \\
+&\text{halbieren (müsse ein)} \\
+&\quad M_2 U_2 - M_1 U_1 = \Delta m_{\text{ein}} h_{\text{ein}} + Q_{R,12} \\
+&\quad \Delta m_{\text{ein}} = \frac{M_2 U_2 - M_1 U_1 - Q_{R,12}}{h_{\text{ein}}} \\
+&\quad h_{\text{ein}} = 53.96 \, \frac{\text{kJ}}{\text{kg}} \\
+&\quad M_2 = (M_1 + \Delta m) \\
+&\quad M_1 = 5795 \, \text{kg} \\
+&\quad \text{at} \quad U_1 = 84.72 \, \frac{\text{kJ}}{\text{kg-m}} \\
+&\quad = 420.377 \, \frac{\text{kJ}}{\text{kg}} \\
+&\quad U_2 = 292.955 \, \frac{\text{kJ}}{\text{kg}} \\
+&\quad Q_{R,12} = 35000 \, \text{kJ} \\
+&\quad \Delta m = \frac{-M_1 U_2 + M_1 U_1 + Q_{R,12}}{U_2 - h_{\text{ein}}} \\
+&\quad \text{Calculate with values on left and formula above} \\
+&\quad \Delta m = 3642.29 \, \text{kg}
+\end{align*}
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+\subsection*{e)}
+
+\[
+\Delta S_{12}
+\]
+
+\[
+\Delta S = m_2 s_2 - m_1 s_1
+\]
+
+\[
+m_2 = \Delta m_{12} + m_1
+\]
+
+\[
+= 3600 \, \text{kg} + 5755 \, \text{kg}
+\]
+
+\[
+= 9355 \, \text{kg}
+\]
+
+\[
+s_2 = 0.9544 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+
+\[
+@ 100^\circ C \quad s_f = s_f' + x (s_g - s_f')
+\]
+
+\[
+= 1.8069 + 0.005 (7.3549 - 1.8069)
+\]
+
+\[
+= 1.33714 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+
+\[
+\Delta s = 9355 \, \text{kg} \left( 0.9544 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}} \right) - 5755 \, \text{kg} \left( 1.33714 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}} \right)
+\]
+
+\[
+= 1237.849 \, \frac{\text{kJ}}{\text{K}}
+\]
+
+``````latex
+
+

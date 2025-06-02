@@ -1,0 +1,29 @@
+The heat flow \( \dot{Q}_{\text{out}} \) is the difference between the reaction heat \( \dot{Q}_R = 100 \, \text{kW} \) and the heat flow leaving the reactor through the outlet stream.  
+
+The energy balance equation is written as:  
+\[
+\frac{dE}{dt} = \dot{m} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R + \dot{W}
+\]  
+where \( \dot{W} \) is neglected.  
+
+The heat flow leaving the reactor is calculated as:  
+\[
+\dot{Q}_W = \dot{m} (h_{\text{out}} - h_{\text{in}})
+\]  
+
+From the saturated liquid water tables, the enthalpy values are:  
+\[
+h_{\text{in}} = 252.50 \, \text{kJ/kg}, \quad h_{\text{out}} = 417.04 \, \text{kJ/kg}
+\]  
+
+The heat flow leaving the reactor is:  
+\[
+\dot{Q}_W = 0.3 \, \text{kg/s} \cdot (417.04 - 252.50) \, \text{kJ/kg} = 37.878 \, \text{kW}
+\]  
+
+The heat flow removed by the coolant is:  
+\[
+\dot{Q}_{\text{out}} = \dot{Q}_R - \dot{Q}_W = 100 \, \text{kW} - 37.878 \, \text{kW} = 62.122 \, \text{kW}
+\]  
+
+---

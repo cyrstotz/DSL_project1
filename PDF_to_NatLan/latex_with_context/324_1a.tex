@@ -1,0 +1,44 @@
+The reactor operates with the following parameters:  
+- Inlet mass flow rate: \( \dot{m}_{\text{in}} = 0.3 \, \text{kg/s} \)  
+- Inlet temperature: \( T_{\text{in}} = 70^\circ\text{C} \), saturated liquid  
+- Outlet temperature: \( T_{\text{out}} = 100^\circ\text{C} \), saturated liquid  
+- Reactor mass: \( m_{\text{total}} = 5755 \, \text{kg} \)  
+- Steam quality: \( x_0 = 0.005 \)  
+- Reactor temperature: \( T = 100^\circ\text{C} \)  
+
+The fluid is described as saturated liquid with \( x = 1 \).  
+
+### Subtask a)  
+The heat flow \( \dot{Q}_{\text{out}} \) is calculated using the steady-state energy balance for the reactor:  
+\[
+0 = \dot{m}_{\text{in}} \left( h_{\text{in}} - h_{\text{out}} \right) + \dot{Q}_{\text{out}}
+\]  
+Rearranging:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} \left( h_{\text{out}} - h_{\text{in}} \right)
+\]  
+
+Values used:  
+- \( h_{\text{in}} = h_f(70^\circ\text{C}) \)  
+- \( h_{\text{out}} = h_g(100^\circ\text{C}) \)  
+
+Substituting:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \left( 2676.1 - 2626.8 \right)
+\]  
+\[
+\dot{Q}_{\text{out}} = 14.55 \, \text{kW}
+\]  
+
+### Subtask b)  
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is calculated using:  
+\[
+T = \frac{\int T \, dS}{S_e - S_i}
+\]  
+
+Simplified expression:  
+\[
+T = \frac{q}{s_e - s_i}
+\]  
+
+No further numerical values are provided for this calculation.

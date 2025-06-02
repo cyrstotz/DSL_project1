@@ -1,0 +1,75 @@
+TASK 2c  
+The problem involves calculating the mass-specific increase in flow exergy, \( \Delta ex_{\text{flow}} \), using the given parameters.  
+
+The following equations and calculations are presented:  
+
+### Flow Exergy Equation  
+\[
+ex_{\text{flow}} = h - h_0 - T_0 (s - s_0) + ke + pe
+\]  
+Where:  
+- \( h \) is the specific enthalpy,  
+- \( s \) is the specific entropy,  
+- \( ke \) is the kinetic energy term,  
+- \( pe \) is the potential energy term (neglected here).  
+
+### Kinetic Energy Term  
+\[
+ke = \frac{1}{2} v^2 = \frac{1}{2} \cdot 510^2 = 110,050 \, \frac{\text{J}}{\text{kg}} = 110.05 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+### Enthalpy Difference  
+\[
+h - h_0 = \int_{T_0}^{T} c_p(T) \, dT
+\]  
+Using \( c_p = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \):  
+\[
+h - h_0 = 1.006 \cdot (340 \, \text{K} - 243.15 \, \text{K}) = 1.006 \cdot 96.85 = 97.43 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+### Entropy Difference  
+\[
+s - s_0 = c_p \ln \left( \frac{T}{T_0} \right) - R \ln \left( \frac{p}{p_0} \right)
+\]  
+Using \( c_p = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \), \( R = 8.314 \, \frac{\text{kJ}}{\text{kmol·K}} \), and \( T_0 = 243.15 \, \text{K} \):  
+\[
+s - s_0 = 1.006 \ln \left( \frac{340}{243.15} \right) - 8.314 \ln \left( \frac{p}{p_0} \right)
+\]  
+\[
+s - s_0 = 0.3332 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+### Flow Exergy Calculation  
+\[
+ex_{\text{flow}} = h - h_0 - T_0 (s - s_0) + ke
+\]  
+Substituting values:  
+\[
+ex_{\text{flow}} = 97.43 - 243.15 \cdot 0.3332 + 110.05
+\]  
+\[
+ex_{\text{flow}} = 125.06 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+---
+
+TASK 2d  
+The problem involves calculating the exergy destruction in the engine.  
+
+### Exergy Destruction Equation  
+\[
+Ex_{\text{dest}} = \dot{m} \cdot ex_{\text{flow}} + \left( 1 - \frac{T_0}{T} \right) Q - \Delta Ex
+\]  
+
+The student outlines the relationship between exergy destruction and changes in flow exergy, heat transfer, and temperature ratios.  
+
+### Final Expression  
+\[
+\Delta Ex = \Delta Ex_{\text{flow}} + \Delta Ex_{ke}
+\]  
+
+No numerical values are calculated for this part.  
+
+---
+
+No diagrams or figures are present on the page.

@@ -1,0 +1,44 @@
+Using the first law for a semi-open system:  
+\[
+E_2 - E_1 = \Delta m_{12} \cdot h_{12} + Q_{\text{out}}
+\]  
+The enthalpy value is obtained from water tables:  
+\[
+h_{12}(20^\circ\text{C}, x=0) = 83.96 \, \frac{\text{kJ}}{\text{kg}} \quad \text{from Table A-2}
+\]
+
+The energy balance equation is written as:  
+\[
+E_2 - E_1 = (m_{\text{gas}} + \Delta m) u_2 - m_{\text{gas}} u_1
+\]  
+
+The specific internal energy at \( T = 100^\circ\text{C} \) and steam quality \( x = 0.005 \) is calculated using:  
+\[
+u_1(100^\circ\text{C}, x = 0.005) = u_f + x(u_g - u_f) = 929.378 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-2)}
+\]  
+
+The specific internal energy at \( T = 70^\circ\text{C} \) and \( x = 0 \) is:  
+\[
+u_2(70^\circ\text{C}, x = 0) = 292.95 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-2)}
+\]  
+
+Using the energy balance:  
+\[
+(m_{\text{gas}} + \Delta m) u_2 - m_{\text{gas}} u_1 = \Delta m h_2 + Q_{\text{out}}
+\]  
+
+Rearranging for \( \Delta m \):  
+\[
+\Delta m (u_2 - h_2) = Q_{\text{out}} + m_{\text{gas}} u_2 - m_{\text{gas}} u_1
+\]  
+\[
+\Delta m = \frac{Q_{\text{out}} + m_{\text{gas}} (u_1 - u_2)}{u_2 - h_2}
+\]  
+
+Substituting values:  
+\[
+\Delta m = \frac{-35 \, \text{MJ} + 5755 \, \text{kg} (929.378 - 292.95)}{292.95 - 83.96}
+\]  
+\[
+\Delta m = 358.932 \, \text{kg}
+\]

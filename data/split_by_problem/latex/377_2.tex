@@ -1,0 +1,105 @@
+
+``````latex
+
+
+\section*{Problem 2}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a Temperature-Entropy (T-s) diagram. The x-axis is labeled $s \left[ \frac{kJ}{kgK} \right]$ and the y-axis is labeled $T \left[ K \right]$. There are six points labeled 0, 1, 2, 3, 4, and 5. The points are connected by different processes:
+    \begin{itemize}
+        \item Point 0 to Point 1: Isobaric process labeled $p = \text{const}$.
+        \item Point 1 to Point 2: Isentropic process labeled $s = \text{const}$.
+        \item Point 2 to Point 3: Isobaric process labeled $p = \text{const}$.
+        \item Point 3 to Point 4: Isentropic process labeled $s = \text{const}$.
+        \item Point 4 to Point 5: Isobaric process labeled $p = \text{const}$.
+        \item Point 5 to Point 6: Isentropic process labeled $s = \text{const}$.
+    \end{itemize}
+    There is also a small sketch in the bottom left corner showing a similar T-s diagram with a cycle labeled "Kreisprozess".
+\end{description}
+
+\subsection*{b)}
+
+\begin{align*}
+    &W_6, T_6 \quad \text{1HS \text{Ü}nganze Turbine} \\
+    &\text{stat} \quad \Theta = \text{r\text{ü}ges} \left( h_0 - h_6 + \frac{\omega_0^2 - \omega_6^2}{2} \right) + \dot{Q} - \dot{W} \\
+    &0 = h_0 - h_6 + \frac{\omega_0^2 - \omega_6^2}{2} \\
+    &- \frac{\omega_6^2 + \omega_6^2}{2} = h_6 - h_6 \quad \Rightarrow \quad 2(h_0 - h_6) = -\omega_6^2 + \omega_6^2 \\
+    &W_6 = \sqrt{2(h_0 - h_6) + \omega_6^2} \\
+    &= \sqrt{2c_p(T_0 - T_6) + \omega_6^2} \\
+    &5 \rightarrow 6 \quad \text{adj. rev.} \quad s_{rev} - s_{6s} = 0 \\
+    &\rightarrow \text{adj. rev. isentrop.} \quad k = 1.4 \\
+    &\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{k-1}{k}} \\
+    &T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{k-1}{k}} \\
+    &T_6 = 328,094 K \\
+    &W_6 = \sqrt{2c_p \left( T_0 \frac{T_6}{T_0} \right) + \omega_6^2} = \sqrt{2 \cdot 1,006 \frac{kJ}{kgK} \left( 30^2 - 273.15 + 328.094 \right) + 200 \frac{m^2}{s^2}} \\
+    &\boxed{W_6 = 453,202 \frac{m}{s}}
+\end{align*}
+
+``````latex
+
+
+\section*{c)}
+
+\[
+\Delta \dot{E}_{x,sis} = \Delta \dot{E}_{x,siro}
+\]
+
+\[
+\Delta \dot{E}_{x,sir} = \dot{m}_{gs} \left( h_6 - h_0 - T_0 (s_6 - s_0) + \frac{\omega_6^2}{2} \right) - \dot{m}_{gs} \left( h_0 - h_0 - T_0 (s_5 - s_0) + \frac{\omega_5^2}{2} \right)
+\]
+
+\[
+= \dot{m}_{gs} \left( h_6 - h_0 - T_0 (s_6 - s_0) + \frac{\omega_6^2}{2} - \frac{\omega_5^2}{2} \right) \quad \text{Stoffmeckell:}
+\]
+
+\[
+h_6 - h_0 = c_p (T_6 - T_0) \quad s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) \quad \ln(1) = 0
+\]
+
+\[
+\Delta \dot{e}_{x,sir} = \frac{\dot{E}_{x,sir}}{\dot{m}_{gs}} = c_p (T_6 - T_0) - T_0 \left( c_p \ln \left( \frac{T_6}{T_0} \right) - \frac{\omega_6^2 - \omega_5^2}{2} \right)
+\]
+
+\[
+= 1,006 \frac{\text{kJ}}{\text{kgK}} (T_6 - T_0) - 1,006 \cdot 10^3 \frac{\text{J}}{\text{kg}} T_0 \ln \left( \frac{T_6}{T_0} \right) - \frac{\omega_6^2 - \omega_5^2}{2}
+\]
+
+\[
+= 37,551,579 \frac{\text{J}}{\text{kg}} - 37,551 \frac{\text{kJ}}{\text{kg}} = 37,551 \frac{\text{kJ}}{\text{kg}} = \Delta \dot{e}_{x,sir}
+\]
+
+\section*{d)}
+
+\[
+Q = \cancel{\Delta h + \Delta R}
+\]
+
+\[
+Q = \cancel{\Delta e_{x,sir} + \left( 1 - \frac{T_0}{T_i} \right) \dot{Q} - \dot{W}_e}
+\]
+
+\[
+Q = \sum \dot{E}_{x,sir} + \sum \dot{E}_{x,sg} = \sum \dot{W} - p_s \dot{v}_{rel} = e_{x,vel} \quad \text{//:m}
+\]
+
+\[
+Q = \Delta e_{x,sis} + \left( 1 - \frac{T_0}{T_i} \right) \eta_i - \dot{W}_e - e_{x,vel}
+\]
+
+\[
+e_{x,vel} = \Delta e_{x,sis} + \left( 1 - \frac{T_0}{T_B} \right) \eta_B
+\]
+
+\[
+e_{x,vel} = 37,551 \frac{\text{kJ}}{\text{kg}} + \left( 1 - \frac{T_0}{T_B} \right) \eta_B = \left| T_0 = 273,15 \quad T_B = 1288 K \quad \eta_B = 1195 \frac{\text{kJ}}{\text{kg}} \right|
+\]
+
+\[
+e_{x,vel} = 1087,17 \frac{\text{kJ}}{\text{kg}}
+\]
+
+``````latex
+
+

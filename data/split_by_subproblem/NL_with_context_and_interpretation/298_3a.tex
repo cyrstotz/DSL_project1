@@ -1,0 +1,44 @@
+\( p_{g,1} \), Mass \( m_g \)  
+
+Diagram: A rectangular cylinder is shown with arrows indicating forces. The forces acting are:  
+- \( m_K \cdot g + m_{EW} \cdot g \) downward  
+- \( p_{amb} \cdot A \) upward  
+
+Equations:  
+1. \( p_{g,1} = p_{amb} + \frac{g \cdot (m_K + m_{EW})}{\pi \cdot \frac{D^2}{4}} \)  
+2. \( p_{g,1} = \frac{g \cdot (m_K + m_{EW})}{\pi \cdot \frac{D^2}{4}} + p_{amb} \)  
+
+\( p_A \cdot V_A = m_A \cdot R \cdot T_A \)  
+\( \Rightarrow m_g = \frac{p_{g,1} \cdot V_{g,1}}{R_g \cdot T_{g,1}} \)  
+
+Constants:  
+\( R = \frac{\bar{R}}{M_g} = \frac{8.314 \, \text{kJ/kmol·K}}{50 \, \text{kg/kmol}} = 0.166 \, \text{kJ/kg·K} \)  
+
+---
+
+\( x_{EW,2} \)  
+Given: \( T_{g,2} = 0.005 \, \text{°C} = T_{EW,2} \)  
+
+\( x_{EW,1} = \frac{m_{EI}}{m_{EW}} = 0.6 \)  
+
+Energy balance over the entire system or isolated system:  
+\( O = \Sigma m (h_i) + Q - W \)  
+
+\( O = \Delta E = \Delta U \)  
+
+\( O = m_{EW} h_1 - m_{EW} h_2 + m_g \left( x_2 - x_1 \right) \cdot C_v \left( T_{2,g} - T_{1,g} \right) \)  
+
+Ideal gas model:  
+\( C_p = R + C_v = R_g + C_v = 0.466 + 0.633 = 0.755 \, \frac{kJ}{kg \cdot K} \)  
+
+\( h_1 = U_{FL} + x_1 \left( U_{FL,EIS} - U_{FL} \right) \)  
+\( h_2 = U_{FL} + x_2 \left( U_{FL,EIS} - U_{FL} \right) \)  
+
+\( O = m_{EW} \left( U_{FL} + x_1 \left( U_{FL,EIS} - U_{FL} \right) \right) - m_{EW} \left( U_{FL} + x_2 \left( U_{FL,EIS} - U_{FL} \right) \right) + m_g C_v \left( T_{2,g} - T_{1,g} \right) \)  
+
+\( O = m_{EW} \left( U_{EIS,FL} - U_{FL} \right) \cdot x_1 - m_{EW} \left( U_{EIS,FL} - U_{FL} \right) \cdot x_2 + m_g C_v \left( T_{2,g} - T_{1,g} \right) \)  
+
+\( x_2 = x_1 + \frac{m_g C_v \left( T_{2,g} - T_{1,g} \right)}{m_{EW} \left( U_{EIS,FL} - U_{FL} \right)} \)  
+
+\( U_{EIS,FL} - U_{FL} \left( 0.003 \right) = -337.4 \, \frac{kJ}{kg} \)  
+\( U_{FL} - U_{FL} \left( 0.001 \right) = -0.007 \, \frac{kJ}{kg} \)

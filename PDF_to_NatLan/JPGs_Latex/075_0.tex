@@ -1,0 +1,58 @@
+TASK 1a  
+The heat flow \( \dot{Q}_{\text{out}} \) removed by the coolant is calculated using the steady-state energy balance:  
+\[
+0 = \dot{m} (h_e - h_a) + \dot{Q}_R + \dot{Q}_{\text{out}}
+\]  
+Rearranging for \( \dot{Q}_{\text{out}} \):  
+\[
+\dot{Q}_{\text{out}} = \dot{m} (h_a - h_e) + \dot{Q}_R
+\]  
+From the water tables:  
+\[
+h_a = h_f \, \text{at} \, 100^\circ\text{C} = 419.04 \, \text{kJ/kg}, \quad h_e = h_f \, \text{at} \, 70^\circ\text{C} = 292.98 \, \text{kJ/kg}
+\]  
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \cdot (419.04 - 292.98) + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = 137.818 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is calculated using entropy changes:  
+\[
+T_{\text{KF}} = \frac{\int T dS}{S_a - S_e}
+\]  
+For constant \( c_p \) and pressure:  
+\[
+S_a - S_e = c_p \ln \left( \frac{T_2}{T_1} \right) - R \ln \left( \frac{p_2}{p_1} \right)
+\]  
+With \( T_2 = 298.15 \, \text{K} \), \( T_1 = 288.15 \, \text{K} \), and \( p \) constant:  
+\[
+T_{\text{KF}} = \frac{c_p (T_2 - T_1)}{c_p \ln \left( \frac{T_2}{T_1} \right)} = \frac{10 \, \text{K}}{\ln \left( \frac{298.15}{288.15} \right)}
+\]  
+\[
+T_{\text{KF}} = 243.12 \, \text{K} = 19.97^\circ\text{C}
+\]  
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) is calculated using the entropy balance:  
+\[
+0 = \dot{m} (s_c - s_a) + \frac{\dot{Q}_R}{T_{\text{Reactor}}} + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} + \dot{S}_{\text{gen}}
+\]  
+Rearranging for \( \dot{S}_{\text{gen}} \):  
+\[
+\dot{S}_{\text{gen}} = \dot{m} (s_a - s_e) - \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+From the water tables:  
+\[
+s_a = 0.509 \, \text{kJ/kg·K}, \quad s_e = 0.01564 \, \text{kJ/kg·K}
+\]  
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = 0.3 \, \text{kg/s} \cdot (0.509 - 0.01564) - \frac{137.818 \, \text{kW}}{243.12 \, \text{K}}
+\]  
+\[
+\dot{S}_{\text{gen}} = 0.278 \, \text{kW/K}
+\]

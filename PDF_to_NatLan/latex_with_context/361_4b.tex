@@ -1,0 +1,27 @@
+The initial temperature is given as \( T_i = -70^\circ\text{C} \).  
+The evaporator temperature is \( T_{\text{Verdampfer}} = -16^\circ\text{C} \).
+
+The energy balance equation is written as:  
+\[
+0 = \dot{m} \left[ h_e - h_a \right] - \dot{W}_K
+\]
+
+The enthalpy at the evaporator temperature (\( h_e \)) is calculated as:  
+\[
+h_e = h_{\text{g}}(-16^\circ\text{C}) = 237.97 - 236.04 = 1.93 \, \text{kJ/kg}
+\]
+
+Using Table A-12, the enthalpy at state \( a \) (\( h_a \)) is calculated as:  
+\[
+h_a = h(8 \, \text{bar}, s_{\text{a,sat}}) = \frac{275.96 - 264.45}{0.9288 - 0.8066} \cdot (0.9288 - 0.8322) + 264.45 = 274.27 \, \text{kJ/kg}
+\]
+
+The entropy at state \( e \) (\( s_e \)) is given as:  
+\[
+s_e = s_{\text{g}}(-16^\circ\text{C}) = -7.6 + 4.88 + 0.8322 = 0.9288
+\]
+
+Finally, the mass flow rate (\( \dot{m} \)) is calculated as:  
+\[
+\dot{m} = \frac{\dot{W}_K}{h_e - h_a} = \frac{5.34 \cdot 10^4}{274.27 - 1.93} = 0.195 \, \text{kg/s}
+\]

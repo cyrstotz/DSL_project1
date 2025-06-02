@@ -1,0 +1,46 @@
+TASK 2a  
+The diagram is a qualitative representation of the jet engine process in a \( T \)-\( s \) diagram. It includes labeled isobars and states:  
+- State 0 represents ambient conditions (\( p_0 \)).  
+- State 1 is the inlet air condition.  
+- State 2 is after the compression process.  
+- State 3 is the combustion chamber.  
+- State 4 is the turbine outlet.  
+- State 5 is the mixing chamber.  
+- State 6 is the nozzle exit.  
+
+The isobars are clearly marked, showing the pressure levels \( p_0 \), \( p_2 \), and \( p_5 \). The entropy axis (\( s \)) and enthalpy axis (\( h \)) are labeled, with units \( \text{kJ/kg·K} \).  
+
+TASK 2b  
+The nozzle is modeled as adiabatic and reversible:  
+\[
+s_5 = s_6 \quad \text{(isentropic process)}  
+\]  
+
+The temperature \( T_6 \) is calculated using the isentropic relation:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}  
+\]  
+Substituting values:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}} = 328.075 \, \text{K}  
+\]  
+
+Using the energy balance at the nozzle:  
+\[
+\dot{Q} = \dot{m}_K \left( h_5 - h_6 + \frac{w_5^2}{2} - \frac{w_6^2}{2} \right)  
+\]  
+
+Rearranging for \( w_6^2 \):  
+\[
+\frac{w_6^2}{2} = h_5 - h_6 + \frac{w_5^2}{2}  
+\]  
+
+The enthalpy difference is calculated as:  
+\[
+h_5 - h_6 = c_p \cdot (T_5 - T_6) = 103.888 \, \text{kJ/kg}  
+\]  
+
+Finally, the outlet velocity \( w_6 \) is determined:  
+\[
+w_6 = \sqrt{2 \left( h_5 - h_6 + \frac{w_5^2}{2} \right)} = 506.14 \, \text{m/s}  
+\]

@@ -1,0 +1,82 @@
+
+``````latex
+
+
+\section*{2)}
+
+\subsection*{a)}
+
+\begin{itemize}
+    \item The graph is a Temperature-Entropy (T-S) diagram.
+    \item The y-axis is labeled as $T \, [K]$.
+    \item The x-axis is labeled as $S \, [\frac{kJ}{kg \cdot K}]$.
+    \item The graph starts at point $O$ at $243.15 \, K$ on the y-axis.
+    \item From point $O$, a vertical line goes up to point $1$.
+    \item From point $1$, a line goes to the right and slightly up to point $2$.
+    \item From point $2$, a line goes up to point $3$.
+    \item From point $3$, a line goes down to point $4$ labeled as "adiabate".
+    \item From point $4$, a line goes down to point $5$ labeled as "Mischung isentrope".
+    \item From point $5$, a line goes down to point $6$.
+    \item From point $6$, a line goes back to point $O$ labeled as "isotherm".
+    \item There is a dashed line from point $O$ to point $6$ labeled as $P_0/P_6$.
+\end{itemize}
+
+\subsection*{b)}
+
+\begin{align*}
+    T_5 &= 431.9 \, K \\
+    p_5 &= 0.1 \, bar \\
+    v_5 &= 220 \, \frac{m^3}{kg} \\
+    \text{ideal trop} \quad 5-6 \quad : \quad n = k = 1.4 \\
+    \frac{T_6}{T_5} &= \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} \\
+    \Rightarrow T_6 &= T_5 \left( \frac{p_0}{p_5} \right)^{\frac{0.4}{1.4}} \\
+    \Rightarrow T_6 &= 431.9 \, K \left( \frac{0.194 \, bar}{0.1 \, bar} \right)^{\frac{0.4}{1.4}} \\
+    &\Rightarrow 328.075 \, K
+\end{align*}
+
+\begin{align*}
+    0 &= \dot{m}_{12} (h_5 - h_6) + \frac{w_5^2 - w_6^2}{2} + \dot{Q} - \dot{W}_{tn} \\
+    h_6 - h_5 &= \frac{w_5^2 - w_6^2}{2} \\
+    c_p (T_0 - T_5) &= \frac{w_5^2 - w_6^2}{2} \\
+    &\Rightarrow w_0 = 507.24 \, \frac{m^3}{s}
+\end{align*}
+
+\begin{itemize}
+    \item with $c_p = 1.006 \, \frac{kJ}{kg \cdot K}$
+    \item $T_6 = 328.075 \, K$
+    \item $T_5 = 431.9 \, K$
+    \item $w_5 = 220 \, \frac{m^3}{s}$
+\end{itemize}
+
+``````latex
+
+
+2c) 
+\begin{align*}
+m_{gz} \cdot \Delta ex_{tot} &= m_{gz} \left( h_6 - h_0 - T_0 \left( s_6 - s_0 \right) + \frac{w_6^2 - w_0^2}{2} \right) \\
+&= m_{gz} \left( c_p^0 \left( T_6 - T_0 \right) - T_0 \left( c_p^0 \left( \ln \left( \frac{T_6}{T_0} \right) \right) + \frac{w_6^2 - w_0^2}{2} \right) \right) \\
+&= m_{gz} \left( 1006 \frac{J}{kgK} \left( 320,87 - 243,15 \right) - 243,15 K \left( 1006 \frac{J}{kgK} \left( \ln \left( \frac{320,87}{243,15} \right) \right) + \frac{50,7 \frac{m^2}{s^2} - 200 \frac{m^2}{s^2}}{2} \right) \right) \\
+&= m_{gz} \left( 120,73 \frac{w_0^2}{kg} \right) \\
+&\rightarrow \Delta ex_{tot} = 120,73 \frac{w_0^2}{kg}
+\end{align*}
+
+2d) 
+\begin{align*}
+Q &= \Delta ex_{tot} + \Delta ex_Q + \text{übr} \cdot ex_{verl} \\
+Q &= \Delta ex_{tot} + \Delta ex_Q - \text{übr} \cdot ex_{verl} \\
+&\text{alleison Turbine zu Verdichtet} \\
+&- ex_{verl}
+\end{align*}
+
+\begin{align*}
+\Delta ex_Q &= \left( 1 - \frac{T_2}{T_0} \right) Q \\
+Q &= \left( 1 - \frac{T_2}{T_0} \right) \left( 1,195 \frac{w_0^2}{kg} \right)
+\end{align*}
+
+\begin{align*}
+\Delta ex_{verl} &= \Delta ex_{tot} + \Delta ex_Q
+\end{align*}
+
+``````latex
+
+

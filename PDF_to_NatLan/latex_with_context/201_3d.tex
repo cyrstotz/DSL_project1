@@ -1,0 +1,72 @@
+The heat transferred between states 1 and 2 is given as \( Q_{12} = 1.5 \, \text{MJ} \).  
+
+The goal is to determine the final ice fraction \( x_{\text{ice},2} \).  
+
+The temperature at state 2 is equal to the temperature at state 1:  
+\[
+T_{\text{EW},2} = T_{\text{EW},1}
+\]  
+
+The mass of the ice-water mixture remains constant:  
+\[
+m_{\text{EW},1} = m_{\text{EW},2}
+\]  
+
+The energy balance for the heat transfer is expressed as:  
+\[
+Q_{12} = m_2 \cdot u_2 - m_1 \cdot u_1
+\]  
+
+The specific internal energy at state 1 is calculated using:  
+\[
+u_1 = u_f + x_{\text{ice},1} \cdot (u_{\text{ice}} - u_f)
+\]  
+where \( u_f \) is the specific internal energy of liquid water, and \( u_{\text{ice}} \) is the specific internal energy of ice.  
+
+At \( 0^\circ\text{C} \) and pressure \( p_{\text{EW},1} = p_{\text{amb}} \), the specific values are:  
+\[
+u_f = -0.045 \, \frac{\text{kJ}}{\text{kg}}, \quad u_{\text{ice}} = -333.458 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Substituting these values:  
+\[
+u_1 = -200.0 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The heat transfer equation is rearranged to solve for \( u_2 \):  
+\[
+Q_{12} = m_{\text{EW},1} \cdot (u_2 - u_1)
+\]  
+\[
+u_2 = \frac{Q_{12}}{m_{\text{EW},1}} + u_1
+\]  
+
+Substituting the given values:  
+\[
+u_2 = \frac{1.5 \, \text{MJ}}{0.1 \, \text{kg}} + (-200.0 \, \frac{\text{kJ}}{\text{kg}})
+\]  
+\[
+u_2 = -785.0 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The specific internal energy at state 2 is expressed as:  
+\[
+u_2 = u_f + x_{\text{ice},2} \cdot (u_{\text{ice}} - u_f)
+\]  
+
+Rearranging to solve for \( x_{\text{ice},2} \):  
+\[
+x_{\text{ice},2} = \frac{u_2 - u_f}{u_{\text{ice}} - u_f}
+\]  
+
+Substituting the values:  
+\[
+x_{\text{ice},2} = \frac{-785.0 - (-0.045)}{-333.458 - (-0.045)}
+\]  
+\[
+x_{\text{ice},2} = 0.555
+\]  
+
+The final ice fraction is \( x_{\text{ice},2} = 0.555 \).  
+
+This calculation assumes equal temperature and pressure conditions at state 2.

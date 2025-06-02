@@ -1,0 +1,78 @@
+TASK 1a  
+**Energy Balance**  
+The energy balance is written assuming \( \dot{W} = 0 \):  
+\[
+0 = -\dot{Q}_{\text{AUS}} + \dot{Q}_R + \dot{m}_{\text{EIN}} \left( h_{\text{EIN}} - h_{\text{AUS}} \right)
+\]  
+Rearranging:  
+\[
+\dot{Q}_{\text{AUS}} = \dot{m}_{\text{EIN}} \left( h_{\text{EIN}} - h_{\text{AUS}} \right) + \dot{Q}_R
+\]  
+Substituting values:  
+\[
+h_{\text{EIN}} = h_f(70^\circ\text{C}) = 292.98 \, \text{kJ/kg}
+\]  
+\[
+h_{\text{AUS}} = h_f(100^\circ\text{C}) = 419.04 \, \text{kJ/kg}
+\]  
+\[
+\dot{Q}_{\text{AUS}} = 62.182 \, \text{kW}
+\]  
+
+TASK 1b  
+**Thermodynamic Mean Temperature of Coolant**  
+The mean temperature of the coolant is calculated as:  
+\[
+T_{\text{KF}} = 295 \, \text{K}
+\]  
+
+TASK 1c  
+**Entropy Balance in Heat Exchanger Wall**  
+The entropy production rate is given by:  
+\[
+\dot{S}_{\text{ERZ}} = \frac{\dot{Q}_{\text{AUS}}}{T_{\text{KF}}} \approx \frac{62.182 \, \text{kW}}{295 \, \text{K}} \approx 210.79 \, \text{W/K}
+\]  
+
+A simple diagram is drawn showing heat flow \( \dot{Q}_{\text{AUS}} \) leaving the reactor and entering the cooling jacket.  
+
+TASK 1d  
+**Energy Balance for Cooling Process**  
+The energy balance for the cooling process is written as:  
+\[
+Q_{R,12} - Q_{\text{AUS,12}} = 0
+\]  
+The change in energy is expressed as:  
+\[
+\Delta E = \left( m_{\text{GES1}} + \Delta m_{12} \right) u_2 - m_{\text{GES1}} u_1 = \Delta m_{12} h_{\text{EIN}}
+\]  
+Substituting values:  
+\[
+u_1 = u_f(100^\circ\text{C}) + x_D \left( u_g(100^\circ\text{C}) - u_f(100^\circ\text{C}) \right) \approx 429.38 \, \text{kJ/kg}
+\]  
+\[
+u_2 = u_f(70^\circ\text{C}) = 292.95 \, \text{kJ/kg}
+\]  
+\[
+h_{\text{EIN}} = h_f(20^\circ\text{C}) = 83.96 \, \text{kJ/kg}
+\]  
+Solving for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = \frac{m_{\text{GES1}} \left( u_2 - u_1 \right)}{h_{\text{EIN}}} \approx 3756.9 \, \text{kg}
+\]  
+
+TASK 1e  
+**Entropy Balance for Half-Open System**  
+The entropy change is calculated as:  
+\[
+\Delta S = \left( m_{\text{GES1}} + \Delta m_{12} \right) s_2 - m_{\text{GES1}} s_1
+\]  
+Substituting values:  
+\[
+s_1 = s_f(100^\circ\text{C}) + x_D \left( s_g(100^\circ\text{C}) - s_f(100^\circ\text{C}) \right) \approx 1.3371 \, \text{kJ/kg·K}
+\]  
+\[
+s_2 = s_f(70^\circ\text{C}) = 0.9549 \, \text{kJ/kg·K}
+\]  
+\[
+\Delta S \approx 1387.9 \, \text{kJ/K}
+\]

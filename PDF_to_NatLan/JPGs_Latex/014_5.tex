@@ -1,0 +1,52 @@
+TASK 4a  
+Two pressure-temperature (\(p-T\)) diagrams are drawn:  
+
+1. The first diagram shows phase regions with pressure (\(p\)) on the vertical axis and temperature (\(T\)) on the horizontal axis. The curve represents phase transitions, including solid, liquid, and gas regions. The transitions between phases are labeled.  
+
+2. The second diagram zooms into the sublimation point. It shows the solid, liquid, and gas regions, with the sublimation curve labeled. Points 1 and 2 are marked, indicating the process path during sublimation.  
+
+TASK 4b  
+The energy balance around the compressor is written as:  
+\[
+0 = \dot{m} \cdot (u_2 - u_3) + \dot{Q} - \dot{W}_K
+\]  
+The work done by the compressor (\(W_K\)) is expressed as:  
+\[
+W_K = \dot{m} \cdot (u_2 - u_3)
+\]  
+
+The internal energy at state 2 (\(u_2\)) is calculated using the refrigerant properties:  
+\[
+u_2 = u_g(40^\circ\text{C}) = 226.27 \, \text{kJ/kg} \quad \text{(from Table A-10)}
+\]  
+
+The temperature range is given as \(T_i = 0^\circ\text{C} + 10^\circ\text{C} = 10^\circ\text{C}\).  
+
+For state 3, assuming isentropic compression:  
+\[
+s_2 = s_3
+\]  
+From Table A-12, interpolating for \(s_g(40^\circ\text{C}) = 0.9169 \, \text{kJ/kg·K}\) at 8 bar:  
+\[
+x_3 = \frac{s_3 - s_f}{s_g - s_f} = 0.334 \quad \text{(from Table A-12)}
+\]  
+
+The internal energy at state 3 (\(u_3\)) is calculated using:  
+\[
+u_3 = u_f(40^\circ\text{C}) + x \cdot (u_g(40^\circ\text{C}) - u_f(40^\circ\text{C}))
+\]  
+
+The mass flow rate (\(\dot{m}\)) is expressed as:  
+\[
+\dot{m} = \frac{\dot{V}_K}{u_2 - u_3}
+\]  
+
+TASK 4d  
+The coefficient of performance (\(\epsilon_K\)) is defined as:  
+\[
+\epsilon_K = \frac{\dot{Q}_K}{|\dot{W}_K|}
+\]  
+This is rewritten as:  
+\[
+\epsilon_K = \frac{|\dot{Q}_K|}{|\dot{Q}_{\text{out}} - \dot{Q}_{\text{in}}|}
+\]  

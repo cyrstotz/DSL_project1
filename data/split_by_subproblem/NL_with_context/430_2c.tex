@@ -1,0 +1,23 @@
+Data:  
+\( ex_{str,6} = (h_6 - h_0 - T_0 \cdot (s_6 - s_0) + \frac{w^2}{2}) \)  
+\( ex_{str,0} = (h_0 - h_0 - T_0 \cdot (s_0 - s_0) + r \cdot h_{eq}) \)  
+\( ex_{str,0} = \frac{w^2}{2} = 20,000 \, \text{m}^2 \cdot \text{kg}/\text{s}^2 = 20,000 \, \text{J/kg} \)  
+
+---
+
+\( h_6 - h_0 = \int_{T_0}^{T_6} c_p \, dT = 7.006 \, \text{J/kgK} \cdot (328.014 \, \text{K} - 243.754 \, \text{K}) \)  
+\( = 85.429 \, \text{J/kg} \)  
+
+\( s_6 - s_0 = \int_{T_0}^{T_6} \frac{c_p}{T} \, dT - R \cdot \ln \left( \frac{p_6}{p_0} \right) = 7.006 \, \text{J/kgK} \cdot \ln \left( \frac{328.014}{243.754} \right) = 0.3016 \, \text{J/kgK} \)  
+
+\( ex_{str,6} = (85.429 \, \text{J/kg} - 243.15 \, \text{K} \cdot 0.3016 \, \text{J/kgK} + \frac{(49.19)^2}{2}) \)  
+\( = 742.144 \, \text{J/kg} \)  
+
+\( ex_{verl,str} = ex_{str,6} - ex_{str,0} = 742.144 \, \text{J/kg} - 20,000 \, \text{J/kg} \)  
+\( = 722.144 \, \text{J/kg} \)
+
+dS divided by dt equals m multiplied by (s zero minus s six) multiplied by s erz.  
+
+Integral of s erz equals m multiplied by (s six minus s zero) equals 0.3076 kilograms per second.  
+
+Exergy loss equals T zero multiplied by s erz equals 243.15 Kelvin multiplied by 0.3076 kilograms per second equals 73.334 kilojoules per second.

@@ -1,0 +1,70 @@
+The process is illustrated in a \( T \)-\( s \) diagram, showing the temperature \( T \) (in Kelvin) on the vertical axis and the specific entropy \( s \) (in \( \text{kJ}/\text{kg·K} \)) on the horizontal axis. The diagram includes labeled isobars \( p_0 \), \( p_2 \), and \( p_A \), with the following states:  
+
+1. State 1: Ambient conditions \( T_0 \), \( p_0 \).  
+   - Adiabatic compression occurs irreversibly, resulting in \( w_{\text{air}} < w_{\text{comp}} \).  
+
+2. State 2: \( p_1 > p_0 \).  
+   - The mass flow \( \dot{m}_M \) bypasses the core stream and mixes with \( \dot{m}_K \).  
+   - High-pressure, adiabatic compression leads to \( p_2 \), \( T_2 \).  
+
+3. State 3: Combustion chamber.  
+   - Heat is added, and the temperature increases.  
+
+4. State 4: Adiabatic, irreversible turbine.  
+   - Work is extracted, and entropy increases.  
+
+5. State 5: Mixing chamber.  
+   - The mixed flow has \( T_5 \), \( w_5 \), and \( p_5 \).  
+
+6. State 6: Reversible adiabatic nozzle.  
+   - The flow exits at \( p_0 \) and \( T_0 \).  
+
+The diagram visually represents the thermodynamic process with arrows indicating the transitions between states. Key points include the increase in entropy during irreversible processes and the heat addition in the combustion chamber.
+
+The mass-specific increase in flow exergy is calculated using the following equations:  
+
+\[
+\dot{Q}_{\text{vel}} = \dot{E}_{\text{in,str}} - \dot{E}_{\text{out,str}}
+\]
+
+\[
+0 = -\sum \dot{E}_{\text{in,str}} + \sum \dot{E}_{\text{out,str}} + \dot{E}_{\text{Q}} - \dot{E}_{\text{W}} - \dot{E}_{\text{vel}}
+\]
+
+Rearranging for the mass-specific flow exergy:  
+
+\[
+e_{\text{vel}} = \frac{\dot{E}_{\text{vel}}}{\dot{m}} = \frac{\sum \dot{E}_{\text{in,str}}}{\dot{m}}
+\]
+
+The general energy balance equation is written as:  
+
+\[
+0 = -\sum \dot{E}_{\text{in,str}} + \dot{E}_{\text{Q}} - \dot{W}_{\text{t}} - E_{\text{vel}}
+\]
+
+From this, the flow exergy is expressed as:  
+
+\[
+\dot{Q}_{\text{vel}} = \frac{E_{\text{vel}}}{\dot{m}_{\text{ges}}} = \Delta Q_{\text{str}} + \left(1 - \frac{T_0}{T_B}\right) q_B - \dot{W}
+\]
+
+Substituting values:  
+
+\[
+e_{\text{vel}} = \Delta e_{\text{str}} + \left(1 - \frac{T_0}{T_B}\right) q_B
+\]
+
+\[
+q_B = 100 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\left(1 - \frac{243.15 \, \text{K}}{1289 \, \text{K}}\right) - 140 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+Finally, the result is:  
+
+\[
+\approx 106.72 \, \frac{\text{kJ}}{\text{kg}}
+\]

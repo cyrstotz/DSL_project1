@@ -1,0 +1,56 @@
+TASK 4a  
+The diagram is a pressure-temperature (\(p-T\)) graph illustrating the freeze-drying process. It shows the phase regions labeled as "Flüssiggebiet" (liquid region), "Dampfgebiet" (vapor region), and "Mischgebiet" (mixed region). The curve includes a critical point labeled "kritischer Punkt." The process steps are marked with states 1, 2, 3, and 4, connected by yellow lines to represent transitions.  
+
+- State 1 is in the mixed region.  
+- State 2 is in the vapor region.  
+- State 3 is in the vapor region, near the critical point.  
+- State 4 is in the liquid region.  
+
+TASK 4b  
+The inlet temperature \(T_i\) is calculated as:  
+\[
+T_i = T_0 - 6 \, \text{K}
+\]  
+Given \(T_0 = -10^\circ\text{C}\), this converts to:  
+\[
+T_i = 263.15 \, \text{K}
+\]  
+
+From the refrigerant table (TAB A-10), the enthalpy at \(T = -10^\circ\text{C}\) is:  
+\[
+h_f(T = -10^\circ\text{C}) = h_f(T = -10^\circ\text{C}) = 29.30 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The pressure at states 3 and 4 is given as:  
+\[
+p_3 = p_4 = 8 \, \text{bar}
+\]  
+
+The vapor quality at state 4 is \(x_4 = 0\), indicating saturated liquid. From the refrigerant table (TAB A-11), the enthalpy at \(p_4 = 8 \, \text{bar}\) is:  
+\[
+h_4 = h_g(T_4 = 8 \, \text{bar}) + 263.15 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+TASK 4c  
+The equation for the pressure ratio is:  
+\[
+\epsilon = \left( \frac{p_1}{p_4} \right)^{\frac{n-1}{n}}
+\]  
+
+Using the first law of thermodynamics for the compressor:  
+\[
+\dot{Q} = 0 \quad \text{(adiabatic process)}
+\]  
+\[
+\dot{m} \left[ h_2 - h_3 \right] = -\dot{W}_k
+\]  
+
+Rearranging for the work done by the compressor:  
+\[
+\dot{W}_k = \dot{m} \left[ h_2 - h_3 \right]
+\]  
+
+The mass flow rate of the refrigerant is:  
+\[
+\dot{m}_{\text{R134a}} = \frac{\dot{W}_k}{h_2 - h_3}
+\]

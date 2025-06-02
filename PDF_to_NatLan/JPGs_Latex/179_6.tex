@@ -1,0 +1,55 @@
+TASK 2b  
+The equation for the outlet velocity \( w_6 \) is derived from the energy balance:  
+\[
+0 = h_0 - h_6 + \frac{w_0^2}{2} - \frac{w_6^2}{2}
+\]  
+Rearranging for \( w_6 \):  
+\[
+w_6 = \sqrt{2(h_0 - h_6) + w_0^2}
+\]  
+Substituting values:  
+\[
+w_6 = \sqrt{2 c_p (T_0 - T_6) + w_0^2}
+\]  
+Given:  
+\[
+T_0 = -30^\circ\text{C}, \quad T_6 = 323.074 \, \text{K}, \quad c_p = 1.006 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+The calculated outlet velocity is approximately \( 193 \, \text{m/s} \).
+
+---
+
+TASK 2c  
+The mass-specific increase in flow exergy \( \Delta ex_{\text{flow}} \) is calculated as:  
+\[
+\Delta ex_{\text{flow}} = (h_0 - h_6 - T_0(s_0 - s_6)) + \frac{w_0^2}{2} - \frac{w_6^2}{2}
+\]  
+Expanding the entropy term:  
+\[
+\Delta ex_{\text{flow}} = (c_p(T_0 - T_6) - T_0 \ln\left(\frac{T_0}{T_6}\right) - R \ln\left(\frac{p_0}{p_6}\right)) + \frac{w_0^2}{2} - \frac{w_6^2}{2}
+\]  
+Substituting values:  
+\[
+\Delta ex_{\text{flow}} = -110.050 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Given:  
+\[
+w_6 = 193 \, \text{m/s}, \quad w_0 = 200 \, \text{m/s}, \quad T_6 = 323.074 \, \text{K}
+\]  
+
+---
+
+TASK 2d  
+The exergy destruction \( \dot{e}_{\text{ex,dest}} \) is calculated as:  
+\[
+\dot{e}_{\text{ex,dest}} = T_0 \dot{S}_{\text{gen}}
+\]  
+Expanding entropy generation:  
+\[
+\dot{e}_{\text{ex,dest}} = T_0 (s_6 - s_0)
+\]  
+Substituting values:  
+\[
+\dot{e}_{\text{ex,dest}} = T_0 \left(c_p \ln\left(\frac{T_6}{T_0}\right)\right)
+\]  
+The calculated exergy destruction is approximately \( 65.59 \, \frac{\text{kJ}}{\text{kg}} \).

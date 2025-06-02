@@ -1,0 +1,21 @@
+Energy balance equation:  
+\[
+0 = \dot{m}_{\text{in}} \left( h_{\text{in}}(70^\circ\text{C}) - h_{\text{out}}(100^\circ\text{C}) \right) + \dot{Q}_R - \dot{Q}_{\text{out}}
+\]  
+
+In the reactor, \( x = 0.005 \):  
+\[
+h_{\text{in}} = h(70^\circ\text{C}, x=0.005) = 292.88 + 0.005 \cdot (2628.8 - 292.88) = 394.691 \, \text{kJ/kg} \quad \text{(from Table A-2)}
+\]  
+\[
+h_{\text{out}} = h(100^\circ\text{C}, x=0.005) = 419.17 + 0.005 \cdot (2676.1 - 419.17) = 436.3253 \, \text{kJ/kg} \quad \text{(from Table A-2)}
+\]  
+
+Heat flow removed by the coolant:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} \left( h_{\text{out}} - h_{\text{in}} \right) - \dot{Q}_R = 0.3 \cdot (436.3253 - 394.691) - 100 = -62.297 \, \text{kW} \quad \text{(negative sign indicates heat removed)}
+\]  
+
+(Note: As shown in the sketch, \( \dot{Q}_{\text{out}} = 62.297 \, \text{kW} \).)  
+
+---

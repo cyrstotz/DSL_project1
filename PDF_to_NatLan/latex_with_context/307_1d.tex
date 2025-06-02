@@ -1,0 +1,47 @@
+Energy balance for the open system:  
+\[
+\Delta E = m_2 u_2 - m_1 u_1 = \Delta m_{12} h_{f,20} + Q_{R,12} - Q_{\text{out},12}
+\]  
+
+Given data:  
+- \( m_1 = m_{\text{ges,1}} = 5755 \, \text{kg} \)  
+- \( T_1 = 100^\circ\text{C} \)  
+- \( T_2 = 70^\circ\text{C} \)  
+- \( m_2 = m_1 + \Delta m_{12} \)  
+
+Specific internal energy values:  
+- \( u_1 = u_f(100^\circ\text{C}) \) (from Table A-2): \( 418.94 \, \text{kJ/kg} \)  
+- \( u_2 = u_f(70^\circ\text{C}) \) (from Table A-2): \( 292.95 \, \text{kJ/kg} \)  
+- \( h_{f,20} = h_f(20^\circ\text{C}) \) (from Table A-2): \( 83.96 \, \text{kJ/kg} \)  
+
+Rewriting the energy balance:  
+\[
+(m_1 + \Delta m_{12}) u_2 - m_1 u_1 = \Delta m_{12} h_{f,20}
+\]  
+\[
+m_1 u_2 - m_1 u_1 = \Delta m_{12} (h_{f,20} - u_2)
+\]  
+
+Solving for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = m_1 \frac{u_2 - u_1}{h_{f,20} - u_2}
+\]  
+Substituting values:  
+\[
+\Delta m_{12} = 5755 \cdot \frac{292.95 - 418.94}{83.96 - 292.95} = 3459.48 \, \text{kg}
+\]  
+Final result:  
+\[
+\Delta m_{12} = 3761.52 \, \text{kg}
+\]  
+
+Additional calculation for \( u_1 \):  
+\[
+u_1 = u_f(100^\circ\text{C}) + x_D \cdot \left( u_g(100^\circ\text{C}) - u_f(100^\circ\text{C}) \right)
+\]  
+Substituting values from Table A-2:  
+\[
+u_1 = 429.58 \, \text{kJ/kg}
+\]  
+
+No diagrams or figures are present on this page.

@@ -1,0 +1,106 @@
+
+``````latex
+
+
+\section*{4a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a pressure-temperature ($p$-$T$) diagram. The x-axis is labeled $T$ (°C) and the y-axis is labeled $p$ (mbar). The graph shows a curve that separates the liquid and gas phases. The curve starts at the origin and rises to the right. There is a point labeled "Tripelpunkt" on the curve. Three points are marked on the graph: point 1 is in the liquid region, point 2 is on the curve, and point 3 is in the gas region. The points are connected by arrows indicating a process: from point 1 to point 2, then from point 2 to point 3.
+\end{description}
+
+\section*{4b)}
+
+\begin{description}
+    \item[Table Description:] The table has 5 columns and 5 rows. The columns are labeled $P$, $T$, $x$, and $s$. The rows are numbered 1 to 4. The entries in the table are as follows:
+    \begin{itemize}
+        \item Row 1: $P = 1$, $T = -16^\circ$C, $x$ is empty, $s$ is empty.
+        \item Row 2: $P = 2$, $T = -16^\circ$C, $x = 1$, $s$ is empty.
+        \item Row 3: $P = 8$ bar, $T$ is empty, $x$ is empty, $s$ is empty.
+        \item Row 4: $P = 8$ bar, $T$ is empty, $x = 0$, $s$ is empty.
+    \end{itemize}
+\end{description}
+
+\begin{align*}
+    p_i &= 1 \text{ mbar} \\
+    T_i &= -10^\circ \text{C}
+\end{align*}
+
+\subsection*{Energiebilanz Verdichter (stationärer Fließprozess)}
+
+\begin{align*}
+    0 &= \dot{m}_{R134a} (h_2 - h_3) - \dot{W}_\text{k} \\
+    \dot{W}_\text{k} &= \dot{m}_{R134a} (h_2 - h_3)
+\end{align*}
+
+\subsection*{TAB A-10}
+
+\begin{align*}
+    h_2 &= h_g (-16^\circ \text{C}) = 237.74 \\
+    s_2 &= s_g (-16^\circ \text{C}) = 0.9298 \frac{\text{kJ}}{\text{kgK}} \\
+    s_3 &= s_3 \text{ (weil reversibel)}
+\end{align*}
+
+``````latex
+
+
+\section*{Student Solution}
+
+\subsection*{a)}
+
+\begin{align*}
+h_3 &= h \left( 8 \text{bar}, s = 0.9298 \frac{\text{kJ}}{\text{kg K}} \right) \Rightarrow \text{TAB A12} \\
+h \left( 5 = 0.9066 \frac{\text{kJ}}{\text{kg K}} \right) &= 264.15 \frac{\text{kJ}}{\text{kg}} \\
+h_3 \left( s = 0.9298 \frac{\text{kJ}}{\text{kg K}} \right) &= ? = \frac{273.66 \frac{\text{kJ}}{\text{kg}} - 264.15 \frac{\text{kJ}}{\text{kg}}}{0.9298 \frac{\text{kJ}}{\text{kg K}} - 0.9066 \frac{\text{kJ}}{\text{kg K}}} \cdot \left( 0.9298 \frac{\text{kJ}}{\text{kg K}} - 0.9066 \frac{\text{kJ}}{\text{kg K}} \right) + 264.15 \frac{\text{kJ}}{\text{kg}} \\
+h \left( s = 0.9399 \frac{\text{kJ}}{\text{kg K}} \right) &= 273.66 \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+\[
+\dot{m} R1342 = \frac{-28 \cdot 10^{-3} \text{kW}}{h_2 - h_3} = 0.000834 \frac{\text{kg}}{\text{s}} = 3.0024 \frac{\text{kg}}{\text{h}}
+\]
+
+\subsection*{c)}
+
+\text{Drossel isenthalp:} \quad h_4 = h_3
+
+\[
+h_4 = h_f \left( 8 \text{bar} \right) = 93.42 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\text{TAB A11:}
+
+\[
+x_1 = \frac{h_1 - h_f \left( -16^\circ \text{C} \right)}{h_g \left( -16^\circ \text{C} \right) - h_f \left( -16^\circ \text{C} \right)} = \frac{93.42 \frac{\text{kJ}}{\text{kg}}}{237.74 \frac{\text{kJ}}{\text{kg}}} = 0.3076
+\]
+
+\subsection*{d)}
+
+\[
+\varepsilon_{\text{K}} = \frac{\left| \dot{Q}_{\text{zul}} \right|}{\left| \dot{Q}_{\text{ab}} \right| - \left| \dot{Q}_{\text{zul}} \right|} = \frac{\left| \dot{Q}_{\text{N1}} \right|}{\left| \dot{Q}_{\text{ab1}} \right| - \left| \dot{Q}_{\text{N1}} \right|} = \frac{\left| \dot{Q}_{\text{N2}} \right|}{\left| \dot{Q}_{\text{34}} \right| - \left| \dot{Q}_{\text{N2}} \right|}
+\]
+
+\text{Energiebilanz st. Fließprozess 12:}
+
+\[
+0 = \dot{m} \left( h_1 - h_2 \right) + \dot{Q}_{\text{N2}}
+\]
+
+\[
+\dot{Q}_{\text{N2}} = \dot{m} \left( h_2 - h_1 \right)
+\]
+
+\[
+\dot{Q}_{34} = \dot{m} \left( h_4 - h_3 \right) = h_1
+\]
+
+\[
+\varepsilon_{\text{K}} = 5.465
+\]
+
+``````latex
+
+
+e) konstanter Wärmestrom abgeleitet
+
+\(\Rightarrow T_i\) würde sinken
+
+```

@@ -1,0 +1,26 @@
+Given values:  
+- \( T_5 = 431.9 \, \text{K} \)  
+- \( p_5 = 0.5 \, \text{bar} \)  
+- \( w_5 = 220 \, \text{m/s} \)  
+- \( p_6 = p_0 = 0.151 \, \text{bar} \)  
+
+Isentropic relationships:  
+- \( \kappa = \frac{c_p}{c_v} \)  
+
+Calculation for \( T_6 \):  
+\( T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}} \)  
+Substituting values:  
+\( T_6 = 431.9 \, \text{K} \cdot \left( \frac{0.151 \, \text{bar}}{0.5 \, \text{bar}} \right)^{\frac{0.4}{1.4}} \approx 328.07 \, \text{K} \)  
+
+Energy balance:  
+\( \Delta E = 0 = \text{heat flow} + \text{work} + \Delta KE \)  
+\( \Delta KE = \frac{w_6^2}{2} - \frac{w_5^2}{2} \)  
+
+Calculation for \( w_6 \):  
+\( \Delta KE = c_v (T_6 - T_5) = \frac{c_p}{\kappa} (T_6 - T_5) \)  
+Substituting values:  
+\( \Delta KE = 74.605 \, \text{kJ/kg} \)  
+
+Velocity difference:  
+\( \Delta w = \sqrt{2 \cdot 74.605} = 12.215 \, \text{m/s} \)  
+\( w_6 = w_5 + \Delta w = 220 \, \text{m/s} + 12.215 \, \text{m/s} = 232.215 \, \text{m/s} \)

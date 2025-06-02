@@ -1,0 +1,25 @@
+We set up the energy balance:  
+Q = m dot R134a [h2 - h3] + W dot x  
+W dot x = m dot R134a [h2 - h3]  
+
+m dot R134a = W dot x / (h2 - h3)  
+
+h2 = hg (277.15 K) = hg (9°C) = 249.53 kilojoules per kilogram (from Table A-10)  
+h3 = hf (8 bar) = 269.15 kilojoules per kilogram  
+
+m dot R134a = 0.28 kilowatts / (249.53 - 269.15 kilojoules per kilogram)  
+
+s2 = sg (9°C) = 0.8169 kilojoules per kilogram Kelvin  
+s3 = sf (8 bar) = 0.8169 kilojoules per kilogram Kelvin  
+
+Interpolation:  
+h (8 bar, 0.8169 kilojoules per kilogram Kelvin) = 267.33 kilojoules per kilogram  
+From Table A-12:  
+h (8 bar, 0.3066 kilojoules per kilogram Kelvin) = 264.15 kilojoules per kilogram  
+h (8 bar, 0.3372 kilojoules per kilogram Kelvin) = 273.66 kilojoules per kilogram  
+
+Using interpolation formula:  
+y = (x - x1) / (x2 - x1) * (y2 - y1) + y1  
+Result: h = 267.33 kilojoules per kilogram  
+
+W dot x / m dot R134a = h3 - h2 = 0.0157 kilograms per second.

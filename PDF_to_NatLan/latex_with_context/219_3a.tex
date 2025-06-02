@@ -1,0 +1,41 @@
+The initial state of the system is described as follows:  
+- Gas temperature: \( T_g = 500^\circ\text{C} \)  
+- Gas volume: \( V_g = 3.14 \, \text{L} \)  
+- Ice-water temperature: \( T_{\text{EW}} = 0^\circ\text{C} \)  
+- Ice mass fraction: \( x_{\text{ice}} = 0.6 \)  
+
+The pressure \( p_g \) in state 1 is calculated using the equation:  
+\[
+p_g = p_0 + \frac{m_K g}{A} + \frac{m_{\text{EW}} g}{A}
+\]  
+where \( A \) is the cross-sectional area of the cylinder, given by:  
+\[
+A = \pi \frac{D^2}{4} = 0.07854 \, \text{m}^2
+\]  
+
+Substituting values:  
+\[
+p_g = 1 \, \text{bar} + \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{0.07854 \, \text{m}^2} + \frac{0.1 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{0.07854 \, \text{m}^2}
+\]  
+\[
+p_g = 1.0401 \, \text{bar}
+\]  
+
+The mass of the gas \( m_g \) is calculated using the ideal gas law:  
+\[
+m_g = \frac{p_g V_g}{R T_g}
+\]  
+where \( R \) is the specific gas constant:  
+\[
+R = \frac{R_u}{M_g} = \frac{8.314 \, \text{J/(mol·K)}}{50.1 \, \text{kg/kmol}} = 166.28 \, \text{J/(kg·K)}
+\]  
+
+Substituting values:  
+\[
+m_g = \frac{1.0401 \, \text{bar} \cdot 3.14 \, \text{L}}{166.28 \, \text{J/(kg·K)} \cdot (500 + 273.15) \, \text{K}}
+\]  
+\[
+m_g = 0.025401 \, \text{kg} = 2.5401 \, \text{g}
+\]  
+
+---

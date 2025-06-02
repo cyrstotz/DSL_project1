@@ -1,0 +1,18 @@
+Process step 5-6 isentropic.
+
+T6 = T5 * (p6/p5)^(n-1/n) = 431.5 K * (0.194 * 10^5 Pa / 0.5 * 10^5 Pa)^(0.4/1.4) = 328.07 K
+
+Energy balance at thrust nozzle:
+0 = ṁ [he + we^2/2 - ua^2/2] + Q̇ = 0, adiabatic
+
+he - ha = -we^2/2 = 2/3 (cp (T5 - T6) = 1.006 * (328.07 K - 328.07 K) = 104.45 kJ/kg
+
+hs - hc = cp (T5 - T6) = 1.006 * (431.5 K - 328.07 K) = 104.45 kJ/kg
+
+Ideal gas:
+
+0 + hs - hc + we^2/2 = 0
+-(hs - hc) = we^2/2 - ua^2/2
+-2 (hs - hc) = we^2 - ua^2
+
+we = sqrt(ua^2 + 2 (hs - hc)) = sqrt((220 m/s)^2 + 2 (104.45) kJ/kg) = 507.25 m/s

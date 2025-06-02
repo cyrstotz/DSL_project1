@@ -1,0 +1,56 @@
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) is calculated using the formula:  
+\[
+T_{\text{KF}} = \frac{h_e - h_a}{s_e - s_a}
+\]  
+where \( h_e \) and \( h_a \) are enthalpies, and \( s_e \) and \( s_a \) are entropies.  
+
+Additionally, the energy balance is expressed as:  
+\[
+\dot{m} \left[ s_e - s_a \right] + \frac{\dot{Q}_{\text{out}}}{T} = 0
+\]  
+Rearranging for \( T \):  
+\[
+T = \frac{\dot{Q}_{\text{out}}}{\dot{m} \left[ s_e - s_a \right]}
+\]  
+
+---
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) is determined using the entropy balance:  
+\[
+0 = \dot{m} \left[ s_e - s_a \right] + \frac{\dot{Q}_{\text{out}}}{T} + \dot{S}_{\text{gen}}
+\]  
+Rearranging for \( \dot{S}_{\text{gen}} \):  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \left[ s_a - s_e \right] - \frac{\dot{Q}_{\text{out}}}{T}
+\]  
+
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = 0.3 \left( s_a - s_e \right) - \frac{-65 \, \text{kW}}{295 \, \text{K}}
+\]  
+
+Entropy values are calculated using water tables:  
+\[
+s_a = 1.3065 + 0.005 \left( 7.3549 - 1.3065 \right) \quad \text{at } T = 100^\circ\text{C}
+\]  
+\[
+s_a = 1.33744
+\]  
+
+\[
+s_e = s_{\text{sat}} = 0.9549 + 0.005 \left( 7.7653 - 0.9549 \right)
+\]  
+\[
+s_e = 0.9889
+\]  
+
+Substituting into \( \dot{S}_{\text{gen}} \):  
+\[
+\dot{S}_{\text{gen}} = 0.3 \left( 1.33744 - 0.9889 \right) - \frac{-65 \, \text{kW}}{295 \, \text{K}}
+\]  
+\[
+\dot{S}_{\text{gen}} = -220.23 \, \frac{\text{kJ}}{\text{K}}
+\]  
+

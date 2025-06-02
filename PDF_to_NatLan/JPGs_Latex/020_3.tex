@@ -1,0 +1,66 @@
+TASK 3a  
+The gas pressure \( p_{g} \) is calculated as the sum of the ambient pressure \( p_{\text{amb}} \), the pressure due to the piston \( p_{\text{K}} \), and the pressure due to the ice-water mixture \( p_{\text{EW}} \):  
+\[
+p_{g} = p_{\text{amb}} + p_{\text{K}} + p_{\text{EW}}, \quad p_{\text{amb}} = 1 \, \text{bar}.
+\]  
+
+The pressure due to the piston \( p_{\text{K}} \) is calculated as:  
+\[
+p_{\text{K}} = \frac{m_{\text{K}} \cdot g}{A} = \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{(0.05 \, \text{m})^2 \cdot \pi} = 39965 \, \text{Pa}.
+\]  
+
+The pressure due to the ice-water mixture \( p_{\text{EW}} \) is calculated as:  
+\[
+p_{\text{EW}} = \frac{m_{\text{EW}} \cdot g}{A} = \frac{0.1 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{(0.05 \, \text{m})^2 \cdot \pi} = 125 \, \text{Pa}.
+\]  
+
+Thus, the total gas pressure is:  
+\[
+p_{g} = 100000 \, \text{Pa} + 39965 \, \text{Pa} + 125 \, \text{Pa} = 140090 \, \text{Pa} = 1.4 \, \text{bar}.
+\]  
+
+The mass of the gas \( m_{g} \) is calculated using the ideal gas law:  
+\[
+m_{g} = \frac{p_{g} \cdot V_{g,1}}{R \cdot T_{g,1}}, \quad R = \frac{8.3145 \, \text{J/(mol·K)}}{M_{g}}, \quad M_{g} = 50 \, \text{kg/kmol}.
+\]  
+
+Substituting values:  
+\[
+R = \frac{8.3145}{50} = 166.3 \, \text{J/(kg·K)}.
+\]  
+
+\[
+m_{g} = \frac{140000 \, \text{Pa} \cdot 0.00314 \, \text{m}^3}{166.3 \, \text{J/(kg·K)} \cdot 773.15 \, \text{K}} = 3.4 \, \text{g}.
+\]  
+
+---
+
+TASK 3c  
+The heat transferred \( Q_{12} \) from the gas to the ice-water mixture is calculated using the equation:  
+\[
+m \cdot (u_2 - u_1) = Q_{12}.
+\]  
+
+The change in specific internal energy \( u_2 - u_1 \) is expressed as:  
+\[
+u_2 - u_1 = c_V \cdot p_{g} \cdot (T_2 - T_1).
+\]  
+
+Substituting values:  
+\[
+Q_{12} = m \cdot c_V \cdot (T_2 - T_1) = 0.00314 \, \text{kg} \cdot 0.633 \, \text{kJ/(kg·K)} \cdot (773.15 \, \text{K} - 273.153 \, \text{K}).
+\]  
+
+\[
+Q_{12} = 1076 \, \text{J}.
+\]  
+
+---
+
+TASK 3d  
+The heat \( Q_{12} \) is calculated using the ice-water mixture's specific internal energy difference:  
+\[
+Q_{12} = m_{\text{EW}} \cdot (u_2 - u_1).
+\]  
+
+The final specific internal energy \( u_2 \) corresponds to the ice phase equilibrium \( x_{2,\text{eis}} \).

@@ -1,0 +1,107 @@
+
+``````latex
+
+\section*{Aufgabe 1}
+
+\subsection*{a) stationär:}
+
+\begin{align*}
+0 &= \dot{m} \sum (h_{\text{ein}} - h_{\text{aus}}) + \dot{Q}_{\text{aus}} - \dot{Q}_{\text{R}} - \dot{W}_{\text{in}} \\
+\dot{Q}_{\text{aus}} &= \dot{m} (h_{\text{ein}} - h_{\text{aus}}) \\
+\dot{m} &= 0.13 \frac{\text{kg}}{\text{s}} \\
+h_{\text{ein}} &\rightarrow \text{TAB - A2} \\
+&\text{mit} \ h_{\text{vap,ein}} = 2333.8 \frac{\text{kJ}}{\text{kg}} \\
+&\text{und} \ h_{\text{vap,aus}} = 2257.0 \frac{\text{kJ}}{\text{kg}} \\
+\dot{Q}_{\text{aus}} &= 0.13 \frac{\text{kg}}{\text{s}} \left[ 2333.8 \frac{\text{kJ}}{\text{kg}} - 2257.0 \frac{\text{kJ}}{\text{kg}} \right] - 100 \frac{\text{kJ}}{\text{s}} \\
+&= 76.96 \text{kW}
+\end{align*}
+
+\subsection*{b)}
+
+\begin{align*}
+T_{\text{UF}} &= \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)} \\
+\text{und} \quad \bar{T} &= \frac{\int_{s_a}^{s_e} T \, ds}{s_e - s_a} \\
+&= 357.9 \text{K}
+\end{align*}
+
+\subsection*{c)}
+
+\begin{align*}
+\frac{dS}{dt} &= 0 = \dot{m} (s_e - s_a) + \frac{\dot{Q}_{\text{aus}} - \dot{Q}_{\text{R}}}{\bar{T}} = -\dot{S}_{\text{erz}} \\
+\dot{S}_{\text{erz}} &= \dot{m} (s_{a} - s_{e}) + \frac{\dot{Q}_{\text{R}} - \dot{Q}_{\text{aus}}}{\bar{T}} \\
+\text{TAB A2:} \\
+s_{e}(70^\circ \text{C}) &= \\
+h_{g} - h_{f} + x (h_{g} - h_{f}) \Rightarrow x = \frac{h_{eq} - h_{f}}{h_{g} - h_{f}} = \frac{2333.8 \frac{\text{kJ}}{\text{kg}} - 297.88}{2626.8 - 2329.38} \\
+&= 0.874
+\end{align*}
+
+``````latex
+
+\section*{Aufgabe 1}
+
+\subsection*{c)}
+\begin{align*}
+\text{TAZ} \\
+S_{\text{vap,ein}} &= S_f + x \left( S_g - S_f \right) = 0{,}95 \frac{\text{kJ}}{\text{kg K}} + 0{,}824 \left( 7{,}755 - 0{,}95 \frac{\text{kJ}}{\text{kg K}} \right) \\
+&= 6{,}1888 \frac{\text{kJ}}{\text{kg K}}
+\end{align*}
+
+\begin{align*}
+\text{Dampf h_{\text{vap}} (100°C)} &= 2257{,}0 \frac{\text{kJ}}{\text{kg}} \\
+x &= \frac{h_{\text{vap}} - h_f}{h_g - h_f} \\
+&= 0{,}8143
+\end{align*}
+
+\begin{align*}
+(100°C) S_{\text{vap,aus}} &= S_f + x \left( S_g - S_f \right) \\
+&= 1{,}3069 + 0{,}814 \left( 7{,}3549 - 1{,}3069 \right) = 6{,}2298 \frac{\text{kJ}}{\text{kg K}}
+\end{align*}
+
+\begin{align*}
+\dot{S}_{\text{erz}} &= 0{,}3 \frac{\text{kg}}{\text{s}} \left[ 6{,}1888 \frac{\text{kJ}}{\text{kg K}} - 6{,}2298 \frac{\text{kJ}}{\text{kg K}} \right] + \frac{100 \text{kJ/s} + 76{,}98 \text{kJ/s}}{357{,}9 \text{K}} \\
+\dot{S}_{\text{erz}} &= 0{,}6948 \frac{\text{kJ}}{\text{s K}}
+\end{align*}
+
+\subsection*{d)}
+\begin{align*}
+T_2 &= 70^\circ\text{C} \\
+T_1 &= 100^\circ\text{C} \\
+\omega_{12} &= \\
+T_{\text{ein}} &= 20^\circ\text{C}
+\end{align*}
+
+\begin{align*}
+\Delta E &= \dot{E}_2 - \dot{E}_1 = \dot{Q}_{12} m_2 u_2 - m_1 u_1 = \omega_{12} \left[ h_1 - h_2 \right] + \dot{Q}_{\text{ab}}
+\end{align*}
+
+``````latex
+
+\section*{e) bereits mitgerechneten Angaben}
+
+\[
+\Delta S = 0.012 \left[ S_1 - S_2 \right] + \frac{Q_{\text{aus}} - Q_{\text{R}}}{T} + S_{\text{erz}}
+\]
+
+\[
+S_1 = S_f + 0.005 \left( s_g - s_f \right) = 1.20069 + 0.005 \left( 7.315 - 4.318 \right)
+\]
+
+\[
+= 1.33714 \, \frac{\text{kJ}}{\text{kgK}}
+\]
+
+\[
+S_2 \, T = 20^\circ \, = \, \& \, TA - 2 \, (20^\circ) \, s_g = 8.6672 \, \frac{\text{kJ}}{\text{kgK}}
+\]
+
+\[
+\Delta S = 3600 \, \text{kg} \left[ 1.33714 - 8.6672 \right] + \frac{25 \, \text{MJ} - 35 \, \text{MJ}}{T} + S_{\text{erz}}
+\]
+
+\[
+= -2.638 \cdot 10^4 \, \frac{\text{kJ}}{K}
+\]
+
+``````latex
+
+

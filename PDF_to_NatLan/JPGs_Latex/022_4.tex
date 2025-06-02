@@ -1,0 +1,70 @@
+TASK 2c  
+The mass-specific increase in flow exergy is calculated using the following equation:  
+\[
+\Delta ex_{\text{flow}} = h_6 - h_0 - T_0 \cdot (s_6 - s_0) + \frac{w_6^2 - w_0^2}{2}
+\]  
+where:  
+- \( h_6 \) and \( h_0 \) are the specific enthalpies at states 6 and 0, respectively.  
+- \( T_0 \) is the ambient temperature.  
+- \( s_6 \) and \( s_0 \) are the specific entropies at states 6 and 0, respectively.  
+- \( w_6 \) and \( w_0 \) are the velocities at states 6 and 0, respectively.  
+
+Given:  
+\[
+w_6 = 570 \, \text{m/s}, \quad T_0 = 243.15 \, \text{K}, \quad T_6 = 380 \, \text{K}
+\]  
+
+The entropy difference is calculated as:  
+\[
+\Delta s = s_6 - s_0 = s^0(T_6) - s^0(T_0) - R \ln \left(\frac{p_6}{p_0}\right)
+\]  
+where \( R \) is the specific gas constant.  
+
+Interpolating \( s^0(T_6) \) and \( s^0(T_0) \) from the tables:  
+\[
+s^0(T_6) = 1.59117 \, \text{kJ/kg·K}, \quad s^0(T_0) = 1.47824 \, \text{kJ/kg·K}
+\]  
+\[
+\Delta s = 1.59117 - 1.47824 = 0.11293 \, \text{kJ/kg·K}
+\]  
+
+TASK 2d  
+The mass-specific exergy destruction is calculated using the entropy generation:  
+\[
+\dot{S}_{\text{gen}} = \dot{S}_{\text{out}} - \dot{S}_{\text{in}}
+\]  
+and the exergy destruction:  
+\[
+\dot{E}_{\text{dest}} = T_0 \cdot \dot{S}_{\text{gen}}
+\]  
+
+From interpolation in Table A-22:  
+\[
+T_0 = 273.15 - 30 = 243.15 \, \text{K}
+\]  
+\[
+s^0(T_6) = 1.59117 \, \text{kJ/kg·K}, \quad s^0(T_0) = 1.47824 \, \text{kJ/kg·K}
+\]  
+\[
+\Delta s = 1.59117 - 1.47824 = 0.11293 \, \text{kJ/kg·K}
+\]  
+
+The exergy destruction is then:  
+\[
+\dot{E}_{\text{dest}} = T_0 \cdot \Delta s = 243.15 \cdot 0.11293 = 27.44 \, \text{kW}
+\]  
+
+TASK 2e  
+The entropy change is calculated as:  
+\[
+\Delta s = s_6 - s_0 = s^0(T_6) - s^0(T_0) - R \ln \left(\frac{p_6}{p_0}\right)
+\]  
+Interpolating \( s^0(T_6) \) and \( s^0(T_0) \):  
+\[
+s^0(T_6) = 1.59117 \, \text{kJ/kg·K}, \quad s^0(T_0) = 1.47824 \, \text{kJ/kg·K}
+\]  
+\[
+\Delta s = 1.59117 - 1.47824 = 0.11293 \, \text{kJ/kg·K}
+\]  
+
+No diagrams or graphs are present on this page.

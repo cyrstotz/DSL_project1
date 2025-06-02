@@ -1,0 +1,29 @@
+The coolant is modeled as an ideal liquid.  
+
+The entropy balance equation is written as:  
+\[
+\frac{dS}{dt} = \sum \dot{m}_i s_i + \frac{\dot{Q}_i}{T_i} + \dot{S}_{\text{gen}}
+\]  
+For reversible processes with no pressure losses and adiabatic conditions, the entropy generation term is zero.  
+
+The entropy change of the coolant is expressed as:  
+\[
+\dot{m} \left( s_{\text{in}} - s_{\text{out}} \right) + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+
+The entropy difference \( s_{\text{in}} - s_{\text{out}} \) is calculated using the integral:  
+\[
+s_{\text{in}} - s_{\text{out}} = \int_{T_{\text{in}}}^{T_{\text{out}}} \frac{c_{\text{p}}}{T} \, dT = c_{\text{p}} \ln \left( \frac{T_{\text{out}}}{T_{\text{in}}} \right)
+\]  
+
+An alternative formula for entropy change is derived:  
+\[
+\Delta S = \int_{T_e}^{T_i} \frac{c_{\text{p}}}{T} \, dT = c_{\text{p}} \ln \left( \frac{T_i}{T_e} \right)
+\]  
+
+A boxed formula is shown summarizing the entropy calculation:  
+\[
+\Delta S = c_{\text{p}} \ln \left( \frac{T_i}{T_e} \right)
+\]  
+
+No diagrams or figures are present on this page.

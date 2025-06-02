@@ -1,0 +1,71 @@
+TASK 1c  
+The entropy production is calculated using the formula:  
+\[
+\dot{S} = \frac{Q}{T}
+\]  
+Substituting the given values:  
+\[
+\dot{S} = \frac{65 \, \text{kW}}{293.72 \, \text{K}} = 227.75 \, \frac{\text{J}}{\text{K}}
+\]  
+
+---
+
+TASK 1d  
+The heat released during cooling is given as:  
+\[
+\Delta Q = 35 \, \text{MJ}
+\]  
+
+Using the energy balance equation:  
+\[
+m_2 \cdot u_2 - m_1 \cdot u_1 = \Delta m \cdot h_{\text{in}} + Q
+\]  
+
+The enthalpy of the inlet water at \( T_{\text{in}} = 20^\circ\text{C} \) is:  
+\[
+h_{\text{in}} = h_{\text{sat,liq}} = 83.96 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The initial mass of the reactor contents is:  
+\[
+m_1 = 5755 \, \text{kg}
+\]  
+
+The final mass is calculated as:  
+\[
+m_2 = m_1 + \Delta m
+\]  
+
+The internal energy at state 1 is calculated using the steam quality \( x_D = 0.005 \):  
+\[
+u_1 = h_{\text{sat,liq}} + x_D \cdot (h_{\text{sat,vap}} - h_{\text{sat,liq}})
+\]  
+Substituting values from Table A2:  
+\[
+u_1 = 679.04 \, \frac{\text{kJ}}{\text{kg}} + 0.005 \cdot (2676.1 - 679.04) \, \frac{\text{kJ}}{\text{kg}} = 692.38 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The internal energy at state 2 is:  
+\[
+u_2 = h_{\text{sat,liq}} = 292.95 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Rearranging the energy balance equation:  
+\[
+m_2 \cdot u_2 - m_1 \cdot u_1 = \Delta m \cdot h_{\text{in}} + Q
+\]  
+\[
+\Delta m = \frac{Q + m_1 \cdot u_1 - m_2 \cdot u_2}{u_2 - h_{\text{in}}}
+\]  
+Substituting values:  
+\[
+\Delta m = \frac{35000 + 5755 \cdot 692.38 - 292.95}{292.95 - 83.96}
+\]  
+\[
+\Delta m = 3924 \, \text{kg}
+\]  
+
+Thus, the mass added to the reactor is:  
+\[
+\Delta m = 3924 \, \text{kg}
+\]

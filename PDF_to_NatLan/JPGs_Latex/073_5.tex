@@ -1,0 +1,52 @@
+TASK 2a  
+The energy balance equation for the jet engine is written as:  
+\[
+\dot{E}_{\text{in}} = \dot{E}_{\text{out}} \quad \text{(valid for reversible processes)}
+\]  
+
+The equation for the work done by the turbine is expressed as:  
+\[
+O = \dot{m} \left( h_s - h_c - T_c (s_s - s_c) + \frac{\alpha k e}{2} \right) - \dot{W}_t
+\]  
+
+The turbine work is given by:  
+\[
+\dot{W}_t = \frac{R (T_G - T_S)}{1 - \kappa} \quad \text{(ideal gas and isentropic process)}
+\]  
+
+The work done by the turbine can also be expressed as:  
+\[
+W_t = \dot{m} \cdot c_p \cdot \Delta T
+\]  
+
+Substituting into the energy balance equation:  
+\[
+O = \dot{m} \left( h_s - h_c - T_c (s_s - s_c) + \frac{1}{2} (w_0^2 - w_s^2) \right) - \frac{R (T_G - T_S)}{1 - \kappa} - \dot{m} \cdot c_p \cdot \Delta T
+\]  
+
+Rearranging terms:  
+\[
+\frac{R (T_G - T_S)}{1 - \kappa} = h_s - h_c - T_c (s_s - s_c) + \frac{1}{2} w_s^2 - \frac{1}{2} w_0^2
+\]  
+
+The entropy difference is expressed as:  
+\[
+s_s - s_c = c_p \ln \frac{T_s}{T_G} - R \ln \frac{p_s}{p_G}
+\]  
+
+The enthalpy difference is expressed as:  
+\[
+h_c - h_s = c_p (T_G - T_S)
+\]  
+
+Substituting these into the equation:  
+\[
+\frac{1}{2} w_G^2 = \frac{R (T_G - T_S)}{1 - \kappa} + \frac{1}{2} w_s^2 + T_c \left[ c_p \ln \frac{T_s}{T_G} - R \ln \frac{p_s}{p_G} \right] + c_p (T_G - T_S)
+\]  
+
+Finally, solving for \( w_G \):  
+\[
+w_G = \sqrt{\frac{2 R (T_G - T_S)}{1 - \kappa} - w_s^2 + 2 T_c \left[ c_p \ln \frac{T_s}{T_G} - R \ln \frac{p_s}{p_G} \right] + c_p (T_G - T_S)}
+\]  
+
+No diagrams or graphs are present on the page.

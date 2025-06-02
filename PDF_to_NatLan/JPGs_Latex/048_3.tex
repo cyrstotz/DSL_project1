@@ -1,0 +1,70 @@
+TASK 3a  
+The cross-sectional area \( A \) of the cylinder is calculated using the formula:  
+\[
+A = \left( \frac{D}{2} \right)^2 \pi
+\]  
+Substituting \( D = 5 \, \text{cm} = 0.05 \, \text{m} \):  
+\[
+A = \pi \cdot \left( 0.05 \, \text{m} / 2 \right)^2 = 7.85 \times 10^{-3} \, \text{m}^2
+\]  
+
+The gas pressure \( p_{g,1} \) is determined using the force balance:  
+\[
+p_{g,1} = \frac{m_K + m_{\text{EW}}}{A} g + p_{\text{amb}}
+\]  
+Substituting \( m_K = 32 \, \text{kg} \), \( m_{\text{EW}} = 0.1 \, \text{kg} \), \( g = 9.81 \, \text{m/s}^2 \), \( A = 7.85 \times 10^{-3} \, \text{m}^2 \), and \( p_{\text{amb}} = 1 \, \text{bar} \):  
+\[
+p_{g,1} = \frac{(0.1 + 32) \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{7.85 \times 10^{-3} \, \text{m}^2} + 1 \, \text{bar} = 9.40 \, \text{bar}
+\]  
+
+The mass of the gas \( m_g \) is calculated using the ideal gas law:  
+\[
+p V = m R T
+\]  
+Rearranging for \( m_g \):  
+\[
+m_g = \frac{p_{g,1} V_{g,1}}{R T_{g,1}}
+\]  
+Substituting \( p_{g,1} = 9.40 \, \text{bar} = 9.40 \times 10^5 \, \text{Pa} \), \( V_{g,1} = 3.14 \, \text{L} = 3.14 \times 10^{-3} \, \text{m}^3 \), \( T_{g,1} = 773.15 \, \text{K} \), and \( R = \frac{R_u}{M_g} \):  
+\[
+R = \frac{8.314 \, \text{J/mol·K}}{50 \, \text{kg/kmol}} = 0.17 \, \text{kJ/kg·K}
+\]  
+\[
+m_g = \frac{9.40 \times 10^5 \cdot 3.14 \times 10^{-3}}{0.17 \cdot 773.15} = 3.42 \, \text{g}
+\]  
+
+---
+
+TASK 3b  
+The gas pressure in state 2 is equal to the ambient pressure:  
+\[
+p_{g,2} = p_{\text{amb}} = 1 \, \text{bar}
+\]  
+This is due to thermodynamic equilibrium, as the gas no longer exerts additional pressure.  
+
+The temperature \( T_{g,2} \) is calculated using the polytropic relation:  
+\[
+T_{g,2} = T_{g,1} \left( \frac{p_{g,2}}{p_{g,1}} \right)^{\frac{n-1}{n}}
+\]  
+Substituting \( T_{g,1} = 773.15 \, \text{K} \), \( p_{g,2} = 1 \, \text{bar} \), \( p_{g,1} = 9.40 \, \text{bar} \), and \( n = \frac{C_p}{C_v} \):  
+\[
+C_p = R + c_v = 0.17 \, \text{kJ/kg·K} + 0.633 \, \text{kJ/kg·K} = 0.80 \, \text{kJ/kg·K}
+\]  
+\[
+n = \frac{C_p}{C_v} = \frac{0.80}{0.633} = 1.26
+\]  
+\[
+T_{g,2} = 773.15 \cdot \left( \frac{1}{9.40} \right)^{\frac{1.26 - 1}{1.26}} = 446.13 \, \text{K}
+\]  
+
+---
+
+TASK 3c  
+The heat transferred \( Q_{12} \) from the gas to the ice-water mixture is calculated using:  
+\[
+Q_{12} = m_g \cdot C_p \cdot \Delta T
+\]  
+Substituting \( m_g = 3.42 \, \text{g} = 0.00342 \, \text{kg} \), \( C_p = 0.80 \, \text{kJ/kg·K} \), and \( \Delta T = T_{g,1} - T_{g,2} = 773.15 \, \text{K} - 446.13 \, \text{K} \):  
+\[
+Q_{12} = 0.00342 \cdot 0.80 \cdot (773.15 - 446.13) = 1367.46 \, \text{J}
+\]

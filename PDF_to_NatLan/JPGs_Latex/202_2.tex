@@ -1,0 +1,92 @@
+TASK 2a  
+The process is illustrated on a \( T \)-\( s \) diagram. The diagram includes labeled isotherms, isobars, and isentropes. The states are marked as follows:  
+- \( 1 \to 2 \): Isentropic compression  
+- \( 2 \to 3 \to 4 \to 5 \): Isobaric processes  
+The curve transitions between these states, showing the thermodynamic paths.  
+
+---
+
+TASK 2b  
+Given:  
+\[
+p_5 = 0.56 \, \text{bar}, \quad T_5 = 431.9 \, \text{K}, \quad w_5 = 220 \, \text{m/s}
+\]  
+The outlet velocity \( w_6 \) and temperature \( T_6 \) are calculated as follows:  
+
+1. Adiabatic reversible process:  
+\[
+s_5 = s_6
+\]  
+
+2. Enthalpy difference:  
+\[
+h_6 - h_5 = \int_{T_5}^{T_6} c_p(T) \, dT
+\]  
+Approximated as:  
+\[
+h_6 - h_5 = c_p (T_6 - T_5)
+\]  
+
+3. Temperature ratio:  
+\[
+T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = 431.9 \cdot \left( \frac{1.0}{0.56} \right)^{\frac{0.4}{1.4}} = 528 \, \text{K}
+\]  
+
+The outlet velocity \( w_6 \) is determined using the energy balance:  
+\[
+w_6^2 = w_5^2 + 2 c_p (T_6 - T_5)
+\]  
+
+---
+
+TASK 2c  
+The mass-specific increase in flow exergy is calculated as:  
+\[
+\Delta ex_{\text{flow}} = m \left[ h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2 - w_0^2}{2} \right]
+\]  
+
+Using the following relations:  
+\[
+h_6 - h_0 = c_p (T_6 - T_0)
+\]  
+\[
+s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+
+Substituting constants:  
+\[
+R = c_p - c_v, \quad c_v = \frac{c_p}{\kappa}, \quad R = 0.287 \, \text{kJ/kg·K}
+\]  
+
+Final result:  
+\[
+\Delta ex_{\text{flow}} = 11.10 \, \text{kJ}
+\]  
+
+---
+
+TASK 2d  
+The mass-specific exergy destruction \( ex_{\text{dest}} \) in the engine is calculated using entropy generation:  
+\[
+ex_{\text{dest}} = T_0 \cdot S_{\text{gen}}
+\]  
+
+Entropy generation is expressed as:  
+\[
+S_{\text{gen}} = m \left[ s_6 - s_5 + s_a - s_1 \right]
+\]  
+
+Substituting entropy values:  
+\[
+s_a = s_5, \quad s_2 = s_1
+\]  
+
+Final result:  
+\[
+ex_{\text{dest}} = 9.13 \, \text{kJ}
+\]  
+

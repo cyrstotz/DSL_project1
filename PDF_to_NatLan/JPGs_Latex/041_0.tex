@@ -1,0 +1,54 @@
+TASK 1a  
+The energy balance equation for the reactor is written as:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \left[ h_{\text{in}} - h_{\text{out}} \right] + \dot{Q}_R
+\]  
+where \( h_{\text{in}} \) and \( h_{\text{out}} \) are the specific enthalpies at the inlet and outlet, respectively, and \( \dot{Q}_R \) is the heat released by the chemical reaction.  
+
+The specific enthalpy at the inlet is calculated using water table data (Table A-2):  
+\[
+h_{\text{in}} = h_f(70^\circ\text{C}) + x \left[ h_g(70^\circ\text{C}) - h_f(70^\circ\text{C}) \right] = 301.65 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The specific enthalpy at the outlet is similarly calculated:  
+\[
+h_{\text{out}} = h_f(100^\circ\text{C}) + x \left[ h_g(100^\circ\text{C}) - h_f(100^\circ\text{C}) \right] = 430.33 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The heat flow removed by the coolant is determined as:  
+\[
+\dot{Q}_{\text{out}} = 62.296 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+The coolant is modeled as an ideal liquid.  
+
+The entropy balance equation is written as:  
+\[
+\frac{dS}{dt} = \sum \dot{m}_i s_i + \frac{\dot{Q}_i}{T_i} + \dot{S}_{\text{gen}}
+\]  
+For reversible processes with no pressure losses and adiabatic conditions, the entropy generation term is zero.  
+
+The entropy change of the coolant is expressed as:  
+\[
+\dot{m} \left( s_{\text{in}} - s_{\text{out}} \right) + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+
+The entropy difference \( s_{\text{in}} - s_{\text{out}} \) is calculated using the integral:  
+\[
+s_{\text{in}} - s_{\text{out}} = \int_{T_{\text{in}}}^{T_{\text{out}}} \frac{c_{\text{p}}}{T} \, dT = c_{\text{p}} \ln \left( \frac{T_{\text{out}}}{T_{\text{in}}} \right)
+\]  
+
+An alternative formula for entropy change is derived:  
+\[
+\Delta S = \int_{T_e}^{T_i} \frac{c_{\text{p}}}{T} \, dT = c_{\text{p}} \ln \left( \frac{T_i}{T_e} \right)
+\]  
+
+A boxed formula is shown summarizing the entropy calculation:  
+\[
+\Delta S = c_{\text{p}} \ln \left( \frac{T_i}{T_e} \right)
+\]  
+
+No diagrams or figures are present on this page.

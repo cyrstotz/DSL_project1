@@ -1,0 +1,64 @@
+The goal is to determine the gas pressure \( p_{g,1} \) and mass \( m_g \) in state 1.  
+
+### Given Data:  
+- \( T_{g,1} = 500^\circ\text{C} \)  
+- \( V_{g,1} = 3.14 \, \text{L} \)  
+
+### Formula Used:  
+The ideal gas law:  
+\[
+pV = mRT
+\]  
+
+### Calculations:  
+The gas constant \( R \) is calculated as:  
+\[
+R = \frac{8.314 \, \text{kJ}}{\text{kmol·K}} \div 50 \, \text{kg/kmol} = 0.1663 \, \text{kJ/kg·K}
+\]  
+
+Substituting into the ideal gas law:  
+\[
+p_{g,1} \cdot 3.14 \times 10^{-3} \, \text{m}^3 = m_g \cdot 0.1663 \, \text{kJ/kg·K} \cdot 773.15 \, \text{K}
+\]  
+
+### Determining \( p_{\text{EW}} \):  
+The pressure exerted by the piston and atmospheric pressure is calculated as:  
+\[
+p_{\text{EW}} = p_{\text{amb}} + \frac{m_K \cdot g}{A}
+\]  
+Substituting values:  
+\[
+p_{\text{EW}} = 1 \, \text{bar} + \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{\frac{\pi}{4} \cdot (0.1 \, \text{m})^2}
+\]  
+\[
+p_{\text{EW}} = 1 \, \text{bar} + 0.39969 \, \text{bar} = 1.3997 \, \text{bar}
+\]  
+
+### Determining \( p_{g,1} \):  
+\[
+p_{g,1} = p_{\text{EW}} + \frac{m_{\text{EW}} \cdot g}{A}
+\]  
+Substituting values:  
+\[
+p_{g,1} = 1.3997 \, \text{bar} + \frac{0.1 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{\frac{\pi}{4} \cdot (0.1 \, \text{m})^2}
+\]  
+\[
+p_{g,1} = 1.401 \, \text{bar}
+\]  
+
+### Determining \( m_g \):  
+Rearranging the ideal gas law:  
+\[
+m_g = \frac{p_{g,1} \cdot V_{g,1}}{R \cdot T_{g,1}}
+\]  
+Substituting values:  
+\[
+m_g = \frac{1.401 \times 10^5 \, \text{N/m}^2 \cdot 3.14 \times 10^{-3} \, \text{m}^3}{0.1663 \, \text{kJ/kg·K} \cdot 773.15 \, \text{K}}
+\]  
+\[
+m_g = 3.4215 \, \text{g}
+\]  
+
+### Final Results:  
+- \( p_{g,1} = 1.401 \, \text{bar} \)  
+- \( m_g = 3.4215 \, \text{g} \)

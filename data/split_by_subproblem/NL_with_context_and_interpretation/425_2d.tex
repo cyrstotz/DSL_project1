@@ -1,0 +1,16 @@
+Exergy balance around steady-state control volume (entire system):  
+\( 0 = ex_{str,0} - ex_{str,6} + ex_{Q,0} - ex_{Q,6} - ex_{verl} \)  
+\( ex_{verl} = -\Delta ex_{str} + (-\Delta ex_{Q}) \)  
+
+\( \Delta ex_{Q} = \)  
+
+Using entropy balance:  
+\( 0 = m_{ges} s_6 - m_{ges} s_0 + Q_{0,6} / T_{0,6} + S_{erz} \)  
+\( S_{erz} = s_6 - s_0 - Q_{0,6} / T_{0,6} \)  
+
+\( Q_{0,6} = Q_B \)  
+\( T = h_6 - h_0 / s_6 - s_0 = c_p \Delta T / c_p \ln(T_6 / T_0) \)  
+\( T = 288.87 \, \text{K}, \, s_6 - s_0 = c_p \ln(T_6 / T_0) \)  
+
+\( S_{erz} = 3.79 \, \text{kJ/K} \)  
+\( ex_{verl} = T_0 S_{erz} = -923.856 \, \text{kJ/kg} \)

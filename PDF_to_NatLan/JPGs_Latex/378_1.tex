@@ -1,0 +1,54 @@
+TASK 1b  
+The thermodynamic mean temperature \( T \) is defined as:  
+\[
+T = \frac{\int_a^e T \, dS}{S_a - S_e}
+\]
+
+The entropy balance equation for the heat exchanger is written as:  
+\[
+\frac{d\dot{S}^2}{dt} = \dot{m}(S_e - S_a) + \frac{\dot{Q}_{\text{zu}}}{T} + \dot{S}_{\text{gen}}
+\]
+
+The heat transfer process in the heat exchanger is indicated with an arrow labeled "Wärmeübertrager zucker" (heat exchanger flow).
+
+TASK 1c  
+Given:  
+\[
+T_{\text{KF}} = 295 \, \text{K}, \quad \dot{Q}_{\text{zu}} = 65 \, \text{kW}
+\]
+
+The entropy balance equation is repeated:  
+\[
+\frac{d\dot{S}^2}{dt} = \dot{m}(S_e - S_a) + \frac{\dot{Q}_{\text{zu}}}{T} + \dot{S}_{\text{gen}}
+\]
+
+The entropy generation term is expressed as:  
+\[
+\dot{S}_{\text{gen}} = \dot{m}(S_a - S_e) \frac{\dot{Q}_{\text{zu}}}{T}
+\]
+
+Rewriting the entropy generation equation:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{zu}}}{h_a - h_e} \left( S_a - S_e - \frac{1}{T} \right)
+\]
+
+Substituting the heat transfer term:  
+\[
+\dot{S}_{\text{gen}} = \dot{Q}_{\text{zu}} \left( \frac{\ln \left( \frac{T_a}{T_e} \right)}{T_a - T_e} - \frac{1}{T} \right)
+\]
+
+The entropy generation is calculated as:  
+\[
+\dot{S}_{\text{gen}} = 1.4118 \, \frac{\text{J}}{\text{K·s}}
+\]
+
+Additional equations:  
+The mass flow rate is determined as:  
+\[
+m = \frac{\dot{Q}_{\text{zu}}}{h_a - h_e}
+\]
+
+The entropy change is expressed as:  
+\[
+\Delta S = c_p \ln \left( \frac{T_e}{T_a} \right) - R \ln \left( \frac{p_2}{p_1} \right)
+\]

@@ -1,0 +1,61 @@
+TASK 1a  
+To calculate the heat flow \( \dot{Q}_{\text{out}} \), the energy balance is expressed as:  
+\[
+0 = \dot{m}_{\text{in}} h_{\text{in}} - \dot{m}_{\text{out}} h_{\text{out}} + \dot{Q}_{\text{out}} + \dot{Q}_R
+\]  
+Rearranging for \( \dot{Q}_{\text{out}} \):  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{out}} h_{\text{out}} - \dot{m}_{\text{in}} h_{\text{in}} - \dot{Q}_R
+\]  
+
+The enthalpy values are determined using:  
+\[
+h_{\text{in}} = h_f(70^\circ\text{C}) + v_f(p - p_{\text{sat}})
+\]  
+\[
+h_{\text{out}} = h_f(100^\circ\text{C}) + v_f(p - p_{\text{sat}})
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) is calculated using:  
+\[
+T_{\text{KF}} = \frac{\int T \, dQ}{Q_{\text{out}}} = \frac{s_{\text{out}} - s_{\text{in}}}{s_{\text{out}} - s_{\text{in}}}
+\]  
+
+The entropy values are:  
+\[
+s_{\text{out}} = s_f(298.15 \, \text{K})
+\]  
+\[
+s_{\text{in}} = s_f(288.15 \, \text{K})
+\]  
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) is determined using the entropy balance:  
+\[
+\dot{S}_{\text{gen}} = \dot{m}_{\text{in}} s_{\text{in}} - \dot{m}_{\text{out}} s_{\text{out}} + \frac{\dot{Q}_R}{T_{\text{KF}}} + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+
+TASK 1d  
+To calculate \( \Delta m_{12} \), the energy balance for the cooling process is expressed as:  
+\[
+\Delta m_{12} h_{12} + Q_{12} = m_2 u_2 - m_1 u_1 + Q_{12} - \frac{v_{12}^2}{2}
+\]  
+
+Rewriting:  
+\[
+(m_1 + \Delta m_{12}) u_2 - \Delta m_{12} h_{12} = m_1 u_1 - Q_{12}
+\]  
+
+Substituting enthalpy and internal energy values:  
+\[
+\Delta m_{12} (u_2 - h_{12}) = m_1 u_1 - Q_{12} - m_1 u_2
+\]  
+
+Where:  
+\[
+h_{12} = h_f(70^\circ\text{C})
+\]  
+\[
+h_1 = h_f(100^\circ\text{C})
+\]

@@ -1,0 +1,44 @@
+TASK 1a  
+The heat flow \( \dot{Q}_{\text{out}} \) removed by the coolant is calculated using the energy balance equation:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \cdot (h_{\text{out}} - h_{\text{in}}) + \dot{m} \int_{T_{\text{in}}}^{T_{\text{out}}} c_p(T) \, dT + \dot{m} \cdot v^2 \cdot (p_2 - p_1)
+\]  
+After simplifying and substituting values:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \cdot (h_{\text{out}} - h_{\text{in}})
+\]  
+Given:  
+\[
+\dot{m} = 0.3 \, \text{kg/s}, \quad h_{\text{out}} = 419.05 \, \text{kJ/kg}, \quad h_{\text{in}} = 291.05 \, \text{kJ/kg}
+\]  
+From water tables (A-2):  
+\[
+\dot{Q}_{\text{out}} = 0.3 \cdot (419.05 - 291.05) = 62.182 \, \text{W}
+\]  
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) is calculated using the entropy balance equation:  
+\[
+\dot{S}_{\text{gen}} = m_2 \cdot s_2 - m_1 \cdot s_1 - \frac{Q_{12}}{T_{\text{j}}}
+\]  
+Where:  
+\[
+m_2 = m_1 = \dot{m} = 0.3 \, \text{kg/s}, \quad T = 293 \, \text{K}, \quad Q_{12} = 65 \, \text{kW}
+\]  
+From water tables:  
+\[
+s_1 = 0.45349 \, \text{kJ/kg·K}, \quad s_2 = 1.30069 \, \text{kJ/kg·K}
+\]  
+Substituting:  
+\[
+\dot{S}_{\text{gen}} = m \cdot (s_2 - s_1) - \frac{65 \, \text{kW}}{293 \, \text{K}}
+\]  
+Simplifying:  
+\[
+\dot{S}_{\text{gen}} = 0.3 \cdot (1.30069 - 0.45349) - \frac{65}{293}
+\]  
+\[
+\dot{S}_{\text{gen}} = 0.3 \cdot 0.8472 - 0.2215 = -2.028642 \, \text{kJ/K}
+\]  
+
+No diagrams or figures are present on this page.

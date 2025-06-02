@@ -1,0 +1,52 @@
+
+``````latex
+
+
+\section*{1.}
+\subsection*{a)}
+Energiebilanz:
+\begin{align*}
+\frac{dE}{dt} &= \dot{m} \left[ h_i + \frac{v_i^2}{2} + g z_i \right] + \sum \dot{Q} - \sum \dot{W} \\
+0 &= \dot{m} \left[ h - h_0 + 0 + 0 \right] + \dot{Q}_{aus} + \dot{Q}_x \\
+&= \dot{m} \left[ h_{kern} - h_{aus} \right] + \dot{Q}_{aus} + \dot{Q}_x \\
+\dot{Q}_{aus} &= \dot{m} \left[ C_p (T_{ein} - T_{aus}) \right] + \dot{Q}_{ein} + 100 \text{kW} \\
+\dot{Q}_{aus} &= \dot{m} \, C_p (T_{aus} - T_{ein}) = 0.3 (298.15 - 288.15) = -70 \text{kW}
+\end{align*}
+
+\subsection*{b)}
+\begin{align*}
+T_{KF} &= \frac{\int_{S_a}^{S_e} T \, dS}{S_a - S_e} \\
+\text{adiabat \& isobar} & \quad \int_{S_a}^{S_e} T \, dS \\
+q_{rev} &= \Delta S \cdot T \\
+\Delta S &= \frac{\delta Q}{T} \bigg|_{rev} \\
+q_{rev} &= \Delta S \cdot T = h_a - h_e \\
+T_{KF} &= \frac{h_a - h_e}{S_a - S_e} \\
+\bar{T} &= \frac{C_p (T_2 - T_1)}{\ln \left( \frac{T_2}{T_1} \right)} = \frac{\int_{T_1}^{T_2} C_p \, dT + v(T_2 - T_1)}{\int_{T_1}^{T_2} \frac{C_p}{T} \, dT} = \frac{C_p (T_2 - T_1) + 0}{C_p \ln \left( \frac{T_2}{T_1} \right)} \\
+&= \frac{298.15 \text{K} - 288.15 \text{K}}{\ln \left( \frac{298.15}{288.15} \right)} = 283.127 \text{K}
+\end{align*}
+
+\subsection*{c)}
+\begin{align*}
+S_{out} - S_{in} &= \dot{m} [S_e - S_a] + \sum \frac{\dot{Q}_i}{T_i} + S_{erz} \\
+S_{erz} &= \dot{m} [S_a - S_e] + \frac{Q_{aus}}{T_{KF}} \\
+&= 0.3 \frac{\text{kJ}}{\text{s}} \left[ C_p \ln \left( \frac{T_a}{T_e} \right) \right] + \frac{Q_{aus}}{T_{KF}}
+\end{align*}
+
+\subsection*{d)}
+\begin{align*}
+0 &= \dot{m} \left[ h_e - h_a \left( \frac{v_e^2 - v_a^2}{2} \right) + g (z_e - z_a) \right] + \sum \dot{Q} - \sum \dot{W} \\
+\text{Zustand 1:} & \quad T_1 = 100^\circ \text{C} \\
+\text{Zustand 2:} & \quad T_2 = 70^\circ \text{C} \\
+\text{Tein} &= 20^\circ \text{C} \\
+\text{heißes System:} & \quad \Delta E = m_2 u_2 - m_1 u_1 = \sum m_i \left[ h_i + \frac{v_i^2}{2}```latex
+
+
+1(c). \(\Delta S = m_2 S_2 - m_1 S_1 = \sum dm_i S_i + \sum \frac{Q_i}{T_i} + S_{env}\)
+
+\[
+m_{02}(m_1 + m_{412}) S_2 - m_1 S_1 = dm_{12} S_{12} + \frac{Q_{412}}{T} + S_{env}
+\]
+
+``````latex
+
+

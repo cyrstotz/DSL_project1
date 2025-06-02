@@ -1,0 +1,142 @@
+
+``````latex
+
+\section*{1. a) Energiebilanz:}
+
+\begin{equation*}
+\dot{m} (h_e - h_a) + \dot{Q}_R - \dot{Q}_{\text{aus}} = 0 \quad \text{stationär}
+\end{equation*}
+
+\begin{equation*}
+\dot{Q}_{\text{aus}} = \dot{m} (h_e - h_a) + \dot{Q}_R
+\end{equation*}
+
+\begin{equation*}
+h_e = h_f (90^\circ C) = 232.98 \frac{\text{kJ}}{\text{kg}}
+\end{equation*}
+
+\begin{equation*}
+h_a = h_f (100^\circ C) = 419.04 \frac{\text{kJ}}{\text{kg}}
+\end{equation*}
+
+\begin{equation*}
+\Rightarrow \dot{Q}_{\text{aus}} = 0.3 \left( \frac{h_e - h_a}{\cancel{h_e - h_a}} \right) + 100 \text{kW} = 62.182 \text{kW}
+\end{equation*}
+
+\noindent
+\text{Vorzeichen nach Skizze,}
+
+\section*{b)}
+
+\begin{equation*}
+TdS = \delta Q
+\end{equation*}
+
+\begin{equation*}
+\overline{T} (s_2 - s_1) = q_{12}
+\end{equation*}
+
+\begin{equation*}
+q_{12} = h_2 - h_1
+\end{equation*}
+
+\begin{equation*}
+\overline{T} = \frac{h_2 - h_1}{s_2 - s_1}
+\end{equation*}
+
+\begin{equation*}
+h_2 - h_1 = c_{if} (T_2 - T_1)
+\end{equation*}
+
+\begin{equation*}
+s_2 - s_1 = c_{if} \ln \left( \frac{T_2}{T_1} \right)
+\end{equation*}
+
+\begin{equation*}
+\Rightarrow \overline{T} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)} = 233.1216 \text{K}
+\end{equation*}
+
+``````latex
+
+
+1.c)
+
+\begin{center}
+\begin{tabular}{c}
+\begin{picture}(50,100)
+\put(25,80){\vector(0,1){20}}
+\put(25,80){\vector(0,-1){20}}
+\put(25,60){\line(0,-1){40}}
+\put(25,100){\line(0,1){20}}
+\put(30,90){$Q_{\text{aus}}$}
+\put(30,70){$Q_{\text{aus}}$}
+\put(30,50){$T = 100^\circ \text{C}$}
+\put(30,30){$T_{\text{KF}}$}
+\end{picture}
+\end{tabular}
+\end{center}
+
+Wand als \underline{adiabate} Systemgrenze
+
+Entropiebilanz:
+
+\[
+\frac{Q_{\text{aus}}}{T_{\text{Reaktor}}} - \frac{Q_{\text{aus}}}{T_{\text{KF}}} + S_{\text{erz}} = 0
+\]
+
+\[
+S_{\text{erz}} = Q_{\text{aus}} \left( \frac{1}{T_{\text{KF}}} - \frac{1}{T_{\text{Reaktor}}} \right)
+\]
+
+\[
+= 4.5946 \cdot 10^{-3} \frac{\text{kW}}{\text{K}} = 95.496 \frac{\text{W}}{\text{K}}
+\]
+
+d)
+
+\[
+T_2 = 70^\circ \text{C}
+\]
+
+Energiebilanz:
+
+\[
+\frac{d}{dt} \Delta E = \Delta m_{12} \cdot h_{\text{ein}} + Q_{\text{aus}} + Q_R - W^{70}
+\]
+
+\[
+(m_0 + \Delta m_{12}) u_2 - m_1 u_1 = \Delta m_{12} h_e
+\]
+
+\[
+m_{12} - m_{u_1} = \Delta m_{12} (h_e - u_2)
+\]
+
+\[
+m_1 \frac{(u_2 - u_1)}{h_e - u_2} = \Delta m_{12}
+\]
+
+``````latex
+
+
+\section*{1.d) Fortsetzung}
+
+\begin{align*}
+\text{aus TABELLE A2} \\
+u_1 &= u_f + x \left( u_g - u_f \right) = 918.94 + 0.005 \left( 2506.5 - 918.94 \right) \\
+&= 929.3778 \frac{\text{kJ}}{\text{kg}} \\
+u_2 &= u_f (70^\circ \text{C}) = 292.58 \frac{\text{kJ}}{\text{kg}} \\
+h_e &= h_f (20^\circ \text{C}) = 83.96 \frac{\text{kJ}}{\text{kg}} \\
+\Rightarrow \Delta m_{12} &= 3756.98 \text{kg}
+\end{align*}
+
+\begin{align*}
+\text{e)} \quad \Delta S_{12} &= \dot{m}_{12} s_2 - m_1 s_1 \\
+s_1 &= 1.3069 \frac{\text{kJ}}{\text{kg K}} \\
+s_2 &= 0.9549 \frac{\text{kJ}}{\text{kg K}} \\
+\Rightarrow \Delta S_{12} &= 1561.65 \frac{\text{kJ}}{\text{K}}
+\end{align*}
+
+``````latex
+
+

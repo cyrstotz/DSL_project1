@@ -1,0 +1,30 @@
+The mass-specific increase in flow exergy \( e_{x,\text{st,h}} \) is given by:  
+\[
+e_{x,\text{st,h}} = (h_6 - h_0 - T_0 (s_6 - s_0)) + \frac{w_6^2}{2}
+\]  
+
+The specific heat at constant volume \( c_v \) is calculated as:  
+\[
+c_v = c_p - \frac{R}{M}
+\]  
+\[
+R = \frac{\bar{R}}{M} = 288.982 \, \frac{\text{J}}{\text{kg·K}}
+\]  
+\[
+c_v = 715.01 \, \frac{\text{J}}{\text{kg·K}}
+\]
+
+The entropy difference \( s_6 - s_0 \) is calculated as:  
+\[
+s_6 - s_0 = \int_{T_0}^{T_6} \frac{c_p}{T} \, dT - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+Approximated as:  
+\[
+s_6 - s_0 = c_p (\ln(T_6) - \ln(T_0)) - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+Substituting values, \( s_6 - s_0 = 301.361 \, \frac{\text{J}}{\text{kg·K}} \).
+
+Finally, the flow exergy is calculated as:  
+\[
+e_{x,\text{st,h}} = 156239.168 \, \frac{\text{J}}{\text{kg}}
+\]

@@ -1,0 +1,179 @@
+
+``````latex
+
+
+1. \( \dot{Q}_{\text{aus}} \)
+
+\[
+\dot{m}(h_{\text{ein}} - h_{\text{a}}) + \dot{Q}_{R} + \dot{Q}_{\text{aus}} = 0
+\]
+
+Wasser
+
+\[
+h_{\text{ein}} \quad 70^\circ \text{C} \quad \text{siedend} \rightarrow \text{Nassdampf} \quad \text{mit} \quad x_0 = 0.005
+\]
+
+\[
+h_{\text{e}} = h_f(70^\circ \text{C}) + x_0 (h_g(70^\circ \text{C}) - h_f(70^\circ \text{C}))
+\]
+
+\[
+= 292.98 \frac{\text{kJ}}{\text{kg}} + 0.005 \left( 2626.8 \frac{\text{kJ}}{\text{kg}} - 292.98 \frac{\text{kJ}}{\text{kg}} \right)
+\]
+
+\[
+= 309.65 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_{\text{a}} = h_f(100^\circ \text{C}) + x_0 (h_g(100^\circ \text{C}) - h_f(100^\circ \text{C}))
+\]
+
+\[
+= 419.04 \frac{\text{kJ}}{\text{kg}} + 0.005 \left( 2676.1 \frac{\text{kJ}}{\text{kg}} - 419.04 \frac{\text{kJ}}{\text{kg}} \right)
+\]
+
+\[
+= 430.33 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\dot{m} = 0.3 \frac{\text{kg}}{\text{s}}
+\]
+
+\[
+0.3 \frac{\text{kg}}{\text{s}} (309.65 \frac{\text{kJ}}{\text{kg}} - 430.33 \frac{\text{kJ}}{\text{kg}}) + 100 \text{kW} + \dot{Q}_{\text{aus}} = 0
+\]
+
+\[
+\dot{Q}_{\text{aus}} = -62.296 \text{kW}
+\]
+
+\[
+\text{Wenn Pfeil anders herum zeigt} \rightarrow 62.30 \text{kW} \text{ fließt heraus} = \dot{Q}_{\text{aus}}
+\]
+
+\[
+\text{In der ganzen Aufgabe habe ich für den Begriff siedend mit einem Dampfanteil } x \text{ von } 0.005 \text{ gerechnet}
+\]
+
+``````latex
+
+
+\section*{b)}
+
+\[
+T_{KF} = \int_{S_2}^{S_1} T dS = \frac{q_{12}}{S_2 - S_1} = \frac{h_2 - h_1}{S_2 - S_1}
+\]
+
+da ideale Flüssigkeit und isobar
+
+\[
+\rightarrow h_2 - h_1 = c (T_2 - T_1)
+\]
+
+\[
+S_2 - S_1 = c \ln \left( \frac{T_2}{T_1} \right)
+\]
+
+\[
+T_{KF} = \frac{c (T_2 - T_1)}{c \ln \left( \frac{T_2}{T_1} \right)}
+\]
+
+\[
+= \frac{298,15 K - 288,15 K}{\ln \left( \frac{298,15}{288,15} \right)} = \underline{293,17 K}
+\]
+
+\[
+T_2 = 298,15 K
+\]
+
+\[
+T_1 = 288,15 K
+\]
+
+\section*{c)}
+
+\[
+\dot{Q}_{zu} \frac{1}{T_{KF}} + \dot{S}_{erz} - \dot{Q}_{ab} \frac{1}{T_R} = 0
+\]
+
+\[
+\dot{S}_{erz} = \dot{Q}_{ab} \left( -\frac{1}{T_{KF}} + \frac{1}{T_R} \right)
+\]
+
+\[
+= 62,33 kW \left( -\frac{1}{293,17 K} + \frac{1}{373,15 K} \right)
+\]
+
+\[
+\dot{S}_{erz} = \underline{46 J}
+\]
+
+``````latex
+
+
+\section*{d) Teilaufgabe}
+
+\begin{enumerate}
+    \item 
+    \begin{align*}
+        m_1 &= 5755 \, \text{kg} \\
+        X_1 &= 0{,}005 \\
+        T_1 &= 100^\circ \text{C} \\
+        T_{\text{ein}} &= 20^\circ \text{C} \\
+        m_2 &= m_1 + \Delta m \\
+        \Delta m \\
+        T_2 &= 70^\circ \text{C}
+    \end{align*}
+    
+    \begin{align*}
+        m_2 U_2 - m_1 U_1 &= \dot{m} h_{\text{ein}} + Q_{\text{aus}} 12
+    \end{align*}
+    
+    \text{A-Z @ 100$^\circ$C}
+    
+    \begin{align*}
+        U_1 &= U_f (100^\circ \text{C}) + X_b \left( h_g (100^\circ \text{C}) - U_f (100^\circ \text{C}) \right) \\
+        &= 0{,}025 (296{,}95 - 292{,}95) \\
+        &= 418{,}99 \frac{kJ}{kg} + 0{,}005 (2506{,}5 \frac{kJ}{kg} - 418{,}99 \frac{kJ}{kg}) \\
+        &= 429{,}38 \frac{kJ}{kg}
+    \end{align*}
+    
+    \text{@ 70$^\circ$C}
+    
+    \begin{align*}
+        U_2 &= 202{,}95 \frac{kJ}{kg} + 0{,}005 (2469 \frac{kJ}{kg} - 292{,}95 \frac{kJ}{kg}) \\
+        &= 303{,}83 \frac{kJ}{kg}
+    \end{align*}
+    
+    \text{h ein @ 20$^\circ$C}
+    
+    \begin{align*}
+        h_{\text{ein}} &= h_f (20^\circ \text{C}) + X_0 (h_g (20^\circ \text{C}) - h_f (20^\circ \text{C})) \\
+        &= 79{,}77 \frac{kJ}{kg} + 0{,}005 (2536{,}7 \frac{kJ}{kg} - 741{,}7 \frac{kJ}{kg}) \\
+        &= 87{,}08 \frac{kJ}{kg}
+    \end{align*}
+    
+    \begin{align*}
+        m_1 U_2 - m_1 U_1 + \Delta m U_2 - \Delta m h_2 &= Q_{\text{aus}} \\
+        \Delta m &= \frac{Q_{\text{aus}} + (m_1 (U_1 - U_2))}{U_2 - h_e} \\
+        &= 3495 \, \text{kg}
+    \end{align*}
+\end{enumerate}
+
+``````latex
+
+
+\[ 
+e 
+\]
+
+\[
+\Delta S_{12} = m_2 S_2 - m_1 S_1 = \Delta m S_e + \frac{QR}{T} + S_{er}
+\]
+
+``````latex
+
+

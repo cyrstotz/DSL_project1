@@ -1,0 +1,91 @@
+
+``````latex
+
+
+2.
+
+a) \( T(s) \)
+
+\begin{itemize}
+    \item The graph is a plot with an x-axis labeled \( s \) and a y-axis labeled \( T \).
+    \item There are six points labeled 0, 1, 2, 3, 4, 5, and 6.
+    \item The points are connected by lines forming a path: 0 to 1, 1 to 2, 2 to 3, 3 to 4, 4 to 5, and 5 to 6.
+    \item There are three isobars labeled \( p_0 \), \( p_3 \), and \( p_5 \) running parallel to the x-axis.
+    \item The path from 0 to 1 is vertical, from 1 to 2 is horizontal, from 2 to 3 is vertical, from 3 to 4 is horizontal, from 4 to 5 is vertical, and from 5 to 6 is horizontal.
+    \item The points 1, 3, and 5 are on the isobar \( p_3 \), and points 0, 2, 4, and 6 are on the isobars \( p_0 \) and \( p_5 \).
+\end{itemize}
+
+b)
+
+\[
+0 = \dot{m} (h_5 - h_6 + \frac{v_5^2 - v_6^2}{2}) + \dot{Q} - \dot{V}_0
+\]
+
+\[
+\dot{V}_0 = \frac{R}{M} (\dot{T}_6 - \dot{T}_5) = \frac{R}{M} \frac{(\dot{T}_6 - \dot{T}_5)}{7 - n}
+\]
+
+\[
+\dot{V}_0 = \frac{R}{M} \frac{(\dot{T}_6 - \dot{T}_5)}{7 - n} = \frac{2 \dot{q} (273.15 - 30 + 4.5741)}{7 - 7.4} = (47.875 \frac{\dot{q}}{s})
+\]
+
+\[
+\dot{Q} = \dot{m} \frac{R}{M} = 8.314 \frac{J}{mol \cdot K} \cdot 2000 \frac{mol}{s} = 2 \dot{q}
+\]
+
+\[
+\dot{V}_0 = \dot{m} (h_1 - h_0) = \dot{m} (\frac{v_1^2 - v_0^2}{2})
+\]
+
+\[
+V_0 = \sqrt{v_2^2 + 2 (\dot{V}_0 - \dot{m} (h_5 - h_6))}
+\]
+
+\[
+h_5 - h_6 = c_p (T_5 - T_6)
+\]
+
+c)
+
+\[
+\dot{E}_{\text{ex}} = \dot{m} (h_0 - h_6 - T_0 (s_0 - s_6) + \dot{q})
+\]
+
+\[
+h_0 - h_6 = c_p (T_0 - T_6) = 7000 \frac{J}{kg \cdot K} (340.01 - 273.15 + 30) = 57.07 \frac{J}{kg}
+\]
+
+\[
+T_0 (s_0 - s_6) - T_0 c_p \ln \left( \frac{T_0}{T_6} \right) = (273.15 - 30 K) - 1.006 \frac{J}{kg \cdot K} \ln \left( \frac{340.01}{273.15 - 30 K} \right) = 170 \frac{J}{kg}
+\]
+
+\[
+\dot{q} = \frac{v_2^2 - v_0^2}{2} = 170 \frac{J}{kg}
+\]
+
+\[
+\dot{E}_{\text{ex}} = \dot{m} \left( 57 - 52 + 170 \right) = 63 \frac{J}{kg}
+\]
+
+``````latex
+
+\section*{Solution}
+
+\subsection*{a)}
+
+\begin{align*}
+    E_{\text{total}} &= E_{\text{cycle}} + E_{\text{cycle}} \\
+    \dot{E}_\text{in} Q_\text{in} &= \left(1 - \frac{T_0}{T}\right) \dot{Q}
+\end{align*}
+
+\text{input: first law}
+
+\begin{align*}
+    \dot{m}_\text{in} &= \dot{m}_\text{out} - \dot{m}_\text{in} = \dot{m}_\text{out} - 5.235 \, \text{time} \\
+    \dot{m}_\text{in} \left(1 + 5.235\right) &= \dot{m}_\text{out} \\
+    \dot{m}_\text{in} &= \frac{\dot{m}_\text{out}}{6.235}
+\end{align*}
+
+``````latex
+
+

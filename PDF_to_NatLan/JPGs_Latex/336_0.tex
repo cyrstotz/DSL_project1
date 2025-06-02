@@ -1,0 +1,60 @@
+TASK 1a  
+The energy balance equation is written as:  
+\[
+\frac{dE}{dt} = \dot{m}(u + \frac{k^2}{2} + gz) \quad \text{(steady-state, kinetic and potential energy neglected)}
+\]  
+This simplifies to:  
+\[
+0 = \dot{m}(h_{\text{out}} - h_{\text{in}}) + \dot{Q}_R - \dot{Q}_{\text{out}}
+\]  
+Rearranging for the heat flow removed by the coolant:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}(h_{\text{out}} - h_{\text{in}}) + \dot{Q}_R
+\]  
+
+The enthalpy difference \( h_{\text{out}} - h_{\text{in}} \) is determined using water tables:  
+- \( h_{\text{in}} = h_f = 292.98 \, \text{kJ/kg} \)  
+- \( h_{\text{out}} = h_f = 420.04 \, \text{kJ/kg} \)  
+
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}(420.04 - 292.98) + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = 99962.28 \, \text{W}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is calculated using:  
+\[
+T_{\text{KF}} = \frac{\int_{T_{\text{in}}}^{T_{\text{out}}} T \, ds}{s_{\text{out}} - s_{\text{in}}}
+\]  
+For constant heat capacity:  
+\[
+T_{\text{KF}} = \frac{T_{\text{out}} - T_{\text{in}}}{\ln\left(\frac{T_{\text{out}}}{T_{\text{in}}}\right)}
+\]  
+Substituting values:  
+\[
+T_{\text{KF}} = \frac{298.15 - 288.15}{\ln\left(\frac{298.15}{288.15}\right)} = 293.72 \, \text{K}
+\]  
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) is calculated using the entropy balance:  
+\[
+\frac{dS}{dt} = \dot{m}(s_{\text{out}} - s_{\text{in}}) + \frac{\dot{Q}_R}{T_R} - \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} - \dot{S}_{\text{gen}}
+\]  
+At steady state:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_R}{T_R} - \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+Substituting values:  
+- \( T_R = 373.15 \, \text{K} \)  
+- \( T_{\text{KF}} = 293.72 \, \text{K} \)  
+- \( \dot{Q}_R = 100 \, \text{kW} \)  
+- \( \dot{Q}_{\text{out}} = 99.962 \, \text{kW} \)  
+
+\[
+\dot{S}_{\text{gen}} = \left(\frac{100}{373.15} - \frac{99.962}{293.72}\right) = 47.56 \, \frac{\text{W}}{\text{K}}
+\]  
+
+A sketch is included showing heat transfer \( \dot{Q}_R \) and \( \dot{Q}_{\text{out}} \) between the reactor and cooling jacket, with labeled temperatures \( T_R = 373.15 \, \text{K} \) and \( T_{\text{KF}} = 293.72 \, \text{K} \).

@@ -1,0 +1,56 @@
+TASK 1a  
+The mass flow rate and total reactor mass are given as:  
+\[
+\dot{m}_{\text{in}} = 0.3 \, \text{kg/s}, \quad m_{\text{total}} = 5755 \, \text{kg}.
+\]  
+
+The energy balance equation is written as:  
+\[
+0 = \dot{m} \, (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R + \dot{Q}_{\text{out}} - \dot{W}.
+\]  
+
+Rearranging to solve for the heat flow removed by the coolant:  
+\[
+\dot{Q}_{\text{out}} = -\dot{Q}_R + \dot{m} \, (h_{\text{out}} - h_{\text{in}}).
+\]  
+
+The enthalpy values are calculated using water tables:  
+\[
+h_{\text{in}} = h_f(70^\circ\text{C}) + 0.005 \, (h_g(70^\circ\text{C}) - h_f(70^\circ\text{C})) = 304.65 \, \frac{\text{kJ}}{\text{kg}},
+\]  
+\[
+h_{\text{out}} = h_f(100^\circ\text{C}) + 0.005 \, (h_g(100^\circ\text{C}) - h_f(100^\circ\text{C})) = 430.825 \, \frac{\text{kJ}}{\text{kg}}.
+\]  
+
+Substituting these values:  
+\[
+\dot{Q}_{\text{out}} = -62.2972 \, \frac{\text{kJ}}{\text{s}} = -62.31 \, \text{kW}.
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant is calculated using the integral relationship:  
+\[
+T_{\text{KF}} = \frac{\int T \, \text{d}s}{s_a - s_e} = \frac{\Delta h - v \Delta p}{s_a - s_e}.
+\]  
+
+Substituting for \( h_2 - h_1 \) and simplifying:  
+\[
+T_{\text{KF}} = \frac{\Delta T_2 - T_1}{\Delta \ln \left( \frac{T_2}{T_1} \right)} = 283.1216 \, \text{K}.
+\]  
+
+---
+
+TASK 1c  
+The entropy production rate is calculated using the entropy balance equation:  
+\[
+0 = \dot{m} \, (s_{\text{in}} - s_{\text{out}}) + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} + \dot{S}_{\text{gen}}.
+\]  
+
+Rearranging to solve for entropy generation:  
+\[
+\dot{S}_{\text{gen}} = -\frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} + \dot{m} \, (s_{\text{out}} - s_{\text{in}}).
+\]  
+
+This equation is expressed symbolically, with terms for heat flow and entropy differences clearly defined.

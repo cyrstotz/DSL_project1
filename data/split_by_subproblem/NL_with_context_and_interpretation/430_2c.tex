@@ -1,0 +1,25 @@
+Data:  
+\( ex_{str,6} = (h_6 - h_0 - T_0 \cdot (s_6 - s_0) + \frac{w_6^2}{2}) \)  
+\( ex_{str,0} = (h_0 - h_0 - T_0 \cdot (s_0 - s_0) + \frac{w_0^2}{2}) \)  
+\( ex_{str,0} = e = \frac{w^2}{2} = 20,000 \, \text{m}^2/\text{s}^2 = 20,000 \, \text{J}/\text{kg} \)  
+
+\( h_6 - h_0 = \int_{T_0}^{T_6} c_{p} \, dT = 1.006 \, \text{kJ}/\text{kg·K} \cdot (328.015 \, \text{K} - 243.15 \, \text{K}) \)  
+\( = 85.429 \, \text{J}/\text{kg} \)  
+
+\( s_6 - s_0 = \int_{T_0}^{T_6} \frac{c_{p}}{T} \, dT - R \ln \left( \frac{p_0}{p_6} \right) = 1.006 \, \text{kJ}/\text{kg·K} \cdot \ln \left( \frac{328.015}{243.15} \right) - 0.3016 \, \text{kJ}/\text{kg·K} \)  
+\( = 0.3016 \, \text{kJ}/\text{kg·K} \)  
+
+\( ex_{str,6} = (85.429 \, \text{J}/\text{kg} - 243.15 \, \text{K} \cdot 0.3016 \, \text{kJ}/\text{kg·K} + \frac{w_6^2}{2}) \)  
+\( = 742.144 \, \text{J}/\text{kg} \)  
+
+\( ex_{verl,str} = ex_{str,6} - ex_{str,0} = 742.144 \, \text{J}/\text{kg} - 20,000 \, \text{J}/\text{kg} \)  
+\( = 722.144 \, \text{J}/\text{kg} \)
+
+The derivative of entropy with respect to time is equal to the mass flow rate multiplied by the difference in entropy between state 0 and state 6:  
+dS/dt = m dot (s0 - s6)  
+
+The entropy production is calculated as:  
+S erz = m dot (s6 - s0) = 0.3076 kilograms per second  
+
+The exergy loss is calculated as:  
+Ex verl = T0 S erz = 243.15 Kelvin multiplied by 0.3076 kilograms per second = 73.334 kilojoules per second

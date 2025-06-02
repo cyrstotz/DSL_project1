@@ -1,0 +1,79 @@
+
+``````latex
+
+
+\section*{A7}
+
+\subsection*{a)}
+Energieblianz im Reaktor, stationär mit $\Delta p = \Delta E = W = 0$
+
+\[
+0 = \dot{m}_{ein} (h_{ein} - h_{aus}) + \dot{Q}_{Reaktor} - \dot{Q}_{aus}
+\]
+
+(mit $\dot{Q}$ aus in Pfeilrichtung positiv definiert)
+
+\[
+\dot{Q}_{aus} = \dot{m}_{ein} (h_{r200^\circ C} - h_{w200^\circ C}) + Q_2
+\]
+
+Im ganzen Reaktor siedende Flüssigkeit $\Rightarrow$ wir sind im 2-Phasengebiet
+
+\[
+h_{ein} = h_{f, Tab = 2} \quad \text{mit} \quad T = 70^\circ C \quad \text{und} \quad x = 0.005
+\]
+
+\[
+h_{f70} = 293.2 \frac{kJ}{kg} \quad h_{g70} = 2626.8 \frac{kJ}{kg} \quad (bz. 20^\circ)
+\]
+
+\[
+h_{ein} = h_{f70} + x_p (h_{g70} - h_{f70}) = 309.649 \frac{kJ}{kg} = h_{ein}
+\]
+
+\[
+h_{aus} = h_{f200} + x_p (h_{g200} - h_{f200}) = 428.23 \frac{kJ}{kg}
+\]
+
+\[
+Tab A-2: \quad h_{f200} = 849.04 \frac{kJ}{kg} \quad h_{g200} = 2257.0 \frac{kJ}{kg}
+\]
+
+\[
+\dot{Q}_{aus} = 0.5 \frac{kg}{s} (309.649 + 428.23) \frac{kJ}{kg} + 100 \frac{kJ}{s} = 62.93 \frac{kJ}{s} = \dot{Q}_{aus}
+\]
+
+\subsection*{b)}
+\[
+\int \frac{\dot{Q}}{T} = \int \frac{\dot{Q}}{T} + \int \frac{\dot{Q}}{T}
+\]
+
+\[
+\text{ideale Flüssigkeit} \Rightarrow \text{Wellenlinie} \Rightarrow s(T/p) = s(T)
+\]
+
+\[
+\text{ideale Flüssigkeit} \Rightarrow T = \frac{T_{aus} - T_{ein}}{2} \quad \Rightarrow T_{ein} = 289.15 K \quad \frac{259.15 K + 293.15 K}{2} = 293.15 K
+\]
+
+\subsection*{c)}
+\[
+\dot{S}_{erzeugt} = \left(1 - \frac{T_0}{T}\right) \dot{Q}_{aus} \quad \text{mit} \quad T_0 = \text{Umwelt} = (100 + 273.15) K \quad \text{(ann. nicht sich, führt zu negativen Wert (unmöglich))}
+\]
+
+\[
+\dot{S}_{erzeugt} = \left(1 - \frac{373.15 K}{293.15 K}\right) \cdot 62.93 \frac{kJ}{s} = 4.29 \frac{kJ}{s} \quad \text{mit} \quad T_0 \quad \text{angenommen} \quad 293.15 K
+\]
+
+``````latex
+
+
+d) \textbf{Energiebilanz:} \quad m_1 u_2 - m_2 u_1 = \Delta m h_{\text{ein}} + Q - \Delta X
+
+\text{mit} \quad Q = Q_{R12} + Q_{\text{aus12}} < 0
+
+\begin{equation*}
+\begin{aligned}
+    &\quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \```latex
+
+

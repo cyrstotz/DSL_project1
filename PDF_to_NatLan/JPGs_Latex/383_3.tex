@@ -1,0 +1,66 @@
+TASK 2c  
+The mass-specific increase in flow exergy is expressed as:  
+\[
+\Delta ex_{\text{istr}} = \frac{\dot{E}_{\text{istr}}}{\dot{m}_{\text{ges}}} = \left[ h_6 - h_0 - T_0 \left( s_6 - s_0 \right) \right]
+\]  
+The entropy difference \( s_6 - s_0 \) is expanded as:  
+\[
+s_6 - s_0 = s^0(T_6) - s^0(T_0) - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+Since \( \ln \left( \frac{p_6}{p_0} \right) = 0 \), the term vanishes.  
+The enthalpy difference \( h_6 - h_0 \) is given as:  
+\[
+h_6 - h_0 = 189.88 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Task 2b)}
+\]  
+
+---
+
+TASK 2d  
+The mass-specific exergy destruction is calculated as:  
+\[
+ex_{\text{verl}} = \frac{\dot{E}_{\text{verl}}}{\dot{m}_{\text{ges}}} = T_0 \dot{S}_{\text{erz}}
+\]  
+Using the entropy balance:  
+\[
+0 = \dot{m}_g s_0 - \dot{m}_K s_6 + \frac{\dot{Q}^0}{T_0} + \dot{S}_{\text{erz}}
+\]  
+The entropy production \( \dot{S}_{\text{erz}} \) is expressed as:  
+\[
+\dot{S}_{\text{erz}} = \frac{\dot{m}_K}{\dot{m}_{\text{ges}}} s_6 - s_0
+\]  
+
+The mass flow balance at the mixing chamber is given by:  
+\[
+\dot{m}_g u(h_0 - h_{m5}) = \dot{m}_K (h_0 - h_6)
+\]  
+From this, the efficiency \( \eta_{\text{MS}} \) is defined as:  
+\[
+\eta_{\text{MS}} = \frac{h_0 - h_6}{h_0 - h_{m5}} = \frac{\dot{m}_K}{\dot{m}_g}
+\]  
+
+---
+
+TASK 2b  
+The temperature ratio is expressed as:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}}
+\]  
+where \( n = \kappa = 1.4 \).  
+Using the given values:  
+\[
+\frac{T_6}{T_5} = \left( \frac{0.191}{0.5} \right)^{\frac{1.4 - 1}{1.4}}
+\]  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} = 431.9 \, \text{K} \left( \frac{0.191}{0.5} \right)^{\frac{1}{1.4}}
+\]  
+\[
+T_6 = 328 \, \text{K}
+\]  
+
+The enthalpy difference \( h_5 - h_6 \) is calculated as:  
+\[
+h_5 - h_6 = c_p \left( T_5 - T_6 \right) = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \left( 431.9 - 328 \right)
+\]  
+\[
+h_5 - h_6 = 104.95 \, \frac{\text{kJ}}{\text{kg}}
+\]

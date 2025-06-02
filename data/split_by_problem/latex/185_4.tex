@@ -1,0 +1,129 @@
+
+``````latex
+
+
+\section*{Problem 1}
+
+\begin{tabular}{|c|c|c|}
+\hline
+ & $T$ [K] & $P$ [\text{bar}] \\
+\hline
+1 & 343.14 & 0.005 \\
+\hline
+2 & 373.14 & 0.005 \\
+\hline
+3 & 288.15 & $P_B$ \\
+\hline
+4 & 298.15 & $P_B$ \\
+\hline
+\end{tabular}
+
+\begin{itemize}
+    \item There is a diagram with two control volumes labeled I and II. 
+    \item Control volume I is a rectangular box labeled "chem. Reaktor" with an inlet labeled $1$ and an outlet labeled $2$. 
+    \item The inlet $1$ is labeled $\dot{m}_{\text{in}}$ and the outlet $2$ is labeled $\dot{m} = \text{const} = 0.3 \frac{\text{kg}}{\text{s}}$. 
+    \item There is a heat transfer term labeled $\dot{Q}_{\text{aus}}$ pointing out of the control volume I.
+    \item Control volume II is a rectangular box with an inlet labeled $3$ and an outlet labeled $4$. 
+    \item The inlet $3$ is labeled $m_p$ and the outlet $4$ is labeled $\dot{m}_p$.
+    \item There is a note that says $m_{\text{ges}} = 577.5 \text{ (stationär)}$.
+\end{itemize}
+
+\subsection*{a) $\dot{Q}_{\text{aus}}$ mit Energiebilanz I}
+
+\[
+0 = \dot{m} (h_1 - h_2) + \dot{Q}_2 = \dot{m} \left( h_1^{20^\circ} - h_2^{100^\circ} \right) - \dot{Q}_{\text{aus}}
+\]
+
+\[
+(h_1 - h_2)_{\text{Wasser}} = h_1 (T = 343.14) - h_2 (T = 373.14)
+\]
+
+\subsubsection*{Dampftafel $x_1 = x_2$}
+
+\[
+h_1 = h_f + x_1 (h_{fg} - h_f) \quad \text{hat } T_1
+\]
+
+\[
+h_1 = 304.649
+\]
+
+\[
+h_2 = h_f + x_2 (h_{fg2} - h_f2)
+\]
+
+\[
+h_2 = 430.82
+\]
+
+\[
+\Rightarrow \text{Seite 3}
+\]
+
+\[
+T_{h1} = 292.98 \quad h_{v2} = 419.04
+\]
+
+\[
+h_{fg1} = 262.68 \quad h_{fg2} = 267.6 \quad \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\dot{m} \rightarrow x_1 - x_2
+\]
+
+``````latex
+
+
+\section*{Student Solution}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Left Graph:] A graph with axes labeled $P$ (vertical axis) and $V$ (horizontal axis). There are two curves, one starting from the top left and curving downwards to the right, and another starting from the bottom left and curving upwards to the right. There is a closed loop in the middle of the graph, with arrows indicating a clockwise direction. Points 1 and 2 are marked on the loop, with an arrow pointing from 1 to 2.
+    \item[Right Graph:] A graph with axes labeled $P$ (vertical axis) and $h$ (horizontal axis). There are three curves, one starting from the top left and curving downwards to the right, another starting from the bottom left and curving upwards to the right, and a third curve starting from the middle left and curving upwards to the right. Points 1, 2, and 3 are marked on the graph, with arrows indicating the direction from 1 to 2 and from 2 to 3. There is a label "Verdichter" near the top curve.
+\end{description}
+
+\subsection*{b)}
+
+\begin{align*}
+\dot{m} \text{ durch Energiesätzen nur gesamt system} \\
+\dot{W}_k &= \dot{m} \cdot k \cdot ev \\
+\dot{W}_{el} &= \int_{1}^{2} v \, dp \\
+\dot{m} &= \frac{\dot{W}_k}{W_{el}} \\
+\text{Temperaturänderung:} \quad \Delta U &= q - W
+\end{align*}
+
+\subsection*{c)}
+
+\begin{align*}
+x_1 \text{ direkt nach drossel} \quad \text{Tverd} - T_i - B \cdot k &= \\
+T_i &= T_i - 6k \\
+4 \rightarrow 1 \text{ adiabatisch}
+\end{align*}
+
+\begin{description}
+    \item[Graph:] A graph with axes labeled $T$ (vertical axis) and $P$ (horizontal axis). There is a rectangular box in the middle of the graph, with a curve starting from the bottom left and curving upwards to the right, passing through the box.
+\end{description}
+
+\begin{align*}
+X &= \frac{S_4 - S_if}{S_g - S_if}
+\end{align*}
+
+\begin{align*}
+\frac{\dot{m}}{\dot{m}} &= 0 \quad \frac{T_4 - T_c}{T_4 - T_e} = \text{const} \\
+\frac{\dot{m}}{\dot{m}} &= \frac{P_4}{P_1}
+\end{align*}
+
+``````latex
+
+
+a) 
+\[
+\eta_{c} = \frac{\dot{Q}_{zu}}{\dot{W}_{r}} = \frac{\left| \dot{Q}_{l} \right|}{\left| \dot{Q}_{l} \right| + \left| \dot{W}_{r} \right|}
+\]
+
+c) Die Temperatur würde die \text{(durchgestrichenes Wort)} bei das gleiche Temp wie das Kühlmedium im Gleichgewicht sein. \quad (T = T_{i} - 6) \\
+Kalt kann wegen das 2 H nicht \text{(unleserliches Wort)} zu warm übertragen werden.
+
+```

@@ -1,0 +1,25 @@
+The energy balance equation is written as:  
+\[
+0 = \dot{m}_{\text{R134a}} \left[ h_2 - h_4 \right] + \dot{Q} - \dot{W}
+\]  
+The mass flow rate of the refrigerant is expressed as:  
+\[
+\dot{m}_{\text{R134a}} = \frac{-\dot{W}_K}{h_2 - h_3}
+\]  
+The enthalpy \( h_2 \) is determined using Table A-10 and linear interpolation (LERP):  
+\[
+h_2 = 243.72 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+The interpolation formula is given as:  
+\[
+h_2 = y_2 - y_1 \cdot \frac{x - x_1}{x_2 - x_1} + y_1
+\]  
+Values for interpolation are provided:  
+\[
+x_2 = -8, \, y_2 = 242.54  
+\]  
+\[
+x_1 = -1, \, y_1 = 249.50  
+\]  
+
+Additional notes reference Table A-10 for further calculations and interpolation steps. The text indicates continuation on the next page.

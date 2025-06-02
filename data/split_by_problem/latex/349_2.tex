@@ -1,0 +1,88 @@
+
+``````latex
+
+
+\section*{Aufgabe 2. a)}
+
+\subsection*{Graph 1}
+
+The first graph is a plot with the vertical axis labeled \( T [K] \) and the horizontal axis labeled \( s \left[ \frac{J}{kg \cdot K} \right] \). The graph contains several intersecting lines forming a grid-like pattern. There are four points labeled 1, 2, 3, and 4 connected by arrows indicating a path. The path starts at point 1, moves to point 2, then to point 3, and finally to point 4. 
+
+\subsection*{Graph 2}
+
+The second graph is a plot with the vertical axis labeled \( T [K] \) and the horizontal axis labeled \( s \left[ \frac{J}{kg \cdot K} \right] \). The graph contains a closed polygonal path with five points labeled 1, 2, 3, 4, and 5. The path starts at point 1, moves to point 2, then to point 3, then to point 4, and finally to point 5, closing the loop back at point 1. The segments between points 1 and 2, and between points 3 and 4, are labeled "isobar".
+
+``````latex
+
+
+\section*{2. b)}
+
+\textbf{Energiebilanz (stationärer Fließprozess)}
+
+\[
+0 = \dot{m} \left( h_0 - h_6 + \frac{v_{\text{Lauf}}^2 - v_6^2}{2} \right) + q_B \cdot m_K
+\]
+
+\[
+m_K = \frac{1}{5.293} \cdot m_M
+\]
+
+\[
+h_0 = h[T_0] = h[243.15 K]
+\]
+
+\[
+h_0 = h[240] + \frac{h[250] - h[240]}{250 - 240} \cdot (243.15 - 240)
+\]
+
+\[
+= 243.18 \frac{kJ}{kg}
+\]
+
+\[
+h_5 = h[430] + \frac{h[440] - h[430]}{440 - 430} \cdot (471.9 - 430)
+\]
+
+\[
+= 433.37 \frac{kJ}{kg}
+\]
+
+\[
+h_6 = h_0
+\]
+
+\[
+\Rightarrow 0 = \dot{m} \left( \frac{v_{\text{Lauf}}^2 - v_6^2}{2} \right) + q_B \cdot m_K
+\]
+
+\[
+v_6 = \sqrt{\frac{2 \cdot q_B \cdot m_K}{\dot{m}} + v_{\text{Lauf}}^2}
+\]
+
+``````latex
+
+
+2. c)
+\begin{align*}
+    e_{x,str}^m &= \left[ h_0 - h_0 - T_0 (s - s_0) + \frac{v_0^2}{2} \right] \\
+    e_{x,str,6} &= \left[ h_6 - h_0 - T_0 (s_6 - s_0) + \frac{v_6^2}{2} \right] \\
+    e_{x,str,0} &= \left[ h_0 - h_0 - T_0 (s_0 - s_0) + \frac{v_0^2}{2} \right] \\
+    &= \frac{v_0^2}{2} = 20000 \frac{m^2}{s^2}
+\end{align*}
+
+``````latex
+
+\section*{2. a1}
+
+\begin{align*}
+    \dot{E}_{x,\text{verL}} &= \dot{m} \left[ h_e - h_a - T_0 (s_e - s_a) + s \Delta e \right] + \sum_i \left( \eta_i \frac{T_0}{T_i} \right) \dot{Q}_i = e_{x,\text{verL in}} \\
+    0 &= \dot{m} \left[ h_e - h_a + s \Delta e \right] + \sum_j \dot{Q}_j \\
+    \Rightarrow \\
+    \dot{E}_{x,\text{verL}} &= \dot{m} \left[ - T_0 (s_e - s_a) \right] + \sum_i \left( \eta_i - \frac{T_0}{T_i} \right) \dot{Q}_i - \sum_j \dot{Q}_j \\
+    &= e_{x,\text{verL in}} \\
+    e_{x,\text{verL}} &= - T_0 (s_e - s_a) + \frac{1}{\dot{m}} \sum_i \left( \eta_i - \frac{T_0}{T_i} \right) \dot{Q}_i - \frac{1}{\dot{m}} \sum_j \dot{Q}_j
+\end{align*}
+
+``````latex
+
+

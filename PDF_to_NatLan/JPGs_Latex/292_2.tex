@@ -1,0 +1,65 @@
+TASK 2a  
+A T-s diagram is drawn, showing the thermodynamic process of a jet engine. The diagram includes labeled isobars and states:  
+- State 0 is at the bottom left, representing ambient conditions.  
+- State 2 is higher on the diagram, connected to state 3 via an isentropic line.  
+- State 3 transitions to state 4 via an isobaric line.  
+- State 5 is connected to state 6 via an isentropic line.  
+
+The axes are labeled as follows:  
+- The x-axis represents entropy \( s \) in \( \text{kJ}/\text{kg·K} \).  
+- The y-axis represents temperature \( T \) in Kelvin.  
+
+TASK 2b  
+The outlet velocity \( w_6 \) and temperature \( T_6 \) are calculated.  
+
+The process between states 5 and 6 is isentropic, so \( n = u \) and \( p_6 = p_0 = 0.191 \, \text{bar} \).  
+
+Using the isentropic relation:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}} = 431.9 \, \text{K} \left( \frac{0.191 \, \text{bar}}{0.5 \, \text{bar}} \right)^{\frac{1.4 - 1}{1.4}}
+\]  
+\[
+T_6 = 328.075 \, \text{K}
+\]  
+
+The energy balance equation is applied:  
+\[
+\Delta E = \Delta u + \Delta KE + \Delta PE = 0
+\]  
+\[
+0 = -m \left( u_6 - u_5 \right) + \frac{m}{2} \left( w_6^2 - w_5^2 \right)
+\]  
+
+Using specific heat relations:  
+\[
+u = c_V T, \quad c_V = c_p - R, \quad c_p = \frac{\kappa}{\kappa - 1} R
+\]  
+\[
+c_V = 0.718 \, \text{kJ}/\text{kg·K}
+\]  
+
+Substituting into the energy equation:  
+\[
+0 = m c_V \left( T_6 - T_5 \right) + \frac{m}{2} \left( w_6^2 - w_5^2 \right)
+\]  
+\[
+0 = 0.718 \, \text{kJ}/\text{kg·K} \left( 328.075 \, \text{K} - 431.9 \, \text{K} \right) + \frac{1}{2} \left( w_6^2 - 220^2 \, \text{m}^2/\text{s}^2 \right)
+\]  
+\[
+0 = -74.18 \, \text{kJ}/\text{kg} + \frac{1}{2} \left( w_6^2 - 220^2 \, \text{m}^2/\text{s}^2 \right)
+\]  
+\[
+\frac{1}{2} w_6^2 = 74.18 \, \text{kJ}/\text{kg} + \frac{1}{2} \cdot 220^2 \, \text{m}^2/\text{s}^2
+\]  
+\[
+w_6 = 219.66 \, \text{m/s}
+\]  
+
+Final results:  
+\[
+T_6 = 328.075 \, \text{K}, \quad w_6 = 219.66 \, \text{m/s}
+\]

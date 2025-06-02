@@ -1,0 +1,32 @@
+The problem involves a steady-state flow process to determine the heat flow \( \dot{Q}_{\text{out}} \) removed by the coolant. The energy balance equation is written as:  
+\[
+0 = \dot{m} \left( h_{\text{in}} - h_{\text{out}} \right) - \dot{Q}_{\text{out}} + \dot{Q}_R
+\]  
+Rearranging for \( \dot{Q}_{\text{out}} \):  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \left( h_{\text{in}} - h_{\text{out}} \right) + \dot{Q}_R
+\]  
+
+The enthalpy values are calculated using water tables:  
+For \( h_{\text{in}} \) at \( 70^\circ\text{C} \):  
+\[
+h_{\text{in}} = h_f(100^\circ\text{C}) \cdot x + \left( h_f(70^\circ\text{C}) - h_f(100^\circ\text{C}) \right)
+\]  
+Using Table A-2:  
+\[
+h_{\text{in}} = 292.98 + 0.005 \cdot \left( 2626.8 - 232.98 \right) = 304.65 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+For \( h_{\text{out}} \) at \( 100^\circ\text{C} \):  
+\[
+h_{\text{out}} = h_f(100^\circ\text{C}) \cdot x + \left( h_f(100^\circ\text{C}) - h_f(100^\circ\text{C}) \right)
+\]  
+Using Table A-2:  
+\[
+h_{\text{out}} = 419.04 + 0.005 \cdot \left( 2676.1 - 419.04 \right) = 430.33 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Substituting into the equation for \( \dot{Q}_{\text{out}} \):  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \frac{\text{kg}}{\text{s}} \cdot \left( 304.65 \, \frac{\text{kJ}}{\text{kg}} - 430.33 \, \frac{\text{kJ}}{\text{kg}} \right) + 100 \, \text{kW}
+\]

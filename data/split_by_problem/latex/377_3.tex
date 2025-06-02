@@ -1,0 +1,129 @@
+
+``````latex
+
+
+\section*{Problem 3}
+
+\[
+\begin{array}{cccc}
+ & [^\circ \text{C}] & [^\circ \text{C}] & [\text{m}^3] \\
+ & T_{\text{EW}} & T_{\text{Gas}} & V_{\text{EW}} & V_{\text{Gas}} \\
+1 & 0 & 500^\circ \text{C} & 3,14 \cdot 10^{-3} \\
+2 & & & \\
+\end{array}
+\]
+
+\[
+V_{\text{Gas}} = \frac{3,14 \cdot \text{dm}^3}{\text{L}} = \frac{\text{m}^3}{10^3 \text{dm}^3} \Rightarrow V_{\text{Gas}} = 3,14 \cdot 10^{-3} \text{m}^3
+\]
+
+\[
+m_{\text{EW}} = 0,1 \text{kg} \quad C_V = 0,633 \frac{\text{kJ}}{\text{kgK}} \quad M_G = 50 \frac{\text{kg}}{\text{kmol}}
+\]
+
+\[
+x_{\text{EW}} = 0,6
+\]
+
+\[
+\text{perfektes gas:} \quad c_p - c_V = \frac{R}{M} \Rightarrow c_p = \frac{R}{M} + c_V = \frac{8,314 \frac{\text{kJ}}{\text{kmolK}}}{50 \frac{\text{kg}}{\text{kmol}}} + 0,633 \frac{\text{kJ}}{\text{kgK}}
+\]
+
+\[
+c_p = 0,79928 \frac{\text{kJ}}{\text{kgK}} \quad R = \frac{R}{M} = 0,16628 \frac{\text{kJ}}{\text{kgK}}
+\]
+
+\[
+\frac{V_1}{V_2} = \frac{T_2}{T_1} \frac{\dot{m}_2}{\dot{m}_1}
+\]
+
+\subsection*{a)}
+
+\[
+p_{S1}, m_{S1} \quad p_{V1} = RT_1
+\]
+
+\[
+p_1 V_1 = m R T_1 \Rightarrow p_1 = \frac{m R T_1}{V_1} = \frac{m R T_1}{V_1} = \frac{R T_1}{V_1}
+\]
+
+\[
+p_{\text{ag}} = p_{\text{amb}} + \frac{M_{\text{g}} g + m_{\text{EW}} g}{A}
+\]
+
+\[
+p_{\text{ag}} = p_{\text{amb}} + p_{\text{m}} + p_{\text{EW}} = 1 \text{bar} + 10^5 + \frac{M_{\text{g}} g}{0,1 \text{m}^2} + \frac{0,1 \text{kg} g}{0,1}
+\]
+
+\[
+p_{\text{ag}} = 10,3149,33 \text{Pa} = 1,034147 \text{bar}
+\]
+
+\[
+m_1 = \frac{103,147 \text{kPa} \cdot 3,14 \cdot 10^{-3} \text{m}^3}{0,16628 \frac{\text{kJ}}{\text{kgK}} (500 \text{K} + 273,15 \text{K})} = 0,002578 \text{kg} = 7,578 \text{g} = m_1
+\]
+
+\subsection*{b)}
+
+\[
+\text{wieder ob werte stimmen, nehme } p_{\text{ag}} = 1,5 \text{bar} + m_{\text{g}} = 3,6 \text{g}
+\]
+
+\[
+x_2 \quad \text{Druck auf gas bleibt, } p_{\text{ag}} = p_{\text{ag}}
+\]
+
+``````latex
+
+
+\section*{b)}
+
+\begin{align*}
+    p_{2g} &= 1.5 \text{bar}, \quad m_g = 3,6g \\
+    \text{Zustand 2: Wasser inkompressibel} \quad & \frac{V_{1w}}{V_{2w}} = \frac{V_{1g}}{V_{2g}} \\
+    \intertext{Der Druck auf's Gas ändert sich nicht, immer noch:}
+    p_{2g} &= p_{1g} = 1.5 \text{bar} \\
+    PV &= mRT \\
+    T_{2g} &= \frac{p_{2} V_{2}}{mR} \\
+    V_{2} \\
+    K &= \frac{c_p}{c_v} = \frac{0,8984}{0,633} = 1,262
+\end{align*}
+
+\noindent
+There is a diagram with the following elements:
+- A fraction with \(\left(\frac{p_2}{p_1}\right)^{\frac{K-1}{K}}\) on the left side.
+- An arrow pointing to the right from the fraction.
+- The fraction \(\frac{V_1}{V_2}\) on the right side.
+- An arrow pointing down from the fraction.
+- The fraction \(\left(\frac{V_1}{V_2}\right)^{K-1}\) on the bottom.
+- An arrow pointing to the left from the fraction.
+- The fraction \(\left(\frac{p_2}{p_1}\right)^{\frac{1}{K-1}}\) on the left side.
+- An arrow pointing up from the fraction.
+- The fraction \(\frac{V_1}{V_2}\) on the top.
+
+\section*{c)}
+
+\begin{align*}
+    Q_{12}, \quad T_{2g} &= 0,003^\circ C, \quad p_{2g} = 1.5 \text{b}, \quad m_g = 3,6g \\
+    \intertext{There is a diagram of a container with a piston. The piston is labeled \(Q_{12}\) and the container is filled with a substance.}
+    \text{LHS} \quad \frac{dE}{dt} &= \dot{m}(h + \frac{k}{p}) + \dot{Q} - \dot{W} \quad // \int dt \\
+    \Delta U_{12} &= \dot{Q} - \dot{W} \\
+    m_g (u_2 - u_1) &= \dot{Q} \quad / \text{stoffmodell ig:} \quad u_2 - u_1 = c_v (T_2 - T_1) \\
+    Q &= m_g c_v (T_{2g} - T_{1g}) = 3,6 \cdot 10^{-3} \text{kg} \cdot 0,633 \frac{\text{kJ}}{\text{kgK}} \left( \frac{273,15 + 0,003}{T_{2g}} - \frac{773,15}{T_{1g}} \right) \\
+    &= -1,133935 \text{kJ}
+\end{align*}
+
+\[
+|Q_{12}| = \underline{1133,39 \text{J}}
+\]
+
+``````latex
+
+
+3c) \( x_{EIS2} \)
+
+\[ V_{EIN} = V_{ZEW} \]
+
+``````latex
+
+

@@ -1,0 +1,25 @@
+The task begins with the calculation of exergy loss:  
+\[ ex_{verl} = T_0 \cdot S_{erz} \]  
+Where \( T_0 = T_0 \).  
+
+Entropy generation is described:  
+- "Entropie erzeugung:"  
+- "Entropie Bilanz um ganze Turbine:"  
+\[ \frac{dS}{dt} = 0 = \sum \dot{m}_i \cdot s_i + S_{erz} = \dot{m}_{out} \cdot (s_6 - s_0) + S_{erz} \]  
+
+Definitions for entropy values:  
+\[ s_0 = S(p_0, T_0) \]  
+\[ s_6 = S(p_0, T_6) \]  
+
+Calculation steps for \( s_6 \):  
+\[ s_6 = s_0 + \int_{T_0}^{T_6} \frac{c_{p, Luft}(T)}{T} \, dt \]  
+\[ = s_0 + c_{p} \cdot \ln \left( \frac{T_6}{T_0} \right) \]  
+\[ = 1.006 \cdot \ln \left( \frac{340.15}{240.15} \right) \]  
+\[ = 0.3373 \, \text{kJ/kg·K} \]  
+
+Entropy generation formula:  
+\[ S_{erz} = \dot{m} \cdot (s_6 - s_0) \]  
+
+Final calculation for exergy loss:  
+\[ ex_{verl} = T_0 \cdot S_{erz} \]  
+\[ = 82.01 \, \text{kW} \]

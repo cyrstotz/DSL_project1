@@ -1,0 +1,48 @@
+TASK 2c  
+The mass-specific increase in flow exergy \( \Delta ex_{\text{flow}} \) is calculated as:  
+\[
+\Delta ex_{\text{flow}} = ex_{\text{flow},6} - ex_{\text{flow},0}
+\]  
+This is expressed as:  
+\[
+\Delta ex_{\text{flow}} = h_6 - h_0 - T_0(s_6 - s_0) + \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]  
+
+The enthalpy difference \( h_6 - h_0 \) is calculated using:  
+\[
+h_6 - h_0 = c_{p,\text{air}}^{\text{is}} (T_6 - T_0) = 85.84434 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The entropy difference \( s_6 - s_0 \) is calculated as:  
+\[
+s_6 - s_0 = c_{p,\text{air}} \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+Given \( p_6 = p_0 \), the second term vanishes, leaving:  
+\[
+s_6 - s_0 = c_{p,\text{air}} \ln \left( \frac{T_6}{T_0} \right) = 0.30136 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Substituting these values, the flow exergy increase is:  
+\[
+\Delta ex_{\text{flow}} = ex_{\text{flow},6} - ex_{\text{flow},0} = 120.247 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+---
+
+TASK 2d  
+The mass-specific exergy destruction \( ex_{\text{dest}} \) in the engine is calculated using the exergy balance equation:  
+\[
+0 = \dot{m} \left( ex_{\text{flow},0} - ex_{\text{flow},6} \right) - W_t - \dot{E}_{\text{rev}}
+\]  
+
+The exergy destruction is expressed as:  
+\[
+ex_{\text{dest}} = ex_{\text{flow},0} - ex_{\text{flow},6} + \left( 1 - \frac{T_0}{T_B} \right) q_B
+\]  
+
+Substituting values, the exergy destruction is:  
+\[
+ex_{\text{dest}} = 849.335 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Corrections and annotations are visible in the equations, including a note that \( p_6 = p_0 \), simplifying the entropy calculation.

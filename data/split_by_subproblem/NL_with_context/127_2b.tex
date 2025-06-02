@@ -1,0 +1,32 @@
+Energy balance for the entire turbine:  
+\[
+\dot{m}_{ex,str} = \dot{m} \left[ h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2} \right]
+\]  
+\[
+= \dot{m}_{ges} \left[ h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right]
+\]  
+
+Calculation of \( T_6 \):  
+\[
+T_6 = T_5 \left( \frac{p_0}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+\[
+T_6 = 431.9 \left( \frac{0.191}{0.5} \right)^{0.4 / 1.4}
+\]  
+\[
+T_6 = 328.07 \, \text{K}
+\]  
+
+Calculation of \( w_6 \):  
+\[
+w_6 = \sqrt{2 \, c_p (T_5 - T_6) + w_5^2}
+\]  
+\[
+w_6 = \sqrt{2 \times 1.006 \times (431.9 - 328.07) + 220^2}
+\]  
+\[
+w_6 = \sqrt{206.6 + 220^2}
+\]  
+\[
+w_6 = 323 \, \text{m/s}
+\]

@@ -1,0 +1,87 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{itemize}
+    \item A graph is drawn with the x-axis labeled as $S \left[ \frac{u}{kg} \right]$ and the y-axis labeled as $T \left[ K \right]$.
+    \item Several curves are drawn, each representing different pressures.
+    \item Points are labeled as 1, 2, 3, 4, 5, and 6.
+    \item Point 1 is at the intersection of the lowest pressure curve and the y-axis.
+    \item Point 2 is on the next higher pressure curve, connected to point 1 by a line labeled "reversibel".
+    \item Point 3 is on the same pressure curve as point 2, connected by an isobaric line.
+    \item Point 4 is on a higher pressure curve, connected to point 3 by a line labeled "reversibel".
+    \item Point 5 is on the same pressure curve as point 4, connected by an isobaric line.
+    \item Point 6 is on the lowest pressure curve, connected to point 5 by a line labeled "reversibel".
+\end{itemize}
+
+\begin{tabular}{|c|c|c|}
+    \hline
+    Z & D & T \\
+    \hline
+    1 & 0.191 bar & -30°C \\
+    2 & P2 & \\
+    3 & P2 & \\
+    4 & & \\
+    5 & 0.8 bar & 481.8 K \\
+    6 & 0.191 bar & \\
+    \hline
+\end{tabular}
+
+\subsection*{b)}
+
+\begin{align*}
+    w_s &= 220 \frac{m}{s} \\
+    p_5 &= 0.8 \text{ bar} \\
+    T_5 &= 431.8 \text{ K} \\
+    p_6 &= 0.191 \text{ bar} \\
+    Q &= \dot{m}_{ges} \left( h_5 - h_6 + \frac{w_5^2}{2} - \frac{w_6^2}{2} \right) - \dot{W}_{rev}
+\end{align*}
+
+\begin{itemize}
+    \item Another graph is drawn with the x-axis labeled as $S \left[ \frac{u}{kg} \right]$ and the y-axis labeled as $T \left[ K \right]$.
+    \item Several curves are drawn, each representing different pressures.
+    \item Points are labeled as 1, 2, 3, 4, 5, and 6.
+    \item Point 1 is at the intersection of the lowest pressure curve and the y-axis.
+    \item Point 2 is on the next higher pressure curve, connected to point 1 by a line labeled "reversibel".
+    \item Point 3 is on the same pressure curve as point 2, connected by an isobaric line.
+    \item Point 4 is on a higher pressure curve, connected to point 3 by a line labeled "reversibel".
+    \item Point 5 is on the same pressure curve as point 4, connected by an isobaric line.
+    \item Point 6 is on the lowest pressure curve, connected to point 5 by a line labeled "reversibel".
+\end{itemize}
+
+\begin{align*}
+    S_5 &= S_6 \quad \text{weil isentrop} \\
+    \frac{T_6}{T_5} &= \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} \\
+    T_6 &= T_5 \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} \\
+    T_6 &= 431.8 \left( \frac{0.191}{0.8} \right)^{\frac{2}{7-1}} = \underline{328.675 K}
+\end{align*}
+
+``````latex
+
+
+\begin{align*}
+Q &= m_{ges} \cdot Cp\delta (T_5 - T_6) + m_{ges} \frac{\omega_5^2}{2} - m_{ges} \frac{\omega_6^2}{2} \\
+\omega_{ges} &= \frac{\sqrt{2 \cdot Cp \cdot \delta (T_5 - T_6)}}{n} - 74.66 \\
+Q &= Cp \cdot w = Cp \cdot \frac{c_p}{n} = 0.2854 \frac{\omega_5}{\delta K} \\
+E_v &= \frac{Cp}{n} \\
+\omega_6 &= \sqrt{2 \left( Cp (T_5 - T_6) + \frac{\omega_5^2}{2} \right)} = 507.2434 \frac{m}{s}
+\end{align*}
+
+\begin{align*}
+c) \quad ex_{str6} - ex_{str0} &= u_6 - u_0 - T_0 (s_6 - s_0) + u_{e6} - u_{e0} \\
+&= Cp\delta (T_6 - T_0) - T_0 \left( Cp\delta \left( \ln \left( \frac{T_6}{T_0} \right) - \frac{p_6}{p_0} \right) \right) + u_{e6} - u_{e0} \\
+&= -26405.586 \frac{KJ}{kg} = -26.406 \frac{MJ}{kg}
+\end{align*}
+
+\begin{align*}
+d) \quad Q &= -\Delta ex_{str} + \dot{Q} - \dot{E}_{verl} \\
+\dot{E}_{verl} &= -\Delta ex_{str} = -100 \frac{KJ}{kg}
+\end{align*}
+
+``````latex
+
+

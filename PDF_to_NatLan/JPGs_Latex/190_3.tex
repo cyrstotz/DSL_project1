@@ -1,0 +1,42 @@
+TASK 2c  
+The mass-specific increase in flow exergy (\( \Delta ex_{\text{str}} \)) is calculated using the following equation:  
+\[
+\Delta ex_{\text{str}} = h_6 - h_0 - T_0(s_6 - s_0) + \text{ke}
+\]  
+where:  
+\[
+h_6 - h_0 = c_p (T_6 - T_0)
+\]  
+\[
+s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right)
+\]  
+\[
+\text{ke} = \frac{1}{2} \left( 200 \, \text{m/s} \right)^2 = 110.05 \, \text{kJ/kg}
+\]  
+
+Substituting these terms into the equation:  
+\[
+\Delta ex_{\text{str}} = c_p (T_6 - T_0) - T_0 \cdot c_p \ln \left( \frac{T_6}{T_0} \right) + 110.05
+\]  
+Numerical evaluation gives:  
+\[
+\Delta ex_{\text{str}} = -128.98 \, \text{kJ/kg}
+\]  
+
+---
+
+TASK 2d  
+The mass-specific exergy destruction (\( ex_{\text{ver1}} \)) is calculated using an energy balance:  
+\[
+0 = \Delta ex_{\text{str}} + \left( 1 - \frac{T_0}{T_B} \right) \cdot q_B - \dot{E}_{x,\text{ver1}}
+\]  
+
+Substituting values:  
+\[
+\dot{E}_{x,\text{ver1}} = -100 \, \frac{\text{kJ}}{\text{kg}} + \left( 1 - \frac{243.15 \, \text{K}}{1289 \, \text{K}} \right) \cdot 1195 \, \frac{\text{kJ}}{\text{kg}} \cdot \frac{1}{5.293}
+\]  
+
+Numerical evaluation gives:  
+\[
+\dot{E}_{x,\text{ver1}} = 76.87 \, \frac{\text{kJ}}{\text{kg}}
+\]

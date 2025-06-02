@@ -1,0 +1,41 @@
+The ice fraction in state 2 is calculated. The temperature \( T_{g,2} = 0.0003^\circ\text{C} \).  
+
+The energy balance for the ice-water mixture (EW) is written as:  
+\[
+\Delta U = m \cdot c_V \cdot (T_2 - T_1) = Q
+\]  
+Substituting values:  
+\[
+m \cdot (u_2 - u_1) = Q = -1.5 \, \text{kJ}
+\]  
+
+The internal energy \( u_1 \) is calculated using:  
+\[
+u_1 = x_1 \cdot u_f + x_1 \cdot (u_f - u_i)
+\]  
+At \( x_1 = 0.6 \):  
+\[
+u_1 = -133.394 \, \text{kJ/kg}
+\]  
+
+The internal energy \( u_2 \) is calculated using:  
+\[
+u_2 = u_f + x_2 \cdot (u_f - u_i)
+\]  
+The ice fraction \( x_2 \) is determined using:  
+\[
+x_2 = \frac{u_2 - u_f}{u_f - u_i}
+\]  
+At \( x_2 = 0.4351 \):  
+\[
+x_2 = 0.4351
+\]  
+
+Finally, \( u_2 \) is calculated as:  
+\[
+u_2 = \frac{Q}{m} + u_1
+\]  
+Substituting values:  
+\[
+u_2 = \frac{-1.5}{0.01} + (-133.394) = -188.394 \, \text{kJ/kg}
+\]

@@ -1,0 +1,66 @@
+c) First law of thermodynamics for a closed system with a piston:
+
+The rate of change of energy E with respect to time t is equal to the sum of heat transfer rates into the system minus the sum of work transfer rates out of the system:
+\[
+\frac{dE}{dt} = \sum \dot{Q} - \sum \dot{W}
+\]
+
+The change in internal energy U is equal to the heat added to the system from state 1 to state 2 minus the work done by the system from state 1 to state 2:
+\[
+\Delta U = \Delta Q_{12} - W_{12}
+\]
+
+The heat added from state 1 to state 2 is equal to the change in internal energy plus the work done:
+\[
+Q_{12} = \Delta U + W_{12}
+\]
+
+The change in internal energy is the difference in internal energy between state 2 and state 1 plus the difference in internal energy between state 1 and state 4 of another energy component:
+\[
+\Delta U = (U_{S2} - U_{S1}) + (U_{EV1} - U_{EV4})
+\]
+
+This can be expressed as the mass of the substance times the integral of the specific heat at constant volume from temperature T1 to T2:
+\[
+= m_S \int_{T1}^{T2} c_V \, dT
+\]
+
+This simplifies to the mass of the substance times the specific heat at constant volume times the difference in temperatures, which calculates to:
+\[
+= m_S \cdot c_V (T_2 - T_1) = 0.0034 \cdot 633 \cdot (293.15 - 393.15)
+\]
+
+The result is:
+\[
+= (-684.8 \, \text{J})
+\]
+
+The volume at state 2 is calculated using the ideal gas law, where m is the mass, R is the gas constant, T is the temperature, and ρ is the density:
+\[
+V_{S2} = \frac{m_S R T_{S2}}{\rho_{S2}} = \frac{0.0034 \cdot 461 \cdot 293.15}{40.094} \approx 0.001 \, \text{m}^3
+\]
+
+Volume is equal to height times area, thus height can be calculated as:
+\[
+V = \text{height} \times \text{area} \Rightarrow \text{Height} = \frac{V}{A} \approx 0.14 \, \text{m}
+\]
+
+The work done from state 1 to state 2 is the force times the distance, which is the total mass times gravity times height:
+\[
+W_{12} = \text{Force} \times \text{Distance} = (m_S + m_{EV}) \cdot g \cdot \text{height} = (32 + 0.1) \cdot 9.81 \cdot (0.14)
+\]
+
+The result is:
+\[
+= (44.5 \, \text{J})
+\]
+
+Thus, the heat added from state 1 to state 2 is:
+\[
+\Rightarrow Q_{12} = -684.8 + 44
+\]
+
+Which equals:
+\[
+= -640.8 \, \text{J}
+\]

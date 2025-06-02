@@ -1,0 +1,65 @@
+TASK 1c  
+The entropy balance for the reactor is expressed as:  
+\[
+\dot{S}_{\text{gen}} = \sum \dot{m} s + \frac{\dot{Q}}{T} + \dot{S}_{\text{err}}
+\]  
+Simplifying the equation:  
+\[
+0 = \dot{m} (s_{\text{out}} - s_{\text{in}}) + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} + \dot{S}_{\text{gen}}
+\]  
+Rearranging for entropy generation:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} + \dot{m} (s_{\text{out}} - s_{\text{in}})
+\]  
+
+The entropy values are determined using water tables (A-2):  
+\[
+s_{\text{out}} = s(100^\circ\text{C}, \text{saturated liquid, F1}) = s(100^\circ\text{C}, 0.014 \, \text{bar}) = 1.3062 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+s_{\text{in}} = s(70^\circ\text{C}, \text{saturated liquid, F1}) = s(70^\circ\text{C}, 0.031 \, \text{bar}) = 0.2549 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = 22.4 \, \frac{\text{kJ}}{\text{K}}
+\]  
+
+---
+
+TASK 1d  
+The energy balance for the reactor is expressed as:  
+\[
+\frac{dE}{dt} = \sum \dot{m} h + \sum \dot{Q} - \sum \dot{W}
+\]  
+
+For the cooling process:  
+\[
+\Delta U = \Delta m_{12} h_{\text{en,12}} + Q_{R,12} - Q_{\text{out,12}}
+\]  
+Since \( Q_{R,12} = Q_{\text{out,12}} \):  
+\[
+\Delta U = \Delta m_{12} h_{\text{en,12}}
+\]  
+
+Rearranging for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = \frac{\Delta U}{h_{\text{en,12}}}
+\]  
+
+Expanding the equation:  
+\[
+\Delta m_{12} = \frac{(m_1 + \Delta m_{12}) h_2 - (m_1 h_1)}{h_{\text{en,12}}}
+\]  
+Simplifying further:  
+\[
+\Delta m_{12} = \frac{m_1 h_2 - m_1 h_1}{h_{\text{en,12}}}
+\]  
+
+Final expression:  
+\[
+\Delta m_{12} \left( 1 - \frac{1}{h_{\text{en,12}}} \right) = \frac{m_1}{h_{\text{en,12}}} (h_2 - h_1)
+\]  
+\[
+\Delta m_{12} = \frac{m_1 (h_2 - h_1)}{1 - h_{\text{en,12}}}
+\]

@@ -1,0 +1,44 @@
+TASK 4a  
+A graph is drawn showing pressure \( P \) (in bar) on the vertical axis and temperature \( T \) (in Kelvin) on the horizontal axis. The graph represents the phase regions of a refrigeration cycle. The curve includes labeled points 1, 2, 3, and 4, corresponding to different states in the cycle.  
+- Region I is marked above the curve, indicating the superheated vapor region.  
+- Region II is marked below the curve, indicating the subcooled liquid region.  
+- The curve itself represents the phase change boundary between liquid and vapor.  
+Arrows indicate transitions between states:  
+- From state 1 to state 2, the process involves isobaric evaporation.  
+- From state 2 to state 3, the process involves compression.  
+- From state 3 to state 4, the process involves isobaric condensation.  
+- From state 4 back to state 1, the process involves adiabatic expansion.  
+
+TASK 4b  
+The energy balance for the compressor is written as:  
+\[
+\dot{W}_K = \dot{m}_{\text{R134a}} \cdot (h_e - h_a)
+\]  
+where \( h_e \) is the specific enthalpy at the exit of the compressor, and \( h_a \) is the specific enthalpy at the inlet.  
+
+The enthalpy values are calculated as follows:  
+\[
+h_e = h_2 = h(T_2) = h(-18^\circ\text{C}) = 236.53 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_a = h(p = 8 \, \text{bar}) = 264.15 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The temperature \( T_2 \) is determined as:  
+\[
+T_2 = T_i - 6 \, \text{K}
+\]  
+where \( T_i = -18^\circ\text{C} \).  
+
+The mass flow rate \( \dot{m}_{\text{R134a}} \) is calculated using:  
+\[
+\dot{m}_{\text{R134a}} = \frac{\dot{W}_K}{h(T_2) - h(p = 8 \, \text{bar})}
+\]  
+Substituting values:  
+\[
+\dot{m}_{\text{R134a}} = \frac{0.088 \, \text{kW}}{28 \, \text{W}} \cdot \frac{1}{236.53 - 264.15 \, \frac{\text{kJ}}{\text{kg}}}
+\]  
+The result is:  
+\[
+\dot{m}_{\text{R134a}} = 10.00101 \, \frac{\text{kg}}{\text{s}}
+\]

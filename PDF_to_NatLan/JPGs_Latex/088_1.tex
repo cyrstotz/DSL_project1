@@ -1,0 +1,72 @@
+TASK 1d  
+The reactor mass is \( m = 5755 \, \text{kg} \), the steam quality is \( x_D = 0.005 \), and the reactor temperature is \( T = 100^\circ\text{C} \).  
+
+For state 2:  
+\[
+h_2 = h_1(100^\circ\text{C}) + x_1 \cdot \left( h_g(100^\circ\text{C}) - h_l(100^\circ\text{C}) \right) = 430.3253 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_2 = u_1(100^\circ\text{C}) + x_1 \cdot \left( u_g(100^\circ\text{C}) - u_l(100^\circ\text{C}) \right) = 423.3778 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+For the incoming mass:  
+\[
+h_{\text{in}} = h_l(20^\circ\text{C}), \quad T_{\text{in}} = 20^\circ\text{C}, \quad x_{\text{in}} = 0
+\]  
+\[
+u_{\text{in}} = u_l(20^\circ\text{C}) = 83.85 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Energy balance:  
+\[
+\frac{dE}{dt} = \text{Enthalpy flow} + \sum Q - \sum W = 0
+\]  
+\[
+\Delta U = Q, \quad Q = 35 \, \text{MJ}
+\]  
+
+For state 2:  
+\[
+T_2 = 70^\circ\text{C}, \quad x_2 = 0
+\]  
+\[
+h_2 = u_2 = u_l(70^\circ\text{C}) = 292.35 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Mass balance:  
+\[
+(m_1 + \Delta m_{12}) \cdot u_2 = m_1 \cdot u_1 + \Delta m_{12} \cdot u_{\text{in}} = Q
+\]  
+Rearranging:  
+\[
+\Delta m_{12} \cdot u_2 - \Delta m_{12} \cdot u_{\text{in}} = Q - m_1 \cdot u_1
+\]  
+\[
+\Delta m_{12} = \frac{Q - m_1 \cdot u_1}{u_2 - u_{\text{in}}} = 35.83 \, \text{kg}
+\]  
+
+---
+
+TASK 1e  
+The entropy change is calculated as:  
+\[
+m_2 s_2 - m_1 s_1 = \Delta m_{12} s_{\text{in}} + \frac{Q}{T} - S_{\text{out}}
+\]  
+
+For state 2:  
+\[
+s_2 = s_l(70^\circ\text{C}) = 0.3548 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+For state 1:  
+\[
+s_1 = s_l(100^\circ\text{C}) + x_1 \cdot \left( s_g(100^\circ\text{C}) - s_l(100^\circ\text{C}) \right) = 1.35741 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+For the incoming mass:  
+\[
+s_{\text{in}} = s_l(20^\circ\text{C}) = 0.2866 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Entropy change:  
+\[
+\Delta S_{12} = 162.8 \, \frac{\text{kJ}}{\text{K}}
+\]

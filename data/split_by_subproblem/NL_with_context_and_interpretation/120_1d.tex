@@ -1,0 +1,32 @@
+A diagram is drawn showing a rectangular reactor with labels:  
+- \( T_1 = 100^\circ \text{C} \), \( m_1 = 5755 \, \text{kg} \), \( x = 0.005 \) at the top.  
+- \( T_2 = 70^\circ \text{C} \), \( x = 0 \) at the bottom.  
+- \( Q_{11} = 35 \, \text{MJ} \) pointing downward.  
+
+Below the diagram, the following equations and calculations are written:  
+
+**Open system equation:**  
+\( m_2 \cdot u_2 - m_1 \cdot u_1 = \Delta m \cdot h_m + Q - W^O \)  
+
+**Specific enthalpy values:**  
+\( h_m \, (\text{TAB A2 at } 20^\circ \text{C}, x = 0) = 83.3627 \, \text{kJ/kg} \)  
+\( u_2 \, (\text{TAB A2 at } 70^\circ \text{C}, x = 0) = 292.95 \, \text{kJ/kg} \)  
+\( u_1 \, (\text{TAB A2 at } 100^\circ \text{C}, x = 0.005) \)  
+
+**Calculation for \( u_1 \):**  
+\( u_1 = 1.0435 + 0.005 \cdot (1.673 - 1.0435) = 1.04664 \, \text{kJ/kg} \)  
+
+**Mass balance equation:**  
+\( m_2 = m_1 + \Delta m \)  
+
+**Energy balance equation:**  
+\( (m_1 + \Delta m) \cdot u_2 - m_1 \cdot u_1 = \Delta m \cdot h_m + Q \)  
+Rearranged:  
+\( \Delta m \cdot u_2 - \Delta m \cdot h_m = Q + m_1 \cdot u_1 - m_1 \cdot u_2 \)  
+\( \Delta m = \frac{Q + m_1 \cdot u_1 - m_1 \cdot u_2}{u_2 - h_m} \)  
+
+**Substitution and calculation:**  
+\( \Delta m = \frac{35000 + 5755 \cdot 1.04664 - 5755 \cdot 292.95}{292.95 - 83.36} \)  
+\( \Delta m = 8205.67 \, \text{kg} \)  
+
+---

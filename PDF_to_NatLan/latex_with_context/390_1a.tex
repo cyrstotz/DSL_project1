@@ -1,0 +1,21 @@
+The energy balance for the reactor system is written under steady-state conditions, neglecting kinetic and potential energy changes. The equation is:  
+\[
+0 = \dot{m} \left[ h_e - h_a \right] + \dot{Q}_{\text{out}} - \dot{Q}_{\text{ac}} - \dot{W}_e^0
+\]  
+The heat flow removed by the coolant, \( \dot{Q}_{\text{out}} \), is calculated as:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} \left[ h_{\text{rein}} - h_{\text{aus}} \right] + \dot{Q}_R
+\]  
+Substituting the values:  
+\[
+\dot{m}_{\text{in}} = 0.3 \, \text{kg/s}, \quad h_{\text{rein}} = h_f(70^\circ\text{C}) = 292.92 \, \frac{\text{kJ}}{\text{kg}}, \quad h_{\text{aus}} = h_f(100^\circ\text{C}) = 417.04 \, \frac{\text{kJ}}{\text{kg}}, \quad \dot{Q}_R = 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \left[ 292.92 - 417.04 \right] + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = -62.782 \, \frac{\text{kW}}{\text{s}} + 100 \, \text{kW} = 62.782 \, \text{kW}
+\]  
+Thus, \( \dot{Q}_{\text{out}} = 62.782 \, \text{kW} \).
+
+---

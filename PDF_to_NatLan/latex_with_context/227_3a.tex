@@ -1,0 +1,32 @@
+The gas volume is calculated as:  
+\[
+V_{\text{gas}} = 3.14 \, \text{L} = 3.14 \times 10^{-3} \, \text{m}^3
+\]  
+The cross-sectional area of the cylinder is determined using the formula for the area of a circle:  
+\[
+A = \pi \cdot r^2 = \pi \cdot \left(0.1 \, \text{m} / 2\right)^2 = 0.007854 \, \text{m}^2
+\]  
+The initial temperature of the gas is converted to Kelvin:  
+\[
+T_{\text{g,1}} = 500^\circ\text{C} + 273.15 = 773.15 \, \text{K}
+\]  
+
+The pressure exerted by the piston is calculated as:  
+\[
+p_{\text{amb}} = 10^5 \, \text{Pa}, \quad m_K = 32 \, \text{kg}, \quad g = 9.81 \, \text{m/s}^2
+\]  
+\[
+p_{\text{g,1}} = p_{\text{amb}} + \frac{m_K \cdot g}{A} = 10^5 \, \text{Pa} + \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{0.007854 \, \text{m}^2} = 10^5 \, \text{Pa} + 3.9932 \times 10^5 \, \text{Pa} = 4.9932 \times 10^5 \, \text{Pa}
+\]  
+
+The mass of the gas is calculated using the ideal gas law:  
+\[
+m_{\text{g}} = \frac{M_g \cdot p_{\text{g,1}} \cdot V_{\text{gas}}}{R \cdot T_{\text{g,1}}}
+\]  
+Substituting values:  
+\[
+M_g = 50 \, \text{kg/kmol}, \quad R = 8.314 \, \text{J/mol·K}, \quad V_{\text{gas}} = 3.14 \times 10^{-3} \, \text{m}^3, \quad T_{\text{g,1}} = 773.15 \, \text{K}
+\]  
+\[
+m_{\text{g}} = \frac{50 \times 10^{-3} \, \text{kg/mol} \cdot 4.9932 \times 10^5 \, \text{Pa} \cdot 3.14 \times 10^{-3} \, \text{m}^3}{8.314 \, \text{J/mol·K} \cdot 773.15 \, \text{K}} = 2.488 \, \text{kg}
+\]

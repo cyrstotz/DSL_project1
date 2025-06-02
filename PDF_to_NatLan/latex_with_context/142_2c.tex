@@ -1,0 +1,51 @@
+The enthalpy change \( h_a \) is calculated using:  
+\[
+h_a = \int_{T_5}^{T_6} c_p \, dT
+\]  
+For constant \( c_p \):  
+\[
+h_a = c_p \cdot (T_6 - T_5)
+\]  
+Substituting values:  
+\[
+h_a = 1.006 \cdot (328.07 - 431.9) = -104.4 \, \text{kJ/kg}
+\]  
+
+Additional notes:  
+- The page includes intermediate calculations for \( w_6 \) and \( h_a \).  
+- Some crossed-out sections are ignored.  
+
+No additional diagrams or figures are described beyond the \( T \)-\( s \) diagram.
+
+The mass-specific exergy destruction \( ex_{\text{dest}} \) is calculated using the following expression:  
+\[
+ex_{\text{dest}} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2 - w_0^2}{2} + ex_{\text{rec}}
+\]  
+Breaking down the terms:  
+\[
+h_6 - h_0 = \int_{T_0}^{T_6} c_p \, dT = c_p (T_6 - T_0)
+\]  
+\[
+s_6 - s_0 = \int_{T_0}^{T_6} \frac{c_p}{T} \, dT - R \ln \left( \frac{p_6}{p_0} \right) = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+Substituting values:  
+\[
+T_0 = 243.15 \, \text{K}, \quad T_6 = 330 \, \text{K}, \quad p_0 = 0.191 \, \text{bar}, \quad p_6 = 0.5 \, \text{bar}
+\]  
+\[
+s_0 = c_p \ln \left( \frac{330}{243.15} \right) - R \ln \left( \frac{0.5}{0.191} \right)
+\]  
+\[
+s_0 = c_p \ln \left( \frac{330}{243.15} \right) - R \ln \left( \frac{0.5}{0.191} \right) = 2.7033 \, \text{kJ/kg·K}
+\]  
+\[
+s_6 = c_p \ln \left( \frac{330}{243.15} \right) - R \ln \left( \frac{0.5}{0.191} \right) = 2.654 \, \text{kJ/kg·K}
+\]  
+\[
+T_6 = 330 \, \text{K}, \quad T_0 = 243.15 \, \text{K}
+\]  
+\[
+ex_{\text{dest}} = 133.6 - \frac{h}{R}
+\]  
+
+---

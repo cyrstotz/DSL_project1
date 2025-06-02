@@ -1,0 +1,39 @@
+The reactor temperature is reduced to \( 70^\circ\text{C} \), and the steam quality \( x \) is set to \( x = 0 \).  
+
+Initial conditions:  
+- Temperature of the added water: \( T_{\text{in}} = 20^\circ\text{C} \)  
+- Heat released: \( Q_{\text{out},12} = 35 \, \text{MJ} \)  
+
+The system is described as a half-open system.  
+
+Energy balance:  
+\[
+\Delta E = m_2 u_2 - m_1 u_1 = \Delta m_{12} h_{\text{in}} + Q - W
+\]  
+Rearranging:  
+\[
+\Delta m_{12} = \frac{m_2 u_2 - m_1 u_1 - Q}{h_{\text{in}}}
+\]  
+
+Given values:  
+- \( m_1 = 5755 \, \text{kg} \)  
+- \( Q = 35,000 \, \text{kJ} \)  
+- \( u_2(T=70^\circ\text{C}, x=0) = 202.945 \, \frac{\text{kJ}}{\text{kg}} \)  
+- \( u_1(T=100^\circ\text{C}, x=0.005) = 419.914 \, \frac{\text{kJ}}{\text{kg}} \)  
+- \( h_{\text{in}}(T=20^\circ\text{C}, x=0) = 83.96 \, \frac{\text{kJ}}{\text{kg}} \)  
+
+Substituting into the formula:  
+\[
+\Delta m_{12} = \frac{m_2 u_2 - m_1 u_1 - Q}{h_{\text{in}}}
+\]  
+\[
+\Delta m_{12} = \frac{(m_1 + \Delta m_{12}) u_2 - m_1 u_1 - Q}{h_{\text{in}}}
+\]  
+Simplifying:  
+\[
+\Delta m_{12} = \frac{m_1 u_2 - m_1 u_1 - Q}{h_{\text{in}} - u_2}
+\]  
+Final result:  
+\[
+\Delta m_{12} = 5744.11 \, \text{kg}
+\]

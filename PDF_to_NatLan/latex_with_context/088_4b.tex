@@ -1,0 +1,21 @@
+The initial temperature is given as \( T_i = 283.15 \, \text{K} \). The sublimation temperature is \( T_{\text{sublimation}} = 273.15 \, \text{K} \), which corresponds to \( T_i \).  
+The temperature of the evaporator is \( T_{\text{evaporator}} = 277.15 \, \text{K} \), with a temperature difference of \( 6^\circ \text{C} \).  
+At state 2, the temperature is \( T_2 = 46^\circ \text{C} \), and the vapor quality is \( x_2 = 1 \).  
+Using Table A10, the entropy values are \( s_3 = s_2 = 0.8169 \, \text{kJ/kg·K} \).  
+
+Interpolation is performed at 8 bar:  
+\[
+h_3 = h_{\text{sat}} + \frac{h(40) - h_{\text{sat}}}{s(40) - s_{\text{sat}}} \cdot (s_3 - s_{\text{sat}})
+\]  
+The resulting enthalpy is \( h_3 = 267.33 \, \text{kJ/kg} \).  
+
+The mass flow rate is calculated as:  
+\[
+\dot{m} = \frac{\dot{Q}_K}{h_2 - h_3}
+\]  
+Substituting values:  
+\[
+\dot{m} = \frac{285.53 \, \text{J/s}}{267.33 \, \text{kJ/kg}} = 1.57 \, \text{g/s}
+\]
+
+---

@@ -1,0 +1,115 @@
+
+``````latex
+
+
+\section*{Thermodynamik 1 HS23}
+
+\subsection*{4 a)}
+
+\begin{itemize}
+    \item \textbf{Graph 1:} A graph with pressure \( p \) on the y-axis and temperature \( T \) on the x-axis. The graph shows three regions labeled "fest", "flüssig", and "gas". There are two curves: one starting from the origin and curving upwards to the right, labeled "1", and another curve starting from the same point but curving upwards to the left, labeled "2". The region between these curves is labeled "flüssig".
+    \item \textbf{Graph 2:} A graph with pressure \( p \) on the y-axis and temperature \( T \) on the x-axis. The graph shows three regions labeled "fest", "flüssig", and "gas". There is a point labeled "TP" and two curves: one starting from the origin and curving upwards to the right, labeled "1", and another curve starting from the same point but curving upwards to the left, labeled "2". The region between these curves is labeled "flüssig".
+\end{itemize}
+
+\subsection*{b) noch machen}
+
+\subsection*{c) Annahme: \( T_2 = -22^\circ C \), \( \dot{m} = 4 \frac{kg}{h} \)}
+
+\[
+\text{TAB A-10: } p_2 = 1.2182 \text{ bar} = p_4
+\]
+
+\[
+S_4 = S_1 \quad (\text{adiabat})
+\]
+
+\[
+S_4 = 0.396 S_{4 \text{ flüssig}} \text{ TAB A-11}
+\]
+
+\[
+S_1 = S_f (1.2182 \text{ bar}) + x (S_g (1.2182 \text{ bar}) - S_f (1.2182 \text{ bar}))
+\]
+
+\[
+x = \frac{S_1 - S_f}{S_g - S_f} = 0.303 = x_4
+\]
+
+\[
+\text{Interpolation mit TAB A-11:}
+\]
+
+\[
+S_f = 0.9839 + \frac{0.4055 - 0.9839}{1.4 - 1.2} (1.2182 - 1.2)
+\]
+
+\[
+= 0.98859
+\]
+
+\[
+S_g = 0.9364 + \frac{0.9322 - 0.9364}{1.4 - 1.2} (1.2182 - 1.2)
+\]
+
+\[
+= 0.9348
+\]
+
+\subsection*{b) Energiebilanz am Verdichter:}
+
+\[
+\frac{dE}{dt} = \dot{m} (h_2 - h_3) + \dot{W}
+\]
+
+\[
+\dot{m} = \frac{\dot{W}}{h_2 - h_3}
+\]
+
+\[
+T_i = -20^\circ C
+\]
+
+\[
+\Rightarrow T_2 = -26^\circ C
+\]
+
+\[
+h_2 = 231.62 \text{ kJ/kg} \quad \text{TAB A-10}
+\]
+
+``````latex
+
+
+\begin{itemize}
+    \item[d)] \[
+    E_k = \frac{1}{\left| \dot{Q}_{zu} \right|} \left| \dot{W}_k \right|
+    \]
+    \[
+    \dot{W}_t = \dot{W}_k = 28W
+    \]
+    \[
+    \left| \dot{Q}_{zu} \right| = \left| \dot{Q}_k \right|
+    \]
+    \text{Energiebilanz Verdampfer/Kondensator}
+    \[
+    \frac{dE}{dt} = \dot{m} \left( h_1 - h_2 \right) + \dot{Q}_k - \dot{W}_t = 0
+    \]
+    \[
+    \dot{Q}_k = \dot{m} \left( h_2 - h_1 \right)
+    \]
+    \[
+    \dot{m} = 4 \frac{kg}{h} \left( 239.08 \frac{kJ}{kg} - 93.92 \frac{kJ}{kg} \right)
+    \]
+    \[
+    = 562.64 \frac{kJ}{h}
+    \]
+    \[
+    = 0.156 \frac{kJ}{s} = 156W
+    \]
+    \[
+    \Rightarrow E_k = \frac{\dot{Q}_k}{\dot{W}_k} = \frac{156W}{28W} = 5.57 = E_k
+    \]
+    \item[e)] Temperatur würde weiter sinken, aber immer langsamer, da $C_p$ immer größer wird.
+\end{itemize}
+
+```

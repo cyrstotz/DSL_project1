@@ -1,0 +1,20 @@
+The equation for the mass flow rate is given as:  
+\( \dot{m} = \frac{\dot{W}_K}{h_3 - h_1} \)  
+Thus, \( \dot{m} = \frac{\dot{W}_K}{h_3 - h_1} \).  
+
+To find \( h_3 \) and \( h_1 \), we use the tables A-10, A-11, A-12.  
+
+\( h_2 \) is interpolated from \( h_f(T_i = 6) \), where \( T_i \) is determined using the p-T diagram.  
+At \( -20^\circ \text{C} \), we find:  
+\( h_{2,s} = h_f(T = -26^\circ \text{C}) = 231.62 \)  
+and the entropy \( s_2 = s_f(T = -26^\circ \text{C}) = 0.8390 \).  
+
+The process from 2 to 3 is adiabatic and reversible, so \( \Delta S = 0 \).  
+
+From table A-12, we find \( h_3 \):  
+\( h_3(s_3) = 273.66 + \frac{(28.33 - 273.66)}{(89111 - 0.8390)} \cdot (0.8390 - 0.8390) \approx 299.14 \).  
+
+Thus,  
+\( \dot{m} = \frac{\dot{W}_K}{h_3 - h_1} = \frac{2E}{67.55} = 0.658 \, \text{kg/s} \approx 2.37 \, \text{kg/s}. \)  
+
+\( T_i \) was determined using the p-T diagram at \( -20^\circ \text{C} \), so \( T_i = -20 - 6 = -26^\circ \text{C}. \)

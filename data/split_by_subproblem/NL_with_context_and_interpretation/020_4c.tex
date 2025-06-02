@@ -1,0 +1,12 @@
+\( h_4 = h_1 = h_f(8 \, \text{bar}) = 93.42 \, \text{kJ/kg} \) (from Table A-11)  
+\( p_2 = p_1 = 1 \, \text{bar}, T = -22^\circ \text{C} \)  
+
+\( x_1 = \frac{h_1 - h_f(1.2132 \, \text{bar})}{h_g(1.2132 \, \text{bar}) - h_f(1.2132 \, \text{bar})} \)  
+\( \Rightarrow h_f(1.2132 \, \text{bar}) = 27.74 \, \text{kJ/kg}, h_g(1.2132 \, \text{bar}) = 234.07 \, \text{kJ/kg} \)  
+
+Interpolation:  
+\( h_f(1.2132 \, \text{bar}) = h_f(1.02 \, \text{bar}) + \frac{(1.2132 - 1.02)}{(1.4 - 1.02)} \cdot [h_f(1.4 \, \text{bar}) - h_f(1.02 \, \text{bar})] \)  
+
+\( h_g(1.2132 \, \text{bar}) = 234.07 \, \text{kJ/kg}, h_f(1.2132 \, \text{bar}) = 27.74 \, \text{kJ/kg} \)  
+
+\( \Rightarrow x_1 = \frac{93.42 - 27.74}{234.07 - 27.74} = 0.3376 \)

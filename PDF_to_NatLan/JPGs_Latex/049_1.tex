@@ -1,0 +1,38 @@
+TASK 1d  
+From Table A-2, the internal energy values are interpolated:  
+
+\[
+u_{\text{Reaktor}} = 0.005 \cdot u_f(T=100) + 0.995 \cdot u_f(T=100) = 423.37
+\]
+
+\[
+u_{\text{outlet}} = u_f(T=70) = 292.85
+\]
+
+\[
+u_{\text{in}} = u_f(T=20) = 83.55
+\]
+
+Using the energy balance:  
+
+\[
+m_{\text{R}} \cdot u_{\text{R}} + m_{12} \cdot u_{\text{in}} = (m_{\text{R}} + m_{12}) \cdot u_{\text{outlet}}
+\]
+
+Rearranging:  
+
+\[
+m_{\text{R}} \cdot u_{\text{R}} + m_{12} \cdot u_{\text{in}} = m_{\text{R}} \cdot u_{\text{outlet}} + m_{12} \cdot u_{\text{outlet}}
+\]
+
+\[
+m_{12} = m_{\text{R}} \cdot \frac{(u_{\text{R}} - u_{\text{outlet}})}{(u_{\text{outlet}} - u_{\text{in}})}
+\]
+
+Substituting values:  
+
+\[
+m_{12} = 5755 \cdot \frac{(423.37 - 292.85)}{(292.85 - 83.55)} = 5491.2 \, \text{kg}
+\]  
+
+The calculated mass \( m_{12} \) is **5491.2 kg**.

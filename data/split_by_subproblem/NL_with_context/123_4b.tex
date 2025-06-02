@@ -1,0 +1,27 @@
+The mass flow rate of R134a is calculated using the energy balance for the stationary flow process:  
+0 equals m-dot times (h2 minus h3) minus Wk.  
+Wk equals 28 kW.  
+m-dot equals Wk divided by (h2 minus h3), which equals 28 kW divided by (234.08 minus 591.32) kJ/kg, resulting in 0.083 kg/s.  
+
+A table is provided with columns labeled 1, 2, 3, and 4, and rows for pressure (P), vapor quality (x), temperature (T), and enthalpy (h):  
+- P: 1 bar, 8.105 bar, 8.105 bar, 1 bar  
+- x: 1, -, -, 0  
+- T: Ti minus 6 equals -222, -, Ti minus 6  
+- h: 89.42, 234.08, -, 93.42  
+
+Additional notes:  
+- p3 equals p4  
+- h3 equals h4  
+- Isobaric process  
+- s2 equals s3 equals sei minus s2 times (x equals 1) equals 0.3351 kJ/kg·K  
+
+Interpolation:  
+h3 equals h400 plus (h50 minus h400) divided by (s50 minus s400) times s3.  
+h3 equals 293.66 plus (284.33 minus 293.66) divided by (0.3351 minus 0.3314) times (0.3314 minus 0.3314).  
+Result: h3 equals 521.39 kJ/kg.  
+
+References to tables:  
+- Tab A-10  
+- h2 equals -222 times x equals 1 equals 234.08 kJ/kg  
+- s3 equals 0.3351 kJ/kg·K  
+- A-12

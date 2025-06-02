@@ -1,0 +1,69 @@
+A table is presented with the following values:  
+- \( \dot{m} \):  
+  - In: 0.3  
+  - Out: 0.3  
+  - None: -  
+  - None: -  
+- \( T \):  
+  - In: 70 degrees Celsius  
+  - Out: 100 degrees Celsius  
+  - None: 288.15 K  
+  - None: 298.15 K  
+- \( x \):  
+  - In: 1  
+  - Out: 1  
+
+Additional notes:  
+- \( m_{ges} = 5755 \, \text{kg} \)  
+- \( x_D = \frac{m_D}{m_{ges}} = 0.005 \)  
+- \( T_{Reaktor} = 100^\circ \text{C} \)  
+- \( Q_D = 100 \, \text{kW} \)  
+
+---
+
+a) To calculate \( Q_{aus} \):  
+Energy balance:  
+\( h(T=70^\circ \text{C}) = 292.18 \, \text{kJ/kg} \) (from Table A-2)  
+\( h(T=100^\circ \text{C}) = 419.04 \, \text{kJ/kg} \)  
+
+Equation:  
+\( \frac{dE}{dt} = \sum \dot{m} h_i + Q - W_i \)  
+Simplified to:  
+\( 0 = \dot{m}(h_e - h_a) + Q_R - Q_{aus} \)  
+
+Result:  
+\( Q_{aus} = \dot{m}(h_e - h_a) + Q_R \)  
+\( Q_{aus} = 0.3 \cdot (292.18 - 419.04) + 100 \, \text{kW} = 62.18 \, \text{kW} \)  
+
+---
+
+b) To calculate \( T_{KF} \):  
+\( T_{KF} = \frac{\int_a^e T \, ds}{s_a - s_e} = \frac{h_a - h_e}{s_a - s_e} \)  
+
+Using the equation:  
+\( T_{KF} = \frac{T_2 - T_1}{\ln(T_2 / T_1)} \)  
+
+Substituting values:  
+\( T_{KF} = \frac{248.15 - 288.15}{\ln(286.15 / 288.15)} \)  
+
+Result:  
+\( T_{KF} = 293.12^\circ \text{K} \)  
+
+---
+
+c) To calculate \( S_{erz} \):  
+Equation:  
+\( 0 = \dot{m}[s_e - s_a] + \frac{\dot{Q}_{aus}}{T_j} + s_{erz} \)  
+
+Simplified:  
+\( s_{erz} = \dot{m}(s_a - s_e) - \frac{\dot{Q}_{aus}}{T_j} \)  
+
+Substituting values:  
+\( s_{erz} = 0.3 \cdot (7.35344 - 7.35333) - \frac{62.18}{293.12} \)  
+\( s_{erz} = -0.012012 - 0.212132 = 0.33 \, \text{kJ/kg} \)  
+
+Values:  
+\( s_a(100^\circ \text{C}) = 7.3533 \)  
+\( s_e(70^\circ \text{C}) = 7.3543 \)  
+
+From Table A-2.

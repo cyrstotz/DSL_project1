@@ -1,0 +1,24 @@
+\( \text{Required: } x_{\text{Ice},2} \)  
+
+The external pressure must remain the same, so:  
+\( p_{4,\text{EW}} = 1 \, \text{bar} + \frac{g \cdot m_K}{A} = 1.0993 \, \text{bar} \)  
+
+\( u_1 = u_{g1} + x \cdot (u_{ge} - u_{g1}) \)  
+
+Using interpolation:  
+\[
+\frac{p_{\text{ext}} - 1.1 \, \text{bar}}{1.1 \, \text{bar} - 1 \, \text{bar}} = \frac{u_{g1} - (-333.4659)}{-333.4658 - (-333.4642)}
+\]  
+
+\[
+u_{g1} = -333.446 \, \text{kJ/kg}
+\]  
+
+Similarly for \( u_{ge} \):  
+\[
+\frac{1.1 \, \text{bar} - 1.1 \, \text{bar}}{1.1 \, \text{bar} - 1 \, \text{bar}} = \frac{u_{ge} - (-0.045)}{-0.045 - (-0.033)} \implies u_{ge} = -0.036 \, \text{kJ/kg}
+\]  
+
+\[
+u_1 = -333.446 + 0.6 \cdot (-0.036 - (-333.446)) = -133.4 \, \text{kJ/kg}
+\]

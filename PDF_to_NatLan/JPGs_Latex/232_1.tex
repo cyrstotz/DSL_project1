@@ -1,0 +1,70 @@
+TASK 1d  
+The energy balance equation is written as:  
+\[
+\frac{dE}{dt} = \dot{m} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_{\text{out}} + \dot{Q}_R
+\]  
+Under steady-state conditions, this simplifies to:  
+\[
+\Delta E = m (h_{\text{in}}) + \dot{Q} = \dot{W}
+\]  
+
+The change in internal energy is expressed as:  
+\[
+\Delta U = m (h_{\text{in}}) + Q_{\text{out}}
+\]  
+
+The mass balance equation is:  
+\[
+m (u_2 - u_1) = \Delta m_{12} (h_{\text{in}}) + Q
+\]  
+
+The mass added to the system is calculated as:  
+\[
+\Delta m = \left( -\frac{Q}{h_{\text{in}}} + m (u_2 - u_1) \right) \cdot h_{\text{in}}
+\]  
+
+Substituting values:  
+\[
+\Delta m_{12} = -35 \times 10^3 + 5755 \cdot (437.335 - 83.55)
+\]  
+\[
+\Delta m_{12} = -11184.54 \, \text{kg}
+\]  
+
+Additional notes:  
+- \( T_{\text{Reactor}} = 100^\circ\text{C} \)  
+- \( T_{\text{in}} = 20^\circ\text{C} \)  
+- \( Q = Q_{\text{out}} = Q_R = 35 \, \text{MJ} \)  
+
+Values from water tables (Table A-2 at \( 20^\circ\text{C} \)):  
+\[
+h_{\text{in}} = 83.36 \, \text{kJ/kg}, \quad u_2 = 637.295 \, \text{kJ/kg}, \quad u_1 = 83.55 \, \text{kJ/kg}
+\]  
+
+---
+
+TASK 1e  
+The entropy change is calculated using:  
+\[
+\Delta S = m (s_2 - s_1) = \frac{\dot{Q}}{T} + \dot{S}_{\text{gen}}
+\]  
+
+Substituting values:  
+\[
+\Delta S = m (s_2 - s_1)
+\]  
+\[
+\Delta S = 5755 \cdot (7.33774 - 0.2366)
+\]  
+\[
+\Delta S = 79.5 \, \text{MJ/K}
+\]  
+
+Values from water tables (Table A-2):  
+\[
+s_2 = 7.3069 + 0.005 \cdot (7.354 - 7.3069) = 7.33774 \, \text{kJ/kg·K}
+\]  
+\[
+s_1 = 0.236 \, \text{kJ/kg·K}
+\]  
+

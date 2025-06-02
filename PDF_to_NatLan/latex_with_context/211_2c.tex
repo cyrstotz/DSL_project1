@@ -1,0 +1,29 @@
+The mass-specific increase in flow exergy (\( \Delta ex_{\text{flow}} \)) is calculated as:  
+\[
+\Delta ex_{\text{flow}} = h_6 - h_0 - T_0 \left( s_6 - s_0 \right) + p_0 \left( v_6 - v_0 \right)
+\]  
+Expanding the terms:  
+\[
+\Delta ex_{\text{flow}} = c_p \left( T_6 - T_0 \right) - T_0 \left[ c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) \right] + p_0 \left( v_6 - v_0 \right)
+\]  
+
+For \( v_6 \):  
+\[
+v_6 = \frac{RT_6}{p_0}, \quad v_0 = \frac{RT_0}{p_0}
+\]  
+Substituting values:  
+\[
+v_6 = \frac{0.287 \cdot 328.07}{0.0191} = 5.105 \cdot 10^{-3} \, \text{m}^3/\text{kg}
+\]  
+\[
+v_0 = \frac{0.287 \cdot 243.15}{0.0191} = 3.654 \cdot 10^{-3} \, \text{m}^3/\text{kg}
+\]  
+
+Substituting into \( \Delta ex_{\text{flow}} \):  
+\[
+\Delta ex_{\text{flow}} = 1.006 \left( 328.07 - 243.15 \right) - 243.15 \left[ 1.006 \ln \left( \frac{328.07}{243.15} \right) - 0.287 \ln \left( \frac{0.191}{0.0191} \right) \right] + 0.0191 \left( 5.105 \cdot 10^{-3} - 3.654 \cdot 10^{-3} \right)
+\]  
+After calculation:  
+\[
+\Delta ex_{\text{flow}} = 43.91 \, \text{kJ/kg}
+\]

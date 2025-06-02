@@ -1,0 +1,101 @@
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+Stelle Energiebilanz für offenes System des Reaktors auf:
+\[
+\dot{E} = \dot{m}_{in} \left( h_{Ein} + \frac{v_{Ein}^2}{2} + g z_{Ein} \right) - \dot{m}_{out} \left( h_{Aus} + \frac{v_{Aus}^2}{2} + g z_{Aus} \right) + \dot{Q} - \dot{W} = \dot{m}_{in} \left( h_{Ein} + \frac{v_{Ein}^2}{2} + g z_{Ein} \right) - \dot{m}_{out} \left( h_{Aus} + \frac{v_{Aus}^2}{2} + g z_{Aus} \right) + \dot{Q} - \dot{W} = 0 \quad \text{da stationär}
+\]
+
+Die potentielle und kinetische Energie vernachlässigt werden können also
+\[
+\dot{Q} = \dot{m}_{in} \left( h_{Ein} - h_{Aus} \right) \Rightarrow \dot{Q} = \dot{m} \left( h_{Ein} - h_{Aus} \right)
+\]
+
+Nun mit Tabelle für siedende Flüssigkeit bei 100°C also \( A = 2 \) mit \( x = 0 \):
+
+\[
+h_{Ein}(70°C) = h_f(70°C) = 293,98 \frac{\text{kJ}}{\text{kg}} \quad \text{und} \quad h_{Aus}(100°C) = h_f(100°C) = 419,04 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\Rightarrow \dot{Q} = 100 \frac{\text{kJ}}{\text{s}} \cdot 0,3 \frac{\text{kg}}{\text{s}} \cdot (293,98 \frac{\text{kJ}}{\text{kg}} - 419,04 \frac{\text{kJ}}{\text{kg}}) \approx 6,2182 \frac{\text{kW}}{\text{kg}}
+\]
+
+\subsection*{b)}
+
+Wärmeübertragbarkeit des Systems, offen, stationär. Nimmt nur Wärme auf, ideale Flüssigkeit.
+
+\[
+T_{in} = 288,15 \, \text{K} \quad T_{out} = 293,15 \, \text{K} \quad P_1 = P_2
+\]
+
+\[
+\dot{T} = \frac{\dot{Q}}{\dot{m} \cdot c_p} \quad \Lambda \quad S(T_1) - S(T_2) = \int_{T_1}^{T_2} \frac{c_p(T)}{T} \, dT \quad \text{wenn} \quad c_p \quad \text{als konstant an also}
+\]
+
+\[
+\Rightarrow \dot{T} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)} \quad \text{Einheit} \left[ \frac{\text{kJ}}{\text{kg K}} \right] \quad \text{A minus Quellfähigkeit als} \quad \dot{Q} \Rightarrow \dot{T} = \frac{(293,15 - 288,15 \, \text{K})}{\ln \left( \frac{293,15}{288,15} \right)} \approx 293,12 \, \text{K}
+\]
+
+\subsection*{c)}
+
+Nehme dass das Teilsystem adiabate, isotherme Umgebung ist:
+
+Entropiebilanz mit \(\dot{T}\):
+
+\[
+\dot{S} = \dot{m}_{in} s_{Ein} - \dot{m}_{out} s_{Aus} + \frac{\dot{Q}}{T} + \dot{S}_{ext} = 0 \quad \text{da stationär System}
+\]
+
+\[
+\Rightarrow \frac{\dot{Q}}{T} = \dot{m}_{in} s_{Ein} - \dot{m}_{out} s_{Aus} = -\```latex
+
+
+\section*{1)}
+
+\begin{align*}
+    \dot{m}_{ein} - \dot{m}_{aus} &= 0 \\
+    m_{nass} &= 5.755 \text{ kg} \\
+    T_{ein,12} &= 20^\circ \text{C} \\
+    T_{aus,1} &= 100^\circ \text{C} \\
+    x_{D,1} &= 0.005 \\
+    x_{D,2} &= 0 \\
+    T_{aus,2} &= 70^\circ \text{C}
+\end{align*}
+
+\noindent
+\(\Rightarrow\) Wir geben dem Nass sein Feucht \(m_{nass}\) mit 0.005 \(\dot{m}_{nass}\) an Dampf und dann an andere Feuchtigkeit und 70°C entweicht wieder.
+
+\noindent
+\(\Rightarrow\) Energiegleichung des geschlossenen Systems:
+
+\begin{align*}
+    \dot{E} &= \frac{d}{dt} (KE) + \frac{d}{dt} (PE) + \frac{d}{dt} (u) = \dot{Q} - \dot{W} \\
+    \Rightarrow \dot{u} &= \dot{Q}
+\end{align*}
+
+\noindent
+Innere Energie in Zustand 4 aus A-2:
+
+\begin{align*}
+    u_{Dampf}(100^\circ \text{C}) &= 2504.5 \frac{\text{kJ}}{\text{kg}} \\
+    u_{Flüssig}(100^\circ \text{C}) &= 419.04 \frac{\text{kJ}}{\text{kg}} \\
+    u_{Flüssig}(70^\circ \text{C}) &= 293.95 \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+\noindent
+\(\Rightarrow\)
+
+\begin{align*}
+    \Delta m_{12} &= \frac{Q_{12} - m_{nass} \cdot u_{Flüssig}(70^\circ \text{C})}{u_{Flüssig}(70^\circ \text{C})} \\
+    &\approx 2794.6 \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+\section*{c)}
+
+``````latex
+
+

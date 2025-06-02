@@ -1,0 +1,77 @@
+TASK 2a  
+The process is illustrated qualitatively in a temperature-entropy (\( T \)-\( s \)) diagram. The diagram includes labeled isobars (\( p_0, p_2, p_4 \)) and isentropic processes. The states are marked as 1, 2, 3, and 4, with arrows indicating the transitions between states. The axes are labeled as "Temperature" on the vertical axis and "Entropy (\( s \)) [kJ/K]" on the horizontal axis.
+
+---
+
+TASK 2b  
+The energy balance equation is derived for the jet engine system:  
+\[
+\dot{Q} = \dot{m} \left( h_{\text{in}} + k_{\text{ein}} \right) - \dot{m} \left( h_{\text{aus}} + k_{\text{aus}} \right) + \dot{Q}_B
+\]  
+Simplifying, the equation becomes:  
+\[
+0 = \frac{w_{\text{ein}}^2}{2} - \frac{w_{\text{aus}}^2}{2} + q_B + h_{\text{ein}} - h_{\text{aus}}
+\]  
+Rearranging for \( w_{\text{aus}}^2 \):  
+\[
+w_{\text{aus}}^2 = w_{\text{ein}}^2 + 2q_B + 2c_p \left( T_6 - T_1 \right)
+\]  
+
+For \( T_6 \), the entropy equation is used:  
+\[
+s_6 - s_5 = c_p \ln \left( \frac{T_5}{T_6} \right) - R \ln \left( \frac{p_5}{p_6} \right) = 0
+\]  
+From this, the temperature ratio is derived:  
+\[
+\ln \left( \frac{T_5}{T_6} \right) = \frac{R}{c_p} \ln \left( \frac{p_5}{p_6} \right)
+\]  
+Substituting values:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{R}{c_p}}
+\]  
+With \( T_5 = 431.9 \, \text{K} \), \( p_6 = 0.191 \, \text{bar} \), \( p_5 = 0.5 \, \text{bar} \), \( R = 0.287 \, \text{kJ/kg·K} \), and \( c_p = 1.006 \, \text{kJ/kg·K} \):  
+\[
+T_6 = 328.07 \, \text{K}
+\]  
+
+Finally, substituting into \( w_{\text{aus}} \):  
+\[
+w_{\text{aus}} = \sqrt{w_{\text{ein}}^2 + 2q_B + 2c_p \left( T_6 - T_1 \right)}
+\]  
+With \( w_{\text{ein}} = 200 \, \text{m/s} \), \( q_B = 1195 \, \text{kJ/kg} \), \( T_6 = 328.07 \, \text{K} \), \( T_1 = -30^\circ\text{C} = 243.15 \, \text{K} \):  
+\[
+w_{\text{aus}} = 206.36 \, \text{m/s}
+\]
+
+---
+
+TASK 2c  
+The mass-specific increase in flow exergy (\( \Delta ex_{\text{flow}} \)) is calculated as:  
+\[
+\Delta ex_{\text{flow}} = h_6 - h_0 - T_0 \left( s_6 - s_0 \right) + p_0 \left( v_6 - v_0 \right)
+\]  
+Expanding the terms:  
+\[
+\Delta ex_{\text{flow}} = c_p \left( T_6 - T_0 \right) - T_0 \left[ c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) \right] + p_0 \left( v_6 - v_0 \right)
+\]  
+
+For \( v_6 \):  
+\[
+v_6 = \frac{RT_6}{p_0}, \quad v_0 = \frac{RT_0}{p_0}
+\]  
+Substituting values:  
+\[
+v_6 = \frac{0.287 \cdot 328.07}{0.0191} = 5.105 \cdot 10^{-3} \, \text{m}^3/\text{kg}
+\]  
+\[
+v_0 = \frac{0.287 \cdot 243.15}{0.0191} = 3.654 \cdot 10^{-3} \, \text{m}^3/\text{kg}
+\]  
+
+Substituting into \( \Delta ex_{\text{flow}} \):  
+\[
+\Delta ex_{\text{flow}} = 1.006 \left( 328.07 - 243.15 \right) - 243.15 \left[ 1.006 \ln \left( \frac{328.07}{243.15} \right) - 0.287 \ln \left( \frac{0.191}{0.0191} \right) \right] + 0.0191 \left( 5.105 \cdot 10^{-3} - 3.654 \cdot 10^{-3} \right)
+\]  
+After calculation:  
+\[
+\Delta ex_{\text{flow}} = 43.91 \, \text{kJ/kg}
+\]

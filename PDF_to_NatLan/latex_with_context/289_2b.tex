@@ -1,0 +1,32 @@
+The equations and calculations for determining the outlet temperature \(T_6\) and velocity \(w_6\) are as follows:  
+
+1. The entropy at state \(5\) is equal to the entropy at state \(6\):  
+   \[
+   S_5 = S_6
+   \]
+
+2. The temperature at state \(6\) is calculated using the isentropic relation:  
+   \[
+   T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+   \]
+   Substituting values:  
+   \[
+   T_6 = T_5 \left( \frac{p_0}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+   \]
+   With \(T_5 = 431.9 \, \text{K}\), \(p_0 = 0.191 \, \text{bar}\), \(p_5 = 0.5 \, \text{bar}\), and \(\kappa = 1.4\):  
+   \[
+   T_6 = 431.9 \left( \frac{0.191}{0.5} \right)^{\frac{0.4}{1.4}} = 328.0796697 \, \text{K}
+   \]
+
+3. The outlet velocity \(w_6\) is calculated using the energy balance:  
+   \[
+   w_6 = \sqrt{2 c_p (T_5 - T_6) + w_5^2}
+   \]
+   Substituting values:  
+   \[
+   w_6 = \sqrt{2 \cdot 1.006 \cdot (431.9 - 328.0796697) + 220^2}
+   \]
+   Result:  
+   \[
+   w_6 = 507.284 \, \text{m/s}
+   \]

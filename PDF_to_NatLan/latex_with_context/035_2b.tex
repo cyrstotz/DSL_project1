@@ -1,0 +1,88 @@
+Energy balance equation:  
+\[
+0 = \dot{m} (h_5 - h_6) + \frac{w_5^2 - w_6^2}{2} + g(z_5 - z_6) + \dot{Q} - \dot{W}
+\]  
+
+Isentropic relation for entropy:  
+\[
+s_5 = s_6
+\]  
+
+Calculation of \( s_5^\circ(431.9 \, \text{K}) \):  
+\[
+s_5^\circ(431.9 \, \text{K}) = \frac{2.0887 - 2.06533}{440 - 430} (431.9 - 430) + 2.06533
+\]  
+\[
+s_5^\circ(431.9 \, \text{K}) = 2.06977 \quad \text{(value from Table A-22)}
+\]  
+
+Entropy relation:  
+\[
+s_6^\circ - s_5^\circ = s_6^\circ - s_5^\circ - R \ln \left( \frac{p_6}{p_5} \right) = 0
+\]  
+
+Gas constant \( R \):  
+\[
+R = \frac{8314}{28.57} = 287
+\]  
+
+Pressure values:  
+\[
+p_0 = p_6 = 0.181 \, \text{bar}, \quad p_5 = 0.5 \, \text{bar}
+\]  
+
+Calculation of \( s_6^\circ \):  
+\[
+s_6^\circ = s_5^\circ + R \ln \left( \frac{p_6}{p_5} \right)
+\]  
+\[
+s_6^\circ = 2.06977 + 287 \ln \left( \frac{0.181}{0.5} \right) \cdot 10^3
+\]  
+\[
+s_6^\circ = 1.7935 \, \text{kJ/kg·K}
+\]  
+
+Temperature correction:  
+\[
+s^\circ(T = 325 \, \text{K}) = 1.78249
+\]  
+\[
+s^\circ(T = 330 \, \text{K}) = 1.7935
+\]  
+
+Calculation of \( T_6 \):  
+\[
+T_6 = 330 - \frac{330 - 325}{1.7935 - 1.78249} \cdot (1.7935 - 1.78249)
+\]  
+\[
+T_6 = 328.5 \, \text{K}
+\]  
+
+Energy balance equation for velocity:  
+\[
+0 = \dot{m} (h_5 - h_6) + \frac{w_5^2}{2} - \frac{w_6^2}{2}
+\]  
+
+Calculation of \( h_5 \):  
+\[
+h_5 = \frac{431.43 - 431.9}{440 - 430} (431.9 - 430) + 431.43
+\]  
+\[
+h_5 = 433.36 \, \text{kJ/kg} \quad \text{(value from Table A-22)}
+\]  
+
+Calculation of \( h_6 \):  
+\[
+h_6 = \frac{330.54 - 325.31}{330 - 325} (328.5 - 325) + 325.31
+\]  
+\[
+h_6 = 328.83 \, \text{kJ/kg} \quad \text{(value from Table A-22)}
+\]  
+
+Calculation of \( w_6 \):  
+\[
+w_6 = \sqrt{2 \left( 433.36 - 328.83 \right) \cdot 10^3 - 220^2}
+\]  
+\[
+w_6 = 507 \, \text{m/s}
+\]

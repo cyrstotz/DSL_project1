@@ -1,0 +1,55 @@
+The temperature \( T_2 \) is equal to \( T_{\text{EW},1} = 0^\circ \text{C} \) because \( x_2 > 0 \) and thermal equilibrium is maintained.
+
+The heat transferred between states 1 and 2 is calculated as:  
+\[
+Q_{12} = m_g \cdot c_V \cdot (T_{\text{EW},1} - T_{g,1}) = 2.954228 \cdot 10^{-3} \cdot 0.633 \cdot (273.15 - 773.15)
+\]  
+\[
+Q_{12} = -0.8046 \, \text{kJ}
+\]
+
+In the ice-water mixture (EW), the heat flow \( -Q_{12} \) is absorbed.
+
+For part d), the temperature \( T_{\text{EW},1} = T_{\text{EW},2} \) because \( x_2 > 0 \).
+
+The change in internal energy is given by:  
+\[
+\Delta U_{12,\text{EW}} = Q_{12}
+\]
+
+Using the energy balance:  
+\[
+m_{\text{EW}} \cdot (u_{2,\text{EW}} - u_{1,\text{EW}}) = -Q_{12}
+\]
+
+From the tables:  
+\[
+u_{1,\text{EW},\text{flüssig}} = -0.045 \, \text{kJ/kg} \quad \text{(Table 1)}
+\]  
+\[
+u_{1,\text{EW},\text{fest}} = -333.458 \, \text{kJ/kg}
+\]
+
+The internal energy of the ice-water mixture in state 1 is calculated as:  
+\[
+u_{1,\text{EW}} = u_{1,\text{EW},\text{flüssig}} + (1 - x_{\text{ice},1}) \cdot (u_{1,\text{EW},\text{fest}} - u_{1,\text{EW},\text{flüssig}})
+\]  
+\[
+u_{1,\text{EW}} = -333.458 + (1 - 0.6) \cdot (-0.045 + 333.458) = -200.093 \, \text{kJ/kg}
+\]
+
+The internal energy in state 2 is determined as:  
+\[
+u_{2,\text{EW}} = \frac{-Q_{12}}{m_{\text{EW}}} + u_{1,\text{EW}}
+\]  
+\[
+u_{2,\text{EW}} = \frac{0.8046}{0.1} + (-200.093) = -192.05 \, \text{kJ/kg}
+\]
+
+The final ice fraction \( x_{\text{ice},2} \) is calculated using:  
+\[
+x_{\text{ice},2} = \frac{u_{2,\text{EW}} - u_{2,\text{EW},\text{flüssig}}}{u_{2,\text{EW},\text{fest}} - u_{2,\text{EW},\text{flüssig}}} + 1
+\]  
+\[
+x_{\text{ice},2} = \frac{-192.05 + 333.458}{-0.045 + 333.458} + 1 = 0.5759
+\]

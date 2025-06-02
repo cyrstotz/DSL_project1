@@ -1,0 +1,47 @@
+Given:  
+- \( w_6 \) and \( T_6 \)  
+
+To calculate \( T_6 \), use the isentropic relation:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substitute \( p_6 = p_0 \), \( p_5 = 0.5 \, \text{bar} \), \( T_5 = 431.9 \, \text{K} \), and \( \kappa = 1.4 \):  
+\[
+T_6 = 293.9 \, \text{K}
+\]  
+
+Energy balance for \( w_6 \):  
+\[
+w_6 = \sqrt{2 \left( h_5 - h_6 \right)}
+\]  
+
+---
+
+The ambient pressure is given as \( p_0 = 310 \, \text{mbar} \).  
+
+The change in flow exergy (\( \Delta ex_{\text{flow}} \)) from state 0 to state 6 is calculated using the exergy balance equation:  
+\[
+\Delta ex_{\text{flow}} = h_6 - h_0 - T_0 \cdot (s_6 - s_0) + \frac{1}{2} w_6^2 - \frac{1}{2} w_0^2
+\]  
+
+Breaking this down:  
+\[
+\Delta ex_{\text{flow}} = c_p^{\text{air}} (T_6 - T_0) - T_0 \cdot \left[ c_p^{\text{air}} \ln\left(\frac{T_6}{T_0}\right) - R \ln\left(\frac{p_6}{p_0}\right) \right] + \frac{1}{2} w_6^2 - \frac{1}{2} w_0^2
+\]  
+
+Where:  
+- \( c_p^{\text{air}} = 1.006 \, \text{kJ/kg·K} \)  
+- \( T_0 = -30^\circ\text{C} = 243.15 \, \text{K} \)  
+- \( T_6 = 293.9 \, \text{K} \)  
+
+Substituting values:  
+\[
+\Delta ex_{\text{flow}} = 540.57 \, \text{kJ/kg} - 46.37 \, \text{kJ/kg} + 110.05 \, \text{kJ/kg}
+\]  
+
+Final result:  
+\[
+\Delta ex_{\text{flow}} = 603.7 \, \text{kJ/kg}
+\]  
+
+---

@@ -1,0 +1,65 @@
+TASK 3a  
+The gas pressure \( p_{g,1} \) and mass \( m_g \) in state 1 are calculated as follows:  
+
+The pressure \( p_{g,1} \) is given by:  
+\[
+p_{g,1} = p_{\text{amb}} + \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{\left(5 \cdot 10^{-2} \, \text{m}\right)^2 \cdot \pi} + \frac{0.1 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{\left(5 \cdot 10^{-2} \, \text{m}\right)^2 \cdot \pi}
+\]  
+
+Substituting the values:  
+\[
+p_{g,1} = 4109444.059 \, \text{Pa}
+\]  
+
+Using the ideal gas law \( PV = mRT \):  
+\[
+PV = mRT
+\]  
+
+The gas constant \( R \) is calculated as:  
+\[
+R = \frac{8.314 \, \text{J/mol·K}}{50 \, \text{kg/kmol}} = 0.166 \, \text{kJ/kg·K}
+\]  
+
+Substituting \( P = 4109444.059 \, \text{Pa} \), \( V = 3.14 \cdot 10^{-3} \, \text{m}^3 \), \( R = 0.166 \, \text{kJ/kg·K} \), and \( T = 773.15 \, \text{K} \):  
+\[
+m_g = \frac{PV}{RT} = \frac{4109444.059 \cdot 3.14 \cdot 10^{-3}}{0.166 \cdot 773.15} = 0.1 \, \text{kg}
+\]  
+
+TASK 3b  
+The pressures \( p_{g,2} \) and \( p_{g,1} \) are equal because the load on the piston remains constant.  
+
+Using the ideal gas law \( PV = mRT \):  
+\[
+V_{g,2} < V_{g,1} \quad \text{and} \quad T_{g,2} < T_{g,1}
+\]  
+
+It is stated that \( T_{g,2} = T_{\text{EW},2} \) because the gas is in thermal equilibrium with the ice-water mixture.  
+
+The final pressure is:  
+\[
+p_{g,2} = p_{g,1} = 1.5 \, \text{bar}
+\]  
+
+The final temperature is:  
+\[
+T_{g,2} = 0^\circ\text{C}
+\]  
+
+TASK 3c  
+The heat transferred \( Q_{12} \) from the gas to the ice-water mixture is calculated as follows:  
+
+The ice fraction \( x_1 \) is given by:  
+\[
+x_1 = \frac{m_{\text{ice}}}{m_{\text{EW}}} = 0.6
+\]  
+
+The change in internal energy \( \Delta U \) is:  
+\[
+\Delta U = m_g c_{V,g} \Delta T = m_g c_{V,g} (T_2 - T_1)
+\]  
+
+Substituting \( m_g = 3.14 \cdot 10^{-3} \, \text{kg} \), \( c_{V,g} = 0.633 \, \text{kJ/kg·K} \), \( T_1 = 773.15 \, \text{K} \), and \( T_2 = 273.15 \, \text{K} \):  
+\[
+Q = \Delta U = 3.14 \cdot 10^{-3} \cdot 0.633 \cdot (273.15 - 773.15) = -1 \, \text{kJ}
+\]  

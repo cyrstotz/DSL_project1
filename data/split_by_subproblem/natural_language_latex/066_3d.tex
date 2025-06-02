@@ -1,0 +1,85 @@
+Given: \( T_{g2} \) and \( p_{g2} \)
+- \( p_{g2} \) remains constant because the working fluid is incompressible, thus only the block and \( p_{\text{amb}} \) are determined.
+- \( T_{g2} \) changes, TEG to achieve equilibrium.
+
+Assumption \( T_{g2} = 0.05 \cdot T_0 \)
+- Given: \( C_{v2} \)
+- Energy equation (1) equivalent to (2) in a closed system:
+  \[
+  \frac{dE}{dt} = \sum \dot{Q} - \sum \dot{W}
+  \]
+  \[
+  \Delta u = Q_{12} + W_{\text{res}} \quad \text{with} \quad W_{\text{res}} = p_{\text{amb}} (V_2 - V_1)
+  \]
+  \[
+  Q_{12} = \Delta U + W_{\text{res}}
+  \]
+  \[
+  \text{with} \quad V_2 = \frac{m_{H2O} T_{g2}}{\rho_2} = 1.1 \text{L} \quad \text{with} \quad p_{g2} = p_1 = 4.12 \text{bar}
+  \]
+
+\[
+Q_{zu} = m \Delta u + \frac{1}{V_{nse}}
+\]
+
+\[
+= m c_v (T_s - T_1) + \rho_{amb} c (V_2 - V_1)
+\]
+
+\[
+= 3.4 \cdot 10^{-5} \, \text{kg} \cdot 0.653 \, \frac{\text{kJ}}{\text{kgK}} \left( 373.15 \, \text{K} - 273.15 \, \text{K} \right) + 10^2 \cdot \left( c_{0.01 \, \text{M} \, \text{H}_2} - c_{0.03 \, \text{M} \, \text{H}_2} \right)
+\]
+
+\[
+\Rightarrow Q_{zu} = 20 + 0.8 \, \text{kJ}
+\]
+
+2) Required \( x_{Eis} \)
+
+Energy balance only at the end of (1) to (3):
+
+\[
+\frac{dE}{dt} - \sum \dot{Q} = \sum \dot{Q} \, \text{since incompressible}
+\]
+
+\[
+m_{EN} \Delta u = Q_{zu} \quad \text{with} \quad Q_{zu} = 20 + 0.1 \, \text{kJ} \quad \text{and} \quad x_{Eis} = \frac{m_{Eis}}{m_{EN}}
+\]
+
+\[
+\Rightarrow \Delta u = Q_{zu}
+\]
+
+\[
+\Rightarrow \frac{m_{Eis}}{x_{Eis}} - \frac{m_{Eis}}{x_{Eis}} \mu = Q_{zu}
+\]
+
+\[
+\Rightarrow \frac{m_{Eis}}{x_{Eis}} - m_{EN} \mu = Q_{zu}
+\]
+
+\[
+\Rightarrow \frac{m_{Eis}}{x_{Eis}} = Q_{zu} + m_{EN} \mu
+\]
+
+\[
+x_{Eis} = \frac{m_{Eis}}{m_{EN}}
+\]
+
+\[
+x_{Eis} = \frac{Q_{zu} + m_{EN} \mu}{m_{EN}}
+\]
+
+From the tables (TAB A):
+
+\[
+u_f (0^\circ \text{C}) = -0.045 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+u_{fg} (0^\circ \text{C}) = -333.458 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\Rightarrow u_i - u \ldots
+\]

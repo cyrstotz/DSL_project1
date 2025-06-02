@@ -1,0 +1,30 @@
+The gas pressure \( p_{g,1} \) is calculated using the equation:  
+\[
+p_{g,1} = p_{\text{amb}} + \frac{(m_K + m_{\text{EW}}) \cdot g}{A_{\text{cyl}}}
+\]  
+Substituting the given values:  
+\[
+p_{g,1} = 10^5 \, \text{Pa} + \frac{(32 + 0.1) \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{\pi \cdot \left(\frac{0.1}{2} \, \text{m}\right)^2}
+\]  
+This results in:  
+\[
+p_{g,1} = 140,094.44 \, \text{Pa}
+\]  
+
+The mass of the gas \( m_g \) is determined using the ideal gas law:  
+\[
+p \cdot V = m \cdot R \cdot T \quad \text{or} \quad m_g = \frac{p \cdot V}{R \cdot T}
+\]  
+The specific gas constant \( R \) is calculated as:  
+\[
+R = \frac{R_u}{M_g} = \frac{8314 \, \text{J/(kmol·K)}}{50 \, \text{kg/kmol}} = 0.7663 \, \text{kJ/(kg·K)}
+\]  
+
+Substituting the values:  
+\[
+m_g = \frac{140,094.44 \, \text{Pa} \cdot 3.14 \cdot 10^{-3} \, \text{m}^3}{0.7663 \, \text{kJ/(kg·K)} \cdot (500 + 273.15) \, \text{K}}
+\]  
+This results in:  
+\[
+m_g = 0.00342 \, \text{kg}
+\]

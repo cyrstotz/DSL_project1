@@ -1,0 +1,54 @@
+Determine \( p_{g,1} \) and \( m_g \).  
+
+The gas pressure \( p_{g,1} \) is calculated as:  
+\[
+p_{g,1} = \frac{\text{Force exerted from above (due to equilibrium)}}{\text{Area of the piston}}  
+\]
+
+The force \( F \) is given by:  
+\[
+F = m_K \cdot g + p_{\text{amb}} \cdot A  
+\]
+
+Where:  
+- \( m_K = 32 \, \text{kg} \) (mass of the piston)  
+- \( g = 9.81 \, \text{m/s}^2 \) (gravitational acceleration)  
+- \( p_{\text{amb}} = 1 \, \text{bar} \) (ambient pressure)  
+
+The area \( A \) of the piston is calculated using the diameter \( D = 10 \, \text{cm} \):  
+\[
+A = \pi \cdot \left(\frac{D}{2}\right)^2 = \pi \cdot \left(\frac{0.1}{2}\right)^2 = 7.853981 \cdot 10^{-4} \, \text{m}^2  
+\]
+
+Substituting values:  
+\[
+F = 32 \cdot 9.81 + 1 \cdot 7.853981 \cdot 10^{-4} = 314.301 \, \text{N}  
+\]
+
+Thus, the gas pressure is:  
+\[
+p_{g,1} = \frac{F}{A} + p_{\text{amb}} = \frac{314.301}{7.853981 \cdot 10^{-4}} + 1.4 \, \text{bar}  
+\]
+
+---
+
+Using the ideal gas law to determine \( m_g \):  
+\[
+pV = mRT  
+\]
+
+Rearranging for \( m \):  
+\[
+m = \frac{pV}{RT}  
+\]
+
+Where:  
+- \( R = \frac{R_u}{M_g} = 0.166285242 \, \text{kJ/kg·K} \) (specific gas constant)  
+- \( V = 3.14 \, \text{L} = 3.14 \cdot 10^{-3} \, \text{m}^3 \)  
+- \( T = 500^\circ\text{C} = 773.15 \, \text{K} \)  
+- \( p = p_{g,1} \)  
+
+Substituting values:  
+\[
+m = \frac{pV}{RT} = \frac{1.4 \cdot 3.14 \cdot 10^{-3}}{0.166285242 \cdot 773.15} = 3.418241 \, \text{g}  
+\]

@@ -1,0 +1,36 @@
+The refrigerant mass flow rate is calculated as:  
+\[
+\dot{m}_{\text{R134a}} = 0.894 \, \frac{\text{kg}}{\text{s}}
+\]
+
+Temperature at state 2 is given as:  
+\[
+T_2 = -22^\circ\text{C}
+\]
+
+Pressure values are calculated:  
+\[
+p_2 = 1.2122 \, \text{bar} \quad p_1 = 1 \, \text{bar}
+\]
+
+Enthalpy at state 1:  
+\[
+h_1 = 23.42 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-11)}
+\]
+
+Vapor quality at state 1:  
+\[
+x = \frac{h_1 - h_f(-22^\circ\text{C})}{h_g(-22^\circ\text{C}) - h_f(-22^\circ\text{C})} = 0.337
+\]
+
+Energy balance equation:  
+\[
+0 = h_1 - h_2 + \dot{Q}_K
+\]
+
+Heat transfer:  
+\[
+\dot{Q}_K = \dot{m}_{\text{R134a}} \cdot (h_2 - h_1) = 160.35 \, \text{kW}
+\]
+
+---

@@ -1,0 +1,56 @@
+TASK 4a
+
+The temperature \( T_2 \) is given as \( -22^\circ\text{C} \). The mass flow rate \( \dot{m} \) is calculated as:
+\[
+\dot{m} = \frac{m}{n} = \frac{24 \, \text{kg}}{300 \, \text{s}} = 0.008 \, \text{kg/s}.
+\]
+
+The initial temperature \( T_i \) is \( 0^\circ\text{C} \), and the evaporation temperature is \( -6^\circ\text{C} \).
+
+---
+
+TASK 4b
+
+An energy balance is performed:
+\[
+h_1 = h_{\text{evap}} \quad \text{at } p_1 = 8 \, \text{bar}.
+\]
+From the tables, \( h_1 = 93.12 \, \frac{\text{kJ}}{\text{kg}} \).
+
+For interpolation of \( h_f(-6^\circ\text{C}) \):
+\[
+h_f(-6^\circ\text{C}) = 44.75 - 39.51 \cdot \frac{-6 - (-8)}{-4 - (-8)} + 39.51 = 42.145 \, \frac{\text{kJ}}{\text{kg}}.
+\]
+
+For interpolation of \( h_g(-6^\circ\text{C}) \):
+\[
+h_g(-6^\circ\text{C}) = 214.3 - 207.5 \cdot \frac{-6 - (-8)}{-4 - (-8)} + 207.5 = 213.72 \, \frac{\text{kJ}}{\text{kg}}.
+\]
+
+The vapor quality \( x \) is calculated as:
+\[
+x = \frac{h - h_f}{h_g - h_f} = \frac{h - h_f}{h_g - h_f} = 0.291.
+\]
+
+---
+
+TASK 4d
+
+The coefficient of performance \( \epsilon_K \) is calculated using:
+\[
+\epsilon_K = \frac{\dot{Q}_K}{\dot{W}_K}.
+\]
+
+The heat transfer rate \( \dot{Q}_K \) is calculated as:
+\[
+\dot{Q}_K = \dot{m}(h_2 - h_1) + \dot{Q}.
+\]
+Substituting values:
+\[
+\dot{Q}_K = \dot{m}(h_g(-6^\circ\text{C}) - h_1) = 0.008 \, \frac{\text{kg}}{\text{s}} \cdot (213.72 - 93.12) = 166.88 \, \frac{\text{kJ}}{\text{s}}.
+\]
+
+Finally, the coefficient of performance is:
+\[
+\epsilon_K = \frac{166.8}{25} = 5.57.
+\]

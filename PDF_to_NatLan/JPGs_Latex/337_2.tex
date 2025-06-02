@@ -1,0 +1,57 @@
+TASK 2a  
+The first part of the task involves drawing the process qualitatively in a T-s diagram. Two diagrams are provided:  
+
+1. **Temperature vs. Entropy (T-s) Diagram**:  
+   - The diagram shows labeled isobars and processes.  
+   - States 1 through 6 are marked, with arrows indicating the direction of the process.  
+   - The processes include isentropic compression, isobaric combustion, and adiabatic expansion.  
+   - The entropy axis is labeled as \( S \, [\text{kJ}/\text{kg·K}] \), and the temperature axis is labeled as \( T \, [\text{K}] \).  
+
+2. **Pressure vs. Entropy (p-s) Diagram**:  
+   - The diagram shows the same states (1 through 6) with labeled processes.  
+   - The pressure axis is labeled as \( P \, [\text{bar}] \), and the entropy axis is labeled as \( S \, [\text{kJ}/\text{kg·K}] \).  
+   - Processes such as isentropic compression and isobaric combustion are indicated.  
+
+Additionally, a table is provided summarizing the states:  
+- **State Table**:  
+  - \( P \): Pressure values at each state.  
+  - \( T \): Temperature values at each state.  
+  - \( V \): Velocity values at each state.  
+  - \( w_5 = 220 \, \text{m/s} \), \( S_5 = S_6 \).  
+
+TASK 2b  
+The second part of the task asks to determine the outlet velocity \( w_6 \) and temperature \( T_6 \).  
+
+1. **Equations and Calculations**:  
+   - The energy balance equation is written as:  
+     \[
+     \frac{dE}{dt} = \dot{m}_{\text{ges}} \left( h_5 - h_6 + \frac{w_5^2}{2} - \frac{w_6^2}{2} \right) + Q - \Psi
+     \]  
+     Assuming adiabatic conditions (\( Q = 0 \)) and no external work (\( \Psi = 0 \)), the equation simplifies.  
+
+   - For \( T_6 \):  
+     \[
+     T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}}
+     \]  
+     Substituting values:  
+     \[
+     T_6 = 431.9 \left( \frac{0.191}{0.5} \right)^{\frac{1.4-1}{1.4}} = 328.075 \, \text{K}
+     \]  
+
+   - For \( w_6 \):  
+     Using the equation:  
+     \[
+     c_p(T_5 - T_6) + \frac{w_5^2}{2} = \frac{w_6^2}{2}
+     \]  
+     Substituting values:  
+     \[
+     1.006 \cdot (431.9 - 328.075) + \frac{220^2}{2} = \frac{w_6^2}{2}
+     \]  
+     Solving:  
+     \[
+     w_6 = 507.29 \, \text{m/s}
+     \]  
+
+Final results:  
+- \( T_6 = 328.075 \, \text{K} \)  
+- \( w_6 = 507.29 \, \text{m/s} \)

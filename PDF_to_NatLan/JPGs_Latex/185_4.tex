@@ -1,0 +1,44 @@
+TASK 1a  
+The table lists temperature \( T \) in Kelvin, pressure \( P \) in bar, and steam quality \( x \) for different states:  
+1. \( T = 343.14 \, \text{K}, \, x = 0.005 \)  
+2. \( T = 373.14 \, \text{K}, \, x = 0.005 \)  
+3. \( T = 288.15 \, \text{K}, \, P = P_3 \)  
+4. \( T = 298.15 \, \text{K}, \, P = P_4 \)  
+
+A diagram is drawn showing two processes labeled I and II:  
+- **Process I**: A reactor with inlet and outlet streams is depicted. The inlet stream is labeled \( \dot{m}_{\text{in}} \), and the outlet stream is labeled \( \dot{m}_{\text{out}} \). Heat flow \( \dot{Q}_{\text{aus}} \) exits the reactor. The mass flow rate is constant at \( \dot{m} = 0.3 \, \text{kg/s} \), and the reactor mass is \( m_{\text{ges}} = 577.5 \, \text{kg} \) (stationary).  
+- **Process II**: A heat exchanger is shown with heat flow \( \dot{Q}_{\text{aus}} \) transferring from the reactor to the coolant.  
+
+Subtask a) Heat flow \( \dot{Q}_{\text{aus}} \) is determined using the energy balance:  
+\[
+0 = \dot{m} (h_1 - h_2) + \dot{Q}_R - \dot{Q}_{\text{aus}}
+\]  
+The enthalpy difference for water is calculated as:  
+\[
+(h_1 - h_2)_{\text{water}} = h_1(T = 343.14) - h_2(T = 373.14)
+\]  
+
+For steam, the enthalpy is expressed as:  
+\[
+h_2 = h_f + x \cdot (h_g - h_f) \quad \text{at } T_2
+\]  
+Values are provided:  
+\[
+h_f = 292.08 \, \text{kJ/kg}, \, h_g = 2626.68 \, \text{kJ/kg}, \, h_{fg} = h_g - h_f = 2626.68 - 292.08 = 2334.6 \, \text{kJ/kg}
+\]  
+\[
+h_2 = h_f + x \cdot h_{fg} = 292.08 + 0.005 \cdot 2334.6 = 304.69 \, \text{kJ/kg}
+\]  
+
+For state 2:  
+\[
+h_2 = h_f + x \cdot (h_g2 - h_f2) = 430.82 \, \text{kJ/kg}
+\]  
+
+The heat flow \( \dot{Q}_{\text{aus}} \) is calculated using the mass flow rate \( \dot{m} \), enthalpy differences, and reactor heat release \( \dot{Q}_R \).  
+
+The page ends with a reference to "Seite 3."  
+
+Description of diagrams:  
+The reactor diagram shows labeled inlet and outlet streams, heat flow exiting the reactor, and stationary mass conditions. The heat exchanger diagram illustrates heat transfer from the reactor to the coolant.  
+

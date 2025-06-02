@@ -1,0 +1,120 @@
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+ & \text{ein} & \text{aus} & \text{kein} & \text{aus} \\
+\hline
+\dot{m} & 0,3 & 0,3 & & \\
+\hline
+T & 740^\circ & 1000^\circ & 288,15\,K & 298,15\,K \\
+\hline
+x & 1 & 1 & & \\
+\hline
+\end{tabular}
+
+\subsection*{a) Ges: Q\_aus}
+
+Energiebilanz
+
+\[
+h_{a}(x=1) = 292,18 \frac{\text{kJ}}{\text{kg}} \quad \text{(Tabelle A-2)}
+\]
+\[
+h_{a}(x=0) = 149,04 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\frac{dE}{dt} = \sum \dot{m} h_i + Q - W_i \quad \Rightarrow \quad \text{(unleserlich)}
+\]
+
+\[
+0 = \dot{m} (h_e - h_a) + Q_R - Q\_aus + Q \quad \Rightarrow \quad Q\_aus = \dot{m} (h_e - h_a) + Q_R
+\]
+
+\[
+Q\_aus = 0,3 \left[ 292,18 - 149,04 \right] + 10\,\text{kW} = 62,18\,\text{kW}
+\]
+
+\subsection*{b) Ges: T\_m\_KF}
+
+\[
+\int_{s_a}^{s_e} T ds = q\_rev = h_a - h_e
+\]
+
+\[
+T\_m\_KF = \frac{\int_{s_a}^{s_e} T ds}{s_a - s_e} = \frac{h_a - h_e}{s_a - s_e}
+\]
+
+\[
+T\_m\_KF = \frac{(T_2 - T_1)}{\ln \left( \frac{T_2}{T_1} \right)} \quad \text{(gilt: ln)}
+\]
+
+\[
+T\_m\_KF = \frac{248,15 - 288,15}{\ln \left( \frac{T_2}{T_1} \right)} = \frac{\ln \left( \frac{298,15}{288,15} \right)}
+\]
+
+\[
+T\_m\_KF = \frac{10}{\ln \left( \frac{298,15}{288,15} \right)} = 293,12\,K
+\]
+
+\subsection*{c) Ges: s\_e2}
+
+\[
+0 = \dot{m} \left[ s_{e2} - s_{e1} \right] + \frac{\dot{Q}}{T} + s_{e2} \quad \Rightarrow \quad s_{e2} = \dot{m} \left[ s_{a} - s_{e2} \right] - \frac{\dot{Q}\_aus}{T}
+\]
+
+\[
+s_{e2} = 0,3 \left[ 7,35543 - 7,35533 \right] - \frac{62,18}{293,12} = -0,212132 = 0,33 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+s_{a}(T=0) = 7,3553 \quad s_{a}(T=1) = 7,3543 \quad \text{(Tabelle A-2)}
+\]
+
+``````latex
+
+
+\section*{Lösung}
+
+\subsection*{d)}
+\begin{align*}
+    T_1 &= 1000^\circ C \\
+    m_a &= 5.755 \, \text{kg} \\
+    Q_{12} &= 35 \, \text{MJ} \\
+    W &= 0 \\
+    T_2 &= 700^\circ C \\
+    T_{22,ein} &= 20^\circ C \quad (x = A) \\
+    \text{Geg:} \, \dot{m}_{12}
+\end{align*}
+
+\text{Energiebilanz mit } Q
+\begin{align*}
+    Q_1 - Q_{12,ein} &= Q_{12} \\
+    \Rightarrow m_a c_v T_1 - m_{12} c_v T_2 &= Q_{12}
+\end{align*}
+
+\text{mit } c_v (T_1 - T_2) \text{ auflösen} \Rightarrow u_1 - u_2
+\begin{align*}
+    u_1 (x = 1/2000) &= 4283.38 \, \frac{\text{kJ}}{\text{kg}} \quad \text{Tabelle A2} \\
+    u_2 (x = 1/2001) &= 2402.6 \, \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+\begin{align*}
+    m_a \cdot u_1 - m_{12} \cdot u_2 &= Q_{12} \\
+    m_{12} &= \frac{m_a \cdot u_1 - Q_{12}}{u_2} = \frac{5.755 \cdot 4283.38 - 35 \cdot 10^3}{2402.6} \\
+    &= 10.14 \, \text{kg}
+\end{align*}
+
+\subsection*{e)}
+\text{Geg:} \, \dot{S}_{e,12}
+\begin{align*}
+    m_2 \cdot s_2 - m_1 \cdot s_1 &= m_{12} \cdot s_{12} + \dot{S}_{e,12}
+\end{align*}
+
+``````latex
+
+

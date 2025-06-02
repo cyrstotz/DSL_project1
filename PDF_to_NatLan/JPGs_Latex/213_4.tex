@@ -1,0 +1,35 @@
+TASK 2c  
+The mass-specific increase in flow exergy is calculated using the following equation:  
+\[
+\Delta ex_{\text{stm}} = h_a - h_e - T_0 (s_a - s_e) + \Delta ke
+\]  
+Where:  
+- \( h_a - h_e = c_p (T_e - T_0) = 85.432 \, \frac{\text{kJ}}{\text{kg}} \)  
+- \( T_0 (s_a - s_e) = T_0 c_p \ln \left( \frac{T_e}{T_0} \right) = 73.2758 \, \frac{\text{kJ}}{\text{kg}} \)  
+- \( \Delta ke = \frac{1}{2} (w_6^2 - w_0^2) = 108.688 \, \frac{\text{kJ}}{\text{kg}} \)  
+
+Substituting these values:  
+\[
+\Delta ex_{\text{stm}} = 267.358 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+---
+
+TASK 2d  
+The exergy balance equation is used to compute the exergy destruction:  
+\[
+\dot{U} = - ex_{\text{stm}} + \frac{1}{\dot{m}_{\text{gas}}} \left( 1 - \frac{T_0}{T_B} \right) Q_B - ex_{\text{vent}}
+\]  
+
+The vent exergy is calculated as:  
+\[
+ex_{\text{vent}} = - ex_{\text{stm}} + \left( 1 - \frac{T_0}{T_B} \right) q_B
+\]  
+
+Substituting values:  
+\[
+ex_{\text{vent}} = -267.358 + \left( 1 - \frac{273.15 - 30}{1289} \right) 1195
+\]  
+\[
+ex_{\text{vent}} = 702.223 \, \frac{\text{kJ}}{\text{kg}}
+\]

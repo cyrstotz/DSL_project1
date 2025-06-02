@@ -1,0 +1,19 @@
+The thermodynamic mean temperature (\( T_{\text{KF}} \)) can be determined as follows:  
+\[
+T_{\text{KF}} = \frac{\dot{Q}_{\text{ab}}}{\dot{m}_{\text{in}} \left( s_{\text{in}} - s_{\text{out}} \right)}  
+\]  
+
+The entropy change (\( s_{\text{in}} - s_{\text{out}} \)) is calculated using:  
+\[
+s_{\text{in}} - s_{\text{out}} = \int_{T_{\text{in}}}^{T_{\text{out}}} \frac{c_p}{T} \, dT = c_p \ln \left( \frac{T_{\text{out}}}{T_{\text{in}}} \right)
+\]  
+
+Given \( c_p = 0.034115 \, \text{kJ/kg·K} \):  
+\[
+s_{\text{in}} - s_{\text{out}} = c_p \ln \left( \frac{T_{\text{out}}}{T_{\text{in}}} \right) = 0.034115 \ln \left( \frac{373.15}{343.15} \right)
+\]  
+
+Finally, the mean temperature is expressed as:  
+\[
+T_{\text{KF}} = \frac{\dot{Q}_{\text{ab}}}{\dot{m}_{\text{in}} \cdot c_p \ln \left( \frac{T_{\text{out}}}{T_{\text{in}}} \right)}
+\]

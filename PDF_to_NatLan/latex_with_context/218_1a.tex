@@ -1,0 +1,45 @@
+The goal is to determine the heat flow \( \dot{Q}_{\text{out}} \) removed by the coolant.  
+
+Using the first law of thermodynamics:  
+\[
+0 = \dot{m}(h_e - h_a) + \dot{Q} - \dot{Q}_R
+\]  
+Rearranging for \( \dot{Q}_{\text{out}} \):  
+\[
+\dot{Q}_{\text{out}} = \dot{m}(h_a - h_e) - \dot{Q}_R
+\]  
+
+From the water tables:  
+\[
+h_e = h_f(70^\circ\text{C}, x=0) = 292.38 \, \text{kJ/kg} \quad \text{(Table A-2)}
+\]  
+\[
+h_a = h_f(100^\circ\text{C}, x=0) = 419.04 \, \text{kJ/kg} \quad \text{(Table A-2)}
+\]  
+
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \left( 419.04 - 292.38 \right) - 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = -62.18 \, \text{kJ/s} \, \text{(kW)}
+\]  
+
+---
+
+The page begins with a schematic diagram representing a system with heat transfer. The system is labeled as "adiabatic" with no heat transfer to the surroundings. Two heat flows are indicated: \( Q_{\text{out}} \) and \( Q_{\text{in}} \), both equal to \( 65 \, \text{kW} \).  
+
+The entropy balance equation is written as:  
+\[
+0 = \sum \dot{m}_i s_i + \sum \frac{\dot{Q}_i}{T_i} + \dot{S}_{\text{gen}}
+\]  
+
+The mean temperature in the reactor is given as \( \bar{T}_{\text{Reactor}} = 100^\circ\text{C} = 373.15 \, \text{K} \), and the coolant temperature is \( T_{\text{KF}} = 293.18 \, \text{K} \).  
+
+The entropy production rate is calculated as:  
+\[
+\dot{S}_{\text{gen}} = \frac{Q_{\text{out}}}{T_{\text{KF}}} - \frac{Q_{\text{in}}}{T_{\text{Reactor}}} = 65 \, \text{kW} \left( \frac{1}{293.18} - \frac{1}{373.15} \right)
+\]  
+\[
+\dot{S}_{\text{gen}} = 0.104 \, \text{kJ/s·K}
+\]

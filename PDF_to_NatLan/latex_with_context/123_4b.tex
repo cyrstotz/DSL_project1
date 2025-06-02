@@ -1,0 +1,37 @@
+The energy balance for the refrigerant \( \text{R134a} \) is written as:  
+\[
+0 = \dot{m} \left( h_1 - h_2 \right) + \dot{Q}_K
+\]
+\[
+\dot{Q}_K = \dot{m} \left( h_2 - h_1 \right)
+\]
+\[
+0 = \dot{m} \left( h_2 - h_3 \right) - W_K
+\]
+The mass flow rate \( \dot{m} \) is calculated using:  
+\[
+\dot{m} = \frac{W_K}{h_2 - h_3}
+\]
+Substituting values:  
+\[
+\dot{m} = \frac{-28 \, \text{kW}}{234.08 - 59.32 \, \text{kJ/kg}} = 0.083 \, \text{kg/s}
+\]
+
+A table summarizes the states:  
+\[
+\begin{array}{|c|c|c|c|c|}
+\hline
+\text{State} & P & x & T & h \\
+\hline
+1 & P_1 & 1 & T_i - 6 = -222 & 93.42 \\
+2 & P_2 & 1 & T_i - 6 & 234.08 \\
+3 & 8 \cdot 10^5 & - & T_i - 6 & 93.42 \\
+4 & 8 \cdot 10^5 & 0 & T_i - 6 & 93.42 \\
+\hline
+\end{array}
+\]
+
+Additional notes:  
+- \( P_3 = P_4 \), \( h_3 = h_4 \).  
+- \( T_3 = T_4 \).  
+- The process is reversible and adiabatic.

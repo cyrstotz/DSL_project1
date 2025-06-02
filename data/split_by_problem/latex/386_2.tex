@@ -1,0 +1,101 @@
+
+``````latex
+
+
+\section*{Aufgabe 2:}
+
+\subsection*{a)}
+
+\[
+\begin{array}{c}
+\begin{array}{c}
+\text{Graph description:} \\
+\text{The graph is a Temperature-Entropy (T-S) diagram. The y-axis is labeled } T \left[ \frac{K}{\text{J}} \right] \text{ and the x-axis is labeled } S \left[ \frac{\text{J}}{\text{kg K}} \right]. \\
+\text{There are several isobaric lines labeled } p = p_0, p = p_1, p = p_2 \text{ from bottom to top.} \\
+\text{The process starts at point O, moves to point 1, then to point 2, and finally to point 3.} \\
+\text{From point 3, it moves to point 4, then to point 5, and finally back to point O.} \\
+\text{The lines connecting these points are curved, indicating non-linear processes.}
+\end{array}
+\end{array}
+\]
+
+\subsection*{b)}
+
+\text{Energiebilanz um die ganze Turbine:}
+
+\[
+0 = \dot{m} (h_e - h_a) \left( \frac{w_{\text{out}}^2 - w_b^2}{2} \right)
+\]
+
+\text{Energiebilanz um Düse:}
+
+\[
+0 = \dot{m} (h_5 - h_6 + \frac{w_5^2 - w_6^2}{2}) + \dot{Q} \left( \text{adiabat} \right) \left( \text{isobar} \right)
+\]
+
+\[
+0 = \dot{m} (s_5 - s_6) + \frac{\dot{Q}}{T} \left( \text{adiabat reversibel} \right)
+\]
+
+\[
+s_5 - s_6 = c_p \ln \left( \frac{T_5}{T_6} \right) - R \ln \left( \frac{p_5}{p_6} \right) = 0
+\]
+
+\[
+\frac{T_5}{T_6} = \left( \frac{p_5}{p_6} \right)^{\frac{R}{c_p}}
+\]
+
+\[
+T_6 = 328.675 K
+\]
+
+\[
+h_5 - h_6 = c_p (T_5 - T_6) = 109.998 \left( \frac{kJ}{kg} \right)
+\]
+
+\[
+w_6^2 = \frac{w_5^2 - w_6^2}{2}
+\]
+
+\[
+w_6 = \sqrt{2(h_5 - h_6) + w_5^2} = 507.29 \left( \frac{m}{s} \right)
+\]
+
+\[
+c_p = \frac{c_v}{k} = 0.7185 \left( \frac{kJ}{kg K} \right)
+\]
+
+\[
+R = c_p - c_v = 0.289 \left( \frac{kJ}{kg K} \right)
+\]
+
+``````latex
+
+
+c) 
+\begin{align*}
+\Delta e_{x,str} &= \left[ (h_6 - h_6 - T_0 (s_6 - s_6) + \frac{w_6^2 - w_0^2}{2} \right] \\
+h_6 - h_6 &= c_p (T_0 - T_6) = -85.43 \frac{kJ}{kg} \\
+s_6 - s_6 &= c_p \ln \left( \frac{T_0}{T_6} - R \left( \frac{p_0}{p_6} \right) \right) = -0.3013 \frac{kJ}{kgK} \\
+\frac{w_6^2 - w_0^2}{2} &= -108.64 \frac{kJ}{kg} \\
+\Delta e_{x,str} &= \underline{-96.187 \frac{kJ}{kg}}
+\end{align*}
+
+d1)
+\begin{align*}
+0 &= -\Delta e_{x,str} + \left( 1 - \frac{T_0}{T} \right) \frac{\dot{Q}}{\dot{m}_{ges}} - \frac{\dot{W}}{\dot{m}_{ges}} - e_{x,vel} \quad \text{(Aus Hinweis)} \\
+\left( 1 - \frac{T_0}{T} \right) \frac{\dot{Q}}{\dot{m}_{ges}} &= 159.073 \frac{kJ}{kg} \\
+\frac{\dot{Q}}{\dot{m}_{ges}} &= \frac{159.073}{1} = 159.073 \frac{kJ}{kg} \\
+\dot{m}_{ges} &= 6.293 \\
+\dot{m}_k &= \dot{m}_{ges} - \dot{m}_k = 5.293 \\
+\dot{m}_k &= \dot{m}_{ges} \left( \frac{1}{5.293 + 1} \right) = \frac{\dot{m}_{ges}}{6.293}
+\end{align*}
+
+\begin{align*}
+e_{x,vel} &= -\Delta e_{x,str} + \left( 1 - \frac{T_0}{T} \right) \frac{\dot{Q}}{\dot{m}_{ges}} = 250.286 \frac{kJ}{kg} \\
+&= \underline{57.886 \frac{kJ}{kg}}
+\end{align*}
+
+``````latex
+
+

@@ -1,0 +1,112 @@
+
+``````latex
+
+
+\section*{Aufgabe 1: Reaktor}
+
+\subsection*{a) aus der Energiebilanz}
+
+\[
+\frac{dE}{dt} = \sum_i \dot{m}_i \left[ h_i + \frac{v_i^2}{2} + g z_i \right] + \sum_j \dot{Q}_j + \sum_k \dot{W}_k
+\]
+
+\[
+\dot{m} (h_{\text{ein}} - h_{\text{aus}}) + \dot{Q}_{\text{zu}} + \dot{Q}_{\text{um}} = 0
+\]
+
+\[
+\dot{Q}_{\text{um}} = -(\dot{Q}_{\text{zu}} + \dot{m} (h_{\text{aus}} - h_{\text{ein}}))
+\]
+
+\subsubsection*{aus der TAB A-3}
+
+\[
+h_{\text{ein}} = 1267 \, \frac{\text{kJ}}{\text{kg}} = h_f (70^\circ \text{C})
+\]
+
+\[
+h_{\text{aus}} = h_f (100^\circ \text{C}) = 1407.6 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\dot{Q}_{\text{um}} = -(-100 \, \text{kW}) + 0.3 \, \frac{\text{kg}}{\text{s}} \cdot (1267 \, \frac{\text{kJ}}{\text{kg}} - 1407.6 \, \frac{\text{kJ}}{\text{kg}})
+\]
+
+\[
+= 57.82 \, \text{kW}
+\]
+
+\subsection*{b) aus der Entropiebilanz}
+
+\[
+0 = \dot{m} (s_e - s_a) + \sum_j \frac{\dot{Q}_j}{T_j} + \dot{S}_{\text{erzeugt}}
+\]
+
+\subsubsection*{aus der Exergiebilanz}
+
+\[
+0 = \dot{m} (h_e - h_a) + \left( 1 - \frac{T_0}{T} \right) \dot{Q} = 0
+\]
+
+\[
+\frac{T_0}{T} = \frac{\dot{m} (h_e - h_a)}{\dot{m} (s_e - s_a)} = \frac{C_v (T_{\text{ein}} - T_{\text{aus}})}{C_v \ln \left( \frac{T_{\text{ein}}}{T_{\text{aus}}} \right)}
+\]
+
+\[
+= \frac{(288.15 - 298.15) \, \text{K}}{\ln \left( \frac{288.15 \, \text{K}}{298.15 \, \text{K}} \right)} = 293.12 \, \text{K}
+\]
+
+``````latex
+
+c) \quad \dot{Q}_{\text{aus}} = 65 \, \text{kW}, \quad \overline{T}_{\text{KF}} = 298 \, \text{K}
+
+\text{aus der Entropiebilanz:}
+\[
+0 = \dot{m} \, (s_e - s_a) + \sum_j \frac{\dot{Q}_j}{T_j} + \dot{S}_{\text{erz}}
+\]
+
+\[
+\dot{S}_{\text{erz}} = \dot{m} \, (s_e - s_a) - \frac{\dot{Q}_j}{298 \, \text{K}}
+\]
+
+\text{aus der TAB A-2:}
+\[
+s_e = s_f (15^\circ \text{C}) = 62.99 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+\[
+s_a = s_f (250^\circ \text{C}) = 104.88 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+
+\[
+\dot{S}_{\text{erz}} = 0.3 \, \frac{\text{kg}}{\text{s}} \cdot (62.99 - 104.88) \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}} - \frac{65 \, \text{kW}}{298 \, \text{K}}
+\]
+\[
+= -12.79 \, \frac{\text{kW}}{\text{K}}
+\]
+
+d) \quad \text{aus der Energiebilanz:}
+\[
+\Delta m_{12} (h_{e1} - h_{a1}) + Q - W = 0
+\]
+
+\[
+\Delta m_{12} = \frac{Q_{\text{aus}, 12}}{h_a - h_e}
+\]
+\[
+= \frac{\dot{Q}_{\text{aus}}}{c_p (T_{a1} - T_{e1})}
+\]
+
+\[
+c_p =
+\]
+
+``````latex
+
+
+\section*{Aufgabe 1: Reaktor}
+
+e) \(\Delta m_{12} = 3600 \, \text{kg}\)
+
+``````latex
+
+

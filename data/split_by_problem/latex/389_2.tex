@@ -1,0 +1,49 @@
+
+``````latex
+
+
+\section*{Thermodynamik 1 HS23}
+
+\begin{enumerate}
+    \item[2)] 
+    \begin{enumerate}
+        \item[a)] 
+        \begin{description}
+            \item[Graph Description:] The graph is a pressure-entropy (p-s) diagram. The x-axis is labeled $s \, [\frac{\text{kJ}}{\text{kg} \cdot \text{K}}]$ and the y-axis is labeled $T \, [\text{K}]$. There are several isobars drawn, with $p_0 = 0.191 \, \text{bar}$ and $p_5 = 0.5 \, \text{bar}$ indicated. The graph shows a cycle with six points labeled 1 through 6. The cycle starts at point 1, moves to point 2, then to point 3, 4, 5, and back to point 1. The temperature at the bottom of the graph is marked as $-30^\circ \text{C}$.
+        \end{description}
+        
+        \item[b)] \textbf{Energiebilanz um ganzes Triebwerk}
+        \begin{align*}
+            \frac{d\dot{E}}{dt} &= \dot{m} (\dot{h}_{\text{ein}} - \dot{h}_{\text{aus}} + \frac{1}{2} w_{0}^2 - \frac{1}{2} w_{6}^2) \\
+            0 &= c_p (T_0 - T_6) + \frac{1}{2} w_{0}^2 - \frac{1}{2} w_{6}^2
+        \end{align*}
+        \begin{equation*}
+            h_{\text{ein}} - h_{\text{aus}} = c_p (T_0 - T_6)
+        \end{equation*}
+        
+        \textbf{Energiebilanz um Schubdüse}
+        \begin{align*}
+            0 &= c_p (T_5 - T_6) + \frac{1}{2} w_{6}^2 - \frac{1}{2} w_{6}^2 \\
+            0 &= c_p (T_0 - T_6) + \frac{1}{2} w_{0}^2 = c_p (T_5 - T_6) + \frac{1}{2} w_{6}^2
+        \end{align*}
+        
+        \item[c)] 
+        \begin{align*}
+            \Delta e_{\text{ex,ist}} &= (h_c - h_0 - T_0 (s_6 - s_0) + \frac{1}{2} w_{6}^2 - \frac{1}{2} w_{0}^2) \\
+            &= c_p (T_G - T_0) - T_0 \left( c_p \ln \left( \frac{T_G}{T_0} \right) \right) + \frac{1}{2} w_{6}^2 - \frac{1}{2} w_{0}^2 \\
+            \Delta e_{\text{ex,ist}} &= 165.17 \, \frac{\text{kJ}}{\text{kg}}
+        \end{align*}
+        \begin{align*}
+            T_G &= 310 \, \text{K} \\
+            w_{6} &= 510 \, \frac{\text{m}}{\text{s}}
+        \end{align*}
+        
+        \item[d)] 
+        \begin{align*}
+            \frac{d\dot{E}_A}{dt} &= \frac{d\dot{E}_{\text{ex,ist}}}{dt} \\
+            \Delta e_{\text{ex,ist}} &= e_{\text{ex,a}} - e_{\text{ex,verl}} \\
+            &= \left( 1 - \frac{T_0}{T} \right) \dot{q} - e_{\text{ex,verl}} \\
+            e_{\text{ex,verl}} &= \left( 1 - \frac{T_0}{T} \right) \dot{q} - \Delta e_{\text{ex,ist}} \\
+            e_{\text{ex,verl}} &= 809```latex
+
+

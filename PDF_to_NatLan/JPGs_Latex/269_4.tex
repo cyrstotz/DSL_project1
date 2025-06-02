@@ -1,0 +1,100 @@
+TASK 4a  
+The diagram is a pressure-temperature (\( p \)-\( T \)) plot showing the freeze-drying process. It includes labeled phase regions: solid, vapor, and liquid. The triple point is marked, and the process paths are labeled as isobaric, isothermal, and adiabatic. The axes are labeled as \( p \) (pressure) and \( T \) (temperature).
+
+---
+
+TASK 4b  
+The energy balance equation is given as:  
+\[
+0 = \dot{m}_{\text{R134a}} (h_2 - h_3) - \dot{W}_K \implies \dot{W}_K = \dot{m}_{\text{R134a}} (h_2 - h_3)
+\]
+
+The following values are provided:  
+- Vapor quality at state 4: \( x_4 = 0 \)  
+- Pressure at state 4: \( p_4 = 8 \, \text{bar} \)  
+- Enthalpy at state 1: \( h_1 = h_f(8 \, \text{bar}) = 23.92 \, \frac{\text{kJ}}{\text{kg}} \) (from Table A-11).  
+
+Temperatures are calculated:  
+\[
+T_i = -20^\circ\text{C} + 10^\circ\text{C} = -10^\circ\text{C}
+\]
+\[
+\Delta T_{\text{KF}} = -6^\circ\text{C} - (-10^\circ\text{C}) = -16^\circ\text{C} = T_2 - T_1
+\]
+
+Enthalpy and entropy values are determined:  
+\[
+h_2(-16^\circ\text{C}, x_2 = 1) = 237.74 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-10)}
+\]
+\[
+s_2(-16^\circ\text{C}, x_2 = 1) = 0.9298 \, \frac{\text{kJ}}{\text{kg·K}} = s_3
+\]
+
+At state 3:  
+\[
+h_3(s_3, 8 \, \text{bar}) = 264.15 \, \frac{\text{kJ}}{\text{kg}} + (283.66 \, \frac{\text{kJ}}{\text{kg}} - 264.15 \, \frac{\text{kJ}}{\text{kg}}) \cdot (0.9298 - 0.9066)
+\]
+\[
+h_3 = 270.9 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-12)}
+\]
+
+Mass flow rate is calculated:  
+\[
+\dot{m} = \frac{\dot{W}_K}{h_2 - h_3} = 0.894 \, \frac{\text{kg}}{\text{s}}
+\]
+
+---
+
+TASK 4c  
+The refrigerant mass flow rate is calculated as:  
+\[
+\dot{m}_{\text{R134a}} = 0.894 \, \frac{\text{kg}}{\text{s}}
+\]
+
+Temperature at state 2 is given as:  
+\[
+T_2 = -22^\circ\text{C}
+\]
+
+Pressure values are calculated:  
+\[
+p_2 = 1.2122 \, \text{bar} \quad p_1 = 1 \, \text{bar}
+\]
+
+Enthalpy at state 1:  
+\[
+h_1 = 23.42 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-11)}
+\]
+
+Vapor quality at state 1:  
+\[
+x = \frac{h_1 - h_f(-22^\circ\text{C})}{h_g(-22^\circ\text{C}) - h_f(-22^\circ\text{C})} = 0.337
+\]
+
+Energy balance equation:  
+\[
+0 = h_1 - h_2 + \dot{Q}_K
+\]
+
+Heat transfer:  
+\[
+\dot{Q}_K = \dot{m}_{\text{R134a}} \cdot (h_2 - h_1) = 160.35 \, \text{kW}
+\]
+
+---
+
+TASK 4d  
+The coefficient of performance (\( \epsilon_K \)) is calculated as:  
+\[
+\epsilon_K = \frac{\dot{Q}_K}{\dot{W}_K}
+\]
+
+Values used:  
+\[
+\dot{Q}_K = 160.35 \, \text{kW}, \quad \dot{W}_K = 28 \, \text{kW} \quad \text{(units not confirmed as kilowatts)}
+\]
+
+Result:  
+\[
+\epsilon_K = 5.72598
+\]

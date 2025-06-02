@@ -1,0 +1,74 @@
+TASK 1a  
+The heat flow removed by the coolant, \( \dot{Q}_{\text{out}} \), is calculated using the energy balance equation:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} \cdot (h_1 - h_2) + \dot{Q}_R
+\]  
+Substituting the given values:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \cdot (-125.67 \, \text{kJ/kg}) + 100 \, \text{kW}
+\]  
+This results in:  
+\[
+\dot{Q}_{\text{out}} = 62.29 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant, \( T_{\text{KF}} \), is determined using the logarithmic mean temperature difference formula:  
+\[
+T_{\text{KF}} = \frac{T_2 - T_3}{\ln \left( \frac{T_2}{T_3} \right)}
+\]  
+Substituting the given values:  
+\[
+T_{\text{KF}} = \frac{238.15 - 288.15}{\ln \left( \frac{293.15}{288.15} \right)}
+\]  
+This results in:  
+\[
+T_{\text{KF}} = 293.12 \, \text{K}
+\]  
+
+TASK 1c  
+The entropy production, \( \dot{S}_{\text{gen}} \), is calculated using the entropy balance equation:  
+\[
+\dot{S}_{\text{gen}} = \dot{m}_{\text{in}} \cdot (s_2 - s_1) + \dot{m}_{\text{out}} \cdot (s_3 - s_2) + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+The entropy difference \( s_2 - s_1 \) is expressed as:  
+\[
+s_2 - s_1 = s^{\text{sat}}(T_4) - s^{\text{sat}}(T_3)
+\]  
+Using the logarithmic approximation:  
+\[
+s_2 - s_1 = c_p \cdot \ln \left( \frac{T_2}{T_3} \right)
+\]  
+Substituting the values for \( \dot{S}_{\text{gen}} \):  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} \cdot \frac{T_2 - T_{\text{KF}}}{T_2 \cdot T_{\text{KF}}}
+\]  
+With \( \dot{Q}_{\text{out}} = 62.29 \, \text{kW} \), \( T_2 = 373.15 \, \text{K} \), and \( T_{\text{KF}} = 293.12 \, \text{K} \):  
+\[
+\dot{S}_{\text{gen}} = \frac{62.29 \cdot (373.15 - 293.12)}{373.15 \cdot 293.12}
+\]  
+This results in:  
+\[
+\dot{S}_{\text{gen}} = 48.94 \, \text{W/K}
+\]  
+
+TASK 1d  
+The mass \( \Delta m_{12} \) required to cool the reactor contents from \( T_1 = 100^\circ\text{C} \) to \( T_2 = 70^\circ\text{C} \) is calculated using the energy balance:  
+\[
+\Delta E = \Delta m_{12} \cdot h_{\text{in}} + Q_{\text{out},12} = m_{\text{total}} \cdot h_{\text{inside,2}} - m_{\text{total}} \cdot h_{\text{inside,1}}
+\]  
+Substituting the given values:  
+\[
+h_{\text{in}}(20^\circ\text{C}) = 83.96 \, \text{kJ/kg}, \quad h_{\text{inside,2}} = 303.2 \, \text{kJ/kg}, \quad h_{\text{inside,1}} = 350.1 \, \text{kJ/kg}
+\]  
+\[
+\Delta m_{12} = \frac{-Q_{\text{out},12} + m_{\text{total}} \cdot (h_{\text{inside,1}} - h_{\text{inside,2}})}{h_{\text{in}}}
+\]  
+With \( Q_{\text{out},12} = 35,000 \, \text{J/s} \), \( m_{\text{total}} = 5755 \, \text{kg} \):  
+\[
+\Delta m_{12} = \frac{-35,000 + 5755 \cdot (350.1 - 303.2)}{83.96}
+\]  
+This results in:  
+\[
+\Delta m_{12} = 8175.8 \, \text{kg}
+\]  

@@ -1,0 +1,124 @@
+
+``````latex
+
+
+\section*{Aufgabe 1:}
+
+\subsection*{a) Energiebilanz:}
+
+\[
+0 = \dot{m}_{ein} (h_{ein} - h_{aus}) + \dot{Q}_{aus} + \dot{Q}_R
+\]
+
+\[
+0 = \dot{m}_{ein} \left( h_f(70^\circ C) - h_c(100^\circ C) \right) - \dot{Q}_{aus} + \dot{Q}_R
+\]
+
+\[
+\Rightarrow \quad \dot{m}_{ein} = 0.3 \frac{\text{kg}}{\text{s}}
+\]
+
+\[
+h_f(70^\circ C) = 232.98 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_c(100^\circ C) = 419.011 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\dot{Q}_{aus} = \dot{m}_{ein} \left( h_f(70^\circ C) - h_c(100^\circ C) \right) + 1 \text{cool} \text{kW}
+\]
+
+\[
+Q_{aus} = 62.182 \text{kW}
+\]
+
+\subsection*{b)}
+
+\[
+\bar{T}_{EF} = \frac{\int_{S_e}^{S_a} T \, dS}{S_a - S_e}
+\]
+
+\text{Ideale Flüssigkeit:}
+
+\[
+S_a - S_e = \int_{T_{rein}}^{T_{raus}} \frac{c_p^\prime (T)}{T} \, dT
+\]
+
+\[
+PKF_{adi} = PKF_{ein} \Rightarrow \text{isobar + adiabate = reversibel = isentrop}
+\]
+
+\[
+\bar{T}_{EF} = \frac{T_{EF,alt} + T_{EF,ein}}{2} = 293.15 \text{K}
+\]
+
+\subsection*{c)}
+
+\[
+\bar{T}_{EF} - 293 \text{K} / \dot{Q}_{aus} = 65 \text{kW}
+\]
+
+\[
+0 = \frac{\dot{Q}_{aus}}{T_{reaktor}} - \frac{\dot{Q}_{aus}}{\bar{T}_{EF}} + \dot{S}_{ez}
+\]
+
+\[
+\dot{S}_{ez} = \frac{\dot{Q}_{aus}}{\bar{T}_{EF}} - \frac{\dot{Q}_{aus}}{T_{reaktor}} = 46.146 \text{kJ}
+\]
+
+\subsection*{Graphical Description:}
+
+There is a horizontal rectangular box labeled "Reaktor" with an arrow pointing upwards labeled $\dot{Q}_{aus}$ and another arrow pointing downwards labeled $\dot{Q}_{ein}$. The box is connected to a label "Wand" on the right side. Below the box, there is a label "T_{reaktor} = 57.3 \text{K}".
+
+``````latex
+
+\section*{d)}
+\begin{align*}
+\Delta E &= \text{smash}_{\text{ein}} + Q_e - Q_{\text{aus}} - U_2^2 \\
+m_2 v_2 - m_1 v_1 &= \text{smash}_{\text{ein}} \quad \text{mit} \quad m_2 = m_1 + \Delta m \\
+(m_1 + \Delta m) v_2 - m_1 v_1 &= \text{smash}_{\text{ein}} \\
+m_2 v_2 + \Delta m v_2 - m_1 v_1 &= \text{smash}_{\text{ein}} \\
+\text{smash}_{\text{ein}} &= m_2 v_2 - m_1 v_1 = m_1 (v_2 - v_1) \\
+\Delta m &= \frac{m_1 (v_2 - v_1)}{v_{\text{ein}} - v_2}
+\end{align*}
+
+\begin{align*}
+\Delta m &= \frac{5755 \, \text{kg} \, (v_2 - v_1)}{v_{\text{ein}} - v_2} = 3469.9 \, \text{kg}
+\end{align*}
+
+\begin{align*}
+\Delta m_{12} &= 3469.9 \, \text{kg}
+\end{align*}
+
+\subsection*{Tabelle:}
+\begin{align*}
+U_2 &= U_2 (70^\circ \text{C}) = 292.95 \, \frac{\text{kJ}}{\text{kg}} \\
+U_1 &= U_1 (100^\circ \text{C}) = 418.94 \, \frac{\text{kJ}}{\text{kg}} \\
+h_{\text{ein}} &= h_{\text{p}} (20^\circ \text{C}) = 83.96 \, \frac{\text{kJ}}{\text{kg}} \\
+m_1 &= 5755 \, \text{kg}
+\end{align*}
+
+\section*{e)}
+\begin{align*}
+\Delta S &= m_2 s_2 - m_1 s_1
+\end{align*}
+
+\begin{align*}
+\Delta S &= 16329.6 \, \frac{\text{kJ}}{\text{K}} = \underline{16.33 \, \text{MJ}}
+\end{align*}
+
+\begin{align*}
+m_1 &= 5755 \, \text{kg} \\
+m_2 &= \Delta m_2 + m_1 = 9224.9 \, \text{kg}
+\end{align*}
+
+\begin{align*}
+s_2 (70^\circ \text{C}) &= 0.956 \, \frac{\text{kJ}}{\text{kg K}} \quad \text{(Tabelle)} \\
+s_1 (100^\circ \text{C}) &= 1.306 \, \frac{\text{kJ}}{\text{kg K}} \quad \text{(Tabelle)}
+\end{align*}
+
+``````latex
+
+

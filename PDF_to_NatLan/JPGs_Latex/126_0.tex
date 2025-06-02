@@ -1,0 +1,46 @@
+TASK 1a  
+The first law of thermodynamics is applied to the reactor:  
+\[
+0 = \dot{m}(h_e - h_a) + \dot{Q}
+\]  
+The heat flow removed by the coolant is calculated as:  
+\[
+\dot{Q} = \dot{m}(h_a - h_e)
+\]  
+Using enthalpy values from water tables:  
+\[
+h_a(T_1) = h_{af}(T_1) = 252.38 \, \frac{\text{kJ}}{\text{kg}}, \quad \text{(from Table A-2)}
+\]  
+\[
+h_e(T_2) = h_{ef}(T_2) = 419.01 \, \frac{\text{kJ}}{\text{kg}}, \quad \text{(from Table A-2)}
+\]  
+Substituting into the equation:  
+\[
+\dot{Q} = 0.3 \, \frac{\text{kg}}{\text{s}} \cdot (252.38 - 419.01) = -37.8 \, \text{kW}
+\]  
+
+TASK 1b  
+For isobaric heat transfer in the cooling jacket, the thermodynamic mean temperature \( T_{\text{KF}} \) is determined:  
+\[
+T_{\text{KF}} = \frac{T_2 - T_1}{\ln\left(\frac{T_2}{T_1}\right)}
+\]  
+Substituting values:  
+\[
+T_{\text{KF}} = \frac{298.15 - 288.15}{\ln\left(\frac{298.15}{288.15}\right)}
+\]  
+\[
+T_{\text{KF}} = 293.12 \, \text{K}
+\]  
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) is calculated using the second law of thermodynamics:  
+\[
+\dot{S}_{\text{gen}} = \dot{Q} \left( \frac{1}{T_{\text{KF}}} - \frac{1}{T_{\text{Reactor}}} \right)
+\]  
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = -37.8 \, \text{kW} \cdot \left( \frac{1}{293.12 \, \text{K}} - \frac{1}{373.15 \, \text{K}} \right)
+\]  
+\[
+\dot{S}_{\text{gen}} = 0.062 \, \frac{\text{kJ}}{\text{K}}
+\]

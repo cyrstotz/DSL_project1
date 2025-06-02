@@ -1,0 +1,45 @@
+TASK 1a  
+The heat flow removed by the coolant, \( \dot{Q}_{\text{out}} \), is calculated using the energy balance:  
+\[
+\dot{Q}_{\text{out}} = \dot{Q}_R - \dot{m}_{\text{in}} (h_{\text{out}} - h_{\text{in}})
+\]  
+Substituting the given values:  
+\[
+\dot{Q}_{\text{out}} = \dot{Q}_R - \dot{m}_{\text{in}} = 100 \, \text{kW} - 42.08 \, \text{kW} = 57.92 \, \text{kW}
+\]  
+Where:  
+\[
+\dot{m}_{\text{in}} = 0.3 \, \text{kg/s}, \, h_{\text{out}} = 1927.0 \, \frac{\text{kJ}}{\text{kg}}, \, h_{\text{in}} = 107.6 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature \( \bar{T} \) of the coolant is determined using the entropy balance:  
+\[
+0 = \dot{m} (s_e - s_a) + \frac{\dot{Q}}{\bar{T}}
+\]  
+Rearranging:  
+\[
+\bar{T} = \frac{\dot{Q}}{\dot{m} (s_a - s_e)}
+\]  
+Using the integral form:  
+\[
+\bar{T} = \frac{\int T \, dS}{s_a - s_e} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)}
+\]  
+Substituting values:  
+\[
+\bar{T} = \frac{100^\circ\text{C} - 70^\circ\text{C}}{\ln \left( \frac{100^\circ\text{C}}{70^\circ\text{C}} \right)} = 293.122 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) is calculated as:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}}{T}
+\]  
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = \frac{65 \, \text{kW}}{295 \, \text{K}} = 0.22 \, \frac{\text{kW}}{\text{K}}
+\]  

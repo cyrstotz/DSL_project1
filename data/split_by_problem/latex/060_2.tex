@@ -1,0 +1,118 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+T-s Diagramm. Rückseite!
+
+\subsection*{b)}
+\textit{Gas:} \(P_6, O_6\)
+
+\[
+w_s = 220 \frac{\text{J}}{\text{kg}}
+\]
+\[
+P_c = 0.5 \text{ bar}
+\]
+\[
+T_5 = 431.9 \text{ K}
+\]
+
+\textit{adiabat:}
+\[
+\frac{T_2}{T_1} = \left( \frac{P_2}{P_1} \right)^{\frac{n-1}{n}} \Rightarrow \frac{T_c}{T_5} = \left( \frac{P_c}{P_5} \right)^{\frac{n-1}{n}}
+\]
+\[
+\Rightarrow T_6 = 431.9 \left( \frac{0.191 \cdot 10^5}{0.5 \cdot 10^5} \right)^{\frac{1.4-1}{1.4}} = 328.07 \text{ K} \approx 328.1 \text{ K}
+\]
+
+\[
+w_0 = h_c - \frac{w^2}{2}
+\]
+
+\textit{stationärer Flussprozess:}
+\[
+0 = \dot{m} \left[ h_c - h_1 + \frac{w_c^2 - w_1^2}{2} \right] \Rightarrow h_c - h_1 + \frac{w_c^2 - w_1^2}{2} = 0
+\]
+\[
+h_c + c_p \left( T_c - T_1 \right) = c_p \left( 328.1 - 431.9 \right) = -104.1 (2728 \frac{\text{J}}{\text{kgK}})
+\]
+\[
+0 = \frac{w_c^2 - w_1^2}{2} - 104.1 (2728)
+\]
+\[
+\Rightarrow 2 (104.1 (2728)) = w_1^2 - w_c^2
+\]
+\[
+w_1^2 = 760.444 - 400.55 \text{ m/s}
+\]
+
+\subsection*{c)}
+\textit{Energiegleichung:}
+\[
+E_{x,str} = \left[ h_1 - h_0 - T_0 (s_1 - s_0) \right] + \frac{w^2}{2}
+\]
+\[
+E_{x,str} = \left[ h_0 - h_0 - T_0 (s_6 - s_0) \right] + \frac{w^2}{2}
+\]
+\[
+E_{x,str} = \int_{T_0}^{T_1} c_p \left( \frac{\dot{T}}{T} \right) dt = c_p \left( \frac{\dot{T}}{T} dt - 2h \left( \frac{P_1}{P_0} \right) + \frac{w_2^2}{2} \right)
+\]
+
+``````latex
+
+
+\[
+0 \varepsilon_{x,str} = 1.006 (328.1 - 243.15) - \frac{243.15}{380} (1006 \frac{J}{kg}) \left( \frac{328.1}{243.15} \right) - R \ln \left( \frac{T_1}{T} \right) + \frac{(400.55)^2}{2}
+\]
+
+\[
+0 \varepsilon_{x,str} = 80.2 (1.17 \frac{J}{kg}) = 80.2 \frac{kJ}{kg}
+\]
+
+d)
+
+\[
+\frac{d \varepsilon_x}{dt} = \sum \varepsilon_{x,str} - \dot{\varepsilon}_{x,vel} - \sum \varepsilon_{x,qj} - \sum \left( \dot{W}_n (t) \right) \frac{p_0 dV(t)}{dt}
+\]
+
+\[
+\varepsilon_{x,a} = \int_a (1 - \frac{T_c}{T_a}) SQ \left( \cos \theta \right) \frac{d \gamma}{d \gamma}
+\]
+
+\[
+\frac{d \varepsilon_x}{dt} = \sum \varepsilon_{x,str} + \sum \varepsilon_{x,qj} - \varepsilon_{x,vel} = 80.2 \frac{kJ}{kg} - \varepsilon_{x,vel}
+\]
+
+\[
+\varepsilon_{x,vel} + ke = 80.2 + \varepsilon_{x,q} - \varepsilon_{x,vel}
+\]
+
+\[
+\Rightarrow \varepsilon_{x,vel} = 80.2 + \varepsilon_{x,q} - \varepsilon_{x,vel} - ke
+\]
+
+\[
+ke = \frac{w^2}{2}
+\]
+
+a)
+
+\textbf{Description of the graph:}
+
+The graph is a pressure-volume (P-V) diagram with the following details:
+
+- The x-axis represents the volume, and the y-axis represents the pressure.
+- There are four distinct points labeled as O, A, B, and C.
+- The process from O to A is a vertical line indicating an isochoric process (constant volume).
+- The process from A to B is a curved line indicating an isobaric process (constant pressure).
+- The process from B to C is a vertical line indicating another isochoric process.
+- The process from C to O is a horizontal line indicating an isobaric process.
+- The points A and C are connected by dashed lines indicating isothermal processes.
+- The temperature at point C is greater than the temperature at point B, denoted as \( T_C > T_B \).
+
+``````latex
+
+

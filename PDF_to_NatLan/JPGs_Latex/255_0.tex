@@ -1,0 +1,67 @@
+TASK 1a  
+The first law of thermodynamics is applied to water in steady-state conditions, assuming \( \dot{m} = \text{constant} \).  
+
+\[
+0 = \dot{m} \cdot (h_e - h_a) + \dot{Q}_R - \dot{Q}_{\text{out}} - \dot{W}
+\]
+
+The heat flow removed by the coolant is expressed as:  
+
+\[
+\dot{Q}_{\text{out}} = \dot{m} \cdot (h_e - h_a) + \dot{Q}_R
+\]
+
+Values for enthalpy are given:  
+\[
+h_e = 292.985 \, \text{kJ/kg}, \quad h_a = 419.094 \, \text{kJ/kg}
+\]
+
+The calculated heat flow is:  
+\[
+\dot{Q}_{\text{out}} = 62.182 \, \text{kW}
+\]
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature \( T \) is determined using the integral of temperature over entropy change:  
+
+\[
+T = \frac{\int T \, dS}{S_a - S_e}
+\]
+
+This simplifies to:  
+\[
+T = \frac{h_a - h_e}{S_a - S_e}
+\]
+
+Alternatively, it can be expressed as:  
+\[
+T = T_{\text{CF}} \cdot (T_a - T_e) \cdot \ln \left( \frac{T_a}{T_e} \right)
+\]
+
+The calculated mean temperature is:  
+\[
+T = 293.72 \, \text{K}
+\]
+
+---
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) is calculated for a closed system undergoing a stationary flow process.  
+
+\[
+0 = \dot{m} \cdot (S_e - S_a) + \frac{\dot{Q}_{\text{out}}}{T} + \dot{S}_{\text{gen}}
+\]
+
+Rearranging:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \cdot (S_a - S_e) - \frac{\dot{Q}_{\text{out}}}{T}
+\]
+
+The entropy production is calculated as:  
+\[
+\dot{S}_{\text{gen}} = 212.77 \, \frac{\text{J}}{\text{s}}
+\]
+
+Additional note: Entropy production occurs due to reactions and heat transfer, not only within the cooling jacket.

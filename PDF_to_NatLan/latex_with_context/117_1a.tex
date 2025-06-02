@@ -1,0 +1,42 @@
+The problem begins with the given values:  
+\[
+\dot{m}_{\text{in}} = 0.3 \, \text{kg/s}, \quad T_{\text{in}} = 70^\circ\text{C}, \quad T_{\text{out}} = 100^\circ\text{C}
+\]  
+The mass flow rate is denoted as \( \dot{m}_{\text{in}} \).  
+
+The thermodynamic mean temperature of the coolant is calculated as:  
+\[
+T_{\text{KF,mean}} = 298.15 \, \text{K} = 25^\circ\text{C}
+\]  
+\[
+T_{\text{KF,in}} = 288.15 \, \text{K} = 15^\circ\text{C}
+\]  
+
+The steady-state energy balance in the reactor is written as:  
+\[
+0 = \dot{m} (h_2 - h_1) + \frac{w_2^2 - w_1^2}{2} + g(z_2 - z_1) + \dot{Q}_{\text{out}} - \dot{W}_{\text{R}}
+\]  
+where kinetic energy (\( \text{ke} \)) and potential energy (\( \text{pe} \)) are neglected.  
+
+From this, the heat flow removed by the coolant is expressed as:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} (h_2 - h_1)
+\]  
+
+The enthalpy values are determined using water tables:  
+\[
+h_2 = h_f(100^\circ\text{C}) = 419.04 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(Table A-2)}
+\]  
+\[
+h_1 = h_f(70^\circ\text{C}) = 292.88 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(Table A-2)}
+\]  
+
+Substituting these values into the equation:  
+\[
+\dot{Q}_{\text{out}} = (\text{419.04} - \text{292.88}) \, \frac{\text{kJ}}{\text{kg}} \cdot 0.3 \, \frac{\text{kg}}{\text{s}}
+\]  
+\[
+\dot{Q}_{\text{out}} = -37.848 \, \text{kW}
+\]  
+
+This indicates that the heat flow removed by the coolant is \( -37.848 \, \text{kW} \).

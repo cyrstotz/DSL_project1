@@ -1,0 +1,25 @@
+The process described is throttling, which is isenthalpic and isothermal.  
+
+Given:  
+\[
+x_4 = 0, \quad p_4 = 8 \, \text{bar}, \quad h_4 = 93.42 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+T_4 = 31.33 \, \text{K}
+\]  
+
+A diagram is shown with a zigzag line labeled "4" at the top. This likely represents the throttling process in a pressure-enthalpy or temperature-pressure diagram.  
+
+Interpolation is performed using data from Table A12:  
+\[
+h = \frac{\phi(p_1) - \phi(p_2)}{p_1 - p_2} \cdot (p - p_2) + \phi(p_2)
+\]  
+
+To calculate \( p \):  
+\[
+p = \frac{h - \phi(p_2)}{\phi(p_1) - \phi(p_2)} \cdot (p_1 - p_2) + p_2
+\]  
+
+The formula is used to interpolate values for pressure and enthalpy based on tabulated data.  
+
+---

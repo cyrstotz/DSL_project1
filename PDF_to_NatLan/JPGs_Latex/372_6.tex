@@ -1,0 +1,62 @@
+TASK 1a  
+The energy balance equation for the reactor is given as:  
+\[
+1. HS: \, 0 = \dot{m}_{\text{in}} (h_1 - h_2) + \dot{Q}_R - \dot{Q}_{\text{out}}
+\]  
+The heat flow removed by the coolant (\( \dot{Q}_{\text{out}} \)) is calculated as:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} (h_1 - h_2) + \dot{Q}_R
+\]  
+From the water tables (Tables A-2):  
+\[
+h_1 = h_{1,f} \, (70^\circ\text{C}) = 283.29298 \, \text{kJ/kg}
+\]  
+\[
+h_2 = h_{2,f} \, (100^\circ\text{C}) = 419.04 \, \text{kJ/kg}
+\]  
+Substituting the values:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \cdot (h_1 - h_2) + 100 = 62.182 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature (\( T_{\text{KF}} \)) of the coolant is calculated using the entropy integral:  
+\[
+T_{\text{KF}} = \frac{\int_{a}^{e} T \, ds}{s_a - s_e}
+\]  
+Given:  
+\[
+T_{\text{KF,in}} = 25^\circ\text{C}, \, T_{\text{KF,out}} = 15^\circ\text{C}
+\]  
+The entropy difference is expressed as:  
+\[
+s_a - s_e = c_p \int_{T_a}^{T_e} \frac{dT}{T} = c_p \ln \left( \frac{T_{\text{KF,out}}}{T_{\text{KF,in}}} \right)
+\]  
+
+---
+
+TASK 1c  
+The entropy production (\( \dot{S}_{\text{gen}} \)) is calculated using the entropy balance equation:  
+\[
+\text{Entropiebilanz:} \, 0 = \dot{m}_{\text{in}} (s_1 - s_2) + \frac{\dot{Q}_R}{T_{\text{Reactor}}} - \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} + \dot{S}_{\text{gen}}
+\]  
+Given:  
+\[
+T_{\text{KF}} = 295 \, \text{K}
+\]  
+From the water tables (Tables A-2):  
+\[
+s_2 = s_{2,f} \, (100^\circ\text{C}) = 1.306 \, \text{kJ/kg·K}
+\]  
+\[
+s_1 = s_{1,f} \, (70^\circ\text{C}) = 0.9543 \, \text{kJ/kg·K}
+\]  
+Substituting into the equation:  
+\[
+\dot{S}_{\text{gen}} = 0.3 \cdot (s_1 - s_2) + \frac{\dot{Q}_R}{T_{\text{Reactor}}} - \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+\[
+\dot{S}_{\text{gen}} = -0.6 + 0.339 - 0.211 = 0.234 \, \text{kJ/K}
+\]

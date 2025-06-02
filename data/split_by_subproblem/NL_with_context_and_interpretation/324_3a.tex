@@ -1,0 +1,58 @@
+The table lists the states for the gas and the ice-water mixture (EW):  
+
+**Gas:**  
+- State 1:  
+  Pressure (P): Not provided  
+  Volume (V): 3.14 liters  
+  Temperature (T): 500 degrees Celsius  
+
+- State 2:  
+  Pressure (P): Not provided  
+  Volume (V): Not provided  
+  Temperature (T): Not provided  
+
+**EW:**  
+- State 1:  
+  Pressure (P): Not provided  
+  Volume (V): Not provided  
+  Temperature (T): 0 degrees Celsius  
+  Ice content (X): 0.6  
+  Mass (M): 0.1 kilograms  
+
+- State 2:  
+  Pressure (P): Not provided  
+  Volume (V): Not provided  
+  Temperature (T): Not provided  
+  Ice content (X): Not provided  
+  Mass (M): Not provided  
+
+**Calculation of \( p_{g,1} \) and \( m_g \):**  
+Since the EW mixture is incompressible and constant under pressure:  
+
+\( p_{g,1} = \frac{m_g}{A} + p_{atm} \)  
+
+Where:  
+- \( A \) is the area of the cylinder.  
+- \( p_{atm} \) is atmospheric pressure.  
+
+**Area calculation:**  
+\( A = \text{Area of the cylinder} \)  
+\( A = \pi \cdot \frac{D^2}{4} \)  
+\( A = \pi \cdot \frac{(0.1)^2}{4} \)  
+\( A = \frac{\pi}{400} \, \text{m}^2 \)  
+
+**Pressure calculation:**  
+\( p_{g,1} = \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{\frac{\pi}{400}} + 100000 \, \text{Pa} \)  
+\( p_{g,1} = 131396.54 \, \text{Pa} \)  
+
+**Gas mass calculation:**  
+Using the ideal gas law:  
+\( p \cdot V = R \cdot m \cdot T \)  
+\( R = \frac{8.314 \, \text{J/mol·K}}{50 \, \text{kg/kmol}} \)  
+\( R = 166.28 \, \text{J/kg·K} \)  
+
+\( m_g = \frac{p \cdot V}{R \cdot T} \)  
+\( m_g = \frac{131396.54 \cdot 0.00314}{166.28 \cdot (273.15 + 500)} \)  
+\( m_g = 0.0034 \, \text{kg} = 3.4 \, \text{g} \)  
+
+---

@@ -1,0 +1,48 @@
+TASK 1a  
+To calculate the heat flow \( \dot{Q}_{\text{aus}} \) removed by the coolant, the energy balance equation is applied:  
+\[
+0 = \dot{m}_{\text{ein}} \left( h_{\text{ein}} - h_{\text{aus}} \right) + \dot{Q}_R - \dot{Q}_{\text{aus}}
+\]  
+Rearranging for \( \dot{Q}_{\text{aus}} \):  
+\[
+\dot{Q}_{\text{aus}} = \dot{m}_{\text{ein}} \left( h_{\text{ein}} - h_{\text{aus}} \right) + \dot{Q}_R
+\]  
+
+The enthalpy values are obtained from water tables:  
+\[
+h_{\text{ein}} = h_f(70^\circ\text{C}) = 292.98 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(Table A2)}
+\]  
+\[
+h_{\text{aus}} = h_f(100^\circ\text{C}) = 419.04 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(Table A2)}
+\]  
+
+Substituting these values:  
+\[
+\dot{Q}_{\text{aus}} = 62.182 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+To determine the thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant, the following equation is used:  
+\[
+T_{\text{KF}} = \frac{\int_{S_{\text{ein}}}^{S_{\text{aus}}} T \, dS}{S_{\text{aus}} - S_{\text{ein}}}
+\]  
+
+The entropy values are obtained from water tables:  
+\[
+S_{\text{aus}} = S_f(15^\circ\text{C}) = 0.2245 \, \frac{\text{kJ}}{\text{kg·K}} \quad \text{(Table A2)}
+\]  
+\[
+S_{\text{ein}} = S_f(25^\circ\text{C}) = 0.3674 \, \frac{\text{kJ}}{\text{kg·K}} \quad \text{(Table A2)}
+\]  
+
+Simplifying the equation:  
+\[
+T_{\text{KF}} = \frac{T_{\text{KF,ein}} - T_{\text{KF,aus}}}{S_{\text{aus}} - S_{\text{ein}}}
+\]  
+
+Substituting values:  
+\[
+T_{\text{KF}} = 70^\circ\text{C}
+\]

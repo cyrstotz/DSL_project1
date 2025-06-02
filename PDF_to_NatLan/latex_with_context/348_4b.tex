@@ -1,0 +1,21 @@
+Interpolation is performed to find enthalpy values:  
+\[
+h_g(p_3) = h_g(p_1) + \frac{(h_g(p_2) - h_g(p_1))}{(p_2 - p_1)} \cdot (p_3 - p_1)
+\]  
+
+The entropy values are calculated as:  
+\[
+s_2 = s_g(p_3)  
+\]  
+\[
+s_2 - s_f(p_3) = x \cdot (s_g(p_3) - s_f(p_3))
+\]  
+
+The vapor quality \( x \) is determined using:  
+\[
+x = \frac{s_2 - s_f}{s_g - s_f}
+\]  
+
+Final temperature \( T \) is interpolated as \( T = 51.13^\circ\text{C} \).  
+
+---

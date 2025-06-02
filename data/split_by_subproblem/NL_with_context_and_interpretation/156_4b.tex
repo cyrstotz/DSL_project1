@@ -1,0 +1,25 @@
+Given: R134a  
+
+Equation:  
+0 = ṁ (h2 - h3) - ṁk  
+=> ṁ = ṁk / (h2 - h3) = 0.7437 kg/s  
+
+Steps:  
+1. p4 = p3 = 8 bar, x = 0  
+2. s2 = s3, p2 = p1, x ≤ 1  
+3. s1 = s4  
+4. p3 = 8 bar  
+
+Using:  
+T2 = -11.92°C from Table A10  
+h2 = hg = 254.08 kJ/kg  
+
+s3 = s2 = 0.855 kJ/kg·K  
+
+h1 = h4 = h(40°C, 8 bar) = h(sat, 8 bar)  
+Interpolating:  
+s(40°C, 8 bar) = s(sat, 8 bar)  
+h = h(sat, 8 bar) + (s - s(sat, 8 bar)) + h(sat, 8 bar)  
+
+Result:  
+h1 = 271.72 kJ/kg

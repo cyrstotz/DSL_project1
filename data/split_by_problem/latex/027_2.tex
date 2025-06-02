@@ -1,0 +1,72 @@
+
+``````latex
+
+
+\section*{Aufgabe 2: Exergie am Treibwerk}
+
+\subsection*{2a)}
+
+\begin{center}
+\textbf{Graph Description:}
+\end{center}
+
+The graph is a Temperature-Entropy (T-s) diagram. The x-axis is labeled as \( s \left( \frac{\text{kJ}}{\text{kg K}} \right) \) and the y-axis is labeled as \( T \left( \text{K} \right) \). 
+
+There are six points labeled from 0 to 6. The points are connected by various lines indicating different processes:
+
+- Point 0 to 1: A vertical line labeled "isotrop".
+- Point 1 to 2: A line with a positive slope labeled "isotrop".
+- Point 2 to 3: A line with a positive slope labeled "isotrop".
+- Point 3 to 4: A horizontal line labeled "isotrop".
+- Point 4 to 5: A line with a positive slope labeled "isotrop".
+- Point 5 to 6: A line with a positive slope labeled "isotrop".
+
+There are additional annotations:
+- A line labeled "same pressure" connecting points 0 and 6.
+- A note indicating that the isobars are a little steep and should probably be more like parallel lines.
+
+\subsection*{2b)}
+
+\begin{align*}
+w_5 &= 220 \, \text{m/s} \\
+p_5 &= 0.5 \, \text{bar} \\
+T_5 &= 431.9 \, \text{K} \\
+w_6 &= ? \\
+p_6 &= 0.191 \, \text{bar} \\
+T_6 &= ? 
+\end{align*}
+
+\text{Schubdüse adiabatic + reversibel} \Rightarrow \text{isotrop}
+
+\begin{align*}
+\Rightarrow \text{ideales Gas:} \quad \frac{T_6}{T_45} &= \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} \quad \text{, where } n = 1.4 \\
+\Rightarrow T_6 &= 431.9 \cdot \left( \frac{0.191}{0.5} \right)^{\frac{1.4-1}{1.4}} \\
+&= 328.075 \, \text{K}
+\end{align*}
+
+\text{Energiebilanz: (stationär)}
+
+\begin{align*}
+0 &= \dot{m} \left( h_2 - h_1 + \frac{w_2^2 - w_1^2}{2} \right) + \dot{Q} - \dot{W} \\
+&= \dot{m} \left( c_p (T_6 - T_5) + \frac{220^2}{2} \right) + \text{adiabat}
+\end{align*}
+
+\text{Schubdüse} \Rightarrow W_a = \boxed{\text{(illegible)}}
+``````latex
+
+\section*{2 c)}
+\begin{equation*}
+\Delta e_x = \dot{m}_{\text{ges}} \left[ u - u_0 - T_0 (s - s_0) + p_0 (v - v_0) \right] - \left[ u - u_e - T_e (s - s \right]
+\end{equation*}
+
+\section*{2 d)}
+\begin{equation*}
+\dot{E}_{x,\text{verl.}} = T_0 \cdot \dot{S}_{\text{erz}}
+\end{equation*}
+\begin{equation*}
+\Rightarrow \quad e_{x,\text{verl.}} = T_0 \cdot S_{\text{erz}}
+\end{equation*}
+
+``````latex
+
+

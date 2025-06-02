@@ -1,0 +1,68 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a Temperature-Entropy (T-S) diagram. The x-axis is labeled $S \left[ \frac{kJ}{K} \right]$ and the y-axis is labeled $T \left[ K \right]$. There are six points labeled 0, 1, 2, 3, 4, 5, and 6. The points are connected by lines forming a cycle. The points 0 and 1 are connected by a horizontal line. The points 1 and 2 are connected by a vertical line. The points 2 and 3 are connected by a line with a positive slope. The points 3 and 4 are connected by a horizontal line. The points 4 and 5 are connected by a line with a negative slope. The points 5 and 6 are connected by a vertical line. The points 6 and 0 are connected by a horizontal line. There are two isobars labeled 0.5 BAR and 0.491 BAR. The temperatures 431.8 K and 243.15 K are marked with horizontal dashed lines.
+\end{description}
+
+\[
+\begin{aligned}
+    &s_1 = s_2 \\
+    &p_2 = p_3 \\
+    &s_3 = s_4 \\
+    &p_1 = p_4 = p_5 \\
+    &p_6 = p_0 \\
+    &s_5 = s_6
+\end{aligned}
+\]
+
+\subsection*{b)}
+
+\text{Isentrop:} \quad T_6 = T_5 \left( \frac{v_0}{v_5} \right)^{\frac{k-1}{k}} \approx 378.07 \, K
+
+\text{Energy Balance (EB)}
+
+\text{Schubdüse}
+
+\[
+\dot{m}_{\text{GES}} \left( c_p^{16} \text{LUFT} \left( T_S - T_6 \right) + \frac{(w_5^2 - w_6^2)}{2} \right) = 0
+\]
+
+\[
+\Rightarrow w_6 = \sqrt{2 c_p^{16} \text{LUFT} \left( T_S - T_6 \right) + \frac{w_5^2}{2}} \approx 507.25 \, \frac{m}{s}
+\]
+
+\subsection*{c)}
+
+\[
+\Delta \dot{e}_{\text{X,STR}} = e_{\text{X,STR6}} - e_{\text{X,STR0}} = 
+\]
+
+\[
+= h_6 - h_0 - T_0 (s_6 - s_0) + \frac{(w_6^2 - w_0^2)}{2}
+\]
+
+\[
+= c_p^{16} \text{LUFT} (T_6 - T_0) - T_0 c_p^{16} \text{LUFT} \left( \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{v_6}{v_0} \right) \right) + \frac{(510 \, \frac{m}{s})^2 - w_0^2}{2}
+\]
+
+\[
+\approx 112.21 \, \frac{kJ}{kg}
+\]
+
+\subsection*{d)}
+
+\text{Exergy Balance} \quad \dot{Q} = 0 \quad \dot{W} = 0
+
+\[
+\Delta \dot{e}_{\text{X,STR}} = e_{\text{X,VERL}}
+\]
+
+``````latex
+
+

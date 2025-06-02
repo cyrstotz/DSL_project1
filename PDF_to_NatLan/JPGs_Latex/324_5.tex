@@ -1,0 +1,69 @@
+TASK 1d  
+The energy balance for the system is expressed as:  
+\[
+m_2 u_2 - m_1 u_1 = \Delta m h_{\text{ein}} + Q_{R,12}
+\]  
+
+The total mass of the reactor is given as:  
+\[
+m_1 = 5755 \, \text{kg}
+\]  
+
+The specific internal energy at state 1 is calculated using the given temperature \( T = 100^\circ\text{C} \), steam quality \( x = 0.005 \), and water table data:  
+\[
+u_1(T=100^\circ\text{C}, x=0.005) = u_f + x (u_g - u_f) = 640.98 \, \text{kJ/kg}
+\]  
+
+At state 2, the specific internal energy is determined for \( T = 70^\circ\text{C} \):  
+\[
+u_2(T=70^\circ\text{C}) = u_f = 292.35 \, \text{kJ/kg}
+\]  
+
+The enthalpy of the incoming water is given as:  
+\[
+h_{\text{ein}}(x=1, T=20^\circ\text{C}) = 2538.1 \, \text{kJ/kg}
+\]  
+
+Rewriting the energy balance equation:  
+\[
+(m_1 + \Delta m) u_2 - m_1 u_1 = \Delta m h_{\text{ein}} + Q_{R,12}
+\]  
+
+Solving for \( \Delta m \):  
+\[
+\Delta m = \frac{Q_{R,12} + m_1 u_1 - m_1 u_2}{u_2 - h_{\text{ein}}}
+\]  
+
+Substituting values:  
+\[
+\Delta m = \frac{35000 \, \text{kJ} + 5755 \cdot 640.98 - 5755 \cdot 292.35}{292.35 - 2538.1}
+\]  
+
+\[
+\Delta m = 363 \, \text{kg}
+\]  
+
+---
+
+TASK 1e  
+The entropy change is calculated as follows:  
+\[
+\Delta S_{12} = S_2 - S_1
+\]  
+
+At state 2, the total mass is:  
+\[
+m_2 = m_1 + \Delta m = 5755 + 363 = 6118 \, \text{kg}
+\]  
+
+The specific entropy at state 2 is determined using \( T = 70^\circ\text{C} \) and \( x = 1 \):  
+\[
+s_2(T=70^\circ\text{C}, x=1) = 0.954 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+At state 1, the specific entropy is given for \( T = 100^\circ\text{C} \) and \( x = 0.005 \):  
+\[
+s_1(T=100^\circ\text{C}, x=0.005)
+\]  
+
+The entropy change is calculated using these values.

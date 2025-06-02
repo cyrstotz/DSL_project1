@@ -1,0 +1,34 @@
+The reactor operates in steady-state conditions.  
+
+The inlet mass flow rate is \( \dot{m}_{\text{in}} = 0.3 \, \text{kg/s} \), and the inlet temperature is \( T_{\text{in}} = 70^\circ\text{C} \). The phase of the inlet stream is saturated liquid.  
+
+The outlet mass flow rate is \( \dot{m}_{\text{out}} = 0.3 \, \text{kg/s} \), and the outlet temperature is \( T_{\text{out}} = 100^\circ\text{C} \). The phase of the outlet stream is saturated liquid.  
+
+Reactor properties:  
+- Total mass in the reactor: \( m_{\text{total}} = 5755 \, \text{kg} \)  
+- Steam quality: \( x_D = 0.005 \)  
+- Reactor temperature: \( T = 100^\circ\text{C} \), which remains constant.  
+- Heat released by the chemical reaction: \( \dot{Q}_R = 100 \, \text{kW} \)  
+- Heat flow removed by the coolant: \( \dot{Q}_{\text{out}} = ? \)  
+
+Coolant properties:  
+- Coolant inlet temperature: \( T_{\text{KF,in}} = 288.15 \, \text{K} \)  
+- Coolant outlet temperature: \( T_{\text{KF,out}} = 298.15 \, \text{K} \)  
+
+The heat transfer to the coolant is indicated as critical ("IF!") for removing the reaction heat.
+
+The energy balance for the reactor is written as:  
+\[
+0 = \dot{m}_{\text{in}} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_{\text{out}}
+\]  
+The heat flow removed by the coolant is calculated using:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} (h_{\text{in}} - h_{\text{out}})
+\]  
+Substituting the given values:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \left(419.04 \, \frac{\text{kJ}}{\text{kg}} - 292.98 \, \frac{\text{kJ}}{\text{kg}}\right)
+\]  
+\[
+\dot{Q}_{\text{out}} = 37.85 \, \text{kW}
+\]

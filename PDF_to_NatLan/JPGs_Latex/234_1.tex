@@ -1,0 +1,76 @@
+TASK 1d  
+Energy balance for an open system:  
+\[
+\Delta E = m_2 \cdot u_2 - m_1 \cdot u_1 = \Delta m_{12} \cdot h_{12} + Q_{R,12} - Q_{\text{out},12}
+\]  
+(Note: \( Q_{R,12} - Q_{\text{out},12} \) is crossed out in the equation.)  
+
+Definitions:  
+\[
+m_2 = m_{\text{ges},1} + \Delta m_{12}, \quad m_1 = m_{\text{ges},1}
+\]  
+
+From Table A2:  
+\[
+u_2 = u_f(70^\circ\text{C}) = 292.95 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_f(100^\circ\text{C}) = 418.94 \, \frac{\text{kJ}}{\text{kg}}, \quad u_g(100^\circ\text{C}) = 2506.5 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_{12} = h_f(20^\circ\text{C}) = 83.96 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+For \( u_1 \):  
+\[
+u_1 = u_f + x_D \cdot (u_g - u_f) = 429.36 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Energy balance equation:  
+\[
+(m_1 + \Delta m_{12}) \cdot u_2 - m_1 \cdot u_1 = \Delta m_{12} \cdot h_{12}
+\]  
+Rearranging:  
+\[
+\Delta m_{12} \cdot (u_2 - h_{12}) = m_1 \cdot u_1 - m_1 \cdot u_2
+\]  
+Solving for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = \frac{m_1 \cdot u_1 - m_1 \cdot u_2}{u_2 - h_{12}}
+\]  
+
+Final result:  
+\[
+\Delta m_{12} = 3756.43 \, \text{kg}
+\]  
+
+---
+
+TASK 1e  
+Entropy change:  
+\[
+\Delta S = m_2 \cdot s_2 - m_1 \cdot s_1
+\]  
+Substituting:  
+\[
+\Delta S = (m_1 + \Delta m_{12}) \cdot s_2 - m_1 \cdot s_1
+\]  
+
+Final result:  
+\[
+\Delta S_{12} = 1387.22 \, \frac{\text{kJ}}{\text{K}}
+\]  
+
+From Table A2:  
+\[
+s_2 = s_f(70^\circ\text{C}) = 0.954 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+s_1 = s_f(100^\circ\text{C}) + x_D \cdot (s_g(100^\circ\text{C}) - s_f(100^\circ\text{C}))
+\]  
+\[
+s_1 = 1.306 \, \frac{\text{kJ}}{\text{kg·K}} + 7.3749 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+s_1 = 1.33714 \, \frac{\text{kJ}}{\text{kg·K}}
+\]

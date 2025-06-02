@@ -1,0 +1,30 @@
+The energy balance equation is written as:  
+\[
+\frac{dE}{dt} = \sum_i \dot{m}_i \left( h_i(t) + \frac{v_i^2(t)}{2} + pz_i(t) \right) + \sum_j G_j - \sum_n \dot{W}_n
+\]  
+
+For steady-state operation, the equation simplifies to:  
+\[
+0 = \dot{m}_{\text{in}} (h_{\text{e}} - h_{\text{a}}) + G_2 - \dot{Q}_{\text{out}}
+\]  
+
+The heat flow removed by the coolant is calculated as:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} (h_{\text{e}} - h_{\text{a}}) + G_2
+\]  
+
+The enthalpy values are determined from the water tables:  
+\[
+h_{\text{e}} = h_f(70^\circ\text{C}) \quad \text{(from Table A-2)} \quad = 292.58 \, \text{kJ/kg}
+\]  
+\[
+h_{\text{a}} = h_f(100^\circ\text{C}) \quad \text{(from Table A-2)} \quad = 419.04 \, \text{kJ/kg}
+\]  
+
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \cdot (292.58 \, \text{kJ/kg} - 419.04 \, \text{kJ/kg}) + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = 62.182 \, \text{kW}
+\]

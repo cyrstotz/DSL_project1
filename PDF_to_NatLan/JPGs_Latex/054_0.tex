@@ -1,0 +1,66 @@
+TASK 1a  
+The steady-state flow process is described as follows:  
+
+\[
+Q_{\text{out}} = \dot{m} \left[ h_{\text{out}} - h_{\text{in}} \right] - \dot{Q}_R
+\]
+
+The enthalpy at the inlet temperature \( h_{\text{in}}(70^\circ\text{C}) \) is calculated using the steam quality \( x \) and the enthalpies of saturated liquid \( h_c \) and saturated vapor \( h_g \):  
+
+\[
+h_{\text{in}}(70^\circ\text{C}) = (1-x) h_c + x h_g
+\]
+
+Substituting values:  
+
+\[
+h_{\text{in}} = (1-0.005) \cdot 292.98 \, \frac{\text{kJ}}{\text{kg}} + 0.005 \cdot 2333.8 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_{\text{in}} = 292.68 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The enthalpy at the outlet temperature \( h_{\text{out}}(100^\circ\text{C}) \) is similarly calculated:  
+
+\[
+h_{\text{out}}(100^\circ\text{C}) = (1-x) h_c(100^\circ\text{C}) + x h_g(100^\circ\text{C})
+\]
+
+Substituting values:  
+
+\[
+h_{\text{out}} = (1-0.005) \cdot 428.23 \, \frac{\text{kJ}}{\text{kg}} + 0.005 \cdot 2500 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_{\text{out}} = 428.23 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The heat flow \( Q_{\text{out}} \) removed by the coolant is then calculated:  
+
+\[
+Q_{\text{out}} = 0.3 \cdot \left[ 428.23 - 292.68 \right] \, \frac{\text{kJ}}{\text{kg}} - 100 \, \text{kW}
+\]
+
+\[
+Q_{\text{out}} = 40.65 \, \text{kW} - 100 \, \text{kW}
+\]
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant \( T_{\text{KF}} \) is calculated as:  
+
+\[
+T_{\text{KF}} = \frac{T_{\text{KF,out}} + T_{\text{KF,in}}}{2}
+\]
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) is determined using the entropy balance:  
+
+\[
+0 = \dot{m} \left[ S_{\text{out}} - S_{\text{in}} \right] + \frac{\dot{Q}_R}{T_{\text{KF}}} + \dot{S}_{\text{gen}}
+\]
+
+TASK 1d  
+No content provided for this subtask.  
+

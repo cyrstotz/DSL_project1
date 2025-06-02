@@ -1,0 +1,73 @@
+The energy balance for the reactor is expressed as:  
+\[
+\frac{dE}{dt} = \sum \dot{m} h + \sum \dot{Q} - \sum \dot{W}
+\]  
+
+For the cooling process:  
+\[
+\Delta U = \Delta m_{12} h_{\text{en,12}} + Q_{R,12} - Q_{\text{out,12}}
+\]  
+Since \( Q_{R,12} = Q_{\text{out,12}} \):  
+\[
+\Delta U = \Delta m_{12} h_{\text{en,12}}
+\]  
+
+Rearranging for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = \frac{\Delta U}{h_{\text{en,12}}}
+\]  
+
+Expanding the equation:  
+\[
+\Delta m_{12} = \frac{(m_1 + \Delta m_{12}) h_2 - (m_1 h_1)}{h_{\text{en,12}}}
+\]  
+Simplifying further:  
+\[
+\Delta m_{12} = \frac{m_1 h_2 - m_1 h_1}{h_{\text{en,12}}}
+\]  
+
+Final expression:  
+\[
+\Delta m_{12} \left( 1 - \frac{1}{h_{\text{en,12}}} \right) = \frac{m_1}{h_{\text{en,12}}} (h_2 - h_1)
+\]  
+\[
+\Delta m_{12} = \frac{m_1 (h_2 - h_1)}{1 - h_{\text{en,12}}}
+\]
+
+The enthalpy \( h_1 \) is calculated as:  
+\[
+h_1 = h(100^\circ\text{C}, x = 0.005) = h_f(100^\circ\text{C}) + x \cdot \left(h_g(100^\circ\text{C}) - h_f(100^\circ\text{C})\right)
+\]  
+Using values from Table A-2:  
+\[
+h_1 \approx 430.3 \, \text{kJ/kg}
+\]  
+
+The enthalpy \( h_2 \) is calculated as:  
+\[
+h_2 = h(30^\circ\text{C}, x = 0) = h_f(30^\circ\text{C})
+\]  
+From Table A-2:  
+\[
+h_2 = 292.88 \, \text{kJ/kg}
+\]  
+
+The enthalpy \( h_{\text{in,12}} \) is calculated as:  
+\[
+h_{\text{in,12}} = h(20^\circ\text{C}, x = 0) = h_f(20^\circ\text{C})
+\]  
+From Table A-2:  
+\[
+h_{\text{in,12}} = 83.96 \, \text{kJ/kg}
+\]  
+
+The mass \( \Delta m_{12} \) is determined using the energy balance:  
+\[
+\Delta m_{12} = \frac{5755}{83.96} \cdot \frac{(292.88 - 430.3)}{(1 - 83.96)}
+\]  
+This simplifies to:  
+\[
+\Delta m_{12} \approx 109.5 \, \text{kg}
+\]  
+
+---

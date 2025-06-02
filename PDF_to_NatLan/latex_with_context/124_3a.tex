@@ -1,0 +1,31 @@
+The gas pressure \( p_{g,1} \) is calculated using the formula:  
+\[
+p_{g,1} = \frac{m_g}{A} + p_{\text{atm}}
+\]  
+where \( A = \pi \cdot D^2 / 4 \) and \( D = 0.1 \, \text{m} \). Substituting values:  
+\[
+A = \pi \cdot (0.1 \, \text{m})^2 / 4 = 7.85 \cdot 10^{-3} \, \text{m}^2
+\]  
+The pressure is then calculated as:  
+\[
+p_{g,1} = \frac{(m_{\text{EW}} + m_K) \cdot g}{A} + p_{\text{atm}}
+\]  
+Substituting \( m_{\text{EW}} = 0.7 \, \text{kg} \), \( m_K = 32 \, \text{kg} \), \( g = 9.87 \, \text{m/s}^2 \), \( p_{\text{atm}} = 70 \cdot 10^5 \, \text{Pa} \), and \( A = 7.85 \cdot 10^{-3} \, \text{m}^2 \):  
+\[
+p_{g,1} = \frac{(0.7 + 32) \cdot 9.87}{7.85 \cdot 10^{-3}} + 70 \cdot 10^5 = 7.7 \cdot 10^5 \, \text{Pa} = 7.7 \, \text{bar}
+\]  
+
+The gas mass \( m_g \) is calculated using the ideal gas law:  
+\[
+p \cdot V = m \cdot R \cdot T
+\]  
+Rearranging:  
+\[
+m_g = \frac{p_{g,1} \cdot V_{g,1} \cdot M_g}{R \cdot T}
+\]  
+Substituting \( R = 8.374 \, \text{kJ/kmol·K} \), \( M_g = 50 \, \text{kg/kmol} \), \( T = 773.75 \, \text{K} \), \( V_{g,1} = 3.79 \cdot 10^{-3} \, \text{m}^3 \), and \( p_{g,1} = 7.7 \cdot 10^5 \, \text{Pa} \):  
+\[
+m_g = \frac{7.7 \cdot 10^5 \cdot 3.79 \cdot 10^{-3} \cdot 50}{8.374 \cdot 773.75} = 28.40 \, \text{g}
+\]  
+
+---

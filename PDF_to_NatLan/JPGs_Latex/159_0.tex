@@ -1,0 +1,57 @@
+TASK 1a  
+The energy balance equation for the reactor is written as:  
+\[
+0 = \dot{m} \cdot (h_e - h_a) - \dot{Q}_{\text{out}}
+\]  
+Rearranging to solve for the heat flow removed by the coolant:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \cdot (h_e - h_a)
+\]  
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \cdot (232.99 \, \text{kJ/kg} - 419.94 \, \text{kJ/kg}) = -37.953 \, \text{kW}
+\]  
+
+TASK 1b  
+No content provided for this subtask.  
+
+TASK 1c  
+The entropy production rate is calculated using the following equation:  
+\[
+0 = \dot{S}_{\text{gen}} + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} - \frac{\dot{Q}_{\text{out}}}{T_{\text{Reactor},1}}
+\]  
+Rearranging to solve for \( \dot{S}_{\text{gen}} \):  
+\[
+\dot{S}_{\text{gen}} = \dot{Q}_{\text{out}} \cdot \left( \frac{1}{T_{\text{Reactor},1}} - \frac{1}{T_{\text{KF}}} \right)
+\]  
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = 65 \, \text{kW} \cdot \left( \frac{1}{373.15 \, \text{K}} - \frac{1}{295 \, \text{K}} \right) = -46.9463 \, \frac{\text{1}}{\text{K}}
+\]  
+
+TASK 1d  
+The energy balance for the reactor contents during cooling is expressed as:  
+\[
+\Delta E = m_2 \cdot u_2 - m_1 \cdot u_1 = \Delta m \cdot h_i - Q_{R,12}
+\]  
+Substituting values:  
+\[
+m_2 = m_1 + \Delta m
+\]  
+\[
+u_2 = h_f[100^\circ\text{C}] + x_D \cdot (u_g[100^\circ\text{C}] - u_f[100^\circ\text{C}]) \, \text{(in kJ/kg)}
+\]  
+\[
+h_i = h_f[20^\circ\text{C}]
+\]  
+\[
+Q_{R,12} = 35 \, \text{MJ}
+\]  
+Rearranging to solve for \( \Delta m \):  
+\[
+\Delta m = \frac{m_1 \cdot u_1 - m_2 \cdot u_2 + Q_{R,12}}{h_i - u_2}
+\]  
+Substituting all values yields:  
+\[
+\Delta m = 3636.85 \, \text{kg}
+\]

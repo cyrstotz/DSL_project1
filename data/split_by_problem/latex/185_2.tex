@@ -1,0 +1,223 @@
+
+``````latex
+
+
+\section*{2) Exergie am Flüssig Mischen}
+
+\subsection*{a) T-s Diagramm}
+
+\[
+\begin{array}{c}
+\text{T} [\text{K}] \\
+\uparrow \\
+\text{T}_0 \\
+\end{array}
+\]
+
+\noindent
+The diagram is a Temperature-Entropy (T-s) diagram with the y-axis labeled as \( T [\text{K}] \) and the x-axis labeled as \( S [\frac{\text{kJ}}{\text{kg K}}] \). The origin is marked as \( T_0 \) on the y-axis. 
+
+There are several curves and points marked on the diagram:
+- A curve labeled "isotherm" starting from the origin and moving upwards.
+- Another curve labeled "isotherm" starting from a point on the x-axis and moving upwards.
+- A curve labeled "isobar" starting from a point on the y-axis and moving to the right.
+- Points labeled 1, 2, 3, 4, 5, and 6 are marked on the diagram.
+- Point 1 is at the intersection of the first isotherm and the y-axis.
+- Point 2 is on the second isotherm.
+- Point 3 is on the isobar.
+- Point 4 is on the second isotherm.
+- Point 5 is on the isobar.
+- Point 6 is on the x-axis.
+
+The points are connected by lines indicating processes:
+- From point 1 to point 2, the process is labeled "isentrop".
+- From point 2 to point 3, the process is labeled "isotherm".
+- From point 3 to point 4, the process is labeled "isentrop".
+- From point 4 to point 5, the process is labeled "isotherm".
+- From point 5 to point 6, the process is labeled "isobar".
+
+There are also labels indicating pressures:
+- \( p_1 \)
+- \( p_2 = p_3 \)
+- \( p_0 \times 10^2 \)
+
+\[
+\begin{array}{c}
+\text{T} [\text{K}] \quad p [\text{bar}] \\
+1 \quad \text{isentrop} \quad \quad 242.10 \quad 0.151 \\
+2 \quad \text{isentrop} \quad \quad \\
+3 \quad \text{isobar} \quad \quad \\
+4 \quad \quad \quad \quad \\
+5 \quad \quad \quad \quad 431.9 \quad 0.5 \\
+6 \quad \quad \quad \quad 316.48 \quad 0.191 \\
+\end{array}
+\]
+
+\[
+\varphi = 1.006
+\]
+\[
+\mu = 1.4
+\]
+
+``````latex
+
+
+\section*{b) W6}
+
+\textbf{Energiebilanz um geschl. System}
+
+\[
+\begin{array}{c}
+\boxed{\text{wo}} \quad \boxed{\text{wi}} \\
+\boxed{\text{he}} \quad \boxed{\text{hc}}
+\end{array}
+\]
+
+\[
+w_0 = \dot{w}_{\text{heiz}} = 200 \frac{\text{J}}{\text{g}}
+\]
+
+\[
+0 = \dot{m} (h_0 - h_c + \left( \frac{w_{\text{u}}^2 - w_{\text{c}}^2}{2} \right) + \dot{q}^0 - \dot{w}^0
+\]
+
+\[
+h_0 - h_c = h(T_6 = 243.19) - h(T = T_c)
+\]
+
+\[
+1 \cdot c_p (T_6 - T_0) - 1.000 \cdot (314.4 - 243.19) = 71.9 \frac{\text{kJ}}{\text{kg}} \left( h_c - h_0 \right)
+\]
+
+\[
+\Rightarrow \text{find } T_c \text{ via Schubdüse 5-26}
+\]
+
+\[
+\left( \frac{T_6}{T_5} \right) = \left( \frac{P_0}{P_5} \right)^{\frac{k-1}{k}} \Rightarrow T_6 = T_5 \cdot \left( \frac{P_6}{P_5} \right)^{\frac{k-1}{k}}
+\]
+
+\[
+1 \cdot (314.4) \cdot \left( \frac{0.199}{0.5} \right)^{\frac{0.4}{0.4}} = 314.4 \text{ K} - T_c
+\]
+
+\textbf{mges finden mit $\dot{m}_{\text{heiz}} = 273 \dot{m}_{\text{heiz}}$}
+
+\[
+\dot{m}_{\text{heiz}} = 5.293
+\]
+
+\textbf{Energiebilanz am Brennkammer}
+
+\[
+0 - \dot{m} (h_2 - h_3) + \dot{q}^B
+\]
+
+\[
+\dot{m}^c = \frac{\dot{q}^B}{h_2 - h_3} = \frac{98}{1296.7} = 0.9215 \frac{\text{kg}}{\text{s}}
+\]
+
+\[
+\dot{m}_4 = 5.293 \dot{m}_c = 487.78 \frac{\text{kg}}{\text{s}}
+\]
+
+\[
+(h_2 - h_3) = c_p (T_2 - T_3) - c_p (T_3) = 1.000 \cdot 1289 \left( \frac{\text{kJ}}{\text{kg}} \right)
+\]
+
+\[
+= 1296.7 \left( \frac{\text{kJ}}{\text{kg}} \right)
+\]
+
+\[
+\dot{m}_{\text{net}} + \dot{m}_{\text{heiz}} + \dot{m}_{\text{m}} = 5.799 \frac{\text{kg}}{\text{s}} \approx 5.8 \frac{\text{kg}}{\text{s}}
+\]
+
+``````latex
+
+
+\textit{plug into Energieinlanz gesetzt}
+
+\begin{equation*}
+2\dot{m}(h_2 - h_0) = \dot{m}w_2^2 - 2\dot{m}(h_2 - h_0) = w_6^2
+\end{equation*}
+
+\begin{equation*}
+\dot{m} \frac{200^2 \frac{m^2}{s^2} + 2 \cdot 5.8 \cdot 7.9}{2}
+\end{equation*}
+
+\begin{equation*}
+w_6 = 202.67 \frac{m}{s}
+\end{equation*}
+
+\textit{m might be wrong}
+
+\textit{way too small!}
+
+\subsection*{c)}
+
+\begin{equation*}
+\dot{m}
+\end{equation*}
+
+\begin{equation*}
+\dot{E}_{x, \text{in}} = \dot{E}_{x, \text{stro}} - \dot{E}_{x, \text{stro}}
+\end{equation*}
+
+\textit{Exergieinlanz}
+
+\begin{equation*}
+\dot{E}_{x, \text{str}} = \dot{m} \left( h_2 - h_0 - T_0 (s_6 - s_0) + \frac{w_{\text{out}}^2 - w_6^2}{2} \right)
+\end{equation*}
+
+\begin{equation*}
+\dot{E}_{x, \text{str}} = h_2 - h_0 - T_0 (s_6 - s_0) + \frac{w_{\text{out}}^2 - w_6^2}{2}
+\end{equation*}
+
+\begin{equation*}
+= 79.9 - 243.15 (s_6 - s_0) + \frac{200^2 - 5.8^2}{2}
+\end{equation*}
+
+\begin{equation*}
+= 968.56 + \frac{200^2 - 5.8^2}{2}
+\end{equation*}
+
+\begin{equation*}
+s_6 - s_0 = s^0 (T_0) - s^0 (T_0) - R \ln \left( \frac{p_6}{p_0} \right)
+\end{equation*}
+
+\begin{equation*}
+= c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right)
+\end{equation*}
+
+\begin{equation*}
+= 1.0889 \cdot \ln \left( \frac{314.95}{243.1} \right) = 0.362 \frac{kJ}{kgK}
+\end{equation*}
+
+\begin{equation*}
+s_6 - s_0
+\end{equation*}
+
+\begin{equation*}
+\frac{c_p}{c_v} = n \Rightarrow c_p = 1.4 \cdot c_v = 1.4 \cdot 0.688 = 1.4084
+\end{equation*}
+
+\subsection*{d)}
+
+\begin{equation*}
+\dot{E}_{x, \text{verl}} = T_0 \cdot \dot{S}_{\text{zerst}}
+\end{equation*}
+
+\begin{equation*}
+\dot{S}_{\text{zerst}} = \dot{S}_{\text{verd}} + \dot{S}_{\text{brennkammer}} + \dot{S}_{\text{turbine}}
+\end{equation*}
+
+\begin{equation*}
+\dot{S}_{\text{im}} = \dot{m}_{\text{ges}} (s_2 - s_0) + \dot{m} (s_4 - s_3) + \frac{\dot{q}}{T_0}
+\end{equation*}
+
+\begin{equation*}
+\dot{S}_{\text{zerst}} = (s_1 - s```latex
+
+

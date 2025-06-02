@@ -1,0 +1,44 @@
+The exergy destruction is calculated using:  
+\[
+\dot{E}_{\text{ex,irr}} = T_0 \dot{S}_{\text{gen}}
+\]  
+Entropy generation \( \dot{S}_{\text{gen}} \) is expressed as:  
+\[
+\dot{S}_{\text{gen}} = \dot{S}_{\text{bypass}} + \dot{S}_{\text{turbine}}
+\]  
+For the bypass:  
+\[
+\dot{S}_{\text{bypass}} = \dot{m}_{\text{bypass}} (s_4 - s_3) + \dot{m}_K (s_4 - s_3) + \frac{\dot{Q}_B}{T_B}
+\]  
+Substituting values:  
+\[
+s_4 - s_3 = c_p \ln \frac{T_4}{T_3} - R \ln \frac{p_4}{p_3}
+\]  
+\[
+s_3 - s_2 = c_p \ln \frac{T_3}{T_2} - R \ln \frac{p_3}{p_2}
+\]
+
+The mass flow rate ratio between bypass and core streams is given as:  
+\[
+\frac{\dot{m}_M}{\dot{m}_K} = 5.293
+\]  
+
+The energy balance in the combustion chamber is analyzed:  
+\[
+0 = \dot{m}_K (h_2 - h_3) + \dot{Q}_B
+\]  
+\[
+h_2 - h_3 = c_p (T_2 - T_3) - c_p (T_B) = 1.006 \cdot (1289 - 1289) = 1296.7 \, \text{kJ/kg}
+\]  
+
+The total mass flow rate is calculated:  
+\[
+\dot{m}_\text{total} = \dot{m}_M + \dot{m}_K = 5.293 \dot{m}_K + \dot{m}_K = 5.293 \cdot 0.9215 + 0.9215 = 5.8 \, \text{kg/s}
+\]  
+
+Final total mass flow rate:  
+\[
+\dot{m}_\text{total} = 48778 \, \text{kg/s}
+\]  
+
+No diagrams or graphs are present on this page.

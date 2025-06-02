@@ -1,0 +1,53 @@
+The coolant is modeled as an ideal liquid. The specific heat capacity (\( c_p^{\text{KF}} \)) is constant and independent of temperature:  
+\[
+c_p^{\text{KF}} = c_p^{\text{KF}}(T) = \text{constant}
+\]  
+
+The temperature difference (\( \Delta T \)) is given as:  
+\[
+\Delta T = 10 \, \text{K}
+\]  
+
+The inlet enthalpy (\( h_{\text{in}} \)) is calculated as:  
+\[
+h_{\text{in}} = h_f + x_D \left( h_g - h_f \right) = 301.6491 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The mass flow rate (\( \dot{m} \)) is given as:  
+\[
+\dot{m} = 0.3 \, \frac{\text{kg}}{\text{s}}
+\]  
+
+The energy balance equation is applied:  
+\[
+0 = \dot{m} \left( h_{\text{in}} - h_{\text{aus}} \right) + \dot{Q}_R - \dot{Q}_{\text{aus}}
+\]  
+
+Rearranging for \( \dot{Q}_{\text{aus}} \):  
+\[
+\dot{Q}_{\text{aus}} = \dot{m} \left( h_{\text{in}} - h_{\text{aus}} \right) + \dot{Q}_R
+\]  
+
+Substituting values:  
+\[
+\dot{Q}_{\text{aus}} = 62.256 \, \text{kW}
+\]  
+
+This concludes the calculation for the heat flow removed by the coolant.
+
+The thermodynamic mean temperature \( \bar{T} \) is calculated using the integral expression:  
+\[
+\bar{T} = \frac{\int_a^b T \, ds}{s_a - s_e}
+\]  
+
+The entropy difference \( s_a - s_e \) is determined as:  
+\[
+s_a - s_e = \int_{T_1}^{T_2} c_{p} \frac{1}{T} \, dT = c_{p} \ln \left( \frac{T_2}{T_1} \right)
+\]  
+
+Given \( c_{p} \cdot \dot{m} \cdot \Delta T = 21.66 \, \text{kJ/K} \), the mean temperature is further expressed as:  
+\[
+\bar{T} = \frac{\int_a^b T \, ds}{s_a - s_e} \left( \frac{T_2 - T_1}{s_a - s_e} \right) + T_1 = 254.514 \, \text{K}
+\]  
+
+---

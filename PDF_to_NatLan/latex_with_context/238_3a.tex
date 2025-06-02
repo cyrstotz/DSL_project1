@@ -1,0 +1,37 @@
+The gas pressure \( p_{g,1} \) is calculated as the sum of the ambient pressure \( p_{\text{amb}} \) and the pressure exerted by the piston \( \frac{F_g}{A} \):  
+\[
+p_{g,1} = p_{\text{amb}} + \frac{F_g}{A}
+\]  
+The force exerted by the piston is given as:  
+\[
+F_g = 32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2 = 313.92 \, \text{N}
+\]  
+The cross-sectional area of the cylinder is calculated using the diameter \( D = 10 \, \text{cm} \):  
+\[
+A = \pi \left( \frac{D}{2} \right)^2 = \pi \left( \frac{0.1 \, \text{m}}{2} \right)^2 = 0.007853982 \, \text{m}^2
+\]  
+Substituting these values:  
+\[
+p_{g,1} = 1 \, \text{bar} = 10^5 \, \text{Pa} + \frac{313.92 \, \text{N}}{0.007853982 \, \text{m}^2} = 10^5 \, \text{Pa} + 39963.59 \, \text{Pa} = 1.4 \, \text{bar}
+\]  
+
+To determine the mass of the gas \( m_g \), the ideal gas law is applied:  
+\[
+m_g = \frac{p_{g,1} V_{g,1}}{R T_{g,1}}
+\]  
+Given:  
+\[
+p_{g,1} = 1.4 \, \text{bar}, \, V_{g,1} = 3.14 \cdot 10^{-3} \, \text{m}^3, \, T_{g,1} = 773.15 \, \text{K}
+\]  
+The specific gas constant \( R \) is calculated as:  
+\[
+R = \frac{R_{\text{univ}}}{M_g} = \frac{8.314 \, \text{J/mol·K}}{50 \, \text{kg/kmol}} = 0.16625 \, \text{J/g·K}
+\]  
+Substituting into the ideal gas law:  
+\[
+m_g = \frac{1.4 \, \text{bar} \cdot 3.14 \cdot 10^{-3} \, \text{m}^3}{0.16625 \, \text{J/g·K} \cdot 773.15 \, \text{K}} = 0.00342 \, \text{kg}
+\]  
+Thus, the mass of the gas is:  
+\[
+m_g = 3.42 \, \text{g}
+\]

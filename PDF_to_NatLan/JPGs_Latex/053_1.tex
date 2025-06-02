@@ -1,0 +1,75 @@
+TASK 1d  
+The energy balance equation is written as:  
+\[
+m_2 u_2 - m_1 u_1 = \Delta m_{12} h_{20} + Q_{\text{out},12} - \dot{Q}_{\text{in}}
+\]  
+Some terms are crossed out and ignored in the calculation.
+
+The mass \( m_2 \) is expressed as:  
+\[
+m_2 = m_1 + \Delta m_{12}
+\]  
+
+The specific enthalpy values are provided:  
+\[
+h_{20} = h_f(20^\circ\text{C}) = 83.86 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_2 = u_f(70^\circ\text{C}) = 292.55 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_1 = u_f(100^\circ\text{C}) + x_D \left( u_g(100^\circ\text{C}) - u_f(100^\circ\text{C}) \right) = 425.3378 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The reactor mass is given as:  
+\[
+m_1 = 5755 \, \text{kg}
+\]  
+
+Rearranging the energy balance equation:  
+\[
+\frac{u_2 m_1 - m_1 u_1}{h_{20} - u_2} = \Delta m_{12}
+\]  
+Substituting values:  
+\[
+\Delta m_{12} = 3756.844 \, \text{kg}
+\]  
+
+---
+
+TASK 1e  
+The entropy balance equation is written as:  
+\[
+m_2 s_2 - m_1 s_1 = \Delta m_{12} s_{20} + \frac{Q_{\text{abs}}}{T_{\text{in}}} - \frac{Q_{\text{abs}}}{T_{\text{out}}} + S_{\text{gen}}
+\]  
+
+The specific entropy values are provided:  
+\[
+s_2 = s_f(70^\circ\text{C}) = 0.9549 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+s_1 = s_f(100^\circ\text{C}) + x_D \left( s_g(100^\circ\text{C}) - s_f(100^\circ\text{C}) \right) = 1.33714 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+s_{20} = s_f(20^\circ\text{C}) = 0.296 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+The mean temperature \( T_{\text{in}} \) is calculated as:  
+\[
+T_{\text{in}} = \frac{Q_{\text{rev}}}{S_2 - S_n} = \frac{Q_{\text{abs}}}{S_2 - S_n}
+\]  
+Substituting values:  
+\[
+T_{\text{in}} = \frac{35450000 \, \text{J}}{(0.954 - 1.33714) \, \frac{\text{kJ}}{\text{kg·K}}} = \dots
+\]  
+
+The outlet temperature \( T_{\text{out}} \) is given as:  
+\[
+T_{\text{out}} = 285 \, \text{K} \, \text{(from part b)}
+\]  
+
+The entropy generation \( S_{\text{gen}} \) is expressed as:  
+\[
+S_{\text{gen}} = m_1 s_1 - m_2 s_2 - \Delta m_{12} s_{20} - \frac{Q_{\text{abs}}}{T_{\text{in}}} + \frac{Q_{\text{abs}}}{T_{\text{out}}}
+\]  
+

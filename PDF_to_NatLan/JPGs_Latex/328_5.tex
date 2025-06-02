@@ -1,0 +1,73 @@
+TASK 4a  
+A graph is drawn representing the freeze-drying process in a \( T \)-\( \text{in} \) diagram. The graph shows four states labeled 1, 2, 3, and 4. The curve starts at state 1, rises to state 2, then peaks at state 3, and finally descends to state 4. The axes are labeled \( T \) (temperature) and \( T_{\text{in}} \) (input temperature).  
+
+TASK 4b  
+The initial temperature \( T_i \) is given as \( -26^\circ\text{C} \). The temperature difference is calculated as \( T_1 - T_2 = -32^\circ\text{C} \).  
+
+A table is provided with the following columns: \( T \), \( P \), \( V \times Q \), and \( W \). The rows correspond to states 1, 2, 3, and 4:  
+- State 1: \( T_i - 6 \), \( P \)  
+- State 2: \( T_i - 6 \), \( P \)  
+- State 3: \( 8 \), \( P \)  
+- State 4: \( 8 \), \( 0 \)  
+
+The heat transfer \( Q_{\text{23}} \) is noted as \( 28 \, W \).  
+
+TASK 4c  
+An energy balance equation is written:  
+\[
+Q = \dot{m} \left[ h_c - h_a + \frac{1}{2} (\text{PE}) + \sum \Delta \right] - \sum W
+\]  
+The mass flow rate \( \dot{m} \) is calculated as:  
+\[
+\dot{m} = \frac{-28W}{h_2 - h_3}
+\]  
+Substituting values:  
+\[
+\dot{m} = \frac{-28W}{227.9 - 276.27}
+\]  
+\[
+\dot{m} = -0.579 \, \text{kg/s}
+\]  
+\[
+\dot{m} = 2033.9 \, \text{kg/h}
+\]  
+
+Interpolation is performed using Table A-12:  
+\[
+h_3 = 0.9456 - 0.9374
+\]  
+\[
+h_3 = \frac{h(s=0.9711, 8 \, \text{bar}) - h(0.9374, 8 \, \text{bar})}{0.9711 - 0.9374}
+\]  
+Result:  
+\[
+h_3 = 276.27
+\]  
+
+Additional calculations include:  
+\[
+h_2 = h_f(T=-32^\circ\text{C}) = 9.52
+\]  
+\[
+h_g(T=-32^\circ\text{C}) = 227.90
+\]  
+\[
+h_2 = h_f(p=8 \, \text{bar}) = 204.15 \, \text{kJ/kg}
+\]  
+
+Entropy calculations:  
+\[
+s_2 = s_f(T=-32^\circ\text{C}) = 0.9066
+\]  
+For adiabatic and reversible processes:  
+\[
+s_2 = s_3
+\]  
+\[
+s_3 = s_f(T=-32^\circ\text{C}) = 0.9401
+\]  
+\[
+s_3 = s_g(T=-32^\circ\text{C}) = 0.9456
+\]  
+
+No further content is visible.

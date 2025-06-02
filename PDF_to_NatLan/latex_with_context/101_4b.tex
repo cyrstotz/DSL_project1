@@ -1,0 +1,72 @@
+The task involves determining the required refrigerant mass flow rate \( \dot{m}_{\text{R134a}} \) for the compressor in the refrigeration cycle.
+
+The first law of thermodynamics is applied:  
+\[
+0 = \dot{m}(h_e - h_a) + \dot{Q}^o - \dot{W}_k
+\]  
+Here, \( \dot{Q}^o \) is crossed out, indicating it is neglected.
+
+The entropy at state 2 is equal to the entropy at state 3:  
+\[
+s_2 = s_3
+\]
+
+The temperature \( T_z \) is calculated as:  
+\[
+T_z = T_i - 6 \, \text{K}
+\]  
+Given \( T_i = 273.15 \, \text{K} + 10 \, \text{K} = 283.15 \, \text{K} \),  
+\[
+T_z = 277.15 \, \text{K}
+\]
+
+The work done by the compressor is expressed as:  
+\[
+\dot{W}_k = \dot{m}_{\text{R134a}} (h_2 - h_3)
+\]
+
+At state 2, \( h_2(T = 277.15 \, \text{K}) \) is determined as gas-phase saturated. Using Table A-10:  
+\[
+h_{2g}(4^\circ\text{C}) = 249.53 \, \frac{\text{kJ}}{\text{kg}}, \quad s_{2g} = 0.9169 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+At state 3, \( h_3(8 \, \text{bar}, s_2) \) is calculated. The refrigerant is in the wet steam region. Using Table A-11:  
+\[
+s_3 = s_f(8 \, \text{bar}) + x \cdot (s_g(8 \, \text{bar}) - s_f(8 \, \text{bar}))
+\]  
+Where:  
+\[
+s_f = 0.345 \, \frac{\text{kJ}}{\text{kg·K}}, \quad s_g = 0.9006 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+The vapor quality \( x \) is calculated as:  
+\[
+x = 0.29999
+\]
+
+Using Table A-11 for enthalpy at state 3:  
+\[
+h_3(8 \, \text{bar}) = h_f(8 \, \text{bar}) + x \cdot (h_g(8 \, \text{bar}) - h_f(8 \, \text{bar}))
+\]  
+Where:  
+\[
+h_f = 93.42 \, \frac{\text{kJ}}{\text{kg}}, \quad h_g = 264.15 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_3 = 144.637 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The work done by the compressor is recalculated as:  
+\[
+\dot{W}_k = \dot{m}_{\text{R134a}} (h_2 - h_3)
+\]  
+\[
+\dot{W}_k = \frac{28 \cdot 10^{-3} \, \frac{\text{kJ}}{\text{s}}}{h_2 - h_3 \, \frac{\text{kJ}}{\text{kg}}}
+\]  
+Substituting values:  
+\[
+\dot{m}_{\text{R134a}} = 4.9067 \cdot 10^{-4} \, \frac{\text{kg}}{\text{s}}
+\]  
+This value is crossed out and recalculated as:  
+\[
+\dot{m}_{\text{R134a}} = 2.669 \cdot 10^{-4} \, \frac{\text{kg}}{\text{s}}
+\]

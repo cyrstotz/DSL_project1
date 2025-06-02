@@ -1,0 +1,30 @@
+The entropy destruction (\( \Delta ex_{\text{str}} \)) is calculated using the following equation:  
+\[
+\Delta ex_{\text{str}} = \dot{m}(h_e - h_s - T_0(s_e - s_s) + \frac{w_e^2 - w_s^2}{2})
+\]  
+where \( T_0 = 243.15 \, \text{K} \).  
+
+The enthalpy difference (\( h_e - h_s \)) is expressed as:  
+\[
+h_e - h_s = \int c_p \, dT = 1.006 \cdot (328.07 + \dots)  
+\]  
+
+The entropy difference (\( s_e - s_s \)) is calculated as:  
+\[
+s_e - s_s = \int \frac{c_p}{T} \, dT - R \ln \left( \frac{p_0}{p_e} \right)  
+\]  
+Substituting values:  
+\[
+s_e - s_s = 1.006 \ln \left( \frac{328.07}{243.15} \right) - 1.725 \ln \left( \frac{p_0}{p_e} \right)  
+\]  
+\[
+s_e - s_s = 0.301 \, \text{kJ/kg·K}  
+\]  
+
+The final entropy destruction is calculated as:  
+\[
+\Delta ex_{\text{str}} = m_{\text{ges}} \left( 85.43 \, \text{kJ/kg} - 243.15 \cdot 0.301 \, \text{kJ/kg·K} \right)  
+\]  
+\[
+\Delta ex_{\text{str}} = m_{\text{ges}} \cdot 24659.122 \, \text{kJ/kg}  
+\]

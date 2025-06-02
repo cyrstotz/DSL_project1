@@ -1,0 +1,55 @@
+TASK 1c  
+The entropy generation rate for the reactor is calculated using the following equation:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \left( s_{\text{out}} - s_{\text{in}} \right) + \frac{\dot{Q}_{\text{KF}}}{T_{\text{KF}}} + \frac{\dot{Q}_R}{T_R}
+\]  
+Where:  
+- \( s_{\text{out}} \) and \( s_{\text{in}} \) are the specific entropy values at the outlet and inlet, respectively.  
+- \( \dot{Q}_{\text{KF}} \) is the heat flow to the cooling jacket, and \( T_{\text{KF}} = 373.15 \, \text{K} \).  
+- \( \dot{Q}_R \) is the reaction heat flow, and \( T_R = 100^\circ\text{C} \).  
+
+The entropy values are obtained from the water tables:  
+\[
+s_{\text{out}} = 1.3069 \, \frac{\text{kJ}}{\text{kg·K}}, \quad s_{\text{in}} = 0.9509 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Substituting these values:  
+\[
+\dot{S}_{\text{gen}} = 26.9 \, \frac{\text{kW}}{\text{K}}
+\]  
+
+TASK 1d  
+The energy balance for cooling the reactor from state 1 to state 2 is given by:  
+\[
+\Delta U = \Delta m \, h_{\text{in,12}} + 35 \, \text{MJ}
+\]  
+
+Where:  
+- \( \Delta U = m_{\text{total}} \left( u_2 - u_1 \right) \)  
+- \( u_2 \) and \( u_1 \) are the specific internal energy values at states 2 and 1, respectively.  
+- \( h_{\text{in,12}} \) is the specific enthalpy of the added water.  
+
+From the water tables:  
+\[
+u_2 = 203.82 \, \frac{\text{kJ}}{\text{kg}}, \quad u_1 = 929.88 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Substituting these values:  
+\[
+-693.8 \, \text{MJ} = \Delta m \, h_{\text{in,12}} + 35 \, \text{MJ}
+\]  
+
+The enthalpy of the added water is:  
+\[
+h_{\text{in,12}} = 29.59 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Rearranging to solve for \( \Delta m \):  
+\[
+\Delta m = \frac{-728.8 \, \text{MJ}}{29.59 \, \frac{\text{kJ}}{\text{kg}}} = 296.99 \, \text{kg}
+\]  
+
+Thus, the mass of saturated liquid water added is:  
+\[
+\Delta m = 296.99 \, \text{kg}
+\]

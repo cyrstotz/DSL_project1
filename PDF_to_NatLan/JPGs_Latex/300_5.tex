@@ -1,0 +1,101 @@
+TASK 3a  
+The cross-sectional area of the cylinder is calculated using the formula for the area of a circle:  
+\[
+A = \pi r^2 = \pi \frac{d^2}{4} = 7.85 \cdot 10^{-3} \, \text{m}^3
+\]  
+
+The gas pressure in state 1 is determined using the equation:  
+\[
+p_{g,1} A = m_{\text{EW}} g + 32 g + p_{\text{amb}} A
+\]  
+Rearranging:  
+\[
+p_{g,1} = \frac{m_{\text{EW}} g}{A} + \frac{32 g}{A} + p_{\text{amb}}
+\]  
+Substituting values:  
+\[
+p_{g,1} = 9.4 \, \text{bar}
+\]  
+
+Using the ideal gas law:  
+\[
+R = \frac{R_u}{M} = 0.16622 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+p_{g,1} V_{g,1} = R T_1
+\]  
+Rearranging for \( V_{g,1} \):  
+\[
+V_{g,1} = \frac{R T_1}{p_{g,1}} = 0.918 \, \frac{\text{m}^3}{\text{kg}}
+\]  
+
+The gas mass is calculated as:  
+\[
+m_g = \frac{V_{g,1}}{v_{g,1}} = 3.42 \cdot 10^{-3} \, \text{kg} = 3.42 \, \text{g}
+\]  
+
+The volume of the gas in state 1 is:  
+\[
+V_{g,1} = 3.14 \, \text{L}
+\]  
+
+---
+
+TASK 3b  
+If thermodynamic equilibrium exists and there is still ice in the EW mixture, the temperature must remain at \( 0^\circ \text{C} \).  
+\[
+T_{g,2} = 0^\circ \text{C}
+\]  
+
+The gas pressure in state 2 remains the same as in state 1:  
+\[
+p_{g,2} = p_{g,1} = 9.4 \, \text{bar}
+\]  
+This is because the same weight is exerted from above.
+
+---
+
+TASK 3c  
+The energy balance is given as:  
+\[
+(u_{g,2} - u_{g,1}) m_g = Q_{12} - W_v
+\]  
+
+The work done by the gas is calculated as:  
+\[
+W_v = \int p \, dv \quad \text{(isobaric process)}
+\]  
+\[
+W_v = m_g p (v_2 - v_1)
+\]  
+Substituting values:  
+\[
+v_2 = \frac{R T_2}{p_2} = 0.324 \, \frac{\text{m}^3}{\text{kg}}
+\]  
+\[
+v_1 = 0.918 \, \frac{\text{m}^3}{\text{kg}}
+\]  
+\[
+p_2 = 9.4 \, \text{bar}, \quad m_g = 3.42 \, \text{g}
+\]  
+\[
+W_v = -284.41 \, \text{J}
+\]  
+
+The change in internal energy is:  
+\[
+u_{g,2} - u_{g,1} = c_V (T_2 - T_1) = -376.5 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The heat transferred is:  
+\[
+Q_{12} = m_g (u_{g,2} - u_{g,1}) + W_v
+\]  
+\[
+Q_{12} = -7.368 \, \text{kJ}
+\]  
+
+Final result:  
+\[
+|Q_{12}| = 7.368 \, \text{kJ}
+\]  

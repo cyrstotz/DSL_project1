@@ -1,0 +1,149 @@
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+\subsection*{a)}
+\[
+Q = \dot{m}_{\text{w}} (h_{\text{ein}} - h_{\text{aus}}) + Q_{\text{aus}}
+\]
+\[
+Q_{\text{aus}} = \dot{m}_{\text{w}} (h_{\text{aus}} - h_{\text{ein}})
+\]
+\[
+= \dot{m}_{\text{w}} \left[ c (T_{\text{aus}} - T_{\text{ein}}) + v_i^2 (p_{\text{aus}} - p_{\text{ein}}) \right]
+\]
+
+\subsection*{b)}
+\[
+T = \int_{s_a}^{s_e} T \, ds = \frac{q_{\text{rev}}}{s_i - s_e} = \frac{h_{\text{aus}} - h_{\text{ein}}}{s_{\text{aus}} - s_{\text{ein}}} = \frac{f (T_{\text{aus}} - T_{\text{ein}}) + v_i^2 (p_{\text{aus}} - p_{\text{ein}})}{s_i \ln \left( \frac{T_{\text{aus}}}{T_{\text{ein}}} \right)}
+\]
+\[
+= \frac{T_{\text{aus}} - T_{\text{ein}}}{\ln \left( \frac{T_{\text{aus}}}{T_{\text{ein}}} \right)} = \frac{298.15 \, \text{K} - 288.15 \, \text{K}}{\ln \left( \frac{298.15 \, \text{K}}{288.15 \, \text{K}} \right)}
+\]
+\[
+= 293.12 \, \text{K}
+\]
+
+\subsection*{c)}
+\textbf{Verbal description of the diagram:}
+
+The diagram consists of a horizontal arrow pointing to the right, labeled "Energieblance". Above the arrow, there is a label "Q_{\text{aus}}". Below the arrow, there is a label "T_{\text{KF}}". To the right of the arrow, there is a circle labeled "Q_{\text{aus}}". From this circle, there are two arrows pointing to the right. The upper arrow is labeled "Serz" and the lower arrow is labeled "Q_{\text{aus}}". The upper arrow points to a label "T_{\text{Reaktor, a}}" and the lower arrow points to a label "T_{\text{Reaktor, n}}".
+
+\[
+Q = \dot{m}_{\text{w}} (h_{\text{ein}} - h_{\text{aus}}) + Q_{\text{aus}}
+\]
+\[
+Q_{\text{aus}} = \dot{m}_{\text{w}} (h_{\text{aus}} - h_{\text{ein}})
+\]
+\[
+= \dot{m}_{\text{w}} \left[ c (T_{\text{aus}} - T_{\text{ein}}) + v_i^2 (p_{\text{aus}} - p_{\text{ein}}) \right]
+\]
+
+\[
+\text{Serz} = \frac{Q_{\text{aus}}}{T_{\text{KF}}} + \frac{Q_{\text{R}}}{T_{\text{Reaktor, a}}}
+\]
+\[
+= \frac{Q_{\text{aus}}}{T_{\text{KF}}} + \frac{Q_{\text{R}}}{T_{\text{Reaktor, n}}}
+\]
+\[
+= \frac{63 \, \text{kW}}{293 \, \text{K}} + \frac{100 \, \text{kW}}{373.15 \, \text{K}}
+\]
+\[
+= 47.64 \, \frac{\text{W}}{\text{K}}
+\]
+
+``````latex
+
+
+\section*{d)}
+
+\begin{equation*}
+\frac{dE}{dt} = \sum_i \dot{m}_i \left[ h_i + \frac{c_i^2}{2} + \frac{g z_i}{2} \right] - \dot{Q} - \dot{W}^o
+\end{equation*}
+
+\begin{equation*}
+\Delta U = \Delta m_{12} h_{ein} + \dot{Q}
+\end{equation*}
+
+\begin{equation*}
+m_2 u_2 - m_1 u_1 = \Delta m_{12} h_{ein} + \dot{Q} \quad \text{with} \quad m_2 = m_1 + \Delta m_{12}
+\end{equation*}
+
+\begin{equation*}
+(m_1 + \Delta m_{12}) u_2 - m_1 u_1 = \Delta m_{12} h_{ein} + \dot{Q}
+\end{equation*}
+
+\begin{equation*}
+- \dot{Q} + m_1 u_2 - m_1 u_1 = \Delta m_{12} h_{ein} - m_1 u_2 - \Delta m_{12} u_2
+\end{equation*}
+
+\begin{equation*}
+- \dot{Q} + m_1 (u_2 - u_1) = \Delta m_{12} h_{ein} - \Delta m_{12} u_2
+\end{equation*}
+
+\begin{equation*}
+- \dot{Q} + m_1 (u_2 - u_1) = \Delta m_{12} (h_{ein} - u_2)
+\end{equation*}
+
+\begin{equation*}
+\Rightarrow \Delta m_{12} = \frac{m_1 (u_2 - u_1) - \dot{Q}}{h_{ein} - u_2}
+\end{equation*}
+
+\subsection*{siedende Flüssigkeit: $\lambda = 0.5$}
+
+\begin{equation*}
+h_{ein} = 83.96 + 0.5 (2538.1 - 83.96) = 1311.03 \frac{kJ}{kg} \quad \text{(TAB-A-2)}
+\end{equation*}
+
+\begin{equation*}
+u_1 = 418.94 + 0.005 (2506.5 - 418.94) = 429.3778 \frac{kJ}{kg} \quad \text{(TAB-A-2)}
+\end{equation*}
+
+\begin{equation*}
+u_2 = 292.35 + 0.5 (2463.6 - 292.35) = 1381.275 \frac{kJ}{kg} \quad \text{(TAB-A-2)}
+\end{equation*}
+
+\begin{equation*}
+\Delta m_{12} = \frac{5755 kg (1381.275 \frac{kJ}{kg} - 429.3778 \frac{kJ}{kg}) + 35 \frac{kJ}{s}}{1311.03 \frac{kJ}{kg} - 1381.275 \frac{kJ}{kg}}
+\end{equation*}
+
+``````latex
+
+
+\section*{Problem 2}
+
+\subsection*{e) Entropiebilanz}
+
+\[
+\frac{dS}{dt} = \dot{m}_{ein} s_{ein} - \frac{\dot{Q}_{zu}}{T_j} + S_{erz}(t)
+\]
+
+\[
+\Delta S = m_2 s_2 - m_1 s_1
+\]
+
+\[
+m_2 = m_1 + \dot{m}_{12} = 5755 \, \text{kg} + 3600 \, \text{kg} = 9355 \, \text{kg}
+\]
+
+\[
+s_2 = 0.8549 + 0.5 (7.7553 - 0.8549) = 4.3551 \, \frac{\text{kJ}}{\text{kg K}}
+\]
+
+\[
+s_1 = 1.3069 + 0.005 (7.3549 - 1.3069) = 1.33714 \, \frac{\text{kJ}}{\text{kg K}}
+\]
+
+\[
+\Delta S_{12} = 9355 \, \text{kg} \cdot 4.3551 \, \frac{\text{kJ}}{\text{kg K}} - 5755 \, \text{kg} \cdot 1.33714 \, \frac{\text{kJ}}{\text{kg K}}
+\]
+
+\[
+= 33046.7 \, \frac{\text{kJ}}{\text{K}} = 33.05 \, \frac{\text{MJ}}{\text{K}}
+\]
+
+``````latex
+
+

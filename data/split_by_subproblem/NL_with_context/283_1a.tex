@@ -1,0 +1,32 @@
+Energy balance around the reactor (steady-state):  
+
+0 = \( \dot{Q}_R - \dot{Q}_{out} + \dot{m}_{in} (h_e - h_a) \)  
+
+Rearranging:  
+\( \dot{Q}_{out} = \dot{Q}_R + \dot{m}_{in} (h_e - h_a) \)  
+
+For \( h_e \):  
+\( h_e = h_f(70^\circ C) + x_D(h_g(70^\circ C) - h_f(70^\circ C)) \)  
+
+From Table A-2:  
+\( h_f(70^\circ C) = 292.98 \, \text{kJ/kg} \)  
+\( h_g(70^\circ C) = 2626.8 \, \text{kJ/kg} \)  
+
+Substituting:  
+\( h_e = 292.98 + 0.005(2626.8 - 292.98) \, \text{kJ/kg} \)  
+\( h_e = 304.65 \, \text{kJ/kg} \)  
+
+Similarly for \( h_a \):  
+\( h_a = h_f(100^\circ C) + x_D(h_g(100^\circ C) - h_f(100^\circ C)) \)  
+
+From Table A-2:  
+\( h_f(100^\circ C) = 419.04 \, \text{kJ/kg} \)  
+\( h_g(100^\circ C) = 2676.1 \, \text{kJ/kg} \)  
+
+Substituting:  
+\( h_a = 419.04 + 0.005(2676.1 - 419.04) \, \text{kJ/kg} \)  
+\( h_a = 430.325 \, \text{kJ/kg} \)
+
+Substitute into \( \dot{Q}_{out} = \dot{Q}_R + \dot{m}_{in} (h_e - h_a) \):  
+= 100 kilojoules per second + 0.3 kilograms per second times (304.65 minus 930.325) kilojoules per kilogram  
+= 62.3 kilojoules per second = \( \dot{Q}_{out} \)

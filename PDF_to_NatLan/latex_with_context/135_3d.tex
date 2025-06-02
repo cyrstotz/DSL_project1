@@ -1,0 +1,46 @@
+The heat transferred \( Q_{12} = 2500 \, \text{J} \).  
+The temperature difference remains \( T_{W2} = T_{g2} = 0.003^\circ \text{C} \).  
+
+The energy balance equation is:  
+\[
+\frac{dE}{dt} = Q - W = \Delta U_w
+\]  
+
+The detailed energy equation is:  
+\[
+\frac{dE}{dt} = S \cdot \Delta U_w^0 = \Delta h_w + \Delta U_g = 0
+\]  
+
+The heat transfer equation is expanded as:  
+\[
+m_w (u_2 - u_1) + m_g \cdot c_v \cdot (T_2 - T_1) = Q
+\]  
+
+The specific internal energy \( u_2 \) is calculated as:  
+\[
+u_2 = u_1 + \frac{Q_{12}}{m_w} \cdot c_v \cdot \frac{T_2}{T_1}
+\]  
+
+The specific internal energy \( u_1 \) is expressed as:  
+\[
+u_1 = u_{\text{flüssig}} + x_{E,1} \cdot (h_{\text{fest}} - u_{\text{flüssig}})
+\]  
+Substituting values:  
+\[
+u_1 = -0.033 + 0.6 \cdot (-333.442 + 0.045) = -200.09 \, \text{kJ/kg}
+\]  
+
+The specific internal energy \( u_2 \) is:  
+\[
+u_2 = -200.09 \, \text{kJ/kg} + \frac{7.5 \, \text{kJ}}{0.1 \, \text{kg}} = -185.09 \, \text{kJ/kg}
+\]  
+
+The ice fraction \( x_2 \) is calculated as:  
+\[
+x_2 = \frac{u_2 - u_{\text{flüssig},2}}{u_{\text{fest},2} - u_{\text{flüssig},2}} = 0.555
+\]  
+
+Values used:  
+\[
+u_{\text{flüssig}} = -0.033, \quad u_{\text{fest}} = -333.442
+\]

@@ -1,0 +1,68 @@
+TASK 2a  
+The page begins with a graph labeled as a \( T \)-\( s \) diagram. The diagram qualitatively represents the thermodynamic process of a jet engine. The axes are labeled:  
+- The vertical axis is \( T \) (temperature) in Kelvin.  
+- The horizontal axis is \( s \) (specific entropy) in \( \frac{\text{kJ}}{\text{kg·K}} \).  
+
+The process includes the following states:  
+- State \( 0 \): Ambient conditions, \( p = p_0 \).  
+- State \( 1 \): Compression to \( p = p_1 \).  
+- State \( 2 \): Further compression to \( p = p_2 \).  
+- State \( 3 \): Combustion at constant pressure \( p = p_2 \).  
+- State \( 4 \): Expansion through the turbine, \( p' = p_4 \).  
+- State \( 5 \): Mixing chamber, \( p = p_5 \).  
+- State \( 6 \): Nozzle exit, \( p = p_0 \).  
+
+Dashed lines represent isobars for \( p_0 \), \( p_1 \), \( p_2 \), \( p_4 \), and \( p_5 \). The process paths are curved, indicating changes in entropy and temperature during compression, combustion, and expansion.  
+
+---
+
+TASK 2b  
+The energy balance for the entire turbine is written as:  
+\[
+0 = \dot{m} (h_e - h_a) - \dot{W}_{\text{turbine}} - \dot{W}_b
+\]  
+This equation is partially crossed out and not fully legible.  
+
+The energy balance for the nozzle is written as:  
+\[
+0 = \dot{m} (h_5 - h_6 + \frac{w_5^2 - w_6^2}{2}) + \dot{Q} \quad \text{(adiabatic, isobaric)}
+\]  
+
+Further, the entropy balance for the nozzle is given as:  
+\[
+0 = \dot{m} (s_5 - s_6) + \frac{\dot{Q}}{T}
+\]  
+This equation is labeled as "adiabatic reversible."  
+
+The entropy change is calculated as:  
+\[
+s_5 - s_6 = c_p \ln \left( \frac{T_5}{T_6} \right) - R \ln \left( \frac{p_5}{p_6} \right) = 0
+\]  
+
+The temperature \( T_6 \) is determined as:  
+\[
+T_6 = 328.675 \, \text{K}
+\]  
+
+The enthalpy difference \( h_5 - h_6 \) is calculated using:  
+\[
+h_5 - h_6 = c_p (T_5 - T_6) = 109.998 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The outlet velocity \( w_6 \) is calculated as:  
+\[
+w_6 = \sqrt{2 (h_5 - h_6) + w_5^2} = 507.29 \, \frac{\text{m}}{\text{s}}
+\]  
+
+---
+
+TASK 2c  
+The specific heat capacities are provided:  
+\[
+c_v = \frac{c_p}{\kappa} = 0.7185 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+R = c_p - c_v = 0.2889 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+No further content is visible.

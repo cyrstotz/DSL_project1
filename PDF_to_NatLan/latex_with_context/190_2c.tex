@@ -1,0 +1,25 @@
+The mass-specific increase in flow exergy (\( \Delta ex_{\text{str}} \)) is calculated using the following equation:  
+\[
+\Delta ex_{\text{str}} = h_6 - h_0 - T_0(s_6 - s_0) + \text{ke}
+\]  
+where:  
+\[
+h_6 - h_0 = c_p (T_6 - T_0)
+\]  
+\[
+s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right)
+\]  
+\[
+\text{ke} = \frac{1}{2} \left( 200 \, \text{m/s} \right)^2 = 110.05 \, \text{kJ/kg}
+\]  
+
+Substituting these terms into the equation:  
+\[
+\Delta ex_{\text{str}} = c_p (T_6 - T_0) - T_0 \cdot c_p \ln \left( \frac{T_6}{T_0} \right) + 110.05
+\]  
+Numerical evaluation gives:  
+\[
+\Delta ex_{\text{str}} = -128.98 \, \text{kJ/kg}
+\]  
+
+---

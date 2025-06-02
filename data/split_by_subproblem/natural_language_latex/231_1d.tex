@@ -1,0 +1,25 @@
+Energy balance at the ground wall:
+
+- The inlet temperature \( T_{\text{ein}} \) is 288.15 Kelvin.
+- The outlet temperature \( T_{\text{aus}} \) is 238.15 Kelvin.
+- The equation \( 0 = \dot{m} \cdot (h_e - h_a) + Q_{\text{aus}} + Q_R \) holds.
+- The change in internal energy \( \Delta U \) equals \( Q \).
+
+Energy balance:
+
+- The equation \( 0 = \dot{M} (h_c - h_a) + \sum_i Q_{i} \) simplifies to \( 0 = \dot{M} (h_c - h_a) + Q_{BR12} \).
+- The mass flow rate \( \dot{M} \) is calculated as \( \dot{M} = \frac{Q_{BR12}}{h_c - h_a} \).
+- The enthalpy at 20 degrees Celsius \( h_c \) is 83.68 kJ/kg.
+- The enthalpy at 70 degrees Celsius \( h_a \) is 292.85 kJ/kg.
+- The mass flow rate \( \dot{M} \) is recalculated as \( \dot{M} = \frac{Q_{BR12}}{83.68 - 292.85} \) kJ/kg.
+
+Partially open:
+
+- The equation \( M_2 U_2 - M_1 U_1 \stackrel{!}{=} \Delta M (h_i) + Q_{BR12} - \sum W^o \) holds.
+- The equation \( M_2 U_2 - M_1 U_1 = \Delta M U_2 - h_c + Q_{BR12} \) holds.
+- The initial mass \( M_1 \) is 5755 kg, and the final mass \( M_2 \) is \( M_1 + \Delta M \).
+- The internal energy \( U_1 \) is calculated using the formula \( U_1 = u_f + x (u_g - u_f) \) from Table A2, resulting in 429.378 kJ/kg.
+- The internal energy \( U_2 \) is calculated as 303.835 kJ/kg.
+- The equation \( M_2 U_2 + \Delta M U_2 - M_1 U_1 - Q_{BR12} = \Delta M U_2 - h_c \) holds.
+- The change in mass \( \Delta M \) is calculated as \( \Delta M = \frac{M_1 (U_2 - U_1) - Q_{BR}}{h_c - U_2} \), resulting in 340.02 kg.
+- The change in entropy \( \Delta S_{12} \) is calculated as \( \Delta S_{12} = M_2 S_2 - M_1 S_1 \), resulting in 1398.6 kJ/K.

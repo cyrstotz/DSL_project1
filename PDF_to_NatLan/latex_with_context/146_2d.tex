@@ -1,0 +1,24 @@
+The exergy destruction in the engine is calculated using the formula:  
+\[
+ex_{\text{dest}} = T_0 \cdot S_{\text{gen}}
+\]  
+
+The entropy generation \( S_{\text{gen}} \) is determined as:  
+\[
+S_{\text{gen}} = S_6 - S_2 = \sum \frac{Q_i}{T_i} + S_{\text{gen}}
+\]  
+
+From the combustion process:  
+\[
+S_6 > S_2 \quad \text{so} \quad S_{\text{gen}} = \frac{q_B}{T_B} = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) - \frac{q_B}{T_B}
+\]  
+
+Substituting values:  
+\[
+S_{\text{gen}} = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \ln \left( \frac{340 \, \text{K}}{243.15 \, \text{K}} \right) - R \ln \left( \frac{p_6}{p_0} \right) - \frac{1195 \, \frac{\text{kJ}}{\text{kg}}}{1289 \, \text{K}}
+\]  
+
+Final result:  
+\[
+S_{\text{gen}} = 0.84 \, \frac{\text{kJ}}{\text{kg·K}} - 0.4
+\]

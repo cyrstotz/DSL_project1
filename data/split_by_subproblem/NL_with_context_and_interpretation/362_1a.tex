@@ -1,0 +1,44 @@
+Energy balance steady-state flow process around water:  
+0 equals mass flow rate multiplied by (enthalpy in minus enthalpy out) plus reaction heat minus heat flow out.  
+
+Therefore:  
+Heat flow out equals mass flow rate multiplied by (enthalpy out minus enthalpy in) plus reaction heat.  
+
+Enthalpy in at 70 degrees Celsius, steam quality equals 0:  
+From Table A-2: 292.58 kilojoules per kilogram.  
+
+Enthalpy out at 100 degrees Celsius, steam quality equals 0:  
+From Table A-2: 419.04 kilojoules per kilogram.  
+
+Reaction heat equals:  
+0.3 multiplied by (419.04 minus 292.58) plus reaction heat equals 62.18 kilowatts.
+
+Energy balance for the semi-open system:  
+
+\( m_2 U_2 - m_1 U_1 = \Delta m_{in} h + Q_{in} - W \)  
+\( Q_{in} = Q_{out} \), \( W = 0 \)  
+
+\( m_1 = 5755 \, \text{kg} \)  
+
+\( U_1 \): From Table A-2, \( x = 0.005 \), \( T = 100^\circ \text{C} \):  
+\( U_1 = 148.94 + x (2506.5 - 148.94) = 129.39 \, \text{kJ/kg} \)  
+
+\( U_2 \): \( T = 70^\circ \text{C} \), \( x = 0 \):  
+From Table A-2, \( U_2 = 232.95 \, \text{kJ/kg} \)  
+
+\( \Delta m = m_2 - m_1 \)  
+
+\( h_{in} \): \( T = 20^\circ \text{C} \), \( x = 0 \):  
+From Table A-2, \( h_{in} = 83.86 \, \text{kJ/kg} \)  
+
+Energy balance:  
+\( m_2 U_2 - m_1 U_1 = (m_2 - m_1) h_{in} \)  
+
+Rearranging:  
+\( m_2 (U_2 - h) = m_1 U_1 - m_1 h_{in} \)  
+
+Solving for \( m_2 \):  
+\( m_2 = \frac{m_1 U_1 - m_1 h_{in}}{U_2 - h_{in}} = 11,520.1 \, \text{kg} \)  
+
+Final mass difference:  
+\( \Delta m_{12} = m_2 - m_1 = 5765.1 \, \text{kg} \)

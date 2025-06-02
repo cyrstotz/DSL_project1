@@ -1,0 +1,102 @@
+TASK 2b  
+The problem involves determining the outlet velocity \( w_6 \) and temperature \( T_6 \).  
+
+The energy balance equation is written as:  
+\[
+0 = \dot{m}_{\text{ges}} (h_5 - h_6 + \frac{1}{2}(w_5^2 - w_6^2)) + q^0 + w^c
+\]  
+
+Rearranging for \( w_6^2 \):  
+\[
+w_6^2 = w_5^2 + 2(h_5 - h_6)
+\]  
+
+The enthalpy difference \( h_5 - h_6 \) is expressed as:  
+\[
+h_5 - h_6 = c_p (T_6 - T_5)
+\]  
+
+Substituting into the equation for \( w_6^2 \):  
+\[
+w_6^2 = 2 c_p (T_5 - T_6) - w_5^2
+\]  
+
+The temperature \( T_6 \) is calculated using the relation:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+
+Given values:  
+\[
+T_5 = 431.9 \, \text{K}, \, p_5 = 0.5 \, \text{bar}, \, p_6 = 0.191 \, \text{bar}
+\]  
+
+Substituting into the equation:  
+\[
+T_6 = 431.9 \left( \frac{0.191}{0.5} \right)^{\frac{4}{9}} = 0.494 \, \text{bar} \, \text{(intermediate calculation)} \, \rightarrow T_6 = 431.9 \, \text{K}
+\]  
+
+---
+
+TASK 2c  
+The task involves calculating the mass-specific increase in flow exergy \( \Delta ex_{\text{flow}} \).  
+
+The equation for \( \Delta ex_{\text{flow}} \) is:  
+\[
+\Delta ex_{\text{flow}} = ex_{\text{flow},6} - ex_{\text{flow},0}
+\]  
+
+The mass flow rates are split into bypass and core streams:  
+\[
+\dot{m}_M = 5.293 \, \dot{m}_K, \quad \dot{m}_{\text{ges}} = 6.293 \, \dot{m}_K
+\]  
+
+The exergy flow difference is expressed as:  
+\[
+\Delta ex_{\text{flow},6} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{1}{2}(w_6^2 - w_0^2)
+\]  
+
+The enthalpy \( h_6 \) is given as:  
+\[
+h_6 = c_p (T_6 - T_0)
+\]  
+
+The entropy \( s_6 \) is calculated using:  
+\[
+s_6 = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+
+Substituting into the equation for \( \Delta ex_{\text{flow},6} \):  
+\[
+\Delta ex_{\text{flow},6} = h_6 - T_0 (s_6 - s_0) + \frac{1}{2}(w_6^2 - w_0^2)
+\]  
+
+---
+
+TASK 2d  
+The task involves computing the mass-specific exergy destruction \( ex_{\text{dest}} \) in the engine.  
+
+The exergy destruction is expressed as:  
+\[
+ex_{\text{dest}} = T_0 (s_6 - s_0)
+\]  
+
+Given:  
+\[
+q_B = \frac{\dot{Q}_B}{\dot{m}_{\text{ges}}}, \quad \dot{m}_{\text{ges}} = 6.293 \, \dot{m}_K
+\]  
+
+Substituting:  
+\[
+q_B = \frac{\dot{Q}_B}{6.293}
+\]  
+
+The entropy difference \( s_6 - s_0 \) is calculated using:  
+\[
+s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right)
+\]  
+
+Final expression for \( ex_{\text{dest}} \):  
+\[
+ex_{\text{dest}} = T_0 (s_6 - s_0) - \frac{1}{6.293} q_B
+\]  

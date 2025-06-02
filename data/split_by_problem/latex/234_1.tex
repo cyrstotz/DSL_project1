@@ -1,0 +1,124 @@
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+\subsection*{a)}
+\textbf{Energiebilanz stationärer Fließprozess:}
+\begin{align*}
+0 &= \dot{m} (h_{\text{ein}} - h_{\text{aus}}) + \dot{Q}_R - \dot{Q}_{\text{aus}} - \dot{W}_t^o \\
+\dot{Q}_{\text{aus}} &= \dot{m} (h_{\text{ein}} - h_{\text{aus}}) + \dot{Q}_R \\
+& \quad h_f(100^\circ \text{C}) = 419.04 \frac{\text{kJ}}{\text{kg}} \\
+& \quad \text{TAB A-2} \quad h_f(70^\circ \text{C}) = 292.98 \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+\textbf{Graphical Description:}
+There is a wavy line graph with peaks and troughs, representing some form of oscillation or periodic function. The x-axis is labeled with $h_f$ and the y-axis is labeled with values around 419.04 and 292.98.
+
+\begin{align*}
+\dot{Q}_{\text{aus}} = 2.182 \text{ kW}
+\end{align*}
+
+\subsection*{b)}
+\begin{align*}
+T &= \int_{s_a}^{s_e} T ds = \frac{h_a - h_e}{s_a - s_e} = \frac{\dot{Q}^o (T_{\text{aus}} - T_{\text{ein}}) + \dot{V} (p_2 - p_1)}{\dot{Q}^o \ln \left( \frac{T_{\text{aus}}}{T_{\text{ein}}} \right)} \\
+&= \frac{298.15 \text{K} - 288.15 \text{K}}{\ln \left( \frac{298.15 \text{K}}{288.15 \text{K}} \right)} = 293.12 \text{ K} = T_{\text{uF}}
+\end{align*}
+
+\subsection*{c)}
+\textbf{Satz in Wand:}
+\begin{align*}
+\dot{Q}_{\text{aus}} \quad 293.12 \text{ K} \\
+\dot{Q}_{\text{aus}} \quad 100^\circ \text{C}
+\end{align*}
+
+\textbf{Entropiebilanz st. Fließprozess:}
+\begin{align*}
+0 &= \dot{m} (s_e - s_a) + \frac{\dot{Q}_{\text{aus}}}{T_{\text{uF}}} + \frac{\dot{Q}_{\text{aus}}}{T_{\text{Rücklauf}}} + \dot{S}_{\text{erz}} \\
+\dot{S}_{\text{erz}} &= \dot{Q}_{\text{aus}} \left( \frac{1}{T_{\text{uF}}} - \frac{1}{T_{\text{Rücklauf}}} \right) \\
+&= 53.91 \frac{\text{W}}{\text{K}}
+\end{align*}
+
+``````latex
+
+
+\section*{d) Energiebilanz halboffenes System:}
+
+\[
+\Delta E = m_2 \cdot u_2 - m_1 \cdot u_1 = \Delta m_{12} \cdot h_{12} + \cancel{Q_{R12}} - \cancel{Q_{aus}} - \cancel{W}
+\]
+
+\[
+m_2 = m_{\text{ges},1} + \Delta m_{12} \quad \text{und} \quad m_1 = m_{\text{ges},1}
+\]
+
+\[
+\text{TAB A2:} \quad u_2 = u_f (70^\circ \text{C}) = 292.95 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+u_f (100^\circ \text{C}) = 418.94 \, \frac{\text{kJ}}{\text{kg}} \quad \text{und} \quad u_g (100^\circ \text{C}) = 2506.5 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_{12} = h_f (20^\circ \text{C}) = 83.96 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+u_1 = u_f + x_0 (u_g - u_f) = 429.36 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\Rightarrow (m_1 + \Delta m_{12}) \cdot u_2 - m_1 \cdot u_1 = \Delta m_{12} \cdot h_{12}
+\]
+
+\[
+\Delta m_{12} \cdot (u_2 - h_{12}) = m_1 u_1 - m_1 u_2
+\]
+
+\[
+\Delta m_{12} = \frac{m_1 u_1 - m_1 u_2}{u_2 - h_{12}}
+\]
+
+\[
+\Delta m_{12} = 3756.43 \, \text{kg}
+\]
+
+\section*{e)}
+
+\[
+\Delta S = m_2 s_2 - m_1 s_1
+\]
+
+\[
+= (m_1 + \Delta m_{12}) \cdot s_2 - m_1 \cdot s_1
+\]
+
+\[
+\Delta S_{12} = 1387.22 \, \frac{\text{kJ}}{\text{K}}
+\]
+
+\[
+\text{TAB A2:}
+\]
+
+\[
+s_2 = s_f (70^\circ \text{C}) = 0.9549 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+
+\[
+s_1 = s_f (100^\circ \text{C}) + x_0 (s_g (100^\circ \text{C}) - s_f (100^\circ \text{C}))
+\]
+
+\[
+s_f (100^\circ \text{C}) = 1.306 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}} \quad \text{und} \quad s_g (100^\circ \text{C}) = 7.3549 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+
+\[
+s_1 = 1.33714 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+
+``````latex
+
+

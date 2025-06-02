@@ -1,0 +1,41 @@
+The problem involves a partially open system where the mass \( \Delta m_{12} \) of saturated liquid water at \( T_{\text{in,12}} = 20^\circ\text{C} \) is added to reduce the reactor temperature from \( T_1 = 100^\circ\text{C} \) to \( T_2 = 70^\circ\text{C} \). The heat released during cooling is \( Q_{R,12} = Q_{\text{out},12} = 35 \, \text{MJ} \). The reactor contents are saturated liquid at state 2.  
+
+The energy balance equation for the system is written as:  
+\[
+m_2 \cdot u_2 - m_1 \cdot u_1 = \Delta m \cdot h_m + Q - W^{\text{out}}
+\]  
+where \( h_m \) is the enthalpy of the added mass, \( u_1 \) and \( u_2 \) are the specific internal energies at states 1 and 2, respectively, and \( \Delta m \) is the added mass.  
+
+From the water tables:  
+\[
+h_m = 83.3627 \, \text{kJ/kg} \quad \text{(at 20°C, \( x = 0 \))},  
+u_2 = 292.95 \, \text{kJ/kg} \quad \text{(at 70°C, \( x = 0 \))},  
+u_1 = 1.0435 + 0.005 \cdot (1.673 - 1.0435) = 1.04664 \, \text{kJ/kg} \quad \text{(at 100°C, \( x = 0.005 \))}.
+\]  
+
+The mass balance equation is:  
+\[
+m_2 = m_1 + \Delta m.
+\]  
+
+Substituting into the energy balance equation:  
+\[
+\Delta m \cdot u_2 - \Delta m \cdot u_1 = \Delta m \cdot h_m + Q + m_1 \cdot u_1 - m_1 \cdot u_2.
+\]  
+
+Rearranging for \( \Delta m \):  
+\[
+\Delta m = \frac{Q + m_1 \cdot u_1 - m_1 \cdot u_2}{u_2 - h_m}.
+\]  
+
+Substituting the given values:  
+\[
+\Delta m = \frac{35000 + 5755 \cdot 1.04664 - 5755 \cdot 292.95}{292.95 - 83.36}.
+\]  
+
+Calculating:  
+\[
+\Delta m = 8205.67 \, \text{kg}.
+\]  
+
+---

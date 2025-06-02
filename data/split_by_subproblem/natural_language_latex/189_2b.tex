@@ -1,0 +1,17 @@
+Energy balance at the thrust nozzle:
+
+Zero equals the mass flow rate times the quantity of enthalpy at point 5 minus enthalpy at point 6 plus half the difference of the square of velocity at point 5 and the square of velocity at point 6.
+
+This implies that twice the difference of enthalpy at point 5 and enthalpy at point 6 equals the difference of the square of velocity at point 5 and the square of velocity at point 6.
+
+From this, we can deduce that the velocity at point 6 equals the square root of twice the difference of enthalpy at point 5 and enthalpy at point 6 plus the square of velocity at point 5.
+
+Enthalpy at point 5 is interpolated from Table A22 at 430 Kelvin and 460 Kelvin, resulting in a value of 33.3612 kilojoules per kilogram.
+
+Enthalpy at point 6 is calculated assuming isentropic conditions through the thrust nozzle, maintaining entropy at point 5 equal to entropy at point 6, which is 2.06379 kilojoules per kilogram Kelvin.
+
+The temperature at point 6 is calculated using the ratio of temperature at point 6 to temperature at point 5, raised to the power of (n-1)/n, where n equals 1.4, resulting in a temperature of 328.075 Kelvin.
+
+Enthalpy at point 6 is interpolated from Table A22 using the temperature at point 0, resulting in a value of 326.4035 kilojoules per kilogram.
+
+Finally, the velocity at point i is calculated as the square root of twice the difference of enthalpy at point 1 and enthalpy at point 2 plus the square of velocity at point 2, resulting in a velocity of 219.52 meters per second.

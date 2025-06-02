@@ -1,0 +1,35 @@
+Energy balance for the compressor is written as:  
+\[
+\dot{Q} = \dot{m}_{\text{R134a}} \cdot (h_2 - h_3) + \dot{W}_c
+\]  
+From this, the mass flow rate of the refrigerant is derived:  
+\[
+\dot{m}_{\text{R134a}} = \frac{\dot{W}_c}{h_3 - h_2}
+\]  
+
+The enthalpy values are calculated as follows:  
+1. \( h_2 \):  
+   - Isobaric process from state 1 to state 2.  
+   - \( p_2 = p_a \) (ambient pressure).  
+   - \( T_2 = 26^\circ\text{C} \).  
+   - Using the refrigerant table (Table A-10 at \( T = 26^\circ\text{C} \)):  
+     \[
+     h_2 = h_g(-26^\circ\text{C}) = 231.62 \, \text{kJ/kg}
+     \]  
+
+2. \( h_3 \):  
+   - Isentropic process from state 2 to state 3.  
+   - \( s_2 = s_3 \).  
+   - Using the refrigerant table (Table A-12 at \( s_3 \)):  
+     \[
+     s_2 = s_g(-26^\circ\text{C}) = 0.9390 \, \text{kJ/kg·K}
+     \]  
+   - Interpolation is performed using Table A-12 with \( s_3 \):  
+     \[
+     h_3 = 273.66 + (284.39 - 273.66) \cdot \frac{0.9390 - 0.9374}{0.9391 - 0.9374} = 274.74 \, \text{kJ/kg}
+     \]  
+
+Finally, the refrigerant mass flow rate is calculated:  
+\[
+\dot{m}_{\text{R134a}} = \frac{0.000648 \, \text{kJ/s}}{h_3 - h_2} = 0.05291 \, \text{kg/s}
+\]

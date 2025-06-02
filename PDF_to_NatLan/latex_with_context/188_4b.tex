@@ -1,0 +1,38 @@
+The temperature \( T_i \) is given as \( -89^\circ\text{C} \).  
+The temperature \( T_4 \) is given as \( -85^\circ\text{C} \).  
+
+The pressure \( p_4 = p_2 \) is calculated using interpolation:  
+\[
+p_4 = p_2 = \frac{-35^\circ\text{C} + 32^\circ\text{C}}{-32^\circ\text{C} + 32^\circ\text{C}} \cdot (0.7704 \, \text{bar} - 0.6832 \, \text{bar}) + 0.6832 \, \text{bar}
+\]  
+This results in:  
+\[
+p_4 = 0.685 \, \text{bar}
+\]
+
+The mass flow rate \( \dot{m} \) is calculated using:  
+\[
+\dot{W} = \dot{m} (h_2 - h_3)
+\]  
+\[
+\dot{m} = \frac{\dot{W}}{h_2 - h_3}
+\]
+
+The entropy \( s_2 \) is given as:  
+\[
+s_2 = 0.88925 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+For interpolation at \( p_4 = 0.685 \, \text{bar} \):  
+\[
+h_2 = \frac{s_2 - 0.9821}{0.9821 - 0.9821} \cdot (282.1 - 276.26) + 278.26
+\]  
+This results in:  
+\[
+h_2 = 280.348 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The mass flow rate \( \dot{m} \) is calculated as:  
+\[
+\dot{m} = \frac{-80 \, \frac{\text{J}}{\text{s}}}{(226.03 \, \frac{\text{kJ}}{\text{kg}} - 280.348 \, \frac{\text{kJ}}{\text{kg}})} = Q \cdot S
+\]

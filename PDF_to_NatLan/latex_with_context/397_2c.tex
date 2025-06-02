@@ -1,0 +1,25 @@
+The mass-specific increase in flow exergy \( \Delta ex_{\text{flow}} \) is calculated as:  
+\[
+\Delta ex_{\text{flow}} = h_6 - h_0 - T_0 \cdot (s_6 - s_0) + \frac{w_6^2 - w_0^2}{2}
+\]  
+Substituting the given values:  
+\[
+\Delta ex_{\text{flow}} = c_p \, (T_6 - T_0) - T_0 \cdot c_p \cdot \ln\left(\frac{T_6}{T_0}\right) - R \cdot \ln\left(\frac{p_6}{p_0}\right) + \frac{w_6^2 - w_0^2}{2}
+\]  
+Where:  
+\[
+R = c_p - \frac{c_p}{\kappa} = 1.006 - \frac{1.006}{1.4} = 0.287 \, \text{kJ/kg·K}
+\]  
+\[
+T_0 = 273.15 - 30 = 243.15 \, \text{K}
+\]  
+Substituting into the equation:  
+\[
+\Delta ex_{\text{flow}} = 1.006 \cdot (328.07 - 243.15) - 243.15 \cdot 1.006 \cdot \ln\left(\frac{328.07}{243.15}\right) - 0.287 \cdot \ln\left(\frac{1}{1}\right) + \frac{220^2 - 510^2}{2}
+\]  
+\[
+\Delta ex_{\text{flow}} = 1.006 \cdot 84.92 - 243.15 \cdot 1.006 \cdot \ln\left(\frac{328.07}{243.15}\right) - 0.287 \cdot \ln(1) + \frac{220^2 - 510^2}{2}
+\]  
+\[
+\Delta ex_{\text{flow}} = -171.8 \, \text{kJ/kg}
+\]

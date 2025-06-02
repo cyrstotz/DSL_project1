@@ -1,0 +1,41 @@
+The entropy production rate is expressed as:  
+\[
+\frac{dS}{dt} = \sum \dot{m} s + \frac{\dot{Q}}{T} + \dot{S}_{\text{gen}}
+\]  
+For steady-state conditions:  
+\[
+0 = \dot{m} (s_{\text{KF,out}} - s_{\text{KF,in}}) + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} + \dot{S}_{\text{gen}}
+\]  
+The entropy production rate is calculated using the ideal fluid assumption:  
+\[
+s_{\text{KF,out}} - s_{\text{KF,in}} = \int_{T_{\text{in}}}^{T_{\text{out}}} \frac{c_p}{T} \, dT
+\]  
+This integral represents the entropy change of the coolant between inlet and outlet temperatures.
+
+The entropy balance for the reactor is expressed as:  
+\[
+\dot{S}_{\text{gen}} = \sum \dot{m} s + \frac{\dot{Q}}{T} + \dot{S}_{\text{err}}
+\]  
+Simplifying the equation:  
+\[
+0 = \dot{m} (s_{\text{out}} - s_{\text{in}}) + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} + \dot{S}_{\text{gen}}
+\]  
+Rearranging for entropy generation:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} + \dot{m} (s_{\text{out}} - s_{\text{in}})
+\]  
+
+The entropy values are determined using water tables (A-2):  
+\[
+s_{\text{out}} = s(100^\circ\text{C}, \text{saturated liquid, F1}) = s(100^\circ\text{C}, 0.014 \, \text{bar}) = 1.3062 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+s_{\text{in}} = s(70^\circ\text{C}, \text{saturated liquid, F1}) = s(70^\circ\text{C}, 0.031 \, \text{bar}) = 0.2549 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = 22.4 \, \frac{\text{kJ}}{\text{K}}
+\]  
+
+---

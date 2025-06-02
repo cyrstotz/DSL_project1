@@ -1,0 +1,51 @@
+\section*{Problem 2d}
+
+\begin{align*}
+\text{Q}_{\text{in}} - \frac{dE}{dt} &> \sum \dot{E}_{\text{stor}} + \sum \dot{E}_{\text{xa}} - \sum \left[ \dot{W}_{\text{n}} - p_0 \frac{dV}{dt} \right] - \dot{E}_{\text{ver}} \\
+0 &= \dot{m} \left[ h_e - h_a - T_0 (s_e - s_a) + \text{ke} + \text{pe} \right] + \sum \left( 1 - \frac{T_0}{T} \right) \dot{Q}_j - \sum \dot{W}_{\text{in}} - \dot{E}_{\text{ver}} \\
+\text{Exer} &= \text{exer} \\
+\text{exer} &= h_0 - h_6 - T_0 (s_0 - s_6) + \text{ke} + \text{pe} - \frac{\dot{Q}_{\text{ex}}}{\dot{m}} - \frac{\sum \dot{W}_{\text{ex}}}{\dot{m}}
+\end{align*}
+
+\text{find} \quad \sum \left( 1 - \frac{T_0}{T} \right) \frac{\dot{Q}_j}{\dot{m}}
+
+\begin{align*}
+&= \sum \left( 1 - \frac{T_0}{T} \right) \cdot q_j \\
+&= \left( 1 - \frac{243.15 \, \text{K}}{1289 \, \text{K}} \right) \cdot 1185 \, \frac{\text{kJ}}{\text{kg}} \\
+&= 968.581 \, \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+\begin{itemize}
+    \item $0 < \eta < 1, \quad \eta_{\text{vs}} < 1$
+    \item $\eta_{\text{vs}} = \frac{\text{reversible}}{\text{actual}} = \frac{h_0 - h_{\text{ns}}}{h_0 - h_1}$
+    \item \text{energy balance:} $0 = \dot{m} (h_0 - h_1) + \dot{Q} - \dot{W}$
+\end{itemize}
+
+\begin{align*}
+\frac{\dot{W}}{\dot{m}} &= W_{\text{tot}} = h_0 - h_4 = C_p \dot{m} (T_0 - T_1) = 1.006 \cdot (243.15 \, \text{K} - T_1)
+\end{align*}
+
+\text{find} $T_1$
+
+\begin{align*}
+\text{in 1-4,} \quad 0 &= \dot{m} (h_4 - h_1) \\
+h_4 &= h_1 \\
+\text{since} \quad IG \, \text{m.f. const.} \quad C_p \implies T_4 = T_1
+\end{align*}
+
+\text{find} $T_4$
+
+\begin{align*}
+p_4 &= p_3 \\
+\text{so} \quad 3-4 \, \text{isentropic,} \quad s_3 = s_4 \\
+\therefore T_4 &= T_3 \quad \text{due to} \quad p_6 \propto T \\
+&= 1289 \, \text{K}
+\end{align*}
+
+\begin{align*}
+W_{\text{tot}} &= 1.006 (243.15 - 1289) = -1272.438 \, \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+\begin{align*}
+\text{Exer} &= h_0 - h_6 - T_0 (s_0 - s_6) + 968.581 + 1272.438 \\
+&= C_p (T_0 - T_6) - T_0 \left(```latex

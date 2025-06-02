@@ -1,0 +1,33 @@
+For the perfect gas:
+
+The equation for pressure \( p_1 \) is given by:
+\[ p_1 = p_{\text{amb}} + 32 \frac{kg}{s} \cdot \frac{\dot{V}}{A} + \frac{\dot{m}}{A} \cdot \frac{\dot{m}}{2} \cdot \frac{1}{\rho} + \frac{\dot{m}}{A} \cdot \frac{\dot{m}}{A} \]
+which equals \( 1.40059 \, \text{bar} \).
+
+Using the ideal gas equation:
+\[ m_{\text{g2}} = \frac{p_2 \cdot V_1}{R \cdot T_1} \]
+where \( R \) is defined as \( R = \frac{\bar{R}}{M_{\text{g}}} = 166.28 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}} \).
+
+Substituting the values into the equation:
+\[ m_{\text{g2}} = \frac{1.40059 \cdot 3.75 \cdot 10^{-2}}{166.28 \cdot (500 + 273.15)} \]
+results in \( m_{\text{g2}} = 3.434 \, \text{g} \).
+
+For the section titled "a)":
+
+The supports are initially completely assumed as \( u = u_{2} - u_{n} \).
+
+The equation:
+\[ m_E \cdot (u_2 - u_n) = Q_{12} \]
+leads to:
+\[ u_2 - u_n = \frac{Q_{12}}{m_E} \Rightarrow u_2 = \frac{Q_{12}}{m_E} + u_n \]
+
+With \( u_n \left(0 + l\right) = x_{E,2} \cdot u_{FE} + (1 - x_{E,2}) \cdot u_{FE} \),
+it simplifies to:
+\[ = -200 \frac{1}{l} \]
+
+Since \( T \) does not change, hence:
+\[ u_2 = x_{E,2} \cdot u_{FE} + (1 - x_{E,2}) \cdot u_{FE} \]
+\[ u_2 = \frac{2500 \cdot kg}{6 \cdot m} + u_n = \text{adjust} - 128.3 \frac{1}{l} \]
+
+Finally, \( x_{E,2} \) is calculated as:
+\[ x_{E,2} = \frac{(u_2 - u_{FE})}{u_{FE} - u_{FE}} = 0.555 \]

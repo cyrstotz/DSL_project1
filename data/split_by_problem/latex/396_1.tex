@@ -1,0 +1,130 @@
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+\begin{align*}
+\dot{m}_{\text{ein}} &= 0.3 \, \frac{\text{kg}}{\text{s}} \\
+T_{\text{ein}} &= 70^\circ \text{C} \\
+x_{\text{ein}} &= 0.005 \\
+T_{\text{aus}} &= 100^\circ \text{C} \\
+x_{\text{aus}} &= 0.005 \\
+m_{\text{ges}} &= 5.755 \, \text{kg} \\
+x_D &= 0.005 \\
+T_{R,1} &= 100^\circ \text{C} \\
+Q_R &= 100 \, \text{kW}
+\end{align*}
+
+\[
+Q = \dot{m}_{\text{ein}} (h_e - h_a) = \dot{m}_{\text{aus}}
+\]
+
+\[
+Q = \dot{m}_{\text{ein}} (h_e - h_a) + Q_R + \dot{Q}_{\text{aus}}
+\]
+
+\[
+\dot{Q}_{\text{aus}} = \dot{m}_{\text{ein}} (h_a - h_e) - Q_R = -62.237 \, \text{kW} \implies \dot{Q}_{\text{aus}} = 62.237 \, \text{kW}
+\]
+
+\[
+h_e = x_{\text{ein}} \cdot h_g + (1 - x_{\text{ein}}) h_f \quad \text{aus Tab A-2}
+\]
+
+\[
+= 304.649 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_a = x_{\text{aus}} \cdot h_g + (1 - x_{\text{aus}}) h_f
+\]
+
+\[
+= 430.325 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\subsection*{b)}
+
+\[
+T_{KF} = \frac{\int_{S_a}^{S_e} T \, dS}{S_a - S_e} = \frac{q_{ea}}{S_a - S_e} = \frac{h_a - h_e}{S_e - S_e} = \frac{sp (T_a - T_e)}{sp \cdot \ln \left( \frac{T_a}{T_e} \right)}
+\]
+
+\[
+= \frac{T_a - T_e}{\ln \left( \frac{T_a}{T_e} \right)} = \frac{T_{KF, \text{aus}} - T_{KF, \text{ein}}}{\ln \left( \frac{T_{KF, \text{aus}}}{T_{KF, \text{ein}}} \right)} = 253.12157 \, \text{K} = T_{KF}
+\]
+
+\subsection*{Graphical Description}
+
+There is a small diagram on the right side of the page. The diagram consists of a rectangular box labeled "Q_{\text{aus}}" in the center. There are arrows pointing into and out of the box. The arrow pointing into the box from the left is labeled "m_{\text{ein}}", and the arrow pointing out of the box to the right is labeled "m_{\text{aus}}". The box is enclosed in a dashed rectangle.
+
+``````latex
+
+
+\section*{c) Entropiebilanz am Reaktor}
+
+\[
+Q = \dot{m} (S_{e2} - S_{e1}) + \frac{\dot{Q}}{T} + S_{erz}
+\]
+
+\[
+= \dot{m} (S_{ein} - S_{aus}) + \frac{\dot{Q}_{aus}}{T_{KW}} + S_{erz}
+\]
+
+\[
+S_{erz} = \dot{m} (S_{aus} - S_{ein}) + \frac{Q_{aus}}{T_{KW}} = \underline{0.317 \, \text{kW}} = S_{erz}
+\]
+
+\[
+S_{aus} = x_{aus} S_g + (1 - x_{aus}) S_f \quad \text{aus TAB A-2}
+\]
+
+\[
+= 1.33714 \, \frac{\text{kJ}}{\text{kgK}}
+\]
+
+\[
+S_{ein} = x_{ein} S_g + (1 - x_{ein}) S_f \quad \text{aus TAB A-2}
+\]
+
+\[
+= 0.888902 \, \frac{\text{kJ}}{\text{kgK}}
+\]
+
+\section*{d)}
+
+\[
+\Delta E = Q - \dot{W}
+\]
+
+\[
+-m_{ges} U_1 + (m_{ges} + \Delta m_{12}) U_2 = Q_{aus, 12}
+\]
+
+\[
+m_{ges} (U_2 - U_1) + \Delta m_{12} U_2 = Q_{aus, 12}
+\]
+
+\[
+\Delta m_{12} = \frac{Q_{aus} + m_{ges} (U_1 - U_2)}{U_2} = \underline{2793.5971 \, \text{kg}}
+\]
+
+\[
+U_1 = x_0 \cdot U_g + (1 - x_0) U_f \quad \text{aus TAB A-2}
+\]
+
+\[
+= 428.3778 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+U_2 = 282.55 \, \frac{\text{kJ}}{\text{kg}} \quad \text{aus TAB A-2}
+\]
+
+\[
+x_{sieden} = 0
+\]
+
+``````latex
+
+

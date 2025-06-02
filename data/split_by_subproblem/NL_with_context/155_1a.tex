@@ -1,0 +1,20 @@
+Determine \( \dot{Q}_{aus} \):  
+
+\( 0 = \dot{m} \left[ h_{ein} - h_{aus} \right] + \dot{Q}_{aus} \)  
+\( = \dot{m} \left[ h(70^\circ C) - h(100^\circ C) \right] + \dot{Q}_{aus} \)  
+
+1st Law for the cooling jacket:  
+\( 0 = \dot{m}_{KF} \left[ h(288.15K) - h(298.15K) \right] + \dot{Q}_{aus} \)  
+\( \dot{Q}_{aus} = \dot{m}_{KF} \cdot c_{KF} \cdot \left( 298.15K - 288.15K \right) \)  
+
+1st Law for the reactor:  
+\( 0 = \dot{m} \left[ h_{ein} - h_{aus} \right] + \dot{Q}_{R} - \dot{Q}_{aus} \)  
+
+\( h_{ein} = 292.98 + 0.005 \cdot (2626.8 - 292.98) \) (Table A-2)  
+\( = 304.64 \, \text{kJ/kg} \)  
+
+\( h_{aus} = 419.04 + 0.005 \cdot (2676.1 - 419.04) \) (Table A-6)  
+\( = 430.325 \, \text{kJ/kg} \)  
+
+\( \dot{Q}_{aus} = 0.3 \, \text{kg/s} \cdot \left( 304.64 - 430.325 \right) \, \text{kJ/kg} + 100 \, \text{kW} \)  
+\( = 62.2945 \, \text{kW} \)

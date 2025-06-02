@@ -1,0 +1,34 @@
+The mass-specific increase in flow exergy \( \Delta ex_{\text{flow}} \) between states 6 and 0 is determined.  
+
+The formula for \( \Delta ex_{\text{flow}} \) is:  
+\[
+\Delta ex_{\text{flow}} = \frac{\Delta \dot{E}_{\text{flow},6 \to 0}}{\dot{m}} = (h_e - h_a) - T_0 (s_e - s_a) + \Delta ke
+\]  
+
+The enthalpy difference is expressed as:  
+\[
+h_e - h_a = c_p (T_0 - T_6)
+\]  
+
+The entropy difference is expressed as:  
+\[
+s_e - s_a = c_p \ln \left( \frac{T_0}{T_6} \right) - R \ln \left( \frac{p_0}{p_6} \right)
+\]  
+
+The kinetic energy difference is expressed as:  
+\[
+\Delta ke = \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]  
+
+The specific gas constant \( R \) is calculated as:  
+\[
+R = c_p - c_v
+\]  
+\[
+R = \frac{c_p}{\kappa} = \frac{1.006 \, \text{kJ/kg·K}}{1.4} = 0.287 \, \text{kJ/kg·K}
+\]  
+
+Substituting into the exergy formula:  
+\[
+\Delta ex_{\text{flow}} = c_p \left( T_0 - T_6 \right) - T_0 \left[ \ln \left( \frac{T_0}{T_6} \right) c_p - R \ln \left( \frac{p_0}{p_6} \right) \right] + \left( \frac{w_6^2}{2} - \frac{w_0^2}{2} \right)
+\]

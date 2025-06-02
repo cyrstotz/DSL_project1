@@ -1,0 +1,118 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a plot with the x-axis labeled as $s \, (\frac{kJ}{K})$ and the y-axis labeled as $T \, (K)$. There are several points and lines connecting them:
+    \begin{itemize}
+        \item Point 1 is at the bottom left.
+        \item Point 2 is directly above point 1.
+        \item Point 3 is to the right of point 2, connected by a horizontal line.
+        \item Point 4 is below point 3, connected by a vertical line.
+        \item Point 5 is to the right of point 4, connected by a horizontal line.
+        \item Point 6 is below point 5, connected by a vertical line.
+        \item Point 0 is to the left of point 6, connected by a curved line.
+    \end{itemize}
+    The points are labeled as follows:
+    \begin{itemize}
+        \item $p_{2,3}$ is labeled at the top of the vertical line between points 2 and 3.
+        \item $p_{4,5}$ is labeled at the top of the vertical line between points 4 and 5.
+        \item $p_0$ is labeled at the top of the curved line connecting points 0 and 6.
+    \end{itemize}
+\end{description}
+
+\subsection*{b)}
+
+\begin{align*}
+    &\text{1. HS Schubdüse} \\
+    &\text{Stationär} \\
+    &0 = \dot{m}_{\text{tot}} \left( h_5 - h_6 + \frac{W_5^2 - W_6^2}{2} \right) - W_t \quad \text{//isentrop} \\
+    &h_5 - h_6 + \frac{W_5^2 - W_6^2}{2} = W_t \\
+    &W_t = \int_{5}^{6} v \, dp \quad \text{(Isentrop)} \\
+    &\frac{T_6}{T_5} = \left( \frac{v_6}{v_5} \right)^{\frac{n-1}{n}} \quad \text{(Isentrop)} = 0.93 \times 9 \quad \left( \frac{0.14 \times 1.4 - 1}{0.5} \right) = 323.67K \\
+    &h_5 - h_6 = c_p \left( \frac{T_5}{T_6} \right) = 1.006 \left( 431.9 - 328.07 \right) = 104.95 \frac{kJ}{kg} \\
+    &\Rightarrow \Delta h + \frac{1}{2} W_5^2 - \frac{1}{2} W_6^2 = \int_{5}^{6} v \, dp + \Delta ke \\
+    &\Delta h + \frac{1}{2} W_5^2 - \frac{1}{2} W_6^2 = \int_{5}^{6} v \, dp - \left( \frac{1}{2} W_5^2 - \frac{1}{2} W_6^2 \right) \\
+    &\Delta h + W_5^2 - W_6^2 = \int_{5}^{6} v \, dp \\
+    &\Delta h + W_6^2 + \frac{c}{5} \int_{5}^{6} v \, dp = W_6^2
+\end{align*}
+
+``````latex
+
+
+\[
+W_s^2 = (220 \frac{m}{s})^2, \quad W_s^2 = (220 \frac{m}{s})^2
+\]
+
+\[
+\int_{5}^{6} v dp = -n \int_{5}^{6} v dV = -n \frac{R (T_6 - T_5)}{1 - n}
+\]
+
+\[
+R_L = \frac{R}{M_L} = 0.287 \frac{kJ}{kg}
+\]
+
+\[
+-1 \cdot u \cdot \frac{0.287 \cdot 10^3 (328.07 - 293.15)}{1.14} = -104.2 \frac{kJ}{kg}
+\]
+
+\[
+\Rightarrow \text{einsetzen}
+\]
+
+\[
+c) \quad \Delta e_{x,str} = \boxed{(h_6 - h_0 - T_0 (s_6 - s_0) + \Delta ke)}
+\]
+
+\[
+h_0 - h_0 = c_p (T_6 - T_0) = 1.006 (328.07 - (20 + 273.15)) = 85.93 \frac{kJ}{kg}
+\]
+
+\[
+T_0 = -20 + 273.15 = 293.15
+\]
+
+\[
+s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) - R_L \ln \left( \frac{p_6}{p_0} \right)
+\]
+
+\[
+= 0.301 \frac{kJ}{kg \cdot K}
+\]
+
+\[
+\Delta ke = \frac{1}{2} (W_6^2 - W_0^2) = \frac{1}{2} (560^2 - 200^2) = 110050 \frac{m^2}{s^2}
+\]
+
+\[
+\Delta e_{x,str} = 85.93 \frac{kJ}{kg} - 293.15 (0.301 \frac{kJ}{kg \cdot K}) + 110050 \cdot 10^{-3} \frac{kJ}{kg}
+\]
+
+\[
+= \underline{122.22 \frac{kJ}{kg}}
+\]
+
+``````latex
+
+27) \\
+a) \\
+\[
+\dot{q} = \dot{m} \cdot \left( \frac{h_2}{h_1} \right)
+\]
+\[
+\dot{w} = \dot{m} \cdot \left( \frac{h_2}{h_1} \right)
+\]
+\[
+0 = -\Delta e_{x,str} + \left( 1 - \frac{T_0}{T} \right) \cdot \dot{q} - \dot{w}_c - e_{x,vel}
+\]
+\[
+e_{x,vel} = -\Delta e_{x,str} + \left( 1 - \frac{T_0}{T} \right) \cdot \dot{q} - \dot{w}_c
+\]
+
+``````latex
+
+

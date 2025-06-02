@@ -1,0 +1,45 @@
+TASK 1d  
+The problem involves determining the mass \( \Delta m_{12} \) of saturated liquid water added to the reactor to cool its contents from \( T_{\text{Reactor},1} = 100^\circ\text{C} \) to \( T_{\text{Reactor},2} = 70^\circ\text{C} \). The following parameters are provided:  
+
+- \( \dot{m}_{\text{in}} = 0 \)  
+- \( m_{\text{total}} = 5755 \, \text{kg} \)  
+- \( T_{\text{Reactor},1} = 100^\circ\text{C} \)  
+- \( x_D = 0.005 \)  
+- \( T_{\text{Reactor},2} = 70^\circ\text{C} \)  
+- \( T_{\text{in,12}} = 20^\circ\text{C} \)  
+- \( x_{D,2} = 0 \)  
+
+The system is described as follows:  
+The reactor contains a mass \( m_{\text{total}} \) with a steam quality \( x_D = 0.005 \) at \( 100^\circ\text{C} \). After cooling, the reactor contents are saturated liquid at \( 70^\circ\text{C} \).  
+
+The energy balance for the system is expressed as:  
+\[
+\dot{E} = \frac{d}{dt} (\text{KE}) + \frac{d}{dt} (\text{PE}) + \frac{d}{dt} (\text{U}) = \dot{Q} - \dot{W} \quad \Rightarrow \quad \dot{U} = \dot{Q}
+\]  
+
+Using the energy balance and water tables (A-2), the following specific internal energy values are used:  
+\[
+u_{\text{sat,liq}}(100^\circ\text{C}) = 250.05 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_{\text{sat,liq}}(70^\circ\text{C}) = 48.08 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_{\text{sat,vap}}(100^\circ\text{C}) = 2373.35 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The energy balance equation is written as:  
+\[
+m_{\text{total}} \cdot q_{\text{sat,liq}}(70^\circ\text{C}) - \left[ m_{\text{total}} \cdot x_D \cdot u_{\text{sat,vap}}(100^\circ\text{C}) + (1 - x_D) \cdot u_{\text{sat,liq}}(100^\circ\text{C}) \right] = Q
+\]  
+
+Substituting the heat released during cooling \( Q_{R,12} = Q_{\text{out},12} = 35 \, \text{MJ} \), the mass \( \Delta m_{12} \) is determined as:  
+\[
+\Delta m_{12} = \frac{Q_{R,12} - m_{\text{total}} \cdot u_{\text{sat,liq}}(100^\circ\text{C}) - m_{\text{total}} \cdot x_D \cdot (u_{\text{sat,vap}}(100^\circ\text{C}) - u_{\text{sat,liq}}(100^\circ\text{C}))}{u_{\text{sat,liq}}(70^\circ\text{C})}
+\]  
+\[
+\Delta m_{12} \approx 2794.6 \, \text{kg}
+\]  
+
+TASK 1e  
+No content found.

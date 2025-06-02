@@ -1,0 +1,21 @@
+The given values are:
+- Velocity at point 5, \( w_5 \), is 220 meters per second.
+- Pressure at point 5, \( p_5 \), is 0.5 bar.
+- Temperature at point 5, \( T_5 \), is 431.9 Kelvin.
+- Velocity at point 6, \( w_6 \), is unknown.
+- Pressure at point 6, \( p_6 \), is 0.191 bar.
+- Temperature at point 6, \( T_6 \), is unknown.
+
+The process is described as a thrust nozzle that is adiabatic and reversible, which implies it is isentropic.
+
+For an ideal gas, the relationship between the temperatures and pressures at points 5 and 6 is given by:
+\[ \frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} \]
+where \( n \) is 1.4. Plugging in the values:
+\[ T_6 = 431.9 \times \left( \frac{0.191}{0.5} \right)^{\frac{1.4-1}{1.4}} \]
+\[ T_6 = 328.075 \, \text{Kelvin} \]
+
+The energy balance (stationary) is given by:
+\[ 0 = \dot{m} \left( h_2 - h_1 + \frac{w_2^2 - w_1^2}{2} \right) + \dot{Q} - \dot{W} \]
+\[ 0 = \dot{m} \left( c_p (T_6 - T_5) + \frac{220^2}{2} \right) + \text{adiabatic} \]
+
+The thrust produced by the nozzle, \( W_a \), is indicated but the value is illegible.

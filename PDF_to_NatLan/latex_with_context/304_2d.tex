@@ -1,0 +1,36 @@
+For a stationary flow process over the entire turbine, the exergy balance is expressed as:  
+\[
+0 = -\Delta ex_{\text{flow}} + \sum \dot{E}_{\text{in}} - \sum \dot{W}_{\text{in}} - \dot{E}_{\text{out}}
+\]  
+Simplifying:  
+\[
+ex_{\text{out}} = -\Delta ex_{\text{flow}} + \text{eva} - 0
+\]  
+
+The exergy of the heat stream \( q_B \) is given by:  
+\[
+\dot{E}_{\text{ex},q} = \left(1 - \frac{T_0}{\bar{T}_B}\right) \cdot \dot{Q}_B
+\]  
+Where:  
+\[
+\dot{Q}_B = q_B \cdot \dot{m}_K
+\]  
+
+Substituting values:  
+\[
+\dot{E}_{\text{ex},q} = \left(1 - \frac{T_0}{\bar{T}_B}\right) \cdot q_B \cdot \dot{m}_K
+\]  
+\[
+= \left(1 - \frac{30 + 273.15 \, \text{K}}{1289 \, \text{K}}\right) \cdot 1195 \, \frac{\text{kJ}}{\text{kg}} \cdot \dot{m}_K
+\]  
+\[
+= 869.58 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Finally, the exergy output is calculated as:  
+\[
+ex_{\text{out}} = -108,745 + 869.58
+\]  
+\[
+ex_{\text{out}} = 860,835 \, \frac{\text{J}}{\text{kg}}
+\]

@@ -1,0 +1,39 @@
+The task involves determining the mass \( \Delta m_{12} \) of saturated liquid water added to the reactor to reduce the temperature from \( 100^\circ\text{C} \) to \( 70^\circ\text{C} \). The energy balance equation is used:  
+
+\[
+m_2 \cdot u_2 - m_1 \cdot u_1 = \Delta m \cdot u + Q_{R,12}
+\]
+
+From the water tables:  
+- \( u(20^\circ\text{C}, x=0) = 83.56 \, \frac{\text{kJ}}{\text{kg}} \)  
+- \( u_2(70^\circ\text{C}, x=0) = 252.55 \, \frac{\text{kJ}}{\text{kg}} \)  
+- \( u_1(x=0.005, 100^\circ\text{C}) = u_f + x \cdot (u_g - u_f) \), where:  
+  \[
+  u_f = 416.54 \, \frac{\text{kJ}}{\text{kg}}, \quad u_g = 2506.05 \, \frac{\text{kJ}}{\text{kg}}
+  \]
+  Substituting \( x = 0.005 \):  
+  \[
+  u_1 = 416.54 + 0.005 \cdot (2506.05 - 416.54) = 428.377 \, \frac{\text{kJ}}{\text{kg}}
+  \]
+
+The mass balance equation is:  
+\[
+m_2 = m_1 + \Delta m
+\]
+
+Rearranging the energy balance:  
+\[
+\Delta m = \frac{Q_{R,12} + m_1 \cdot u_1 - m_2 \cdot u_2}{u - u_2}
+\]
+
+Substituting values:  
+\[
+\Delta m = \frac{35,000 + 5755 \cdot 428.377 - 5755 \cdot 252.55}{83.56 - 252.55}
+\]
+
+Result:  
+\[
+\Delta m = 3924.31 \, \text{kg}
+\]
+
+---

@@ -1,0 +1,52 @@
+TASK 3c  
+The temperature \( T_{g,2} \) is given as \( 0.0002^\circ\text{C} \).  
+
+An energy balance for the gas system is described as closed and adiabatic:  
+\[
+m_g (u_2 - u_1) = Q_{12} - W_v
+\]  
+The work \( W_v \) is expressed as:  
+\[
+W_v = R \frac{(T_{g,2} - T_{g,1})}{1 - n}
+\]  
+where \( n = \frac{c_p}{c_v} = 1.2626 \), and \( c_p = R + c_v = 0.29228 \).  
+
+The energy equation is expanded:  
+\[
+m_g c_v (T_{g,2} - T_{g,1}) + W_v = Q_{12}
+\]  
+
+---
+
+TASK 3d  
+The heat transfer \( Q_{12} \) is given as \( 1500 \, \text{J} \):  
+\[
+Q_{12}^{\text{eis}} = m \cdot 1500 \, \text{J}
+\]  
+
+To determine the ice fraction \( x_{\text{ice},2} \):  
+\[
+u_2^{\text{eis}} = u_f + x_{\text{ice},2} (u_g - u_f) \quad \text{at } p_{\text{eis}}
+\]  
+where \( p_{\text{eis}} = 1 \, \text{bar} + \frac{m_K \cdot g}{A} = 1.3963 \, \text{bar} \approx 1.4 \, \text{bar}.  
+
+Energy balance for the ice-water mixture (EW):  
+\[
+m_{\text{eis}} (U_2 - U_1) + Q_{12}^{\text{eis}} = 0
+\]  
+Assuming incompressibility:  
+\[
+U_2^{\text{eis}} = -Q_{12}^{\text{eis}} + U_1
+\]  
+The internal energy \( U_2^{\text{eis}} \) is calculated as:  
+\[
+U_2^{\text{eis}} = u_f + x_{\text{ice},2} (u_g - u_f) \quad \text{at } 1.4 \, \text{bar}
+\]  
+where \( u_f = -200.032 \, \text{kJ/kg} \) and \( u_g = -215.0928 \, \text{kJ/kg} \).  
+
+The ice fraction \( x_{\text{ice},2} \) is determined as:  
+\[
+x_{\text{ice},2} = \frac{u_2^{\text{eis}} - u_f}{u_g - u_f} = 0.355
+\]  
+
+This calculation assumes the ice is in equilibrium with the liquid phase.

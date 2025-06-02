@@ -1,0 +1,44 @@
+Flow exergy:  
+Delta e_str equals e_str,6 minus e_str,0  
+
+w_dot_06 equals m multiplied by (h_c minus h_0 plus (w_c squared minus w_0 squared divided by 2))  
+
+equals m_gas multiplied by (h_0 minus h_c plus (w_0 squared minus w_c squared divided by 2))  
+
+h_0 equals ?  
+
+Through interpolation from Table A-22:  
+
+| 240 | 240.02 |  
+| 243 | x |  
+| 250 | 250.05 |  
+
+(243 minus 240) divided by (250 minus 240) multiplied by (240.02)  
+
+h_0 equals 243.029  
+
+h_c equals ?  
+
+Through interpolation from Table A-22:  
+
+| 325 | 325.31 |  
+| 328.075 | x |  
+| 330 | 330.34 |  
+
+(328.075 minus 325) divided by (330 minus 325) multiplied by (325.31)  
+
+h_c equals 328.403  
+
+w_dot_06 equals ...  
+
+Delta e_str equals h_c minus h_0 minus T_0 multiplied by (s_c minus s_0) plus qe
+
+Delta exergy of the stream equals cp times (T6 minus T0) minus T0 times cp times the natural logarithm of (T6 divided by T0) minus R times the natural logarithm of (p6 divided by p0) plus (w6 squared minus w0 squared) divided by 2.  
+
+cv equals cp divided by kappa equals 1.006 kilojoules per kilogram Kelvin divided by 1.4 equals 0.719 kilojoules per kilogram Kelvin.  
+
+R equals cp minus cv equals 1.006 kilojoules per kilogram Kelvin minus 0.719 kilojoules per kilogram Kelvin equals 0.287 kilojoules per kilogram Kelvin.  
+
+Delta exergy of the stream equals 1.006 kilojoules per kilogram Kelvin times (388.075 Kelvin minus 243.15 Kelvin) minus 243.15 Kelvin times (1.006 kilojoules per kilogram Kelvin times the natural logarithm of (388.075 Kelvin divided by 243.15 Kelvin)) minus 0.287 kilojoules per kilogram Kelvin times the natural logarithm of (0) plus ((510 meters per second squared minus 200 meters per second squared) divided by 2).  
+
+Delta exergy of the stream equals 480.62 kilojoules per kilogram.

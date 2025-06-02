@@ -1,0 +1,93 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Z & $p[\text{bar}]$ & $T[\degree C]$ & $h$ & $s$ \\
+\hline
+1 & & & & \\
+\hline
+2 & & & & \\
+\hline
+3 & & & & \\
+\hline
+4 & & & & \\
+\hline
+5 & 0.5 & 43.1 & & \\
+\hline
+6 & 0.191 & 328.675 & & \\
+\hline
+\end{tabular}
+
+\subsection*{a)}
+
+Graph description: The graph is a plot with the y-axis labeled $T[\degree K]$ and the x-axis labeled $s[\frac{kJ}{kgK}]$. The graph consists of several points connected by lines, representing different states:
+
+- Point 1 is at the origin.
+- Point 2 is above and to the right of point 1.
+- Point 3 is above and to the right of point 2, with a steeper slope.
+- Point 4 is to the right of point 3, with a horizontal line.
+- Point 5 is below point 4, with a vertical line.
+- Point 6 is below and to the right of point 5, with a steep slope.
+
+The points are connected in the following order: 1 to 2, 2 to 3, 3 to 4, 4 to 5, and 5 to 6. There are labels indicating "isobar" and "isotherm" along the lines connecting the points.
+
+\subsection*{b)}
+
+\[
+s_5 \approx s_6 \quad \text{adiabat reversibel}
+\]
+
+\[
+T_6 - T_5 \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} = 43.1 \degree C
+\]
+
+\[
+(7.45) \quad Q = \dot{m}_{ges} (h_5 - h_6) + \dot{Q}_{\text{adiabat}} + \frac{\dot{m}_{ges} \cdot w_5^2}{2} - \frac{\dot{m}_{ges} \cdot w_6^2}{2}
+\]
+
+\[
+\dot{m}_{ges} \cdot w_5^2 - \frac{w_6^2}{2} = \dot{m}_{ges} (h_6 - h_5) \quad \Rightarrow \quad w_5^2 + 2 (h_5 - h_6) - w_6^2
+\]
+
+\[
+\sqrt{w_5^2 + 2 (c_p (T_5 - T_6)) - w_6^2} = 220.479 \frac{m}{s}
+\]
+
+``````latex
+
+
+\section*{Problem c)}
+
+\[
+\Delta exserg = \cancel{\dot{m}} (h_6 - h_0 - T_0 (s_6 - s_0))
+\]
+
+\[
+\Delta exserg = \cancel{\dot{m}} \left[ c_p (T_6 - T_0) - T_0 \left( c_p \left( \ln \left( \frac{T_6}{T_0} \right) \right) - R \left( \ln \left( \frac{p_6}{p_0} \right) \right) \right) + \frac{w_6^2 - w_0^2}{2} \right]
+\]
+
+\[
+= \cancel{\dot{m}} \left[ (12.462 \frac{kJ}{kg}) + \frac{1000 \cdot 50^2}{2} \right] \Rightarrow \Delta exserg = 122.542 \frac{kJ}{kg}
+\]
+
+\section*{Problem d)}
+
+\[
+\cancel{exval = \cancel{T_0}}
+\]
+
+\[
+exval = \Delta exserg + ex_q - \cancel{\dot{w}_{in}^o}
+\]
+
+\[
+= -\Delta exserg + \left( 1 - \frac{T_0}{T_B} \right) q_B = 1070.508 \left( \frac{kJ}{kg} \right)
+\]
+
+``````latex
+
+

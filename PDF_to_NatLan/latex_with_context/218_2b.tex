@@ -1,0 +1,33 @@
+The outlet velocity \( w_6 \) and temperature \( T_6 \) are calculated using energy balance equations.  
+
+The energy balance equation is:  
+\[
+Q = \dot{m} \left( h_e - h_a + \frac{w_e^2 - w_a^2}{2} \right)
+\]  
+
+The outlet velocity \( w_a \) is derived as:  
+\[
+w_a = \sqrt{h_e - h_a + \frac{w_e^2}{2}}
+\]  
+
+Substituting the enthalpy difference and velocity terms:  
+\[
+w_a = \sqrt{c_p (T_5 - T_6) + \frac{w_e^2}{2}}
+\]  
+
+The temperature \( T_6 \) is calculated using the isentropic relation:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}}
+\]  
+
+Substituting values:  
+\[
+T_6 = 431.9 \left( \frac{0.191}{0.5} \right)^{\frac{1.4 - 1}{1.4}} = 328.07 \, \text{K}
+\]  
+
+Finally, the outlet velocity \( w_a \) is calculated:  
+\[
+w_a = \sqrt{1.006 \, \frac{\text{kJ}}{\text{kg·K}} (431.9 - 328.07) + \frac{220^2}{2}} = 682.79 \, \text{m/s}
+\]  
+
+A small diagram is drawn showing the nozzle with labeled inlet velocity \( w_e = 220 \, \text{m/s} \), outlet velocity \( w_a \), and temperature \( T_6 = 328.07 \, \text{K} \).

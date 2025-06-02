@@ -1,0 +1,59 @@
+The pressure of the gas in state 1 (\( p_{g,1} \)) is calculated as:  
+\[
+p_{g,1} = p_{\text{EW}} + \frac{m_K \cdot g}{A}
+\]  
+Substituting values:  
+\[
+p_{g,1} = 1.4 \, \text{bar}
+\]  
+
+The mass of the gas (\( m_{\text{gas}} \)) is determined using the ideal gas law:  
+\[
+m_{\text{gas}} = \frac{p_{g,1} \cdot V_{g,1}}{R \cdot M \cdot T_{g,1}}
+\]  
+Substituting values:  
+\[
+m_{\text{gas}} = 3.4224 \, \text{g}
+\]  
+
+Two diagrams are drawn to depict the forces acting on the piston and the pressure contributions. The first diagram shows the pressure from the ice-water mixture (\( p_{\text{EW}} \cdot A \)) and the weight of the piston (\( m_K \cdot g \)) acting downward. The second diagram includes the same forces but explicitly labels the pressure contributions from the ambient pressure (\( p_0 \)) and the piston weight divided by the area (\( \frac{m_K \cdot g}{A} \)).  
+
+---
+
+The absolute value of heat transfer is given as:  
+\[
+|Q_{12}| = 1500 \, \text{J}
+\]  
+
+Energy balance for the closed system (ice-water mixture):  
+\[
+\Delta E = m_{\text{EW}} \cdot (U_2 - U_1) = Q_{12}
+\]  
+
+The internal energy \( U_1 \) is calculated as:  
+\[
+U_1 = U_{\text{flüssig}}(0^\circ\text{C}) + x_{\text{Eis}} \cdot \left( U_{\text{fest}}(0^\circ\text{C}) - U_{\text{flüssig}}(0^\circ\text{C}) \right)
+\]  
+\[
+U_{\text{flüssig}}(0^\circ\text{C}) = -0.045 \, \frac{\text{kJ}}{\text{kg}}, \quad U_{\text{fest}}(0^\circ\text{C}) = -333.458 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+U_1 = -0.045 + x_{\text{Eis}} \cdot (-333.458 - (-0.045)) = -200.0928 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The internal energy \( U_2 \) is calculated as:  
+\[
+U_2 = U_{\text{flüssig}}(10^\circ\text{C}) + x_{\text{Eis},2} \cdot \left( U_{\text{fest}} - U_{\text{flüssig}} \right)
+\]  
+
+Rearranging the energy balance:  
+\[
+\frac{Q_{12}}{m_{\text{EW}}} + U_1 = U_{\text{flüssig}} + x_2 \cdot (U_{\text{fest}} - U_{\text{flüssig}})
+\]  
+\[
+x_2 = \frac{\frac{Q_{12}}{m_{\text{EW}}} + U_1 - U_{\text{flüssig}}}{U_{\text{fest}} - U_{\text{flüssig}}}
+\]  
+Substituting values:  
+\[
+x_2 = 0.555
+\]

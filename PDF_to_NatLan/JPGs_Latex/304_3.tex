@@ -1,0 +1,56 @@
+TASK 2c  
+The mass-specific increase in flow exergy is calculated using the formula:  
+\[
+ex_{\text{flow}} = h_6 - h_0 - T_0 \cdot (s_6 - s_0) + \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]  
+Breaking this down:  
+\[
+\Delta ex_{\text{flow}} = h_6 - h_0 - T_0 \cdot (s_6 - s_0) + \frac{w_6^2}{2} - \frac{w_0^2}{2} + c_p \cdot (T_6 - T_0) - c_p \cdot \ln\left(\frac{T_6}{T_0}\right) - R \cdot \ln\left(\frac{p_6}{p_0}\right) + \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]  
+The numerical calculation yields:  
+\[
+\Delta ex_{\text{flow}} = 108,745 \, \frac{\text{J}}{\text{kg}}
+\]  
+\[
+\Delta ex_{\text{flow}} = 108,745 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+---
+
+TASK 2d  
+For a stationary flow process over the entire turbine, the exergy balance is expressed as:  
+\[
+0 = -\Delta ex_{\text{flow}} + \sum \dot{E}_{\text{in}} - \sum \dot{W}_{\text{in}} - \dot{E}_{\text{out}}
+\]  
+Simplifying:  
+\[
+ex_{\text{out}} = -\Delta ex_{\text{flow}} + \text{eva} - 0
+\]  
+
+The exergy of the heat stream \( q_B \) is given by:  
+\[
+\dot{E}_{\text{ex},q} = \left(1 - \frac{T_0}{\bar{T}_B}\right) \cdot \dot{Q}_B
+\]  
+Where:  
+\[
+\dot{Q}_B = q_B \cdot \dot{m}_K
+\]  
+
+Substituting values:  
+\[
+\dot{E}_{\text{ex},q} = \left(1 - \frac{T_0}{\bar{T}_B}\right) \cdot q_B \cdot \dot{m}_K
+\]  
+\[
+= \left(1 - \frac{30 + 273.15 \, \text{K}}{1289 \, \text{K}}\right) \cdot 1195 \, \frac{\text{kJ}}{\text{kg}} \cdot \dot{m}_K
+\]  
+\[
+= 869.58 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Finally, the exergy output is calculated as:  
+\[
+ex_{\text{out}} = -108,745 + 869.58
+\]  
+\[
+ex_{\text{out}} = 860,835 \, \frac{\text{J}}{\text{kg}}
+\]

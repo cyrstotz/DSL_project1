@@ -1,0 +1,38 @@
+The diagram represents a qualitative \( T \)-\( s \) diagram for the jet engine process. The temperature \( T \) is plotted on the vertical axis (in Kelvin), and the entropy \( s \) is plotted on the horizontal axis (in \( \text{kJ}/\text{kg·K} \)). The process includes labeled states:  
+- State 0 represents the ambient conditions.  
+- States 1, 2, and 3 correspond to the compression process, with \( p_1 = p_3 \).  
+- State 4 represents the combustion process.  
+- State 5 corresponds to the mixing chamber, and \( p_4 = p_5 \).  
+- State 6 represents the nozzle exit, where \( p_6 = p_0 \).  
+
+The diagram shows isobars and process paths connecting the states, indicating compression, combustion, mixing, and expansion processes.
+
+---
+
+The energy balance equation is written as:  
+\[
+0 = h_5 - h_6 + w_5 - w_6
+\]  
+This can be expanded to:  
+\[
+0 = c_{p,\text{air}} (T_5 - T_6) + w_5 - w_6
+\]  
+
+For a reversible, adiabatic subroutine, the temperature ratio is derived as:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{1 - \kappa}{\kappa}}
+\]  
+Substituting \( p_6 = p_0 \), the equation becomes:  
+\[
+T_6 = \left( \frac{p_0}{p_5} \right)^{\frac{1 - \kappa}{\kappa}} \cdot T_5 = 328.07 \, \text{K}
+\]  
+
+The enthalpy difference is calculated as:  
+\[
+h_0 - h_6 = -85.43 \, \text{kJ/kg}
+\]  
+
+The outlet velocity is determined as:  
+\[
+w_6 = 510 \, \text{m/s}
+\]

@@ -1,0 +1,77 @@
+TASK 2a  
+The diagram is a qualitative representation of the jet engine process on a temperature-entropy (\( T \)-\( s \)) diagram. It includes labeled isobars and process states:  
+- State 0: Ambient conditions (\( p_0 = 0.191 \, \text{bar} \), \( T_0 = -30^\circ\text{C} \)).  
+- State 1: Adiabatic compression.  
+- State 2: Adiabatic compression with isentropic efficiency \( \eta_{\text{comp}} < 1 \).  
+- State 3: Isobaric heat addition.  
+- State 4: Adiabatic turbine expansion.  
+- State 5: Mixing chamber.  
+- State 6: Adiabatic nozzle expansion to ambient pressure (\( p_6 = p_0 \)).  
+
+The diagram shows curved lines for isobars, with transitions between states marked by arrows. The axes are labeled as follows:  
+- \( T \) (temperature) in \( \, ^\circ\text{C} \) on the vertical axis.  
+- \( s \) (entropy) in \( \, \text{kJ/kg·K} \) on the horizontal axis.  
+
+TASK 2b  
+The outlet velocity \( w_6 \) and temperature \( T_6 \) are determined using the first law of thermodynamics for a flying system under steady-state conditions.  
+
+The energy balance equation is:  
+\[
+0 = \dot{m} \left[ h_6 - h_4 + \frac{w_6^2}{2} - \frac{w_4^2}{2} \right] + \dot{Q}_{\text{in}}
+\]  
+
+Rearranging for \( w_6^2 \):  
+\[
+w_6^2 = 2 \left( h_4 - h_6 \right) + w_4^2 + 2 \frac{\dot{Q}_{\text{in}}}{\dot{m}}
+\]  
+
+Substituting \( h_4 - h_6 = c_p^{\text{air}} \left( T_4 - T_6 \right) \):  
+\[
+w_6^2 = 2 c_p^{\text{air}} \left( T_4 - T_6 \right) + w_4^2 + 2 \frac{\dot{Q}_{\text{in}}}{\dot{m}}
+\]  
+
+Given values:  
+\[
+T_4 = 1289 \, \text{K}, \quad T_6 = 431.9 \, \text{K}, \quad w_4 = 220 \, \text{m/s}, \quad \dot{Q}_{\text{in}} = 1195 \, \text{kJ/kg}, \quad c_p^{\text{air}} = 1.006 \, \text{kJ/kg·K}
+\]  
+
+Substitute and solve for \( w_6 \):  
+\[
+w_6 = \sqrt{2 \cdot 1.006 \cdot (1289 - 431.9) + 220^2 + 2 \cdot 1195}
+\]  
+
+TASK 2c  
+The mass-specific increase in flow exergy is calculated as:  
+\[
+\Delta ex_{\text{flow}} = ex_{\text{flow},6} - ex_{\text{flow},0}
+\]  
+
+Using the exergy equation:  
+\[
+ex_{\text{flow}} = h - h_0 - T_0 (s - s_0) + \frac{w^2}{2}
+\]  
+
+For \( \Delta ex_{\text{flow}} \):  
+\[
+\Delta ex_{\text{flow}} = (h_6 - h_0) - T_0 (s_6 - s_0) + \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]  
+
+Substitute \( h_6 - h_0 = c_p^{\text{air}} (T_6 - T_0) \) and \( s_6 - s_0 = c_p^{\text{air}} \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) \):  
+\[
+\Delta ex_{\text{flow}} = c_p^{\text{air}} (T_6 - T_0) - T_0 \left[ c_p^{\text{air}} \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) \right] + \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]  
+
+Given values:  
+\[
+T_0 = -30^\circ\text{C} = 243.15 \, \text{K}, \quad p_0 = 0.191 \, \text{bar}, \quad p_6 = p_0, \quad w_0 = 200 \, \text{m/s}
+\]  
+
+Substitute and solve for \( \Delta ex_{\text{flow}} \).  
+
+TASK 2c (continued)  
+The mass-specific exergy destruction \( ex_{\text{dest}} \) in the engine is calculated as:  
+\[
+ex_{\text{dest}} = \Delta ex_{\text{flow}} - \Delta ex_{\text{work}}
+\]  
+
+Where \( \Delta ex_{\text{work}} \) is the work exergy difference between states.

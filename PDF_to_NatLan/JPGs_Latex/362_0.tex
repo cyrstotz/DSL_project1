@@ -1,0 +1,52 @@
+TASK 1a  
+Energy balance for the steady-state flow process around water:  
+\[
+0 = \dot{m} (h_{\text{in}} - h_{\text{out}}) + Q_R - Q_{\text{out}}
+\]  
+Rearranging for \( Q_{\text{out}} \):  
+\[
+Q_{\text{out}} = \dot{m} (h_{\text{out}} - h_{\text{in}}) \cdot c_p + Q_R
+\]  
+From the water tables:  
+\[
+h_{\text{in}}(70^\circ\text{C}, x=0) \quad \text{(Table A-2)} = 292.58 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_{\text{out}}(100^\circ\text{C}, x=0) \quad \text{(Table A-2)} = 419.04 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Substituting values:  
+\[
+Q_R = 0.3 \cdot (419.04 - 292.58) + Q_R = 62.18 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+Thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant:  
+\[
+T_{\text{KF}} = \frac{\int S_e T \, dS}{S_e - S_a}
+\]  
+For ideal heat transfer:  
+\[
+T_{\text{KF}} = \frac{(T_2 - T_1)}{\ln \left( \frac{T_2}{T_1} \right)}
+\]  
+Substituting values:  
+\[
+T_{\text{KF}} = \frac{(298.15 - 288.15)}{\ln \left( \frac{298.15}{288.15} \right)} = 293.12 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+Entropy balance around the wall/boundary:  
+\[
+\Delta S = \sum \frac{Q}{T} + S_{\text{gen}}
+\]  
+Rearranging for \( S_{\text{gen}} \):  
+\[
+S_{\text{gen}} = \frac{Q_{\text{out}}}{T_{\text{ideal}}} + \frac{Q_{\text{out}}}{T}
+\]  
+Substituting values:  
+\[
+S_{\text{gen}} = 0.38 \, \frac{\text{kJ}}{\text{K}}
+\]  

@@ -1,0 +1,51 @@
+The pressure of the gas in state 1, \( p_{g,1} \), is calculated using the ideal gas law:  
+\[
+p_{g,1} \cdot V_{g,1} = m_g \cdot T_1 \cdot R
+\]  
+The specific gas constant \( R \) is determined as:  
+\[
+R = \frac{R_u}{M_g} = \frac{8314 \, \text{J/(kmol·K)}}{50 \, \text{kg/kmol}} = 166.28 \, \text{J/(kg·K)}
+\]  
+The pressure \( p_{g,1} \) is expressed as:  
+\[
+p_{g,1} = p_{\text{inner}} = p_0 + \frac{F_A}{A}
+\]  
+Where:  
+\[
+F_A = m_K \cdot g = 32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2 = 313.92 \, \text{N}
+\]  
+The cross-sectional area \( A \) of the cylinder is calculated as:  
+\[
+A = \frac{\pi \cdot D^2}{4} = \frac{\pi \cdot (0.1 \, \text{m})^2}{4} = 0.00785 \, \text{m}^2
+\]  
+Thus:  
+\[
+p_{g,1} = p_0 + \frac{F_A}{A} = 1 \, \text{bar} + \frac{313.92 \, \text{N}}{0.00785 \, \text{m}^2} = 1 \, \text{bar} + 0.448 \, \text{bar} = 1.448 \, \text{bar}
+\]  
+The mass of the gas \( m_g \) is calculated as:  
+\[
+m_g = \frac{p_{g,1} \cdot V_{g,1}}{T_1 \cdot R} = \frac{1.448 \, \text{bar} \cdot 0.00314 \, \text{m}^3}{500 \, \text{K} \cdot 166.28 \, \text{J/(kg·K)}} = 0.00353 \, \text{kg} = 3.53 \, \text{g}
+\]
+
+The energy balance for the ice-water (EW) system is written as:  
+\[
+\Delta E = Q_{zu} - W
+\]  
+The system is incompressible.  
+
+The internal energy of the EW system is expressed as:  
+\[
+m_{\text{EW}}(u_2) - m_{\text{EW}}(u_1) = Q_{zu}
+\]  
+For the initial state, \( u_1(x_1 = 0.6, 0^\circ\text{C}) \) is calculated as:  
+\[
+u_1 = u_p + 0.6 \cdot u_{\text{frost}} - u_p
+\]  
+Substituting values:  
+\[
+u_p = -333.458 \, \text{kJ/kg}, \quad u_{\text{frost}} = 0.002 \, \text{kJ/kg}
+\]  
+The result is:  
+\[
+u_1 = -132.173 \, \text{kJ/kg}
+\]

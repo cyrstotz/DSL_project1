@@ -1,0 +1,49 @@
+TASK 4a  
+A graph is drawn showing a pressure-temperature (\( p \)-\( T \)) diagram. The curve represents the phase boundaries, with labeled points 1, 2, 3, and 4 indicating different states in the freeze-drying process. Arrows indicate the transitions between these states, forming a cycle. The axes are labeled as \( p \) [bar] for pressure and \( T \) [K] for temperature.
+
+---
+
+TASK 4b  
+The energy balance for the heat exchanger is given as:  
+\[
+0 = \dot{m} \left( h_4 - h_2 \right) - \dot{W}_K
+\]  
+where \( \dot{m} \) is the mass flow rate, \( h_4 \) and \( h_2 \) are specific enthalpies, and \( \dot{W}_K \) is the compressor work.
+
+The mass flow rate is expressed as:  
+\[
+\dot{m} = \frac{\dot{W}_K}{h_4 - h_2}
+\]
+
+The enthalpy \( h_2 \) is interpolated using the following steps:  
+\[
+h_2 = h_g(22^\circ \text{C}) \text{ (no interpolation needed)}
+\]  
+\[
+h_2 = h_g(8 \, \text{bar}) = 269.15 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+Interpolation is performed for \( h_g(22^\circ \text{C}) \):  
+\[
+h_g(22^\circ \text{C}) = h_g(15^\circ \text{C}) + \frac{h_g(30^\circ \text{C}) - h_g(15^\circ \text{C})}{30 - 15} \cdot (22 - 15)
+\]  
+\[
+h_g(22^\circ \text{C}) = 269.38 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The enthalpy values are summarized as:  
+\[
+h_g = 269.38 \, \frac{\text{kJ}}{\text{kg}}, \quad h_4 = 269.25 \, \frac{\text{kJ}}{\text{kg}}, \quad h_2 = 85.57 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The mass flow rate is calculated as:  
+\[
+\dot{m} = \frac{2.8 \, \text{kW}}{(269.38 - 269.15) \, \frac{\text{kJ}}{\text{kg}}}
+\]  
+\[
+\dot{m} = 7.209 \times 10^{-3} \, \frac{\text{kg}}{\text{s}}
+\]  
+
+---
+
+No additional diagrams or figures are described beyond the \( p \)-\( T \) graph in TASK 4a.

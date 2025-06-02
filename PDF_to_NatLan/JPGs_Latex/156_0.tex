@@ -1,0 +1,60 @@
+TASK 1a  
+The energy balance equation for the reactor is written as:  
+\[
+0 = \dot{m}_{\text{in}} (h_1 - h_2) + \dot{Q}_R + \dot{Q}_{\text{out}}
+\]  
+Rearranging to solve for \( \dot{Q}_{\text{out}} \):  
+\[
+\dot{Q}_{\text{out}} = -\dot{Q}_R + \dot{m}_{\text{in}} (h_2 - h_1) = -62 \, \text{kW}
+\]  
+
+The enthalpy values are determined from the water tables:  
+1. At \( T_1 = 70^\circ\text{C} \), \( h_1 = h_f = 292.38 \, \text{kJ/kg} \).  
+2. At \( T_2 = 100^\circ\text{C} \), \( h_2 = h_f = 419.04 \, \text{kJ/kg} \).  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant, \( T_{\text{KF}} \), is calculated using the integral expression:  
+\[
+T_{\text{KF}} = \frac{\int_{S_1}^{S_2} T \, dS}{S_2 - S_1} = \frac{\int_{T_1}^{T_2} c_f \, dT}{\ln \left( \frac{T_2}{T_1} \right)}
+\]  
+where \( c_f \) is constant.  
+
+Substituting values:  
+\[
+T_{\text{KF}} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)} = \frac{100 - 70}{\ln \left( \frac{100}{70} \right)} = 293.12 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+The entropy production rate, \( \dot{S}_{\text{gen}} \), is calculated as:  
+\[
+\dot{S}_{\text{gen}} = \dot{S}_{\text{Reactor}} + \dot{S}_{\text{KF,out}}
+\]  
+where:  
+\[
+\dot{S}_{\text{Reactor}} = -\frac{\dot{Q}_R}{T} + \dot{m}_{\text{in}} (S_2 - S_1)
+\]  
+and:  
+\[
+\dot{S}_{\text{KF,out}} = \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+
+From the water tables:  
+\[
+S_1 = S_f = 0.8549 \, \text{kJ/kg·K}, \quad S_2 = S_f = 1.3069 \, \text{kJ/kg·K}
+\]  
+
+Substituting values:  
+\[
+\dot{S}_{\text{Reactor}} = -\frac{-62}{373.15} + 0.3 (1.3069 - 0.8549) = 4.25 \, \text{W/K}
+\]  
+
+The reactor temperature is \( T = T_{\text{Reactor}} = 100^\circ\text{C} \).  
+
+Heat flows are related as:  
+\[
+\dot{Q} = \dot{Q}_R + \dot{Q}_{\text{out}}
+\]

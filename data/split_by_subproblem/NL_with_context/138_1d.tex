@@ -1,0 +1,24 @@
+\( \dot{m}_{in} - \dot{m}_{out} = 0 \)  
+\( m_{total} = 5755 \, \text{kg} \)  
+\( T_{Reactor,1} = 100^\circ \text{C} \)  
+\( x_D = 0.005 \)  
+\( T_{in,12} = 20^\circ \text{C} \)  
+\( x_{D,2} = 0 \)  
+
+The system starts with a mass containing 0.005 steam as vapor and ends as pure boiling liquid at 100°C.  
+
+Equilibrium for the isolated system:  
+\( \dot{E} = \frac{d}{dt} (\text{KE}) + \frac{d}{dt} (\text{PE}) + \frac{d}{dt} (\text{U}) = \dot{Q} - \dot{W} \)  
+\( \Rightarrow \dot{u} = \dot{Q} \)  
+
+Inner energy at states 1 and 2 from A-2:  
+\( u_{\text{vapor}}(100^\circ \text{C}) = 2506.5 \, \frac{\text{kJ}}{\text{kg}} \)  
+\( u_{\text{liquid}}(100^\circ \text{C}) = 419.08 \, \frac{\text{kJ}}{\text{kg}} \)  
+\( u_{\text{liquid}}(70^\circ \text{C}) = 293.95 \, \frac{\text{kJ}}{\text{kg}} \)  
+
+Energy balance:  
+\( m_{total} \cdot q_{\text{liquid}}(70^\circ \text{C}) - (m_{total} \cdot x_D \cdot u_{\text{vapor}}(100^\circ \text{C}) + (1 - x_D) \cdot u_{\text{liquid}}(100^\circ \text{C})) = Q \)  
+
+\( (m_{total} + \Delta m_{12}) \cdot u_{\text{liquid}}(70^\circ \text{C}) - m_{total} \cdot (x_D \cdot u_{\text{vapor}}(100^\circ \text{C}) + (1 - x_D) \cdot u_{\text{liquid}}(100^\circ \text{C})) = Q_{R,12} \)  
+
+\( \Delta m_{12} = \frac{Q_{R,12} - m_{total} \cdot u_{\text{liquid}}(100^\circ \text{C}) - m_{total} \cdot x_D \cdot (u_{\text{vapor}}(100^\circ \text{C}) - u_{\text{liquid}}(100^\circ \text{C}))}{u_{\text{liquid}}(70^\circ \text{C})} \approx 2794.6 \, \text{kg} \)

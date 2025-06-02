@@ -1,0 +1,112 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{center}
+\textbf{Graph Description:}
+\end{center}
+
+The graph is a plot with the vertical axis labeled \( T \left[ K \right] \) and the horizontal axis labeled \( S \left[ \frac{kJ}{kg \cdot K} \right] \). The graph represents an ideal fluid. 
+
+There are six points labeled 1, 2, 3, 4, 5, and 6. The path from point 1 to point 2 is labeled "irrevers.", the path from point 2 to point 3 is labeled "irrevers.", the path from point 3 to point 4 is labeled "isotherm", the path from point 4 to point 5 is labeled "reversibel", and the path from point 5 to point 6 is labeled "reversibel". 
+
+The points 1 and 6 are connected by a line labeled \( p_0 = p_6 \), and the points 4 and 5 are connected by a line labeled \( p_4 = p_5 \).
+
+\subsection*{b)}
+
+\textbf{Gegeben:} \( w_6, T_6 \)
+
+\textbf{stat. Fließprozess um gesamtes Triebwerk, adiabate}
+
+\[
+0 = h_{ein} - h_{aus} + \frac{w_{ein}^2 - w_{aus}^2}{2}
+\]
+
+\[
+\Rightarrow w_{aus} = \sqrt{2(h_{ein} - h_{aus}) + w_{ein}^2}
+\]
+
+\textbf{ideales Gas:} \( c_{p, \text{mit}} (T_{aus} - T_{ein}) + v^2 \left[ \frac{p_3 - p_1}{\rho} \right] \)
+
+\[
+T_{aus} = T_{ein} \left( \frac{p_6}{p_0} \right)^{\frac{1.4 - 1}{1.4}} \Rightarrow T_{aus} = T_{ein}
+\]
+
+\textbf{Somit ist} \( w_{aus} = w_{ein} \)
+
+``````latex
+
+
+\section*{Problem b}
+
+\textbf{b) Stationärer Flussprozess im Schaufelgitter:}
+
+Energiegleichung der reversiblen Adiabate:
+\[
+h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} = 0
+\]
+
+\[
+w_6^2 = 2(h_5 - h_6) + w_5^2
+\]
+
+\[
+w_6^2 = 220 \frac{m^2}{s^2}
+\]
+
+\[
+T_6 = 75 \left( \frac{P_6}{P_5} \right)^{\frac{k-1}{k}} = 328.07468 K
+\]
+
+\section*{Problem c}
+
+\textbf{c) Ges: $\Delta ex_{str} = ex_6 - ex_0$}
+
+Exergie einer ström. Reibung:
+\[
+ex_6 = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2}, \quad w_6 = 5 \cdot 10 \frac{m}{s}, \quad T_0 = 293.15 K
+\]
+
+\[
+ex_0 = \frac{w_0^2}{2}, \quad \text{alle anderen Terme = 0, da } h_0 \text{ und } s_0 \text{ unabhängig von der Temp.}
+\]
+
+\[
+h_6 - h_0 = c_p (T_6 - T_0) = 85.134 \frac{kJ}{kg}
+\]
+
+\[
+s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{P_6}{P_0} \right) = 0.30196 \frac{kJ}{kg \cdot K}, \quad \text{da } P_6 = P_0
+\]
+
+\[
+\Rightarrow ex_6 = 85.134 \frac{kJ}{kg} - 293.15 K \cdot 0.30196 \frac{kJ}{kg \cdot K} + \frac{(5 \cdot 10 \frac{m}{s})^2}{2} = 345 \frac{kJ}{kg}
+\]
+
+\[
+ex_0 = 20 \frac{kJ}{kg}
+\]
+
+\[
+\Delta ex = 325 \frac{kJ}{kg}
+\]
+
+``````latex
+
+
+\section*{2d}
+
+Exergiebilanz im Flugzeugtriebwerk: \\
+Adiabatic, \( W_t = 0 \), stat. Fließprozesse
+
+\[
+\dot{E}_{\text{ex,rel}} = \dot{E}_{\text{ex,str}} = 100 \frac{\text{kJ}}{\text{kg}}
+\]
+
+``````latex
+
+

@@ -1,0 +1,20 @@
+TASK 2a  
+The exergy balance equation is expressed as:  
+\[
+E_{x,\text{vol}} = \dot{m} \left[ h_e - h_a - T_0 (s_e - s_a) + \delta h_e \right] + \sum_i \left( 1 - \frac{T_0}{T_i} \right) \dot{Q}_j = e_{x,\text{vol}} \cdot \dot{m}
+\]
+
+Setting the equation to zero:  
+\[
+0 = \dot{m} \left[ h_e - h_a + \delta h_e \right] + \sum_j \dot{Q}_j
+\]
+
+From this, the exergy destruction term can be derived:  
+\[
+E_{x,\text{vol}} = \dot{m} \left[ -T_0 (s_e - s_a) \right] + \sum_i \left( 1 - \frac{T_0}{T_i} \right) \dot{Q}_j - \sum_j \dot{Q}_j
+\]
+
+Simplifying further:  
+\[
+e_{x,\text{vol}} = -T_0 (s_e - s_a) + \frac{\sum_i \left( 1 - \frac{T_0}{T_i} \right) \dot{Q}_j}{\dot{m}} - \frac{\sum_j \dot{Q}_j}{\dot{m}}
+\]

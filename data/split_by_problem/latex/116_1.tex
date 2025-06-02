@@ -1,0 +1,156 @@
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+\subsection*{a)}
+
+\[
+Q_{\text{aus}}:
+\]
+
+1. HS: stationär
+
+\[
+0 = \dot{m} \left( h_{\text{ein}} - h_{\text{aus}} \right) + \dot{Q} - \dot{Q}_{\text{aus}}
+\]
+
+\[
+Q_{\text{aus}} = \dot{m} \left( h_{\text{ein}} - h_{\text{aus}} \right) + 100 \, \text{kW}
+\]
+
+\[
+\dot{m} = 0.3 \, \frac{\text{kg}}{\text{s}}
+\]
+
+\[
+h_{\text{ein}} = \text{siedende Flüssigkeit:} \, h_f (70^\circ \text{C}) = 292.98 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_{\text{aus}} = h_f (100^\circ \text{C}) = 419.04
+\]
+
+\[
+Q_{\text{aus}} = 62.182 \, \text{kW}
+\]
+
+\subsection*{b)}
+
+\[
+\dot{E}_{\text{kf}} = \frac{\int_a^e T \, ds}{s_a - s_e} \quad \text{ex. umben.} \quad \frac{T_{\text{aus}} - T_{\text{ein}}}{\ln \left( \frac{T_{\text{aus}}}{T_{\text{ein}}} \right)} = 293.12 \, \text{K}
+\]
+
+\[
+s_a - s_e = c_{l} \ln \left( \frac{T_{\text{aus}}}{T_{\text{ein}}} \right) \quad (\text{ideale Flüssigkeit}) \quad (\text{isobar})
+\]
+
+\[
+\int_a^e T \, ds = q_{\text{zu}} = h_{\text{aus}} - h_{\text{ein}} \quad (\text{1. HS})
+\]
+
+\[
+= c_{l} \left[ T_{\text{aus}} - T_{\text{ein}} \right] \quad (\text{ideale Fl.}) \quad (\text{isobar})
+\]
+
+\[
+T_{\text{aus}} = 298.15 \, \text{K}
+\]
+
+\[
+T_{\text{ein}} = 288.15 \, \text{K}
+\]
+
+``````latex
+
+
+\section*{c)}
+
+\textbf{Satz:}
+
+Entropie entsteht in Wand!
+
+\begin{itemize}
+    \item Kein Massenfluss durch Wand!
+    \item Stationär: $\frac{dS}{dt} = 0$
+\end{itemize}
+
+\[
+0 = \frac{\dot{Q}}{T} + \dot{S}_{\text{erz}} \quad \Rightarrow \quad \dot{S}_{\text{erz}} = -\frac{\dot{Q}}{T_{\text{w}}}
+\]
+
+\[
+\dot{Q} = -\dot{Q}_{R} + \dot{Q}_{\text{aus}} = -100 + 62.182 = -37.818
+\]
+
+\[
+\dot{S}_{\text{erz}} = \frac{+37.818}{293.12} = 0.129 \frac{\text{kJ}}{\text{K}}
+\]
+
+\textbf{Graphical Description:}
+
+There is a horizontal line labeled "Kühlmantel" with an arrow pointing to the right labeled "Q_{aus}". Below this line, there is another horizontal line labeled "Reaktor" with an arrow pointing upwards labeled "Q_{R}". There are also some additional arrows and labels indicating the direction of heat flow.
+
+\section*{d)}
+
+\textbf{Halboffen:}
+
+\[
+m_{u2} - m_{u1} - \Delta m_{u2} h_{u2} = 0 \quad \Rightarrow \quad Q_{u2} = Q_{\text{aus}}
+\]
+
+\[
+\Delta m_{u2} = \frac{m_{u2} - m_{u1}}{h_{u2}} = \frac{\Delta m_{u2} u_{u1} + m_{u2} - m_{u1}}{h_{u2}}
+\]
+
+\[
+m_{u1} = 5755 \text{ kg}
+\]
+
+\[
+m_{u2} = m_{u1} + \Delta m_{u2}
+\]
+
+\[
+h_{u2} = h_{u}(70^\circ \text{C}) = 932.98
+\]
+
+\[
+u_{u1} = h_{u}(1000, 0.005) = 0.005 (2676.1) + (1 - 0.005) 419.09 = 430.353
+\]
+
+\[
+h_{u2} = h_{u}(20^\circ \text{C}) = 53.96
+\]
+
+\[
+\Delta m_{u2} = 3781.563 \text{ kg}
+\]
+
+``````latex
+
+
+\section*{Teil: Aufgabe 1}
+
+\subsection*{e) AS half offen:}
+
+\begin{align*}
+    m_{2S2} - m_{1S1} &= Am_{12}S_{12} + S_{erz} \quad (\text{keine Linie}) \\
+    S_{erz} &= m_{2S2} - m_{1S1} - Am_{12}S_{12} \\
+    &= 289,61 \frac{hJ}{K}
+\end{align*}
+
+\noindent
+$m_{2S2} = 95.36.563$
+
+\begin{align*}
+    S_2 &= S_f(70^\circ C) = 2.9849 \\
+    S_1 &= S(100^\circ C, 0.005 = x) = 0.005 \cdot 7.359 + (1 - 0.005)(1.3069) \\
+    &\approx 1.33714 \\
+    S_{12} &= S_f(20^\circ C) = 0.2966
+\end{align*}
+
+``````latex
+
+

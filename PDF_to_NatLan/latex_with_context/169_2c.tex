@@ -1,0 +1,82 @@
+The energy balance for a stationary system between states 0 and 6 is written as:  
+\[
+0 = \dot{m} \cdot (h_6 - h_0) + \frac{w_6^2 - w_0^2}{2}
+\]  
+Rearranging for \( w_6^2 - w_0^2 \):  
+\[
+\frac{w_6^2 - w_0^2}{2} = h_0 - h_6
+\]  
+Solving for \( w_6 \):  
+\[
+w_6 = \sqrt{2(h_0 - h_6) + w_0^2}
+\]  
+
+The enthalpy difference \( h_0 - h_6 \) is expressed as:  
+\[
+h_0 - h_6 = \int_{T_0}^{T_6} c_p \, dT = c_p (T_6 - T_0)
+\]  
+Substituting values:  
+\[
+c_p = 1.006 \, \text{kJ/kg·K}, \, T_0 = -30^\circ\text{C} = 243.15 \, \text{K}, \, T_6 = 431.9 \, \text{K}
+\]  
+\[
+h_0 - h_6 = 1.006 \cdot (431.9 - 243.15) = 190.5 \, \text{kJ/kg}
+\]  
+
+Finally, substituting into the velocity equation:  
+\[
+w_6 = \sqrt{2(190.5) + 200^2} = \sqrt{381 + 40000} = 200.25 \, \text{m/s}
+\]  
+
+The temperature \( T_6 \) is calculated using the isentropic relation:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_5 = 431.9 \, \text{K}, \, p_6 = 0.191 \, \text{bar}, \, p_5 = 0.5 \, \text{bar}, \, \kappa = 1.4
+\]  
+\[
+T_6 = 431.9 \cdot \left( \frac{0.191}{0.5} \right)^{\frac{1.4 - 1}{1.4}} = 431.9 \cdot (0.382) = 293.91 \, \text{K}
+\]  
+
+The final result for \( T_6 \) is boxed:  
+\[
+T_6 = 293.91 \, \text{K}
+\]  
+
+No additional diagrams or figures are present beyond the \( T \)-\( s \) diagram described above.
+
+The mass-specific increase in flow exergy \( \Delta ex_{\text{flow}} \) is calculated using the following equation:  
+\[
+\Delta ex_{\text{flow}} = h_6 - h_0 - T_0 \cdot (s_6 - s_0) + \Delta ke
+\]
+where \( \Delta ke = \frac{w_6^2 - w_0^2}{2} \).  
+
+Given from Task 2:  
+\[
+h_0 - h_6 = c_p \cdot (T_0 - T_6) = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \cdot (243.15 \, \text{K} - 340 \, \text{K})
+\]
+\[
+T_0 = -30^\circ\text{C} + 273.15 = 243.15 \, \text{K}
+\]
+\[
+h_0 - h_6 \approx -97.43 \, \frac{\text{kJ}}{\text{kg}}
+\]
+\[
+s_0 - s_6 = 0, \text{ since the process is adiabatic and reversible.}
+\]
+
+Substituting into the equation for \( \Delta ex_{\text{flow}} \):  
+\[
+\Delta ex_{\text{flow}} = (h_0 - h_6) + \frac{w_6^2 - w_0^2}{2}
+\]
+\[
+= -97.43 \, \frac{\text{kJ}}{\text{kg}} + \frac{200^2 \, \frac{\text{m}^2}{\text{s}^2} - 510^2 \, \frac{\text{m}^2}{\text{s}^2}}{2}
+\]
+\[
+= -97.43 \, \frac{\text{kJ}}{\text{kg}} + \frac{200^2 - 510^2}{2} \, \frac{\text{m}^2}{\text{s}^2}
+\]
+\[
+\approx +207.48 \, \frac{\text{kJ}}{\text{kg}}
+\]

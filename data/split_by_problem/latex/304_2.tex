@@ -1,0 +1,78 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a $T$-$s$ diagram. The x-axis is labeled $s$ and the y-axis is labeled $T$. There are two curves, one starting from point $O$ and curving upwards to the right, and another starting from point $O$ and curving upwards to the left. The points $1$, $2$, $3$, $4$, $5$, and $6$ are marked on the graph. The path follows from $O$ to $1$, then vertically up to $2$, then diagonally up to $3$, horizontally to $4$, diagonally down to $5$, and finally vertically down to $6$. The points $p_1$ and $p_2$ are marked on the upper curve, and $p_0$ is marked on the lower curve.
+\end{description}
+
+\subsection*{b)}
+
+\begin{align*}
+    &\text{reversibel adiabate Schubdüse - also isentrop mit } n = 1.4 \\
+    &\frac{T_0}{T_5} = \left( \frac{p_0}{p_5} \right)^{\frac{n-1}{n}} \\
+    &\Rightarrow T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} \\
+    &T_6 = 431.9 \left( \frac{0.49}{0.5} \right)^{\frac{1.4-1}{1.4}} \\
+    &\quad = 431.9 \left( \frac{0.49}{0.5} \right)^{0.286} \\
+    &\quad = 328.07 \, \text{K}
+\end{align*}
+
+\begin{align*}
+    &\text{stationärer Fließprozess um Schubdüse} \\
+    &0 = \dot{m} \left[ (h_e - h_a) + \frac{w_e^2 - w_a^2}{2} \right] \\
+    &\Rightarrow 0 = h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \\
+    &\Rightarrow \frac{w_6^2}{2} = c_p (T_5 - T_6) + \frac{w_5^2}{2} \\
+    &w_6 = \sqrt{2 c_p (T_5 - T_6) + w_5^2} \\
+    &\quad = \sqrt{2 \cdot 1.006 \frac{\text{kJ}}{\text{kg K}} (431.9 \, \text{K} - 328.07 \, \text{K}) + 220 \frac{\text{m}^2}{\text{s}^2}} \\
+    &\quad = 507.25 \frac{\text{m}}{\text{s}}
+\end{align*}
+
+``````latex
+
+
+\section*{Student Solution}
+
+\subsection*{c)}
+
+\begin{align*}
+e_{\text{ex,0}} &= h_0 - h_0 - T_0 (s_1 - s_0) + \frac{w_1^2 - w_0^2}{2} + \text{pe} \\
+\Delta e_{\text{ex,0}} &= h_0 - h_0 - T_0 (s_0 - s_0) + \left( \frac{w_1^2}{2} - \frac{w_0^2}{2} \right) \\
+&= c_p (T_0 - T_0) - T_0 \left( c_p \ln \frac{T_c}{T_0} - R \ln \frac{p_c}{p_0} \right) + \frac{w_1^2}{2} - \frac{w_0^2}{2} \\
+&= 108,745 \frac{J}{kg} \\
+&= 108,745 \frac{J}{kg}
+\end{align*}
+
+\subsection*{d)}
+
+Stationärer Fließprozess um ganze Turbine:
+
+\begin{align*}
+0 &= -\Delta E_{\text{ex,0}} + \sum \dot{E}_{\text{ex,0}} - \sum \dot{W}_i - \dot{E}_{\text{ex,0}} \\
+&\Rightarrow e_{\text{ex,0}} = -\Delta e_{\text{ex,0}} + e_{\text{va}} - 0
+\end{align*}
+
+Exergie des Wärme-Stromes $q_B$:
+
+\begin{align*}
+\dot{E}_{\text{ex,0}} &= \left( 1 - \frac{T_0}{T} \right) \dot{q} \\
+q_B &= q_B \cdot \dot{m}
+\end{align*}
+
+\begin{align*}
+\Rightarrow m \cdot e_{\text{ex,0}} &= \left( 1 - \frac{T_0}{T} \right) \cdot 49 \frac{J}{kg} \cdot \dot{m} \\
+&= \left( 1 - \frac{302.273 \, \text{K}}{289 \, \text{K}} \right) \cdot 49 \frac{J}{kg} \cdot 1.195 \frac{kg}{s} \\
+&= 869.58 \frac{J}{kg}
+\end{align*}
+
+\begin{align*}
+\Rightarrow e_{\text{ex,0}} &= -108.745 + 869.58 \\
+&= 860.835 \frac{J}{kg}
+\end{align*}
+
+``````latex
+
+

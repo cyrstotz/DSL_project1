@@ -1,0 +1,70 @@
+TASK 2b  
+The energy balance equation is applied:  
+\[
+2 \dot{m} (h_6 - h_0) = w_6^2 - w_0^2 + w_{\text{out}}^2
+\]  
+Rearranging and solving for \( w_6 \):  
+\[
+w_6 = \sqrt{202^2 + 2 \cdot 5.8 \cdot 7.9} = 202.67 \, \text{m/s}
+\]  
+A note is added stating that \( \dot{m} \) might be incorrect and could be too small.
+
+---
+
+TASK 2c  
+The exergy balance is written as:  
+\[
+\dot{E}_{\text{ex}} = \dot{E}_{\text{ex,in}} - \dot{E}_{\text{ex,out}}
+\]  
+Using the exergy balance equation:  
+\[
+\dot{E}_{\text{ex}} = \dot{m} \left[ h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_{\text{out}}^2 - w_6^2}{2} \right]
+\]  
+Substituting values:  
+\[
+\dot{E}_{\text{ex}} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{200^2 - 5.462^2}{2}
+\]  
+
+Entropy difference \( s_6 - s_0 \) is calculated:  
+\[
+s_6 - s_0 = s(T_6) - s(T_0) - R \ln \frac{p_6}{p_0}
+\]  
+Using the equation for entropy:  
+\[
+s(T_6) - s(T_0) = c_p \ln \frac{T_6}{T_0}
+\]  
+Substituting values:  
+\[
+s_6 - s_0 = 1.006 \ln \frac{314.95}{243.15} - 0.362 \ln \frac{p_6}{p_0}
+\]  
+\[
+s_6 - s_0 = 1.4889 - 0.362 \, \text{J/kg·K}
+\]  
+
+The ratio \( \frac{c_p}{c_v} \) is calculated:  
+\[
+\frac{c_p}{c_v} = n = \frac{k \cdot c_v}{c_v} = 1.4 \cdot 1.006 = 1.4084
+\]  
+
+---
+
+TASK 2d  
+The exergy destruction is calculated using:  
+\[
+\dot{E}_{\text{ex,irr}} = T_0 \dot{S}_{\text{gen}}
+\]  
+Entropy generation \( \dot{S}_{\text{gen}} \) is expressed as:  
+\[
+\dot{S}_{\text{gen}} = \dot{S}_{\text{bypass}} + \dot{S}_{\text{turbine}}
+\]  
+For the bypass:  
+\[
+\dot{S}_{\text{bypass}} = \dot{m}_{\text{bypass}} (s_4 - s_3) + \dot{m}_K (s_4 - s_3) + \frac{\dot{Q}_B}{T_B}
+\]  
+Substituting values:  
+\[
+s_4 - s_3 = c_p \ln \frac{T_4}{T_3} - R \ln \frac{p_4}{p_3}
+\]  
+\[
+s_3 - s_2 = c_p \ln \frac{T_3}{T_2} - R \ln \frac{p_3}{p_2}
+\]

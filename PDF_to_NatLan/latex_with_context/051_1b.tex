@@ -1,0 +1,18 @@
+The thermodynamic mean temperature of the coolant is calculated using the entropy integral:  
+\[
+\bar{T} = \frac{\int_{T_{\text{ein}}}^{T_{\text{aus}}} T \, dS}{S_{\text{aus}} - S_{\text{ein}}}
+\]  
+The entropy change is expressed as:  
+\[
+\int_{T_{\text{ein}}}^{T_{\text{aus}}} T \, dS = Q_{\text{wall}}
+\]  
+For constant pressure, the entropy change is given by:  
+\[
+S_{\text{aus}} - S_{\text{ein}} = \int_{T_{\text{ein}}}^{T_{\text{aus}}} \frac{c_p(T)}{T} \, dT
+\]  
+This simplifies to:  
+\[
+S_{\text{aus}} - S_{\text{ein}} = c_p(T) \cdot \left[\ln(T)\right]_{T_{\text{ein}}}^{T_{\text{aus}}}
+\]  
+
+---

@@ -1,0 +1,59 @@
+\subsection*{a) vereinfacht:}
+
+\begin{center}
+\begin{tabular}{c}
+\begin{minipage}{0.3\textwidth}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{diagram.png}
+\end{center}
+\end{minipage}
+\end{tabular}
+\end{center}
+
+\noindent
+The diagram shows a container with a piston on top. The piston is labeled with $(m_k + m_{EV}) \cdot g$ and the area below the piston is labeled with $V_1$.
+
+\[
+R = \frac{R_m}{M_g} = \frac{8.314 \frac{\text{J}}{\text{mol K}}}{50 \frac{\text{kg}}{\text{mol}}} = 0.16628 \frac{\text{kJ}}{\text{kg K}}
+\]
+
+\[
+A_{Zyl} = A = \pi \cdot \frac{D^2}{4} = \pi \cdot 25 \text{cm} = \frac{\pi}{400} \text{m}^2
+\]
+
+\noindent
+Kräftegleichgewicht:
+
+\[
+p_{g,1} \cdot A = (m_k + m_{EV}) \cdot g + p_{amb} \cdot A
+\]
+
+\[
+p_{g,1} = \frac{g \cdot (m_k + m_{EV}) + p_{amb} \cdot A}{A}
+\]
+
+\[
+= \frac{9.81 \frac{\text{m}}{\text{s}^2} \cdot (32 \text{kg}) + 10^5 \text{Pa}}{\frac{\pi}{400} \text{m}^2} = 1.4008 \text{bar}
+\]
+
+\[
+T_{g,1} = 500 \text{K} - 273.15 \text{K} = 273.15 \text{K}
+\]
+
+\[
+p_{4} \cdot V_1 = m_g \cdot R \cdot T_1
+\]
+
+\[
+m_g = \frac{p_{1,1} \cdot V_1}{R \cdot T_1} = \frac{140090 \text{Pa} \cdot 3.14 \cdot 10^{-3} \text{m}^3}{0.16628 \frac{\text{kJ}}{\text{kg K}} \cdot 273.15 \text{K}} = 3.422 \text{kg}
+\]
+
+\subsection*{a) Vollsätzung:}
+
+\begin{align*}
+U_{2,v} &= U_{1,4\%bar,v} + X_2 \cdot \left( U_{1,fe,1\%bar,v} - U_{1,4\%bar,v} \right) \\
+X_2 &= \frac{U_{2,v} - U_{1,4\%bar,v}}{U_{1,fe,1\%bar,v} - U_{1,4\%bar,v}} &= \frac{600,73 \frac{kJ}{kg} + 0,023 \frac{kJ}{kg}}{-333,438 + 0,045 \frac{kJ}{kg}} \\
+&= -1,202 \quad \Rightarrow \text{Etwas ist falsch}
+\end{align*}
+
+``````latex

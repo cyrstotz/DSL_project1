@@ -1,0 +1,40 @@
+The energy balance equation is derived for the jet engine system:  
+\[
+\dot{Q} = \dot{m} \left( h_{\text{in}} + k_{\text{ein}} \right) - \dot{m} \left( h_{\text{aus}} + k_{\text{aus}} \right) + \dot{Q}_B
+\]  
+Simplifying, the equation becomes:  
+\[
+0 = \frac{w_{\text{ein}}^2}{2} - \frac{w_{\text{aus}}^2}{2} + q_B + h_{\text{ein}} - h_{\text{aus}}
+\]  
+Rearranging for \( w_{\text{aus}}^2 \):  
+\[
+w_{\text{aus}}^2 = w_{\text{ein}}^2 + 2q_B + 2c_p \left( T_6 - T_1 \right)
+\]  
+
+For \( T_6 \), the entropy equation is used:  
+\[
+s_6 - s_5 = c_p \ln \left( \frac{T_5}{T_6} \right) - R \ln \left( \frac{p_5}{p_6} \right) = 0
+\]  
+From this, the temperature ratio is derived:  
+\[
+\ln \left( \frac{T_5}{T_6} \right) = \frac{R}{c_p} \ln \left( \frac{p_5}{p_6} \right)
+\]  
+Substituting values:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{R}{c_p}}
+\]  
+With \( T_5 = 431.9 \, \text{K} \), \( p_6 = 0.191 \, \text{bar} \), \( p_5 = 0.5 \, \text{bar} \), \( R = 0.287 \, \text{kJ/kg·K} \), and \( c_p = 1.006 \, \text{kJ/kg·K} \):  
+\[
+T_6 = 328.07 \, \text{K}
+\]  
+
+Finally, substituting into \( w_{\text{aus}} \):  
+\[
+w_{\text{aus}} = \sqrt{w_{\text{ein}}^2 + 2q_B + 2c_p \left( T_6 - T_1 \right)}
+\]  
+With \( w_{\text{ein}} = 200 \, \text{m/s} \), \( q_B = 1195 \, \text{kJ/kg} \), \( T_6 = 328.07 \, \text{K} \), \( T_1 = -30^\circ\text{C} = 243.15 \, \text{K} \):  
+\[
+w_{\text{aus}} = 206.36 \, \text{m/s}
+\]
+
+---

@@ -1,0 +1,76 @@
+TASK 4c  
+The vapor quality \( x_1 \) is calculated using the following equations:  
+
+The energy balance for states 4 to 1 is:  
+\[
+0 = \dot{m}(h_4 - h_1) \quad \text{since } \dot{W} = 0 \text{ and } \dot{Q} = 0
+\]  
+
+From the table (TAB A-11), the enthalpy at state 4 is:  
+\[
+h_4 = h_f(8 \, \text{bar}) = 93.42 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The enthalpy at state 1 is expressed as:  
+\[
+h_1 = h_f + x(h_g - h_f)
+\]  
+
+The pressure difference \( p_1 - p_2 \) is referenced from TAB A-10, where:  
+\[
+p_2(4^\circ\text{C}) = 3.3765 \, \text{bar}
+\]  
+
+Using interpolation from TAB A-11:  
+\[
+h_f(3.3765 \, \text{bar}) = \frac{h_f(3.6 \, \text{bar}) - h_f(3.2 \, \text{bar})}{3.6 - 3.2} \cdot (3.3765 - 3.2) + h_f(3.2 \, \text{bar})
+\]  
+\[
+h_f = 55.8 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Similarly, for \( h_g(3.3765 \, \text{bar}) \):  
+\[
+h_g(3.3765 \, \text{bar}) = \frac{h_g(3.6 \, \text{bar}) - h_g(3.2 \, \text{bar})}{3.6 - 3.2} \cdot (3.3765 - 3.2) + h_g(3.2 \, \text{bar})
+\]  
+\[
+h_g = 249.5072 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The vapor quality \( x \) is then calculated as:  
+\[
+x = \frac{h_1 - h_f}{h_g - h_f} = \frac{93.42 - 55.8}{249.5072 - 55.8} = 0.1963
+\]  
+Thus, \( x_1 = 0.1963 \).  
+
+---
+
+TASK 4d  
+The coefficient of performance \( \epsilon_K \) is calculated as:  
+\[
+\epsilon_K = \frac{\dot{Q}_K}{\dot{W}_K}
+\]  
+
+The heat transfer rate \( \dot{Q}_K \) is expressed as:  
+\[
+\dot{Q}_K = \dot{m}(h_2 - h_1)
+\]  
+
+Substituting values:  
+\[
+\dot{m} = 1.9667 \cdot 10^{-4} \, \frac{\text{kg}}{\text{s}}, \quad h_2 = 249.53 \, \frac{\text{kJ}}{\text{kg}}, \quad h_1 = 93.42 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+\dot{Q}_K = 1.9667 \cdot 10^{-4} \cdot (249.53 - 93.42) = 0.029765 \, \frac{\text{kJ}}{\text{s}}
+\]  
+
+The work rate \( \dot{W}_K \) is given as:  
+\[
+\dot{W}_K = 41.6718 \, \frac{\text{J}}{\text{s}} = 0.0416718 \, \frac{\text{kJ}}{\text{s}}
+\]  
+
+Finally, the coefficient of performance is:  
+\[
+\epsilon_K = \frac{0.029765}{0.0416718} = 2.0836
+\]  
+Thus, \( \epsilon_K = 2.0836 \).  

@@ -1,0 +1,27 @@
+\subsection*{b) Redum 1: $\dot{Q}_{\text{out}} = 6 \text{kW}$ weil:}
+
+\[
+\dot{Q}_{\text{out}} = \int_{s_a}^{s_e} T ds
+\]
+
+\[
+T_{ds} = T_{ds} + \dot{m} \cdot \dot{V} = \frac{h_a - h_e}{s_a - s_e}
+\]
+
+Stoffmodell ideale FL:
+\[
+h_a - h_e = c_p^i (T_a - T_e) + v (p_a - p_e)
+\]
+
+Stoffmodell:
+\[
+s_a - s_e = \int_{T_e}^{T_a} c_p^i \frac{1}{T} dT + \int_{p_e}^{p_a} v \frac{1}{T} dp
+\]
+
+\[
+= c_p^i \ln \left( \frac{T_a}{T_e} \right)
+\]
+
+\[
+= \frac{c_p^i (T_a - T_e)}{c_p^i \ln \left( \frac{T_a}{T_e} \right)} = \frac{288.15 \text{K} - 288.15 \text{K}}{\ln \left( \frac{288.15}{288.15} \right)} = -293.12 \frac{\text{kJ}}{\text{K}}
+\]

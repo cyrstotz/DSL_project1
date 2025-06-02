@@ -1,0 +1,84 @@
+
+``````latex
+
+
+4\textsuperscript{th} \textsuperscript{0} \textsubscript{1} \textsubscript{2}
+
+\begin{itemize}
+    \item[a)] 
+    \begin{verbatim}
+    (Graph Description)
+    The graph is a Temperature-Entropy (T-s) diagram. The x-axis is labeled "s in kJ/kgK" and the y-axis is labeled "T in K". The graph consists of a closed loop with four points labeled 1, 2, 3, and 4. Point 1 is at the bottom right, point 2 is at the bottom left, point 3 is at the top left, and point 4 is at the top right. The curve from point 1 to point 2 is a horizontal line, the curve from point 2 to point 3 is a rising curve, the curve from point 3 to point 4 is a horizontal line, and the curve from point 4 to point 1 is a falling curve.
+    \end{verbatim}
+    
+    \item[b)] 
+    \begin{align*}
+    T_1 &= -26 \degree C \\
+    \rightarrow T_4 = T_2 &= -32 \degree C
+    \end{align*}
+    
+    \begin{tabular}{c|c|c|c|c}
+    T & P & V & x & Q & W \\
+    \hline
+    1 & T_1: -6 & P & & & \\
+    2 & T_1: -6 & P & 1 & & (w_{23} = 28W) \\
+    3 & & 8 & & & \\
+    4 & & 8 & & 0 & \\
+    \end{tabular}
+    
+    \item[c)] 
+    \textbf{Energie bilanz}
+    
+    \begin{align*}
+    \text{st. FP:} \quad Q &= \dot{m} [h_c - h_a + \frac{1}{2} (\Delta PE)] + \sum \dot{Q} - \sum W \\
+    \rightarrow \dot{m} &= \frac{1 \cdot w_{31}}{h_2 - h_3} \\
+    &= \frac{-28W}{227.9 - 276.27} \\
+    &= -0.579 \times 10^{-3} \\
+    &= 2039.4 \frac{kg}{h}
+    \end{align*}
+    
+    \text{A-12 interpolation}
+    
+    \begin{align*}
+    h_3 &= \frac{0.9456 - 0.9374}{0.9711 - 0.9374} \cdot (h(s: 0.9711, 8bar) - h(0.9374, 8bar)) + h(0.9374, 8bar) \\
+    &= 276.27
+    \end{align*}
+    
+    \begin{align*}
+    h_2 &= h_f(T_1 = -32 \degree C) - 9.52 \\
+    &= h_g(T_1 = -32 \degree C) - 227.90 \\
+    h_1 &= h_f(p: 8bar) - 204.15 \frac{kg}{h} \\
+    &= h_f(8bar)
+    \end{align*}
+    
+    \begin{align*}
+    s_4 = s_1 &= s_{g(8bar)} = 0.9066 \\
+    \text{adi. \& rev.} \rightarrow s_2 &= s_3 \\
+    s_2 &= s_f(T_1 = -32 \degree C) + 0.0401 \\
+    &= s_g(T_1 = -32 \degree C) = 0.9456 \\
+    h_3 &= (s_3: 8bar) \cdot (p_3: 8bar) \\
+    &= 0.9456
+    \end{align*}
+\end{itemize}
+
+``````latex
+
+\section*{A.11}
+
+\subsection*{c)}
+
+\begin{align*}
+h_2 &= h_f(\text{Blaul}) = 93.42 \\
+s_4 &= 0.3459 = s_1 \\
+s_f(\text{3bar}) \\
+T_1 &= -22^\circ C \\
+x &= \frac{s_1 - s_f}{s_g - s_f} = \underline{0.303}
+\end{align*}
+
+\begin{align*}
+T_1 &= -22^\circ C \\
+s_f(-22^\circ C) &= 0.0897 \\
+s_g(-22^\circ C) &= 0.9351
+\end{align*}
+
+```

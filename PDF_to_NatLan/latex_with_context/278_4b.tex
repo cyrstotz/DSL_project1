@@ -1,0 +1,29 @@
+The pressures are given as \( p_2 = p_3 = p_4 = 8 \, \text{bar} \) and \( p_2 = p_1 = p_{\text{evap}} \).  
+
+The enthalpy at state 2 is \( h_2 = h_f(8 \, \text{bar}) = 93.42 \, \frac{\text{kJ}}{\text{kg}} \), and the entropy is \( s_2 = s_1 \).  
+
+The mass flow rate of the refrigerant is calculated using:  
+\[
+\dot{m}_{\text{R134a}} = \frac{W_k}{h_2 - h_3} = \frac{-28 \, \text{kW}}{(237.74 - 93.42) \, \frac{\text{kJ}}{\text{kg}}} = 1.80 \, \frac{\text{kg}}{\text{s}}
+\]  
+
+The enthalpy at state 3 is \( h_3 = h_g(257.15 \, \text{K}) = h_g(-16^\circ\text{C}) = 237.74 \, \frac{\text{kJ}}{\text{kg}} \) (from Table A10).  
+
+The temperature difference is calculated as:  
+\[
+T_2 - T_1 = T_i - T_{\text{evap}} = T_{\text{sub}} + 10 \, \text{K} - 6 \, \text{K} = (273.15 \, \text{K} - 20 \, \text{K}) + 4 \, \text{K} = 257.15 \, \text{K} = -16^\circ\text{C}
+\]  
+
+The entropy at state 3 is calculated as:  
+\[
+s_3 = s_g(257.15 \, \text{K}) = s_g(-16^\circ\text{C}) = 0.9298 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+The entropy at state 1 is \( s_1 = s_2 = 0.9298 \, \frac{\text{kJ}}{\text{kg·K}} \).  
+
+The enthalpy at state 1 is calculated using interpolation:  
+\[
+h_1(8 \, \text{bar}, s_2) = 264.15 \, \frac{\text{kJ}}{\text{kg}} - \frac{(273.66 - 264.15)}{(0.9298 - 0.8066)} \cdot (0.9298 - 0.8066) = 253.32 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+---

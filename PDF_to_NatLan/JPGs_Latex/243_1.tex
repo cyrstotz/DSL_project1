@@ -1,0 +1,58 @@
+TASK 2a  
+A qualitative \( T \)-\( s \) diagram is drawn, showing the thermodynamic process of a jet engine. The diagram includes labeled isobars \( p_0 \) and \( p_5 \), as well as states \( 0 \), \( 2 \), \( 3 \), \( 4 \), \( 5 \), and \( 6 \). The process transitions are marked with arrows, and the entropy \( s \) increases along the x-axis while temperature \( T \) increases along the y-axis.  
+
+---
+
+TASK 2b  
+The energy balance equation is written as:  
+\[
+0 = \dot{m} \left( h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right) + \dot{Q} - \dot{W}
+\]  
+
+The velocity \( w_6 \) is derived using the following steps:  
+\[
+w_6 = \sqrt{\left( \xi_5 v_5 e_5 + c \Delta x \right)}  
+\]  
+\[
+w_6 = \sqrt{\frac{1}{\dot{m}} \left( r \beta v_6 - \beta v_5 \right)}  
+\]  
+\[
+w_6 = \sqrt{\frac{R \left( T_6 - T_5 \right)}{\gamma - 1}} = \sqrt{\frac{\bar{R} \left( T_6 - T_5 \right)}{\gamma - 1}}
+\]  
+
+Substituting values:  
+\[
+w_6 = \sqrt{\frac{2 \cdot \dot{Q} \left( 273.15 - 30.4 - 43794 \right)}{\gamma - 1}} = 47.875 \, \text{m/s}
+\]  
+
+Additional equations:  
+\[
+\dot{W} = \dot{m} \left( h_5 - h_6 \right) = \dot{m} \left( \frac{w_5^2 - w_6^2}{2} \right)
+\]  
+\[
+w_6 = \sqrt{2 \left( \dot{W} - \dot{m} \left( h_5 - h_6 \right) \right)}
+\]  
+\[
+h_5 - h_6 = c_p \left( T_5 - T_6 \right)
+\]  
+
+---
+
+TASK 2c  
+The mass-specific increase in flow exergy is calculated using:  
+\[
+\dot{E}_{\text{ex,flow}} = \dot{m} \left( h_6 - h_0 - T_0 \left( s_6 - s_0 \right) + \dot{e} \right)
+\]  
+
+Substituting values:  
+\[
+h_6 - h_0 = c_p \left( T_6 - T_0 \right) = 1.006 \, \text{kJ/kg·K} \cdot \left( 340.1 - 273.15 \right) = 57.07 \, \text{kJ/kg}
+\]  
+\[
+T_0 \left( s_6 - s_0 \right) = T_0 \cdot c_p \ln \left( \frac{T_6}{T_0} \right) = 273.15 \cdot 1.006 \ln \left( \frac{340.1}{273.15} \right) = 170 \, \text{kJ/kg}
+\]  
+
+Final exergy calculation:  
+\[
+\dot{E}_{\text{ex,flow}} = \dot{m} \left( 57 - 52 + 170 \right) = 635 \, \text{kJ/kg}
+\]

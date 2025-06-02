@@ -1,0 +1,60 @@
+The heat transferred \( Q_{12} \) from the gas to the EW mixture is calculated using:  
+\[
+|Q_{12}| = \dot{m}_g c_V (T_2 - T_1)
+\]  
+Substituting values:  
+\[
+|Q_{12}| = 3.42 \, \text{g} \cdot 0.633 \, \text{kJ/kg·K} \cdot 500 \, \text{K} = 1.08 \, \text{kJ} = 1082.4 \, \text{J}
+\]  
+
+This represents the heat flow.
+
+The energy balance equation for the ice-water mixture is given as:
+
+\[
+U_{\text{EW}} + Q_{12} = U_{2,\text{EW}}
+\]
+
+The internal energy of the ice-water mixture (\( U_{\text{EW}} \)) is calculated using the mass and the ice fraction (\( x \)):
+
+\[
+U_{\text{EW}} = m \left[ (1-x) U_{\text{fussing}} + x U_{\text{rest}} \right] \quad \text{(1 bar, 0°C)}
+\]
+
+Substituting the values:
+
+\[
+U_{\text{EW}} = 0.1 \, \text{kg} \left[ (1-0.6)(-0.045 \, \frac{\text{kJ}}{\text{kg}}) + 0.6(-333.458 \, \frac{\text{kJ}}{\text{kg}}) \right]
+\]
+
+\[
+U_{\text{EW}} = -20 \, \text{kJ}
+\]
+
+The energy balance equation becomes:
+
+\[
+-20 \, \text{kJ} + 1082.45 \, \text{J} = 0.1 \, \text{kg} \left[ (1-x)(-0.045 \, \frac{\text{kJ}}{\text{kg}}) + x(-333.458 \, \frac{\text{kJ}}{\text{kg}}) \right]
+\]
+
+The internal energy at state 2 (\( U_2 \)) is calculated as:
+
+\[
+U_2 = \frac{-18.9176 \, \text{kJ}}{0.1 \, \text{kg}} = -189.176 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The ice fraction at state 2 (\( x_2 \)) is determined using:
+
+\[
+x_2 = \frac{U_2 - U_{\text{f}}}{U_{\text{rest}} - U_{\text{f}}}
+\]
+
+Substituting the values:
+
+\[
+x_2 = \frac{-189.176 \, \frac{\text{kJ}}{\text{kg}} + 0.045 \, \frac{\text{kJ}}{\text{kg}}}{-333.458 \, \frac{\text{kJ}}{\text{kg}} + 0.045 \, \frac{\text{kJ}}{\text{kg}}}
+\]
+
+\[
+x_2 = 0.567
+\]

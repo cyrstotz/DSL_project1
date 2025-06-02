@@ -1,0 +1,62 @@
+The task begins with the calculation of the final ice fraction \( x_{\text{ice},2} \) in state 2.  
+
+The initial ice fraction is given as:  
+\[
+x_{\text{ice},1} = 0.6
+\]
+
+The energy balance is set up to account for the heat transfer:  
+\[
+\Delta U_{21} = m_{\text{EW}} f + Q_{12} - W_n
+\]  
+where \( Q_{12} \) represents the heat transferred, and \( W_n \) is neglected as no work is done.  
+
+The change in internal energy is expressed as:  
+\[
+\Delta U_{21} = -Q_{12}
+\]  
+
+Rewriting for the specific internal energy:  
+\[
+m_{\text{EW}} (u_2 - u_1) = -Q_{12}
+\]  
+
+Solving for \( u_2 \):  
+\[
+u_2 = -\frac{Q_{12}}{m_{\text{EW}}} + u_1
+\]  
+
+The initial specific internal energy \( u_1 \) is calculated using the ice fraction \( x \):  
+\[
+u_1 = u_{\text{flüssig}} + x (u_{\text{fest}} - u_{\text{flüssig}})
+\]  
+
+From the given values:  
+\[
+u_1 = -13.94102 \, \text{kJ/kg}
+\]  
+
+The final specific internal energy \( u_2 \) is calculated as:  
+\[
+u_2 = -\frac{1500 \times 10^3}{m_{\text{EW}}} + u_1
+\]  
+Substituting values:  
+\[
+u_2 = -28.94102 \, \text{kJ/kg}
+\]  
+
+Interpolation is performed using the given table to determine the final ice fraction \( x_{\text{ice},2} \):  
+\[
+x_{\text{ice},2} = \frac{-333.858 - (-28.94102)}{-333.858 - (-0.085)}
+\]  
+
+Simplifying:  
+\[
+x_{\text{ice},2} = 0.085
+\]  
+
+Additional notes:  
+- The pressure \( p \) is noted as \( p = 1.76 \, \text{bar} \).  
+- The interpolation uses tabulated values for the specific internal energy of ice and liquid water.  
+
+No diagrams or graphs are present on this page.

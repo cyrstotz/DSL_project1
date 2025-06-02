@@ -1,0 +1,70 @@
+TASK 1a  
+Energy balance for the reactor system is considered, assuming the total volume remains constant.  
+
+The general energy balance equation is written as:  
+\[
+0 = \dot{m}_{\text{in}} \left[ h_{\text{in}} - h_{\text{out}} + \Delta e + \Delta p \right] + \dot{Q}_R + \dot{Q}_{\text{out}} - \dot{W}
+\]  
+
+From Table A-2:  
+\[
+h_{\text{in}}(70^\circ\text{C}) = h_f(70^\circ\text{C}) = 292.88 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_{\text{out}}(100^\circ\text{C}) = h_f(100^\circ\text{C}) = 418.104 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Steam quality at inlet and outlet:  
+\[
+x_{\text{in}} = 0, \quad x_{\text{out}} = 0
+\]  
+
+The heat flow removed by the coolant is calculated as:  
+\[
+\dot{Q}_{\text{out}} = \dot{Q}_R + \dot{m}_{\text{in}} \left[ h_{\text{in}} - h_{\text{out}} \right]
+\]  
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = 100 \, \text{kW} + 0.3 \, \frac{\text{kg}}{\text{s}} \left[ 292.88 - 418.104 \right] \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+\dot{Q}_{\text{out}} = 62.19 \, \text{kW}
+\]  
+
+Thermodynamic mean temperature of the coolant (\( T_{\text{KF}} \)):  
+For a steady-state flow process:  
+\[
+\dot{Q}_{\text{out}} = \dot{Q}_{\text{in,KF}}
+\]  
+\[
+T_{\text{KF}} = \frac{\dot{Q}_{\text{out}}}{S_{\text{out,KF}} - S_{\text{in,KF}}}
+\]  
+
+Entropy difference for the coolant is calculated using the integral:  
+\[
+S_{\text{out,KF}} - S_{\text{in,KF}} = \int_{T_{\text{in,KF}}}^{T_{\text{out,KF}}} \frac{c_p}{T} \, dT = c_p \ln \left( \frac{T_{\text{out,KF}}}{T_{\text{in,KF}}} \right)
+\]  
+Substituting \( c_p = 4.18 \, \frac{\text{kJ}}{\text{kg·K}} \):  
+\[
+S_{\text{out,KF}} - S_{\text{in,KF}} = 4.18 \ln \left( \frac{298.15}{288.15} \right) = 0.1476 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Thermodynamic mean temperature:  
+\[
+T_{\text{KF}} = \frac{62.19 \, \text{kW}}{0.1476 \, \frac{\text{kJ}}{\text{kg·K}} \cdot \dot{m}_{\text{KF}}}
+\]  
+Assuming \( \dot{m}_{\text{KF}} = 1.488 \, \frac{\text{kg}}{\text{s}} \):  
+\[
+T_{\text{KF}} = 283.12 \, \text{K}
+\]  
+
+Mass flow rate of the coolant:  
+\[
+\dot{m}_{\text{KF}} = \frac{\dot{Q}_{\text{in,KF}}}{c_p \cdot \Delta T}
+\]  
+Substituting values:  
+\[
+\dot{m}_{\text{KF}} = \frac{62.19 \, \text{kW}}{4.18 \, \frac{\text{kJ}}{\text{kg·K}} \cdot 10 \, \text{K}} = 1.488 \, \frac{\text{kg}}{\text{s}}
+\]  
+
+No diagrams or figures are present on this page.

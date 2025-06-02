@@ -1,0 +1,71 @@
+TASK 1a  
+The steady-state flow process with one mass stream is analyzed using an energy balance. The equation is written as:  
+\[
+0 = \dot{m} (h_{\text{ein}} - h_{\text{aus}}) + \dot{Q}_R - \dot{Q}_{\text{aus}}
+\]  
+Rearranging, the heat flow removed by the coolant is expressed as:  
+\[
+\dot{Q}_{\text{aus}} = \dot{m} (h_{\text{ein}} - h_{\text{aus}}) + \dot{Q}_R
+\]  
+Substituting the given values:  
+\[
+\dot{Q}_{\text{aus}} = 0.3 \, \text{kg/s} \cdot (h_{\text{ein}} - h_{\text{aus}}) + 100 \, \text{kW}
+\]  
+The result is calculated as:  
+\[
+\dot{Q}_{\text{aus}} = 67.182 \, \text{kW}
+\]  
+
+The inlet and outlet enthalpies are determined using water tables:  
+- Inlet conditions:  
+  \[
+  T = 70^\circ\text{C}, \, x = 0, \, p = 0.3119 \, \text{bar} \, (\text{from Table A-2})
+  \]  
+  \[
+  h_{\text{ein}} = h_f = 252.58 \, \text{kJ/kg} \, (\text{from Table A-2})
+  \]  
+- Outlet conditions:  
+  \[
+  T = 100^\circ\text{C}, \, x = 0, \, p = 1.013 \, \text{bar} \, (\text{from Table A-2})
+  \]  
+  \[
+  h_{\text{aus}} = h_f = 419.04 \, \text{kJ/kg} \, (\text{from Table A-2})
+  \]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant is calculated using the entropy integral:  
+\[
+\bar{T} = \frac{\int_{T_{\text{ein}}}^{T_{\text{aus}}} T \, dS}{S_{\text{aus}} - S_{\text{ein}}}
+\]  
+The entropy change is expressed as:  
+\[
+\int_{T_{\text{ein}}}^{T_{\text{aus}}} T \, dS = Q_{\text{wall}}
+\]  
+For constant pressure, the entropy change is given by:  
+\[
+S_{\text{aus}} - S_{\text{ein}} = \int_{T_{\text{ein}}}^{T_{\text{aus}}} \frac{c_p(T)}{T} \, dT
+\]  
+This simplifies to:  
+\[
+S_{\text{aus}} - S_{\text{ein}} = c_p(T) \cdot \left[\ln(T)\right]_{T_{\text{ein}}}^{T_{\text{aus}}}
+\]  
+
+---
+
+TASK 1c  
+The entropy production is calculated using the mean temperature:  
+\[
+\bar{T} = 295.5 \, \text{K} \, (\text{from assumptions or calculation})
+\]  
+The entropy balance equation is written as:  
+\[
+0 = \dot{m} (S_{\text{ein}} - S_{\text{aus}}) + \frac{\dot{Q}_{\text{aus}}}{\bar{T}} + \dot{S}_{\text{gen}}
+\]  
+Rearranging, the entropy generation is expressed as:  
+\[
+\dot{S}_{\text{gen}} = -\dot{m} (S_{\text{ein}} - S_{\text{aus}}) - \frac{\dot{Q}_{\text{aus}}}{\bar{T}}
+\]  
+
+(Note: Some parts of this section are crossed out and unclear, but the general entropy balance equation is visible.)

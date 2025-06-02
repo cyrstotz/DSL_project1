@@ -1,0 +1,61 @@
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) is derived using the following equations:  
+
+\[
+T_{\text{KF}} = \frac{\int_{S_e}^{S_a} T \, dS}{S_a - S_e}
+\]
+
+From the enthalpy relationship:  
+\[
+dH = T \, dS + V \, dp
+\]
+
+For an isobaric process (\( p_{\text{aus}} = p_{\text{ein}} \)):  
+\[
+dH = h_a - h_e
+\]
+
+Thus, \( T_{\text{KF}} \) can also be expressed as:  
+\[
+T_{\text{KF}} = \frac{h_a - h_e}{S_a - S_e}
+\]
+
+For ideal fluids, the entropy difference is calculated as:  
+\[
+S_{\text{if}} = S_p(T)
+\]
+
+The enthalpy difference is given by:  
+\[
+h_{\text{aus}} - h_{\text{ein}} = \int_{T_{\text{ein}}}^{T_{\text{aus}}} c_p(T) \, dT + v \cdot (p_{\text{aus}} - p_{\text{ein}})
+\]
+
+Since \( p_{\text{aus}} = p_{\text{ein}} \), the pressure term vanishes. Therefore:  
+\[
+h_{\text{aus}} - h_{\text{ein}} = c_p(T) \cdot (T_{\text{aus}} - T_{\text{ein}})
+\]
+
+The entropy difference is calculated as:  
+\[
+S_{\text{aus}} - S_{\text{ein}} = \int_{T_{\text{ein}}}^{T_{\text{aus}}} \frac{c_p(T)}{T} \, dT = c_p(T) \cdot \ln\left(\frac{T_{\text{aus}}}{T_{\text{ein}}}\right)
+\]
+
+Substituting these into the equation for \( T_{\text{KF}} \):  
+\[
+T_{\text{KF}} = \frac{c_p \cdot (T_{\text{aus}} - T_{\text{ein}})}{c_p \cdot \ln\left(\frac{T_{\text{aus}}}{T_{\text{ein}}}\right)}
+\]
+
+Given:  
+\[
+T_{\text{aus}} = 298.15 \, \text{K}, \quad T_{\text{ein}} = 288.15 \, \text{K}
+\]
+
+Calculating \( T_{\text{KF}} \):  
+\[
+T_{\text{KF}} = \frac{c_p \cdot (298.15 - 288.15)}{c_p \cdot \ln\left(\frac{298.15}{288.15}\right)} = 293.12 \, \text{K}
+\]  
+
+The final thermodynamic mean temperature is:  
+\[
+T_{\text{KF}} = 293.12 \, \text{K}
+\]

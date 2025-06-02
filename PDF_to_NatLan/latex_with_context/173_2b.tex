@@ -1,0 +1,33 @@
+The following equation is written for energy conservation:  
+\[
+\frac{dE}{dt} = \sum \dot{m} \left( h + ke + pe \right) + \sum \dot{Q} - \sum \dot{W}
+\]  
+This is simplified to:  
+\[
+0 = \dot{m} \left( h_e - h_a + \frac{w_e^2}{2} - \frac{w_a^2}{2} \right)
+\]  
+The outlet velocity \( w_e \) is calculated using:  
+\[
+w_e = \sqrt{2 \left( h_e - h_a + \frac{w_a^2}{2} \right)}
+\]  
+
+Values for \( h_e \) are obtained from Table A-22:  
+- \( X_1 = 240 \, \text{K} \)  
+- \( X_2 = 243.15 \, \text{K} \)  
+- \( X_3 = 250 \, \text{K} \)  
+
+Interpolation is performed using the formula:  
+\[
+y = \frac{(X_2 - X_1)}{(Y_2 - Y_1)} \cdot (Y_3 - Y_1) + Y_1
+\]  
+Substituting values:  
+\[
+y = \frac{243.15 - 240}{250 - 240} \cdot (250.05 - 240) + 240.02 = 243.77945 = h_e \, [\text{kJ/kg}]
+\]  
+
+Additional calculations include:  
+- \( w_{\text{air}} = 200 \, \text{m/s} \)  
+- \( Y_1 = 240.02 \)  
+- \( Y_2 = 250.05 \)  
+
+No further explanation or diagrams are provided for this task.

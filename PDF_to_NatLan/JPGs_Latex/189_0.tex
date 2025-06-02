@@ -1,0 +1,56 @@
+TASK 1a  
+Energy balance for the reaction mixture:  
+The general energy balance equation is written as:  
+\[
+\frac{dE}{dt} = \dot{Q} + \sum_i \dot{m}_i h_i + \sum_j \dot{m}_j h_j
+\]  
+For steady-state operation, the time derivative term is zero, and the equation simplifies to:  
+\[
+0 = \dot{m}_{\text{in}} h_{\text{in}} - \dot{m}_{\text{out}} h_{\text{out}} + \dot{Q}_R - \dot{Q}_{\text{out}}
+\]  
+Assuming \( \dot{m}_{\text{in}} = \dot{m}_{\text{out}} \), the heat flow removed by the coolant (\( \dot{Q}_{\text{out}} \)) is given by:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R
+\]  
+From the water tables:  
+\[
+h_{\text{in}} = h_f(70^\circ\text{C}) = 292.88 \, \text{kJ/kg} \quad \text{(Table A-2 at 70°C)}
+\]  
+\[
+h_{\text{out}} = h_f(100^\circ\text{C}) = 419.04 \, \text{kJ/kg} \quad \text{(Table A-2 at 100°C)}
+\]  
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \cdot (292.88 - 419.04) \, \text{kJ/kg} + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = 62.192 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant (\( T_{\text{KF}} \)) is calculated using the entropy relation:  
+\[
+T_{\text{KF}} = \frac{\int T \, dS}{S_{\text{in}} - S_{\text{out}}}
+\]  
+
+---
+
+TASK 1c  
+Entropy balance between the cooling jacket and reactor:  
+The general entropy balance equation is:  
+\[
+\frac{dS}{dt} = \sum_j \frac{\dot{Q}_j}{T_j} + \dot{S}_{\text{gen}}
+\]  
+For steady-state operation:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+Given \( T_{\text{KF}} = 295 \, \text{K} \):  
+\[
+\dot{S}_{\text{gen}} = \frac{62.192 \, \text{kW}}{295 \, \text{K}}
+\]  
+\[
+\dot{S}_{\text{gen}} = 0.211 \, \text{kJ/(s·K)} = 0.211 \, \text{kW/K}
+\]

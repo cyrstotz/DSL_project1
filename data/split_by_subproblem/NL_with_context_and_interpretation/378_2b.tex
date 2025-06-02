@@ -1,0 +1,23 @@
+Given data:  
+- \( w_5 = 220 \, \text{m/s} \)  
+- \( p_5 = 0.5 \, \text{bar} \)  
+- \( T_5 = 431.9 \, \text{K} \)  
+
+Equation:  
+\( \frac{dE}{dt} = \dot{m} \cdot (h_5 - h_6 + \frac{w_6^2 - w_5^2}{2}) + \dot{Q}_{\text{v}} - \dot{Y}_{\text{v}} \)  
+
+Assumptions:  
+- Reversible and adiabatic turbine, isentropic with \( n = 1.4 \).  
+
+Calculation steps:  
+1. \( \Delta h = m \cdot c_p \cdot (T_5 - T_c) \)  
+   - \( \Delta h = 10.4 \, \text{kJ/kg} \)  
+
+2. \( T_c = T_5 \cdot (\frac{p_c}{p_5})^{\frac{n-1}{n}} \)  
+   - \( T_c = 328.07 \, \text{K} \)  
+
+3. \( h_5 = \dot{m}_M + \dot{m}_K \cdot h_K \)  
+   - \( \dot{m}_M = \dot{m}_K \cdot \frac{m_M}{m_K} \)  
+
+4. \( w_6 = \sqrt{w_5^2 + \Delta h \cdot 2} \)  
+   - \( w_6 = 498.79 \, \text{m/s} \)

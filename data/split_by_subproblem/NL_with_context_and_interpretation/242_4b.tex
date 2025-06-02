@@ -1,0 +1,22 @@
+A schematic diagram is drawn and labeled "Verdichter" (compressor). It shows a circular shape with arrows indicating flow.  
+- The inlet is labeled "21."  
+- The outlet is labeled "3."  
+- A work input is labeled "Wk."  
+
+Equations are written:  
+- \( 0 = \dot{m}(h_2 - h_3) - W_k \)  
+- \( \frac{W_k}{h_2 - h_3} = \dot{m} \)  
+
+Values and calculations are provided:  
+- \( T_1 = -20 \, \text{°C} = 253.15 \, \text{K} \)  
+- \( T_2 = 247.15 \, \text{K} \, (-20 \, \text{°C}) \)  
+- \( h_2 = h_g(-20 \, \text{°C}) = 231.62 \, \frac{\text{kJ}}{\text{kg}} \)  
+
+For \( h_3 \):  
+- \( h_3 \): isentropic: \( s_3 = s_2 = s_g(-20 \, \text{°C}) = 0.08330 \, \frac{\text{kJ}}{\text{kg·K}} \)  
+- \( h_3 \) integration:  
+  \( h_3 = h(402 \, \text{kPa}, 85 \, \text{°C}) + \frac{h(502 \, \text{kPa}) - h(402 \, \text{kPa})}{0.93 - 0.11} \cdot (0.08330 - 0.08374) \)  
+  Result: \( h_3 = 274.17 \, \frac{\text{kJ}}{\text{kg}} \).  
+
+Mass flow rate calculation:  
+- \( \dot{m} = \frac{-28 \, \frac{\text{kJ}}{\text{s}}}{h_2 - h_3} = 0.658 \cdot 10^{-4} \, \frac{\text{kg}}{\text{s}} = 2.4 \, \frac{\text{kg}}{\text{h}} \).

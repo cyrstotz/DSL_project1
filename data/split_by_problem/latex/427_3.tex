@@ -1,0 +1,81 @@
+
+``````latex
+
+
+\section*{Aufgabe 3}
+
+\begin{enumerate}
+    \item[a)]
+    \[
+    A = \pi \left( \frac{D}{2} \right)^2 = 25 \pi \, \text{cm}^2 = 25 \pi \times 10^{-4} \, \text{m}^2
+    \]
+    \[
+    p_{\text{oben}} = \frac{(m_k + m_{\text{EW}}) g}{A} + p_{\text{amb}} = \frac{(32 \, \text{kg} + 0.1 \, \text{kg}) \cdot 9.81 \, \text{N/kg}}{25 \pi \times 10^{-4} \, \text{m}^2} + 1 \times 10^5 \, \text{Pa} \approx 140 \, \text{kPa} = 1.4 \, \text{bar}
+    \]
+    \textbf{Mechanische Gleichgewicht:}
+    \[
+    p_{g1} = p_{\text{oben}} \approx 1.4 \, \text{bar}
+    \]
+    \[
+    R_g = \frac{R}{M_g} = \frac{8.314 \, \text{J/mol} \cdot \text{K}}{50 \times 10^{-3} \, \text{kg/mol}} = 166.28 \, \text{J/kg} \cdot \text{K}
+    \]
+    \[
+    M_g = \frac{p_{g1} V_{g1}}{R_g T_{g1}} = \frac{1.4 \times 10^5 \, \text{Pa} \cdot 3.14 \times 10^{-3} \, \text{m}^3}{166.28 \, \text{J/kg} \cdot \text{K} \cdot 273.15 \, \text{K}} \approx 0.0034 \, \text{kg} = 3.4 \, \text{g}
+    \]
+
+    \item[b)]
+    \[
+    T_{g2} = 0^\circ \text{C} = 273.15 \, \text{K}
+    \]
+    Da \( x_{Ew,2} > 0 \), ist die Temperatur vom EW im Zustand 2 \( 0^\circ \text{C} \). Da Zustand 2 schon der Gleichgewichtszustand (Endzustand) ist, ist die Temperatur vom Gas gleich wie die vom EW, also \( 0^\circ \text{C} \).
+    \[
+    p_{g2} = p_{g1} = 1.4 \, \text{bar}
+    \]
+    Da die obige Masse unverändert ist, muss der Druck gleich bleiben, sodass das Gas die Masse "tragen" könnte, d.h. Gleichgewichtszustand bleiben.
+
+    \item[c)]
+    \[
+    C_P = R_g + C_v = 166.28 \, \text{J/kg} \cdot \text{K} + 633 \, \text{J/kg} \cdot \text{K} = 799.28 \, \text{J/kg} \cdot \text{K}
+    \]
+    \[
+    \Delta U_g = C_P M_g \Delta T = 799.28 \, \text{J/kg} \cdot \text{K} \cdot 0.0034 \, \text{kg} \cdot (273.15 \, \text{K} - 173.15 \, \text{K}) \approx 1358.8 \, \text{J}
+    \]
+    \[
+    V_{g2} = \frac{M_g R_g T_{g2}}{p_{g1}} = \frac{0.0034 \, \text{kg} \cdot 166.28 \, \text{J/kg} \cdot \text{K} \cdot 273.15 \, \text{K}}{1.4 \times 10^5 \, \text{Pa}} \approx 1.103 \, \text{L}
+    \]
+    \[
+    \Delta h = \frac{\Delta U}{A} = \frac{(1```latex
+
+
+\section*{d.}
+
+\begin{align*}
+    \chi_{Ew,1} &= \frac{m_{Eis,1}}{m_{EW}} = \frac{m_{Eis,1}}{0.1 \text{kg}} \stackrel{!}{=} 0.6 \\
+    &\Longleftrightarrow m_{Eis,1} = 0.06 \text{kg} \quad \Longrightarrow \quad m_{FL} = m_{EW} - m_{Eis,1} = 0.04 \text{kg}
+\end{align*}
+
+\begin{align*}
+    U_{EW,1} &= m_{Eis,1} U_{Eis,1} + m_{FL} U_{FL} = 0.06 \text{kg} \cdot (-333.458 \text{kJ/kg}) + 0.04 \text{kg} \cdot (-0.045 \text{kJ/kg}) \\
+    &\approx -20 \text{kJ}
+\end{align*}
+
+\begin{align*}
+    U_{EW,2} &= U_{EW,1} + |Q_{12}| = -20 \text{kJ} + 1440.7 \text{J} = -18.56 \text{kJ}
+\end{align*}
+
+\begin{align*}
+    &\stackrel{!}{=} m_{Eis,2} U_{Eis} + m_{FL,2} U_{FL} = m_{Eis,2} \cdot (-333.458 \text{kJ/kg}) + (0.1 \text{kg} - m_{Eis,2}) \cdot (-0.045 \text{kJ/kg}) \\
+    &= m_{Eis,2} \cdot (-333.458 \text{kJ/kg} + 0.045 \text{kJ/kg}) - 0.1 \text{kg} \cdot 0.045 \text{kJ/kg}
+\end{align*}
+
+\begin{align*}
+    &\Longleftrightarrow m_{Eis,2} = \frac{0.1 \text{kg} \cdot 0.045 \text{kJ/kg} - 18.56 \text{kJ}}{-333.458 \text{kJ/kg} + 0.045 \text{kJ/kg}} \approx 0.0557 \text{kg}
+\end{align*}
+
+\begin{align*}
+    &\Longrightarrow \chi_{Eis,2} = \frac{m_{Eis,2}}{m_{EW}} = \frac{0.0557 \text{kg}}{0.1 \text{kg}} = 0.557
+\end{align*}
+
+``````latex
+
+

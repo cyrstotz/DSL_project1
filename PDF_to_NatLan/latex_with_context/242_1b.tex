@@ -1,0 +1,21 @@
+Thermodynamic mean temperature of the coolant:  
+The mean temperature \( \bar{T}_{\text{KF}} \) is calculated using the equation:  
+\[
+\bar{T}_{\text{KF}} = \frac{\int_{T_a}^{T_e} T \, dS}{S_a - S_e}
+\]  
+Using the relationship \( dH = T \, dS + V \, dp \), and assuming \( dp = 0 \) (constant pressure), this simplifies to:  
+\[
+\bar{T}_{\text{KF}} = \frac{\int_{S_a}^{S_e} dH}{S_a - S_e}
+\]  
+Substituting for \( dH \):  
+\[
+\bar{T}_{\text{KF}} = \frac{S_a - S_e}{S_a - S_e} \cdot \frac{c_p (T_a - T_e)}{\ln \left( \frac{T_a}{T_e} \right)}
+\]  
+Simplifying further:  
+\[
+\bar{T}_{\text{KF}} = \frac{T_a - T_e}{\ln \left( \frac{T_a}{T_e} \right)}
+\]  
+Substituting values:  
+\[
+\bar{T}_{\text{KF}} = \frac{288.15 - 298.15}{\ln \left( \frac{288.15}{298.15} \right)} = 283.12 \, \text{K}
+\]

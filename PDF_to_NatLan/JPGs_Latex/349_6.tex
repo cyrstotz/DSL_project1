@@ -1,0 +1,47 @@
+TASK 2b  
+The energy balance for a steady-state flow process is written as:  
+\[
+0 = \dot{m} \left( h_0 - h_6 + \frac{w_{\text{out}}^2 - w_6^2}{2} \right) + q_B \cdot \dot{m}_K
+\]  
+
+The mass flow rate of the bypass stream is calculated as:  
+\[
+\dot{m}_M = \frac{1}{5.293} \cdot \dot{m}_K
+\]  
+
+The enthalpy at state 0 is determined using interpolation:  
+\[
+h_0 = h[T_0] = h[243.15 \, \text{K}]
+\]  
+From Table A-22:  
+\[
+h[243.15] = h[240] + \frac{h[250] - h[240]}{250 - 240} \cdot (243.15 - 240)
+\]  
+Substituting values:  
+\[
+h[243.15] = 243.18 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The enthalpy at state 5 is similarly interpolated:  
+\[
+h_5 = h[430] + \frac{h[440] - h[430]}{440 - 430} \cdot (471.9 - 430)
+\]  
+Substituting values:  
+\[
+h_5 = 433.37 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The velocity at state 6 is equal to the velocity at state 0:  
+\[
+w_6 = w_0
+\]  
+
+Rewriting the energy balance equation:  
+\[
+0 = \dot{m} \left( \frac{w_{\text{out}}^2 - w_6^2}{2} \right) + q_B \cdot \dot{m}_K
+\]  
+
+Solving for \( w_6 \):  
+\[
+w_6 = \sqrt{\frac{2 \cdot q_B \cdot \dot{m}_K}{\dot{m}} + w_{\text{out}}^2}
+\]

@@ -1,0 +1,49 @@
+TASK 2a  
+The diagram is a temperature-entropy (\( T \)-\( S \)) plot illustrating the thermodynamic processes in a jet engine. The key points are labeled as states \( 0 \), \( 1 \), \( 2 \), \( 3 \), \( 4 \), \( 5 \), and \( 6 \). The processes include:  
+- **Isentropic compression** from \( 0 \) to \( 1 \).  
+- **Isobaric heating** from \( 2 \) to \( 3 \).  
+- **Isentropic expansion** from \( 3 \) to \( 4 \).  
+- **Isobaric mixing** from \( 4 \) to \( 5 \).  
+- **Isentropic expansion** from \( 5 \) to \( 6 \).  
+
+The diagram also shows isobars (\( p_0 = p_6 \), \( p_2 = p_4 \), \( p_1 \)) and the entropy values (\( S \)) along the horizontal axis.  
+
+Adiabatic-reversible processes are marked as isentropic.  
+
+---
+
+TASK 2b  
+Energy balance at the nozzle:  
+\[
+0 = \dot{m}_g (h_5 - h_6) + \frac{w_5^2 - w_6^2}{2}
+\]  
+Rearranging:  
+\[
+2(h_5 - h_6) = w_5^2 - w_6^2
+\]  
+\[
+w_6 = \sqrt{w_5^2 - 2(h_5 - h_6)}
+\]  
+
+The enthalpy \( h_6 \) is interpolated from Table A22 at \( 430 \, \text{k} \) and \( 460 \, \text{k} \):  
+\[
+h_6 = 431.43 + \frac{440 - 430}{460 - 430} \cdot (433.3612 - 431.43) = 433.3612 \, \text{kJ/kg}
+\]  
+
+For \( h_5 \), the entropy \( S_5 \) is interpolated:  
+\[
+S_5 = S_4 = 2.06379 \, \text{kJ/kg·K}
+\]  
+Interpolating from Table A22:  
+\[
+S_5 = 2.05878 + \frac{430 - 410}{440 - 410} \cdot (2.06379 - 2.05878) = 2.06379 \, \text{kJ/kg·K}
+\]  
+
+The temperature \( T_6 \) is calculated using the isentropic relation:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_0}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+With \( \kappa = 1.4 \):  
+\[
+T_6 = T_5 \left( \frac{p_0}{p_5} \right)^{\frac{\kappa - 1}{\kappa}} = 328.075 \, \text{K}
+\]

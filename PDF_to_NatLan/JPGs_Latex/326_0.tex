@@ -1,0 +1,55 @@
+TASK 1a  
+The heat flow \( \dot{Q}_{\text{out}} \) is calculated using the mass flow rate and enthalpy difference between the inlet and outlet conditions:  
+\[
+\dot{m}_{\text{wasser}} = 0.3 \, \text{kg/s}
+\]  
+Using water tables (A-2):  
+\[
+h_{\text{in}} = h_{\text{f}}(70^\circ\text{C}) = 292.88 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_{\text{out}} = h_{\text{f}}(100^\circ\text{C}) + x(h_{\text{g}} - h_{\text{f}}) = 430.25 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_{\text{wasser}} = h_{\text{f}}(100^\circ\text{C}) = 418.94 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+The heat flow is then calculated as:  
+\[
+\dot{Q}_{\text{out}} = -\dot{Q}_R + \dot{m}_{\text{wasser}}(h_{\text{wasser}} - h_{\text{in}}) = -62.184 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature \( \bar{T}_{\text{KF}} \) of the coolant is derived using the entropy difference and heat transfer:  
+\[
+\frac{1}{\bar{T}_{\text{KF}}} = \int \frac{\text{d}s}{s_a - s_e} = \frac{q_{\text{rev}}}{s_a - s_e}
+\]  
+The mean temperature is expressed as:  
+\[
+\bar{T}_{\text{KF}} = c_p \left( \frac{T_2 - T_1}{\ln \frac{T_2}{T_1}} \right)
+\]  
+Substituting values:  
+\[
+\bar{T}_{\text{KF}} = \frac{258.15 \, \text{K} - 288.15 \, \text{K}}{\ln \frac{288.15}{258.15}} = 293.12 \, \text{K}
+\]  
+
+---
+
+TASK 1d  
+The mass \( \Delta m_{12} \) required to reduce the reactor temperature from \( 100^\circ\text{C} \) to \( 70^\circ\text{C} \) is calculated using an energy balance:  
+\[
+U_{\text{Reaktor}} = m_g U_r = 5755 \, \text{kg} \left( (1-x) U_f + x U_g \right)
+\]  
+From water tables:  
+\[
+U_f = 418.94 \, \frac{\text{kJ}}{\text{kg}}, \quad U_g = 2506.5 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+At \( 70^\circ\text{C} \):  
+\[
+U_r(70^\circ\text{C}) = m_g U_f(70^\circ\text{C}) = 292.35 \, \frac{\text{kJ}}{\text{kg}} \cdot 5755 \, \text{kg} = 1.65 \cdot 10^6 \, \text{kJ}
+\]  
+The heat released:  
+\[
+-28.37 \cdot 10^6 \, \text{kJ} \text{ in the form of added water.}
+\]  

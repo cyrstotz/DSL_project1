@@ -1,0 +1,17 @@
+Energy balance:  
+Q equals mass flow rate of R134a multiplied by (h2 minus h3) plus Q dot minus W dot K.  
+
+h2 equals h_R134a at pressure T equals Ti minus 6 Kelvin and x equals 1.  
+h3 equals h_R134a at pressure p equals 8 bar.  
+
+s2 equals s3.
+
+The thermodynamic mean temperature \( T_{KF} \) is calculated as:  
+\( T_{KF} = \int_{e}^{a} \frac{u}{s} \, ds \) divided by \( S_{a} - S_{e} \).  
+
+Substance model for liquid:  
+\( S = S(T_a) - S(T_e) = \int_{T_e}^{T_a} c_{p} \, dT - c_{p} \cdot \ln \left( \frac{T_a}{T_e} \right) \).  
+
+\( \int_{e}^{a} \, ds = \int_{T_e}^{T_a} c_{p} \, dT \).  
+
+\( T_{KF} = \frac{T_a - T_e}{\ln \left( \frac{T_a}{T_e} \right)} = 291.63 \, \text{K} \).

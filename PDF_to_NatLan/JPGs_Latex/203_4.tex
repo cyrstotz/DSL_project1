@@ -1,0 +1,70 @@
+TASK 3a  
+The gas constant \( R \) is calculated as:  
+\[
+R = \frac{R_u}{M} = \frac{8.374 \, \text{kJ/(kmol·K)}}{50 \, \text{kg/kmol}} = 0.1663 \, \text{kJ/(kg·K)}
+\]
+
+The cross-sectional area \( A \) of the cylinder is determined using the diameter \( D = 0.1 \, \text{m} \):  
+\[
+A = \pi \left(\frac{D}{2}\right)^2 = \pi \left(\frac{0.1}{2}\right)^2 = 0.00785 \, \text{m}^2
+\]
+
+The pressure \( p_{g,1} \) in state 1 is calculated as:  
+\[
+p_{g,1} = p_0 + \frac{g}{A} (m_K + m_{\text{EW}}) = 1 \, \text{bar} + \frac{9.81 \, \text{m/s}^2}{0.00785 \, \text{m}^2} (32 \, \text{kg} + 0.1 \, \text{kg}) = 1.401 \, \text{bar}
+\]
+
+The ideal gas law is applied:  
+\[
+pV = mRT
+\]
+Given \( V_{g,1} = 0.00314 \, \text{m}^3 \) and \( T_{g,1} = 773.15 \, \text{K} \), the gas mass \( m_g \) is calculated as:  
+\[
+m_g = \frac{p_{g,1} V_{g,1}}{R T_{g,1}} = \frac{1.401 \, \text{bar} \cdot 0.00314 \, \text{m}^3}{0.1663 \, \text{kJ/(kg·K)} \cdot 773.15 \, \text{K}} = 3.4275 \cdot 10^{-3} \, \text{kg}
+\]
+
+---
+
+TASK 3b  
+Since the mass above the membrane remains constant, the pressure below must also remain constant:  
+\[
+p_{g,1} = p_{g,2} = 1.401 \, \text{bar}
+\]
+
+The first law of thermodynamics applied to the cylinder is:  
+\[
+\Delta E = Q - W = \Delta U
+\]
+
+The work done is expressed as:  
+\[
+W_{12} = \int p \, dv = p_1 (V_2 - V_1)
+\]
+
+The change in internal energy is:  
+\[
+U_1 - U_2 = c_V (T_1 - T_2)
+\]
+
+---
+
+TASK 3c  
+The first law of thermodynamics applied to the gas container is:  
+\[
+\Delta E = Q - W = \Delta U
+\]
+
+The heat transfer \( Q \) is expressed as:  
+\[
+Q = W + U_2 - U_1 = W + m_g c_V (T_2 - T_1)
+\]
+
+The work done is:  
+\[
+W = p_1 (V_2 - V_1)
+\]
+
+Thus, the heat transfer becomes:  
+\[
+Q = p_1 (V_2 - V_1) + m_g c_V (T_2 - T_1)
+\]

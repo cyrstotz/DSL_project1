@@ -1,0 +1,43 @@
+TASK 2c  
+The mass-specific increase in flow exergy is calculated using the following formula:  
+
+\[
+\Delta ex_{\text{flow}} = ex_{\text{flow},6} - ex_{\text{flow},0}
+\]
+
+The detailed expression for \( \Delta ex_{\text{flow}} \) is:  
+
+\[
+\Delta ex_{\text{flow}} = \left[ h_6 - h_0 - T_0 \left( s_6 - s_0 \right) + \Delta \text{ice} \right]
+\]
+
+Where:  
+\[
+h_6 - h_0 = c_p \left( T_6 - T_0 \right)
+\]  
+\[
+s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+\[
+\Delta \text{ice} = \frac{w_6^2 - w_0^2}{2}
+\]
+
+Constants and values used:  
+- \( T_0 = 243.75 \, \text{K} \)  
+- \( R = \frac{R_{\text{univ}}}{M_{\text{air}}} = \frac{8.314}{28.857 \times 10^{-3}} = 289.56 \, \text{J/(kg·K)} \)  
+- \( w_6 = 220 \, \text{m/s} \), \( w_0 = 200 \, \text{m/s} \)  
+
+Substituting into the formula:  
+
+\[
+\Delta ex_{\text{flow}} = \left[ c_p \left( T_6 - T_0 \right) - T_0 \left( c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) \right) + \frac{w_6^2 - w_0^2}{2} \right]
+\]
+
+The final result is:  
+
+\[
+\Delta ex_{\text{flow}} = 125.4773 \, \text{kJ/kg}
+\]
+
+TASK 2d  
+No content found.

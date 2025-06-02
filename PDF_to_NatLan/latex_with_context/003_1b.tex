@@ -1,0 +1,13 @@
+The thermodynamic mean temperature of the coolant is calculated using:  
+\[
+T_{\text{KF}} = \frac{\int_{T_{\text{KF,in}}}^{T_{\text{KF,out}}} T \, c_p(T) \, dT}{\int_{T_{\text{KF,in}}}^{T_{\text{KF,out}}} c_p(T) \, dT}
+\]  
+This simplifies to:  
+\[
+T_{\text{KF}} = \frac{T_{\text{KF,out}} - T_{\text{KF,in}}}{\ln \left( \frac{T_{\text{KF,out}}}{T_{\text{KF,in}}} \right)}
+\]  
+
+Substituting the given values:  
+\[
+T_{\text{KF}} = \frac{298.15 \, \text{K} - 288.15 \, \text{K}}{\ln \left( \frac{298.15 \, \text{K}}{288.15 \, \text{K}} \right)} = 293.12 \, \text{K}
+\]

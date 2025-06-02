@@ -1,0 +1,48 @@
+Energy balance: Full volume remains constant  
+
+0 equals inlet mass flow rate times [enthalpy inlet minus enthalpy outlet plus delta e plus delta p] plus reaction heat flow plus heat flow out minus work flow.  
+
+TAB A-2:  
+Enthalpy inlet at 70 degrees Celsius equals enthalpy at 70 degrees Celsius equals 2,082.88 kilojoules per kilogram.  
+Enthalpy outlet at 100 degrees Celsius equals enthalpy at 100 degrees Celsius equals 4,181.04 kilojoules per kilogram.  
+
+Steam quality at inlet \( x_{in} = 0 \).  
+Steam quality at outlet \( x_{out} = 0 \).  
+
+Heat flow out equals reaction heat flow plus inlet mass flow rate times [enthalpy inlet minus enthalpy outlet].  
+
+Heat flow out equals 100 kilowatts plus 0.3 kilograms per second times [2,082.88 kilojoules per kilogram minus 4,181.04 kilojoules per kilogram].  
+Heat flow out equals negative 62.19 kilowatts.  
+
+Thermodynamic mean temperature \( T_{KF} \):  
+
+For stationary flow processes:  
+Heat flow out equals heat flow into coolant.  
+
+\( T_{KF} = \frac{Q_{out}}{S_{out,KF} - S_{in,KF}} \).  
+
+Entropy difference \( S_{out,KF} - S_{in,KF} \):  
+\( S_{out,KF} - S_{in,KF} = \int_{T_{in,KF}}^{T_{out,KF}} \frac{c_i}{T} \, dT = c_i \cdot \ln \frac{T_{out,KF}}{T_{in,KF}} \).  
+
+Specific heat capacity \( c_i = 4.18 \, \text{kJ/kg·K} \) for water.  
+
+\( T_{KF} = \frac{-62.19 \, \text{kW}}{(4.18 \, \text{kJ/kg·K}) \cdot \ln \frac{298.15 \, \text{K}}{288.15 \, \text{K}}} = 283.12 \, \text{K} \).  
+
+Mass flow rate of coolant \( \dot{m}_{KF} \):  
+\( \dot{m}_{KF} = \frac{\dot{Q}_{out,KF}}{c_i \cdot \Delta T} \).  
+
+\( \dot{m}_{KF} = \frac{-62.19 \, \text{kW}}{4.18 \, \text{kJ/kg·K} \cdot 10 \, \text{K}} = 1.488 \, \text{kg/s} \).
+
+Entropy balance for a closed system:  
+\( \dot{Q}_{out} \) divided by \( T_{KF} \) minus \( \dot{Q}_{out} \) divided by \( T = 100^\circ C \) leads to \( \dot{S}_{erz} = \dot{Q}_{out} \times \left( \frac{1}{373.15 \, K} - \frac{1}{283.15 \, K} \right) \).  
+
+\( \frac{1}{T_{Reactor}} - \frac{1}{T_{KF}} = -45.147 \, W/K \).  
+\( \dot{S}_{erz} = 45.147 \, W/K \).  
+
+Energy balance:  
+\( m_1 U_1 + \Delta m_{12} U_{12} = m_2 U_2 \).  
+
+From Table A-10:  
+\( U_1 = U(100^\circ C) = 761.8 \, \text{kJ/kg} \).  
+\( U_{12} = U(20^\circ C) \).  
+\( U_2 = U(70^\circ C) \).

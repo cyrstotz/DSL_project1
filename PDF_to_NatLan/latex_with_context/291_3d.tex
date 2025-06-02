@@ -1,0 +1,73 @@
+The heat transferred (\( Q_{12} \)) is given as:  
+\[
+Q_{12} = 1500 \, \text{J}
+\]  
+
+The energy balance equation is:  
+\[
+\Delta E = E_2 - E_1 = m_{\text{EW}} \cdot (u_2 - u_1) = Q_{12} - W^0
+\]  
+
+The specific internal energy difference (\( u_2 - u_1 \)) is calculated as:  
+\[
+u_2 - u_1 = \frac{Q_{12}}{m_{\text{EW}}} = \frac{1500 \, \text{J}}{0.1 \, \text{kg}} = 15 \, \text{kJ/kg}
+\]  
+
+At \( u_2 \), the temperature is \( 0^\circ\text{C} \) and the ice mass fraction \( x_{\text{ice},2} = 0.6 \).  
+
+The pressure (\( p_{\text{EW}} \)) is calculated as:  
+\[
+p_{\text{EW}} = \frac{m_K \cdot g}{A} + p_{\text{amb}}
+\]  
+Substituting values:  
+\[
+p_{\text{EW}} = \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{\frac{\pi \cdot (0.1 \, \text{m})^2}{4}} + 1 \, \text{bar} = 13997 \, \text{Pa} = 1.3997 \, \text{bar}
+\]  
+
+The specific internal energy values are determined using tables:  
+\[
+u_{\text{ice}} = -333.97 \, \text{kJ/kg}
+\]  
+\[
+u_{\text{liq}} = -0.450 \, \text{kJ/kg}
+\]  
+
+The specific internal energy at state 1 (\( u_1 \)) is calculated as:  
+\[
+u_1 = u_{\text{ice}} + x \cdot (u_{\text{liq}} - u_{\text{ice}}) = -333.97 + 0.6 \cdot (-0.450 - (-333.97)) = -167.21 \, \text{kJ/kg}
+\]  
+
+The specific internal energy at state 2 (\( u_2 \)) is:  
+\[
+u_2 = u_1 + 15 \, \text{kJ/kg} = -152.21 \, \text{kJ/kg}
+\]
+
+The equation for \( u_2 \) is given as:  
+\[
+u_2 = -152.2 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The pressure condition is stated as:  
+\[
+p_{\text{EW}} = p_{\text{ice-water}} = p_{\text{EW}}
+\]  
+
+The energy balance equation is:  
+\[
+u_2 = u_{\text{EL}} + x_2 (u_{\text{ice}} - u_{\text{EL}})
+\]  
+
+Rearranging to solve for \( x_2 \):  
+\[
+x_2 = \frac{u_2 - u_{\text{EL}}}{u_{\text{ice}} - u_{\text{EL}}}
+\]  
+
+Substituting values:  
+\[
+x_2 = \frac{-152.2 - (-0.450)}{-333.97 - (-0.450)} = 0.455
+\]  
+
+Thus, the final ice fraction is:  
+\[
+x_2 = 0.455
+\]

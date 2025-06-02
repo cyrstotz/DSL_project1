@@ -1,0 +1,20 @@
+Energy balance around the compressor:  
+0 equals mass flow rate times (enthalpy at state 2 minus enthalpy at state 3) plus heat flow minus work rate of the compressor.  
+Work rate of the compressor equals mass flow rate times (enthalpy at state 2 minus enthalpy at state 3).  
+
+Enthalpy at state 2:  
+u2 equals u_g (40 degrees Celsius) equals 226.27 (from Table A-10).  
+Temperature inside the freeze dryer: Ti equals 0 degrees Celsius plus 10 degrees Celsius equals 10 degrees Celsius.  
+
+Entropy at state 2:  
+s2 equals s3 (isentropic).  
+s2 equals s_g (40 degrees Celsius) equals 0.9169.  
+Interpolation for 8 bar:  
+s2 equals s_f plus vapor quality times (s_g minus s_f).  
+Vapor quality x3 equals 0.334 (from Table A-12).  
+
+Enthalpy at state 3:  
+u3 equals u_f (40 degrees Celsius) plus vapor quality times (u_g (40 degrees Celsius) minus u_f (40 degrees Celsius)).  
+
+Mass flow rate:  
+Mass flow rate equals work rate divided by (enthalpy at state 2 minus enthalpy at state 3).

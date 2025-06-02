@@ -1,0 +1,32 @@
+The entropy balance for the coolant is considered, assuming no pressure change and reversible operation:  
+
+\[
+T = \frac{\int T \, dS}{S_{\text{KF,aus}} - S_{\text{KF,ein}}} = \frac{q_{\text{rev}}}{S_2 - S_1} = \frac{h_2 - h_1}{S_2 - S_1}
+\]  
+
+For the coolant:  
+\[
+h_2 - h_1 = c (T_2 - T_1) + v (p_2 - p_1)
+\]  
+\[
+S_2 - S_1 = c \ln \left( \frac{T_2}{T_1} \right)
+\]  
+
+Since \( p_2 = p_1 \), the pressure term vanishes. Using the specific heat capacity \( c \) of the coolant:  
+\[
+T = \frac{c (T_2 - T_1)}{c \ln \left( \frac{T_2}{T_1} \right)} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)}
+\]  
+
+Substituting the inlet and outlet temperatures of the coolant:  
+\[
+T_1 = T_{\text{KF,in}} \quad \text{and} \quad T_2 = T_{\text{KF,out}}
+\]  
+\[
+T = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)} = \frac{298.15 - 288.15}{\ln \left( \frac{298.15}{288.15} \right)} = 293.72 \, \text{K}
+\]  
+
+This is the thermodynamic mean temperature of the coolant.  
+
+---
+
+Note: The student indicates that part (c) is on a separate sheet.

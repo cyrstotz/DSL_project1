@@ -1,0 +1,98 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\textbf{Gegeben:}
+\begin{align*}
+\text{Wurft} &= 200 \frac{m}{s} \\
+P_0 &= 0.797 \, \text{bar} \\
+T_0 &= -30^\circ \text{C}
+\end{align*}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+ & $P \, [\text{bar}]$ & $T \, [^\circ \text{C}]$ & $q \left( \frac{kJ}{kg} \right)$ & \\
+\hline
+0 & 0.797 & -30^\circ & & \\
+\hline
+1 & & & & \\
+\hline
+2 & & & 7795.98 & \\
+\hline
+3 & & & & \\
+\hline
+4 & 0.5 & & & \\
+\hline
+5 & 0.5 & 431.8 \, K & & \\
+\hline
+6 & & & & \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Graphische Darstellung:}
+
+Die Grafik zeigt ein Diagramm mit der x-Achse beschriftet als $s \left( \frac{kJ}{kg \cdot K} \right)$ und der y-Achse beschriftet als $T \, [^\circ \text{C}]$. Es gibt mehrere Punkte, die durch Linien verbunden sind, um einen Pfad darzustellen. Die Punkte sind nummeriert von 1 bis 6. 
+
+- Punkt 1 ist der Startpunkt.
+- Punkt 2 ist mit Punkt 1 durch eine Linie verbunden.
+- Punkt 3 ist mit Punkt 2 durch eine Linie verbunden.
+- Punkt 4 ist mit Punkt 3 durch eine Linie verbunden.
+- Punkt 5 ist mit Punkt 4 durch eine Linie verbunden.
+- Punkt 6 ist mit Punkt 5 durch eine Linie verbunden.
+
+Es gibt auch eine Markierung für $P_2 / P_3$ und eine Linie, die als "isobaren" beschriftet ist. Punkt $P_1$ ist ebenfalls markiert.
+
+``````latex
+
+
+\section*{2b)}
+\begin{align*}
+    w_6 &? \\
+    P_6 &= P_0
+\end{align*}
+
+\text{Energiegleichung von 5 $\rightarrow$ 6: stat. FP.}
+\begin{align*}
+    0 &= m\dot{g} \left( h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right) + g \left( z_5 - z_6 \right) + \dot{q} - \dot{w}_T \\
+    0 &= m\dot{g} \left( h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right) \\
+    \Rightarrow w_6^2 &= w_5^2 - 2(h_5 - h_6) \\
+    \Rightarrow w_6^2 &= 2(h_5 - h_6) + w_5^2
+\end{align*}
+
+\text{5 $\rightarrow$ 6: isentrope $\rightarrow$ n = 1.4:}
+\begin{align*}
+    \frac{T_6}{T_5} &= \left( \frac{P_6}{P_5} \right)^{\frac{n-1}{n}} \Rightarrow T_6 = T_5 \left( \frac{P_6}{P_5} \right)^{\frac{n-1}{n}} \\
+    &= 437.9K \left( \frac{0.791 \text{bar}}{0.5 \text{bar}} \right)^{\frac{0.4}{1.4}} \\
+    &= 328.0747K
+\end{align*}
+
+\begin{align*}
+    \Rightarrow w_6^2 &= 2 \cdot (h_5 - h_6) + w_5^2 = 2 \cdot c_p (T_5 - T_6) + w_5^2 \\
+    w_6 &= \sqrt{2 \cdot 1.006 \frac{kJ}{kgK} \left[ 437.9K - 328.0747K \right] + \left( 220 \frac{m}{s} \right)^2} \\
+    w_6 &= 234.453 \frac{m}{s}
+\end{align*}
+
+``````latex
+
+
+\section*{Problem 2c}
+
+\[
+\Delta e_{x,str} = e_{x,str6} - e_{x,str0}
+\]
+
+\[
+e_{x,str6} = h_6 - h_0 - T_0 (s_6 - s_0) + \text{ke} + \cancel{\text{pe}=0}
+\]
+
+\[
+= h_6 - h_5 - T_0 [s_6 - s_5] + \frac{1}{2} m_{ges} \cdot w_5^2
+\]
+
+``````latex
+
+

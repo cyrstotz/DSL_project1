@@ -1,0 +1,77 @@
+
+``````latex
+
+
+\section*{2a)}
+
+\begin{center}
+\textbf{Graph Description:}
+\end{center}
+
+The graph is a plot with the y-axis labeled as \( T \left[ K \right] \) and the x-axis labeled as \( s \left[ \frac{kJ}{kgK} \right] \). The plot consists of six points labeled from 1 to 6. The points are connected by curves and lines as follows:
+
+- Point 1 to Point 2: A horizontal line labeled as "isotrop".
+- Point 2 to Point 3: An upward curve labeled as "isobar".
+- Point 3 to Point 4: A downward curve.
+- Point 4 to Point 5: A vertical line labeled as "isobar (0.5 bar)".
+- Point 5 to Point 6: A downward curve labeled as "isobar (0.1 bar)".
+
+\section*{2b)}
+
+\begin{align*}
+s_6 &= s_5 = s_4 \\
+h_5 &= h(431.3K, 0.5 bar) \\
+&= \text{TAB A22 Interpolation} \\
+&= 461.1 - 431.93 \\
+&= (431.3 - 430) \cdot \frac{431.1 - 430}{440 - 430} \\
+&= 431.37 = 433.362 \frac{kJ}{kg}
+\end{align*}
+
+\begin{align*}
+\frac{T_2}{T_1} &= \left( \frac{p_2}{p_1} \right)^{\frac{\kappa - 1}{\kappa}} \\
+\kappa &= k \text{ der Isotrop} \\
+T_6 &= \left( \frac{p_6}{p_5} \right)^{\frac{0.4}{1.4}} \\
+T_5 &= \left( \frac{0.1}{0.5} \right)^{\frac{0.4}{1.4}} \\
+&= 431.3K = 338.675K
+\end{align*}
+
+\subsection*{Energieblanz Schubdüse:}
+
+\begin{align*}
+0 &= \dot{m} (h_5 - h_6 + \frac{w_{s5}^2 - w_{s6}^2}{2}) + \dot{Q} \rightarrow 0 \\
+h_6 &= h(338.675K) \\
+\text{mges} &= \text{Enthalpie Brennkammer} \\
+0 &= \dot{m_k} (s_2 - s_3) + \frac{9.81}{T_1} \cdot \dot{Q} \rightarrow 0 \\
+w_{s6}^2 &= 2 (h_5 - h_6 + w_s^2) \\
+&= \sqrt{2 (433.362 - 328.116) + 22^2} \\
+&= 508.26 \frac{kJ}{kg} \\
+&= 438.91 \frac{kJ}{kg}
+\end{align*}
+
+\begin{align*}
+h_6 &= h(338.675K) \\
+&= \text{TAB A22} \\
+&= \frac{330.34 - 327.31}{330 - 325} \\
+&= (338.675 - 335) + 325.31 = 337.40 \frac{kJ}{kg}
+\end{align*}
+
+``````latex
+
+
+\begin{itemize}
+    \item[c)] $\Delta e_{x,s} = \dot{m} (h_c - h_0 - T_0 (s_c - s_0) + k_{e,g} - k_{e,0})$
+\end{itemize}
+
+\[
+\begin{aligned}
+    &s_c - s_0 = s^o(T_g) - s^o(T_0) - R \ln \left( \frac{p}{p^o} \right) \\
+    &s^o(T_g) - s^o(32^\circ \text{F}) = 1.73943 - 1.78243 \left( \frac{32 \cdot 67^\circ \text{F} - 325}{325} \right) \\
+    &s^o(T_0) - s^o(213.15^\circ \text{K}) = \cancel{1.5187} - 1.67824 \left( \frac{213.15 - 260}{260 - 240} \right) + 1.67824 \left( \frac{1711}{1711} \right) \\
+    &h_0 = h(213.15^\circ \text{K}) = \frac{256.65 - 240.02}{240 - 240} (243.15 - 260) + 240.02 = 293.21 \\
+    &\Delta e_{x,s} = \dot{m} (328.46 - 243.21 - 213.15 (1.7794 - 1.4811) - \frac{1}{2} (568.26^2 - 260^2))
+\end{aligned}
+\]
+
+``````latex
+
+

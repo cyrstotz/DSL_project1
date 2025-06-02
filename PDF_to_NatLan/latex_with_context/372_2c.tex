@@ -1,0 +1,44 @@
+The mass-specific increase in flow exergy is calculated as follows:  
+
+\[
+\Delta ex_{\text{flow}} = ex_{\text{flow},6} - ex_{\text{flow},0}
+\]
+
+The flow exergy at state 6 is expressed as:  
+\[
+ex_{\text{flow},6} = m \left( h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2} \right)
+\]
+
+The flow exergy at state 0 is expressed as:  
+\[
+ex_{\text{flow},0} = m \left( h_0 - T_0 (s_0 - s_0) + \frac{w_0^2}{2} \right)
+\]
+
+Substituting these into the equation for \(\Delta ex_{\text{flow}}\):  
+\[
+\Delta ex_{\text{flow}} = m \left( h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2} - \frac{w_0^2}{2} \right)
+\]
+
+The enthalpy difference \( h_6 - h_0 \) is calculated using:  
+\[
+h_6 - h_0 = c_{p,\text{air}} (T_6 - T_0) = 85.435 \, \text{kJ/kg}
+\]
+
+The entropy difference \( s_6 - s_0 \) is calculated using:  
+\[
+s_6 - s_0 = c_{p,\text{air}} \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right)
+\]
+
+Substituting values:  
+\[
+s_6 - s_0 = c_{p,\text{air}} \ln \left( \frac{T_6}{T_0} \right) = 0.361 \, \text{kJ/kg·K}
+\]
+
+The kinetic energy term is calculated as:  
+\[
+\frac{w_6^2}{2} = 103850 \, \text{J/kg}
+\]
+
+This term is relevant and directly contributes to the exergy increase.  
+
+---

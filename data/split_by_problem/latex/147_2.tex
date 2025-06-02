@@ -1,0 +1,100 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a Temperature-Entropy (T-s) diagram. The x-axis is labeled $s \left[ \frac{kJ}{kg \cdot K} \right]$ and the y-axis is labeled $T \left[ K \right]$. The graph contains a closed loop with six points labeled 0, 2, 3, 4, 5, and 6. The process from point 0 to point 2 is an isobaric process. The process from point 2 to point 3 is an isobaric process. The process from point 3 to point 4 is an isobaric process. The process from point 4 to point 5 is an isobaric process. The process from point 5 to point 6 is an isobaric process. The process from point 6 to point 0 is an isobaric process. The pressure at point 5 is labeled $P_5 = 0.5 \, \text{bar}$ and the pressure at point 6 is labeled $P_6 = P_0 - 0.1 \, \text{bar}$.
+\end{description}
+
+\subsection*{b)}
+
+\textbf{Energieanalyse stat. Fließprozess:}
+
+\[
+\frac{T_6}{T_5} = \left( \frac{P_6}{P_5} \right)^{\frac{n-1}{n}} \Rightarrow T_6 = T_5 \left( \frac{P_6}{P_5} \right)^{\frac{n-1}{n}} = (293.15 \, K) \left( \frac{0.4 \, \text{bar}}{0.5 \, \text{bar}} \right)^{\frac{1.4}{1.4}}
+\]
+
+\[
+= 328.07 \, K
+\]
+
+\textbf{Energiebilanz stat. FP:}
+
+\[
+0 = \dot{m} \left( h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right)
+\]
+
+\[
+0 = \dot{m} \left( h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right)
+\]
+
+\[
+0 = h_5 - h_6 + \frac{w_5^2 - w_6^2}{2}
+\]
+
+``````latex
+
+
+\begin{equation*}
+(h_6 - h_s) \cdot 2 = \frac{w_6^2}{2} - \frac{w_s^2}{2}
+\end{equation*}
+
+\begin{equation*}
+w_6^2 = w_s^2 - 2 \cdot (h_6 - h_s) \quad \text{da } C_p \text{ konstant \& ideales Gas}
+\end{equation*}
+
+\begin{equation*}
+w_6 = \sqrt{w_s^2 - 2 \cdot C_p \cdot \frac{\dot{m}}{\dot{m}} \cdot (T_6 - T_s)}
+\end{equation*}
+
+\begin{equation*}
+= \sqrt{220 \frac{m^2}{s^2} - 2 \cdot 1,006 \frac{kJ}{kgK} \cdot (328,07K - 293,15K)}
+\end{equation*}
+
+\begin{equation*}
+= 50,25 \frac{m}{s}
+\end{equation*}
+
+\begin{equation*}
+T_0 = (273,15K - 30K) = 243,15K
+\end{equation*}
+
+\subsection*{c)}
+
+\begin{equation*}
+e_{x,st,s} = h_6 - h_0 - T_0 \cdot (s_6 - s_0) + ke_6 + pe_6
+\end{equation*}
+
+\begin{equation*}
+e_{x,st,0} = h_s - h_0 - T_0 \cdot (s_s - s_0) + ke_s + pe_s
+\end{equation*}
+
+\begin{equation*}
+\Delta e_{x,st} = h_6 - h_s - T_0 \cdot (s_6 - s_s) + ke_6 - ke_s
+\end{equation*}
+
+\begin{equation*}
+= C_p \cdot (T_6 - T_0) - T_0 \cdot (C_p \cdot \ln \left( \frac{T_6}{T_0} \right) - R \cdot \ln \left( \frac{p_6}{p_0} \right)) + \frac{w_6^2}{2} - \frac{w_s^2}{2}
+\end{equation*}
+
+\begin{equation*}
+= 1,006 \frac{kJ}{kgK} \cdot (328,07K - 243,15K) - 243,15K \cdot 1,006 \frac{kJ}{kgK} \cdot \ln \left( \frac{328,07K}{243,15K} \right)
+\end{equation*}
+
+\begin{equation*}
++ \frac{(50,25 \frac{m}{s})^2}{2} - \frac{(200 \frac{m}{s})^2}{2}
+\end{equation*}
+
+\begin{equation*}
+= 120,808 \frac{kJ}{kg}
+\end{equation*}
+
+\subsection*{d)}
+
+``````latex
+
+

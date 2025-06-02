@@ -1,0 +1,29 @@
+The mass-specific increase in flow exergy, \( \Delta ex_{\text{flow}} \), is calculated using the following formula:  
+\[
+\Delta ex_{\text{flow}} = (h_6 - h_0) - T_0 (s_6 - s_0) + \frac{w_6^2 - w_0^2}{2}
+\]
+
+The enthalpy difference \( h_6 - h_0 \) is given by:  
+\[
+h_6 - h_0 = c_p (T_6 - T_0) = 95.434 \, \text{kJ/kg}
+\]
+
+The entropy difference \( s_6 - s_0 \) is calculated as:  
+\[
+s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) = 0.30736 \, \text{kJ/kg·K}
+\]
+
+Constants used:  
+\[
+c_v = \frac{c_p}{\kappa} = 7.15 \, \text{kJ/kg·K}, \quad R = c_p - c_v = 287.425 \, \text{J/kg·K}
+\]
+
+Finally, the mass-specific increase in flow exergy is:  
+\[
+\Delta ex_{\text{flow}} = -1.408 \times 10^5 \, \frac{\text{J}}{\text{kg}} = -140.8 \, \text{kJ/kg}
+\]
+
+The entropy change for the system is given by:  
+\[
+\Delta S_{12} = \Delta m_{12} \cdot s_0 + \frac{Q_R}{T} + \dot{S}_{\text{gen}}
+\]

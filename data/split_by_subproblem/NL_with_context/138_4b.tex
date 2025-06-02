@@ -1,0 +1,31 @@
+System (stationary, thermodynamically balanced):  
+
+Energy balance:  
+\( \dot{E}_w = \frac{d}{dt}(PE) + \frac{d}{dt}(KE) + \dot{Q} + \dot{W} = 0 \).  
+
+In steady state, \( \dot{Q} + \dot{W} = 0 \).  
+Determine mass flow rate \( \dot{m} \) and heat transfer \( \dot{Q} \) for R134a:  
+
+\( \dot{Q}_K = \dot{m}_{R134a} \cdot (h_1 - h_4) \).  
+
+From Table A-10 at \( T_i = -20^\circ \text{C} \):  
+\( h_1 = 245.94 \, \text{kJ/kg}, \, h_4 = 24.77 \, \text{kJ/kg} \).  
+
+\( \dot{Q}_K = \dot{m}_{R134a} \cdot (245.94 - 24.77) = 419.67 \, \text{kJ/kg}. \)  
+
+From Table A-10 at \( T_w = -26^\circ \text{C} \):  
+\( h_1 = 245.94 \, \text{kJ/kg}, \, h_4 = 16.25 \, \text{kJ/kg}. \)  
+
+\( \dot{Q}_K = \dot{m}_{R134a} \cdot (245.94 - 16.25) = 435.69 \, \text{kJ/kg}. \)  
+
+\( \frac{\dot{Q}_K}{\dot{m}} = h_1 - h_4 = 435.69 \, \text{kJ/kg}. \)  
+
+\( h_1 - h_4 = \dot{Q}_K + \dot{W} = \dot{W}. \)  
+
+\( \dot{m}_{R134a} = \frac{\dot{m}_{R134a} \cdot (h_1 - h_4)}{\dot{Q}_K}. \)  
+
+From Table A-10:  
+\( h_2, h_4 \) values:  
+\( h_2 = h_f(T_i) = 235.34 \, \text{kJ/kg}, \, h_4 = h_f(T_w) = 16.25 \, \text{kJ/kg}. \)  
+
+\( \dot{m}_{R134a} = 0.13 \, \text{kg/s} \approx 4.69 \, \text{kg/h}. \)

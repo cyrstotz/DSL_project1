@@ -1,0 +1,99 @@
+The table summarizes the inlet and outlet conditions for the reactor system:  
+
+\[
+\begin{array}{|c|c|c|c|c|}
+\hline
+ & \text{in} & \text{out} & \text{kein} & \text{kann} \\
+\hline
+\dot{m} & 0.3 & 0.3 & & \\
+T & 70^\circ\text{C} & 100^\circ\text{C} & 288.15 \, \text{K} & 298.15 \, \text{K} \\
+x & 1 & 1 & & \\
+\hline
+\end{array}
+\]
+
+Additional parameters:  
+- Reactor mass: \( m_{\text{ges}} = 5755 \, \text{kg} \)  
+- Steam quality: \( x_D = \frac{m_D}{m_{\text{ges}}} = 0.005 \)  
+- Reactor temperature: \( T_{\text{Reaktor}} = 100^\circ\text{C} \)  
+- Heat released by reaction: \( \dot{Q}_R = 100 \, \text{kW} \)  
+
+---
+
+**Subtask a: Determine \( \dot{Q}_{\text{aus}} \)**  
+
+The energy balance is written as:  
+\[
+\frac{dE}{dt} = \sum \dot{m} h_i + Q - W_i
+\]  
+Since the reactor is in steady state, the energy balance simplifies to:  
+\[
+0 = \dot{m} (h_e - h_a) + \dot{Q}_R - \dot{Q}_{\text{aus}}
+\]  
+
+Using enthalpy values from Table A-2:  
+\[
+h(70^\circ\text{C}) = 292.18 \, \text{kJ/kg}, \quad h(100^\circ\text{C}) = 419.04 \, \text{kJ/kg}
+\]  
+
+Substituting values:  
+\[
+\dot{Q}_{\text{aus}} = \dot{m} (h_e - h_a) + \dot{Q}_R
+\]  
+\[
+\dot{Q}_{\text{aus}} = 0.3 \cdot (419.04 - 292.18) + 100 = 62.18 \, \text{kW}
+\]  
+
+---
+
+**Subtask b: Determine \( T_{\text{KF}} \)**  
+
+The thermodynamic mean temperature of the coolant is calculated as:  
+\[
+T_{\text{KF}} = \frac{\int_a^e T \, ds}{s_a - s_e}
+\]  
+
+Using the relationship for entropy change:  
+\[
+s = \frac{h_a - h_e}{s_a - s_e}
+\]  
+\[
+T_{\text{KF}} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)}
+\]  
+
+Substituting values:  
+\[
+T_{\text{KF}} = \frac{298.15 - 288.15}{\ln \left( \frac{298.15}{288.15} \right)} = 293.12 \, \text{K}
+\]  
+
+---
+
+**Subtask c: Determine \( \dot{S}_{\text{gen}} \)**  
+
+The entropy generation rate is calculated using:  
+\[
+0 = \dot{m} [s_e - s_a] + \frac{\dot{Q}_{\text{aus}}}{T_{\text{KF}}} + \dot{S}_{\text{gen}}
+\]  
+
+Rearranging:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} (s_a - s_e) - \frac{\dot{Q}_{\text{aus}}}{T_{\text{KF}}}
+\]  
+
+Substituting entropy values from Table A-2:  
+\[
+s(70^\circ\text{C}) = 7.35533 \, \text{kJ/kg·K}, \quad s(100^\circ\text{C}) = 7.35744 \, \text{kJ/kg·K}
+\]  
+
+\[
+\dot{S}_{\text{gen}} = 0.3 \cdot (7.35744 - 7.35533) - \frac{62.18}{293.12}
+\]  
+\[
+\dot{S}_{\text{gen}} = 0.012012 - 0.212132 = 0.33 \, \text{kJ/s·K}
+\]  
+
+Entropy values are confirmed from Table A-2.  
+
+---
+
+No diagrams or figures are present on this page.

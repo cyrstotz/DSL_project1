@@ -1,0 +1,56 @@
+TASK 1a  
+The steady-state energy balance is expressed as:  
+\[
+0 = \dot{m} \sum \left( h_{\text{ein}} - h_{\text{aus}} \right) + \dot{Q}_{\text{aus}} - \dot{Q}_R - \dot{W}_{\text{in}}
+\]  
+The heat flow removed by the coolant is given by:  
+\[
+\dot{Q}_{\text{aus}} = \dot{m} \left( h_{\text{ein}} - h_{\text{aus}} \right) - \dot{W}_t
+\]  
+Here, \(\dot{m} = 0.3 \, \text{kg/s}\).  
+
+From the water tables (TAB A2):  
+\[
+h_{\text{ein}} = 2333.8 \, \frac{\text{kJ}}{\text{kg}}, \quad h_{\text{aus}} = 2257.0 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Substituting values:  
+\[
+\dot{Q}_{\text{aus}} = 0.3 \, \frac{\text{kg}}{\text{s}} \left( 2333.8 \, \frac{\text{kJ}}{\text{kg}} - 2257.0 \, \frac{\text{kJ}}{\text{kg}} \right) - 100 \, \frac{\text{kJ}}{\text{s}}
+\]  
+\[
+\dot{Q}_{\text{aus}} = -76.96 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant is calculated as:  
+\[
+T_{\text{MF}} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)}
+\]  
+Substituting values:  
+\[
+T_{\text{MF}} = \frac{357.9 \, \text{K}}
+\]  
+
+TASK 1e  
+The entropy balance is expressed as:  
+\[
+\frac{dS}{dt} = 0 = \dot{m} \left( s_e - s_a \right) + \frac{\dot{Q}_{\text{aus}} - \dot{Q}_R}{T} = -\dot{S}_{\text{gen}}
+\]  
+
+From TAB A2:  
+\[
+s_e = \dot{m} \left( s_a - s_e \right) + \frac{\dot{Q}_R - \dot{Q}_{\text{aus}}}{T}
+\]  
+
+The entropy change is calculated using:  
+\[
+x = \frac{h_{\text{g}} - h_{\text{f}}}{h_{\text{g}} - h_{\text{e}}}
+\]  
+Substituting values:  
+\[
+x = \frac{2333.8 \, \frac{\text{kJ}}{\text{kg}} - 297.88}{2626.8 - 2329.82}
+\]  
+\[
+x = 0.874
+\]

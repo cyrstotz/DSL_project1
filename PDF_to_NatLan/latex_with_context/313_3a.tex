@@ -1,0 +1,28 @@
+The gas pressure \( p_{g,1} \) is calculated using the equation:  
+\[
+p_{g,1} = p_{\text{amb}} + \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{\pi \cdot (0.1 \, \text{m})^2} + \frac{0.1 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{\pi \cdot (0.1 \, \text{m})^2}
+\]  
+
+The intermediate steps involve calculating the gas mass \( m_g \) using the ideal gas law:  
+\[
+m_g = \frac{p_g \cdot V}{R \cdot T}
+\]  
+Substituting values:  
+\[
+m_g = \frac{p_{g,1} \cdot V_{g,1}}{R \cdot T_{g,1}}
+\]  
+The gas constant \( R \) is determined as:  
+\[
+R = \frac{R_u}{M_g} = \frac{8.314 \, \text{J/mol·K}}{50 \, \text{kg/kmol}} = 166.28 \, \text{J/kg·K}
+\]  
+The temperature \( T_{g,1} \) is converted to Kelvin:  
+\[
+T_{g,1} = 500^\circ\text{C} + 273.15 = 773.15 \, \text{K}
+\]  
+
+The calculated values are:  
+\[
+p_{g,1} = 1.4 \, \text{bar}, \quad m_g = 0.003242 \, \text{kg}, \quad m_{\text{total}} = 3.92 \, \text{kg}
+\]  
+
+---

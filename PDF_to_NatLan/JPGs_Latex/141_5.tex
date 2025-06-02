@@ -1,0 +1,52 @@
+TASK 2c  
+The mass-specific increase in flow exergy is calculated as:  
+\[
+\Delta ex_{\text{flow}} = ex_{\text{flow},6} - ex_{\text{flow},0}
+\]  
+The specific exergy at state 6 is expressed as:  
+\[
+ex_{\text{flow},6} = h - h_0 - T_0 (s - s_0) + k.e + p.e
+\]  
+Neglecting potential energy (\(p.e\)), the equation simplifies to:  
+\[
+ex_{\text{flow},6} = \Delta h - T_0 \Delta s + k.e
+\]  
+The enthalpy change is calculated as:  
+\[
+\Delta h = c_p^{\text{air}} (T_6 - T_0) = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \cdot (340 \, \text{K} - 243.15 \, \text{K}) = 96.91 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+The entropy change is calculated as:  
+\[
+\Delta s = c_p^{\text{air}} \ln\left(\frac{T_6}{T_0}\right) - R \ln\left(\frac{p_6}{p_0}\right)
+\]  
+Substituting values:  
+\[
+\Delta s = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \ln\left(\frac{340 \, \text{K}}{243 \, \text{K}}\right) - 0.287 \, \frac{\text{kJ}}{\text{kg·K}} \ln\left(\frac{1}{1}\right)
+\]  
+\[
+\Delta s = 0.887 \ln(1) = 0.335 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+The kinetic energy term is calculated as:  
+\[
+k.e = \frac{1}{2} (v_6^2 - v_0^2) = \frac{1}{2} \left((510 \, \frac{\text{m}}{\text{s}})^2 - (200 \, \frac{\text{m}}{\text{s}})^2\right)
+\]  
+\[
+k.e = 48,050 \, \frac{\text{J}}{\text{kg}} = 48.05 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+---
+
+TASK 2d  
+The mass-specific exergy destruction is calculated using the exergy balance for a stationary system:  
+\[
+ex_{\text{dest}} = -\Delta ex_{\text{flow}} + \left(1 - \frac{T_0}{T_f}\right) q_B - ex_{\text{fuel}}
+\]  
+Substituting values:  
+\[
+ex_{\text{dest}} = -63.5 \, \frac{\text{kJ}}{\text{kg}} + \left(1 - \frac{243.15 \, \text{K}}{1289 \, \text{K}}\right) \cdot 1195 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+ex_{\text{dest}} = 506 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+No diagrams or figures are present on this page.

@@ -1,0 +1,59 @@
+TASK 2b  
+The energy balance equation is written as:  
+\[
+\frac{dE}{dt} = 0 = \dot{m} \left( h_0 - h_6 + \frac{w_6^2 - w_0^2}{2} \right) + q_B - W
+\]  
+Rearranging the equation:  
+\[
+0 = h_0 - h_6 + \frac{w_6^2 - w_0^2}{2} + q_B
+\]  
+Solving for \( w_6 \):  
+\[
+w_6 = \sqrt{2 \left( h_0 - h_6 + q_B \right) + w_0^2}
+\]  
+Substituting \( h_0 - h_6 \) with \( c_p (T_0 - T_6) \):  
+\[
+w_6 = \sqrt{2 \left[ c_p (T_0 - T_6) + q_B \right] + w_0^2}
+\]  
+
+Given values:  
+\[
+q_B = 1195 \, \text{kJ/kg}, \quad T_0 = 243.15 \, \text{K}, \quad T_6 = \ldots, \quad w_0 = 200 \, \text{m/s}
+\]  
+
+A sketch of a turbine is drawn, showing inlet and outlet streams.  
+
+TASK 2c  
+The entropy balance equation is written as:  
+\[
+0 = \dot{S}_{\text{in}} - \dot{S}_{\text{out}} + \dot{m} \left( s_6 - s_0 \right) + \frac{\dot{Q}}{T_0}
+\]  
+For a reversible process:  
+\[
+s_6 - s_0 = c_p \ln \frac{T_6}{T_0} - R \ln \frac{p_6}{p_0} = 0
+\]  
+Rearranging:  
+\[
+\frac{T_6}{T_0} = \left( \frac{p_6}{p_0} \right)^{\frac{R}{c_p}}
+\]  
+Substituting values:  
+\[
+T_6 = T_0 \left( \frac{p_6}{p_0} \right)^{\frac{R}{c_p}} = 243.15 \, \text{K} \left( \frac{0.5}{0.191} \right)^{\frac{1.4 - 1}{1.4}} \approx 328.1 \, \text{K}
+\]  
+
+TASK 2d  
+The mass-specific exergy destruction is calculated as:  
+\[
+\Delta e_{\text{ex,str}} = e_{\text{ex,str},6} - e_{\text{ex,str},0} = h_0 - h_6 - T_0 (s_6 - s_0) + \frac{w_6^2 - w_0^2}{2}
+\]  
+Substituting \( h_0 - h_6 \) and \( s_6 - s_0 \):  
+\[
+\Delta e_{\text{ex,str}} = c_p \left[ T_0 - T_6 - T_0 \ln \frac{T_0}{T_6} \right] + \frac{w_6^2 - w_0^2}{2}
+\]  
+Substituting values:  
+\[
+\Delta e_{\text{ex,str}} = c_p \left[ 340 \, \text{K} - 243.15 \, \text{K} - 243.15 \, \text{K} \ln \frac{243.15 \, \text{K}}{328.1 \, \text{K}} \right] + \frac{240^2 - 200^2}{2}
+\]  
+\[
+\Delta e_{\text{ex,str}} \approx 25.5 \, \text{kJ/kg}
+\]

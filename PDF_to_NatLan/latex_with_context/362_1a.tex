@@ -1,0 +1,94 @@
+Energy balance for the steady-state flow process around water:  
+\[
+0 = \dot{m} (h_{\text{in}} - h_{\text{out}}) + Q_R - Q_{\text{out}}
+\]  
+Rearranging for \( Q_{\text{out}} \):  
+\[
+Q_{\text{out}} = \dot{m} (h_{\text{out}} - h_{\text{in}}) \cdot c_p + Q_R
+\]  
+From the water tables:  
+\[
+h_{\text{in}}(70^\circ\text{C}, x=0) \quad \text{(Table A-2)} = 292.58 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_{\text{out}}(100^\circ\text{C}, x=0) \quad \text{(Table A-2)} = 419.04 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Substituting values:  
+\[
+Q_R = 0.3 \cdot (419.04 - 292.58) + Q_R = 62.18 \, \text{kW}
+\]  
+
+---
+
+Energy balance for a semi-open system:  
+
+The energy equation is written as:  
+\[
+m_2 U_2 - m_1 U_1 = \Delta m_{\text{in}} h + \dot{Q} - \dot{W}
+\]  
+Assuming \( \dot{Q}_{\text{in}} = \dot{Q}_{\text{out}} \) and \( \dot{W} = 0 \), the equation simplifies to:  
+\[
+m_2 U_2 - m_1 U_1 = \Delta m_{\text{in}} h
+\]  
+
+Given:  
+\[
+m_1 = 5755 \, \text{kg}
+\]  
+
+For state 1:  
+\[
+U_1 = \text{Table A-2}, \, x = 0.005, \, T = 100^\circ\text{C}
+\]  
+Using the formula:  
+\[
+U_1 = h_f + x \cdot (h_g - h_f)
+\]  
+Substituting values:  
+\[
+U_1 = 418.94 + 0.005 \cdot (2506.5 - 418.94) = 429.39 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+For state 2:  
+\[
+U_2 = \text{Table A-2}, \, x = 0, \, T = 70^\circ\text{C}
+\]  
+From the table:  
+\[
+U_2 = 292.95 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Mass difference:  
+\[
+\Delta m = m_2 - m_1
+\]  
+
+For the incoming enthalpy:  
+\[
+h_{\text{in}} = \text{Table A-2}, \, T = 20^\circ\text{C}, \, x = 0
+\]  
+From the table:  
+\[
+h_{\text{in}} = 83.86 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Rewriting the energy equation:  
+\[
+m_2 U_2 - m_1 U_1 = (m_2 - m_1) h_{\text{in}}
+\]  
+\[
+m_2 (U_2 - h_{\text{in}}) = m_1 U_1 - m_1 h_{\text{in}}
+\]  
+Solving for \( m_2 \):  
+\[
+m_2 = \frac{m_1 U_1 - m_1 h_{\text{in}}}{U_2 - h_{\text{in}}}
+\]  
+Substituting values:  
+\[
+m_2 = \frac{5755 \cdot 429.39 - 5755 \cdot 83.86}{292.95 - 83.86} = 11520.1 \, \text{kg}
+\]  
+
+Finally, the mass difference:  
+\[
+\Delta m_{12} = m_2 - m_1 = 5765.1 \, \text{kg}
+\]

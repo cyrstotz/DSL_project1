@@ -1,0 +1,61 @@
+a) Stationary Flow Process
+
+Energy balance around the reactor:
+
+Zero equals the mass flow rate times the difference in enthalpy from state c to state a, plus the heat flow rate into the process, plus the heat flow rate out:
+
+\[ 0 = \dot{m} [h_c - h_a] + \dot{Q}_p + \dot{Q}_{\text{out}} \]
+
+The enthalpy at state c is given by:
+
+\[ h_c = h_{p} + x (h_{g} - h_{p}) \]
+
+\[ = 292.58 \frac{\text{kJ}}{\text{kg}} + 0.035 \left( 2626 \frac{\text{kJ}}{\text{kg}} - 292.58 \frac{\text{kJ}}{\text{kg}} \right) \]
+
+\[ = 384.65 \frac{\text{kJ}}{\text{kg}} \]
+
+The enthalpy at state a is given by:
+
+\[ h_a = h_{p} + x (h_{g} - h_{p}) \]
+
+\[ = 943.4 \frac{\text{kJ}}{\text{kg}} + 0.035 \left( 2626 \frac{\text{kJ}}{\text{kg}} - 943.4 \frac{\text{kJ}}{\text{kg}} \right) \]
+
+\[ = 1020.33 \frac{\text{kJ}}{\text{kg}} \]
+
+The heat flow rate out is then calculated as:
+
+\[ \dot{Q}_{\text{out}} = \dot{m} [h_c - h_a] + \dot{Q}_p \]
+
+\[ \dot{Q}_{\text{out}} = \dot{m} [h_a - h_c] - \dot{Q}_p \]
+
+\[ \dot{Q}_{\text{out}} = 0.3 \frac{\text{kg}}{\text{s}} [1020.33 \frac{\text{kJ}}{\text{kg}} - 384.65 \frac{\text{kJ}}{\text{kg}}] - 10 \text{kW} \]
+
+\[ \dot{Q}_{\text{out}} = 62.5 \text{kW} \]
+
+Sign check: The heat flow rate out is 62.5 kW.
+
+For the second part:
+
+The change in entropy from state 1 to state 2 is given by the initial mass times gravity minus the product of mass at state 1 and entropy at state 1:
+
+\[ \Delta s_{12} = m_{02}g - (m_1 s_1) \]
+
+\[ m_1 = 5755 \, \text{kg} \]
+
+\[ m_2 = m_1 + \Delta m_2 = 9355 \, \text{kg} \]
+
+\[ s_1 = s_2 + x \left( \frac{g_2 - g_1}{g_1} \right) \]
+
+\[ = 1.3069 \, \frac{\text{kg} \cdot \text{m}^2}{\text{kg} \cdot \text{h}} \cdot 0.005 \cdot (7.3553 \, \frac{\text{kg} \cdot \text{m}^2}{\text{kg} \cdot \text{h}} - 1.3069 \, \frac{\text{kg} \cdot \text{m}^2}{\text{kg} \cdot \text{h}}) \]
+
+\[ = 1.337 \, \frac{\text{kg} \cdot \text{m}^2}{\text{kg} \cdot \text{h}} \]
+
+\[ s_2 = s_2 + x \left( \frac{g_2 - g_1}{g_1} \right) \]
+
+\[ = 0.8549 + 0.005 \cdot (7.7553 - 0.8549) \, \frac{\text{kg} \cdot \text{m}^2}{\text{kg} \cdot \text{h}} \]
+
+\[ = 0.9389 \, \frac{\text{kg} \cdot \text{m}^2}{\text{kg} \cdot \text{h}} \]
+
+The change in entropy for the system is calculated as the product of mass at state 2 and entropy at state 2 minus the product of mass at state 1 and entropy at state 1:
+
+\[ \Delta s_{02} = 9355 \, \text{kg} \cdot 0.9389 \, \frac{\text{kg} \cdot \text{m}^2}{\text{kg} \cdot \text{h}} - 5755 \, \text{kg} \cdot 1.337 \, \frac{\text{kg} \cdot \text{m}^2}{\text{kg} \cdot \text{h}} \]

@@ -1,0 +1,96 @@
+The pressure in the ice-water mixture (EW) is calculated as:  
+\[
+p_{\text{EW}} = p_{\text{amb}} + \frac{m_K \cdot g}{A}
+\]  
+Where:  
+\[
+A = \left( \frac{10 \, \text{cm}}{2} \right)^2 \cdot \pi = 0.007853 \, \text{m}^2
+\]  
+Substituting values:  
+\[
+p_{\text{EW}} = 1 \, \text{bar} + \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{0.007853 \, \text{m}^2}
+\]  
+This results in:  
+\[
+p_{\text{EW}} = 1.33937 \, \text{bar}
+\]  
+
+The final ice fraction \( x_{\text{ice},2} \) is determined using the equilibrium table for solid-liquid phase changes.  
+
+Description of Diagram:  
+The diagram shows a cylinder divided into two chambers. The top chamber contains the ice-water mixture (EW), while the bottom chamber contains the gas. A piston rests on the EW, exerting pressure downward. Forces acting on the piston are labeled, including atmospheric pressure and the weight of the piston.
+
+Energy balance for the water:  
+\[
+\Delta U = Q_{12} - W_{\text{water}}
+\]  
+Heat transferred to the water:  
+\[
+Q_{12} = W_{12} + \Delta U = 1.367 \, \text{kJ}
+\]  
+Work done by the water:  
+\[
+W_{\text{water}} = p_{\text{amb}} \cdot \Delta V
+\]  
+\[
+p_{\text{amb}} = 1 \, \text{bar}
+\]  
+\[
+W_{\text{water}} = 203.07 \, \text{J}
+\]  
+Internal energy change for the water:  
+\[
+\Delta U_{\text{water}} = m_{\text{EW}} \cdot (u_2 - u_1)
+\]  
+\[
+u_2 - u_1 = 1488.165
+\]  
+\[
+\Delta U_{\text{water}} = 1488.165 \cdot m_{\text{EW}}
+\]  
+\[
+m_{\text{EW}} = 0.1 \, \text{kg}
+\]  
+\[
+\Delta U_{\text{water}} = 148.8165 \, \text{J}
+\]  
+Work done by the water on the environment:  
+\[
+W_{\text{water}} = 489.165 \, \text{J}
+\]
+
+The internal energy \( u_2 \) is calculated using the equation:  
+\[
+u_2 = u(0^\circ\text{C}) = -200.0328 \, \text{kJ/kg}
+\]  
+
+The formula for \( u_2 \) is expanded as:  
+\[
+u_2 = x \cdot u_{\text{frost}} + (1 - x) \cdot u_{\text{liquid}}
+\]  
+where \( x \) is the ice mass fraction, \( u_{\text{frost}} \) is the internal energy of ice, and \( u_{\text{liquid}} \) is the internal energy of liquid water.  
+
+Substituting values:  
+\[
+u_2 = x \cdot u_{\text{frost}} + (1 - x) \cdot u_{\text{liquid}} = x \cdot (-200.0328) + (1 - x) \cdot 223.127 \, \text{kJ/kg}
+\]  
+
+The equation is rearranged to solve for \( x \):  
+\[
+x = \frac{u_2 - u_{\text{liquid}}}{u_{\text{frost}} - u_{\text{liquid}}}
+\]  
+
+Substituting the values:  
+\[
+x = \frac{-200.0328 - 223.127}{-200.0328 - 223.127}
+\]  
+
+The result is approximately:  
+\[
+x = 0.0669
+\]  
+
+Additional notes:  
+The temperature is \( T = 0^\circ\text{C} \), and the pressure is \( p = 1 \, \text{bar} \). There is a comment indicating that somewhere an error in \( x \) might have occurred, leading to a negative value.  
+
+No diagrams or figures are present on the page.

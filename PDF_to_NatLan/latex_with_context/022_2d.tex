@@ -1,0 +1,24 @@
+The mass-specific exergy destruction is calculated using the entropy generation:  
+\[
+\dot{S}_{\text{gen}} = \dot{S}_{\text{out}} - \dot{S}_{\text{in}}
+\]  
+and the exergy destruction:  
+\[
+\dot{E}_{\text{dest}} = T_0 \cdot \dot{S}_{\text{gen}}
+\]  
+
+From interpolation in Table A-22:  
+\[
+T_0 = 273.15 - 30 = 243.15 \, \text{K}
+\]  
+\[
+s^0(T_6) = 1.59117 \, \text{kJ/kg·K}, \quad s^0(T_0) = 1.47824 \, \text{kJ/kg·K}
+\]  
+\[
+\Delta s = 1.59117 - 1.47824 = 0.11293 \, \text{kJ/kg·K}
+\]  
+
+The exergy destruction is then:  
+\[
+\dot{E}_{\text{dest}} = T_0 \cdot \Delta s = 243.15 \cdot 0.11293 = 27.44 \, \text{kW}
+\]

@@ -1,0 +1,72 @@
+TASK 2b  
+To determine the outlet temperature \( T_6 \), the following calculations are performed:  
+
+Given:  
+\[
+T_5 = 431.9 \, \text{K}, \, p_5 = 0.5 \, \text{bar}, \, p_6 = 0.191 \, \text{bar}, \, w_5 = 220 \, \text{m/s}
+\]  
+
+Assuming \( s_5 = s_6 \) (isentropic process), the entropy difference \( s_6 - s_5 = 0 \).  
+
+Using the isentropic relation for temperature and pressure:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+
+Substituting values:  
+\[
+T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}} = 431.9 \cdot \left( \frac{0.191}{0.5} \right)^{\frac{1.4 - 1}{1.4}}
+\]  
+
+Simplifying:  
+\[
+T_6 = 431.9 \cdot \left( \frac{0.191}{0.5} \right)^{0.4 / 1.4} = 328.075 \, \text{K}
+\]  
+
+Thus, the outlet temperature \( T_6 \) is \( 328.075 \, \text{K} \).  
+
+---
+
+TASK 2c  
+To calculate the mass-specific increase in flow exergy \( \Delta ex_{\text{flow}} \):  
+
+The general expression for flow exergy is:  
+\[
+ex_{\text{flow},6} = h_6 - h_0 - T_0 \cdot (s_6 - s_0)
+\]  
+
+Using the simplified relation:  
+\[
+\Delta ex_{\text{flow}} = c_p \cdot (T_6 - T_0) - T_0 \cdot c_p \cdot \ln \left( \frac{T_6}{T_0} \right)
+\]  
+
+Substituting values:  
+\[
+\Delta ex_{\text{flow}} = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \cdot (328.075 - 243.15) - 243.15 \cdot 1.006 \cdot \ln \left( \frac{328.075}{243.15} \right)
+\]  
+
+Simplifying:  
+\[
+\Delta ex_{\text{flow}} = 1.006 \cdot 84.925 - 243.15 \cdot 1.006 \cdot \ln \left( 1.348 \right)
+\]  
+
+Further calculations yield:  
+\[
+\Delta ex_{\text{flow}} = 85.45 - 42.45 = 42.45 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Thus, the mass-specific increase in flow exergy is \( 42.45 \, \frac{\text{kJ}}{\text{kg}} \).  
+
+---
+
+TASK 2d  
+The mass-specific exergy destruction \( ex_{\text{dest}} \) is expressed as:  
+\[
+ex_{\text{dest}} = T_0 \cdot S_{\text{gen}}
+\]  
+
+No further calculations or explanations are provided for \( S_{\text{gen}} \).  
+
+Additionally, the equation \( v = \dot{m} \) is written but not elaborated upon.  
+
+No further content is visible for this task.

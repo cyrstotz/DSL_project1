@@ -1,0 +1,53 @@
+TASK 2a  
+The diagram is a qualitative representation of the jet engine process in a temperature-entropy (\( T \)-\( s \)) diagram. It includes labeled isobars and process paths:  
+- State 0: Ambient conditions.  
+- State 1: Isentropic compression.  
+- State 2: Isobaric heat addition.  
+- State 3: Isentropic expansion in the turbine.  
+- State 4: Isobaric mixing.  
+- State 5: Isentropic acceleration in the nozzle.  
+The axes are labeled as \( T \, [K] \) for temperature and \( s \, [\text{kJ}/\text{kg·K}] \) for entropy.  
+
+TASK 2b  
+Given data:  
+\[
+p_5 = 0.5 \, \text{bar}, \quad p_6 = 0.197 \, \text{bar}, \quad T_5 = 437.9 \, \text{K}, \quad w_5 = 220 \, \text{m/s}
+\]  
+
+The temperature at state 6 (\( T_6 \)) is calculated using the isentropic relation:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}  
+\]  
+Substituting values:  
+\[
+T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}} = 437.9 \, \text{K} \cdot \left( \frac{0.197 \, \text{bar}}{0.5 \, \text{bar}} \right)^{\frac{0.4}{1.4}}  
+\]  
+\[
+T_6 = 328.075 \, \text{K}  
+\]  
+
+Using the first law of thermodynamics for the nozzle:  
+\[
+\dot{Q} = \dot{m} \left[ h_6 - h_5 + \frac{w_6^2 - w_5^2}{2} \right]  
+\]  
+Since the nozzle is adiabatic (\( \dot{Q} = 0 \)):  
+\[
+h_6 - h_5 = -\frac{w_6^2 - w_5^2}{2}  
+\]  
+
+The velocity at state 6 (\( w_6 \)) is calculated using:  
+\[
+w_6^2 = 2 \cdot c_p \cdot (T_5 - T_6) + w_5^2  
+\]  
+Substituting values:  
+\[
+w_6 = \sqrt{2 \cdot c_p \cdot (T_5 - T_6) + w_5^2} = \sqrt{2 \cdot 1.006 \, \text{kJ}/\text{kg·K} \cdot (437.9 \, \text{K} - 328.075 \, \text{K}) + (220 \, \text{m/s})^2}  
+\]  
+\[
+w_6 = \sqrt{2 \cdot 1.006 \cdot 109.825 + 220^2} = \sqrt{2 \cdot 1006 \cdot 109.825 + 48400} = 507.29 \, \text{m/s}  
+\]  
+
+Final results:  
+\[
+T_6 = 328.075 \, \text{K}, \quad w_6 = 507.29 \, \text{m/s}  
+\]

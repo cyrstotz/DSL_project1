@@ -1,0 +1,61 @@
+TASK 1a  
+The energy balance equation for the reactor is written as:  
+\[
+0 = \dot{m}_{\text{in}} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R + \dot{Q}_{\text{out}} + \dot{W}_{\text{out}}
+\]  
+From the water tables:  
+- \( h_{\text{in}} \) corresponds to saturated liquid at \( 70^\circ\text{C} \), giving \( h_{\text{in}} = 292.95 \, \text{kJ/kg} \).  
+- \( h_{\text{out}} \) corresponds to saturated liquid at \( 100^\circ\text{C} \), giving \( h_{\text{out}} = 419.04 \, \text{kJ/kg} \).  
+
+The heat flow removed by the coolant is calculated as:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} (h_{\text{out}} - h_{\text{in}}) - \dot{Q}_R
+\]  
+Substituting the values:  
+\[
+\dot{Q}_{\text{out}} = -62.1824 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant, \( T_{\text{KF}} \), is determined using the entropy integral:  
+\[
+T_{\text{KF}} = \frac{\int_{S_a}^{S_e} T \, dS}{S_a - S_e}
+\]  
+Where \( dS = \frac{dQ}{T} \).  
+
+The entropy difference is expressed as:  
+\[
+T_{\text{KF}} = \frac{q_a - q_e}{S_a - S_e} = \frac{u_a - u_e}{S_a - S_e}
+\]  
+Using logarithmic relationships:  
+\[
+T_{\text{KF}} = \frac{\Delta h}{\Delta S} \ln \left( \frac{T_a}{T_e} \right)
+\]  
+
+Substituting values, the result is:  
+\[
+T_{\text{KF}} = 293.12 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+The entropy production rate, \( \dot{S}_{\text{gen}} \), is calculated using the entropy balance equation:  
+\[
+0 = \dot{m}_{\text{in}} (S_e - S_a) + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} + \dot{S}_{\text{gen}}
+\]  
+Rearranging:  
+\[
+\dot{S}_{\text{gen}} = \dot{m}_{\text{in}} (S_a - S_e) - \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+
+From the water tables:  
+- \( S_e = S_f(70^\circ\text{C}) = 0.3584 \, \text{kJ/kg·K} \).  
+- \( S_a = S_f(100^\circ\text{C}) = 1.3069 \, \text{kJ/kg·K} \).  
+
+Substituting the values:  
+\[
+\dot{S}_{\text{gen}} = 0.3178 \, \text{kW/K}
+\]

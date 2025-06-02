@@ -1,0 +1,73 @@
+The problem involves determining the outlet velocity \( w_6 \) and temperature \( T_6 \) for the jet engine.  
+
+The governing equation for energy conservation is written as:  
+\[
+\frac{dE}{dt} = \dot{m} \left[ h_5 - h_6 + \frac{1}{2} w_5^2 - \frac{1}{2} w_6^2 \right]
+\]  
+This equation is simplified to:  
+\[
+h_5 - h_6 = \frac{1}{2} \left( w_6^2 - w_5^2 \right)
+\]  
+
+For an ideal gas, the relationship between specific heat and temperature difference is expressed as:  
+\[
+c_p \left[ T_5 - T_6 \right] = \frac{1}{2} \left( w_6^2 - w_5^2 \right)
+\]  
+
+The temperature ratio \( \frac{T_6}{T_5} \) is calculated using the isentropic relation:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_0}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+\[
+T_6 = T_5 \cdot \left( \frac{0.191}{0.5} \right)^{\frac{1.4 - 1}{1.4}}
+\]  
+\[
+T_6 = 431.9 \cdot \left( \frac{0.191}{0.5} \right)^{\frac{0.4}{1.4}}
+\]  
+\[
+T_6 = 328.1 \, \text{K}
+\]  
+
+The outlet velocity \( w_6 \) is determined using the energy equation:  
+\[
+w_6 = \sqrt{2 \cdot c_p \left[ T_5 - T_6 \right] + w_5^2}
+\]  
+Substituting values:  
+\[
+w_6 = \sqrt{2 \cdot 1.006 \cdot \left( 431.9 - 328.1 \right) + 220^2}
+\]  
+\[
+w_6 = \sqrt{2 \cdot 1.006 \cdot 103.8 + 220^2}
+\]  
+\[
+w_6 = \sqrt{2 \cdot 1.006 \cdot 103.8 + 48400}
+\]  
+\[
+w_6 = \sqrt{208.7 + 48400}
+\]  
+\[
+w_6 = \sqrt{48608.7}
+\]  
+\[
+w_6 = 507.2 \, \text{m/s}
+\]  
+
+Final results:  
+- Outlet temperature: \( T_6 = 328.1 \, \text{K} \)  
+- Outlet velocity: \( w_6 = 507.2 \, \text{m/s} \)
+
+A temperature-entropy (\(T\)-\(S\)) diagram is drawn. The diagram includes the following labeled processes:  
+- An isobaric process from state 2 to state 3.  
+- An isochoric process from state 3 to state 4.  
+- An isobaric process from state 4 to state 5.  
+- An isentropic process from state 5 to state 6.  
+
+The axes are labeled:  
+- The vertical axis represents temperature (\(T\)) in kilojoules (\(kJ\)).  
+- The horizontal axis represents entropy (\(S\)) in kilojoules per kilogram (\(kJ/kg\)).  
+
+The states are connected with lines to represent the transitions between processes.

@@ -1,0 +1,69 @@
+Determine \( Q_{12} \).
+
+The energy balance for the gas is written as:  
+\[
+\frac{dE}{dt} = \dot{Q} - \dot{W}_{\text{in}}
+\]  
+\[
+\Delta E = \dot{Q} - \dot{W}_{\text{in}}
+\]  
+\[
+\Delta E = U_2 - U_1 \quad \text{(kinetic and potential energies are neglected).}
+\]
+
+The relationship between internal energy and heat transfer is given as:  
+\[
+U_2 - U_1 + \dot{W}_{\text{in}} = Q_{12}
+\]  
+\[
+U_2 - U_1 = c_p \cdot (T_2 - T_1)
+\]
+
+Using the given specific heat capacity:  
+\[
+c_p = 0.633 \, \frac{\text{kJ}}{\text{kg·K}} \quad \text{(valid for \( 0^\circ\text{C} \) to \( 500^\circ\text{C} \))},
+\]  
+\[
+U_2 - U_1 = -316.5 \, \frac{\text{kJ}}{\text{kg}}.
+\]
+
+The work input at constant pressure is calculated as:  
+\[
+\dot{W}_{\text{in}} = p \cdot (V_2 - V_1),
+\]  
+\[
+p = 1.401 \, \text{bar}, \quad V_1 = 0.00349 \, \text{m}^3.
+\]
+
+The volume \( V_2 \) is determined using the ideal gas law:  
+\[
+V_2 = \frac{m \cdot R \cdot T_2}{p},
+\]  
+\[
+m = 0.00392 \, \text{kg}, \quad R = 0.16685 \, \frac{\text{kJ}}{\text{kg·K}}, \quad T_2 = 273.15 \, \text{K}, \quad p = 140.1 \, \text{kPa}.
+\]  
+\[
+V_2 = 0.001103 \, \text{m}^3.
+\]
+
+Substituting into the work equation:  
+\[
+\dot{W}_{\text{in}} = 140.1 \, \text{kPa} \cdot (0.001103 \, \text{m}^3 - 0.00349 \, \text{m}^3),
+\]  
+\[
+\dot{W}_{\text{in}} = -0.285 \, \text{kJ}.
+\]
+
+The total heat transfer \( Q_{12} \) is calculated as:  
+\[
+Q_{12} = \dot{W}_{\text{in}} + m \cdot (U_2 - U_1),
+\]  
+\[
+Q_{12} = -0.285 \, \text{kJ} + (0.00392 \, \text{kg} \cdot -316.5 \, \frac{\text{kJ}}{\text{kg}}),
+\]  
+\[
+Q_{12} = -0.285 \, \text{kJ} - 1.083 \, \text{kJ},
+\]  
+\[
+Q_{12} = -1.3675 \, \text{kJ}.
+\]

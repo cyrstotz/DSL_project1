@@ -1,0 +1,60 @@
+TASK 1d  
+The energy balance equation is written as:  
+\[
+E_2 - E_1 = (m_{\text{gas}} + \Delta m) u_2 - m_{\text{gas}} u_1
+\]  
+
+The specific internal energy at \( T = 100^\circ\text{C} \) and steam quality \( x = 0.005 \) is calculated using:  
+\[
+u_1(100^\circ\text{C}, x = 0.005) = u_f + x(u_g - u_f) = 929.378 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-2)}
+\]  
+
+The specific internal energy at \( T = 70^\circ\text{C} \) and \( x = 0 \) is:  
+\[
+u_2(70^\circ\text{C}, x = 0) = 292.95 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-2)}
+\]  
+
+Using the energy balance:  
+\[
+(m_{\text{gas}} + \Delta m) u_2 - m_{\text{gas}} u_1 = \Delta m h_2 + Q_{\text{out}}
+\]  
+
+Rearranging for \( \Delta m \):  
+\[
+\Delta m (u_2 - h_2) = Q_{\text{out}} + m_{\text{gas}} u_2 - m_{\text{gas}} u_1
+\]  
+\[
+\Delta m = \frac{Q_{\text{out}} + m_{\text{gas}} (u_1 - u_2)}{u_2 - h_2}
+\]  
+
+Substituting values:  
+\[
+\Delta m = \frac{-35 \, \text{MJ} + 5755 \, \text{kg} (929.378 - 292.95)}{292.95 - 83.96}
+\]  
+\[
+\Delta m = 358.932 \, \text{kg}
+\]  
+
+TASK 1e  
+The entropy change \( \Delta S \) is calculated using:  
+\[
+\Delta S = (m_{\text{gas}} + \Delta m) s_2 - m_{\text{gas}} s_1
+\]  
+
+The specific entropy at \( T = 100^\circ\text{C} \) and \( x = 0.005 \) is:  
+\[
+s_1(100^\circ\text{C}, x = 0.005) = s_f + x(s_g - s_f) = 1.337 \, \frac{\text{kJ}}{\text{kg·K}} \quad \text{(from Table A-2)}
+\]  
+
+The specific entropy at \( T = 70^\circ\text{C} \) and \( x = 0 \) is:  
+\[
+s_2(70^\circ\text{C}, x = 0) = 0.9599 \, \frac{\text{kJ}}{\text{kg·K}} \quad \text{(from Table A-2)}
+\]  
+
+Substituting values:  
+\[
+\Delta S = 358.932 \cdot 0.9599 + 5755 \cdot 1.337
+\]  
+\[
+\Delta S = 1228.5 \, \frac{\text{kJ}}{\text{K}}
+\]

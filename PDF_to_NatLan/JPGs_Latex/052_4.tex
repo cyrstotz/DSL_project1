@@ -1,0 +1,71 @@
+TASK 3a  
+The gas pressure \( p_{g,1} \) is calculated as:  
+\[
+p_{g,1} = p_{\text{amb}} + \frac{m_K \cdot g}{A} + \frac{m_{\text{EW}} \cdot g}{A}
+\]  
+The area \( A \) is determined as:  
+\[
+A = \pi \left(\frac{D}{2}\right)^2 = 0.00785 \, \text{m}^2
+\]  
+Substituting values:  
+\[
+p_{g,1} = 1 \, \text{bar} + \frac{m_K \cdot g}{A} = 1.401 \, \text{bar}
+\]  
+
+Using the ideal gas law \( pV = mRT \), the gas constant \( R \) is calculated as:  
+\[
+R = \frac{R_u}{M_g} = \frac{8.314}{50} = 166.28 \, \frac{\text{J}}{\text{kg·K}}
+\]  
+The gas mass \( m_g \) is then determined:  
+\[
+m_g = \frac{p_{g,1} \cdot V_{g,1}}{R \cdot T_{g,1}} = 3.922 \, \text{g}
+\]  
+
+---
+
+TASK 3c  
+The change in internal energy \( \Delta U \) is calculated as:  
+\[
+\Delta U = Q_{12} - W_{12}^0
+\]  
+Since \( W_{12}^0 = 0 \), this simplifies to:  
+\[
+\Delta U = m_g \cdot (u_2 - u_1) = Q_{12}
+\]  
+Substituting \( u_2 - u_1 = c_V \cdot (T_{g,2} - T_{g,1}) \):  
+\[
+m_g \cdot c_V \cdot (T_{g,2} - T_{g,1}) = Q_{12}
+\]  
+With values:  
+\[
+Q_{12} = -1.083 \, \text{kJ}
+\]  
+
+---
+
+TASK 3d  
+The internal energy of the ice-water mixture \( U_{\text{EW},2} \) is calculated as:  
+\[
+U_{\text{EW},2} = U_{\text{ice},1} + x_2 \cdot (U_{\text{liq}} - U_{\text{ice}})
+\]  
+Substituting values:  
+\[
+U_{\text{EW},2} = -280.052 \, \frac{\text{kJ}}{\text{kg}} + x_2 \cdot (0 + 333.401)
+\]  
+The heat transfer equation is:  
+\[
+m \cdot (u_2 - u_1) = Q_{12} - W_{12}
+\]  
+Rearranging:  
+\[
+u_2 - u_1 = \frac{Q_{12}}{m}
+\]  
+Substituting \( u_2 = \frac{Q_{12}}{m} + u_1 \):  
+\[
+u_2 = \frac{Q_{12}}{m} + u_1 + 333.401
+\]  
+Solving for \( x_2 \):  
+\[
+x_2 = \frac{Q_{12} + m \cdot u_1 + 333.401}{333.401} = 0.43233
+\]  
+

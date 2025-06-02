@@ -1,0 +1,86 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a Temperature-Entropy (T-S) diagram. The x-axis is labeled as $S \left[ \frac{kJ}{kg \cdot K} \right]$ and the y-axis is labeled as $T \left[ K \right]$. The graph consists of six points labeled $P_0$, $P_2$, $P_3$, $P_4$, $P_5$, and $P_6$. The process between these points is described as follows:
+    \begin{itemize}
+        \item $P_0$ to $P_2$: Isentropic process (vertical line).
+        \item $P_2$ to $P_3$: Isobaric process (horizontal line).
+        \item $P_3$ to $P_4$: Isentropic process (vertical line).
+        \item $P_4$ to $P_5$: Isobaric process (horizontal line) with $P = 0.5 \, \text{bar}$.
+        \item $P_5$ to $P_6$: Isentropic process (vertical line, reversed).
+        \item $P_6$ to $P_0$: Isobaric process (horizontal line).
+    \end{itemize}
+\end{description}
+
+\subsection*{b)}
+
+\begin{equation*}
+    \dot{u} = \dot{m} \left[ h_5 - h_6 + \frac{(w_5^2 - w_6^2)}{2} \right]
+\end{equation*}
+
+\begin{description}
+    \item[Given:] $P_6 = 0.5 \, \text{bar}$, $w_6 = 220 \, \frac{m}{s}$, $T_5 = 451.9 \, K$, $P_6 = P_0 = 0.171 \, \text{bar}$, $w_5 = 0$
+\end{description}
+
+\begin{equation*}
+    T_0 \, \text{über Beziehungs-Gleichung} \quad \left| n = k = 1.4 \right|
+\end{equation*}
+
+\begin{equation*}
+    T_0 = T_5 \left( \frac{P_6}{P_5} \right)^{\frac{k-1}{k}}
+\end{equation*}
+
+\begin{equation*}
+    T_0 = 828.075 \, K
+\end{equation*}
+
+\begin{equation*}
+    \text{ideales Gas} \quad \Rightarrow \quad h_5 - h_6 = c_p \left[ T_5 - T_6 \right]
+\end{equation*}
+
+\begin{equation*}
+    w_6 = \sqrt{2 \left[ \frac{\dot{m}}{\dot{m}} \cdot c_p \left[ T_5 - T_6 \right] + \frac{w_5^2}{2} \right]}
+\end{equation*}
+
+\begin{equation*}
+    w_6 = 220.47 \, \frac{m}{s}
+\end{equation*}
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\begin{itemize}
+    \item[(c)] 
+    \begin{align*}
+        \text{Wasser mit} \quad w_0 &= 510 \frac{m}{s}, \quad T_L = 310 \, K \\
+        \Delta e_{x,\text{str}} &= \left[ h_L - h_0 - T_0 (s_L - s_0) + ke_c \right] \\
+        &= \\
+        h_L - h_0 &= c_p [T_L - T_0] \\
+        s_L - s_0 &= c_p \ln \left( \frac{T_L}{T_0} \right) + k \ln \left( \frac{p_0}{p_0} \right) \quad \text{isobar,} \quad p_0 = p_0 \\
+        ke_c &= \frac{1}{2} w_0^2 \\
+        T_0 &= -30^\circ C = 243.15 \, K \\
+        \Delta e_{x,\text{str}} &= c_p \left[ T_L - T_0 \right] - T_0 \ln \left( \frac{T_L}{T_0} \right) + \frac{1}{2} w_0^2 \\
+        &= \boxed{13.084 \frac{kJ}{kg}}
+    \end{align*}
+    
+    \item[(d)] 
+    \begin{align*}
+        e_{x,\text{verl}} &= \frac{\dot{S}_{erz} - T_0}{m_{ges}} \\
+        \text{Energieklau:} \quad \dot{S}_{erz} &\text{ström, adiabt} \quad \Rightarrow \quad \dot{S}_{erz} = \dot{m} [s_q - s_c] \\
+        \dot{S}_{erz} &= s_L - s_0 \\
+        s_L - s_0 &= c_p \ln \left( \frac{T_L}{T_0} \right) \\
+        \text{Alles einsetzen} \quad \Rightarrow \quad e_{x,\text{verl}} &= \boxed{82.01 \frac{kJ}{kg}}
+    \end{align*}
+\end{itemize}
+
+``````latex
+
+

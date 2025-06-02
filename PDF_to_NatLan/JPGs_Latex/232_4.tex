@@ -1,0 +1,104 @@
+TASK 3a  
+The pressure of the gas in state 1 is calculated using the equation:  
+\[
+p_{g,1} = p_{\text{amb}} + \frac{m_K g}{A} + \frac{m_{\text{EW}} g}{A}
+\]  
+where:  
+- \( p_{\text{amb}} = 1.0 \times 10^5 \, \text{Pa} \),  
+- \( m_K = 32.0 \, \text{kg} \),  
+- \( g = 9.81 \, \text{m/s}^2 \),  
+- \( A = \pi r^2 = \pi (0.05 \, \text{m})^2 = 0.00785 \, \text{m}^2 \),  
+- \( m_{\text{EW}} = 0.1 \, \text{kg} \).  
+
+Substituting values:  
+\[
+p_{g,1} = 1.0 \times 10^5 + \frac{32.0 \cdot 9.81}{0.00785} + \frac{0.1 \cdot 9.81}{0.00785}
+\]  
+\[
+p_{g,1} = 1.40114 \times 10^5 \, \text{Pa} = 1.407 \, \text{bar}.
+\]  
+
+The mass of the gas is calculated using the ideal gas law:  
+\[
+pV = m_g RT \quad \Rightarrow \quad m_g = \frac{p_{g,1} V_g}{RT}.
+\]  
+Given:  
+- \( R = 8.314 \, \text{J/mol·K} \),  
+- \( M_g = 50 \times 10^{-3} \, \text{kg/mol} \),  
+- \( V_g = 3.14 \times 10^{-3} \, \text{m}^3 \),  
+- \( T_g = 773.15 \, \text{K} \).  
+
+Substituting values:  
+\[
+m_g = \frac{1.401 \times 10^5 \cdot 3.14 \times 10^{-3}}{166.28 \cdot 773.15}
+\]  
+\[
+m_g = 0.00342 \, \text{kg} = 3.42 \, \text{g}.
+\]  
+
+---
+
+TASK 3b  
+The pressure in state 2 is equal to the pressure in state 1:  
+\[
+p_{g,2} = p_{g,1}.
+\]  
+This is because the mass of the ice-water mixture does not change, and thus the weight remains constant.  
+
+The temperature in state 2 is given as:  
+\[
+T_{g,2} = T_{\text{EW},2}.
+\]  
+The ice mass fraction remains unchanged:  
+\[
+x_{\text{ice},2} = 0.6.
+\]  
+
+The volume of the gas in state 2 is calculated using the ideal gas law:  
+\[
+V_2 = \frac{m_g RT}{p}.
+\]  
+Substituting values:  
+\[
+V_2 = \frac{0.00342 \cdot 166.28 \cdot 273.15}{1.401 \times 10^5}
+\]  
+\[
+V_2 = 0.00116 \, \text{m}^3.
+\]  
+
+---
+
+TASK 3c  
+The energy balance is written as:  
+\[
+\frac{dE}{dt} = \sum \dot{Q} - \dot{W}_{\text{in}}.
+\]  
+The change in internal energy is:  
+\[
+\Delta U = Q_{12} - W_{\text{in}}.
+\]  
+
+The work done on the gas is:  
+\[
+W_{\text{in}} = \int_{1}^{2} p \, dV = p (V_2 - V_1).
+\]  
+Substituting values:  
+\[
+W_{\text{in}} = 1.401 \times 10^5 \cdot (0.00116 - 3.14 \times 10^{-3})
+\]  
+\[
+W_{\text{in}} = -285.6 \, \text{J}.
+\]  
+
+The heat transferred is given as:  
+\[
+m_g c_V (T_2 - T_1) = Q_{12} - W_{\text{in}}.
+\]  
+Substituting values:  
+\[
+0.00342 \cdot 0.633 \cdot (273.15 - 773.15) = Q_{12} - (-285.6).
+\]  
+\[
+Q_{12} = -284.7 \, \text{J}.
+\]  
+

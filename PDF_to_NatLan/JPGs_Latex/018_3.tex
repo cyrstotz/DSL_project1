@@ -1,0 +1,39 @@
+TASK 2c  
+The task involves determining the mass-specific increase in flow exergy (\( \Delta ex_{\text{flow}} \)).
+
+The equation for the mass-specific exergy destruction is written as:  
+\[
+\dot{m}_{\text{ges}} \left( h_0 - h_6 + \frac{w_6^2 - w_0^2}{2} \right) + \sum \dot{Q} + \dot{W}_t = 0
+\]  
+where \( \dot{W}_t \) is the turbine work.  
+
+The turbine work is expressed as:  
+\[
+\dot{W}_t = \frac{\dot{Q}}{\dot{m}} + \Delta ex_e
+\]  
+and further simplified:  
+\[
+\dot{W}_t = -n \int p \, dv + ex_e = -n \left( \frac{R(T_6 - T_0)}{1 - n} \right) + \frac{1}{2} \dot{m} (w_0^2 - w_6^2)
+\]
+
+The mass-specific increase in flow exergy is given as:  
+\[
+\dot{m}_{\text{ges}} \left( h_6 - h_0 - T_0 (s_6 - s_0) + \Delta ex_e + \Delta p^e \right) = \Delta ex_{\text{flow}}
+\]
+
+---
+
+TASK 2d  
+The task involves calculating the exergy destruction (\( ex_{\text{dest}} \)) in the engine.
+
+The exergy destruction is expressed as:  
+\[
+ex_{\text{val}} = T_0 \dot{S}_{\text{ex}}
+\]  
+
+The entropy production rate is given as:  
+\[
+\dot{S}_{\text{ex}} = \dot{m}_{\text{ges}} (s_6 - s_0) = \frac{\dot{Q}}{T}
+\]  
+
+This equation accounts for the heat transfer and entropy generation in the system.

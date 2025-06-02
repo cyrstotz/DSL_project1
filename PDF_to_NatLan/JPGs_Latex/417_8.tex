@@ -1,0 +1,38 @@
+TASK 2d  
+The exergy destruction \( ex_{\text{dest}} \) is calculated using the following formula:  
+\[
+ex_{\text{dest}} = T_0 \cdot \dot{S}_{\text{gen}}
+\]  
+
+The entropy difference \( \Delta S \) is expressed as:  
+\[
+\Delta S = s_6 - s_5
+\]  
+
+The entropy at state 6 (\( s_6 \)) is interpolated using the formula:  
+\[
+s_6 = s(250 \, \text{K}) + \frac{s(250 \, \text{K}) - s(260 \, \text{K})}{\Delta T} \cdot (T - 250 \, \text{K})
+\]  
+
+After interpolation:  
+\[
+s_6 = 1.494 \, \text{kJ/kg·K} \quad \text{(value interpolated from 2c)}
+\]  
+\[
+s_5 = 1.752 \, \text{kJ/kg·K} \quad \text{(value interpolated from 2c)}
+\]  
+
+Substituting into the exergy destruction formula:  
+\[
+ex_{\text{dest}} = T_0 \cdot (s_6 - s_5)
+\]  
+\[
+ex_{\text{dest}} = 283.15 \, \text{K} \cdot (1.494 \, \text{kJ/kg·K} - 1.752 \, \text{kJ/kg·K})
+\]  
+
+Final result:  
+\[
+ex_{\text{dest}} = -73.126 \, \text{kJ/kg}
+\]  
+
+No diagrams or figures are present on this page.

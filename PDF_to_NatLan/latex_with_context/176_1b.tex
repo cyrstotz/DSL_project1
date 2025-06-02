@@ -1,0 +1,33 @@
+The thermodynamic mean temperature of the coolant is determined using:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{KF}} \cdot c_i \cdot (T_{\text{out}} - T_{\text{in}})
+\]  
+Substituting values:  
+\[
+63.297 \, \text{kW} = \dot{m}_{\text{KF}} \cdot c_i \cdot (298.15 - 288.15)
+\]  
+Simplifying:  
+\[
+\dot{m}_{\text{KF}} = \frac{63.297}{c_i \cdot 10} = \frac{63.297}{6.33 \, \text{kW/K}} = \dot{m}_{\text{KF}} \cdot c_i
+\]  
+
+No further numerical solution is provided for \( \dot{m}_{\text{KF}} \).
+
+The thermodynamic mean temperature \( T_{\text{KF}} \) is calculated using the integral definition:  
+\[
+T = \frac{\int_{s_e}^{s_a} T \, ds}{s_a - s_e} = \frac{h_a - h_e}{s_a - s_e} = \frac{\dot{Q}_{\text{out}}}{\dot{m}_{\text{KF}} \cdot (s_a - s_e)}
+\]  
+Substituting the given values:  
+\[
+\dot{Q}_{\text{out}} = 6.33 \, \text{kW}, \quad c_{\text{if}} = 6.33 \, \frac{\text{kW}}{\text{K}}
+\]  
+and using the logarithmic mean temperature difference:  
+\[
+c_{\text{if}} \cdot \ln \left( \frac{T_{\text{KF,in}}}{T_{\text{KF,out}}} \right)
+\]  
+The calculation yields:  
+\[
+\frac{10 \, \text{K}}{\ln \left( \frac{288.15 \, \text{K}}{298.15 \, \text{K}} \right)} = 293.12 \, \text{K}
+\]  
+
+---

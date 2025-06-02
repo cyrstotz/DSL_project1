@@ -1,0 +1,39 @@
+The task involves calculating the outlet temperature \( T_6 \) and velocity \( w_6 \).  
+
+Given:  
+- \( w_5 = 220 \, \text{m/s} \)  
+- \( p_6 = p_0 \)  
+- \( p_5 = 0.5 \, \text{bar} \)  
+- \( T_5 = 431.9 \, \text{K} \)  
+
+Assumptions:  
+- The process is reversible and adiabatic, modeled as a polytropic expansion.  
+- \( n = \kappa = 1.4 \)  
+- \( c_p = 1.006 \, \text{kJ}/\text{kg·K} \)  
+
+The temperature at state 6 is calculated using the polytropic relation:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}}
+\]  
+Substituting values:  
+\[
+T_6 = 431.9 \left( \frac{0.191}{0.5} \right)^{\frac{1.4-1}{1.4}} = 328.075 \, \text{K}
+\]  
+
+The energy balance equation is used to calculate \( w_6 \):  
+\[
+0 = \dot{m} \left( h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right)
+\]  
+Where:  
+\[
+h_5 - h_6 = c_p (T_5 - T_6) = 1.006 \cdot (431.9 - 328.075) = 104.94 \, \text{kJ/kg}
+\]  
+
+Rearranging for \( w_6 \):  
+\[
+w_6 = \sqrt{w_5^2 + 2 \cdot (h_5 - h_6)} = \sqrt{220^2 + 2 \cdot 104.94 \cdot 10^3} = 292.2042 \, \text{m/s}
+\]  
+
+Final results:  
+- \( T_6 = 328.075 \, \text{K} \)  
+- \( w_6 = 292.2042 \, \text{m/s} \)

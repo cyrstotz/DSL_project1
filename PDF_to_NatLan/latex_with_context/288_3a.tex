@@ -1,0 +1,29 @@
+The gas pressure in state 1 is calculated using the following equation:  
+\[
+P_{g,1} \cdot \frac{D^2 \pi}{4} = m_K + P_{\text{amb}} \cdot \frac{D^2 \pi}{4} + m_{\text{EW}}
+\]  
+Rearranging for \( P_{g,1} \):  
+\[
+P_{g,1} = \frac{m_K + m_{\text{EW}}}{\frac{D^2 \pi}{4}} + P_{\text{amb}}
+\]  
+Substituting values:  
+\[
+P_{g,1} = \frac{32 + 0.1}{0.1^2 \pi / 4} + 100,000 = 101087.09 \, \text{Pa}
+\]  
+
+The gas pressure-volume relationship is given by:  
+\[
+P_{g,1} \cdot V_{g,1} = m_{g,1} \cdot R \cdot T_{g,1}
+\]  
+The specific gas constant \( R \) is calculated as:  
+\[
+R = \frac{\bar{R}}{M_g} = \frac{8.314}{50 \cdot 10^{-3}} = 166.28 \, \frac{\text{J}}{\text{kg·K}}
+\]  
+Rearranging for \( m_{g,1} \):  
+\[
+m_{g,1} = \frac{P_{g,1} \cdot V_{g,1}}{R \cdot T_{g,1}}
+\]  
+Substituting values:  
+\[
+m_{g,1} = \frac{101087.09 \cdot 3.14 \cdot 10^{-3}}{166.28 \cdot 773.15} = 2.58228 \cdot 10^{-3} \, \text{kg}
+\]

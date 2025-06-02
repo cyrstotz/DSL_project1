@@ -1,0 +1,17 @@
+The reactor is labeled as stationary. The inlet mass flow rate is \( \dot{m}_{in} \), and the outlet mass flow rate is \( \dot{m}_{out} \). The steam quality \( x_D \) is given as 0.005, and the total mass in the reactor is 5755 kg. The heat flow \( \dot{Q}_R \) is shown exiting the reactor.  
+
+The energy balance equation is written as:  
+\( \dot{Q}_{out} = \dot{m}_{in} h_1 - \dot{m}_{out} h_2 + \dot{Q}_R - \dot{W} \).  
+
+The equation is simplified to:  
+\( \dot{Q} = \dot{m} (h_2 - h_1) + \dot{Q}_R \).  
+
+The mass flow rate \( \dot{m} \) is given as 0.3 kg/s. The enthalpy values are calculated using water tables:  
+\( h_2 (100^\circ C, x_2 = 0) = h_f (100^\circ C) = 419.04 \, \text{kJ/kg} \) (from Table A-2).  
+\( h_1 (70^\circ C, x_1 = 0) = 292.98 \, \text{kJ/kg} \) (from Table A-2).  
+
+Substituting values:  
+\( \dot{Q} = 0.3 \, \text{kg/s} \cdot (419.04 - 292.98) \, \text{kJ/kg} = 37.818 \, \text{kW} \).  
+
+Adding the reaction heat flow:  
+\( \dot{Q}_{out} = 37.818 \, \text{kW} + \dot{Q}_R = 37.818 \, \text{kW} + 100 \, \text{kW} = 137.818 \, \text{kW} \).

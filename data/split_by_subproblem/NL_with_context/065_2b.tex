@@ -1,0 +1,32 @@
+The heading reads: "Prozessschritt 5-6 isentrop." (Process step 5-6 isentropic).  
+
+An equation is written for temperature \( T_6 \):  
+\( T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} \)  
+Substituting values:  
+\( T_6 = 431.9 \, \text{K} \cdot \left( \frac{0.191 \cdot 10^5 \, \text{Pa}}{0.5 \cdot 10^5 \, \text{Pa}} \right)^{\frac{0.4}{1.4}} \)  
+The result is:  
+\( T_6 = 328.07 \, \text{K} \)  
+
+Next, an energy balance equation is written for the nozzle:  
+\( 0 = \dot{m} \left[ h_6 - h_5 + \frac{w_6^2}{2} - \frac{w_5^2}{2} \right] + \dot{Q}, \text{adiabat} \)  
+Since \( \dot{Q} = 0 \), the equation simplifies to:  
+\( h_6 - h_5 + \frac{w_6^2}{2} - \frac{w_5^2}{2} = 0 \)  
+
+Further derivations are shown:  
+\( h_5 - h_6 = \frac{w_6^2}{2} - \frac{w_5^2}{2} \)  
+Rearranging:  
+\( w_6^2 = w_5^2 + 2 \cdot (h_5 - h_6) \)  
+
+Substituting values:  
+\( h_5 - h_6 = c_p \cdot (T_5 - T_6) \)  
+\( h_5 - h_6 = 1.006 \, \text{kJ/kg·K} \cdot (431.9 \, \text{K} - 328.07 \, \text{K}) \)  
+\( h_5 - h_6 = 104.45 \, \text{kJ/kg} \)  
+
+Finally, calculating \( w_6 \):  
+\( w_6 = \sqrt{w_5^2 + 2 \cdot (h_5 - h_6)} \)  
+Substituting values:  
+\( w_6 = \sqrt{220^2 \, \text{m}^2/\text{s}^2 + 2 \cdot (104.45 \, \text{kJ/kg})} \)  
+\( w_6 = 50.725 \, \text{m/s} \)  
+
+The result is boxed:  
+\( w_6 = 50.725 \, \text{m/s} \)

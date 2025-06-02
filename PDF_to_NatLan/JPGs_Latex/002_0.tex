@@ -1,0 +1,41 @@
+TASK 1a  
+The problem setup involves a reactor operating in steady-state conditions. The given parameters are:  
+- Mass flow rate: \( \dot{m} = 0.3 \, \text{kg/s} \)  
+- Reactor mass: \( m_{\text{total}} = 5755 \, \text{kg} \)  
+- Steam quality: \( x = 0.005 \)  
+- Heat released by the chemical reaction: \( \dot{Q}_R = 100 \, \text{kW} \)  
+
+The inlet and outlet temperatures are provided:  
+- Inlet temperature: \( T_{\text{in}} = 70^\circ\text{C} = 343.15 \, \text{K} \)  
+- Outlet temperature: \( T_{\text{out}} = 100^\circ\text{C} = 373.15 \, \text{K} \)  
+- Reactor temperature: \( T_{\text{Reactor}} = 100^\circ\text{C} = 373.15 \, \text{K} \)  
+
+The coolant enters and exits the cooling jacket at:  
+- Coolant inlet temperature: \( T_{\text{KF,in}} = 288.15 \, \text{K} \)  
+- Coolant outlet temperature: \( T_{\text{KF,out}} = 298.15 \, \text{K} \)  
+
+A schematic diagram is drawn showing the reactor with inlet and outlet streams, labeled temperatures, and heat flows. The cooling jacket is depicted surrounding the reactor, with arrows indicating heat transfer to the coolant.  
+
+The energy balance for the cooling jacket is described as follows:  
+\[
+0 = \dot{m} \left[ h_1 - h_2 \right] + Q
+\]  
+For steady-state conditions:  
+\[
+\dot{Q}_{\text{ab}} = \dot{m} \left[ h_2 - h_1 \right]
+\]  
+This is further expanded using the specific heat capacity:  
+\[
+\dot{Q}_{\text{ab}} = -m \int_{T_1}^{T_2} c \, dT = -m c \left( T_c - T_h \right)
+\]  
+
+The energy balance for the reactor is given as:  
+\[
+0 = \dot{m} \left[ h_e - h_a \right] + \dot{Q}_R + \dot{Q}_{\text{ab}}
+\]  
+From this, the heat flow removed by the coolant is calculated:  
+\[
+\dot{Q}_{\text{ab}} = m \left[ h_a - h_e \right] - \dot{Q}_R
+\]  
+
+No additional figures or graphs are present beyond the schematic diagram described above.

@@ -1,0 +1,149 @@
+
+``````latex
+
+
+\section*{Interpolation Formula}
+\begin{equation}
+y = \frac{y_2 - y_1}{x_2 - x_1} (x - x_1) + y_1
+\end{equation}
+
+\section*{1 a)}
+\begin{equation}
+0 = \dot{m} (h_{\text{ein}} - h_{\text{aus}}) + \dot{Q} \quad \text{abgeführt}
+\end{equation}
+\begin{equation}
+\dot{Q} = \dot{m} (h_{\text{ein}} - h_{\text{aus}}) = -37.818 \, \text{kJ}
+\end{equation}
+
+\subsection*{Graph Description}
+There is a graph with a straight line sloping upwards from left to right. The x-axis is not labeled, and the y-axis is not labeled. There is an arrow pointing to the line with the label "abgeführt" and a symbol for heat transfer (\(\Theta\)).
+
+\section*{1 b)}
+\begin{equation}
+0 = \dot{m} (h_{\text{ein}} - h_{\text{aus}}) + \dot{Q}_{\text{aus}}
+\end{equation}
+\begin{equation}
+0 = \dot{m} (h_{\text{ein}} - h_{\text{aus}}) - \dot{Q} + \dot{Q}_R
+\end{equation}
+\begin{equation}
+\dot{Q}_{\text{aus}} = \dot{m} (h_{\text{ein}} - h_{\text{aus}}) + \dot{Q}_R
+\end{equation}
+
+\subsection*{T-Az}
+\begin{align*}
+h_{\text{ein}} @ 70^\circ C &= 292.98 \, \frac{\text{kJ}}{\text{kg}} \\
+h_{\text{aus}} @ 100^\circ C &= 418.04 \, \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+\subsection*{FAZ}
+\begin{align*}
+h_{\text{ein}} \cdot \dot{m} @ 70^\circ C / x = 0.005 &= 364.64 \, \frac{\text{kJ}}{\text{kg}} \\
+h_{\text{aus}} = h @ 100^\circ C / x = 0.005 &= 421.1 \, \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+\begin{equation}
+\dot{Q}_{\text{aus}} = 66.24 \, \text{kW}
+\end{equation}
+\begin{equation}
+\dot{Q}_{\text{aus}} = 65.05 \, \text{kW}
+\end{equation}
+
+``````latex
+
+\section*{b)}
+
+\[
+\overline{T} = \frac{\Delta h}{\Delta S}, \quad \text{da ideale Flüssigkeil}
+\]
+
+\[
+\overline{T} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)} = \boxed{203.12 \, \text{K} = \overline{T}}
+\]
+
+\section*{c)}
+
+\[
+0 = \dot{m} (s_{\text{ein}} - s_{\text{aus}}) + \frac{Q}{\overline{T}} + \dot{S}_{\text{Erz}}
+\]
+
+\[
+-\dot{S}_{\text{Erz}} = -\dot{m} (s_{\text{ein}} - s_{\text{aus}}) - \frac{Q_{\text{aw}}}{T_{\text{R}}} - \frac{Q_{\text{aus}}}{T_{\text{KF}}} - \frac{Q_{\text{R}}}{373.15}
+\]
+
+\[
+T - T_{\text{A2}}
+\]
+
+\[
+s_{\text{ein}} - s_f @ 70^\circ \text{C} = 0.93479
+\]
+
+\[
+s_{\text{aus}} - s_f @ 100^\circ \text{C} = 1.3069
+\]
+
+\[
+= 0.06 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+
+\[
+\dot{S}_{\text{Erz}} = 0 = \dot{m} (s_{\text{ein}} - s_{\text{aus}}) + \frac{Q}{\overline{T}} + \dot{S}_{\text{Erz}}
+\]
+
+\[
+\dot{S}_{\text{Erz}} = \left( \dot{m} (s_{\text{ein}} - s_{\text{aus}}) - \frac{Q_{\text{aus}}}{T_{\text{R}}} + \frac{Q_{\text{aw}}}{\overline{T}} \right)
+\]
+
+\[
+= 0.057 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+
+\section*{d)}
+
+\[
+\Delta m_2 u_2 - m_1 u_1 = \Delta m_2 (h_2) + \dot{q} - \dot{W}
+\]
+
+\[
+(m_1 + \Delta m_2) u_2 - m_1 u_1 = \Delta m_2 (h_2 - h_1) + \dot{q}
+\]
+
+\[
+= \Delta m_2 c_p (T_2 - T_1) + \dot{q}
+\]
+
+\[
+(m_1 + \Delta m_2) u_2 - m_1 u_1
+\]
+
+\[
+m_1 (h_2 - u_1) - \dot{Q} = \Delta m_2 (c_p (T_2 - T_1) + m_1 u_2
+\]
+
+\[
+m_1 c_v (T_2 - T_1)
+\]
+
+``````latex
+
+
+\section*{1.d}
+
+\begin{align*}
+(m_1 + \Delta m_{12}) u_2 - m_1 u_1 &= \Delta m_{12} c_p (T_2 - T_1) + Q \\
+m_1 (u_2 - u_1) + Q &= \Delta m_{12} \left[ c_p (T_2 - T_1) + u_2 \right] \\
+m_1 c_v (T_2 - T_1) + Q &= \Delta m_{12} \\
+c_p (T_2 - T_1) + u_2 &= \Delta m_{12}
+\end{align*}
+
+\section*{e}
+
+\begin{align*}
+m_2 &= m_1 + \Delta m_{12} \\
+m_2 s_2 - m_1 s_1 &= \Delta m_{12} (s_2 - s_1) + \frac{Q_R}{T_{ein}} + S_{erx2} \\
+s_2 &= s(x_D)
+\end{align*}
+
+``````latex
+
+

@@ -1,0 +1,55 @@
+To determine \( T_6 \) and \( w_6 \):  
+
+The reversible condition is given as \( s_5 = s_6 \).  
+\[
+0 = c_p \ln \left( \frac{T_6}{T_5} \right) - \frac{R}{M_L} \ln \left( \frac{p_0}{p_5} \right)
+\]
+
+Rearranging for \( \ln(T_6) \):  
+\[
+\ln(T_6) = \frac{c_p}{c_p - R/M_L} \ln \left( \frac{p_0}{p_5} \right) + \ln(T_5)
+\]
+
+Substituting values:  
+\[
+T_6 = T_5 \cdot \exp \left( \frac{R}{c_p \cdot M_L} \ln \left( \frac{p_0}{p_5} \right) \right)
+\]
+
+Numerical calculation:  
+\[
+T_6 = 431.5 \, \text{K} \cdot \exp \left( \frac{8.314 \, \text{J/mol·K}}{1.006 \, \text{kJ/kg·K} \cdot 28.985 \, \text{kg/kmol}} \ln \left( \frac{0.1516}{0.500} \right) \right)
+\]
+
+Result:  
+\[
+T_6 = 328.2 \, \text{K}
+\]
+
+For \( w_6 \):  
+The enthalpy values are calculated:  
+\[
+h_5(431.5 \, \text{K}) = 431.6 \, \text{kJ/kg} + \frac{1.5}{10} \cdot (444.1 - 431.6) = 433.36 \, \text{kJ/kg}
+\]
+\[
+h_6(328.2 \, \text{K}) = 325.1 \, \text{kJ/kg} + \frac{3.2}{2} \cdot (336.34 - 325.01) = 332.53 \, \text{kJ/kg}
+\]
+
+Using the energy balance:  
+\[
+\dot{m} \left( h_5 + \frac{w_5^2}{2} \right) = \dot{m} \left( h_6 + \frac{w_6^2}{2} \right)
+\]
+
+Rearranging for \( w_6 \):  
+\[
+w_6 = \sqrt{2 \cdot \left( h_5 + \frac{w_5^2}{2} - h_6 \right)}
+\]
+
+Substituting values:  
+\[
+w_6 = \sqrt{2 \cdot \left( 433.36 + \frac{220^2}{2} - 332.53 \right)}
+\]
+
+Result:  
+\[
+w_6 = 507.9 \, \text{m/s}
+\]

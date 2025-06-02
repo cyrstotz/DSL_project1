@@ -1,0 +1,29 @@
+Given: \( x_{\text{Ice},2} \)  
+
+\( p_{\text{ext}} \) must remain the same, so:  
+\( p_{4,\text{EW}} = 1 \, \text{bar} + \frac{g \cdot m_{K}}{A} = 1.0993 \, \text{bar} \)  
+
+\( u_{4} = u_{p1} + x \cdot (u_{pe} - u_{p1}) \)  
+
+Using interpolation:  
+\[
+\frac{p_{\text{ext}} - 1.1 \, \text{bar}}{1.1 \, \text{bar} - 1 \, \text{bar}} = \frac{u_{p1} - (-333.4659)}{-333.4658 - (-333.4642)}
+\]  
+
+\[
+u_{p1} = -333.446 \, \text{kJ/kg}
+\]  
+
+Similarly for \( u_{pe} \):  
+\[
+\frac{p_{\text{ext}} - 1.1 \, \text{bar}}{1.1 \, \text{bar} - 1 \, \text{bar}} = \frac{u_{pe} - (-0.045)}{-0.045 - (-0.033)}
+\]  
+
+\[
+u_{pe} = -0.036 \, \text{kJ/kg}
+\]  
+
+Thus:  
+\[
+u_{4} = -333.446 + 0.6 \cdot (-0.036 - (-333.446)) = -133.4 \, \text{kJ/kg}
+\]

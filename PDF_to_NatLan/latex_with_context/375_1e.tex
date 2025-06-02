@@ -1,0 +1,56 @@
+The entropy change of the reactor contents (\( \Delta S_{12} \)) is calculated as the sum of the reactor entropy change and the entropy change due to the added mass:  
+\[
+\Delta S_{12} = \Delta S_{\text{Reactor}} + \Delta S_{\text{added mass}}
+\]  
+
+The reactor entropy change (\( \Delta S_{\text{Reactor}} \)) is:  
+\[
+\Delta S_{\text{Reactor}} = m_{\text{total}} \cdot (s_2 - s_1)
+\]  
+
+The specific entropy at state 1 (\( s_1 \)) is calculated using the steam quality \( x_D = 0.005 \) and the saturated liquid and vapor values from Table A2:  
+\[
+s_1 = (1 - x) \cdot s_f + x \cdot s_g  
+\]  
+\[
+s_1 = 0.995 \cdot 1.3069 \, \text{kJ/kg·K} + 0.005 \cdot 7.358 \, \text{kJ/kg·K}  
+\]  
+\[
+s_1 = 1.337 \, \text{kJ/kg·K}
+\]  
+
+The specific entropy at state 2 (\( s_2 \)) corresponds to saturated liquid at \( 70^\circ \text{C} \), taken from Table A2. \( s_2 \) is not explicitly calculated on this page.  
+
+Further calculations for \( \Delta S_{\text{added mass}} \) and \( \Delta S_{12} \) are incomplete or not visible.  
+
+---  
+Additional notes:  
+- Some text in the upper right corner is crossed out and ignored.  
+- The calculations reference water property tables (e.g., Table A2) for thermodynamic values.
+
+The entropy values for saturated liquid water at different temperatures are calculated using the water tables:  
+
+For \( S_2 \) at \( 70^\circ\text{C} \):  
+\[
+S_2 = 0.5548 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+For \( S_3 \) at \( 20^\circ\text{C} \):  
+\[
+S_3 = 0.2936 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+The entropy change of the reactor contents is calculated as:  
+\[
+\Delta S_{\text{Reactor}} = 5755 \, \text{kg} \cdot (0.9548 \, \frac{\text{kJ}}{\text{kg·K}} - 1.337 \, \frac{\text{kJ}}{\text{kg·K}}) = -2158 \, \frac{\text{kJ}}{\text{K}}
+\]  
+
+The entropy change due to the added mass is calculated as:  
+\[
+\Delta S_{\text{Zufluss}} = m \cdot (S_2 - S_3) = 3756.71 \, \text{kg} \cdot (0.9548 \, \frac{\text{kJ}}{\text{kg·K}} - 0.2936 \, \frac{\text{kJ}}{\text{kg·K}}) = 2473 \, \frac{\text{kJ}}{\text{K}}
+\]  
+
+The total entropy change from state 1 to state 2 is:  
+\[
+\Delta S_{12} = (-2158 + 2473) \, \frac{\text{kJ}}{\text{K}} = 275 \, \frac{\text{kJ}}{\text{K}}
+\]

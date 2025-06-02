@@ -1,0 +1,36 @@
+The following calculations are provided for determining the outlet velocity (\( w_6 \)) and temperature (\( T_6 \)):  
+
+Given:  
+\[
+w_5 = 220 \, \text{m/s}, \quad p_5 = 0.5 \, \text{bar}, \quad T_5 = 431.9 \, \text{K}
+\]
+
+The energy balance equation is written as:  
+\[
+\frac{dE}{dt} = \dot{m} \left( h_5 - h_6 + \frac{w_6^2 - w_5^2}{2} \right) + \dot{Q} - \dot{W}
+\]
+
+Assumptions:  
+- Reversible and adiabatic turbine operation.  
+- Isentropic process with \( n = 1.4 \).  
+
+The enthalpy change is calculated as:  
+\[
+\Delta h = c_p (T_5 - T_c) \quad \text{where} \quad T_c = T_5 \left( \frac{p_c}{p_5} \right)^{\frac{n-1}{n}}
+\]
+
+Substituting values:  
+\[
+T_c = 431.9 \left( \frac{0.191}{0.5} \right)^{\frac{1.4-1}{1.4}} = 328.07 \, \text{K}
+\]
+\[
+\Delta h = 1.006 \cdot (431.9 - 328.07) = 104.488 \, \text{kJ/kg}
+\]
+
+The outlet velocity (\( w_6 \)) is calculated using:  
+\[
+w_6 = \sqrt{w_5^2 + \Delta h \cdot 2}
+\]
+\[
+w_6 = \sqrt{220^2 + 104.488 \cdot 2} = 498.79 \, \text{m/s}
+\]

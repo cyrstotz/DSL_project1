@@ -1,0 +1,55 @@
+TASK 3c  
+The heat transfer \( Q_{12} \) is related to the energy balance of the gas:  
+\[
+\Delta E = \Delta E_{12} + Q_{12} - W_{12}
+\]  
+The work \( W_{12} \) is expressed as:  
+\[
+W_{12} = \int_{1}^{2} p \, dV = p_{\text{amb}} (V_2 - V_1) = -434.26 \, \text{J}
+\]  
+The volume \( V_2 \) is calculated using the ideal gas law:  
+\[
+V_2 = \frac{R T_2}{p_{\text{amb}}} = 3.04 \, \text{L}
+\]  
+The energy change is given by:  
+\[
+\Delta E = m_{g,1} \cdot c_V (T_{2} - T_{g,1}) = Q_{12}
+\]  
+Substituting values:  
+\[
+Q_{12} = 1199.4 \, \text{J}
+\]  
+This result matches the expected value.
+
+---
+
+TASK 3d  
+The energy balance for the ice-water mixture (EW) is:  
+\[
+\Delta E = -Q_{12} - W_{12}, \text{ since the process is isochoric.}
+\]  
+The internal energy of the EW mixture is expressed as:  
+\[
+m_{\text{EW}} (u_{\text{EW,2}} - u_{\text{EW,1}}) = -Q_{12}
+\]  
+At \( 0^\circ\text{C} \), the internal energy of the EW mixture is:  
+\[
+u_{\text{EW}} = u_{\text{flüssig}} + x_{\text{ice}} (u_{\text{Eis}} - u_{\text{flüssig}})
+\]  
+Values used:  
+\[
+u_{\text{flüssig}}(0^\circ\text{C}) = -0.045 \, \frac{\text{kJ}}{\text{kg}}, \quad u_{\text{Eis}}(0^\circ\text{C}) = -333.45 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+The internal energy of the EW mixture is calculated as:  
+\[
+u_{\text{EW}} = -289.08 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+The final ice fraction \( x_2 \) is determined using:  
+\[
+x_2 = \frac{Q_{12} / m_{\text{EW}} + u_{\text{EW}} - u_{\text{flüssig}}}{u_{\text{Eis}}(0^\circ\text{C}) - u_{\text{flüssig}}(0^\circ\text{C})}
+\]  
+Substituting values:  
+\[
+x_2 = 0.003 \, \text{kg/kg}
+\]  
+This indicates that most of the ice has melted.

@@ -1,0 +1,55 @@
+TASK 1a  
+Using the first law of thermodynamics for a steady-state system:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} \cdot (h_{\text{out}} - h_{\text{in}}) - \dot{Q}_R
+\]  
+The enthalpy values are obtained from water tables:  
+\[
+h_{\text{out}}(100^\circ\text{C}, x=0) = 419.09 \, \frac{\text{kJ}}{\text{kg}} \quad \text{from Table A-2}
+\]  
+\[
+h_{\text{in}}(70^\circ\text{C}, x=0) = 292.98 \, \frac{\text{kJ}}{\text{kg}} \quad \text{from Table A-2}
+\]  
+Substituting into the equation:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \frac{\text{kg}}{\text{s}} \cdot (419.09 - 292.98) - 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = 37.332 - 100 = -62.182 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant is calculated using:  
+\[
+\bar{T}_{\text{KF}} = \frac{\int_{s_a}^{s_e} T \, ds}{s_a - s_e} = \frac{\int_{s_a}^{s_e} dH}{s_a - s_e} = c_f \cdot \ln\left(\frac{T_{\text{KF,out}}}{T_{\text{KF,in}}}\right)
+\]  
+Substituting values:  
+\[
+T_{\text{KF,out}} = 298.15 \, \text{K}, \quad T_{\text{KF,in}} = 288.15 \, \text{K}
+\]  
+\[
+\bar{T}_{\text{KF}} = \frac{h(298.15)}{h(288.15)} = 293.12 \, \text{K}
+\]  
+
+TASK 1c  
+Using the second law of thermodynamics:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \cdot (s_a - s_e) - \frac{\dot{Q}_{\text{out}}}{T_{\text{Reactor}}} - \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} \quad \text{at the wall}
+\]  
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = \frac{65 \, \text{kW}}{373.15 \, \text{K}} + \frac{65 \, \text{kW}}{293.12 \, \text{K}}
+\]  
+\[
+\dot{S}_{\text{gen}} = 0.09476 \, \frac{\text{kW}}{\text{K}} = 0.09476 \, \frac{\text{W}}{\text{K}} = 97.56 \, \frac{\text{W}}{\text{K}}
+\]  
+
+TASK 1d  
+Using the first law for a semi-open system:  
+\[
+E_2 - E_1 = \Delta m_{12} \cdot h_{12} + Q_{\text{out}}
+\]  
+The enthalpy value is obtained from water tables:  
+\[
+h_{12}(20^\circ\text{C}, x=0) = 83.96 \, \frac{\text{kJ}}{\text{kg}} \quad \text{from Table A-2}
+\]  

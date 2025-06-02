@@ -1,0 +1,47 @@
+TASK 2a  
+The energy balance equation is written as:  
+\[
+0 = h_5 - h_6 + w_5 - w_6
+\]  
+This can be expanded to:  
+\[
+0 = c_{p,\text{air}} (T_5 - T_6) + w_5 - w_6
+\]  
+
+For a reversible, adiabatic subroutine, the temperature ratio is derived as:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{1 - \kappa}{\kappa}}
+\]  
+Substituting \( p_6 = p_0 \), the equation becomes:  
+\[
+T_6 = \left( \frac{p_0}{p_5} \right)^{\frac{1 - \kappa}{\kappa}} \cdot T_5 = 328.07 \, \text{K}
+\]  
+
+The enthalpy difference is calculated as:  
+\[
+h_0 - h_6 = -85.43 \, \text{kJ/kg}
+\]  
+
+The outlet velocity is determined as:  
+\[
+w_6 = 510 \, \text{m/s}
+\]  
+
+TASK 2c  
+The mass-specific increase in flow exergy is calculated using the formula:  
+\[
+\Delta ex_{\text{flow}} = (h_6 - h_0 - T_0 (s_6 - s_0) + \Delta ke)
+\]  
+Expanding the terms:  
+\[
+\Delta ex_{\text{flow}} = c_p (T_6 - T_0) - T_0 \left( c_p \ln \frac{T_6}{T_0} - R \ln \frac{p_6}{p_0} \right) + \Delta ke
+\]  
+The kinetic energy difference is included as:  
+\[
+\Delta ke = \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]  
+
+The final result for the mass-specific increase in flow exergy is:  
+\[
+\Delta ex_{\text{flow}} \approx 125.97 \, \text{kJ/kg}
+\]

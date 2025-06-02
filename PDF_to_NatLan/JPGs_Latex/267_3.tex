@@ -1,0 +1,75 @@
+TASK 3a  
+The gas pressure \( p_{g,1} \) is calculated using the equation:  
+\[
+p_{g,1} = \frac{m_g R T_{g,1}}{V_{g,1}}
+\]  
+where \( R = 266.289 \, \text{J/kg·K} \), and the cross-sectional area of the cylinder is:  
+\[
+A = \frac{\pi D^2}{4} = 0.00785 \, \text{m}^2
+\]  
+The total pressure is given by:  
+\[
+p_{g,1} = \frac{m_{\text{EW}} + m_K}{A} + p_{\text{amb}} = 7.4 \, \text{bar}
+\]  
+From this, the gas mass \( m_g \) is determined:  
+\[
+m_g = \frac{p_{g,1} V_{g,1}}{R T_{g,1}} \approx 3.429 \, \text{g}
+\]  
+
+---
+
+TASK 3b  
+The temperature of the ice-water mixture is:  
+\[
+T_{g,2} = 273.16 \, \text{K}
+\]  
+This corresponds to the triple point of water.  
+
+The pressure \( p_{g,2} \) remains equal to \( p_{g,1} = 7.4 \, \text{bar} \), as the ambient pressure and the weight of the ice-water and piston remain unchanged.  
+
+---
+
+TASK 3c  
+An energy balance for the gas system (closed, isobaric) is applied:  
+\[
+\Delta U = m_g (u_2 - u_1) = Q_{12} - W_{12}
+\]  
+The internal energy change is expressed as:  
+\[
+\Delta U = m_g c_V (T_2 - T_1) + m_g \int p_g \, dv
+\]  
+The volume at state 2 is calculated:  
+\[
+V_2 = \frac{m_g R T_2}{p_{g,2}} = 0.777 \, \text{L}
+\]  
+The heat transferred is:  
+\[
+Q_{12} = -7.507 \, \text{kJ}
+\]  
+
+---
+
+TASK 3d  
+An energy balance for the ice-water system (closed, isobaric, isochoric) is applied:  
+\[
+\Delta U_{\text{EW}} = Q_{12}
+\]  
+The internal energy at state 2 is calculated:  
+\[
+u_2 = \frac{Q_{12}}{m_{\text{EW}}} + u_1
+\]  
+where \( u_1 = -789.97 \, \text{kJ/kg} \).  
+
+The ice fraction at state 2 is determined using the equation:  
+\[
+x_2 = \frac{u_2 - u_{\text{water}}}{u_{\text{ice}} - u_{\text{water}}}
+\]  
+Substituting values:  
+\[
+x_2 = 0.5548 \approx 0.555
+\]  
+
+The temperature of the ice-water mixture remains constant:  
+\[
+T = 0.01^\circ\text{C}
+\]

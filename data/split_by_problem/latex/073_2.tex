@@ -1,0 +1,107 @@
+
+``````latex
+
+
+\section*{Thermodynamik II}
+
+\subsection*{Aufgabe 2}
+
+\subsubsection*{a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a Temperature-Entropy (T-s) diagram. The x-axis is labeled $s \left[ \frac{kJ}{kgK} \right]$ and the y-axis is labeled $T[K]$. There are two dashed lines representing constant pressure lines, labeled $p = p_A$ and $p = p_B$ with $p_A > p_B$. The graph shows a cycle with four points labeled 1, 2, 3, and 4. The cycle starts at point 1, moves vertically up to point 2, then diagonally up to point 3, then diagonally down to point 4, and finally back to point 1. There is also a point labeled 4.5 between points 4 and 1.
+\end{description}
+
+\subsubsection*{b)}
+
+\[
+\begin{array}{|c|c|c|c|}
+\hline
+ & T[K] & P[bar] & \omega \left[ \frac{m^3}{kg} \right] \\
+\hline
+1 & & & \\
+\hline
+2 & & & \\
+\hline
+3 & & & \\
+\hline
+4 & & & \\
+\hline
+5 & 431.8K & 0.5 & 220 \frac{m^3}{kg} \\
+\hline
+6 & & & \\
+\hline
+\end{array}
+\]
+
+\[
+5 \rightarrow 6 \quad \text{isentrop} \Rightarrow \frac{T_6}{T_5} = \left( \frac{P_6}{P_5} \right)^{\frac{k-1}{k}} \Rightarrow T_6 = T_5 \cdot \left( \frac{P_6}{P_5} \right)^{\frac{k-1}{k}}
+\]
+
+\[
+T_6 = 431.8K \cdot \left( \frac{0.19 bar}{0.5 bar} \right)^{\frac{0.4}{1.4}} = \underline{328.07K}
+\]
+
+\[
+\text{Energiebilanz:} \quad 0 = \dot{m} (h_s - h_g - T_6 (s_s - s_6) + \alpha ke) + \sum_j (1 - \frac{T_0}{T_j}) \dot{Q_j} - \dot{W} - \dot{E}_{mech}
+\]
+
+``````latex
+
+\[
+\dot{E}_{\text{verl.}} = T_0 \dot{S}_{\text{erz}} = 0 \quad (\text{da reversibel})
+\]
+
+\[
+0 = \dot{m} (h_s - h_c - T_0 (s_s - s_c) + \alpha k e) - \dot{W}_t
+\]
+
+\[
+\dot{W}_t = \frac{R (T_G - T_S)}{1 - \kappa} \quad (\text{ideales Gas und isentrop})
+\]
+
+\[
+W_t = \dot{m} \cdot c_u
+\]
+
+\[
+\Rightarrow 0 = \dot{m} \left( h_s - h_c - T_0 (s_s - s_c) + \frac{1}{2} (u_0^2 - u_s^2) \right) - \frac{R (T_G - T_S)}{1 - \kappa} - \dot{m} \frac{1}{2} u_s^2
+\]
+
+\[
+\frac{R (T_G - T_S)}{1 - \kappa} = h_s - h_c - T_0 (s_s - s_c) + \frac{1}{2} u_c^2 - \frac{1}{2} u_s^2
+\]
+
+\[
+\frac{1}{2} u_c^2 = \frac{R (T_G - T_S)}{1 - \kappa} + \frac{1}{2} u_s^2 + T_0 (s_s - s_c) + h_c - h_s
+\]
+
+\[
+(s_s - s_c) = \dot{c}_p \ln \left( \frac{T_S}{T_G} \right) - R \ln \left( \frac{P_S}{P_G} \right)
+\]
+
+\[
+(h_c - h_s) = c_p (T_G - T_S)
+\]
+
+\[
+\Rightarrow \frac{1}{2} u_c^2 = \frac{R (T_G - T_S)}{1 - \kappa} + \frac{1}{2} u_s^2 + T_0 \left[ c_p \ln \left( \frac{T_S}{T_G} \right) - R \ln \left( \frac{P_S}{P_G} \right) \right] + c_p (T_G - T_S)
+\]
+
+\[
+\Rightarrow u_c = \sqrt{\frac{2 R (T_G - T_S)}{1 - \kappa} - u_s^2 + 2 T_0 \left[ c_p \ln \left( \frac{T_S}{T_G} \right) - R \ln \left( \frac{P_S}{P_G} \right) \right] + 2 c_p (T_G - T_S)}
+\]
+
+``````latex
+
+\section*{Problem c)}
+
+\begin{align*}
+Q_{c,h,s,k} &= e_{c,h,s,t,G} - e_{c,h,s,t,C} \\
+&= h_G - h_C - T_C(s_G - s_C) + \frac{1}{2} \left( \omega_G^2 - \omega_{L,k,f}^2 \right) \\
+&= c_p (T_G - T_C) - T_C \left[ c_p \ln \left( \frac{T_G}{T_C} \right) - R \ln \left( \frac{P_G}{P_C} \right) \right] + \frac{1}{2} \left( \omega_G^2 - \omega_{L,k,f}^2 \right)
+\end{align*}
+
+``````latex
+
+

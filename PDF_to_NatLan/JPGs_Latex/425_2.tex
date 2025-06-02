@@ -1,0 +1,92 @@
+TASK 2c  
+The expression for the specific exergy \( ex_{\text{str}} \) is given as:  
+\[
+ex_{\text{str}} = h - h_0 - T_0(s - s_0) + ke + pe
+\]  
+where \( ke = \frac{w^2}{2} \) and \( pe = gz \).  
+
+The simplified form of \( ex_{\text{str}} \) is:  
+\[
+ex_{\text{str},6} = h - h_0 - T_0(s_6 - s_0) + \frac{w_6^2}{2}
+\]  
+
+Substituting the terms:  
+\[
+h - h_0 = c_p(T - T_0), \quad s_6 - s_0 = c_p \ln\left(\frac{T_6}{T_0}\right) - R \ln\left(\frac{p_6}{p_0}\right)
+\]  
+
+Thus:  
+\[
+ex_{\text{str},6} = c_p(T - T_0) - T_0 \left[ c_p \ln\left(\frac{T_6}{T_0}\right) - R \ln\left(\frac{p_6}{p_0}\right) \right] + \frac{w_6^2}{2}
+\]  
+
+The constant \( R = c_p - \frac{c_p}{\kappa} \) is calculated as:  
+\[
+R = 0.287 \, \text{kJ/kg·K}
+\]  
+
+Numerical values are substituted:  
+\[
+130.005 \, \text{kJ/kg} = 130 \, \text{MJ/t}
+\]  
+
+The specific exergy at ambient conditions is:  
+\[
+ex_{\text{str},0} = ke = \frac{w_0^2}{2}
+\]  
+
+The change in specific exergy is:  
+\[
+\Delta ex_{\text{str}} = ex_{\text{str},6} - ke_0
+\]  
+
+---
+
+TASK 2d  
+The exergy balance for a steady-flow process (entire system) is written as:  
+\[
+0 = ex_{\text{str},0} - ex_{\text{str},6} + ex_{Q,0} - ex_{Q,6} - ex_{\text{val}}
+\]  
+
+The exergy destruction is:  
+\[
+ex_{\text{val}} = -\Delta ex_{\text{str}} + (-\Delta ex_Q)
+\]  
+
+The change in heat-related exergy is expressed as:  
+\[
+\Delta ex_Q = 
+\]  
+
+Using entropy balance:  
+\[
+0 = \dot{m}_{\text{in}} s_{\text{in}} - \dot{m}_{\text{out}} s_{\text{out}} + \frac{\dot{Q}_0}{T_0} + \dot{S}_{\text{gen}}
+\]  
+
+The entropy change is:  
+\[
+\Delta s = s_6 - s_0 - \frac{q_6}{T_0}
+\]  
+
+Substituting \( q_6 = q_B \):  
+\[
+q_6 = q_B, \quad T = \frac{h - h_0}{s - s_0} = \frac{c_p \Delta T}{c_p \ln\left(\frac{T_6}{T_0}\right)}
+\]  
+
+Numerical values:  
+\[
+T = 288.87 \, \text{K}, \quad s_6 - s_0 = c_p \ln\left(\frac{T_6}{T_0}\right)
+\]  
+
+The entropy change is:  
+\[
+\Delta s = 3.79 \, \text{J/K}
+\]  
+
+The exergy destruction is:  
+\[
+ex_{\text{val}} = T_0 \Delta s = -923.856 \, \text{kJ/kg}
+\]  
+
+---  
+No diagrams or figures are present on this page.

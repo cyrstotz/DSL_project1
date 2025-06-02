@@ -1,0 +1,61 @@
+TASK 1a  
+The coolant enters at \( T_{\text{KF,in}} = 288.15 \, \text{K} \) and exits at \( T_{\text{KF,out}} = 298.15 \, \text{K} \). The pressure remains constant (\( p_{\text{in}} = p_{\text{out}} \)), indicating an isobaric process.  
+
+An energy balance is applied:  
+\[
+0 = \dot{m}_{\text{in}} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_F
+\]  
+where \( \dot{Q}_R - \dot{Q}_F = \dot{Q}_{\text{out}} \).  
+
+Given:  
+\[
+\dot{m}_{\text{in}} = 0.3 \, \text{kg/s}, \, T_{\text{in}} = 70^\circ\text{C}, \, T_{\text{out}} = 100^\circ\text{C}
+\]  
+
+The steam quality at the outlet is \( x_{\text{out}} = x_D = 0.005 \). Using this, the enthalpy at the outlet is calculated:  
+\[
+h_{\text{out}} = h_f(100^\circ\text{C}) + 0.005 \cdot (h_g(100^\circ\text{C}) - h_f(100^\circ\text{C}))
+\]  
+Substituting values:  
+\[
+h_{\text{out}} = 419.04 + 0.005 \cdot (2257.0 - 419.04) = 430.325 \, \text{kJ/kg}
+\]  
+
+The enthalpy at the inlet is calculated as:  
+\[
+h_{\text{in}} = h_f(70^\circ\text{C}) + x_{\text{in}} \cdot (h_g(70^\circ\text{C}) - h_f(70^\circ\text{C}))
+\]  
+Assuming \( x_{\text{in}} = 0 \):  
+\[
+h_{\text{in}} = h_f(70^\circ\text{C}) = 304.049 \, \text{kJ/kg}
+\]  
+
+The heat flow removed by the coolant is:  
+\[
+\dot{Q}_F = \dot{m}_{\text{in}} (h_{\text{out}} - h_{\text{in}})
+\]  
+Substituting values:  
+\[
+\dot{Q}_F = 0.3 \cdot (430.325 - 304.049) = 37.7 \, \text{kW}
+\]  
+
+The total heat flow is:  
+\[
+\dot{Q}_{\text{out}} = \dot{Q}_R - \dot{Q}_F = 100 \, \text{kW} - 37.7 \, \text{kW} = 63.297 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant is determined using:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{KF}} \cdot c_i \cdot (T_{\text{out}} - T_{\text{in}})
+\]  
+Substituting values:  
+\[
+63.297 \, \text{kW} = \dot{m}_{\text{KF}} \cdot c_i \cdot (298.15 - 288.15)
+\]  
+Simplifying:  
+\[
+\dot{m}_{\text{KF}} = \frac{63.297}{c_i \cdot 10} = \frac{63.297}{6.33 \, \text{kW/K}} = \dot{m}_{\text{KF}} \cdot c_i
+\]  
+
+No further numerical solution is provided for \( \dot{m}_{\text{KF}} \).

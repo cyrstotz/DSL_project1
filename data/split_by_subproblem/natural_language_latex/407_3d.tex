@@ -1,0 +1,33 @@
+First, calculate \( p_{s2} \).
+First, calculate \( p_{s2} \) with a pressure of 8 SW.
+
+The intermediate pressure \( p_{ZW} \) is calculated as:
+\[ p_{ZW} = \frac{M_{k}}{A_{k}} + \text{pamp} = 1.4 \, \text{bar} \]
+
+1. The heat system on the ice water is closed.
+
+The rate of change of energy \( \frac{dE}{dt} \) is given by:
+\[ \frac{dE}{dt} = Q - W \quad \text{with rotor} \]
+\[ m_{EV}(u_2 - u_1) = Q - W \]
+\[ W = p_{s1}(V_2 - V_1) \]
+\[ w = 1130.7 \, \frac{J}{kg} \]
+\[ W = m w = 117.04 \]
+
+The internal energy \( u_1 \) is calculated as:
+\[ u_1 = w_{F}(0^\circ) + x_{Eis} \cdot (u_{s0} - u_{F}(0^\circ)) \]
+\[ u_{F}(0^\circ) = -0.973 \, \frac{kJ}{kg} \]
+\[ u_{F}(20^\circ) = -333.958 \, \frac{kJ}{kg} \]
+\[ u_1 = -133.45 \, \frac{kJ}{kg} \]
+\[ u_2 = \frac{Q - W}{m_{EV}} + u_1 \]
+\[ u_2 = 140.85 \]
+
+The heat \( Q \) is calculated as:
+\[ Q = -Q_{12} = 1116.3 \, J \]
+
+Interpolate:
+\[ u_2 = u_{Fe}(1.9 \text{bar}) + x_{ei,s2} (u_{Fl}(1.9 \text{bar}) - u_{Fe}(1.9 \text{bar})) \]
+\[ u_{Fe}(1.9 \text{bar}) = -333.958 \frac{\text{kJ}}{\text{kg}} \]
+\[ u_{Fl}(1.9 \text{bar}) = -0.079 \frac{\text{kJ}}{\text{kg}} \]
+
+The fraction \( x_{ei,s2} \) is calculated as:
+\[ \frac{u_2 - u_{Fe}}{u_{Fl} - u_{Fe}} = x_{ei,s2} = 0.548 \]

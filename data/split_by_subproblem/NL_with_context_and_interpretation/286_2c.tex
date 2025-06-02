@@ -1,0 +1,24 @@
+\( m \cdot v_6 = 510 \, \text{J}, \, T_6 = 340 \, \text{K} \)  
+
+Exergy in the stream:  
+\( ex_{\text{str}} = \dot{m} \cdot (h_6 - h_0 - T_0 \cdot (s_6 - s_0) + ke + pe) \)  
+
+\( \Rightarrow ex_{\text{str}} = h_6 - h_0 - T_0 \cdot (s_6 - s_0) + ke \)  
+
+\( ke = \frac{1}{2} \cdot \frac{510^2}{2 \cdot 700} = 110,050 \, \text{J/kg} = 110.05 \, \text{kJ/kg} \)  
+
+\( h_6 - h_0 = \int_{T_0}^{T_6} c_p(T) \, dT \)  
+
+\( h_6 - h_0 = 1.006 \, \text{kJ/kg·K} \cdot 340 \, \text{K} - 1.006 \cdot 243.25 \, \text{K} = 87 \, \text{kJ/kg} \)  
+
+\( s_6 - s_0 = c_p \cdot \int_{T_0}^{T_6} \frac{dT}{T} - R \ln \left( \frac{p_6}{p_0} \right) \)  
+
+\( \Rightarrow s_6 - s_0 = 1.006 \cdot \ln \left( \frac{340 \, \text{K}}{243.25 \, \text{K}} \right) - 8.314 \cdot \ln \left( \frac{p_6}{p_0} \right) \)  
+
+\( \Rightarrow s_6 - s_0 = 0.3332 \, \text{kJ/kg·K} \)  
+
+\( \Rightarrow ex_{\text{str}} = h_6 - h_0 - T_0 \cdot (s_6 - s_0) + ke \)  
+
+\( ex_{\text{str}} = 87 \, \text{kJ/kg} - 243.25 \cdot 0.3332 \, \text{kJ/kg·K} + 110.05 \, \text{kJ/kg} \)  
+
+\( ex_{\text{str}} = 125.06 \, \text{kJ/kg} \)

@@ -1,0 +1,86 @@
+Since the system is a stationary flow process, the entropy balance equation is given as:  
+
+\[
+\frac{dS}{dt} = \sum m_i s_i + \sum \frac{\dot{Q}_i}{T_i} + \dot{S}_{\text{gen}}
+\]
+
+The entropy generation term \( \dot{S}_{\text{gen}} \) is expressed as:  
+
+\[
+\dot{S}_{\text{gen}} = m \cdot (s_{\text{out}} - s_{\text{in}}) + \frac{Q_{\text{ab}}}{T_{\text{job}}}
+\]
+
+Substituting values:  
+
+\[
+\dot{S}_{\text{gen}} = m \cdot c^{\text{liquid}} \ln \left( \frac{T_{\text{out}}}{T_{\text{in}}} \right) + \frac{65 \, \text{kW}}{295 \, \text{K}}
+\]
+
+Finally, calculating \( \dot{S}_{\text{gen}} \):  
+
+\[
+\dot{S}_{\text{gen}} = m \cdot c^{\text{liquid}} \ln \left( \frac{288.15 \, \text{K}}{283.15 \, \text{K}} \right) + 0.22 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+To solve this task, we need the energy balance equation:  
+\[
+\frac{dE}{dt} = \sum_i \dot{m}_i \left[ h_i + \frac{w_i^2}{2} + \frac{p_i}{\rho_i} \right] + \sum_j \dot{Q}_j - \sum_k \dot{W}_k
+\]  
+This assumes a closed system where \( \frac{dE}{dt} = 0 \) and the mass remains constant.  
+
+**System Description:**  
+A sketch of the system is provided, showing a cylinder with a gas chamber and an ice-water mixture separated by a membrane. The system is labeled "Systemgrenze" (system boundary).  
+
+The energy balance is applied:  
+\[
+u_1 - u_2 = Q_{12}
+\]  
+where \( u_1 \) and \( u_2 \) are specific internal energies.  
+
+For \( u_1 \):  
+\[
+u_1 = u_{\text{flüssig}}(1 \, \text{bar}) + x_{\text{eis},1} \cdot \left[ u_{\text{fest}}(1 \, \text{bar}) - u_{\text{flüssig}}(1 \, \text{bar}) \right]
+\]  
+\[
+u_{\text{flüssig}}(1 \, \text{bar}) = -0.045 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_{\text{fest}}(1 \, \text{bar}) = 333.458 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_1 = -200.0928 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+For \( u_2 \):  
+The value is not explicitly calculated on this page.  
+
+Using the energy balance for the gas system:  
+\[
+m \cdot (u_2 - u_1) = \dot{Q}
+\]  
+\[
+u_2 - u_1 = c_v \cdot (T_2 - T_1) = c_v \cdot (0^\circ\text{C} - 500^\circ\text{C}) = 0.633 \, \frac{\text{kJ}}{\text{kg·K}} \cdot (-500 \, \text{K}) = -331.5 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+\dot{m}_{\text{gas}} \cdot (u_2 - u_1) = Q
+\]  
+\[
+Q = -1.134 \, \text{kJ}
+\]  
+This is the amount of heat removed from the gas.
+
+---
+
+The energy balance equation for a steady-state flow process is written as:  
+\[
+\frac{dE}{dt} = \sum \dot{m} \left[ h + \frac{v^2}{2} + pe \right] + \sum \dot{Q}_j - \sum \dot{W}_n
+\]  
+where \( h \) is the specific enthalpy, \( v^2/2 \) is the kinetic energy per unit mass, \( pe \) is the potential energy per unit mass, \( \dot{Q}_j \) represents heat transfer rates, and \( \dot{W}_n \) represents work rates.  
+
+For the heat transfer calculation:  
+\[
+Q_R = m \left[ h_2 - h_1 \right]
+\]  
+where \( h_2 \) and \( h_1 \) are the specific enthalpies at states 2 and 1, respectively, and \( m \) is the mass flow rate.  
+
+No diagrams or additional figures are present on the page.

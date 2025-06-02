@@ -1,0 +1,25 @@
+A diagram is drawn showing a rectangular reactor with the following labels:  
+- \( T_1 = 100^\circ \text{C} \), \( m_1 = 5755 \, \text{kg} \), \( x = 0.005 \)  
+- \( T_2 = 70^\circ \text{C} \), \( x = 0 \)  
+- \( Q_{R,12} = 35 \, \text{MJ} \)  
+
+Below the diagram:  
+"Halboffenes System" (Semi-open system)  
+\( m_2 \cdot u_2 - m_1 \cdot u_1 = \Delta m \cdot h_m + Q - W^0 \)  
+
+\( h_m \) (TAB A2 bei \( 20^\circ \, x = 0 \)) = \( 83.3627 \, \text{kJ/kg} \)  
+\( u_2 \) (TAB A2 bei \( 70^\circ \, x = 0 \)) = \( 292.95 \, \text{kJ/kg} \)  
+\( u_1 \) (TAB A2 bei \( 100^\circ \, x = 0.005 \))  
+
+\( u_1 = 1.0435 + 0.005 \cdot (1.673 - 1.0435) = 1.04664 \, \text{kJ/kg} \)  
+
+\( m_2 = m_1 + \Delta m \)  
+
+\( (m_1 + \Delta m) \cdot u_2 - m_1 \cdot u_1 = \Delta m \cdot h_m + Q \)  
+\( m_1 \cdot u_2 + \Delta m \cdot u_2 - m_1 \cdot u_1 = \Delta m \cdot h_m + Q \)  
+\( \Delta m \cdot u_2 - \Delta m \cdot h_m = Q + m_1 \cdot u_1 - m_1 \cdot u_2 \)  
+\( \Delta m = \frac{Q + m_1 \cdot u_1 - m_1 \cdot u_2}{u_2 - h_m} \)  
+
+\( \Delta m = \frac{35000 + 5755 \cdot 1.04664 - 5755 \cdot 292.55}{292.55 - 83.36} \)  
+
+\( \Delta m = 8205.67 \, \text{kg} \)

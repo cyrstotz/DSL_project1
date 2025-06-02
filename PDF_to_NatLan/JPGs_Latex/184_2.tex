@@ -1,0 +1,45 @@
+TASK 2a  
+The given parameters for the jet engine are:  
+- Air velocity \( w_{\text{air}} = 200 \, \text{m/s} \)  
+- Ambient pressure \( p_0 = 0.191 \, \text{bar} \)  
+- Ambient temperature \( T_0 = -30^\circ\text{C} \)  
+- Heat added per unit mass \( q_B = 1195 \, \text{kJ/kg} \)  
+- Combustion temperature \( T_B = 1289 \, \text{K} \)  
+
+A qualitative \( T \)-\( s \) diagram is drawn, showing the thermodynamic process of the jet engine. The diagram includes labeled isobars at \( 0.5 \, \text{bar} \) and \( 0.191 \, \text{bar} \). The states are marked as follows:  
+- State 1: Initial condition  
+- State 2: Compression  
+- State 3: Combustion  
+- State 4: Expansion in the turbine  
+- State 5: Mixing chamber  
+- State 6: Nozzle exit  
+
+The axes are labeled:  
+- \( T \) (temperature in Kelvin) on the vertical axis  
+- \( s \) (specific entropy in \( \text{kJ}/\text{kg·K} \)) on the horizontal axis  
+
+TASK 2b  
+The outlet velocity \( w_6 \) and temperature \( T_6 \) are calculated as follows:  
+
+Since the nozzle process is isentropic:  
+\[
+\left( \frac{p_2}{p_1} \right)^{\frac{\kappa - 1}{\kappa}} = \frac{T_2}{T_1}
+\]  
+Substituting the values:  
+\[
+T_2 = 431.9 \cdot \left( \frac{0.191 \cdot 10^5}{0.5 \cdot 10^5} \right)^{\frac{1.4 - 1}{1.4}} = 328.075 \, \text{K}
+\]  
+
+Using the energy balance:  
+\[
+w_6^2 / 2 = \text{specific work} = R T \ln \left( \frac{p_2}{p_1} \right)
+\]  
+Substituting the values:  
+\[
+w_6 = \sqrt{-115.280 \cdot (-1) \cdot 2} = 488.423 \, \text{m/s}
+\]  
+
+Final results:  
+- Outlet temperature \( T_6 = 328.075 \, \text{K} \)  
+- Outlet velocity \( w_6 = 488.423 \, \text{m/s} \)  
+

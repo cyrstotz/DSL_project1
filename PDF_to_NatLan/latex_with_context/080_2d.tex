@@ -1,0 +1,44 @@
+The coefficient \( R \) is calculated using the relation:  
+\[
+R = c_p - c_v
+\]  
+Where:  
+- \( c_p = 1.006 \, \text{kJ/kg·K} \).  
+- \( c_v = 0.718 \, \text{kJ/kg·K} \).  
+
+Substituting values:  
+\[
+R = 1.006 - 0.718 = 0.287 \, \text{kJ/kg·K}
+\]
+
+The exergy balance for the flow process is written as:  
+\[
+0 = \dot{m} \cdot e_{x,str} + \sum \left( 1 - \frac{T_0}{T} \right) \dot{Q} - \dot{E}_{x,\text{voll}}
+\]  
+
+The exergy destruction due to heat transfer is calculated as:  
+\[
+E_{x,Q} = \left( 1 - \frac{T_0}{T} \right) \dot{Q}
+\]  
+Substituting values:  
+\[
+E_{x,Q} = \left( 1 - \frac{243.15 \, \text{K}}{1289 \, \text{K}} \right) \cdot 1195 = 169.582 \, \text{kJ/kg}
+\]  
+
+The specific exergy destruction term is:  
+\[
+e_{x,Q} = 969.582 \, \text{kJ/kg}
+\]  
+
+The final exergy destruction is calculated as:  
+\[
+e_{x,\text{voll}} = - \Delta e_{x,str} + e_{x,Q}
+\]  
+Substituting values:  
+\[
+e_{x,\text{voll}} = -0 \cdot e_{x,str} + e_{x,Q} = 969.582 + 60.21 = 909.37 \, \text{kJ/kg}
+\]  
+
+---
+
+No diagrams or graphs are present on the page.

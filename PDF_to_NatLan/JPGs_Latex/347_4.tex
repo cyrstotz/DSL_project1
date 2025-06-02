@@ -1,0 +1,51 @@
+TASK 3d  
+First, we need to calculate \( u_m \).  
+
+Using the analogy to vapor: \( x_{\text{ice}} \) is the same as \( x_{\text{gas}} \), and all values are taken from Table 1 at 1 bar.  
+
+\[
+u_m = u_f + x \cdot (u_{\text{eis}} - u_f) = -0.045 + 0.6 \cdot (-333.859 + 0.045) \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+u_m = -200.0928 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The positive heat flux contributes to the process.  
+Note: There is no heat loss in the ice-water mixture (EW).  
+
+---
+
+Energy balance in the gas:  
+
+\[
+m_{\text{EW}} \cdot (u_2 - u_1) = Q_{12} \quad \Rightarrow \quad u_2 = u_1 + \frac{Q_{12}}{m_{\text{EW}}}
+\]
+
+\[
+u_2 = -200.0928 \, \frac{\text{kJ}}{\text{kg}} + \frac{1.3675 \, \text{kJ}}{0.1 \, \text{kg}}
+\]
+
+\[
+u_2 = -186.4 + 13.675 \, \frac{\text{kJ}}{\text{kg}} = -178.7 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+---
+
+Next, we analyze \( x_2 \):  
+
+\[
+x_2 = \frac{u_2 - u_f}{u_{\text{eis}} - u_f}
+\]
+
+From Table 1, since we are still in the vapor phase and \( p = p_{12} \), \( T_1 = T_2 \):  
+
+\[
+x_2 = \frac{-178.478 + 0.045}{-333.859 + 0.045}
+\]
+
+\[
+x_2 = 0.555
+\]
+
+Thus, \( x_2 = 0.555 \).

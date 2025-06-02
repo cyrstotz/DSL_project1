@@ -1,0 +1,90 @@
+
+``````latex
+
+
+\section*{Aufgabe 1: Reaktor}
+
+\subsection*{a)}
+\begin{align*}
+0 &= \dot{m} (\hat{h}_\text{ein} - \hat{h}_\text{aus}) + \dot{Q}_e + \dot{Q}_\text{um} + \dot{Q}_\text{v} \\
+\hat{h}_\text{ein} &\Rightarrow \text{S\"{a}ttigungsfl\"{u}ssigkeit bei 70^\circ \text{C}} \quad \Rightarrow \hat{h}_\text{ein} = 293,98 \frac{\text{kJ}}{\text{kg}} \\
+\hat{h}_\text{aus} &\Rightarrow \text{S\"{a}ttigungsdampf bei 100^\circ \text{C}} \quad \Rightarrow \hat{h}_\text{aus} = 2675,5 \frac{\text{kJ}}{\text{kg}} \\
+\dot{Q}_\text{aus} &= \dot{m} (\hat{h}_\text{aus} - \hat{h}_\text{ein}) - \dot{Q}_\text{in} = -62,1824 \frac{\text{kW}}{}
+\end{align*}
+
+\subsection*{b)}
+\begin{align*}
+T_\text{irr} &= \int_{S_a}^{S_e} \frac{\delta e}{T} \quad ; \quad de = \frac{\delta Q}{T} \\
+&= - \int_{S_a}^{S_e} \frac{dS}{S_a - S_e} = \frac{q_a - q_e}{S_a - S_e} = \frac{u_a - u_e}{S_a - S_e} \quad \text{(ideale Gase)} \\
+&= c_p \left( \frac{T_a - T_e}{T_a - T_e} \right) = c_p \ln \left( \frac{T_a}{T_e} \right) \\
+&= 293,12 \text{K}
+\end{align*}
+
+\subsection*{c)}
+\begin{align*}
+0 &= \dot{m} (S_e - S_a) + \frac{\dot{Q}_\text{um}}{T_\text{irr}} + \dot{S}_\text{erz} \\
+S_\text{erz} &= \dot{m} (S_a - S_e) - \frac{\dot{Q}_\text{um}}{T_\text{irr}} = \dot{m} (S_a - S_e) + \frac{\dot{Q}_\text{um}}{T_\text{irr}} \\
+\text{Werte:} \\
+S_e &= S_f (70^\circ \text{C}) = 0,3564 \frac{\text{kJ}}{\text{kg K}} \\
+S_a &= S_f (100^\circ \text{C}) = 1,3069 \frac{\text{kJ}}{\text{kg K}} \\
+\Rightarrow S_\text{erz} &= 0,3178 \frac{\text{kJ}}{\text{K}}
+\end{align*}
+
+``````latex
+
+
+\section*{d) Halboffenes System:}
+
+\[
+\Delta E = \dot{m}_{12} h_{12} + \dot{Q}_{12} + \dot{W}_{12} \rightarrow 0
+\]
+
+\[
+m_{u2} - m_{u1} = \Delta m_{12} h_{12}
+\]
+
+\[
+\Rightarrow \Delta m_{12} = \frac{m_{u2} - m_{u1}}{h_{12}} = 
+\]
+
+\[
+u_1 = u_e(1000) + x_0 (u_g - u_f) = 429.37 \frac{kJ}{kg}
+\]
+
+\[
+u_2 = u_e(20^\circ C) + x_0 (u_g - u_f) = 303.368 \frac{kJ}{kg}
+\]
+
+\[
+m_{u2} = m_{u1} + \Delta m_{12}
+\]
+
+\[
+h_{12} = h_{g12} = 126.06 \frac{kJ}{kg}
+\]
+
+\[
+\Rightarrow \Delta m_{12} = \frac{(m_{u2} - m_{u1})}{h_{12}}
+\]
+
+\[
+\Delta m_{12} + m_{u2} = m_{u2} - m_{u1} \leftarrow \Delta m_{12} \left(1 + \frac{1}{h_{12}}\right) = \frac{m_{u2} - m_{u1}}{h_{12}}
+\]
+
+\[
+\Delta m_{12} = \frac{m_{u2} - m_{u1}}{h_{12} \left(1 + \frac{1}{h_{12}}\right)} = 5680 \mu g
+\]
+
+\section*{e)}
+
+\[
+\Delta S = S_2 - S_1 = \dot{m} (s_2 - s_1) = \frac{\dot{Q}}{T} - \frac{\dot{Q}_{loss}}{T_0} + S_{erz}
+\]
+
+\[
+\Rightarrow \Delta S_{12} = S_{erz}
+\]
+
+``````latex
+
+

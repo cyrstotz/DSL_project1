@@ -1,0 +1,83 @@
+
+``````latex
+
+
+4) a)
+
+\textbf{Graph Description:} The graph is a plot on a grid paper with the y-axis labeled as $[kJ/kg]$ and the x-axis labeled as $T[K]$. The graph consists of a closed loop with four points labeled 1, 2, 3, and 4. The region between points 1 and 2 is labeled as "Nass-Dampf". The curve from point 1 to point 2 is a rising curve, and from point 2 to point 3, it is a steeply rising curve. The curve from point 3 to point 4 is a horizontal line labeled "isobar". The curve from point 4 to point 1 is a falling curve labeled "isobar".
+
+b) $T_i = -10^\circ C \quad T_{\text{verdampfer}} = -16^\circ C$
+
+$p_{\text{v}} = 3 \text{bar} \quad x_4 = 0$
+
+$h_4 = 53.42 \frac{kJ}{kg} = h_1 / \text{weil Drossel isenthalp}$
+
+$T_2 = -22^\circ C$
+
+$h_2 = 269.45 \frac{kJ}{kg} \rightarrow \text{TAB A-11}$
+
+$h_2 = 832 \cdot 237.74 \frac{kJ}{kg} \rightarrow \text{TAB A-10}$
+
+\textbf{1. Hauptsatz:} $0 = \dot{m} [h_2 - h_3] + \dot{W}_k$
+
+$\Rightarrow \dot{m} = \frac{\dot{W}_k}{[h_3 - h_2]} = 0.000406 \frac{kJ}{s}$
+
+\textbf{1. HS Verdichter:} $0 = \dot{m} [h_2 - h_3] - \dot{W}_k$
+
+\textbf{1. HS Verdampfer:} $0 = \dot{m} [h_1 - h_2] + \dot{Q}_k$
+
+\textbf{1. HS Kondensator:} $0 = \dot{m} [h_3 - h_4] + \dot{Q}_{ab}$
+``````latex
+
+
+4.c) \quad \dot{m} = \frac{4 \text{kg}}{\text{h}} \quad \bar{T}_2 = -22^\circ \text{C}
+
+\[
+p_f = p_2 = p_{\text{m}} = 1.2 \uparrow 2 \text{bar} \quad \rightarrow \text{TAB A-10}
+\]
+
+\[
+\text{Drossel:} \quad 0 = \dot{m} [h_4 - h_n]
+\]
+
+\[
+\rightarrow h_n = h_4 = 93.42 \frac{\text{kJ}}{\text{kg}} \quad \rightarrow \text{TAB A-11}
+\]
+
+\[
+\rightarrow h_n = 93.42 \frac{\text{kJ}}{\text{kg}} \quad \text{bei} \quad T = -22^\circ \text{C}
+\]
+
+\[
+h_n = h_f + x_n (h_g - h_f)
+\]
+
+\[
+x_n = \frac{h_n - h_f}{h_g - h_f} = 0.3375
+\]
+
+d) \quad \varepsilon_k = \frac{|Q_{\text{zu}}|}{|W_{el}|} = \frac{|Q_{el}|}{|W_{el}|}
+
+\[
+1. \text{HS Verdampfer:} \quad 0 = \dot{m} [h_n - h_2] + \dot{Q}_k
+\]
+
+\[
+\rightarrow \dot{Q}_k = \dot{m} [h_2 - h_n]
+\]
+
+\[
+h_2 = 234.08 \frac{\text{kJ}}{\text{kg}} \quad \rightarrow \text{TAB A-10}
+\]
+
+\[
+\dot{m} = \frac{4 \text{kg}}{\text{h}} \cdot \frac{1 \text{h}}{60 \text{min}} \cdot \frac{1 \text{min}}{60 \text{s}} \cdot [234.08 - 93.42] \frac{\text{kJ}}{\text{kg}} = 156.3 \text{W}
+\]
+
+\[
+\Rightarrow \varepsilon_k = \frac{156.3 \text{W}}{28 \text{W}} = 5.582
+\]
+
+e) \quad \text{Temperatur bleibt gleich, da das Wasser zuerst zurück in den festen Zustand geht, bevor es weiter gekühlt wird.}
+
+```

@@ -1,0 +1,46 @@
+Determine the pressure \( p_{g,1} \) and the mass of the gas \( m_g \).
+
+The pressure \( p_{g,1} \) is calculated using the force balance on the piston. The equation is:  
+\[
+p_{g,1} \cdot A_{\text{Zyl}} = m_{\text{EW}} \cdot g + m_K \cdot g + p_{\text{atm}} \cdot A_{\text{Zyl}}
+\]  
+where \( A_{\text{Zyl}} \) is the cross-sectional area of the cylinder, calculated as:  
+\[
+A_{\text{Zyl}} = \pi \cdot r^2 = \pi \cdot (0.05 \, \text{m})^2 = 7.853982 \cdot 10^{-3} \, \text{m}^2
+\]  
+
+Substituting the values:  
+\[
+p_{g,1} = \frac{m_{\text{EW}} \cdot g + m_K \cdot g}{A_{\text{Zyl}}} + p_{\text{atm}}
+\]  
+\[
+p_{g,1} = \frac{0.1 \, \text{kg} \cdot 9.81 \, \text{m/s}^2 + 32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{7.853982 \cdot 10^{-3} \, \text{m}^2} + 10^5 \, \text{Pa}
+\]  
+\[
+p_{g,1} = 140094.4137 \, \text{Pa}
+\]  
+
+The mass of the gas \( m_g \) is calculated using the ideal gas law:  
+\[
+p \cdot V = m \cdot R \cdot T
+\]  
+Rearranging:  
+\[
+m_g = \frac{p \cdot V}{R \cdot T}
+\]  
+
+Given:  
+\[
+T = 500^\circ\text{C} = 773.15 \, \text{K}, \, p = 140094 \, \text{Pa}, \, V = 3.141 \, \text{L} = 0.003141 \, \text{m}^3
+\]  
+\[
+R = \frac{R_{\text{univ}}}{M} = \frac{8.314 \, \text{kJ/kmol·K}}{50 \, \text{kg/kmol}} = 0.16628 \, \text{kJ/kg·K}
+\]  
+
+Substituting:  
+\[
+m_g = \frac{140094 \cdot 0.003141}{0.16628 \cdot 773.15}
+\]  
+\[
+m_g = 0.2922 \, \text{kg}
+\]

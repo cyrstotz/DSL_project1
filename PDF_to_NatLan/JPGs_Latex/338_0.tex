@@ -1,0 +1,51 @@
+TASK 1a  
+The goal is to calculate the heat flow \( Q_{\text{aus}} \). A schematic diagram is drawn showing a reactor with an inlet mass flow \( \dot{m}_{\text{ein}} \), outlet mass flow \( \dot{m}_{\text{aus}} \), and heat flow \( \dot{Q}_R = 100 \, \text{kW} \).  
+
+The energy balance equation is given as:  
+\[
+O = \dot{m} (h_{\text{ein}} - h_{\text{aus}}) + Q
+\]  
+
+The enthalpy difference \( h_{\text{ein}} - h_{\text{aus}} \) is calculated using:  
+\[
+h_{\text{ein}} - h_{\text{aus}} = c_{\text{if}} (T_{\text{ein}} - T_{\text{aus}}) + v_{\text{if}} (p_{\text{ein}} - p_{\text{aus}})
+\]  
+
+For the inlet temperature \( T_{\text{ein}} = 70^\circ\text{C} \), the enthalpy difference is expressed as:  
+\[
+h_{\text{ein}} - h_{\text{aus}} = c_{\text{if}} (288.15 \, \text{K} - 298.15 \, \text{K})
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature \( T \) is defined as:  
+\[
+T = \frac{\int_{s_a}^{s_e} T \, dS}{s_a - s_e} = h
+\]  
+
+It is further simplified for a reversible stationary process:  
+\[
+T = \frac{\int_{s_a}^{s_e} T \, dS}{s_a - s_e} = \frac{h_a - h_e}{s_a - s_e}
+\]  
+
+The enthalpy difference \( h_{\text{ein}} - h_{\text{aus}} \) is calculated using:  
+\[
+h_{\text{ein}} - h_{\text{aus}} = c_{\text{if}} (T_{\text{ein}} - T_{\text{aus}}) + v_{\text{if}} (p_{\text{ein}} - p_{\text{aus}})
+\]  
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) is calculated using the equation:  
+\[
+O = \dot{m}_{\text{ein}} (s_{\text{ein}} - s_{\text{aus}}) + \sum \frac{\dot{Q}_i}{T_i} + S_{\text{erz}}
+\]  
+
+TASK 1d  
+The energy balance for the system is given as:  
+\[
+\frac{dE}{dt} = \dot{m}_w (h_{\text{ein}} - h_{\text{aus}}) + \sum \dot{Q} - W
+\]  
+
+TASK 1e  
+The entropy change \( \Delta S_{12} \) is calculated using:  
+\[
+\Delta S_{12} = m_{12} (s_2 - s_1) = \sum \frac{\dot{Q}_i}{T_i} + S_{\text{erz}}
+\]  

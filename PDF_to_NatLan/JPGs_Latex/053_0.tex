@@ -1,0 +1,57 @@
+TASK 1a  
+The heat flow equation is given as:  
+\[
+Q = \dot{m} (h_1 - h_2) + \dot{Q}_R - \dot{Q}_{\text{out}} - \dot{W}_{\text{e}}
+\]  
+From the water tables (Table A2), the enthalpy values for saturated liquid water are:  
+\[
+h_f(70^\circ\text{C}) = 292.58 \, \text{kJ/kg} \quad \text{(denoted as } h_1\text{)}
+\]  
+\[
+h_f(100^\circ\text{C}) = 419.09 \, \text{kJ/kg} \quad \text{(denoted as } h_2\text{)}
+\]  
+
+The volumetric flow rate is calculated as:  
+\[
+v = \frac{v_f(100^\circ\text{C}) + v_f(70^\circ\text{C})}{2} = 1.03375 \, \text{m}^3/\text{kg}
+\]  
+
+The work term is calculated as:  
+\[
+\dot{W}_{\text{e}} = \int_{P_2}^{P_1} v \, dp = -v \cdot (P_2 - P_1) \cdot \dot{m} = -0.2153 \, \text{m}^3/\text{s} \cdot 100 \, \text{kPa} = -21.53 \, \text{kW}
+\]  
+
+Finally, the heat flow removed by the coolant is:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} (h_1 - h_2) + \dot{Q}_R - \dot{W}_{\text{e}} = 83.68 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+For a reversible process, entropy generation is zero (\( S_{\text{gen}} = 0 \)). The thermodynamic mean temperature is calculated as:  
+\[
+T_{\text{mean}} = \frac{\dot{Q}_{\text{out}}}{\dot{m} (s_2 - s_1)}  
+\]  
+Alternatively, using the heat flow equation:  
+\[
+T_{\text{mean}} = \frac{\dot{Q}_{\text{out}}}{\dot{m} \cdot c_p \cdot \ln\left(\frac{T_2}{T_1}\right)}  
+\]  
+Substituting values:  
+\[
+T_{\text{mean}} = \frac{\dot{Q}_{\text{out}}}{c_p \cdot \ln\left(\frac{T_2}{T_1}\right)} = \frac{83.68}{1.006 \cdot \ln\left(\frac{373.15}{288.15}\right)} = 293.12 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+The entropy production is calculated using the entropy balance equation:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{out}}}{T_{\text{reactor}}} - \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}  
+\]  
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = \frac{654 \, \text{W}}{285 \, \text{K}} - \frac{654 \, \text{W}}{373.15 \, \text{K}} = 0.04615 \, \text{W/K}
+\]  
+
+The result was verified using reference data.

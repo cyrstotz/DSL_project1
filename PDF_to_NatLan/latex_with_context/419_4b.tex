@@ -1,0 +1,45 @@
+The energy balance equation is written as:  
+\[
+\frac{dE}{dt} = \dot{m} \cdot h_{\text{inlet}} + \dot{Q} + \dot{W}
+\]  
+Simplified to:  
+\[
+Q = \dot{m}(h_2 - h_3) + \dot{W}
+\]  
+
+The enthalpy difference \( h_2 - h_3 \) is calculated using tabulated values:  
+\[
+h_2 = h_{\text{g}}(T_2)
+\]  
+Where \( T_2 = -6^\circ\text{C} \).  
+
+From the table:  
+\[
+h_{\text{g}}(4) = 244.9 \, \text{kJ/kg}, \quad h_{\text{g}}(8) = 292.54 \, \text{kJ/kg}
+\]  
+Interpolating for \( h_2 \):  
+\[
+h_2 = 292.54 + \frac{-8}{-4} \cdot (244.9 - 292.54)
+\]  
+\[
+h_2 = 245.72 \, \text{kJ/kg}
+\]  
+
+The vapor quality \( s_2 \) is calculated:  
+\[
+s_2 = 0.925 + \frac{8 - 6}{8 - 4} \cdot (0.9239 - 0.9253)
+\]  
+\[
+s_2 = 0.9226
+\]
+
+The work done is expressed as:  
+\[
+W = \dot{m} (h_3 - h_2)
+\]  
+The mass flow rate is calculated as:  
+\[
+\dot{m} = \frac{W}{h_3 - h_2} = \frac{28 \cdot 10^{-3} \, \text{kW}}{268.82 - 243.72} = 0.00115 \, \text{kg/s}
+\]  
+
+---

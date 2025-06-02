@@ -1,0 +1,61 @@
+TASK 2a  
+The diagram is a qualitative T-s diagram representing the jet engine process. It includes labeled isobars and process states:  
+- State 0 is the ambient condition.  
+- State 1 is the inlet air compression.  
+- State 2 is the high-pressure compressed air.  
+- State 3 is the combustion process.  
+- State 4 is the turbine expansion.  
+- State 5 is the mixing chamber.  
+- State 6 is the nozzle exit.  
+
+The axes are labeled:  
+- The vertical axis represents temperature \( T \) in Kelvin (\( \text{K} \)).  
+- The horizontal axis represents entropy \( s \) in \( \text{kJ/kg·K} \).  
+
+TASK 2b  
+The outlet temperature \( T_6 \) is calculated using the isentropic relation:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{\kappa-1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = 431.9 \, \text{K} \left( \frac{0.191 \times 10^5 \, \text{N/m}^2}{0.5 \times 10^5 \, \text{N/m}^2} \right)^{\frac{1.4-1}{1.4}}
+\]  
+\[
+T_6 = 328.07 \, \text{K}
+\]  
+
+The outlet velocity \( w_6 \) is determined using the energy balance:  
+\[
+0 = m \left( h_6 - h_5 \right) + \frac{w_6^2 - w_5^2}{2}
+\]  
+Rewriting:  
+\[
+h_5 - h_6 = c_p \left( T_5 - T_6 \right)
+\]  
+\[
+w_6^2 = 2 c_p \left( T_5 - T_6 \right) + w_5^2
+\]  
+Substituting values:  
+\[
+w_6 = \sqrt{2 \cdot 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \cdot (328.07 \, \text{K} - 431.9 \, \text{K}) + (220 \, \text{m/s})^2}
+\]  
+\[
+w_6 = 507.25 \, \text{m/s}
+\]  
+
+TASK 2c  
+The specific gas constant \( R \) is calculated using the relation:  
+\[
+R = c_p - c_v
+\]  
+Substituting values:  
+\[
+R = \frac{c_p}{\kappa} - c_p \cdot \left( 1 - \frac{1}{\kappa} \right)
+\]  
+\[
+R = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} - \frac{1.006 \, \frac{\text{kJ}}{\text{kg·K}}}{1.4}
+\]  
+\[
+R = 722.85 \, \frac{\text{J}}{\text{kg·K}}
+\]

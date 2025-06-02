@@ -1,0 +1,66 @@
+A table is presented with the following columns and rows:  
+
+Columns:  
+- sin (in)  
+- aus (out)  
+- kein (none)  
+- raus (out)  
+
+Rows:  
+- \( \dot{m} \): 0.3 (sin), 0.3 (aus)  
+- \( T \): 70° (sin), 100° (aus), 288.15 K (kein), 298.15 K (raus)  
+- \( x \): 1 (sin), 1 (aus)  
+
+Additional notes:  
+- \( m_{ges} = 5755 \, \text{kg} \)  
+- \( x_D = \frac{m_D}{m_{ges}} = 0.005 \)  
+- \( T_{Reakt} = 100^\circ \text{C} \)  
+- \( Q_D = 100 \, \text{kW} \)  
+
+---
+
+a) Determine \( Q_{aus} \):  
+
+Energy balance:  
+\( h(x=1, p=0) = 292.18 \, \text{kJ/kg} \) (from Table A-2)  
+\( h(x=1, 100^\circ \text{C}) = 419.04 \, \text{kJ/kg} \)  
+
+Equation:  
+\( \frac{dE}{dt} = \sum \dot{m} h_i + Q - W_i \)  
+\( \Rightarrow \text{steady-state:} \, \dot{m}_{in} = \dot{m}_{out} \)  
+
+Simplified:  
+\( 0 = \dot{m}(h_e - h_a) + Q_R - Q_{aus} + Q \)  
+\( \Rightarrow Q_{aus} = \dot{m}(h_e - h_a) + Q_R \)  
+
+Calculation:  
+\( Q_{aus} = 0.3 \, (292.18 - 419.04) + 100 \, \text{kW} = 62.18 \, \text{kW} \)  
+
+---
+
+b) Determine \( T_{KF} \):  
+
+Equation:  
+\( T_{KF} = \frac{\int_a^e T \, ds}{s_a - s_e} = \frac{h_a - h_e}{s_a - s_e} \)  
+
+Simplified:  
+\( T_{KF} = \frac{T_2 - T_1}{\ln(T_2/T_1)} \)  
+
+Calculation:  
+\( T_{KF} = \frac{248.15 - 288.15}{\ln(288.15/248.15)} = 293.12^\circ \text{K} \)  
+
+---
+
+c) Determine \( S_{erz} \):  
+
+Equation:  
+\( 0 = \dot{m}[s_e - s_a] + \frac{\dot{Q}_{erz}}{T_i} \)  
+\( \Rightarrow s_{erz} = \dot{m}(s_a - s_e) - \frac{\dot{Q}_{aus}}{T_i} \)  
+
+Calculation:  
+\( s_{erz} = 0.3 \, [7.35744 - 7.35533] - \frac{62.18}{293.12} \)  
+\( s_{erz} = 0.012012 - 0.212132 = 0.33 \, \text{kJ/kg} \)  
+
+Values:  
+\( s_a(100^\circ \text{C}) = 7.3553 \)  
+\( s_e(100^\circ \text{C}) = 7.35744 \) (from Table A-2)

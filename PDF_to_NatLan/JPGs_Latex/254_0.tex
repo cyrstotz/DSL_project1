@@ -1,0 +1,85 @@
+TASK 1a  
+The energy balance equation is written as:  
+\[
+\dot{m}_{\text{in}} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R - \dot{Q}_{\text{out}} = 0
+\]  
+Rearranging for the heat flow removed by the coolant:  
+\[
+\dot{Q}_{\text{out}} = \dot{Q}_R + \dot{m}_{\text{in}} (h_{\text{in}} - h_{\text{out}})
+\]  
+The enthalpy values are:  
+\[
+h_{\text{in}} = 209.95 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-2)}
+\]  
+\[
+h_{\text{out}} = 419.04 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-2)}
+\]  
+Substituting the values:  
+\[
+\dot{Q}_{\text{out}} = 100 \, \text{kW} + 0.3 \, \frac{\text{kg}}{\text{s}} \cdot (209.95 - 419.04) \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+\dot{Q}_{\text{out}} = 62.193 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant is determined using:  
+\[
+\bar{T}_{\text{KF}} = \frac{\int_a^e T \, dS}{S_a - S_e} = \frac{\int_a^e dh - v dp}{S_a - S_e} = \frac{h_a - h_e}{S_a - S_e}
+\]  
+For an ideal liquid:  
+\[
+\bar{T}_{\text{KF}} = \frac{T_a - T_e}{\ln \left( \frac{T_a}{T_e} \right)}
+\]  
+Substituting the values:  
+\[
+T_a = 298.15 \, \text{K}, \quad T_e = 288.15 \, \text{K}
+\]  
+\[
+\bar{T}_{\text{KF}} = \frac{10 \, \text{K}}{\ln \left( \frac{298.15}{288.15} \right)} = 293.12 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+The entropy production is calculated using the entropy balance:  
+\[
+\dot{S}_{\text{gen}} = \dot{Q}_{\text{out}} \left( \frac{1}{\bar{T}_{\text{KF}}} - \frac{1}{T_R} \right)
+\]  
+Substituting the values:  
+\[
+\dot{S}_{\text{gen}} = 62.193 \, \frac{\text{kW}}{\text{K}} \left( \frac{1}{293.12} - \frac{1}{398.15} \right)
+\]  
+\[
+\dot{S}_{\text{gen}} = 45.49 \, \frac{\text{W}}{\text{K}}
+\]  
+
+A diagram is drawn showing the entropy balance. It includes labeled points for \( T_{\text{KF}} \), \( T_R \), and the heat flow \( \dot{Q}_{\text{out}} \). The diagram visually represents the entropy production.
+
+---
+
+TASK 1d  
+The energy balance for the cooling process is written as:  
+\[
+u_2 = u_1 + x_D (u_g - u_f)
+\]  
+Substituting the values:  
+\[
+u_2 = 209.38 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_g = 419.04 \, \frac{\text{kJ}}{\text{kg}}, \quad u_f = 250.05 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-2)}
+\]  
+
+For the mass change \( \Delta m_{12} \), the energy balance is:  
+\[
+(m_1 + \Delta m_{12}) u_2 - m_1 u_1 = \Delta m_{12} h - \dot{Q}_{\text{out}}
+\]  
+Rearranging:  
+\[
+\Delta m_{12} = \frac{m_1 u_1 + m_1 u_2 - m_1 u_1 + \dot{Q}_{\text{out}}}{h - u_2}
+\]  
+
+No further numerical values are substituted here.

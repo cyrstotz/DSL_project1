@@ -1,0 +1,45 @@
+The initial temperature \( T_1 \) is \( 100^\circ\text{C} \), and the final temperature \( T_2 \) is \( 70^\circ\text{C} \). The heat released during cooling is \( Q_{\text{out},12} = 35 \, \text{MJ} \).  
+
+The first law of thermodynamics is applied to the closed tank system, assuming a half-open system:  
+\[
+\Delta U_2 = \Sigma Q - \Sigma W
+\]  
+Here, \( \Sigma Q = Q_R \), and work is neglected.  
+
+The mass balance equation is written as:  
+\[
+m_2 = m_1 + \Delta m_{12}
+\]  
+
+The internal energy \( U_1 \) is calculated using water table values:  
+\[
+U_1 = h_f + x_D \cdot h_g = 419.94 + 0.005 \cdot (2506.5 - 419.94) = 429.37 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The internal energy \( U_2 \) is also determined from the water tables:  
+\[
+U_2 = 292.95 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Here, \( x = 0 \), as only liquid water remains.  
+
+The enthalpy \( h_f \) at state 2 is given as:  
+\[
+h_f = 83.96 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Using the energy balance:  
+\[
+\Delta m_{12} (U_2 - h_f) = Q_{12} + m_1 \cdot U_1 - m_2 \cdot U_2
+\]  
+
+Rearranging for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = \frac{m_1 \cdot U_1 + Q_{12} - m_2 \cdot U_2}{U_2 - h_f}
+\]  
+
+Substituting values:  
+\[
+\Delta m_{12} = \frac{5755 \cdot 429.37 + 35,000 - 5755 \cdot 292.95}{292.95 - 83.96} = 35,000.37 \, \text{kg}
+\]  
+
+Thus, the mass of saturated liquid water added is approximately \( 35,000.37 \, \text{kg} \).

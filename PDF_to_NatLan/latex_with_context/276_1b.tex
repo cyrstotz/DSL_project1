@@ -1,0 +1,28 @@
+The thermodynamic mean temperature of the coolant, \( T_{\text{KF}} \), is determined using the entropy balance:  
+\[
+T_{\text{KF}} = \frac{\int T \, dS}{S_a - S_e} = \frac{q_{\text{rev}}}{S_a - S_e} = \frac{\dot{Q}_{\text{ms}}}{\dot{m} (S_a - S_e)}
+\]  
+From Table A2:  
+\[
+S_a(100^\circ\text{C}, x = 0.005) = 1.837 \, \frac{\text{kJ}}{\text{kg·K}}, \quad S_e(70^\circ\text{C}, x = 0.005) = 0.889 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+Substituting values:  
+\[
+T_{\text{KF}} = \frac{62.18}{1.837 - 0.889} = 295 \, \text{K}
+\]  
+The system is modeled only for the fluid, assuming steady-state operation and negligible pressure differences (\( \Delta P = 0 \)).
+
+The entropy balance for the fluid is expressed as:  
+\[
+0 = \dot{m}_{\text{KF}} \left[ S_e - S_a \right] + \frac{\dot{Q}_{\text{KF}}}{T_{\text{KF}}}
+\]  
+Rearranging:  
+\[
+T_{\text{KF}} = \frac{\dot{Q}_{\text{KF}}}{\dot{m}_{\text{KF}} \left[ S_a - S_e \right]}
+\]  
+Alternatively, \( T_{\text{KF}} \) can be calculated using:  
+\[
+T_{\text{KF}} = c_p \ln \left( \frac{T_1}{T_e} \right)
+\]
+
+---

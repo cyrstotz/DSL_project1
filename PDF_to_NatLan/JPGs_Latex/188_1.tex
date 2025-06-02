@@ -1,0 +1,77 @@
+TASK 1d  
+The energy balance equation is written as:  
+\[
+m_2 u_2 - m_0 u_0 - m_f u_f = \Delta m h_{12}
+\]  
+where:  
+- \( m_2 = 5755 \, \text{kg} \)  
+- \( u_2 = 292.85 \, \frac{\text{kJ}}{\text{kg}} \)  
+- \( m_0 = 5755 \cdot 0.005 = 28.775 \, \text{kg} \)  
+- \( u_0 = 2506 \, \frac{\text{kJ}}{\text{kg}} \)  
+- \( m_f = 5755 \cdot (1 - 0.005) = 5726.23 \, \text{kg} \)  
+- \( u_f = 418.94 \, \frac{\text{kJ}}{\text{kg}} \)  
+- \( h_{12} = 83.96 \, \frac{\text{kJ}}{\text{kg}} \)  
+
+Substituting these values into the equation:  
+\[
+\Delta m = \frac{m_2 u_2 - m_0 u_0 - m_f u_f}{h_{12}}
+\]  
+\[
+\Delta m = \frac{5755 \cdot 292.85 - 28.775 \cdot 2506 - 5726.23 \cdot 418.94}{83.96}
+\]  
+\[
+\Delta m = -9351.40 \, \text{kg}
+\]  
+
+---
+
+TASK 1e  
+The entropy change is calculated as follows:  
+\[
+\Delta m_{12} = 3600 \, \text{kg}
+\]  
+From Table A2:  
+\[
+m_0 = 28.775 \, \text{kg}, \quad m_f = 5726.23 \, \text{kg}
+\]  
+\[
+s_{f,100^\circ\text{C}} = 1.3069 \, \frac{\text{kJ}}{\text{kg·K}}, \quad s_{g,100^\circ\text{C}} = 7.3543 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+The entropy at state 1 is:  
+\[
+S_1 = m_0 s_g + m_f s_f
+\]  
+\[
+S_1 = 28.775 \cdot 7.3543 + 5726.23 \cdot 1.3069
+\]  
+\[
+S_1 = 7695.247 \, \frac{\text{kJ}}{\text{K}}
+\]  
+
+From Table A2:  
+\[
+s_{f,20^\circ\text{C}} = 0.2966 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+The entropy at state 2 is:  
+\[
+S_2 = (m_{\text{gas}} + \Delta m_{12}) \cdot s_{f,20^\circ\text{C}}
+\]  
+\[
+S_2 = (5755 + 3600) \cdot 0.2966
+\]  
+\[
+S_2 = 2794.693 \, \frac{\text{kJ}}{\text{K}}
+\]  
+
+The entropy change is:  
+\[
+\Delta S_{12} = S_2 - S_1
+\]  
+\[
+\Delta S_{12} = 2794.693 - 7695.247
+\]  
+\[
+\Delta S_{12} = -4920.554 \, \frac{\text{kJ}}{\text{K}}
+\]

@@ -1,0 +1,55 @@
+TASK 1a  
+The energy balance around the reactor is described for steady-state operation with one mass flow stream:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} \left( h_{\text{e}} - h_{\text{in}} \right) + \dot{Q}_R + \dot{Q}_{\text{aux}} - \dot{W}_{\text{e}}
+\]  
+The auxiliary heat flow is calculated as:  
+\[
+\dot{Q}_{\text{aux}} = \dot{m}_{\text{in}} \left( h_{\text{in}} - h_{\text{e}} \right) - \dot{Q}_R  
+\]  
+Substituting values:  
+\[
+\dot{Q}_{\text{aux}} = -62.237 \, \text{kW}
+\]  
+
+The enthalpy values are determined using the steam quality \( x_D \):  
+\[
+h_{\text{e}} = h_f + x_D \cdot (h_g - h_f) \quad \text{at } 70^\circ\text{C}, \quad h_{\text{e}} = 304.65 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_{\text{in}} = h_f + x_D \cdot (h_g - h_f) \quad \text{at } 100^\circ\text{C}, \quad h_{\text{in}} = 430.325 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) is determined using the entropy balance around the cooling jacket:  
+\[
+T_{\text{KF}}: \quad \text{Entropy balance around the cooling jacket.}
+\]  
+For reversible isobaric processes:  
+\[
+\dot{S}_{\text{gen}} = 0, \quad \dot{S}_{\text{e}} = \dot{S}_{\text{a}}
+\]  
+The entropy balance is expressed as:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{KF}} \left( s_{\text{e}} - s_{\text{a}} \right) + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} \ln \left( \frac{T_{\text{e}}}{T_{\text{a}}} \right) - \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+
+The energy balance around the cooling jacket is given as:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{KF}} \left( h_{\text{e}} - h_{\text{a}} \right) - \dot{Q}_{\text{aux}}
+\]  
+For constant pressure \( p_{\text{KF}} \):  
+\[
+\dot{m}_{\text{KF}} = \frac{\dot{Q}_{\text{out}}}{h_{\text{e}} - h_{\text{a}}} = \frac{\dot{Q}_{\text{out}}}{c_{\text{p, KF}} \cdot (T_{\text{e}} - T_{\text{a}})}
+\]  
+
+The mean temperature \( T_{\text{KF}} \) is calculated as:  
+\[
+T_{\text{KF}} = \frac{\dot{Q}_R}{T_{\text{e}} - T_{\text{a}}} \ln \left( \frac{T_{\text{e}}}{T_{\text{a}}} \right)  
+\]  
+Substituting values:  
+\[
+T_{\text{KF}} = 243.12 \, \text{K}
+\]

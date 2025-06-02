@@ -1,0 +1,46 @@
+TASK 4a  
+The diagram is a pressure-temperature (\(p\)-\(T\)) graph illustrating the freeze-drying process. It includes the following labeled regions and points:  
+- "Fest" (solid phase)  
+- "Flüssig" (liquid phase)  
+- "Gasförmig" (gaseous phase)  
+- The "Triple" point, where solid, liquid, and gas coexist.  
+- Two steps labeled as "i" and "ii" along the curve.  
+- The curve is marked as "isotherm" (constant temperature) and "isobar" (constant pressure).  
+
+The graph visually represents the transitions between phases during the freeze-drying process.
+
+---
+
+TASK 4b  
+The total mass flow rate of the refrigerant (\( \dot{m}_{\text{ges}} \)) is calculated using the following equations:  
+
+1. The inlet temperature of the evaporator is given as \( T_{\text{in}} = T_i - 6 \, \text{K} = 3^\circ \text{C} \).  
+2. The first law of thermodynamics around the compressor is applied:  
+   \[
+   0 = \dot{m} \left[ h_2 - h_3 \right] + \dot{W}_K
+   \]  
+   Rearranging for \( \dot{m} \):  
+   \[
+   \dot{m} = \frac{\dot{W}_K}{h_2 - h_3}
+   \]  
+
+3. \( h_3 \) is obtained from Table A-12 at 8 bar using interpolation:  
+   \[
+   y = x - x_1 \cdot \frac{y_2 - y_1}{x_2 - x_1} + y_1
+   \]  
+   Where:  
+   - \( x_1 = -6^\circ \text{C} \), \( x_2 = 2^\circ \text{C} \)  
+   - \( y_1 = 234.08 \, \text{kJ/kg} \), \( y_2 = 247.23 \, \text{kJ/kg} \)  
+
+   After interpolation, \( h_3 = 247.23 \, \text{kJ/kg} \).  
+
+4. \( h_2 \) is determined at \( T_2 = -22^\circ \text{C} \), where the refrigerant is fully evaporated:  
+   \[
+   h_2 = 234.08 \, \text{kJ/kg}
+   \]  
+
+Descriptions of interpolations and calculations are provided to determine the enthalpy values at specific states.  
+
+---
+
+No additional content found beyond these tasks.

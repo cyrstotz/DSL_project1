@@ -1,0 +1,50 @@
+Energy balance at the compressor:  
+\( Q = \dot{m}_{\text{coolant}} \cdot (h_{\text{ein}} - h_{\text{aus}}) - \dot{W}_{\text{K}} \)  
+\( \dot{m}_{\text{coolant}} = \frac{\dot{W}_{\text{K}}}{h_2 - h_3} \)  
+
+Additional notes:  
+- \( h_2 (\text{saturated vapor}) \)  
+- \( h_3 (\text{8 bar}) \)  
+- \( \Delta h = h_3 - h_2 \)  
+- \( \Delta h = 264.16 \, \text{kJ/kg} \)  
+
+Annotations:  
+- 'Druck Intervall' (pressure interval) is noted as '1 mbar'.  
+- 'stipp die verwendet' (possibly 'step used').
+
+\( w_5 = 220 \, \text{m/s}, \, p_5 = 0.5 \, \text{bar}, \, T_5 = 431.9 \, \text{K} \)  
+
+Schubdüse adiabatic reversible \( \Rightarrow s_5 = s_6 \)  
+
+Ideales Gas:  
+\[
+\left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} = \frac{T_6}{T_5} \Rightarrow T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}}
+\]  
+\[
+T_6 = 431.9 \, \text{K} \cdot \left( \frac{0.45 \, \text{bar}}{0.5 \, \text{bar}} \right)^{\frac{0.4}{1.4}} = 328.07 \, \text{K}
+\]  
+
+---
+
+**w_exit**  
+\[
+\dot{m} (h_a + \frac{w_a^2}{2}) = \dot{m} (h_e + \frac{w_e^2}{2})
+\]  
+\[
+h_a - h_e = \frac{w_e^2}{2} - \frac{w_a^2}{2}
+\]  
+\[
+w_e^2 = 2 (h_a - h_b) + w_a^2
+\]  
+\[
+\Rightarrow w_e = \sqrt{w_a^2 + 2 (h_a - h_b)}
+\]  
+\[
+w_0 = \sqrt{w_a^2 + 2 c_p (T_0 - T_a)}
+\]  
+\[
+w_0 = \sqrt{200^2 + 2 \cdot 1.006 \, \frac{\text{kJ}}{\text{kgK}} \cdot (325.15 - 243.15)}
+\]  
+\[
+w_0 = 493.07 \, \frac{\text{m}}{\text{s}}
+\]

@@ -1,0 +1,82 @@
+
+``````latex
+
+
+\section*{3}
+
+\subsection*{a)}
+
+\begin{align*}
+    m_g, \, p_{g1}^a \\
+    \text{Kräfte ggü} \quad p_{g1} \frac{D^2}{4 \pi} &= g (m_{ew} + m_e) + p_{umb} \frac{D^2}{4 \pi} \\
+    p_{g1} &= \frac{4}{D^2 / \pi} g (m_{ew} + m_e) + p_{umb} \\
+    &= \frac{4}{(D^2 / \pi)} 9.81 \, \text{m/s}^2 (0.14 \, \text{kg} + 32 \, \text{kg}) + 10^5 \, \text{Pa} \\
+    &= 1.40 \, \text{bar}
+\end{align*}
+
+\begin{align*}
+    m_g R T_1 &= p_{g1} V_{g1} \\
+    m_g &= \frac{p_{g1} V_{g1}}{R T_1} = \frac{1.4 \cdot 10^5 \, \text{Pa} \cdot 3.14 \cdot 10^{-2} \, \text{m}^3}{166.28 \, \text{J/(kg K)} \cdot 273.15 \, \text{K}} \approx 3.45 \, \text{kg}
+\end{align*}
+
+\begin{align*}
+    R = \frac{R}{M_g} = \frac{8.314 \, \frac{\text{J}}{\text{mol K}}}{50.10 \, \frac{\text{g}}{\text{mol}}} = 166.28 \, \frac{\text{J}}{\text{kg K}}
+\end{align*}
+
+\subsection*{b)}
+
+\begin{align*}
+    p_{B1,2} = p_{g1}
+\end{align*}
+
+Das System muss weiterhin im Gleichgewicht mit dem Umgebungsdruck und der Gewichtskraft sein!
+
+\begin{align*}
+    \Rightarrow p_{B1,2} = 1.40 \, \text{bar}
+\end{align*}
+
+\begin{align*}
+    T_{g1,2} = 0^\circ \text{C}
+\end{align*}
+
+Das Gas ist im thermodynamischen GGW mit dem Eiswasser, der $x_{Eis,1,2} > 0$ es muss das Gas ebenfalls weiterhin bei $T_{g1,2} = 0^\circ \text{C}$ sein und somit ist auch die Gastemperatur bei $0^\circ \text{C}$!
+
+``````latex
+
+\section*{c)}
+
+\begin{align*}
+\Delta E_{12} &= \Delta U_{12} = m_g c_v (T_{2,g} - T_{g1}) = Q_{12} - W_v \\
+W_v &= p_{g} (V_{2,g} - V_{g1}) = 1.4 \cdot 10^5 \text{Pa} \cdot (1.105 - 3.14) \cdot 10^{-3} \, \text{m}^3 = -284.34 \, \text{J} \\
+&\text{weiterhin Arbeit an einem reibungsfreien Zylinder} \\
+V_{2,g} &= \frac{m_g R T_2}{p_{g}} = \frac{3.143 \cdot 10^{-3} \, \text{kg} \cdot 166.28 \, \frac{\text{kJ}}{\text{kg K}} \cdot 273.15 \, \text{K}}{1.4 \cdot 10^5 \, \text{Pa}} = 1.105 \, \text{L}
+\end{align*}
+
+\begin{align*}
+Q_{12} &= m_g c_v (T_{g2} - T_{g1}) + W_v \\
+&= 3.143 \cdot 10^{-3} \, \text{kg} \cdot 0.633 \cdot 10^3 \, \frac{\text{J}}{\text{kg K}} \cdot (-500 \, \text{K}) - 284.34 \, \text{J} \\
+&= -1366.5 \, \text{J}
+\end{align*}
+
+\section*{d)}
+
+\begin{align*}
+T_{EW,12} &= T_{g12} = 0^\circ \text{C} \\
+\Delta E_{EW,12} &= \Delta U_{12} = Q_{12} \\
+m_{EW} (u_2 - u_1) &= m_g c_v (T_{g2} - T_{g1}) = Q_{12}
+\end{align*}
+
+\begin{align*}
+Q_{12} &= m_{EW} \left( u_{F,st} (1.400 \, \text{kJ}) \cdot x_{2,EW} + (1 - x_{2,EW}) u_{F,sw} (1.400 \, \text{kJ}) - u_{F,st} (1.400 \, \text{kJ}) x_{1,EW} + (1 - x) u_{F,sw} \right) \\
+\frac{Q_{12}}{m_{EW}} &= \left( x_{2,EW} (u_{F,st} - u_{F,sw}) + u_{F,sw} \right) - (u_{F,sw}) + x_{2,EW} (u_{F,st} - u_{F,sw})
+\end{align*}
+
+\begin{align*}
+x_{2,EW} &= \frac{1}{u_{F,st} - u_{F,sw}} \left( \frac{Q_{12}}{m_{EW}} + x_{1,EW} u_{F,st} - u_{F,sw} \right) \\
+&= \frac{1}{-333.458 + 0.0458} \left( \frac{-1366.5}{0.1 \, \text{kg}} \right) \cdot 0.6 \\
+x_{2,EW} &= 0.559
+\end{align*}
+
+``````latex
+
+

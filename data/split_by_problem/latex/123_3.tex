@@ -1,0 +1,150 @@
+
+``````latex
+
+
+\section*{Aufgabe 3}
+
+\begin{tabular}{|c|c|c|}
+\hline
+ & Zustand 1 & Zustand 2 \\
+\hline
+$V_0$ & 3 mL & \\
+$T_0$ & 500^\circ C = 773.15 \text{K} & \\
+$m_{EW}$ & 0.1 kg & \\
+$T_{EW}$ & 0^\circ C & \\
+$X_E$ & 0.6 & \\
+\hline
+\end{tabular}
+
+\noindent
+$m_k = 32 \text{kg} \quad / \quad p_0 = 1 \text{bar} \quad / \quad D = 0.1 \text{m} \quad / \quad c_v = 0.633 \frac{\text{kJ}}{\text{kg K}} \quad / \quad M_g = 50 \frac{\text{kg}}{\text{kJ}}$
+
+\noindent
+a) Ges: $p_{3,1} / m_g$
+
+\noindent
+\text{Wasser inhomoisiert daher wie extra gerechnet!}
+
+\[
+p_{0,f} = \frac{F_{mk} + F_{g,E}}{A} \quad \text{Membran}
+\]
+
+\[
+p_0 \cdot A + m_{mk} \cdot g + m_{ew} \cdot g = p_{3,1} \cdot A
+\]
+
+\[
+\Rightarrow p_{3,1} = \frac{p_0 \cdot A + m_{mk} \cdot g + m_{ew} \cdot g}{A} = \frac{1.05 \cdot 0.1^2 \cdot \frac{\pi}{4}}{0.1^2 \cdot \frac{\pi}{4}} + \frac{32 \cdot 9.81 + 0.1 \cdot 9.81}{0.1^2 \cdot \frac{\pi}{4}}
+\]
+
+\[
+p_{3,1} = 785.398 + 343.02 + 0.981 = 1100.069 \text{Pa} = 1.1 \text{bar}
+\]
+
+\[
+p_{3,1} V_0 = m_g R T \quad \Rightarrow m_g = \frac{p_{3,1} V_0}{R T} = \frac{1.100 \cdot 3 \cdot 10^{-3}}{166.28 \cdot 773.15} = 3.422 \cdot 10^{-3} \text{kg}
+\]
+
+\[
+R = \frac{8.314 \, \text{J}}{\text{mol K}} \cdot \frac{1}{50 \, \frac{\text{kg}}{\text{mol}}} = 166.28 \, \frac{\text{J}}{\text{kg K}}
+\]
+
+\[
+\Rightarrow m_g = 3.422 \, \text{g}
+\]
+
+``````latex
+
+
+\section*{b)}
+
+\text{Ges: } T_{g2} + p_{g2}
+
+Der Vorgang ist adiabatisch, daher ist der Vorgang polytrop $pV^n = \text{const.}$
+
+Aus der idealen Gasgleichung $pV = mRT$ folgt, wenn $pV^n = \text{const.}$, muss das ganze auch isotherm sein!
+
+\[
+T_{g2} = T_{g1} = 500^\circ C
+\]
+
+\[
+\left( pV^n = mRT \right)
+\]
+
+\[
+p_2 = \frac{mRT}{V^n} = \frac{3,1422 \cdot 10^{-3} \cdot 116,28}{(3,14 \cdot 10^{-3})^n}
+\]
+
+\section*{c)}
+
+\text{Ges: } Q = Q_{12}
+
+\[
+\frac{dE}{dt} = Q + W = 0 \quad \rightarrow \text{da geschlossenes System}
+\]
+
+\[
+Q = W = \int_{V_1}^{V_2} p \cdot dV = p_0 (V_{g2} - V_{g1}) = 11500 J
+\]
+
+\section*{d)}
+
+\text{Ges: } x_{Eis2}
+
+\[
+m_{Eis1} = 0,6 \cdot m_e = 0,06 \, \text{kg}
+\]
+
+\[
+m_{Wasser} = 0,04 \, \text{kg}
+\]
+
+\[
+V_1 = V_2
+\]
+
+\[
+p_1 = p_2
+\]
+
+\[
+T_1 = 273,15 \, \text{K} = 0^\circ
+\]
+
+\[
+\Delta U_1 = Q = U(T_{g2}) - U(T_1) = m_{Wasser} (T_2 - T_1) = 11500 J
+\]
+
+\[
+PE = p_0 + m \cdot g \cdot z = 1,0 + 1,1 \, \text{bar}
+\]
+
+\[
+T_2 - T_1 = \frac{Q}{m \cdot c_V} \quad \rightarrow \quad T_2 = \frac{Q}{m \cdot c_V} + T_1 = \frac{11500 \, \text{J}}{0,1 \, \text{kg} \cdot 0,653 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}} + 273,15 \, \text{K} = 286,846 \, \text{K}
+\]
+
+\[
+U = m \cdot (a) = m \cdot c_V (T_2 - T_1) = Q
+\]
+
+\[
+T_2 - T_2 = \frac{Q}{m \cdot c_V} \quad \rightarrow \quad T_2 = \frac{Q}{m \cdot c_V} + T_1 = \frac{11500 \, \text{J}}{0,1 \, \text{kg} \cdot 0,653 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}} + 273,15 \, \text{K} = 286,846 \, \text{K}
+\]
+
+\[
+\Delta u = \frac{11500 \, \text{J}}{0,1 \, \text{kg}} = 115 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\Delta u_{Eis1} (\text{in Wasser}) = -333,458 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+u_{Felsig} (\text{in Wasser}) = 0,045 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\Delta u = u_{FI} + x \cdot (u_{FEis} - u_{FI}) \quad \Rightarrow \quad x = \frac{\Delta u - u_{FI}}{u_{FEis} - u_{FI}} = \frac{115 - 0,045}{333,458 - 0,045} =```latex
+
+

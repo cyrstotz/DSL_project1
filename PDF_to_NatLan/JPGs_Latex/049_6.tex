@@ -1,0 +1,46 @@
+TASK 4a  
+The diagram is a pressure-temperature (\(p\)-\(T\)) plot illustrating the freeze-drying process. It shows four distinct states labeled as 1, 2, 3, and 4.  
+- State 1 is in the low-pressure region, likely representing the initial state of the refrigerant before expansion.  
+- State 2 is after expansion, still at low pressure but higher temperature.  
+- State 3 is at high pressure and temperature, representing the state after compression.  
+- State 4 is at high pressure but lower temperature, indicating condensation.  
+
+The diagram qualitatively represents the refrigeration cycle with transitions between states.
+
+---
+
+TASK 4b  
+The mass flow rate of the refrigerant (\(\dot{m}_{\text{R134a}}\)) is calculated using the equation:  
+\[
+\dot{W}_K = \dot{m} \cdot (h_3 - h_2) \implies \dot{m} = \frac{\dot{W}_K}{h_3 - h_2}
+\]  
+
+To find \(h_2\) and \(h_3\), interpolation is performed using tables A-10, A-11, and A-12.  
+- \(h_2\) is interpolated at \(T_i - 6\), which corresponds to \(-20^\circ\text{C}\) (from the \(p\)-\(T\) diagram). Using Table A-10:  
+\[
+h_{2,s} = h_f(T = -20^\circ\text{C}) = 231.62 \, \text{kJ/kg}
+\]  
+The entropy at this state is:  
+\[
+s_2 = s_f(T = -20^\circ\text{C}) = 0.8390 \, \text{kJ/kg·K}
+\]  
+
+For the transition from state 2 to state 3, the process is adiabatic and reversible, so:  
+\[
+\Delta S = 0
+\]  
+
+Using Table A-12, \(h_3\) is found at \(s_3 = s_2\):  
+\[
+h_3 = h(s_3) = 273.66 + \frac{(28.33 - 273.66)}{(891.11 - 0.8390)} \cdot (0.8390 - 0.5397) \approx 299.14 \, \text{kJ/kg}
+\]  
+
+Substituting into the mass flow rate equation:  
+\[
+\dot{m} = \frac{\dot{W}_K}{h_3 - h_2} = \frac{2 \, \text{kW}}{299.14 - 231.62} = 0.658 \, \text{kg/s} \approx 2.37 \, \text{kg/h}
+\]  
+
+The inlet temperature \(T_i\) was determined using the diagram and corresponds to \(-20^\circ\text{C}\). Thus:  
+\[
+T_i = -20^\circ\text{C} - 6^\circ\text{C} = -26^\circ\text{C}
+\]

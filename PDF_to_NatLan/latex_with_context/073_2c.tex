@@ -1,0 +1,19 @@
+The mass-specific exergy destruction \( ex_{\text{dest}} \) is calculated as the difference between the exergy at the gas turbine outlet and the exergy at the inlet. The equation is expressed as:  
+
+\[
+ex_{\text{dest}} = ex_{\text{ist,G}} - ex_{\text{ist,C}}
+\]
+
+Expanding the terms, this becomes:  
+
+\[
+ex_{\text{dest}} = h_G - h_C - T_C (s_G - s_C) + \frac{1}{2} \left( w_G^2 - w_{C,\text{lift}}^2 \right)
+\]
+
+Substituting the thermodynamic relations, the equation is further expressed as:  
+
+\[
+ex_{\text{dest}} = c_p (T_G - T_C) - T_C \left[ c_p \ln \left( \frac{T_G}{T_C} \right) - R \ln \left( \frac{p_C}{p_G} \right) \right] + \frac{1}{2} \left( w_G^2 - w_{C,\text{lift}}^2 \right)
+\]  
+
+This equation accounts for the enthalpy difference, entropy production, and kinetic energy changes between the states.

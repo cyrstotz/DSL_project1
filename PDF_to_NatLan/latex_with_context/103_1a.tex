@@ -1,0 +1,43 @@
+The energy balance equation for the system is written as:  
+\[
+\dot{m}(h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R + \dot{Q}_{\text{out}} = 0
+\]  
+
+For water at \( T_{\text{in}} = 70^\circ\text{C} \), the state is saturated liquid. Using water tables (A-2 at \( 70^\circ\text{C} \)), the enthalpy at the inlet is calculated as follows:  
+\[
+h_{\text{in}} = h_f(70^\circ\text{C}) + x_D \left( h_g(70^\circ\text{C}) - h_f(70^\circ\text{C}) \right)
+\]  
+Substituting values:  
+\[
+h_{\text{in}} = 292.98 \, \frac{\text{kJ}}{\text{kg}} + 0.005 \left( 2626.8 \, \frac{\text{kJ}}{\text{kg}} - 292.98 \, \frac{\text{kJ}}{\text{kg}} \right)
+\]  
+\[
+h_{\text{in}} = 309.65 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+For water at \( T_{\text{out}} = 100^\circ\text{C} \), the state is also saturated liquid. The enthalpy at the outlet is calculated as:  
+\[
+h_{\text{out}} = h_f(100^\circ\text{C}) + x_D \left( h_g(100^\circ\text{C}) - h_f(100^\circ\text{C}) \right)
+\]  
+Substituting values:  
+\[
+h_{\text{out}} = 419.04 \, \frac{\text{kJ}}{\text{kg}} + 0.005 \left( 2676.1 \, \frac{\text{kJ}}{\text{kg}} - 419.04 \, \frac{\text{kJ}}{\text{kg}} \right)
+\]  
+\[
+h_{\text{out}} = 430.33 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The mass flow rate is given as \( \dot{m} = 0.3 \, \frac{\text{kg}}{\text{s}} \). Substituting all values into the energy balance equation:  
+\[
+0.3 \, \frac{\text{kg}}{\text{s}} \left( 309.65 \, \frac{\text{kJ}}{\text{kg}} - 430.33 \, \frac{\text{kJ}}{\text{kg}} \right) + 100 \, \text{kW} + \dot{Q}_{\text{out}} = 0
+\]  
+\[
+\dot{Q}_{\text{out}} = -62.296 \, \text{kW}
+\]  
+
+If the sign convention is reversed, the heat flow out of the system is:  
+\[
+\dot{Q}_{\text{out}} = 62.30 \, \text{kW}
+\]  
+
+In the entire task, the term "saturated" was calculated using a steam quality \( x_D = 0.005 \).

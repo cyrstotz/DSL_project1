@@ -1,0 +1,24 @@
+The entropy production, \( \dot{S}_{\text{gen}} \), is calculated using the entropy balance equation:  
+\[
+\dot{S}_{\text{gen}} = \dot{m}_{\text{in}} \cdot (s_2 - s_1) + \dot{m}_{\text{out}} \cdot (s_3 - s_2) + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+The entropy difference \( s_2 - s_1 \) is expressed as:  
+\[
+s_2 - s_1 = s^{\text{sat}}(T_4) - s^{\text{sat}}(T_3)
+\]  
+Using the logarithmic approximation:  
+\[
+s_2 - s_1 = c_p \cdot \ln \left( \frac{T_2}{T_3} \right)
+\]  
+Substituting the values for \( \dot{S}_{\text{gen}} \):  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} \cdot \frac{T_2 - T_{\text{KF}}}{T_2 \cdot T_{\text{KF}}}
+\]  
+With \( \dot{Q}_{\text{out}} = 62.29 \, \text{kW} \), \( T_2 = 373.15 \, \text{K} \), and \( T_{\text{KF}} = 293.12 \, \text{K} \):  
+\[
+\dot{S}_{\text{gen}} = \frac{62.29 \cdot (373.15 - 293.12)}{373.15 \cdot 293.12}
+\]  
+This results in:  
+\[
+\dot{S}_{\text{gen}} = 48.94 \, \text{W/K}
+\]

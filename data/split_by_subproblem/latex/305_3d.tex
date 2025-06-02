@@ -1,0 +1,34 @@
+\section*{Problem d}
+
+\begin{align*}
+Q_{A2} &= x_{Eis2} \cdot m_{EW} \cdot (v_{w2} - v_{Eis2}) + x_{Eis1} \cdot m_{EW} \cdot (v_{w1} - v_{Eis1}) \\
+&\quad + (1 - x_{Eis2}) \cdot m_{EW} \cdot (v_{w2} - v_{Eis2}) + (1 - x_{Eis1}) \cdot m_{EW} \cdot (v_{w1} - v_{Eis1}) \\
+&\quad + m_{g} \cdot (v_{g2} - v_{g1})
+\end{align*}
+
+\begin{align*}
+Q_{A2} &= x_{Eis2} \frac{m_{EW} v_{w2}}{v_{Eis2}} + (1 - x_{Eis2}) \frac{m_{EW} v_{w2}}{v_{Eis2}} + m_{g} \cdot v_{g2} \\
+&\quad - x_{Eis1} \frac{m_{EW} v_{w1}}{v_{Eis1}} - (1 - x_{Eis1}) \frac{m_{EW} v_{w1}}{v_{Eis1}} - m_{g} \cdot v_{g1}
+\end{align*}
+
+\begin{align*}
+m_{EW} &= 0.1 \, \text{kg} \\
+v_{Eis1,2} &= v_{fest} (0.033 \frac{\text{kJ}}{\text{kg}}) = -333.442 \frac{\text{kJ}}{\text{kg}} \\
+v_{w2} &= v_{flüssig} (0.003 \frac{\text{kJ}}{\text{kg}}) = -0.033 \frac{\text{kJ}}{\text{kg}} \\
+v_{Eis1} &= v_{fest} (0.1) = -333.455 \frac{\text{kJ}}{\text{kg}} \\
+v_{w1} &= v_{flüssig} (0.2) = -0.045 \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+\begin{align*}
+x_{Eis} (m_{EW} (v_{w2} - v_{Eis2})) &= m_{EW} v_{w2} - x_{Eis} m_{EW} v_{Eis2} + (1 - x_{Eis}) m_{EW} v_{w1} \\
+&\quad + m_{g} (v_{g2} - v_{g1}) \\
+&= c_{v} m_{g} (T_{2} - T_{1})
+\end{align*}
+
+\begin{align*}
+x_{Eis} &= \frac{0.1 \, \text{kg} \cdot (-0.033 \frac{\text{kJ}}{\text{kg}}) + 0.6 \cdot 0.1 \, \text{kg} \cdot (-333.455 \frac{\text{kJ}}{\text{kg}}) - (1 - 0.6) \cdot 0.1 \, \text{kg} \cdot (-0.045 \frac{\text{kJ}}{\text{kg}})}{0.1 \, \text{kg} \cdot (-0.033 + 333.442) \frac{\text{kJ}}{\text{kg}}} \\
+&\quad + \frac{0.033 \frac{\text{kJ}}{\text{kg}} - 0.003 \cdot 0.1 \, \text{kg} (279.173 \text{k} - 773.15 \text{k})}{0.1 \, \text{kg} \cdot (-0.033 + 333.442) \frac{\text{kJ}}{\text{kg}}}
+\end{align*}
+
+\begin{align*}
+Q_{A2} &= x_{2} m_{EW} v_{Eis2} - x_{2} m_{EW} v_{Eis2} + m_{EW```latex

@@ -1,0 +1,66 @@
+TASK 3a
+
+Initial conditions for the ice-water mixture (EW) are given as:
+- Temperature \( T_1 = 0^\circ\text{C} \),
+- Ice mass fraction \( x_{\text{ice},1} = 0.6 \),
+- Mass of the EW \( m_{\text{EW}} = 0.1 \, \text{kg} \).
+
+The energy balance for the EW system is written as:
+\[
+\Delta U = U_2 - U_1 = Q - W
+\]
+where \( Q \) is the heat transferred and \( W \) is the work done. The work term is neglected due to incompressibility.
+
+The heat transfer \( Q \) is given as:
+\[
+Q = 1367 \, \text{J}.
+\]
+
+The internal energy \( U \) is calculated using the formula:
+\[
+U = U_f + x (U_g - U_f),
+\]
+where:
+- \( x \) is the mass fraction of the phase,
+- \( U_f \) is the specific internal energy of the solid phase (ice),
+- \( U_g \) is the specific internal energy of the liquid phase (water).
+
+The ice mass fraction \( x \) is calculated as:
+\[
+x = (1 - x_{\text{ice}}) = 0.4.
+\]
+
+From Table 1, the values for internal energy are:
+\[
+U_f = -333.458 \, \text{kJ/kg}, \quad U_g = -0.045 \, \text{kJ/kg}.
+\]
+
+Substituting these values:
+\[
+U_2 = -200.4 \, \text{kJ/kg}.
+\]
+
+The corrected energy balance is written as:
+\[
+m (U_2 - U_1) = Q.
+\]
+
+Rearranging for \( U_2 \):
+\[
+U_2 = \frac{Q}{m} + U_1.
+\]
+
+Substituting \( Q = 1367 \, \text{J} \), \( m = 0.1 \, \text{kg} \), and \( U_1 = -333.458 \, \text{kJ/kg} \):
+\[
+U_2 = -186.73 \, \text{kJ/kg}.
+\]
+
+The ice fraction \( x_{\text{ice},2} \) in state 2 is calculated using:
+\[
+x_{\text{ice},2} = \frac{U - U_{\text{liquid}}}{U_{\text{solid}} - U_{\text{liquid}}}.
+\]
+
+Substituting values:
+\[
+x_{\text{ice},2} = 0.44 \quad \text{(intermediate step)} \quad \Rightarrow x_{\text{ice},2} = 0.600.
+\]

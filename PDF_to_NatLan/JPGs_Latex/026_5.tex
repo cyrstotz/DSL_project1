@@ -1,0 +1,40 @@
+TASK 2c  
+The change in specific exergy for state 6 is given by:  
+\[
+\Delta ex_{\text{str},6} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2}
+\]  
+
+For an ideal gas, the specific exergy can be expressed as:  
+\[
+ex_6 = c_p (T_6 - T_0) - T_0 c_p \ln \left( \frac{T_6}{T_0} \right) + R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+
+Substituting into the exergy equation:  
+\[
+ex_{\text{str},6} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2} = \frac{w_{\text{out}}^2}{2}
+\]  
+
+---
+
+TASK 2d  
+The exergy balance equation is:  
+\[
+Q = \Sigma ex_{\text{str}} + \Sigma ex_q - Z W - \frac{av}{p_c q} - \text{thermal terms}
+\]  
+
+The entropy production rate is given by:  
+\[
+\dot{S}_{\text{gen}} = S_6 - S_0 + \frac{\dot{Q}}{T} + S_{\text{mix}}
+\]  
+
+For an ideal gas:  
+\[
+\dot{S}_{\text{gen}} = S^0(T_6) - S^0(T_0) - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+
+Since \( p_6 = p_0 \), the pressure term simplifies.  
+
+The exergy destruction rate is:  
+\[
+\dot{e}_{\text{x,virt}} = T_0 \dot{S}_{\text{gen}}
+\]

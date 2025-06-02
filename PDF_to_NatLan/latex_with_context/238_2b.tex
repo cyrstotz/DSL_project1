@@ -1,0 +1,35 @@
+The energy balance is set up for the dynamic process:  
+\[
+\frac{dE}{dt} = \sum \dot{m} \left[ h_i + ke + pe \right] + \sum Q_j - \sum W_n
+\]  
+Since the process is adiabatic, \( Q_j = 0 \), and no shaft work is performed, \( W_n = 0 \).  
+
+The temperature \( T_6 \) is calculated using the relation:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_c}{p_s} \right)^{\frac{\kappa - 1}{\kappa}} \quad \Rightarrow \quad T_6 = \left( \frac{p_c}{p_s} \right)^{\frac{\kappa - 1}{\kappa}} T_5
+\]  
+Given \( T_5 = 431.9 \, \text{K} \), \( p_c = 0.7586 \), and \( p_s = 0.5 \),  
+\[
+T_6 = 0.7586 \cdot 431.9 \, \text{K} = 328.07 \, \text{K}
+\]  
+
+The outlet velocity \( w_6 \) is determined using the energy equation:  
+\[
+O = \dot{m} \left[ h_s - h_c + \frac{w_s^2}{2} - \frac{w_c^2}{2} \right] - 0
+\]  
+\[
+h_s - h_c = c_p \left( T_5 - T_6 \right) = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \cdot (431.9 \, \text{K} - 328.07 \, \text{K}) = 104.44825 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Using the velocity relation:  
+\[
+\frac{w_c^2}{2} = h_s - h_c + \frac{w_s^2}{2}
+\]  
+\[
+w_c^2 = 2 \left( h_s - h_c + \frac{w_s^2}{2} \right)
+\]  
+\[
+w_c = \sqrt{2 \left( h_s - h_c + \frac{w_s^2}{2} \right)} = \sqrt{2 \cdot (104.448 + 4.498)} = 220.47 \, \text{m/s}
+\]  
+
+The outlet velocity \( w_6 \) is \( 220.47 \, \text{m/s} \).

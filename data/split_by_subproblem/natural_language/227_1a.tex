@@ -1,0 +1,47 @@
+a) 
+
+d/dt Σ (m dot) (h_i + w_e^2/2 + p_e/ρ) + Q dot - W dot
+
+Q = m dot (h_e - h_a) + Q dot_loss + 100 μW
+
+Q dot_loss = m dot (h_a - h_e) - 100 μW
+
+h_a: TAB A2 at T = 100 degrees Celsius → 41.04 kJ/kg
+
+h_e: TAB A2 at T = 70 degrees Celsius → 29.298 kJ/kg
+
+Q dot_loss = 0.3 * (41,04 kJ/kg - 29,298 kJ/kg) - 100 μW
+
+= 37,818 kJ - 100 μW = 37,818 kJ - 100 kW
+
+Q dot_loss = -62,182 kW
+
+given out - negative makes sense
+
+b)
+
+F_LT = S_a^a T dS / S_a - S_e = T
+
+c)
+
+dS/dt = Q/T + S dot_in → S dot_e - S dot_2 = Q/T = -62,182 μW / 295 K
+
+S dot_e = -210,786 J/s·K
+
+TAB 1 at p equals 1.0025 bar
+
+→ interpolate for u_fsat
+
+u_fsat equals open parenthesis 1.0024 bar minus 1.000 bar close parenthesis over 1.000 bar minus 1.000 bar times open parenthesis minus 333.858 u squared over kg plus 333.492 u squared over kg close parenthesis plus open parenthesis minus 1 close parenthesis 313.492 u squared over kg
+
+u_fsat equals minus 333.492 u squared over kg
+
+→ interpolate for u_füssig
+
+u_füssig equals open parenthesis 1.0024 bar minus 1.000 bar close parenthesis over 1.000 bar minus 1.000 bar times open parenthesis minus e_f 0.456 u squared over kg plus 0.33 u squared over kg close parenthesis plus open parenthesis minus 1 close parenthesis 0.033
+
+equals minus 0.033 u squared over kg
+
+X_eis equals 0.6 → m_eis equals 0.6 times C_i 1 kg minus C_i 0.6 u squared over kg
+
+u equals u_f plus open parenthesis x times open parenthesis u_fg minus u_f close parenthesis close parenthesis

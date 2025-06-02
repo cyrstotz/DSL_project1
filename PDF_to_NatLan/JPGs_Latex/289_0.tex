@@ -1,0 +1,51 @@
+TASK 1a  
+The heat flow \( \dot{Q}_{\text{out}} \) is calculated using an energy balance:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} \cdot (h_{\text{out}} - h_{\text{in}}) + \dot{Q}_R
+\]  
+From the energy balance:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} \cdot (h_{\text{out}} - h_{\text{in}}) - \dot{Q}_R
+\]  
+The enthalpy values are taken from Table A2:  
+\[
+h_{\text{out}} (100^\circ\text{C}) = h_g = 419.04 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_{\text{in}} (70^\circ\text{C}) = h_f = 292.98 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Substituting these values:  
+\[
+\dot{Q}_{\text{out}} = -62.182 \, \text{kW}
+\]  
+The heat flow is negative, indicating it is removed from the reactor.  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is calculated as follows:  
+\[
+\dot{Q}_{\text{out}} = 65 \, \text{kW}
+\]  
+\[
+T_{\text{KF}} = \frac{S_{\text{out}} - S_{\text{in}}}{\ln \left( \frac{T_2}{T_1} \right)}
+\]  
+Using the relationship:  
+\[
+T \cdot ds = dU - p \cdot dV = dH
+\]  
+\[
+dH = U + p \cdot dV
+\]  
+The entropy difference is expressed as:  
+\[
+\frac{S_{\text{out}} - S_{\text{in}}}{S_{\text{out}} - S_{\text{in}}} = \frac{h_{\text{out}} - h_{\text{in}}}{s_{\text{out}} - s_{\text{in}}}
+\]  
+Substituting the temperature difference:  
+\[
+T_{\text{KF}} = \frac{(T_{\text{out}} - T_{\text{in}})}{\ln \left( \frac{T_2}{T_1} \right)}
+\]  
+\[
+T_{\text{KF}} = \frac{(T_{\text{out}} - T_{\text{in}})}{\ln \left( \frac{T_{\text{out}}}{T_{\text{in}}} \right)} = 293.1226 \, \text{K}
+\]  
+

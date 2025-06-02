@@ -1,0 +1,44 @@
+The initial temperature is given as \( T_i = -10^\circ \text{C} \).  
+
+A table is presented with columns labeled \( p \), \( T \), \( h \), and \( s \):  
+- State 1: \( p = 1.3748 \, \text{bar} \), \( T = -16^\circ \text{C} \).  
+- State 2: \( x = 1 \), \( p = 1 \, \text{bar} \), \( T = -16^\circ \text{C} \).  
+- State 3: \( p = 8 \, \text{bar} \), \( s = s_2 \).  
+- State 4: \( x = 0 \), \( p = 8 \, \text{bar} \).  
+
+The temperature at state 2 is calculated as:  
+\[
+T_{h,2} = T_i - 6 \, \text{K} = -16^\circ \text{C}.
+\]  
+
+The enthalpy at state 2 is determined using the saturated vapor enthalpy at \( -16^\circ \text{C} \):  
+\[
+h_2 = h_g(-16^\circ \text{C}) \rightarrow A10.
+\]  
+From the table, \( h_2 = 237.74 \, \frac{\text{kJ}}{\text{kg}} \).  
+
+The entropy at state 2 is equal to the entropy at state 3:  
+\[
+s_2 = s_3 = s_g(-16^\circ \text{C}) \rightarrow A10.
+\]  
+From the table, \( s_2 = 0.9288 \, \frac{\text{kJ}}{\text{kg·K}} \).  
+
+The pressure at state 3 is \( p_3 = 8 \, \text{bar} \).  
+The system is identified as being in the vapor region using the table A-11.  
+
+The enthalpy at state 3 is calculated using interpolation:  
+\[
+h_3 = h_{\text{sat}} + \frac{(h(40) - h_{\text{sat}})}{(s(40) - s_{\text{sat}})} \cdot (s_3 - s_{\text{sat}}).
+\]  
+Values used:  
+\[
+h(40) = 273.66 \, \frac{\text{kJ}}{\text{kg}}, \quad h_{\text{sat}} = 269.45 \, \frac{\text{kJ}}{\text{kg}},  
+\]  
+\[
+s_{\text{sat}} = 0.9066 \, \frac{\text{kJ}}{\text{kg·K}}, \quad s(40) = 0.9374 \, \frac{\text{kJ}}{\text{kg·K}}.
+\]  
+
+The final enthalpy at state 3 is:  
+\[
+h_3 = 271.3 \, \frac{\text{kJ}}{\text{kg}}.
+\]

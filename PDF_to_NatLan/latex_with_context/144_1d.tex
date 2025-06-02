@@ -1,0 +1,39 @@
+The first law of thermodynamics for transient operation is written as:  
+\[
+\Delta E = \sum \dot{m}_i \left( h_i + \frac{v_i^2}{2} + g z_i \right) + \sum \dot{Q} - \sum \dot{m}_e \left( h_e + \frac{v_e^2}{2} + g z_e \right)
+\]  
+For the cooling process:  
+\[
+m_{12} u_2 = m_{12} u_{\text{in}} + Q_{12}
+\]  
+From water tables (Table A-2):  
+\[
+u_{\text{in}} = u_c \left( T_{\text{in}} \right) + x_D \left( u_g \left( T_{\text{in}} \right) - u_c \left( T_{\text{in}} \right) \right)
+\]  
+Substituting:  
+\[
+u_{\text{in}} = 429.388 \, \text{kJ/kg}, \quad u_2 = 252.95 \, \text{kJ/kg}
+\]  
+Thus:  
+\[
+m_{12} = \frac{Q_{12}}{u_{\text{in}} - u_2}
+\]
+
+Using \( h_{\text{in}} \) from Table A-2:  
+\[
+h_{\text{in}} = 83.896 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+The energy balance equation is written as:  
+\[
+m_{\text{gas},1} (u_2 - u_{\text{in}}) + \Delta m_{12} u_2 = \Delta m_{12} h_{\text{in}} + Q_{R}
+\]  
+Rearranging to solve for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = \frac{m_{\text{gas},1} (u_2 - u_{\text{in}}) - Q_{R}}{h_{\text{in}} - u_2}
+\]  
+Substituting values gives:  
+\[
+\Delta m_{12} = 3923.45 \, \text{kg}
+\]  
+
+---

@@ -1,0 +1,49 @@
+The diagram shows a rectangular reactor with inlet and outlet streams labeled. Heat flow \( \dot{Q}_{\text{out}} \) is depicted as leaving the reactor.
+
+From state 1 to state 2:
+\[
+\dot{Q}_{\text{out}} = Q_{R,12} = 35 \, \text{MJ}
+\]
+
+The energy balance equation is written as:
+\[
+\frac{dE}{dt} = \dot{m} \left( h_{\text{in}} - h_{\text{out}} \right) + \dot{Q}_R - \frac{v^2}{2}
+\]
+
+For the change in energy:
+\[
+\Delta E = \Delta m \left( h_{\text{in}} - h_{\text{out}} \right) + Q_{R,12}
+\]
+
+Substituting for internal energy:
+\[
+\Delta E = \Delta U = m_{\text{total}} \, U_2 - U_1
+\]
+
+The mass \( m_{\text{total}} \) at \( T = 100^\circ\text{C} \) is given as:
+\[
+m_{\text{total}} = \frac{Q_{R,12}}{h_{\text{in}} - h_{\text{out}}} = 4.155 \, \text{kg}
+\]
+
+For \( h_{\text{in}} \) and \( h_{\text{out}} \):
+\[
+h_{\text{in}} = h_f(70^\circ\text{C}) = 292.83 \, \text{kJ/kg}
+\]
+
+The internal energy \( U_2 \) is calculated as:
+\[
+U_2 = U_f(100^\circ\text{C}) + \left( U_g(100^\circ\text{C}) - U_f(100^\circ\text{C}) \right) \cdot 0.005
+\]
+\[
+U_2 = 429.3778 \, \text{kJ/kg}
+\]
+
+The change in internal energy is:
+\[
+\Delta U = -785.14 \, \text{kJ}
+\]
+
+Finally, the mass \( \Delta m_{12} \) is determined using:
+\[
+\Delta m_{12} = \frac{\Delta U - Q_{R,12}}{h_{\text{in}} - h_{\text{out}}}
+\]

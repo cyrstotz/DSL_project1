@@ -1,0 +1,35 @@
+The following calculations determine the mass-specific increase in flow exergy \( \Delta ex_{\text{flow}} \):
+
+Given values:  
+\( T_6 = 328.1 \, \text{K} \), \( T_0 = 243.15 \, \text{K} \)  
+\( w_6 = 507.2 \, \frac{\text{m}}{\text{s}} \), \( w_0 = 200 \, \frac{\text{m}}{\text{s}} \)  
+\( c_p = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \)
+
+The formula for \( \Delta ex_{\text{flow}} \) is:  
+\[
+\Delta ex_{\text{flow}} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]
+
+Breaking it down:  
+\[
+\Delta ex_{\text{flow}} = h_6 - h_0 - T_0 \left( s_6 - s_0 \right) + \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]  
+\[
+= c_p (T_6 - T_0) - T_0 \left( c_p \ln \frac{T_6}{T_0} \right) + \frac{w_6^2 - w_0^2}{2}
+\]  
+\[
+= c_p (T_6 - T_0) - T_0 \left( c_p \ln \frac{T_6}{T_0} \right) + \frac{w_6^2 - w_0^2}{2}
+\]
+
+Substituting values:  
+\[
+= 12.165 \, \frac{\text{kJ}}{\text{kg}} + 102625.8 \, \frac{\text{m}^2}{\text{s}^2} \cdot \frac{1}{2}
+\]  
+\[
+= 12.165 \, \frac{\text{kJ}}{\text{kg}} + 108.63 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+= 120.8 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+---

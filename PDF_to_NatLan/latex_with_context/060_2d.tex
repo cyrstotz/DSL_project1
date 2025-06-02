@@ -1,0 +1,41 @@
+The exergy destruction rate is expressed as:  
+
+\[
+\frac{d ex}{dt} = \sum \dot{ex}_{str} - \sum \dot{ex}_{Q,j} - \sum \left( w_{in}(t) \cdot p \cdot \frac{dV}{dt} \right)
+\]
+
+For the exergy flow rate:  
+
+\[
+\dot{ex}_{Q,j} = \int_a \left( 1 - \frac{T_0}{T_a} \right) SQ \quad \text{(cos 98 approximation)}
+\]
+
+The exergy flow rate is simplified as:  
+
+\[
+\frac{d ex}{dt} = \sum \dot{ex}_{str} + \sum \dot{ex}_{Q,j} - \dot{ex}_{vel}
+\]
+
+Where:  
+
+\[
+\dot{ex}_{vel} = 80.2 \, \text{kJ/s}
+\]
+
+Thus:  
+
+\[
+\dot{ex}_{out} + KE = 80.2 + \dot{ex}_{Q} - \dot{ex}_{vel}
+\]
+
+\[
+\dot{ex}_{out} = 80.2 + \dot{ex}_{Q} - \dot{ex}_{vel} - KE
+\]
+
+And kinetic energy is expressed as:  
+
+\[
+KE = \frac{w^2}{2}
+\]
+
+---

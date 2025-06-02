@@ -1,0 +1,56 @@
+| **State** | **p (bar)** | **T (K)** | **w (m/s)** | **Flow** |  
+|-----------|-------------|------------|-------------|----------|  
+| 1         |             |            |             | \( \dot{m}_{\text{in}} \) |  
+| 2         |             |            |             | \( \dot{m}_K \) |  
+| 3         | \( p_2 \)   |            |             | \( \dot{m}_K \) |  
+| 4         |             |            |             | \( \dot{m}_K \) |  
+|           |             |            |             | **Isentropic** |  
+| 5         | 0.5         | 431.9      | 220         | \( \dot{m}_{\text{in}} \) |  
+| 6         | 0.191       |            |             |            |  
+| 0         | 0.191       | 243.15     | 200         |            |  
+
+\( c_p = 1.006 \, \text{kJ/kg·K} \)  
+\( k = \frac{c_p}{c_v} = 1.4 \)  
+\( c_v = \frac{1.006 \, \text{kJ/kg·K}}{1.4} = 0.719 \, \text{kJ/kg·K} \)  
+
+\( R = c_p - c_v = 0.287 \, \text{kJ/kg·K} \)
+
+6 \( w_6^2 \)  
+
+5 → 6 isentropic  
+\( s_5 = s_6 \)  
+
+\( w_{rev} = - \int_1^2 v dp + \Delta ke \)  
+\( \Delta ke = \frac{w_6^2}{2} - \frac{w_5^2}{2} \)  
+
+Polytropic \( n \neq 1 \):  
+\( \int_1^2 v dp = \frac{n}{n-1} \int_1^2 p dv \)  
+
+\( - v \int_1^2 v dp = \frac{n}{n-1} \int_1^2 p dv \)  
+
+\( w_{rev} = \frac{w_{rev}}{\dot{m}} \)  
+
+\( \dot{m} \left( h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right) - w_{rev} = 0 \)  
+
+\( w_{rev} = \int_1^2 p dv = \frac{R (T_6 - T_5)}{1 - n} = \)  
+
+\( T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} = 431.9 \, \text{K} - \left( \frac{0.191 \, \text{bar}}{0.5 \, \text{bar}} \right)^{\frac{0.4}{1.4}} \)  
+
+= \( 328.1 \, \text{K} \)  
+
+\( \frac{0.287 \, \text{kJ/kgK} (328.1 \, \text{K} - 431.9 \, \text{K})}{1 - 1.4} = -79.5 \, \text{kW} \)  
+
+\( w_{rev} \dot{m} = w_{rev} \)  
+
+\( \dot{m} \left( h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right) - w_{rev} = 0 \)  
+
+\( \dot{m} c (T_5 - T_6) + \frac{w_5^2 - w_6^2}{2} - w_{rev} = 0 \)
+
+A graph is drawn with temperature (T) on the vertical axis and entropy (S) on the horizontal axis. The graph shows a qualitative T-s diagram with labeled points 1, 2, 3, and 4.  
+
+- Point 1 is at the lower left.  
+- Point 2 is slightly to the right and lower than point 3.  
+- Point 3 is higher on the graph and labeled as "isentrop."  
+- Point 4 is at the top of the graph, vertically above point 3.  
+
+The diagram includes curved lines connecting the points, representing thermodynamic processes. There are shaded regions between the curves.

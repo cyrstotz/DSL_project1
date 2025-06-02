@@ -1,0 +1,69 @@
+The problem involves calculating the heat transferred (\( Q_{12} \)) from the gas to the ice-water mixture between states 1 and 2. The following parameters are provided:  
+
+Initial temperature of the gas:  
+\[
+T_{g,1} = 773.15 \, \text{K}
+\]  
+Final temperature of the gas:  
+\[
+T_{g,2} = 273.15 \, \text{K}
+\]  
+Initial and final pressures:  
+\[
+p_1 = p_2 = 101{,}100 \, \text{Pa}
+\]  
+
+The energy balance equation is written as:  
+\[
+\frac{dE}{dt} = \sum \dot{m} \, \frac{du}{dt} + \Sigma \dot{Q} = \Sigma \dot{W}
+\]  
+
+Change in internal energy is expressed as:  
+\[
+\Delta u = Q - W
+\]  
+
+The Gibbs energy change is given by:  
+\[
+G_{12} = \Delta u + W_{12}
+\]  
+
+The work done (\( W_{12} \)) is calculated using the ideal gas law and the pressure-volume relationship:  
+\[
+pV = mRT
+\]  
+Final volume (\( V_2 \)) is computed as:  
+\[
+V_2 = \frac{mRT_2}{p_2} = \frac{0.2922 \, \text{kg} \cdot 0.16628 \, \frac{\text{kJ}}{\text{kg·K}} \cdot 273.15 \, \text{K}}{101{,}100 \, \text{Pa}} = 9.474 \cdot 10^{-5} \, \text{m}^3
+\]  
+
+The work done (\( W_{12} \)) is then calculated:  
+\[
+W_{12} = p \int_{V_1}^{V_2} dV = p(V_2 - V_1) = 101{,}100 \, \text{Pa} \cdot (9.474 \cdot 10^{-5} \, \text{m}^3 - 0.00314 \, \text{m}^3)
+\]  
+\[
+W_{12} = -426.64 \, \text{J}
+\]  
+
+The change in internal energy (\( \Delta u \)) is calculated using the specific heat capacity at constant volume (\( c_V \)):  
+\[
+\Delta u = c_V (T_2 - T_1) = 0.633 \, \frac{\text{kJ}}{\text{kg·K}} \cdot (273.15 \, \text{K} - 773.15 \, \text{K})
+\]  
+\[
+\Delta u = -319.5 \, \text{J}
+\]  
+
+The heat transferred (\( Q_{12} \)) is determined using the relationship:  
+\[
+Q_{12} = \Delta u - W_{12}
+\]  
+\[
+Q_{12} = -319.5 \, \text{J} - (-426.64 \, \text{J}) = -743.14 \, \text{J}
+\]  
+
+A small sketch is included, showing a cylinder with a piston labeled \( w \), and the gas volume \( V_g \) below the piston.  
+
+Final result:  
+\[
+Q_{12} = -743.14 \, \text{J}
+\]

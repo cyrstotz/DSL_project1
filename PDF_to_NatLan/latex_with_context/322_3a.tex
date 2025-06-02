@@ -1,0 +1,32 @@
+Determine the pressure \( p_{g,1} \) and mass \( m_g \) of the gas in the cylinder in state 1.
+
+The pressure \( p_{g,1} \) is calculated as the sum of atmospheric pressure \( p_{\text{amb}} \), the pressure exerted by the piston \( p_{\text{piston}} \), and the equilibrium pressure of the ice-water mixture \( p_{\text{EW}} \):  
+\[
+p_{g,1} = p_{\text{amb}} + \frac{m_K \cdot g}{A} + p_{\text{EW}}
+\]  
+The cross-sectional area of the cylinder is calculated as:  
+\[
+A = \pi r^2 = \pi \cdot (0.05 \, \text{m})^2 = 0.00785 \, \text{m}^2
+\]  
+Substituting values:  
+\[
+p_{g,1} = 10^5 \, \text{Pa} + \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{0.00785 \, \text{m}^2} + 121.4 \, \text{Pa}
+\]  
+\[
+p_{g,1} = 10^5 \, \text{Pa} + 39,869.4 \, \text{Pa} + 121.4 \, \text{Pa} \approx 1.4 \cdot 10^5 \, \text{Pa}
+\]  
+
+The mass \( m_g \) of the gas is calculated using the ideal gas law:  
+\[
+p V = m R T \quad \Rightarrow \quad m_g = \frac{p V}{R T}
+\]  
+Substituting values:  
+\[
+R = \frac{R_u}{M} = \frac{8.314 \, \text{J/(mol·K)}}{50 \, \text{kg/kmol}} = 0.16628 \, \text{J/(kg·K)}
+\]  
+\[
+m_g = \frac{1.4 \cdot 10^5 \, \text{Pa} \cdot 3.14 \cdot 10^{-3} \, \text{m}^3}{0.16628 \, \text{J/(kg·K)} \cdot 773.15 \, \text{K}}
+\]  
+\[
+m_g = 0.0342 \, \text{kg}
+\]

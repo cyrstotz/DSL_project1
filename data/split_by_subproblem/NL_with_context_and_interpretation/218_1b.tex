@@ -1,0 +1,36 @@
+Determine \( T_{KF} \):  
+
+\( \bar{T}_{KF} = \int_{s_a}^{s_e} T \, ds / (s_a - s_e) \)  
+
+From the first law of thermodynamics:  
+\( \bar{T}_{KF} = (h_a - h_e) / (s_a - s_e) \)  
+
+For ideal liquid:  
+\( h_a - h_e = c_{KF} (T_2 - T_1) \)  
+\( s_a - s_e = c_{KF} \cdot \ln(T_2 / T_1) \)  
+
+Substituting:  
+\( \bar{T}_{KF} = \frac{c_{KF} (T_2 - T_1)}{c_{KF} \ln(T_2 / T_1)} \)  
+\( \bar{T}_{KF} = \frac{(288.15 \, \text{K} - 298.15 \, \text{K})}{\ln(298.15 / 288.15)} \)  
+\( \bar{T}_{KF} = 293.12 \, \text{K} \)
+
+State 1: \( 5755 \, \text{kg} / 0.005 / 100^\circ \text{C} \)  
+State 2: \( 70^\circ \text{C} / x = 0 \)  
+\( \Delta m_{12} = 20 \, \text{kg} / x = 0 \)  
+\( Q_{aus,12} = 35 \, \text{MJ} \)  
+
+Half-open system:  
+\( \Delta E = m_2 u_2 - m_1 u_1 = \Delta m_i h_i + Q_{j} - \dot{W} \)  
+
+\( m_2 = m + \Delta m \)  
+\( u_2 = U(70^\circ \text{C}, x = 0) = 292.45 \, \text{kJ/kg} \, [\text{TAB A2}] \)  
+\( m_1 = 5755 \, \text{kg} \)  
+\( u_1 = U(100^\circ \text{C}, x = 0.005) = h_f + x \cdot (h_g - h_f) \)  
+\( = 418.94 \, \text{kJ/kg} + 0.005 \cdot (2586.5 - 418.94) \)  
+\( = 429.377 \, \text{kJ/kg} \, [\text{TAB A2}] \)  
+
+\( h_i = h(20^\circ \text{C}, x = 0) = h_f = 83.36 \, \text{kJ/kg} \)  
+
+\( \sum \dot{Q}_j = Q_{R,12} - Q_{aus,12} = 0 \)  
+
+[next page]

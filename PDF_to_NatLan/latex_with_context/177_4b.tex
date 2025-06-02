@@ -1,0 +1,35 @@
+The refrigerant mass flow rate \( \dot{m}_{\text{R134a}} \) is calculated using the first law of thermodynamics applied to the compressor between states 2 and 3:  
+\[
+0 = \dot{m}_{\text{R134a}} (h_2 - h_3) + \dot{W}_K
+\]  
+Here, \( h_2 \) is the enthalpy at state 2, and \( h_3 \) is the enthalpy at state 3.  
+
+Given:  
+\[
+h_2 = h_g(-22^\circ\text{C}) = 237.08 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+At state 3, entropy is conserved (\( s_2 = s_3 \)):  
+\[
+s_2 = s_g(-22^\circ\text{C}) = 0.9351 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+s_3 = 0.9351 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Using the entropy relation for \( h_3 \):  
+\[
+h_3(p_{\text{bar}}, s_3) = 0.9351 \, \frac{\text{kJ}}{\text{kg·K}} = 269.15 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_3 = 264.18 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Substituting into the first law equation:  
+\[
+\dot{m}_{\text{R134a}} = \frac{-\dot{W}_K}{h_2 - h_3} = \frac{-0.028 \, \text{kW}}{234.08 \, \frac{\text{kJ}}{\text{kg}} - 269.18 \, \frac{\text{kJ}}{\text{kg}}}
+\]  
+\[
+\dot{m}_{\text{R134a}} = 3.349 \, \frac{\text{kg}}{\text{h}}
+\]  
+
+---

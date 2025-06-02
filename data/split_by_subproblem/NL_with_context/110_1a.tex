@@ -1,0 +1,40 @@
+Determine \( \dot{Q}_{aus} \):  
+
+\( dE/dt = \sum \text{Einheit} \cdot T_{KF} \cdot \dot{Q} = \dot{E}_{in} \) (no change in volume).  
+
+Steady-state:  
+\( 0 = \sum \dot{m}_{in} \cdot h_{in} + \dot{Q}_{R} \).  
+
+\( 0 = \dot{m}_{in} \cdot (h_{out} - h_{in}) + \dot{Q}_{aus} + \dot{Q}_{R} \).  
+
+\( \dot{m}_{in} \cdot (h_{aus} - h_{ein}) = \dot{Q}_{aus} + \dot{Q}_{R} \) (constant mass).  
+
+\( \dot{Q}_{aus} = \int_{T_{2}}^{T_{1}} c_{p} \cdot dT + \dot{m} \cdot (\p_{p} - \p_{pt}) = \dot{Q}_{aus} \).  
+
+Saturated liquid (water):  
+\( T_{ein} = 70^\circ \text{C} \rightarrow \text{Table A-2} \rightarrow p_{A} = 0.3119 \, \text{bar}, h_{f} = 292.98 \, \text{kJ/kg}, h_{g} = 2,626.8 \, \text{kJ/kg} \).  
+
+\( T_{aus} = 100^\circ \text{C} \rightarrow \text{Table A-2} \rightarrow p_{A} = 1.0149 \, \text{bar}, h_{f} = 419.04 \, \text{kJ/kg}, h_{g} = 2,676.1 \, \text{kJ/kg} \).  
+
+The complete system:  
+\( dE/dt = \sum \text{Einheit} \cdot \sum Q \).  
+
+\( 0 = \dot{m}_{ein} \cdot (h_{aus} - h_{ein}) \cdot \dot{m}_{in} \).  
+
+Only reactor:  
+\( \dot{m}_{ein} \cdot (h_{aus} - h_{ein}) = \dot{Q}_{aus} - \dot{Q}_{R} \).  
+
+\( x = 0.005 \).  
+
+\( h_{ein} = h_{f} + x \cdot (h_{g} - h_{f}) = 292.98 + 0.005 \cdot (2,626.8 - 292.98) = 304.645 \, \text{kJ/kg} \).  
+
+\( h_{aus} = h_{f} + x \cdot (h_{g} - h_{f}) = 419.04 + 0.005 \cdot (2,676.1 - 419.04) = 430.525 \, \text{kJ/kg} \).  
+
+\( 0.3 \, \text{kg/s} \cdot (430.525 - 304.645) - 100 \, \text{kW} = \dot{Q}_{aus} \).  
+
+\( -62.23714 = \dot{Q}_{aus} \).  
+
+\( 62.237 \, \text{kW} = \dot{Q}_{aus} \).  
+
+Diagram:  
+A circular diagram is drawn with arrows labeled \( Q > 0 \) and \( Q < 0 \).

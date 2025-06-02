@@ -1,0 +1,22 @@
+The energy balance around the reactor is expressed as:  
+\[
+\frac{dE}{dt} = \sum \dot{m} (h + \frac{pe}{\rho}) + \sum \dot{Q} - \sum \dot{W} = 0
+\]  
+Under steady-state conditions:  
+\[
+\dot{m} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R - \dot{Q}_{\text{out}} = 0
+\]  
+Rearranging for the heat flow removed by the coolant:  
+\[
+\dot{Q}_{\text{out}} = \dot{Q}_R - \dot{m} (h_{\text{in}} - h_{\text{out}})
+\]  
+Given values:  
+\[
+\dot{Q}_R = 100 \, \text{kW}, \quad h_{\text{in}} = h(70^\circ\text{C}) = 292.88 \, \frac{\text{kJ}}{\text{kg}}, \quad h_{\text{out}} = h(100^\circ\text{C}) = 418.04 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Substituting:  
+\[
+\dot{Q}_{\text{out}} = 100 \, \text{kW} - 0.3 \, \text{kg/s} \cdot (292.88 - 418.04) \, \frac{\text{kJ}}{\text{kg}} = 62.182 \, \text{kW}
+\]  
+
+---

@@ -1,0 +1,78 @@
+
+``````latex
+
+
+a)
+
+\begin{description}
+    \item[Graph Description:] The graph is a plot with the vertical axis labeled \( T \, [K] \) and the horizontal axis labeled \( S \, \left[ \frac{kJ}{kg \cdot K} \right] \). The vertical axis has tick marks at 243.15, 322.08, 431.9, and 1289. The horizontal axis has tick marks at 0, 1, 2, and 3. There are two curves on the graph. The first curve starts at the origin (0,0), goes through the point labeled 1, and then curves upwards to the right, passing through the point labeled 2. The second curve starts at the point labeled 3, goes upwards to the right, passing through the point labeled 4, and then curves downwards to the right, passing through the points labeled 5 and 6. The point labeled 4 is marked with \( P = P_2 \) and the point labeled 6 is marked with \( P = P_0 \).
+\end{description}
+
+c)
+
+\[
+\dot{E}_{\text{ex}} = \dot{m} \left[ h_e - h_a - T_0 (s_e - s_a) \right]
+\]
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+\begin{itemize}
+    \item 0-1 adiabate Verdichtung \hfill $p = 0{,}191 \, \text{bar}$
+    \item 1-2 adiabate-reversible Verdichtung \hfill isentrope
+    \item 2-3 isobare Wärmezufuhr
+    \item 3-4 adiabate-irreversible Turbine \hfill entropie erzeugung
+    \item 4-5 isobare Mischkammer \hfill $p = 0{,}5 \, \text{bar}$
+    \item 5-6 reversible-adiabate Düse \hfill $p = 0{,}191 \, \text{bar}$ \hfill isentrope
+\end{itemize}
+
+\subsection*{b)}
+\begin{align*}
+    1^{\text{HS}} \, \text{am} \, \text{Düse} \\
+    0 &= \dot{m} \left[ h_e - h_a + \frac{(w_e^2 - w_a^2)}{2} \right] \\
+    0 &= h_s - h_6 + \frac{w_s^2 - w_6^2}{2} \\
+    &\Rightarrow h_s - h_6 = c_p (T_s - T_6)
+\end{align*}
+
+\subsection*{Graph Description}
+The graph is a Temperature-Entropy (T-s) diagram. The x-axis is labeled $s \left[ \frac{kJ}{kgK} \right]$ and the y-axis is labeled $T \, [K]$. The y-axis has the following values marked: 1284.6, 1231.0, and 243.15. 
+
+There are several curves and lines drawn on the graph:
+- A red line labeled "isobare" runs vertically.
+- The process path is marked with points labeled 0, 1, 2, 3, 4, 5, and 6.
+- The path from 0 to 1 is a steep curve upwards.
+- The path from 1 to 2 is a vertical line upwards.
+- The path from 2 to 3 is a horizontal line to the right.
+- The path from 3 to 4 is a steep curve downwards.
+- The path from 4 to 5 is a horizontal line to the right.
+- The path from 5 to 6 is a vertical line downwards.
+
+The graph is annotated with the words "Auf anderen seite" on the right side.
+
+``````latex
+
+
+\begin{align*}
+s_s - s_6 \frac{1}{\dot{0}} &= c_p \int_{T_6}^{T_s} \frac{1}{T} dT - R \ln \left( \frac{p_s}{p_6} \right) \\
+0 &= 1.006 \frac{kJ}{kgK} \cancelto{0} - R \ln \left( \frac{p_s}{p_6} \right) \\
+R &= c_p - \frac{c_p}{n} = 0.2874 \frac{kJ}{kgK} \\
+p_s &= 0.5 \text{ bar} \quad p_6 = 0.191 \text{ bar} \\
+0.276575 \frac{kJ}{kgK} &= 1.006 \frac{kJ}{kgK} \ln \left( \frac{431.9 K}{T_6} \right) \\
+0.274925 &= \ln \left( \frac{431.9 K}{T_6} \right) \\
+1.316433 &= \frac{431.9 K}{T_6} \\
+\Rightarrow T_6 &= 328.08 K \\
+\Rightarrow h_s - h_6 &= c_p (T_s - T_6) \\
+&= 1.006 \frac{kJ}{kgK} (431.9 K - 328.08 K) \\
+&= 104.44 \frac{kJ}{kg} \\
+-104.44 \frac{kJ}{kg} &= \frac{w_s^2}{2} - \frac{w_6^2}{2} \\
+w_6^2 &= 2 \left( \frac{w_s^2}{2} + 104.44 \frac{kJ}{kg} \right) \\
+&= 48608.88 \\
+\Rightarrow w_6 &= 220.47 \frac{m}{s}
+\end{align*}
+
+``````latex
+
+

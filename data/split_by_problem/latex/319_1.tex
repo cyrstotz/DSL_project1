@@ -1,0 +1,129 @@
+
+``````latex
+
+
+\section*{Problem 7}
+
+\subsection*{a)}
+
+\[
+\frac{d}{dt} \left( \sum \dot{m}_i h_i + \frac{\dot{m}_i v_i^2}{2} + \dot{m}_i g z_i \right) + \sum \dot{Q} + \sum \dot{W} = 0
+\]
+
+\[
+0 = \dot{m} (h_{\text{ein}} - h_{\text{aus}}) + \dot{Q}_R - \dot{Q}_{\text{aus}}
+\]
+
+\[
+h_{\text{ein}} = h_f (T = 70^\circ C) = 232.58 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_{\text{aus}} = h_f (100^\circ C = T) = 419.04 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\dot{Q}_{\text{aus}} = 62.182 \, \text{kW}
+\]
+
+\subsection*{b)}
+
+\[
+\bar{T}_{\text{KF}} = \frac{\int_{s_a}^{s_e} T \, ds}{s_a - s_e} = \frac{q_{\text{REV}}}{s_a - s_e} = \frac{(h_{\text{KF,ein}} + h_{\text{KF,aus}})}{s_a - s_e}
+\]
+
+\[
+\text{aus Stoffmodell}
+\]
+
+\[
+= \frac{s_{d} (T_2 - T_1) + v_d (p_2 - p_1)}{c_{p,d} \ln \left( \frac{T_2}{T_1} \right)}, \quad \text{so, da isobare}
+\]
+
+\[
+T_2 = T_{\text{KF,aus}}, \quad T_1 = T_{\text{KF,ein}}
+\]
+
+\[
+\bar{T}_{\text{KF}} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)} = 293.122 \, \text{K}
+\]
+
+\subsection*{c)}
+
+\[
+\frac{dS_{\text{ges}}}{dt} = \sum \dot{m}_i s_i + \frac{\dot{Q}_i}{T_i} + \dot{S}_{\text{ere}}
+\]
+
+\[
+0 = \frac{\dot{Q}_{\text{aus}}}{T_{\text{KF}}} + \frac{\dot{Q}_{\text{aus}}}{T_R} + \dot{S}_{\text{ere}}
+\]
+
+\[
+\dot{S}_{\text{ere}} = \dot{Q}_{\text{aus}} \left( \frac{1}{T_{\text{KF}}} - \frac{1}{T_{\text{Reaktor}}} \right) = 0.0455 \, \frac{\text{kJ}}{\text{K}}
+\]
+
+``````latex
+
+
+\section*{d)}
+
+\begin{equation*}
+\frac{dE^{\text{ab}}}{dt} = \sum \dot{m}_i \cdot i - \sum \dot{Q} - \sum \dot{\omega}^{\text{ab}}
+\end{equation*}
+
+\begin{equation*}
+\Delta U = \dot{m} (h_{\text{ein},12} - h_{\text{aus},12}) - \dot{Q}_{R,12}
+\end{equation*}
+
+\begin{equation*}
+m_{\text{tot},12} - m_{u,12} = \dot{m} \cdot t_{\text{ein},12} - \dot{Q}_{R,12}
+\end{equation*}
+
+\begin{equation*}
+(\dot{m} \cdot u_2 - m_{u,12}) = \dot{m} \cdot h_{\text{ein},12} - \dot{Q}_{R,12}
+\end{equation*}
+
+\begin{equation*}
+\dot{m} \cdot u_2 - \dot{m} \cdot h_{\text{ein},12} = - \dot{Q}_{R,12} + m_{u,12} \cdot u_2 - m_{u,12}
+\end{equation*}
+
+\begin{equation*}
+\dot{m} (u_2 - h_{\text{ein},12}) = \dot{Q}_{R,12} + m_{u,12} \cdot u_2 - m_{u,12}
+\end{equation*}
+
+\begin{equation*}
+\boxed{\dot{m} = 3301.94 \, \text{kg}}
+\end{equation*}
+
+\section*{e)}
+
+\begin{equation*}
+\frac{dS}{dt} = \sum \dot{m}_i \cdot s_i + \frac{\dot{Q}_i}{T} + \dot{S}_{\text{gen}}
+\end{equation*}
+
+\begin{equation*}
+\Delta S = \frac{\dot{Q}_{\text{gen}}}{T} + \dot{S}_{\text{gen}}
+\end{equation*}
+
+\begin{equation*}
+\Delta S_{12} = m_{\text{tot}} \cdot s_2 - m_u \cdot s_1
+\end{equation*}
+
+\begin{equation*}
+= \boxed{1127.26 \, \frac{\text{kJ}}{\text{K}}}
+\end{equation*}
+
+\section*{Notes}
+
+\begin{itemize}
+    \item $m_u = 5775 \, \text{kg}$
+    \item $u_2 = u_f (70^\circ \text{C}) = 232.55 \, \frac{\text{kJ}}{\text{kg}}$
+    \item $u_1 = u_f (100^\circ \text{C}) = 448.94 \, \frac{\text{kJ}}{\text{kg}}$
+    \item $h_{\text{ein},12} = h_f (20^\circ \text{C}) = 83.96 \, \frac{\text{kJ}}{\text{kg}}$
+    \item $s_2 = 0.3549 = s_f (70^\circ \text{C}) \, \left[ \frac{\text{kJ}}{\text{kg} \cdot \text{K}} \right]$
+    \item $s_1 = 1.3069 = s_f (100^\circ \text{C}) \, \left[ \frac{\text{kJ}}{\text{kg} \cdot \text{K}} \right]$
+\end{itemize}
+
+``````latex
+
+

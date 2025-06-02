@@ -1,0 +1,57 @@
+The problem involves determining the outlet velocity (\( w_6 \)) and temperature (\( T_6 \)) for the jet engine system.  
+
+The energy balance for the system is expressed as:  
+\[
+0 = \dot{m} \left( h_e - h_q + \frac{w_e^2 - w_q^2}{2} \right) + \dot{Q} - \dot{W}
+\]  
+Simplified:  
+\[
+0 = h_e - h_q + \frac{w_e^2 - w_q^2}{2}
+\]  
+Rewritten:  
+\[
+0 = h_0 - h_6 + \frac{w_0^2}{2} - \frac{w_6^2}{2}
+\]  
+Solving for \( w_6^2 \):  
+\[
+w_6^2 = 2 \left( h_0 - h_6 \right) + w_0^2
+\]  
+Using \( h_0 - h_6 = 2 \cdot c_p \cdot (T_1 - T_6) \):  
+\[
+w_6^2 = 2 \cdot c_p \cdot (T_1 - T_6) + w_0^2
+\]  
+
+The state \( S_6 \) is isentropic, with the following conditions:  
+\[
+p_5 = 0.5 \, \text{bar}, \quad p_6 = 0.191 \, \text{bar}, \quad T_5 = 431.9 \, \text{K}
+\]  
+
+The temperature ratio for isentropic conditions is given by:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_c}{p_5} \right)^{\frac{n-1}{n}}
+\]  
+Where \( n = 1.4 \).  
+
+Substituting values:  
+\[
+T_6 = T_5 \cdot \left( \frac{p_c}{p_5} \right)^{\frac{n-1}{n}}
+\]  
+\[
+T_6 = 431.9 \, \text{K} \cdot \left( \frac{0.191}{0.5} \right)^{\frac{1.4 - 1}{1.4}}
+\]  
+\[
+T_6 = 431.9 \, \text{K} \cdot 0.414 = 328.07 \, \text{K}
+\]  
+
+The outlet velocity (\( w_6 \)) is calculated as:  
+\[
+w_6 = \sqrt{2 \cdot 1.006 \cdot \left( (-30 + 273.15) \, \text{K} - 328.07 \, \text{K} \right) + 200^2}
+\]  
+\[
+w_6 = 193.5 \, \text{m/s}
+\]  
+
+Final results:  
+\[
+T_6 = 328.07 \, \text{K}, \quad w_6 = 193.5 \, \text{m/s}
+\]

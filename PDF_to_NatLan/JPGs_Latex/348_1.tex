@@ -1,0 +1,53 @@
+TASK 1d  
+The problem involves determining the mass \( \Delta m_{12} \) of saturated liquid water added to the reactor during cooling from \( T_1 = 100^\circ\text{C} \) to \( T_2 = 70^\circ\text{C} \). The energy balance is applied to the system.
+
+The energy equation is written as:  
+\[
+\Delta E = m_2 U_2 - m_1 U_1 = \Delta m_{12} h_e + Q_{12} - E_{\text{loss}}
+\]  
+where \( m_2 = m_1 + \Delta m_{12} \), and \( \Delta m_{12} = m_{\text{added}} \).  
+
+The reactor mass is given as \( m_1 = 5755 \, \text{kg} \), and the reactor temperature is \( T_1 = 100^\circ\text{C} \) with steam quality \( x_D = 0.005 \). The heat released during cooling is \( Q_{12} = 35 \, \text{MJ} \).  
+
+For the enthalpy of the added water:  
+\[
+h_e = h_f(T_{\text{in,12}}) = h_f(20^\circ\text{C}) = 83.96 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+(using water tables).  
+
+The internal energy at state 2 is:  
+\[
+U_2 = U_f(T_2) = U_f(70^\circ\text{C}) = 252.55 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The energy balance simplifies to:  
+\[
+m_1 U_2 - m_1 U_1 = \Delta m_{12} h_e + Q_{12}
+\]  
+Rearranging:  
+\[
+\Delta m_{12} = \frac{Q_{12} + m_1 (U_2 - U_1)}{h_e - U_2}
+\]  
+
+Substituting values:  
+\[
+\Delta m_{12} = \frac{35 \, \text{MJ} + 5755 \, \text{kg} \cdot (252.55 - U_1)}{h_e - U_2}
+\]  
+where \( U_1 \) is calculated using the steam quality \( x_D \):  
+\[
+U_1 = U_f(T_1) + x_D \cdot h_{fg}(T_1)
+\]  
+From water tables:  
+\[
+U_1 = 425.38 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Finally:  
+\[
+\Delta m_{12} = \frac{35 \, \text{MJ} + 5755 \cdot (252.55 - 425.38)}{83.96 - 252.55}
+\]  
+\[
+\Delta m_{12} = 3589.4 \, \text{kg}
+\]  
+
+This calculation determines the mass of saturated liquid water added to the reactor during cooling.

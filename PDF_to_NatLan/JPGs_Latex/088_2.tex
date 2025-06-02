@@ -1,0 +1,90 @@
+TASK 2a  
+The diagram represents a qualitative \( T \)-\( s \) diagram for the jet engine process. It includes labeled isobars and key states:  
+- State 0 represents the ambient condition.  
+- State 1 is the inlet to the compressor.  
+- State 2 is the outlet of the compressor.  
+- State 3 is the combustion chamber outlet.  
+- State 4 is the turbine outlet.  
+- State 5 is the mixing chamber outlet.  
+- State 6 is the nozzle exit.  
+
+The process transitions are marked as follows:  
+- The compression from state 0 to state 2 is labeled as "isentropic."  
+- The combustion process from state 2 to state 3 is labeled as "isobaric \( p = 0.191 \, \text{bar} \)."  
+- The expansion from state 3 to state 5 is labeled as "adiabatic reversible."  
+
+The axes are labeled:  
+- The vertical axis is \( T \) (temperature).  
+- The horizontal axis is \( s \) (specific entropy), with units \( \frac{\text{kJ}}{\text{kg·K}} \).  
+
+---
+
+TASK 2b  
+The energy balance for the entire jet engine is written as:  
+\[
+\dot{S}_{\text{FP}} = 0  
+\]  
+\[
+\frac{dE}{dt} = \sum (\dot{m} h + \dot{m} \frac{w^2}{2}) + \dot{Q} - \sum (\dot{m} h + \dot{m} \frac{w^2}{2}) - \dot{W} = 0  
+\]  
+
+Simplifying for steady-state operation:  
+\[
+\dot{m} \left( h_0 + \frac{w_0^2}{2} \right) = \dot{m} \left( h_6 + \frac{w_6^2}{2} \right) + \dot{Q}  
+\]  
+
+Rearranging:  
+\[
+h_0 - h_6 + \frac{w_0^2}{2} - \frac{w_6^2}{2} + \dot{q} = 0  
+\]  
+
+The outlet velocity \( w_6 \) is calculated as:  
+\[
+w_6 = \sqrt{2 c_p (T_0 - T_6) + \frac{w_0^2}{2} + \dot{q}}  
+\]  
+Substituting values:  
+\[
+w_6 = 1503 \, \text{m/s}  
+\]  
+
+Additional notes:  
+- The process from state 5 to state 6 is labeled as "adiabatic reversible," meaning it is isentropic (\( \eta = \kappa \)).  
+- The temperature ratio is calculated as:  
+\[
+\frac{T_c}{T_s} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}  
+\]  
+
+Given values:  
+\[
+T_0 = 328.14 \, \text{K}, \quad T_6 = 50.55^\circ \text{C}  
+\]  
+
+---
+
+TASK 2c  
+The mass-specific increase in flow exergy is calculated as:  
+\[
+\Delta ex_{\text{flow}} = \dot{m} \left( h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2} - \frac{w_0^2}{2} \right)  
+\]  
+
+Substituting values:  
+\[
+\Delta ex_{\text{flow}} = \dot{m} \left( h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2} - \frac{w_0^2}{2} \right)  
+\]  
+
+Entropy difference is expressed as:  
+\[
+s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right)  
+\]  
+
+Substituting into the exergy destruction formula:  
+\[
+\Delta ex_{\text{dest}} = c_p (T_0 - T_6) - T_0 c_p \ln \left( \frac{T_0}{T_6} \right) + \frac{w_6^2}{2} - R \ln \left( \frac{p_6}{p_0} \right)  
+\]  
+
+Final result:  
+\[
+\Delta ex_{\text{dest}} = 122.2 \, \frac{\text{kJ}}{\text{kg}}  
+\]  
+
+Note: The calculation assumes \( T_0 = 328.14 \, \text{K} \) and \( T_6 = 50.55^\circ \text{C} \).

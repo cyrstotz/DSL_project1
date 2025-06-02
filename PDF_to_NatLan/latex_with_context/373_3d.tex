@@ -1,0 +1,51 @@
+The task begins with the given temperature:  
+\[
+T_2 = 0^\circ \text{C}
+\]
+
+The energy balance for the ice-water mixture is written as:  
+\[
+\Delta U_{12,\text{EW}} = Q - W = (7.36 \, \text{kJ} - 0.2852 \, \text{kJ}) = 7.052 \, \text{kJ}
+\]
+
+The change in internal energy is expressed as:  
+\[
+\Delta U_{12} = m_{\text{EW}} \cdot (u_2 - u_1)
+\]
+
+The specific internal energy values are calculated as:  
+\[
+u_2 = x_2 \cdot u_f(0^\circ \text{C}) + (1 - x_2) \cdot u_i(0^\circ \text{C})
+\]  
+\[
+u_1 = u_f(0^\circ \text{C}) \cdot (1 - x_1) + u_i(0^\circ \text{C}) \cdot x_1
+\]  
+where \( x_1 = 0.6 \).
+
+The mass-specific internal energy change is given by:  
+\[
+m_{\text{EW}} \cdot (u_2 - u_1) = x_2 \cdot (u_f(T_2) - u_i(T_2)) + u_i(T_2) - u_f(T_2)
+\]  
+\[
+\Delta U_{12} = m_{\text{EW}} \cdot (u_2 - u_1)
+\]
+
+The final ice fraction \( x_2 \) is derived as:  
+\[
+x_2 = \frac{\Delta U_{12} + u_i(T_2) - u_f(T_2)}{u_f(T_2) - u_i(T_2)}
+\]
+
+Substituting values:  
+\[
+x_2 = \frac{7.052 \, \text{kJ} + (-0.085 \, \text{kJ/kg})}{0.1 \, \text{kg} \cdot \left[ (-333.552 \, \text{kJ/kg}) \cdot 0.6 - (-0.053 \, \text{kJ/kg}) \right]}
+\]
+
+Simplifying:  
+\[
+x_2 = \frac{7.052 + (-0.085)}{-333.552 \cdot 0.6 - (-0.053)}
+\]
+
+Final result:  
+\[
+x_2 = 0.575
+\]

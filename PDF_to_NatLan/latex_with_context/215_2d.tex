@@ -1,0 +1,25 @@
+The exergy destruction is calculated using the formula:  
+\[
+ex_{\text{dest}} = -\Delta ex_{\text{str}} + \left(1 - \frac{T_0}{\bar{T}}\right) \cdot \frac{\dot{Q}_B}{\dot{m}_K}
+\]  
+where \( T_0 = 243.15 \, \text{K} \), \( \bar{T} = 1289 \, \text{K} \), \( \dot{Q}_B = 1195 \, \text{kJ/kg} \), and \( \frac{\dot{m}_M}{\dot{m}_K} = 5.293 \).  
+
+The heat transfer term is adjusted for the bypass ratio:  
+\[
+\frac{\dot{Q}_B}{\dot{m}_K} \cdot \frac{1}{1 + 5.293} = \frac{1195}{1 + 5.293} = 154.07 \, \text{kJ/kg}
+\]  
+
+Substituting into the formula:  
+\[
+ex_{\text{dest}} = -229.455 + \left(1 - \frac{243.15}{1289}\right) \cdot 154.07
+\]  
+\[
+ex_{\text{dest}} = -229.455 + 0.811 \cdot 154.07 = 54.073 \, \text{kJ/kg}
+\]  
+
+A note is included: "Attention, only the heat \( q \) is transferred."  
+
+Final result:  
+\[
+ex_{\text{dest}} = 54.073 \, \text{kJ/kg}
+\]

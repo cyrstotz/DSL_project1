@@ -1,0 +1,149 @@
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+\subsection*{a) E\underline{ } Reaktor}
+
+St. FP.:
+
+\[
+0 = \dot{m} \left[ h_{\text{ein}} - h_{\text{aus}} - \frac{v^2_{\text{ein}}}{2} + \frac{v^2_{\text{aus}}}{2} \right] + \dot{Q}_R + \dot{Q}_{\text{aus}}
+\]
+
+\[
+\sum \dot{m} = 0
+\]
+
+\[
+\dot{m}_{\text{ein}} = \dot{m}_{\text{aus}}
+\]
+
+\noindent
+$h_{\text{ein}}$ und $h_{\text{aus}}$ von Tab A 2
+
+\[
+h_{\text{ein}} = h_f(70^\circ C) = 292.98 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_{\text{aus}} = h_f(100^\circ C) = 419.01 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\dot{Q}_{\text{aus}} = \dot{m} \left( h_{\text{ein}} - h_{\text{aus}} \right) + \dot{Q}_R
+\]
+
+\[
+= 0.3 \frac{\text{kg}}{\text{s}} \left( 292.98 \frac{\text{kJ}}{\text{kg}} - 419.01 \frac{\text{kJ}}{\text{kg}} \right) + 100 \text{kW}
+\]
+
+\[
+= 61.7 \text{kW}
+\]
+
+``````latex
+
+\section*{Student Solution}
+
+\subsection*{b)}
+\[
+\overline{T} = \frac{\int_{e}^{a} T \, ds}{S_a - S_e}
+\]
+
+\subsection*{Stoffmodell ideale Flüssigkeit:}
+\[
+S(T_d) - S(T_e) = \int_{T_e}^{T_d} c_{if} \frac{dT}{T} - c_{if} \ln \left( \frac{T_d}{T_e} \right)
+\]
+
+\[
+\int_{e}^{a} T \, ds = \int_{T_e}^{T_a} c_{if} \, dT
+\]
+
+\subsection*{c)}
+\[
+T_a = T_e \exp \left( \frac{S_a - S_e}{c_{if}} \right) = 291.63 \, K
+\]
+
+\subsection*{Entropiebilanz st. HP.}
+\[
+0 = \dot{m}_{in} S_{ein} - \dot{m}_{out} S_{eout} + \dot{Q}_{res} \frac{1}{T_{KF}}
+\]
+
+\[
+\dot{Q}_{res} + \dot{S}_{res} = 0
+\]
+
+\[
+S_{ein} = 0.954 \, \frac{kJ}{kg \cdot K}
+\]
+
+\[
+S_{aus} = 1.3069 \, \frac{kJ}{kg \cdot K}
+\]
+
+\[
+\dot{S}_{res} = \left( S_{aus} - S_{ein} \right) \dot{m}_{in} - \frac{\dot{Q}_{res}}{T_{KF}}
+\]
+
+\[
+= -0.498 \, \frac{kW}{K}
+\]
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+\subsection*{a)}
+Energiebilanz der offenen Systems:
+\[
+\dot{m}_2 h_2 - \dot{m}_1 h_1 + \sum \dot{Q}_i - \sum \dot{W}_i = \frac{d}{dt} \left[ \sum \left( \text{KE} + \text{PE} \right) \right] = 0
+\]
+\[
+- \dot{Q} \sum \left( \dot{m}_i h_i + \text{KE} + \text{PE} \right) + \sum \left( \dot{Q}_i \right) - \sum \left( \dot{W}_i \right)
+\]
+\[
+\dot{m}_2 = \dot{m}_1 + \dot{m}
+\]
+\[
+(\dot{m} + \dot{m}_1) h_2 - \dot{m}_1 h_1 = 0 \implies \dot{m} = 0
+\]
+\[
+h_2 = h_1 + \frac{c_p (T_2 - T_1)}{100}
+\]
+\[
+h_2 = h_1 + \sqrt{c_p} \cdot h_2 = h_1 (700^\circ C) \quad \text{weil} \quad q_2 = 0
+\]
+\[
+h_1 = 118.9 \left( \frac{kJ}{kg} \right) + 0.005 \cdot 2000.5 \left( \frac{kJ}{kg} \right)
+\]
+\[
+= 130.17 \left( \frac{kJ}{kg} \right)
+\]
+\[
+h_2 = 282.95 \left( \frac{kJ}{kg} \right) \quad (A-2)
+\]
+\[
+\dot{Q} \sum = \dot{m}_1 (h_2 - h_1)
+\]
+\[
+\frac{\dot{m}_1}{h_{ein} - h_2}
+\]
+\[
+= 5735.6 + (130.17 \left( \frac{kJ}{kg} \right) - 707.05 \left( \frac{kJ}{kg} \right))
+\]
+\[
+= 2.92 \left( \frac{kJ}{kg} \right) - 282.95 \left( \frac{kJ}{kg} \right)
+\]
+
+\subsection*{b)}
+Entropiebilanz:
+\[
+\dot{m}_2 s_2 - \dot{m}_1 s_1 = \sum \dot{m}_i s_i + \sum \frac{\dot{Q}_i}{T_i} + S_{er}
+\]
+
+``````latex
+
+

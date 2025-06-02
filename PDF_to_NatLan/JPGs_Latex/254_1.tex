@@ -1,0 +1,62 @@
+TASK 1d  
+The following values are provided for state 2:  
+\[
+u_2 = 232.95 \, \text{kJ/kg} \quad \text{(from Table A-2)}
+\]  
+\[
+u_2' = 2469.6 \, \text{kJ/kg} \quad \text{(from Table A-2)}
+\]  
+The enthalpy is given as:  
+\[
+h = 89.96 \, \text{kJ/kg}
+\]  
+
+The mass of saturated liquid water added is calculated as:  
+\[
+m_f = m_{\text{total}} (1 - x_D) = 5755 \times (1 - 0.005) = 5726.225 \, \text{kg}
+\]  
+The mass of vapor is:  
+\[
+m_g = m_{\text{total}} \cdot x_D = 5755 \times 0.005 = 28.775 \, \text{kg}
+\]  
+The change in mass is:  
+\[
+\Delta m_{12} = 3289.73 \, \text{kg}
+\]  
+
+TASK 1e  
+The entropy balance is performed for \( \Delta m_{12} = 3600 \, \text{kg} \).  
+
+The entropy change is expressed as:  
+\[
+\Delta S_{12} = \Delta m_{12} S(70^\circ\text{C}) - \frac{Q_{\text{out}}}{T} = m_{2,S} - m_{1,S}
+\]  
+
+The total mass at state 2 is:  
+\[
+m_{2,f} = m_f^1 + \Delta m_{12} = 5726.225 + 3600 = 9326.225 \, \text{kg}
+\]  
+The vapor mass at state 2 is:  
+\[
+m_{2,g} = m_g^1 = 28.775 \, \text{kg}
+\]  
+
+The entropy change is calculated as:  
+\[
+\Delta S_{12} = m_{2,f} S_{2,f} + m_{2,g} S_{2,g} - m_1 S_1
+\]  
+Substituting values:  
+\[
+\Delta S_{12} = 9326.225 \cdot 0.8549 + 28.775 \cdot 7.2553 - 5755 \cdot 1.33744 = 14833.53 \, \text{kJ/K}
+\]  
+
+Additional values referenced from tables:  
+\[
+S_1 = 1.33744 \, \text{kJ/kg·K} \quad \text{(Table A-2, interpolated for \( x_D \))}
+\]  
+\[
+S_{2,f} = 0.8549 \, \text{kJ/kg·K} \quad \text{(Table A-2)}
+\]  
+\[
+S_{2,g} = 7.2553 \, \text{kJ/kg·K} \quad \text{(Table A-2)}
+\]

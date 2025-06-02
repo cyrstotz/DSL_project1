@@ -1,0 +1,39 @@
+TASK 1a  
+The energy balance equation for the reactor is written as:  
+\[
+0 = \dot{m}_{\text{in}} \left( h_{\text{in}} - h_{\text{out}} \right) + \dot{Q}_R - \dot{W}_R^0 + \dot{Q}_{\text{out}}
+\]  
+The enthalpy values are determined from the water tables:  
+\[
+h(70^\circ\text{C}) = h_{\text{in}} = 292.98 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(Table A-2)}
+\]  
+\[
+h(100^\circ\text{C}) = h_{\text{out}} = 419.04 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(Table A-2)}
+\]  
+The heat flow removed by the coolant is calculated as:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} \left( h_{\text{out}} - h_{\text{in}} \right) - \dot{Q}_R
+\]  
+Substituting the values:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \left( 419.04 - 292.98 \right) - 100 = -62.18 \, \text{kW}
+\]  
+
+TASK 1b  
+No content found for this subtask except for a crossed-out sketch.  
+
+TASK 1c  
+The entropy production is calculated using the assumption \( \bar{T}_{\text{KF}} = 295 \, \text{K} \):  
+\[
+0 = -\frac{\dot{Q}_{\text{out}}}{T_{\text{Reactor},1}} + \frac{\dot{Q}_{\text{out}}}{\bar{T}_{\text{KF}}} + \dot{S}_{\text{gen}}
+\]  
+Rearranging for \( \dot{S}_{\text{gen}} \):  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{out}}}{T_{\text{Reactor},1}} - \frac{\dot{Q}_{\text{out}}}{\bar{T}_{\text{KF}}}
+\]  
+Substituting the values:  
+\[
+\dot{S}_{\text{gen}} = \frac{-62.18}{373.15} - \frac{-62.18}{295} = 0.044 \, \frac{\text{kW}}{\text{K}}
+\]  
+
+A sketch is provided showing a vertical heat transfer process between the reactor and the cooling jacket. The heat flow \( \dot{Q}_{\text{out}} \) is depicted as leaving the reactor and entering the coolant.

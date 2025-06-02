@@ -1,0 +1,80 @@
+TASK 1d  
+The energy balance equation is written as:  
+\[
+\Delta E = \Delta U, \quad Q_{R,12} = -35 \, \text{MJ}
+\]  
+From this, the following relationship is derived:  
+\[
+U_2 - U_1 = \Delta m_{12} \cdot h(20^\circ\text{C}) + Q_{R,12}
+\]  
+The total mass in state 1 is given as:  
+\[
+m_{\text{ges,1}} = 5755 \, \text{kg} = m_1
+\]  
+The total mass in state 2 is expressed as:  
+\[
+m_{\text{ges,2}} = m_{\text{ges,1}} + \Delta m_{12} = m_2
+\]  
+Substituting into the energy balance:  
+\[
+m_2 U_2 - m_1 U_1 = \Delta m_{12} \cdot h(20^\circ\text{C}) + Q_{R,12}
+\]  
+Rearranging for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = \frac{m_1 (U_1 - U_2) + Q_{R,12}}{U_2 - h(20^\circ\text{C})}
+\]  
+
+From Table A-2, the following values are used:  
+\[
+h(20^\circ\text{C}) = h_f(20^\circ\text{C}) = 83.96 \, \text{kJ/kg} \quad \text{(saturated liquid)}
+\]  
+\[
+u_2 = u_f(70^\circ\text{C}) = 292.95 \, \text{kJ/kg}
+\]  
+\[
+u_1 = u_f(100^\circ\text{C}) = 418.94 \, \text{kJ/kg}
+\]  
+
+Substituting these values into the equation:  
+\[
+\Delta m_{12} = \frac{5755 \cdot (418.94 - 292.95) + (-35 \cdot 10^3)}{292.95 - 83.96}
+\]  
+The result is:  
+\[
+\Delta m_{12} = 3302 \, \text{kg}
+\]  
+
+---
+
+TASK 1e  
+The entropy balance equation is written as:  
+\[
+\Delta S_{12} = \Delta m_{12} \cdot s(20^\circ\text{C}) + \frac{Q_{R,12}}{T}
+\]  
+From Table A-2, the entropy values are:  
+\[
+s(20^\circ\text{C}) = s_f(20^\circ\text{C}) = 0.296 \, \text{kJ/kg·K}
+\]  
+\[
+s_2 = s_f(70^\circ\text{C}) = 0.9549 \, \text{kJ/kg·K}
+\]  
+\[
+s_1 = s_f(100^\circ\text{C}) = 1.3069 \, \text{kJ/kg·K}
+\]  
+
+The total mass in state 2 is:  
+\[
+m_2 = m_1 + \Delta m_{12} = 9056 \, \text{kg}
+\]  
+
+Substituting into the entropy change equation:  
+\[
+\Delta S_{12} = m_2 \cdot s_2 - m_1 \cdot s_1
+\]  
+\[
+\Delta S_{12} = 9056 \cdot 0.9549 - 5755 \cdot 1.3069
+\]  
+The result is:  
+\[
+\Delta S_{12} = 1726.36 \, \text{kJ/K}
+\]  

@@ -1,0 +1,102 @@
+
+``````latex
+
+
+1) \\
+a) \\
+\begin{center}
+\begin{tabular}{|c|}
+\hline
+\begin{minipage}{0.4\textwidth}
+\centering
+\(\dot{m}_{\text{ein}}\) \\
+\(\downarrow\) \\
+\(\rightarrow\) Reaktor \(\rightarrow \dot{Q}_R = 100 \text{kW}\) \\
+\(\downarrow\) \\
+\(\dot{m}_{\text{aus}}\) \\
+\end{minipage} \\
+\hline
+\end{tabular}
+\end{center}
+
+\[
+0 = \dot{m} (h_{\text{ein}} - h_{\text{aus}}) + \dot{Q}_R - \dot{Q}_{\text{aus}}
+\]
+
+\[
+h_{\text{ein}} = 292.39 \frac{\text{kJ}}{\text{kg}} \quad (\text{Tabelle A-2, 70}^\circ\text{C}) (4.1)
+\]
+
+\[
+h_{\text{aus}} = h_f (100^\circ\text{C}) = 419.04 \frac{\text{kJ}}{\text{kg}} \quad (\text{Tabelle A-2})
+\]
+
+\[
+\dot{Q}_{\text{aus}} = \dot{m} (h_{\text{ein}} - h_{\text{aus}}) + \dot{Q}_R = 62.182 \text{kW}
+\]
+
+b) \\
+\[
+\dot{S} = \dot{m} \left( s_{\text{ein}} - s_{\text{aus}} \right) + \frac{\dot{Q}_{\text{aus}}}{T}
+\]
+
+\[
+T = \frac{T_{\text{a,aus}} - T_{\text{e,aus}}}{s_{\text{a}} - s_{\text{e}}}
+\]
+
+\[
+s_{\text{a}} - s_{\text{e}} = c_{\text{p,m}} \ln \left( \frac{T_{\text{a}}}{T_{\text{e}}} \right)
+\]
+
+\[
+0 = \dot{m} (h_{\text{e}} - h_{\text{a}}) + \dot{Q}_{\text{aus}}
+\]
+
+\[
+\dot{Q} = \dot{m} c_{\text{p,m}} \Delta T + \dot{Q}_{\text{aus}}
+\]
+
+\[
+\Delta T \approx -10 \text{K}
+\]
+
+\[
+\dot{S} = \int \frac{\dot{Q}}{T} ds
+\]
+
+\[
+\dot{S} = \frac{\dot{Q}}{s_{\text{a}} - s_{\text{e}}}
+\]
+
+c) \\
+\[
+\dot{S}_{\text{erz}} = - \left( \dot{m} c_{\text{p,m}} \ln \left( \frac{T_{\text{aus}}}{T_{\text{ein}}} \right) + \frac{\dot{Q}_{\text{aus}}}{235 \text{K}} \right)
+\]
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+\subsection*{d)}
+\begin{align*}
+m_{\text{ges}} &= 57.55 \, \text{kg} \quad \text{bei} \quad 100^\circ \text{C}, \quad x = 0.005 \\
+&\Rightarrow m_{\text{ges}} \quad \text{bei} \quad 70^\circ \text{C}, \quad m_{\text{ges}} = m_{\text{ges}} + \Delta m_{12} \\
+&\Rightarrow m_{\text{ges}} U_2 - m_{\text{ges}} U_1 = \Delta m_{12} + Q_{\text{aus}12} \\
+U_1 &= 418.1 + 0.005 \cdot (2506.5 - 2000.9) \quad \left( \text{TAB A-2, } U_{1\text{fd}} \quad 100^\circ \text{C} \right) \\
+U_2 &= 232.857 + 0.005 \cdot (2466.6 - 252.5) \quad \left( 70^\circ \text{C} \right) \\
+&\Rightarrow \Delta m_{12} = \frac{m_{\text{ges}} (U_2 - U_1) - Q_{\text{aus}12}}{1 - U_2} = 2501.405 \, \text{kg}
+\end{align*}
+
+\subsection*{e)}
+\begin{align*}
+S_1 &= m_{\text{ges}} \left( 1.306 + 0.005 \cdot (7.355 - 1.306) \right) \\
+S_2 &= m_{\text{ges}} \left( 0.554 + 0.005 \cdot (7.553 - 0.554) \right) \\
+&\quad \left( \text{Werte für } S_f \text{ und } S_g \text{ aus TAB A-2, für } S_1 \text{ bei } 100^\circ \text{C} \text{ und } S_2 \text{ bei } 70^\circ \text{C} \right) \\
+m_{\text{ges}} &= 8256.205 \, \text{kg} \\
+\Delta S_{12} &= S_2 - S_1 = 269.53 \, \frac{\text{kg}}{\text{K}}
+\end{align*}
+
+``````latex
+
+

@@ -1,0 +1,71 @@
+TASK 1d  
+The energy balance equation is written as:  
+\[
+\frac{dE}{dt} = \dot{m}_{\text{in}} \left( h_{\text{in}} + \frac{w^2_{\text{in}}}{2} + gz_{\text{in}} \right) - \dot{m}_{\text{out}} \left( h_{\text{out}} + \frac{w^2_{\text{out}}}{2} + gz_{\text{out}} \right) + \dot{Q} - \dot{W} - \dot{E}_{\text{kin}} - \dot{E}_{\text{pot}} = 0
+\]
+
+Simplifying for steady-state operation:  
+\[
+\frac{dE}{dt} = \Delta U = \Delta m_{12} (h_2 - h_1) + Q_{R,12}
+\]
+
+The enthalpy values are calculated using water tables:  
+\[
+h_1 (100^\circ\text{C}) = h_{\text{liq},1} + x_D (h_{\text{vap},1} - h_{\text{liq},1})
+\]
+\[
+h_1 = 415.04 + 0.005 (2257.0) = 430.325 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_2 (70^\circ\text{C}) = h_{\text{liq},2} + x_D (h_{\text{vap},2} - h_{\text{liq},2})
+\]
+\[
+h_2 = 292.55 + 0.005 (2339.8) = 304.649 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The change in internal energy is expressed as:  
+\[
+\Delta U = m_{\text{total}} h_2 - \Delta m_{12} h_2 - (m_{\text{total}}) h_1
+\]
+
+The enthalpy at \( T_{\text{in,12}} = 20^\circ\text{C} \) is calculated:  
+\[
+u_2 (20^\circ\text{C}) = h_{\text{liq},2} + x_D (h_{\text{vap},2} - h_{\text{liq},2})
+\]
+\[
+u_2 = 292.55 + 0.005 (2466.8 - 292.55) = 303.533 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+Similarly, the enthalpy at \( T_{\text{Reactor},1} = 100^\circ\text{C} \):  
+\[
+u_1 (100^\circ\text{C}) = h_{\text{liq},1} + x_D (h_{\text{vap},1} - h_{\text{liq},1})
+\]
+\[
+u_1 = 415.04 + 0.005 (2506.5 - 415.04) = 423.837 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The mass balance equation is derived:  
+\[
+m_{\text{total}} u_2 - \Delta m_{12} u_2 = m_{\text{total}} u_1 - Q_{R,12}
+\]
+
+Rearranging for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} (u_2 - h_2 - u_1 + h_1) = Q_{R,12}
+\]
+
+Substituting values:  
+\[
+\Delta m_{12} = \frac{m_{\text{total}} (u_1 - u_2) + Q_{R,12}}{u_2 - h_2 - u_1 + h_1}
+\]
+
+Given \( Q_{R,12} = 35,000 \, \text{kJ} \):  
+\[
+\Delta m_{12} = 3855.02 \, \text{kg}
+\]
+
+The final result is boxed:  
+\[
+\boxed{3855.02 \, \text{kg}}
+\]

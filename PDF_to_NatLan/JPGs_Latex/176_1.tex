@@ -1,0 +1,49 @@
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) is calculated using the integral definition:  
+\[
+T = \frac{\int_{s_e}^{s_a} T \, ds}{s_a - s_e} = \frac{h_a - h_e}{s_a - s_e} = \frac{\dot{Q}_{\text{out}}}{\dot{m}_{\text{KF}} \cdot (s_a - s_e)}
+\]  
+Substituting the given values:  
+\[
+\dot{Q}_{\text{out}} = 6.33 \, \text{kW}, \quad c_{\text{if}} = 6.33 \, \frac{\text{kW}}{\text{K}}
+\]  
+and using the logarithmic mean temperature difference:  
+\[
+c_{\text{if}} \cdot \ln \left( \frac{T_{\text{KF,in}}}{T_{\text{KF,out}}} \right)
+\]  
+The calculation yields:  
+\[
+\frac{10 \, \text{K}}{\ln \left( \frac{288.15 \, \text{K}}{298.15 \, \text{K}} \right)} = 293.12 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) is determined using the entropy balance:  
+\[
+\dot{S}_{\text{gen}} = \dot{m}_{\text{KF}} \cdot (s_e - s_a) + \frac{\dot{Q}_{\text{out}}}{T} - \dot{S}_{\text{KF}}
+\]  
+Substituting the values:  
+\[
+\dot{S}_{\text{gen}} = \frac{6.33 \, \text{kW}}{293.12 \, \text{K}} + \dot{S}_{\text{KF}}
+\]  
+Further simplifying:  
+\[
+\dot{S}_{\text{gen}} = 6.33 \, \frac{\text{kW}}{\text{K}} \cdot \ln \left( \frac{T_{\text{KF,in}}}{T_{\text{KF,out}}} \right) + \frac{6.33 \, \text{kW}}{293.12 \, \text{K}} + \dot{S}_{\text{KF}}
+\]  
+Substituting \( T_{\text{KF,in}} = 288.15 \, \text{K} \) and \( T_{\text{KF,out}} = 298.15 \, \text{K} \):  
+\[
+\dot{S}_{\text{gen}} = 6.33 \, \frac{\text{kW}}{\text{K}} \cdot \ln \left( \frac{288.15}{298.15} \right) + \frac{6.33 \, \text{kW}}{293.12 \, \text{K}} + \dot{S}_{\text{KF}}
+\]  
+Finally, it is noted:  
+\[
+\dot{S}_{\text{KF}} = 0 \quad \text{since there is no pressure drop.}
+\]  
+
+---
+
+TASK 1d  
+The mass balance for the cooling process is written as:  
+\[
+m_{2,u} - m_{u,1} = \Delta m_{12} + Q_{R,12}
+\]  

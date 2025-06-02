@@ -1,0 +1,218 @@
+
+``````latex
+
+
+\section*{Aufgabe 6}
+
+\subsection*{a)}
+
+\begin{itemize}
+    \item A graph is drawn with the y-axis labeled as \( p \) and the x-axis labeled as \( T \).
+    \item The graph shows a phase diagram with a curve starting from the origin and bending upwards to the right.
+    \item There are three points marked on the graph:
+        \begin{itemize}
+            \item Point 1 is on the right side of the curve, labeled as "Gas".
+            \item Point 2 is on the curve, labeled as "isobar".
+            \item Point 3 is below the curve, labeled as "Flüssig".
+        \end{itemize}
+    \item The curve is labeled as "isotherm" and "Tripel".
+    \item There are arrows indicating transitions between the points:
+        \begin{itemize}
+            \item An arrow from point 1 to point 2 labeled as "isobar".
+            \item An arrow from point 2 to point 3 labeled as "isotherm".
+        \end{itemize}
+    \item The region above the curve is labeled as "Gas" and the region below the curve is labeled as "Flüssig".
+\end{itemize}
+
+\subsection*{b)}
+
+\[
+\dot{m}_{R134a} = ?
+\]
+
+\[
+\text{isobare Verdampfung} \quad R134a
+\]
+
+\[
+\dot{W}_k = 28 \, \text{kW}
+\]
+
+\[
+T_{\text{Verdampfer}} = T_1 - 6K = 257,15 \, K
+\]
+
+\[
+T_1 = ? \quad -10^\circ C = 263,15
+\]
+
+\[
+\text{Energiebilanz über Verdichter:}
+\]
+
+\[
+0 = \dot{m} (h_e - h_a) + \dot{Q} \rightarrow -0 \rightarrow \text{adiabat}
+\]
+
+\[
+\dot{m} = \frac{\dot{W}_k}{h_e - h_a} = \frac{-0,08 \, \text{kW}}{h_e - h_a}
+\]
+
+\[
+h_e = ? \quad T = -10^\circ C \quad \text{von} \quad R134a
+\]
+
+\[
+h_2 = h_e
+\]
+
+\[
+\text{Tabelle}
+\]
+
+\[
+T@ -10^\circ C \quad h_g = 237,94 \, \frac{kJ}{kg} = h_2 = h_e
+\]
+
+\[
+h_a = ?
+\]
+
+``````latex
+
+
+\section*{Aufgabe 4:}
+
+\subsection*{b)}
+
+\begin{itemize}
+    \item Tabelle A-11
+    \item $p@8 \text{ bar}$
+    \item $h_f = 93,92 \frac{\text{kJ}}{\text{kg}}$
+    \item $h_g = 269,15 \frac{\text{kJ}}{\text{kg}}$
+    \item adiabate Reversibel
+    \item $\Delta S = 0$
+    \item $s_1 = s_3$
+    \item $s_2 = ?$
+\end{itemize}
+
+\begin{itemize}
+    \item Tabelle A-10
+    \item $s@-10^\circ C \quad s_g = 0,9238 \frac{\text{kJ}}{\text{kg} \cdot \text{K}}$
+    \item Tabelle A-12
+    \item $p@8 \text{ bar}$
+    \item $s@T_{sat} = 0,5066$
+    \item $s@40^\circ C = 0,9379$
+    \item $h_{sat} = 269,15 \frac{\text{kJ}}{\text{kg}}$
+    \item $h@40^\circ C = 273,66 \frac{\text{kJ}}{\text{kg}}$
+\end{itemize}
+
+\[
+h_3 = \frac{h@40^\circ C - h_{sat}}{s@40^\circ C - s@_{sat}} (s - s@_{sat}) + h_{sat}
+\]
+
+\[
+= \frac{273,66 \frac{\text{kJ}}{\text{kg}} - 269,15 \frac{\text{kJ}}{\text{kg}}}{0,9379 \frac{\text{kJ}}{\text{kg} \cdot \text{K}} - 0,5066 \frac{\text{kJ}}{\text{kg} \cdot \text{K}}} (0,9238 \frac{\text{kJ}}{\text{kg} \cdot \text{K}} - 0,5066 \frac{\text{kJ}}{\text{kg} \cdot \text{K}}) + 269,15 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+= 271,33 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\dot{m} = \frac{-0,028 \text{kW}}{237,74 \frac{\text{kJ}}{\text{kg}} - 271,33 \frac{\text{kJ}}{\text{kg}}} = 0,8333 \frac{\text{kg}}{\text{s}}
+\]
+
+\subsection*{Energiebilanz über Verdichter}
+
+\[
+0 = \dot{m} (h_e - h_a) - \dot{W}_{\text{in}}
+\]
+
+\[
+\dot{m} = \frac{\dot{W}_{\text{in}}}{h_e - h_a}
+\]
+
+\begin{itemize}
+    \item $h_e = h_2$
+    \item $h_a = h_3$
+    \item $h_2 \rightarrow \text{Tabelle A-10}$
+    \item $T@16^\circ C: \quad h_g = 237,74 \frac{\text{kJ}}{\text{kg}}$
+\end{itemize}
+
+``````latex
+
+
+\section*{Aufgabe 4}
+
+\subsection*{c) Dampfanteil $x_1 = ?$}
+
+\begin{align*}
+x_0 &= 0 \\
+p_1 &= 8 \text{ bar}
+\end{align*}
+
+Tabelle A-10:
+\begin{align*}
+h_f &= 93{,}92 \frac{\text{kJ}}{\text{kg}} \quad \text{bei } p @ 8 \text{ bar}
+\end{align*}
+
+Energiehbilanz Drossel:
+\begin{align*}
+0 &= \dot{m} (h_e - h_a) + \dot{Q} - \dot{W}_{\text{turb}} \\
+0 &= \dot{m} (h_e - h_a) \quad \text{weil Drossel}
+\end{align*}
+
+\begin{align*}
+h_e &= h_a \\
+h_e &= 93{,}92 \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+Tabelle A-10:
+\begin{align*}
+T @ 16^\circ \text{C} \\
+h_f &= 79{,}30 \frac{\text{kJ}}{\text{kg}} \\
+h_g &= 237{,}74 \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+\begin{align*}
+h &= h_f + x (h_g - h_f)
+\end{align*}
+
+\begin{align*}
+x &= \frac{h - h_f}{h_g - h_f} = \frac{93{,}92 \frac{\text{kJ}}{\text{kg}} - 79{,}30 \frac{\text{kJ}}{\text{kg}}}{237{,}74 \frac{\text{kJ}}{\text{kg}} - 79{,}30 \frac{\text{kJ}}{\text{kg}}} = 0{,}3076
+\end{align*}
+
+\subsection*{d) $\epsilon_k = ?$}
+
+\begin{align*}
+\epsilon_k = \frac{\dot{Q}_{zu}}{\dot{W}_{t}} = \frac{\dot{Q}_{k}}{\dot{W}_{t}}
+\end{align*}
+
+\begin{align*}
+\dot{Q}_{zu} = \dot{Q}_{k}
+\end{align*}
+
+Energiehbilanz Verdampfer 1:
+\begin{align*}
+0 &= \dot{m} (h_e - h_a) + \dot{Q}_{k} - \dot{W}_{\text{turb}} \\
+\dot{Q}_{k} &= \dot{m} (h_a - h_e)
+\end{align*}
+
+\begin{align*}
+\dot{Q}_{k} &= 0{,}933 \frac{\text{kg}}{\text{s}} (237{,}74 \frac{\text{kJ}}{\text{kg}} - 93{,}92 \frac{\text{kJ}}{\text{kg}}) \\
+&= 0{,}15038 \frac{\text{kJ}}{\text{s}}
+\end{align*}
+
+\begin{align*}
+\epsilon_k &= \frac{\dot{Q}_{k}}{\dot{W}_{t}} = \frac{0{,}15038 \text{ kW}}{0{,}028 \text{ kW}} = 5{,}371
+\end{align*}
+
+``````latex
+
+
+\section*{Aufgabe 4:}
+
+e) Die Temperatur würde sich weiter absenken bis an den Punkt wo Temperatur $T_{\text{innen}}$ und die Temperatur im Verdampfer gleich wären.
+
+```

@@ -1,0 +1,60 @@
+The given values are:  
+\[
+w_5 = 220 \, \frac{\text{m}}{\text{s}}, \quad T_5 = 431.9 \, \text{K}, \quad p_5 = 0.5 \, \text{bar} = 50 \, \text{kPa}
+\]  
+The mass flow rate is expressed as \( \dot{m} = A \rho w \).
+
+An energy balance around the control volume is applied for a steady-state flow process with \( \dot{m} \):  
+\[
+0 = \dot{m} \left[ h_e - h_a + \frac{w_e^2 - w_a^2}{2} \right] + \dot{Q} - \dot{W}
+\]  
+Simplifying for this case:  
+\[
+0 = \dot{m} \left[ h_s - h_0 + \frac{w_s^2 - w_0^2}{2} \right]
+\]  
+From this, the enthalpy difference is derived:  
+\[
+h_0 - h_s = \frac{w_s^2 - w_0^2}{2}
+\]  
+
+The velocity term \( w_0^2 \) is calculated as follows:  
+\[
+w_0^2 = 2 h_s - 2 h_0 + w_s^2
+\]  
+Substituting enthalpy values:  
+\[
+w_0^2 = 2 \left( h_s - h_0 \right) + w_s^2
+\]  
+Using the integral for enthalpy:  
+\[
+h_s - h_0 = \int_{T_0}^{T_s} c_p(T) \, dT
+\]  
+Thus:  
+\[
+w_0^2 = 2 c_p \left( T_s - T_0 \right) + w_s^2
+\]  
+
+The temperature \( T_0 \) is calculated using the polytropic temperature relation:  
+\[
+\frac{T_0}{T_5} = \left( \frac{p_0}{p_5} \right)^{\frac{n-1}{n}}
+\]  
+This gives:  
+\[
+T_0 = T_5 \left( \frac{p_0}{p_5} \right)^{\frac{n-1}{n}}
+\]  
+Substituting values:  
+\[
+T_0 = 431.9 \, \text{K} \cdot \left( \frac{0.191 \, \text{bar}}{0.5 \, \text{bar}} \right)^{\frac{1.4 - 1}{1.4}} = 328.07 \, \text{K}
+\]  
+
+Finally, \( w_0^2 \) is computed:  
+\[
+w_0^2 = 2 \cdot 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \cdot (431.9 \, \text{K} - 328.07 \, \text{K}) + 220^2 \, \frac{\text{m}^2}{\text{s}^2}
+\]  
+\[
+w_0^2 = 48008.906 \, \frac{\text{m}^2}{\text{s}^2}
+\]  
+Taking the square root:  
+\[
+w_0 = 220.47 \, \frac{\text{m}}{\text{s}}
+\]

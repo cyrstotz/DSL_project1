@@ -1,0 +1,42 @@
+TASK 3d  
+The final ice fraction \( x_{\text{ice},2} \) is calculated as follows:  
+
+Given \( x_{\text{ice},1} = 0.6 \), the initial ice mass is:  
+\[
+m_{\text{ice},1} = 0.6 \cdot 0.1 \, \text{kg} = 0.06 \, \text{kg}.
+\]  
+
+The calculation proceeds using the assumption that the inner energy remains conserved in the entire system.  
+
+The energy balance is expressed as:  
+\[
+\Delta U = 0 = m_L (U_{L,2} - U_{L,1}) + m_{\text{EW}} (U_{2} - U_{1}),
+\]  
+where \( m_L \) is the mass of liquid water, \( m_{\text{EW}} \) is the mass of the ice-water mixture, and \( U \) represents internal energy.  
+
+To find \( U_1 \), interpolation is performed using Table A:  
+\[
+U_1 = U_{\text{f}} + 0.6 (U_{\text{g}} - U_{\text{f}}),
+\]  
+where \( U_{\text{f}} \) and \( U_{\text{g}} \) are the internal energy values for saturated liquid and saturated vapor, respectively.  
+
+Interpolation is carried out at pressures:  
+\[
+@ \, 1.9 \, \text{bar}, \quad @ \, 2.0 \, \text{bar}.
+\]  
+
+The difference in internal energy is expressed as:  
+\[
+(U_{2L} - U_{1L}) = C_V (T_2 - T_1),
+\]  
+where \( C_V \) is the specific heat at constant volume.  
+
+The specific heat \( C_V \) is calculated as:  
+\[
+C_V = C_p - R,
+\]  
+where \( C_p \) is the specific heat at constant pressure and \( R \) is the gas constant.  
+
+Further interpolation is required to obtain \( U_1 \) values at the specified pressures.  
+
+No diagrams or additional figures are present on this page.

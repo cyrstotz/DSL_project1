@@ -1,0 +1,73 @@
+TASK 1d  
+The energy balance equation is written as:  
+\[
+\Delta E = \Delta m_{12} \cdot h_g(T_{\text{in,12}}) - Q_{R,12} - X_{12}^0
+\]  
+Expanding the energy balance:  
+\[
+m_2 u_2 - m_1 u_1 = \Delta m_{12} \cdot h_g(T_{\text{in,12}}) - Q_{R,12}
+\]  
+The total mass in state 1 is given as:  
+\[
+m_1 = m_{\text{total},1} = 5755 \, \text{kg}
+\]  
+The mass in state 2 is:  
+\[
+m_2 = m_{\text{total},1} + \Delta m_{12}
+\]  
+The internal energy in state 1 is calculated using the steam quality \( x_D \):  
+\[
+u_1 = u_f + x_D \cdot (u_g - u_f)
+\]  
+From the water tables (Table A2):  
+\[
+u_f(100^\circ\text{C}) = 418.94 \, \frac{\text{kJ}}{\text{kg}}, \quad u_g(100^\circ\text{C}) = 2506.5 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+The enthalpy at \( T_{\text{in,12}} = 20^\circ\text{C} \) is:  
+\[
+h_g(T_{\text{in,12}}) = 2538.1 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+The internal energy in state 2 is:  
+\[
+u_2 = u_g(70^\circ\text{C}) = 2469.6 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Using the energy balance, the mass added is calculated as:  
+\[
+\Delta m_{12} = -\frac{Q_{R,12} + m_{\text{total},1} \cdot u_2 - m_1 \cdot u_1}{u_2 - h_g(20^\circ\text{C})}
+\]  
+
+---
+
+TASK 1e  
+The entropy change is calculated as:  
+\[
+\Delta S_{12} = m_2 S_2 - m_1 S_1
+\]  
+The total mass in state 1 is:  
+\[
+m_1 = m_{\text{total},1} = 5755 \, \text{kg}
+\]  
+The total mass in state 2 is:  
+\[
+m_2 = \Delta m_{12} + m_{\text{total},1} = 5855 \, \text{kg}
+\]  
+The entropy in state 1 is calculated using the steam quality \( x_D \):  
+\[
+S_1 = S_f(100^\circ\text{C}) + x_D \cdot (S_g(100^\circ\text{C}) - S_f(100^\circ\text{C}))
+\]  
+From the water tables (Table A2):  
+\[
+S_f(100^\circ\text{C}) = 1.3069 \, \frac{\text{kJ}}{\text{kg·K}}, \quad S_g(100^\circ\text{C}) = 7.354 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+The entropy in state 2 is:  
+\[
+S_2 = S_g(70^\circ\text{C}) = 7.7553 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+The entropy change is then calculated as:  
+\[
+\Delta S_{12} = 64.85 \, \text{MJ/K}
+\]  
+
+---
+
+No diagrams or graphs are present on the page.

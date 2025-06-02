@@ -1,0 +1,22 @@
+The entropy production rate, \( \dot{S}_{\text{erz}} \), is determined using the entropy balance:  
+\[
+0 = \dot{m} \left( s_{\text{ein}} - s_{\text{aus}} \right) + \frac{\dot{Q}_R}{T_{\text{Reactor,1}}} - \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} + \dot{S}_{\text{erz}}
+\]  
+
+Rearranging:  
+\[
+\dot{S}_{\text{erz}} = \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} + \dot{m} \left( s_{\text{ein}} - s_{\text{aus}} \right) - \frac{\dot{Q}_R}{T_{\text{Reactor,1}}}
+\]  
+
+The entropy at the outlet, \( s_{\text{aus}} \), is calculated using the steam quality \( x_D \):  
+\[
+s_{\text{aus}} = s_f + x_D \left( s_g - s_f \right)
+\]  
+
+Substituting values from the saturated liquid/vapor table at \( T = 100^\circ\text{C} \):  
+\[
+s_{\text{aus}} = 1.3069 \, \frac{\text{kJ}}{\text{kg·K}} + 0.005 \left( 7.3569 \, \frac{\text{kJ}}{\text{kg·K}} - 1.3069 \, \frac{\text{kJ}}{\text{kg·K}} \right)
+\]  
+\[
+s_{\text{aus}} = 1.3374 \, \frac{\text{kJ}}{\text{kg·K}}
+\]

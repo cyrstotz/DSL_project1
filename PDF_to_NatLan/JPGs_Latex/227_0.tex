@@ -1,0 +1,60 @@
+TASK 1a  
+The energy balance equation for the reactor is written as:  
+\[
+\frac{d}{dt} \left( \sum \dot{m}_i \left[ h_i + \frac{w_i^2}{2} + p_i \right] \right) + \dot{Q} - \dot{W} = 0
+\]  
+Simplifying for steady-state conditions:  
+\[
+0 = \dot{m} (h_e - h_a) + \dot{Q}_\text{R} - \dot{Q}_\text{out}
+\]  
+Rearranging to find the heat flow removed by the coolant:  
+\[
+\dot{Q}_\text{out} = \dot{m} (h_a - h_e) - \dot{Q}_\text{R}
+\]  
+
+From the water tables:  
+- At \( T = 100^\circ\text{C} \), \( h_a = 419.04 \, \text{kJ/kg} \).  
+- At \( T = 70^\circ\text{C} \), \( h_e = 292.98 \, \text{kJ/kg} \).  
+
+Substituting values:  
+\[
+\dot{Q}_\text{out} = 0.3 \, \text{kg/s} \cdot (419.04 \, \text{kJ/kg} - 292.98 \, \text{kJ/kg}) - 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_\text{out} = 37.818 \, \text{kW} - 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_\text{out} = -62.182 \, \text{kW}
+\]  
+The negative sign indicates heat is being removed from the reactor.  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant is calculated using:  
+\[
+T_\text{KF} = \frac{\int S_2 \, T \, dS}{S_a - S_e}
+\]  
+This simplifies to \( T_\text{KF} = T \), as the integral is constant for steady-state conditions.  
+
+---
+
+TASK 1c  
+The entropy production rate is derived from the entropy balance equation:  
+\[
+\frac{dS}{dt} = \frac{Q}{T} + \dot{S}_\text{gen}
+\]  
+Rearranging:  
+\[
+\dot{S}_\text{gen} = \frac{Q}{T}
+\]  
+Substituting values:  
+\[
+\dot{S}_\text{gen} = \frac{-62.182 \, \text{kW}}{295 \, \text{K}}
+\]  
+\[
+\dot{S}_\text{gen} = -210.786 \, \frac{\text{W}}{\text{K}}
+\]  
+The negative sign indicates entropy is being generated in the system.  
+
+No diagrams or figures are present on this page.

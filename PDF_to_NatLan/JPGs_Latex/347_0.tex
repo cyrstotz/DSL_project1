@@ -1,0 +1,65 @@
+TASK 1a  
+Energy balance for the reactor in steady-state operation with \( \Delta p = 0 \) and \( W = 0 \):  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} \left( h_{\text{in}} - h_{\text{out}} \right) + \dot{Q}_R
+\]  
+(Here, \( \dot{Q}_{\text{out}} \) is defined as positive in the direction of heat removal.)  
+
+The enthalpy change is calculated as:  
+\[
+h_{\text{out}} = h_{\text{in}} + x_D \cdot \left( h_{g,100} - h_{f,100} \right)
+\]  
+where \( x_D = 0.005 \), \( T = 70^\circ\text{C} \), and the reactor operates in a two-phase region.  
+
+From the water tables:  
+\[
+h_{f,70} = 292.9 \, \frac{\text{kJ}}{\text{kg}}, \quad h_{g,70} = 2626.8 \, \frac{\text{kJ}}{\text{kg}} \quad (\text{at } 70^\circ\text{C})
+\]  
+\[
+h_{\text{in}} = h_{f,70} + x_D \cdot \left( h_{g,70} - h_{f,70} \right) = 309.649 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+For \( h_{\text{out}} \):  
+\[
+h_{\text{out}} = h_{f,100} + \left( h_{g,100} - h_{f,100} \right) = 428.23 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+From the water tables:  
+\[
+h_{f,100} = 419.0 \, \frac{\text{kJ}}{\text{kg}}, \quad h_{g,100} = 2257.0 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Substituting into the energy balance:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \frac{\text{kg}}{\text{s}} \cdot \left( 309.649 - 428.23 \right) \, \frac{\text{kJ}}{\text{kg}} + 100 \, \text{kW} = 62.93 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+Thermodynamic mean temperature of the coolant:  
+\[
+T_{\text{KF}} = \frac{T_{\text{KF,in}} + T_{\text{KF,out}}}{2}
+\]  
+Given:  
+\[
+T_{\text{KF,in}} = 288.15 \, \text{K}, \quad T_{\text{KF,out}} = 298.15 \, \text{K}
+\]  
+\[
+T_{\text{KF}} = \frac{288.15 + 298.15}{2} = 293.15 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+Entropy production from heat transfer:  
+\[
+\dot{S}_{\text{gen}} = \left( 1 - \frac{T_0}{T_{\text{Reactor}}} \right) \cdot \dot{Q}_{\text{out}}
+\]  
+where \( T_0 = 293.15 \, \text{K} \), \( T_{\text{Reactor}} = 373.15 \, \text{K} \), and \( \dot{Q}_{\text{out}} = 62.93 \, \text{kW} \).  
+
+Substituting:  
+\[
+\dot{S}_{\text{gen}} = \left( 1 - \frac{293.15}{373.15} \right) \cdot 62.93 \, \text{kW} = 4.29 \, \frac{\text{kW}}{\text{K}}
+\]  
+
+The entropy production is calculated assuming \( T_0 \) remains constant at \( 293.15 \, \text{K} \).

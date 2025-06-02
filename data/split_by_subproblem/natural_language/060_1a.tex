@@ -1,0 +1,37 @@
+a) Total output (approx. 465 kW)
+
+Energy balance:
+
+dE/dt = sum of m_i [h_i(t) + k_ei(t) + p_ei(t)] + T sum of Q_ij(t) - sum of W_i(t)
+
+m_in = 0, m_out = 0, dE/dt = 0
+
+Q_12 = 700 kW, Q_out = ?
+
+0 = m dot [h_in - h_out] + 100 kW - Q_out
+
+=> Q_out = 0.3 [h_in - h_out] + 100 times 10^3
+
+h_in = pure water, 70°C, x_d = 0.005 // h_out = 100°C
+
+T_s 42: h_f = 252.58, h_g = 2676.8 (70°C)
+
+h_x = 252.58 + 0.005 times (2676.8 - 252.58) = 304.65
+
+T_s 42: h_f = 419.04, h_g = 2676.1
+
+h_out = 419.04 + 0.005 times (2676.1 - 419.04) = 431.76
+
+=> Q_out = 0.3 times (304.65 - 431.76) + 100 times 10^3 = 55968.07
+
+b) T_KF = integral of T ds = S
+
+s_2 - s_1 = integral from T_1 to T_2 of c_p(T) / T dT => integral from T_1 to T_2 of c_p(T) / T dT = T_KF
+
+T_1 = 298.15 K, T_2 = 258.15 K
+
+integral from T_1 to T_2 of c_p(T) / T dT = ln(T_2 / T_1) = ln(298.15 / 268.15) = 0.0347
+
+c_p(T_cell) delta T_s: delta s(15°C) = 0.2245, delta s(25°C) = 0.3674
+
+=> T_KF = integral of T ds / 0.3674 - 0.2245 = integral of T ds / 0.1429 = T times (T_a,sc - T_b,sc) / 0.1429 = 343.86 K

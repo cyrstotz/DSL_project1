@@ -1,0 +1,41 @@
+\( \frac{dE}{dt} = \dot{m}_{in} (h_{out} - h_{in} + \frac{v^2}{2}) + \dot{Q}_{ab} - \dot{Q}_{out} \)  
+
+Diagram:  
+A rectangular box is drawn, labeled with inlet and outlet flows.  
+- Top left: "helpful heat flow enters"  
+- Top right: "heat balance exits"  
+- Bottom left: "mass in, temperature in"  
+- Bottom right: "mass out, temperature out"  
+- Right side: \( \dot{Q}_{ab} \)  
+
+\( h_{in} = h(70^\circ C, x = 0) = h_f(70^\circ C) = 292.58 \, \text{kJ/kg} \)  
+\( h_{out} = h(100^\circ C, x = 0) = h_f(100^\circ C) = 419.94 \, \text{kJ/kg} \)  
+
+\( \dot{Q}_{ab} = 0.3 \, \text{kg/s} \cdot (419.94 \, \text{kJ/kg} - 292.58 \, \text{kJ/kg}) = 37.818 \, \text{kW} \)  
+
+\( \dot{Q}_{ab} = \dot{Q}_{in} - \dot{Q}_{out} \implies \dot{Q}_{out} = 62.192 \, \text{kW} \)
+
+A diagram is drawn showing a reactor with heat flow \( \dot{Q}_R \) labeled as "100 kW" and an outlet labeled \( \dot{Q}_{out} \).  
+
+1 → 2:  
+\( \dot{Q}_{R,12} = \dot{Q}_{out,12} = 35 \, \text{MJ} \)  
+
+\( \frac{dE}{dt} = \dot{m} \, (h_{\text{in,water}} - h_{\text{out,water}}) + \dot{Q}_R - \frac{\dot{v}^2}{2} \)  
+
+\( \Rightarrow \Delta E = \Delta m \, (h_{\text{in,water}} - h_{\text{out,water}}) + Q_{R,12} \)  
+
+\( \Rightarrow \Delta E = \Delta U = m_{\text{water}} \, U_2 - U_1 \)  
+
+Known:  
+\( U_2 = m_{\text{gas}} \cdot U_2 \Rightarrow U_2 = U_f(70^\circ \text{C}) = 429.3778 \, \text{kJ/kg} \)  
+
+\( U_1 = h_{\text{gas},1} + U_f(70^\circ \text{C}) = m \, 292.83 \, \text{kJ/kg} \)  
+
+\( \Delta U = -785.14 \, \text{kJ} \)  
+
+\( \Rightarrow S_{\text{rez}} = \frac{\Delta U - Q_{R,12}}{(h_{\text{in,gas}} - h_{\text{out,gas}})} \)
+
+Coolant:  
+cp constant  
+
+dQ over dt equals m dot times delta h plus Q dot external

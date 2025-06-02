@@ -1,0 +1,19 @@
+The entropy production \( \dot{S}_{\text{gen}} \) is calculated using the entropy balance:  
+\[
+O = \dot{m} \left( s_{\text{out}} - s_{\text{in}} \right) + \frac{\dot{Q}_{\text{out}}}{T} + \dot{S}_{\text{gen}}
+\]  
+Rearranging for \( \dot{S}_{\text{gen}} \):  
+\[
+\dot{S}_{\text{gen}} = -\dot{m} \left( s_{\text{out}} - s_{\text{in}} \right) - \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+Using \( s_{\text{out}} - s_{\text{in}} = c_p \ln \frac{T_{\text{out}}}{T_{\text{in}}} \):  
+\[
+\dot{S}_{\text{gen}} = -\dot{m} \cdot c_p \ln \frac{T_{\text{out}}}{T_{\text{in}}} - \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = -0.3 \cdot (-0.0394 \, c_p) - \frac{62.782 \, \text{kW}}{293.15 \, \text{K}}
+\]  
+\[
+\dot{S}_{\text{gen}} = 0.010233 \, c_p - 212.116 \, \text{W/K}
+\]

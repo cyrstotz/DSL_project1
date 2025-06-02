@@ -1,0 +1,72 @@
+A table is provided with temperature (\( T \)) and pressure (\( p \)) values for different states:  
+\[
+\begin{array}{|c|c|c|}
+\hline
+\text{State} & T \, [\text{K}] & p \, [\text{bar}] \\
+\hline
+1 & 223.15 & 0.191 \\
+2 & \text{(crossed out)} & \text{(crossed out)} \\
+3 & 120 & \text{(not provided)} \\
+4 & \text{(not provided)} & \text{(not provided)} \\
+5 & 431.9 & 0.5 \\
+6 & 314.48 & 0.191 \\
+\hline
+\end{array}
+\]
+
+Additional constants are noted:  
+\[
+c_p = 1.006 \, \text{kJ}/\text{kg·K}, \quad \kappa = 1.4
+\]  
+
+No further explanation or calculations are visible.
+
+The energy balance equation is applied:  
+\[
+2 \dot{m} (h_6 - h_0) = w_6^2 - w_0^2 + w_{\text{out}}^2
+\]  
+Rearranging and solving for \( w_6 \):  
+\[
+w_6 = \sqrt{202^2 + 2 \cdot 5.8 \cdot 7.9} = 202.67 \, \text{m/s}
+\]  
+A note is added stating that \( \dot{m} \) might be incorrect and could be too small.
+
+---
+
+The outlet velocity \( w_6 \) is calculated using the following energy balance equation:  
+
+\[
+0 = \dot{m} (h_6 - h_5) + \dot{m} \frac{w_6^2 - w_5^2}{2}
+\]
+
+Rearranging the equation:  
+
+\[
+2(h_6 - h_5) = w_6^2 - w_5^2 \quad \Rightarrow \quad w_6^2 = w_5^2 - 2(h_6 - h_5)
+\]
+
+The enthalpy difference \( h_6 - h_5 \) is calculated as:  
+
+\[
+(h_6 - h_5) = c_p (T_6 - T_5) = 1.006 \cdot (431.9 - 431.9) = -118.25
+\]
+
+Substituting into the velocity equation:  
+
+\[
+w_6 = \sqrt{220^2 - 2 \cdot 118.25} = 220.26 \, \text{m/s}
+\]
+
+The energy balance for the system is analyzed to determine the outlet velocity \( w_6 \). The equation used is:  
+\[
+0 = \dot{m} \left( h_0 - h_6 + \frac{w_0^2 - w_6^2}{2} \right) + \dot{Q} + \dot{W}
+\]  
+where \( w_0 = 200 \, \text{m/s} \).  
+
+The enthalpy difference \( h_0 - h_6 \) is calculated using:  
+\[
+h_0 - h_6 = h(T_6 = 243.19 \, \text{K}) - h(T_0 = T_1)
+\]  
+\[
+h_0 - h_6 = c_p (T_6 - T_0) = 1.006 \cdot (349.4 - 243.19) = 71.9 \, \text{kJ/kg}
+\]

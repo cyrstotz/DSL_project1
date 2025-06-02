@@ -1,0 +1,62 @@
+TASK 1a  
+The energy balance for the reactor is given as:  
+\[
+\frac{dE}{dt} = \dot{m}_{\text{in}} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_{\text{out}} - \sum \dot{W} + \dot{Q}_R
+\]  
+Under steady-state conditions, this simplifies to:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} (h_{\text{out}} - h_{\text{in}})
+\]  
+
+The enthalpy values are calculated as follows:  
+\[
+h_{\text{in}} = h(T = 70^\circ\text{C}, \text{saturated liquid}) = 2626.8 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_{\text{out}} = h(T = 100^\circ\text{C}, \text{saturated liquid}) = 2676.1 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Substituting into the equation:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \frac{\text{kg}}{\text{s}} \cdot (2676.1 - 2626.8) + 100 \, \text{kW} = 76.96 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is calculated using the formula:  
+\[
+T = \frac{\int T \, ds}{s_a - s_e}
+\]  
+
+The entropy difference is given as:  
+\[
+s_a - s_e = s(298.15 \, \text{K}) - s(288.15 \, \text{K})
+\]  
+
+TASK 1c  
+The entropy balance for the reactor with stationary mass flow is expressed as:  
+\[
+0 = \dot{m}_{\text{in}} [s_{\text{out}} - s_{\text{in}}] + \frac{\dot{Q}_R}{T} - \frac{\dot{Q}_{\text{out}}}{T} + \dot{S}_{\text{gen}}
+\]  
+
+Rearranging for entropy generation:  
+\[
+\dot{S}_{\text{gen}} = \dot{m}_{\text{in}} [s_{\text{out}} - s_{\text{in}}] - \frac{\dot{Q}_R}{T} + \frac{\dot{Q}_{\text{out}}}{T}
+\]  
+
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = 0.3 \, \frac{\text{kg}}{\text{s}} \cdot (7.3553 - 7.1553) - \frac{100 \, \text{kW}}{255 \, \text{K}} + \frac{76.96 \, \text{kW}}{295 \, \text{K}}
+\]  
+
+The entropy values are:  
+\[
+s_{\text{in}} = s(T = 70^\circ\text{C}) = 7.1553 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+s_{\text{out}} = s(T = 100^\circ\text{C}) = 7.3553 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Final calculation:  
+\[
+\dot{S}_{\text{gen}} = -0.2015 \, \frac{\text{kJ}}{\text{kg·K}}
+\]

@@ -1,0 +1,45 @@
+TASK 1a  
+The enthalpy \( h \) is calculated as:  
+\[
+h = h_f + x_D \cdot (h_g - h_f) = h_f + x_D \cdot h_{fg} = 419.94 \, \text{kJ/kg} + 0.005 \cdot 2277.0 \, \text{kJ/kg}
+\]  
+\[
+h = 430.325 \, \text{kJ/kg}
+\]  
+The heat flow \( \dot{Q}_{\text{out}} \) removed by the coolant is:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \cdot h = 0.3 \, \text{kg/s} \cdot 430.325 \, \text{kJ/kg} = 129.1 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) is calculated using the following formula:  
+\[
+T_{\text{KF}} = \frac{\int_{S_a}^{S_e} T \, dS}{S_a - S_e} = \frac{T_{a,\text{Sa}} - T_{e,\text{Se}}}{C \cdot \ln \left( \frac{T_{a,\text{Sa}}}{T_{e,\text{Se}}} \right)}
+\]  
+Substituting values:  
+\[
+T_{\text{KF}} = \frac{298.15 \, \text{K} - 288.15 \, \text{K}}{C \cdot \ln \left( \frac{298.15}{288.15} \right)} = [\ldots] \approx 298 \, \text{K}
+\]  
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) is calculated as:  
+\[
+\dot{S}_{\text{gen}} = -\dot{m} \cdot (S_e - S_a) - \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = -0.3 \, \text{kg/s} \cdot (C \cdot \ln \left( \frac{T_e}{T_a} \right)) - \frac{65 \, \text{kW}}{298 \, \text{K}}
+\]  
+\[
+\dot{S}_{\text{gen}} = [\ldots]
+\]  
+
+TASK 1d  
+The energy balance for determining \( \Delta m_{12} \) is given as:  
+\[
+U_1 = (1 - x_D) \cdot m_{\text{gas},1} \cdot h_f + x_D \cdot m_{\text{gas},1} \cdot h_g + \int \dot{Q} \, dt - \int \dot{W} \, dt
+\]  
+Substituting values:  
+\[
+U_1 = (1 - 0.005) \cdot 5755 \, \text{kg} \cdot h_f + [\ldots]
+\]

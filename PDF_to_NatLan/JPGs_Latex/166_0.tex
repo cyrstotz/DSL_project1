@@ -1,0 +1,67 @@
+TASK 1a  
+The first law of thermodynamics is applied to the system:  
+\[
+0 = \dot{m}(h_e - h_a) + \dot{Q} - \dot{Q}_{\text{aus}}
+\]  
+Rearranging:  
+\[
+\dot{Q}_{\text{aus}} = \dot{m}(h_u - h_e) - \dot{Q}_R
+\]  
+The enthalpy values are determined using water tables:  
+\[
+h_a = h_e = h_f(70^\circ\text{C}) = 292.97 \, \text{kJ/kg} \quad \text{(from Table A2)}
+\]  
+\[
+h_u = h_f(100^\circ\text{C}) = 419.04 \, \text{kJ/kg} \quad \text{(from Table A2)}
+\]  
+Substituting into the equation:  
+\[
+\dot{Q}_{\text{aus}} = \dot{m}(h_2 - h_1) - \dot{Q}_R = 0.3 \, \text{kg/s} \cdot (419.04 - 292.97) \, \text{kJ/kg} - 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{aus}} = -62.182 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) is calculated using entropy change:  
+\[
+T = \frac{\int T \, dS}{S_2 - S_1} = \frac{\dot{Q}}{S_2 - S_1}
+\]  
+Substituting values:  
+\[
+\Delta S = \frac{\dot{Q}}{T} = \frac{65 \, \text{kW}}{S_2 - S_1}
+\]  
+
+TASK 1c  
+The second law of thermodynamics is applied to calculate entropy production:  
+\[
+0 = \dot{m}(s_e - s_a) + \frac{\dot{Q}}{T} + \dot{S}_{\text{gen}}
+\]  
+Rearranging:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{aus}}}{T_{\text{KF}}} - \frac{\dot{Q}_{\text{aus}}}{T_{\text{Reactor}}}
+\]  
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = \frac{65 \, \text{kW}}{298.15 \, \text{K}} - \frac{65 \, \text{kW}}{375.15 \, \text{K}}
+\]  
+\[
+\dot{S}_{\text{gen}} = 0.0461 \, \text{kW/K}
+\]  
+
+TASK 1d  
+The first law of thermodynamics is applied to a partially open system:  
+\[
+\Delta E = m_2 u_2 + m_1 u_1 = \sum \Delta m_i h_i + \sum \Delta Z_i
+\]  
+Rearranging:  
+\[
+(m_1 + \Delta m) u_2 - m_1 u_1 = \Delta m h_e
+\]  
+Substituting:  
+\[
+m_1 u_2 + \Delta m u_2 - m_1 u_1 = \Delta m h_e
+\]  
+\[
+\Delta m = \frac{m_1 u_2 - m_1 u_1}{h_e - u_2}
+\]

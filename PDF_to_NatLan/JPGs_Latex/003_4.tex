@@ -1,0 +1,63 @@
+TASK 3a  
+The gas pressure \( p_{g,1} \) is calculated using the formula:  
+\[
+p_{g,1} = \frac{m_K \cdot g}{A} + \frac{m_{\text{EW}} \cdot g}{A} + p_{\text{amb}}
+\]  
+Substituting values:  
+\[
+p_{g,1} = \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{(0.05 \, \text{m})^2 \cdot \pi} + \frac{0.1 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{(0.05 \, \text{m})^2 \cdot \pi} + 1 \, \text{bar}
+\]  
+\[
+p_{g,1} = 140099.4408 \, \text{Pa} \quad \text{or} \quad 1.4 \, \text{bar}
+\]  
+
+The gas mass \( m_g \) is calculated using:  
+\[
+p_{g,1} \cdot V_{g,1} = m_g \cdot R \cdot T_{g,1}
+\]  
+Rearranging:  
+\[
+m_g = \frac{p_{g,1} \cdot V_{g,1}}{R \cdot T_{g,1}}
+\]  
+Substituting values:  
+\[
+m_g = \frac{140000 \cdot 0.00314}{77.3 \cdot (500 + 273.15)} \cdot \frac{1}{50 \, \text{kg/kmol}}
+\]  
+\[
+m_g = 0.00341943 \, \text{kg}
+\]  
+
+---
+
+TASK 3b  
+The energy change \( \Delta E \) is expressed as:  
+\[
+\Delta E = c_V \cdot m_g \cdot \Delta T
+\]  
+
+The pressure \( p_{g,2} \) remains constant at \( p_{g,1} = 1.4 \, \text{bar} \), as mass and gravitational acceleration do not change.  
+
+The ice mass \( m_{\text{ice}} \) is calculated using:  
+\[
+m_{\text{ice}} = x_{\text{ice},1} \cdot m_{\text{EW}} = 0.6 \cdot 0.1 = 0.06 \, \text{kg}
+\]  
+
+The water mass \( m_W \) is calculated as:  
+\[
+m_W = m_{\text{EW}} - m_{\text{ice}} = 0.1 - 0.06 = 0.04 \, \text{kg}
+\]  
+
+The energy balance is written as:  
+\[
+\Delta E = E_2 - E_1 = \sum Q_{12} - \sum W_{12}
+\]  
+
+The internal energy is expressed as:  
+\[
+c_V \cdot m_g \cdot T + m_{\text{ice}} \cdot u_{\text{ice}} + m_W \cdot u_{\text{water}} = E_n
+\]  
+Substituting for state 2:  
+\[
+c_V \cdot m_g \cdot T + m_{\text{ice}} \cdot u_{\text{ice}} + m_W \cdot u_{\text{water}} = E_2
+\]  
+

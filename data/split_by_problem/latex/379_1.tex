@@ -1,0 +1,88 @@
+
+``````latex
+
+
+\section*{Aufgabe 3}
+
+\subsection*{a)}
+\begin{align*}
+p_{s1, A} &= p_{amb} + p_{m1} + p_{m, ew} - p_{amb} + \frac{F_G}{A} \\
+&= 1 \text{bar} + \frac{9.81 (0.15 \text{kg} + 32 \text{kg})}{\frac{\pi}{4} \left( \frac{d}{2} \right)^2} \\
+&= 1 \text{bar} + 40034.2 \text{Pa} = 1.400342 \text{bar} = p_{s1, A}
+\end{align*}
+
+\begin{align*}
+p_{s1} V_{s1} &= m_{s1} R T_{s1} \\
+R &= 8314 \, \text{J/(kmol K)} = 166.28 \, \text{J/(kg K)} \\
+p V &= R T \\
+m_{s1} &= \frac{(166.28 \cdot 773.15 \, \text{K})}{1.400342 \cdot 10^5 \, \text{Pa} \cdot 3.14 \cdot 10^{-2} \, \text{m}^3} = 0.003426 \, \text{kg} \\
+m_{s1} &= 3.42 \, \text{g}
+\end{align*}
+
+\subsection*{b)}
+\begin{align*}
+X_{\text{Eis2}} &> 0 \rightarrow T_{\text{Ew2}} = T_{\text{Ew1}} = 0^\circ \text{C} \\
+\text{Therm. GW} &\Rightarrow Q = 0 \Rightarrow \Delta T_{G2} = 0^\circ \text{C} = T_{\text{Ew}} \\
+p_{G2} &\Rightarrow Gewicht auf Kolben ändert sich nicht \\
+p_{G2} &= p_{s1, A} = 1.400342 \, \text{bar}
+\end{align*}
+
+\begin{quote}
+Da der Eisanteil größer als komplett bedeutet, dass die Eisküsse-Temperatur gleich bleibt und zudem im Zustand 2 keine Wärmeströme mehr existieren muss, die zweite Gas-Temperatur 0°C sein. Zudem bleibt der Druck im Gas konstant, da die Kolbenkraft konstant bleibt.
+\end{quote}
+
+\subsection*{c)}
+\begin{align*}
+V_{G2} &= \frac{m_{G}}{\rho} = \frac{0.003426 \cdot 166.28 \cdot 273.15 \, \text{K}}{1.400342 \, \text{bar}} = 0.0071 \, \text{m}^3 = 7.1 \, \text{L} \\
+\Delta T &= 500 \, \text{K}
+\end{align*}
+
+\subsubsection*{Energiebilanz}
+\begin{align*}
+\Delta U &= \dot{Q}_{12} - W_v \\
+\Delta u &= u_2 - u_1 = m_s c_v (T_2 - T_1) \\
+V_v &= \int p \, dV = p_G (V_2 - V_1)
+\end{align*}
+
+\begin{align*}
+q + \dot{Q}_{12} &= \cancelto{0}{\Delta U} + W_v \\
+&= 0.003426 \cdot 633 \frac{\text{J}}{\text{kgK}} \cdot 500 \text{K} + 1.400342 \cdot 10^5 \text{Pa} \cdot (-0.00204 \text{m}^3) \\
+&= 1388.2 \, \text{J} = \dot{Q}_{12}
+\end{align*}
+
+\begin{quote}
+EV gewinnt an Q \Rightarrow Q_{12} \rightarrow 0 \Rightarrow Q_{m2} = 1388.2 \, \text{J}
+\end{quote}```latex
+
+
+d)
+\[
+p_{EV} = 16 \text{bar} + \frac{32 \cdot 9.81}{(0.05)^2 \pi} = 1.46 \text{bar} = p_{sat}
+\]
+\[
+\theta_{1,sat} = 0^\circ C
+\]
+
+Energiebilanz:
+\[
+E_1 = E_2 + Q_{12}
+\]
+\[
+\Delta E = Q_{12} \quad \text{mit} \quad \Delta E = E_1 - E_2
+\]
+
+\[
+\Delta E = (0.6 \cdot u_{test} + 0.4 \cdot u_{liquid}) \cdot 1.0 \, \text{kg} - \left( (1 - x_2) \cdot u_{test} + x_2 \cdot u_{liquid} \right) \cdot 0.2 \, \text{kg}
+\]
+
+\[
+= 0.2 \left( -200.1 \right) - \left( -333.458 + x_2 (333.493) \right)
+\]
+
+\[
+= -13.34 - x_2 \cdot 33.34 = Q_{12} = 1368.2
+\]
+
+``````latex
+
+

@@ -1,0 +1,27 @@
+The pressure of the gas in state 1 is calculated as:  
+\[
+p_{g,1} = p_{\text{amb}} + \frac{F_{p,K}}{A} + \frac{F_{p,\text{EW}}}{A}
+\]  
+The area \( A \) is determined using the diameter of the cylinder:  
+\[
+A = \frac{\pi D^2}{4} = \pi \cdot \left(\frac{10}{100}\right)^2 = 7.854 \cdot 10^{-3} \, \text{m}^2
+\]  
+The force due to the piston is:  
+\[
+F_{p,K} = m_K \cdot g = 32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2 = 313.92 \, \text{N}
+\]  
+The force due to the ice-water mixture is:  
+\[
+F_{p,\text{EW}} = m_{\text{EW}} \cdot g = 0.1 \, \text{kg} \cdot 9.81 \, \text{m/s}^2 = 0.981 \, \text{N}
+\]  
+Thus, the pressure is:  
+\[
+p_{g,1} = 1 \, \text{bar} + \frac{313.92 \, \text{N} + 0.981 \, \text{N}}{7.854 \cdot 10^{-3} \, \text{m}^2} = 140069.38 \, \text{Pa}
+\]  
+
+The gas mass is calculated using the ideal gas law:  
+\[
+m_g = \frac{p_{g,1} \cdot V}{R \cdot T} = \frac{140069.38 \, \text{Pa} \cdot 3.14 \cdot 10^{-3} \, \text{m}^3}{166.11 \, \text{J/(kg·K)} \cdot 773.15 \, \text{K}} = 3.483 \cdot 10^{-3} \, \text{kg}
+\]  
+
+---

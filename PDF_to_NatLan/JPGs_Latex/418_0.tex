@@ -1,0 +1,44 @@
+TASK 1a  
+The goal is to determine \( \dot{Q}_{\text{out}} \), the heat flow removed by the coolant.  
+
+For a steady-state flow process:  
+\[
+0 = \dot{m}_{\text{in}} (h_e - h_a) + \frac{w_e^2 - w_a^2}{2} + g(z_e - z_a) + \sum \dot{Q}_j - \sum \dot{W}_j
+\]  
+Neglecting kinetic and potential energy terms:  
+\[
+0 = \dot{m}_{\text{in}} (h_e - h_a) + \sum \dot{Q}_j
+\]  
+Simplifying further:  
+\[
+0 = \dot{m}_{\text{in}} (h_e - h_a) + \dot{Q}_R - \dot{Q}_{\text{out}}
+\]  
+Rearranging:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} (h_e - h_a) + \dot{Q}_R
+\]  
+
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} (h_e - h_a) + \dot{Q}_R
+\]  
+\[
+= 0.3 \, \text{kg/s} \cdot (292.98 \, \text{kJ/kg} - 419.04 \, \text{kJ/kg}) + 100 \, \text{kW}
+\]  
+\[
+= 62.182 \, \text{kJ/s} = 62.182 \, \text{kW}
+\]  
+
+The values for \( h_f \) are taken from Table A-2.  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) is calculated using the integral:  
+\[
+T_{\text{KF}} = \frac{\int T \, ds}{s_a - s_e}
+\]  
+Approximating:  
+\[
+T_{\text{KF}} = \frac{T_{\text{KF,out}} \cdot s_{\text{out}} - T_{\text{KF,in}} \cdot s_{\text{in}}}{s_{\text{out}} - s_{\text{in}}}
+\]  

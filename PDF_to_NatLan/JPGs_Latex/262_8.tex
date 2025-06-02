@@ -1,0 +1,47 @@
+TASK 2b  
+The outlet velocity \( w_6 \) is calculated using the following equation:  
+\[
+w_6 = \sqrt{n \cdot R \cdot (T_6 - T_s) \cdot \frac{1}{n-1} + h_c - h_s + w_s^2} \cdot 2
+\]  
+where \( R = \frac{\bar{R}}{M_{\text{luft}}} \), and the values are:  
+\[
+\bar{R} = 0.296 \, \text{kJ/kg·K}, \quad M_{\text{luft}} = 28.96 \, \text{kg/kmol}, \quad c_p = 1.006 \, \text{kJ/kg·K}, \quad w_s = 220 \, \text{m/s}
+\]  
+
+The resulting outlet velocity is:  
+\[
+w_6 = 310.61 \, \text{m/s}
+\]  
+
+---
+
+TASK 2c  
+The mass-specific flow exergy \( ex_{\text{str}} \) is calculated using the following equation:  
+\[
+ex_{\text{str}} = (h - h_0) - T_0 \cdot (s - s_0) + \text{ke} + \text{pe}
+\]  
+Substituting the values:  
+\[
+ex_{\text{str}} = [h_6 - h_0 - T_0 \cdot (s_6 - s_0) + \text{ke} + \text{pe}] = 12.22 \, \text{kJ/kg}
+\]  
+
+For \( h_6 \) and \( s_6 \), the following relationships are used:  
+\[
+h_6 - h_0 = c_p \cdot (T_6 - T_0), \quad s_6 - s_0 = c_p \cdot \ln\left(\frac{T_6}{T_0}\right) - R \cdot \ln\left(\frac{p_6}{p_0}\right)
+\]  
+where \( p_6 = p_0 \), so \( \ln(1) = 0 \).  
+
+The calculations yield:  
+\[
+h_6 - h_0 = c_p \cdot (T_6 - T_0) = 85.43 \, \text{kJ/kg}
+\]  
+\[
+s_6 - s_0 = 0.30 \, \text{kJ/kg·K}, \quad T_0 = 73.22 \, \text{kJ/kg}
+\]  
+
+The kinetic energy term is calculated as:  
+\[
+\text{ke} = \frac{w_6^2}{2} - \frac{w_{\text{luft}}^2}{2} = 110 \, \text{kJ/kg}
+\]  
+
+No potential energy term (\( \text{pe} \)) is included in the calculation.

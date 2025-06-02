@@ -1,0 +1,50 @@
+TASK 1a  
+The heat flow \( Q_{\text{aus}} \) is determined using the energy balance equation:  
+\[
+0 = \dot{m}(h_e - h_a) + \dot{Q}
+\]  
+where \( \dot{Q}_R - Q_{\text{aus}} \) is the heat flow removed. Rearranging:  
+\[
+Q_{\text{aus}} = \dot{Q}_R + \dot{m}(h_e - h_a)
+\]  
+The enthalpy difference \( h_e - h_a \) is determined using tables.
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature \( \bar{T} \) is calculated as:  
+\[
+\bar{T} = \frac{\int T \, dS}{s_a - s_e}
+\]  
+
+---
+
+TASK 1c  
+The entropy production rate \( \dot{S}_{\text{gen}} \) is given by:  
+\[
+\dot{S}_{\text{gen}} = Q_{\text{aus}} \left( \frac{1}{T_{\text{KF}}} - \frac{1}{T_{\text{Reactor},1}} \right)
+\]  
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = 0.0461 \, \frac{\text{kJ}}{\text{s·K}}
+\]  
+
+---
+
+TASK 1d  
+The energy balance is used to determine \( \Delta m_{12} \):  
+\[
+\Delta E = m_2 u_2 - m_1 u_1 = \Delta m h_i - Q_{\text{aus},12}
+\]  
+Rearranging:  
+\[
+m_1 (u_2 - u_1) + Q_{\text{aus},12} = \Delta m (h_i - u_2)
+\]  
+Substituting values:  
+\[
+m_1 = 5755 \, \text{kg}, \, u_2 = 292.95 \, \frac{\text{kJ}}{\text{kg}}, \, u_1(100^\circ\text{C}) = 418.94 \, \frac{\text{kJ}}{\text{kg}}, \, Q_{\text{aus},12} = -690 \, \text{MJ}, \, h_i = 83.96 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Solving yields:  
+\[
+\Delta m_{12} = 3302.94 \, \text{kg}
+\]  

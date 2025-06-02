@@ -1,0 +1,38 @@
+TASK 2c  
+The entropy production is calculated using the following equation:  
+\[
+\Delta ex_{\text{flow}} = u_6 - u_0 - T_0(s_6 - s_0) + p_0(v_6 - v_0)
+\]  
+Substituting the specific enthalpy and entropy terms:  
+\[
+u_6 - u_0 = c_p(T_6 - T_0) - T_0 \ln \left(\frac{T_6}{T_0}\right)
+\]  
+This simplifies to:  
+\[
+\Delta ex_{\text{flow}} = c_p(T_6 - T_0) - T_0 \cdot c_p \ln \left(\frac{T_6}{T_0}\right) + \frac{w_6^2 - w_0^2}{2}
+\]  
+Numerical evaluation yields:  
+\[
+\Delta ex_{\text{flow}} = -11.0723 \, \text{kJ/kg}
+\]  
+
+---
+
+TASK 2d  
+For the adiabatic process, the heat transfer rate is zero (\( \dot{Q} = 0 \)).  
+The entropy balance is expressed as:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \cdot (s_6 - s_0)
+\]  
+Using the entropy equation:  
+\[
+s_6 - s_0 = c_p \ln \left(\frac{T_6}{T_0}\right)
+\]  
+The entropy generation rate is calculated as:  
+\[
+\dot{S}_{\text{gen}} = T_0 \cdot \dot{m} \cdot c_p \ln \left(\frac{T_6}{T_0}\right)
+\]  
+Numerical evaluation gives:  
+\[
+\dot{S}_{\text{gen}} = 81.5 \, \frac{\text{kJ}}{\text{s}}
+\]

@@ -1,0 +1,38 @@
+The pressure of the gas in state 1 is calculated using the equation:  
+\[
+p_{g,1} = p_{\text{amb}} + \frac{m_K g}{A} + \frac{m_{\text{EW}} g}{A}
+\]  
+where:  
+- \( p_{\text{amb}} = 1.0 \times 10^5 \, \text{Pa} \),  
+- \( m_K = 32.0 \, \text{kg} \),  
+- \( g = 9.81 \, \text{m/s}^2 \),  
+- \( A = \pi r^2 = \pi (0.05 \, \text{m})^2 = 0.00785 \, \text{m}^2 \),  
+- \( m_{\text{EW}} = 0.1 \, \text{kg} \).  
+
+Substituting values:  
+\[
+p_{g,1} = 1.0 \times 10^5 + \frac{32.0 \cdot 9.81}{0.00785} + \frac{0.1 \cdot 9.81}{0.00785}
+\]  
+\[
+p_{g,1} = 1.40114 \times 10^5 \, \text{Pa} = 1.407 \, \text{bar}.
+\]  
+
+The mass of the gas is calculated using the ideal gas law:  
+\[
+pV = m_g RT \quad \Rightarrow \quad m_g = \frac{p_{g,1} V_g}{RT}.
+\]  
+Given:  
+- \( R = 8.314 \, \text{J/mol·K} \),  
+- \( M_g = 50 \times 10^{-3} \, \text{kg/mol} \),  
+- \( V_g = 3.14 \times 10^{-3} \, \text{m}^3 \),  
+- \( T_g = 773.15 \, \text{K} \).  
+
+Substituting values:  
+\[
+m_g = \frac{1.401 \times 10^5 \cdot 3.14 \times 10^{-3}}{166.28 \cdot 773.15}
+\]  
+\[
+m_g = 0.00342 \, \text{kg} = 3.42 \, \text{g}.
+\]  
+
+---

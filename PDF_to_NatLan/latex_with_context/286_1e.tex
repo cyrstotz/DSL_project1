@@ -1,0 +1,57 @@
+The mass of saturated liquid water added to the reactor is calculated using the heat transfer equation:  
+\[
+\Delta E = \Delta m \cdot c_{\text{water}} \cdot \Delta T
+\]  
+Where:  
+\[
+\Delta E = (m_{\text{total}} - m_{\text{in}}) \cdot c_{\text{water}} \cdot \Delta T
+\]  
+
+Rearranging:  
+\[
+m_{\text{total}} = \frac{\Delta E}{c_{\text{water}} \cdot \Delta T} + m_{\text{in}}
+\]  
+Using \( c_{\text{water}} = 4.22 \, \text{kJ/kg·K} \):  
+\[
+m_{\text{total}} = \frac{785000 \, \text{kJ}}{4.22 \cdot 30} + 5755 = 18455 \, \text{kg}
+\]  
+
+The added mass is:  
+\[
+\Delta m = m_{\text{total}} - m_{\text{in}} = 18455 - 5755 = 12700 \, \text{kg}
+\]  
+
+Thus:  
+\[
+\Delta m = 3720 \, \text{kg}
+\]
+
+The entropy change \( \Delta S \) of the reactor contents from state 1 to state 2 is calculated using the formula:  
+\[
+\Delta S = m_2 s_2 - m_1 s_1
+\]
+
+The entropy at state 1 (\( s_1 \)) is calculated as:  
+\[
+s_1 = 0.005 \cdot s_g(100^\circ\text{C}) + 0.995 \cdot s_f(100^\circ\text{C})
+\]
+
+The entropy at state 2 (\( s_2 \)) is given as:  
+\[
+s_2 = s_f(70^\circ\text{C}) = 6.9543 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+The mass at state 1 (\( m_1 \)) is:  
+\[
+m_1 = 5755 \, \text{kg}
+\]
+
+The mass at state 2 (\( m_2 \)) is:  
+\[
+m_2 = 1.337 \, \frac{\text{kg}}{\text{K}}
+\]
+
+Substituting these values into the entropy change formula:  
+\[
+\Delta S = 8.475 \cdot 1.337 - 5755 \cdot 0.8548 = 7172.6 \, \frac{\text{kJ}}{\text{K}}
+\]

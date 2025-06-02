@@ -1,0 +1,29 @@
+The reactor operates in steady-state conditions. The mass flow rate entering the reactor is \( \dot{m}_{\text{in}} \), and the mass flow rate leaving the reactor is \( \dot{m}_{\text{out}} \). The reactor mass is constant at \( m_{\text{total}} = 5755 \, \text{kg} \), and the steam quality is \( x_D = 0.005 \). Heat is released by the chemical reaction (\( \dot{Q}_R \)) and removed via the cooling jacket.  
+
+The energy balance equation is written as:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} h_1 - \dot{m}_{\text{out}} h_2 + \dot{Q}_R - \dot{W}_{\text{turbine}}
+\]  
+Since the system is stationary and adiabatic to the surroundings, \( \dot{W}_{\text{turbine}} = 0 \).  
+
+The heat flow removed by the coolant is calculated using:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} (h_2 - h_1) + \dot{Q}_R
+\]  
+Substituting values:  
+\[
+\dot{m} = 0.3 \, \text{kg/s}, \quad h_2 = 419.04 \, \text{kJ/kg}, \quad h_1 = 292.98 \, \text{kJ/kg}, \quad \dot{Q}_R = 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \cdot (419.04 - 292.98) + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = 37.818 \, \text{kW} + 100 \, \text{kW} = 137.818 \, \text{kW}
+\]  
+
+The enthalpy values \( h_2 \) and \( h_1 \) are taken from saturated liquid water tables at \( T = 100^\circ\text{C} \) and \( T = 70^\circ\text{C} \), respectively:  
+\[
+h_2 = 419.04 \, \text{kJ/kg}, \quad h_1 = 292.98 \, \text{kJ/kg}
+\]  
+
+---

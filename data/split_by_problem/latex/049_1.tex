@@ -1,0 +1,72 @@
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+a) Da der Reaktor bleibt bei \(100^\circ C\) es gilt:
+\[
+\dot{Q}_{\text{zu}} + \dot{m} (h_{\text{zu}} - h_{\text{ein}}) = \dot{Q}_e \Rightarrow \dot{Q}_{\text{net}} = Q_{\text{zu}} - \dot{m} (h_{\text{aus}} - h_{\text{ein}})
+\]
+wobei wir können \(h_{\text{zu}}\) und \(h_{\text{ein}}\) von Tabelle A-2 finden:
+\[
+h_{\text{zu}} = x_b h_g (T = 100) + (1 - x_b) h_f (T = 100) = 730.72
+\]
+\[
+h_{\text{ein}} = x_b (h_f (T = 70)) + (1 - x_b) h_f (T = 70) = 709.6581
+\]
+\[
+\Rightarrow \dot{Q}_{\text{net}} = 100 \times 100 - 37.7012975 = \boxed{62.299 \text{ kW}}
+\]
+
+b) -
+
+c) Mit Entropiebilanz wir haben:
+\[
+\dot{Q}_e = \dot{m} S_{\text{zu}} - \dot{Q}_{\text{net}} + S_{\text{zu}} \Rightarrow S_{\text{zu}} = \frac{\dot{Q}_{\text{zu}}}{T} - \dot{m} [S_{\text{zu}} - S_{\text{ein}}]
+\]
+wobei \(S_e\) und \(S_{\text{zu}}\) sind auch von Tabelle A-2 interpoliert:
+\[
+S_e = x_b S_g (T = 70) + (1 - x_b) S_f (T = 70) = 0.9889
+\]
+\[
+S_{\text{zu}} = x_b S_g (T = 100) + (1 - x_b) S_f (T = 100) = 1.33719
+\]
+\[
+\Rightarrow \frac{S_{\text{zu}} - 62.299}{285} + 0.3 \times 0.9889 \approx 211.18 \frac{\text{kg}}{\text{kg}}
+\]
+
+``````latex
+
+
+d) Von Tabelle A-2 wir kan die Innere energie interpolieren:
+
+\[
+u_{\text{interpoliert}} = 0.005 \cdot u_f (T=40C) + 0.995 \cdot u_f (T=100) = 423.37
+\]
+
+\text{Werte:}
+
+\[
+u_{\text{verdampft}} = u_f (T=70) = 252.85
+\]
+
+\[
+u_{\text{in}} = u_f (T=20) = 83.55
+\]
+
+\[
+\Rightarrow m_1 u_{f1} + m_{12} u_{f2} = (m_1 + m_{12}) u_{\text{verdampft}} \Rightarrow \text{Mischung}
+\]
+
+\[
+m_1 u_{f1} + m_{12} u_{f2} = m_1 u_{\text{verdampft}} + m_{12} u_{\text{verdampft}} \Rightarrow m_1 (u_{f2} - u_{f1}) = m_{12} (u_{\text{verdampft}} - u_{f1}) \Rightarrow
+\]
+
+\[
+m_{12} = m_1 \left( \frac{u_{f2} - u_{f1}}{u_{\text{verdampft}} - u_{f1}} \right) = \boxed{5491.2 \text{ kg}}
+\]
+
+``````latex
+
+

@@ -1,0 +1,53 @@
+TASK 1d  
+The energy balance equation is written as:  
+\[
+\frac{dE}{dt} = \sum_i \dot{m}_i(t) \left[ h_i(t) + \frac{v_i^2(t)}{2} + g z_i(t) \right] - \sum_o \dot{m}_o(t) \left[ h_o(t) + \frac{v_o^2(t)}{2} + g z_o(t) \right] + \dot{Q}(t) - \dot{W}(t)
+\]  
+
+The change in energy (\( \Delta E \)) is expressed as:  
+\[
+\Delta E = m_2 u_2 - m_1 u_1 = \sum \dot{Q}_i = Q_{\text{out,12}} = 35 \, \text{MJ}
+\]  
+
+The mass balance is given as:  
+\[
+m_2 = m_1 + \Delta m \quad \text{and} \quad m_2 = 5755 \, \text{kg}, \quad m_D = x \cdot m_2, \quad m_D = m_1 (1 - x), \quad m_2 = \Delta m
+\]  
+
+Specific internal energy values are provided from Table A-2:  
+\[
+u_1 [100^\circ\text{C}] = 2506.5 \, \frac{\text{kJ}}{\text{kg}}, \quad u_{\text{sat}} [70^\circ\text{C}] = 292.83 \, \frac{\text{kJ}}{\text{kg}}, \quad u_{\text{sat}} [20^\circ\text{C}] = 87.95 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The energy balance equation is further expanded:  
+\[
+\Delta E = m_3 u_3 + m_2 u_2 - m_1 u_1 = 35 \, \text{MJ} = \Delta m u_3 + m_1 u_2 + \Delta m u_2 - m_1 u_1
+\]  
+
+Rearranging to solve for \( \Delta m \):  
+\[
+\Delta m = \frac{m_1 u_1 - m_1 u_2}{u_3 + u_2} = \frac{m_1 u_1 - m_1 u_2}{u_3 + u_2}
+\]  
+
+Substituting values:  
+\[
+\Delta m = \frac{0.005 \cdot 5755 \, \text{kg} \cdot 2506.5 \, \frac{\text{kJ}}{\text{kg}} + 5755 \, \text{kg} \cdot (1 - 0.005) \cdot 292.83 \, \frac{\text{kJ}}{\text{kg}} - 5755 \, \text{kg} \cdot 87.95 \, \frac{\text{kJ}}{\text{kg}} + 35 \, \text{MJ}}{87.95 \, \frac{\text{kJ}}{\text{kg}} + 292.83 \, \frac{\text{kJ}}{\text{kg}}}
+\]  
+
+Final result:  
+\[
+\Delta m_{12} = 2.176 \, \text{kg}
+\]  
+
+---
+
+TASK 1e  
+The entropy change (\( \Delta S \)) is expressed as:  
+\[
+\Delta S = m_2 s_2 - m_1 s_1 = \sum \Delta m s_i + \frac{\sum \dot{Q}_i}{T_i} + S_{\text{gen}}
+\]  
+
+Simplified expression for entropy change:  
+\[
+S_{12} = \Delta m_{12} \cdot s_{12}
+\]

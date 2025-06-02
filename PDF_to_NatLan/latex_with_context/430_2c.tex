@@ -1,0 +1,65 @@
+The mass-specific increase in flow exergy is calculated using the following equations:  
+
+**Data:**  
+\[
+ex_{\text{flow},6} = \left( h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2} \right)
+\]  
+\[
+ex_{\text{flow},0} = \left( h_0 - h_0 - T_0 (s_0 - s_0) + \frac{w_0^2}{2} \right)
+\]  
+\[
+ex_{\text{flow},0} = 0
+\]  
+
+**Integration:**  
+\[
+h_6 - h_0 = \int_{T_0}^{T_6} c_p \, dT = 7.006 \, \frac{\text{J}}{\text{kg·K}} \left( 328.0142 - 243.7541 \right)
+\]  
+\[
+h_6 - h_0 = 85.429 \, \frac{\text{J}}{\text{kg}}
+\]  
+
+\[
+s_6 - s_0 = \int_{T_0}^{T_6} \frac{c_p}{T} \, dT - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+\[
+s_6 - s_0 = 7.006 \, \frac{\text{J}}{\text{kg·K}} \ln \left( \frac{328.014}{243.754} \right) = 0.3016 \, \frac{\text{J}}{\text{kg·K}}
+\]  
+
+**Final Calculation:**  
+\[
+ex_{\text{flow},6} = \left( 85.429 \, \frac{\text{J}}{\text{kg}} - 243.15 \, \text{K} \cdot 0.3016 \, \frac{\text{J}}{\text{kg·K}} + \frac{(49.19)^2}{2} \right)
+\]  
+\[
+ex_{\text{flow},6} = 742.144 \, \frac{\text{J}}{\text{kg}}
+\]  
+
+The mass-specific exergy destruction is then:  
+\[
+ex_{\text{dest}} = ex_{\text{flow},6} - ex_{\text{flow},0} = 742.144 \, \frac{\text{J}}{\text{kg}}
+\]
+
+The entropy production rate \( \dot{S}_{\text{gen}} \) is calculated using the following equation:
+\[
+\frac{dS}{dt} = \dot{m}_{\text{in}} \cdot (s_0 - s_6) + \dot{S}_{\text{gen}}
+\]
+
+From the integral form:
+\[
+\dot{S}_{\text{gen}} = \dot{m}_{\text{in}} \cdot (s_6 - s_0) = 0.3016 \, \frac{\text{kg}}{\text{s}} \cdot 0.30 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+This results in:
+\[
+\dot{S}_{\text{gen}} = 0.09048 \, \frac{\text{kJ}}{\text{K·s}}
+\]
+
+The exergy destruction rate \( \dot{E}_{\text{dest}} \) is calculated as:
+\[
+\dot{E}_{\text{dest}} = T_0 \cdot \dot{S}_{\text{gen}} = 243.15 \, \text{K} \cdot 0.3016 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+This gives:
+\[
+\dot{E}_{\text{dest}} = 73.334 \, \frac{\text{kJ}}{\text{s}}
+\]

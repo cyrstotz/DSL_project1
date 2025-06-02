@@ -1,0 +1,50 @@
+TASK 1a  
+The task involves calculating the heat flow \( \dot{Q}_{\text{aus}} \) removed by the coolant.  
+
+### Energy balance for the coolant jacket:
+The first law of thermodynamics is applied to the coolant jacket:  
+\[
+0 = \dot{m}_{\text{KF}} \left[ h(288.15 \, \text{K}) - h(298.15 \, \text{K}) \right] + \dot{Q}_{\text{aus}}
+\]  
+Rearranging to solve for \( \dot{Q}_{\text{aus}} \):  
+\[
+\dot{Q}_{\text{aus}} = \dot{m}_{\text{KF}} \cdot c_f \cdot \left( 298.15 \, \text{K} - 288.15 \, \text{K} \right)
+\]  
+
+### Energy balance for the reactor:
+The first law of thermodynamics is applied to the reactor:  
+\[
+0 = \dot{m} \left[ h_{\text{in}} - h_{\text{aus}} \right] + \dot{Q}_R - \dot{Q}_{\text{aus}}
+\]  
+
+The enthalpy values are calculated using water tables:  
+\[
+h_{\text{in}} = 292.98 + 0.005 \cdot (2626.8 - 292.98) \quad \text{(from Table A-4)}
+\]  
+\[
+h_{\text{in}} = 304.64 \, \text{kJ/kg}
+\]  
+
+\[
+h_{\text{aus}} = 419.04 + 0.005 \cdot (2676.1 - 419.04) \quad \text{(from Table A-4)}
+\]  
+\[
+h_{\text{aus}} = 430.325 \, \text{kJ/kg}
+\]  
+
+Substituting into the energy balance equation:  
+\[
+\dot{Q}_{\text{aus}} = \dot{m} \cdot \left( h_{\text{in}} - h_{\text{aus}} \right) + \dot{Q}_R
+\]  
+\[
+\dot{Q}_{\text{aus}} = 0.3 \, \text{kg/s} \cdot \left( 304.64 - 430.325 \right) + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{aus}} = -37.8 \, \text{kW} + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{aus}} = 62.2945 \, \text{kW}
+\]  
+
+### Final result:
+The heat flow removed by the coolant is \( \dot{Q}_{\text{aus}} = 62.2945 \, \text{kW} \).

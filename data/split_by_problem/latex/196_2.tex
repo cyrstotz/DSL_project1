@@ -1,0 +1,165 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a plot on a grid paper with the x-axis labeled as $s$ with units $\left(\frac{kJ}{kgK}\right)$ and the y-axis labeled as $T$ with units $[K]$. The graph contains a cycle with six points labeled 0, 1, 2, 3, 4, and 6. The cycle starts at point 0, moves to point 1, then to point 2, 3, 4, and finally back to point 6. The segments between these points are labeled as follows:
+    \begin{itemize}
+        \item 0 to 1: Isentrop
+        \item 1 to 2: Isentrop
+        \item 2 to 3: Isobar, reversibel, adiabatic
+        \item 3 to 4: Isobar, irreversibel, $\Delta s \neq 0$, 0.5 bar
+        \item 4 to 6: Isentrop
+        \item 6 to 0: Isobar
+    \end{itemize}
+\end{description}
+
+\subsection*{b)}
+
+\begin{align*}
+    w_6 &= ? \\
+    T_G &= ?
+\end{align*}
+
+\begin{align*}
+    w_s &= 200 \frac{m}{s} \\
+    p_5 &= 0.5 \text{ bar} \\
+    T_5 &= 433.9 \text{ K} \\
+    p_6 &= p_0 = 0.151 \text{ bar}
+\end{align*}
+
+\begin{align*}
+    0 &= \dot{m} (s_c - s_a) + \frac{\dot{Q}}{\dot{m}} + \frac{s_e}{2} \\
+    &= 0 + 0 + 0 \quad \text{(adiabat, reversibel)}
+\end{align*}
+
+\begin{align*}
+    s_c &= s_a
+\end{align*}
+
+\begin{align*}
+    \text{Polytropes Temperaturverhältnis:} \quad n &= 1.1 \\
+    \frac{T_2}{T_1} &= \left(\frac{p_2}{p_1}\right)^{\frac{n-1}{n}}
+\end{align*}
+
+\begin{align*}
+    T_G &= T_5 \cdot \left(\frac{p_6}{p_5}\right)^{\frac{n-1}{n}} \\
+    &= 433.9 \text{ K} \cdot \left(\frac{0.151 \text{ bar}}{0.5 \text{ bar}}\right)^{\frac{1.1-1}{1.1}} \\
+    &= 328.07 \text{ K}
+\end{align*}
+
+\begin{align*}
+    \text{Energie Bilanz:} \quad 0 &= \dot{m} \left( h_e - h_a \right) + \frac{w_e^2}{2} - \frac{w_a^2}{2} \\
+    0 &= h_e - h_a + \frac{w_e^2}{2} - \frac{w_a^2}{2}
+\end{align*}
+
+\begin{align*}
+    w_a &= \sqrt{2 \left( h_e - h_a \right) + w_e^2}
+\end{align*}
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{b)}
+
+\begin{align*}
+h_e - h_a &= c_p^g (T_5 - T_0) \\
+h_5 - h_a &= c_p^g (431,3K - 328,07K) \\
+&= 1,006 \frac{kJ}{kg \cdot K} \cdot 103,23K \\
+&= 103,498 \frac{kJ}{kg}
+\end{align*}
+
+\[
+w_e = 270 \frac{m^2}{s^2}
+\]
+
+\[
+w_a = \sqrt{2 \cdot 103,498 \frac{kJ}{kg} + \frac{(270 \frac{m}{s})^2}{100}}
+\]
+
+\[
+w_a = \sqrt{2 \cdot 103,498 \frac{kJ}{kg} \cdot 1000 + (270 \frac{m}{s})^2}
+\]
+
+\[
+= 507,294 \frac{m}{s}
+\]
+
+\subsection*{c)}
+
+\[
+\delta e_{x,str} = ?
+\]
+
+\[
+\delta e_{x,str} = (h - h_0 - T_0 (s - s_0) + (ke + pe)) \quad h_0 =
+\]
+
+\[
+e_{x,str,G} - e_{x,str,O}
+\]
+
+\[
+e_{x,str,G} = (h_G - h_0 - T_0 (s_G - s_0) + (ke))
+\]
+
+\[
+e_{x,str,O} = (h_0 - h_0 - T_0 (s_0 - s_0) + (ke)) = ke_0
+\]
+
+\[
+\delta e_{x,str} = e_{x,str,G} - (ke_0)
+\]
+
+\[
+=
+\]
+
+\[
+h_G - h_0 = c_p^g (T_G - T_0) = 1,006 \frac{kJ}{kg \cdot K} (328,07K - 293,15K)
+\]
+
+\[
+= 35,429 \frac{kJ}{kg}
+\]
+
+\[
+s_0 = s_0 = c_p^g \ln \left( \frac{T_G}{T_0} \right) - R \ln \left( \frac{p}{p} \right)
+\]
+
+\[
+= 1,006 \frac{kJ}{kg \cdot K} \ln \left( \frac{328,07K}{293,15K} \right) = 0,30135 \frac{kJ}{kg \cdot K}
+\]
+
+``````latex
+
+
+\section*{Aufgabe 2:}
+$T_0 = 293,15 \, K$
+
+\subsection*{a)}
+\begin{align*}
+\dot{e}_{\text{exstr}} &= \left( 55,925 \frac{kJ}{kg} - 293,15 K \left( 0,303 \frac{kJ}{kg \cdot K} \right) + \frac{857,294 \frac{m^2}{s^2}}{2} - \frac{700 \frac{m^2}{s^2}}{2} \right) \\
+&= 55,925 \frac{kJ}{kg} - 73,7272 \frac{kJ}{kg} + 128,648 \frac{kJ}{kg} - 70 \frac{kJ}{kg} \\
+&= 120,846 \frac{kJ}{kg}
+\end{align*}
+
+\subsection*{b)}
+\begin{align*}
+\dot{e}_{\text{exver}} &= ? \\
+\dot{e}_{\text{exver}} &= T_0 \cdot \dot{s}_{\text{verz}} \\
+0 &= \dot{m} \left( s_0 - s_6 \right) + \frac{Q_j}{T_j} + \dot{s}_{\text{verz}} \\
+\dot{s}_{\text{verz}} &= \dot{m} \left( s_6 - s_0 \right) - \frac{Q_j}{T_j \cdot \dot{m}} \\
+\dot{s}_{\text{verz}} &= s_6 - s_0 - \frac{Q_j}{T_j} \\
+\dot{s}_{\text{verz}} &= 0,303 \frac{kJ}{kg \cdot K} - \frac{1,95 \frac{kJ}{kg}}{1283 K} = -0,6257 \frac{kJ}{kg \cdot K}
+\end{align*}
+
+``````latex
+
+

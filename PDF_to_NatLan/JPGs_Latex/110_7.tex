@@ -1,0 +1,70 @@
+TASK 1a  
+The goal is to determine \( \dot{Q}_{\text{aus}} \).  
+
+The energy balance equation is written as:  
+\[
+\frac{dE}{dt} = \sum \text{Einheit} \cdot T_f \cdot \dot{Q} = \dot{E}_{\text{in}} - \dot{E}_{\text{out}}
+\]  
+For steady-state conditions:  
+\[
+0 = \dot{m}_{\text{in}} \cdot h_{\text{in}} + \dot{Q}_{\text{R}}
+\]  
+\[
+0 = \dot{m}_{\text{in}} \cdot (h_{\text{in}} - h_{\text{aus}}) + \dot{Q}_{\text{aus}} + \dot{Q}_{\text{R}}
+\]  
+
+The equation for \( \dot{Q}_{\text{aus}} \) is derived as:  
+\[
+\dot{Q}_{\text{aus}} = \dot{m}_{\text{in}} \cdot (h_{\text{aus}} - h_{\text{in}}) - \dot{Q}_{\text{R}}
+\]  
+
+For saturated liquid water, the enthalpy values are obtained from Table A-2:  
+- At \( T_{\text{in}} = 70^\circ\text{C} \):  
+  \[
+  p = 0.3119 \, \text{bar}, \, h_f = 292.98 \, \text{kJ/kg}, \, h_g = 2626.8 \, \text{kJ/kg}
+  \]  
+- At \( T_{\text{aus}} = 100^\circ\text{C} \):  
+  \[
+  p = 1.0149 \, \text{bar}, \, h_f = 419.04 \, \text{kJ/kg}, \, h_g = 2676.1 \, \text{kJ/kg}
+  \]  
+
+The energy balance for the system is rewritten as:  
+\[
+\dot{m}_{\text{in}} \cdot (h_{\text{aus}} - h_{\text{in}}) = \dot{Q}_{\text{aus}} + \dot{Q}_{\text{R}}
+\]  
+
+The enthalpy at the inlet is calculated using:  
+\[
+h_{\text{in}} = h_f + x \cdot (h_g - h_f)
+\]  
+Substituting \( x = 0.005 \):  
+\[
+h_{\text{in}} = 292.98 + 0.005 \cdot (2626.8 - 292.98) = 304.645 \, \text{kJ/kg}
+\]  
+
+The enthalpy at the outlet is calculated using:  
+\[
+h_{\text{aus}} = h_f + x \cdot (h_g - h_f)
+\]  
+Substituting \( x = 0.005 \):  
+\[
+h_{\text{aus}} = 419.04 + 0.005 \cdot (2676.1 - 419.04) = 430.525 \, \text{kJ/kg}
+\]  
+
+Substituting values into the energy balance equation:  
+\[
+\dot{Q}_{\text{aus}} = 0.3 \cdot (430.525 - 304.645) - 100
+\]  
+\[
+\dot{Q}_{\text{aus}} = -62.237 \, \text{kW}
+\]  
+
+Thus, the heat flow removed by the coolant is:  
+\[
+\dot{Q}_{\text{aus}} = 62.237 \, \text{kW}
+\]  
+
+A small diagram is drawn showing heat flow directions:  
+- \( Q > 0 \) for heat entering the system.  
+- \( Q < 0 \) for heat leaving the system.  
+

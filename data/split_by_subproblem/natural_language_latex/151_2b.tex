@@ -1,0 +1,23 @@
+The given values are:
+- \( T_s \) equals 431.3 Kelvin,
+- \( p_s \) equals 0.5 bar,
+- \( w_s \) equals 720 meters per second,
+- \( p_c \) and \( p_0 \) both equal 0.151 bar.
+
+For an isentropic nozzle, the ratio \( \frac{1}{\kappa} \) is equal to the ratio \( \frac{c_p}{c_v} \).
+
+The temperature \( T_6 \) is calculated using the formula:
+\[ T_6 = T_s \left( \frac{p_6}{p_s} \right)^{\frac{\kappa - 1}{\kappa}} \]
+Substituting \( p_0 \) for \( p_6 \), we get:
+\[ T_6 = 431.3 \, K \cdot \left( \frac{0.151 \, bar}{0.5 \, bar} \right)^{\frac{0.4}{1.4}} \approx 328.07 \, K \]
+
+The change in energy \( \Delta E \) is given by:
+\[ \Delta E = 0 = \dot{m} \Delta h + \Delta KE = \dot{m} c_p (T_6 - T_s) + \frac{\dot{m}}{2} (w_6^2 - w_s^2) \]
+Simplifying, we have:
+\[ 0 = c_p (T_6 - T_s) + \frac{1}{2} (w_6^2 - w_s^2) \]
+\[ 0 = 1.005 \left( 328.07 - 431.3 \right) + \frac{1}{2} w_6^2 - 720^2 \]
+\[ 0 = -104.45 + \frac{1}{2} w_6^2 - 518400 \]
+Solving for \( w_6 \), we find:
+\[ \frac{1}{2} w_6^2 = 74.605 \quad \Rightarrow \quad w_6 = \sqrt{2 \cdot 74.605} = 12.215 \, \frac{m}{s} \]
+Finally, \( w_c \) is calculated as:
+\[ w_c = w_s + w_6 = 232.215 \, \text{meters per second} \]

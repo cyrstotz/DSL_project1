@@ -1,0 +1,77 @@
+
+``````latex
+
+
+\section*{Aufgabe 4:}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a pressure-temperature ($p$-$T$) diagram. The vertical axis represents pressure ($p$) and the horizontal axis represents temperature ($T$). There are three points labeled 1, 2, and 3. Point 1 is at the top right, point 2 is directly below point 1, and point 3 is to the left of point 2. The line from point 1 to point 2 is vertical, indicating a constant temperature process. The line from point 2 to point 3 is horizontal, indicating a constant pressure process. The pressure at point 3 is labeled as $p_{\text{Tripel}}$ and $p_{\text{prop}=5\text{bar}}$.
+\end{description}
+
+\subsection*{b) Energiebilanz am Kompressor}
+
+\begin{itemize}
+    \item Stationärer Fließprozess
+\end{itemize}
+
+\[
+\dot{E} = \dot{m}_{\text{R134a}} (h_2 - h_3) + \dot{W}_c
+\]
+
+\[
+\dot{m}_{\text{R134a}} = \frac{\dot{W}_c}{h_3 - h_2}
+\]
+
+\[
+h_2: \quad T_2 = 26^\circ C
+\]
+
+\[
+h_2 = h_g(-26^\circ C) = 231,62 \frac{\text{kJ}}{\text{kg}} \quad \text{Tabelle A-10 @ -26°C}
+\]
+
+\[
+h_3: \quad \text{isentrop} \rightarrow s_3 = s_2 = s_g(-26^\circ C) = 0,9390 \quad \text{Tabelle A-12 @ 26°C}
+\]
+
+\[
+h_3 \text{ interpolieren aus Tabelle A-12 mit } s_3
+\]
+
+\[
+\begin{array}{l l l}
+s_3 \rightarrow 0,9390 & h_g & 273,66 \frac{\text{kJ}}{\text{kg}} \\
+s_3 \rightarrow 0,9390 & h_f & 284,30 \frac{\text{kJ}}{\text{kg}} \\
+\end{array}
+\]
+
+\[
+h_3 = 273,61 + \frac{284,30 - 273,66}{0,9391 - 0,9394} (0,9390 - 0,9374) = 274,17 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\dot{m}_{\text{R134a}} = \frac{0,000648 \frac{\text{kJ}}{\text{s}}}{h_3 - h_2} = \frac{0,000648 \frac{\text{kJ}}{\text{s}}}{0,3029 \frac{\text{kJ}}{\text{kg}}} = 0,00214 \frac{\text{kg}}{\text{s}}
+\]
+
+``````latex
+
+
+1. \\
+\text{Drossel adiabatic} \Rightarrow U_i = U_1 \\
+\text{Isobare Kondensation} \Rightarrow p_4 = p_3 = 8 \text{bar} \\
+\text{Zusatz} \\
+\Rightarrow U_2 = U_3 = U_g (\text{Dampf}) = 0.025 \frac{\text{kJ}}{\text{kg}} \\
+\Rightarrow
+
+\begin{figure}[h]
+\centering
+\text{A small sketch of a process diagram is present here.}
+\end{figure}
+
+2. \\
+\text{Ex_s} = \frac{\dot{Q}_{ab}}{\dot{Q}_{zu}} = \frac{\dot{W}_k + \dot{Q}_k}{\dot{Q}_{ab}}
+
+3. \\
+```

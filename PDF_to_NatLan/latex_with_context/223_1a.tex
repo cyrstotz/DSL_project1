@@ -1,0 +1,21 @@
+The energy balance for the reactor is given as:  
+\[
+\frac{dE}{dt} = \dot{m}_{\text{in}} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_{\text{out}} - \sum \dot{W} + \dot{Q}_R
+\]  
+Under steady-state conditions, this simplifies to:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} (h_{\text{out}} - h_{\text{in}})
+\]  
+
+The enthalpy values are calculated as follows:  
+\[
+h_{\text{in}} = h(T = 70^\circ\text{C}, \text{saturated liquid}) = 2626.8 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_{\text{out}} = h(T = 100^\circ\text{C}, \text{saturated liquid}) = 2676.1 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Substituting into the equation:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \frac{\text{kg}}{\text{s}} \cdot (2676.1 - 2626.8) + 100 \, \text{kW} = 76.96 \, \text{kW}
+\]

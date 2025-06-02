@@ -1,0 +1,54 @@
+TASK 1a  
+From the energy balance:  
+\[
+\frac{dE}{dt} = \sum_i \dot{m}_i \left[ h + \frac{v^2}{2} + gz \right]_i + \sum_j \dot{Q}_j + \sum_k \dot{W}_k = 0
+\]  
+\[
+\dot{m} \left( h_{\text{out}} - h_{\text{in}} \right) + \dot{Q}_R + \dot{Q}_{\text{out}} = 0
+\]  
+Rearranging:  
+\[
+\dot{Q}_{\text{out}} = -\dot{Q}_R + \dot{m} \left( h_{\text{in}} - h_{\text{out}} \right)
+\]  
+
+From Table A-3:  
+\[
+h_{\text{in}} = 1267 \, \text{kJ/kg} \quad \text{(enthalpy at } T_{\text{in}} = 70^\circ\text{C})
+\]  
+\[
+h_{\text{out}} = h_f(100^\circ\text{C}) = 1407.6 \, \text{kJ/kg}
+\]  
+
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = -100 \, \text{kW} + 0.3 \, \text{kg/s} \cdot \left( 1267 \, \text{kJ/kg} - 1407.6 \, \text{kJ/kg} \right)
+\]  
+\[
+\dot{Q}_{\text{out}} = 57.82 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+From the entropy balance:  
+\[
+0 = \dot{m} \left( s_{\text{e}} - s_{\text{a}} \right) + \sum_j \frac{\dot{Q}_j}{T_j} + \dot{S}_{\text{gen}}
+\]  
+
+From the energy balance:  
+\[
+0 = \dot{m} \left( h_{\text{e}} - h_{\text{a}} \right) + \left( z - \frac{T_{\text{e}}}{T_{\text{a}}} \right) = 0
+\]  
+
+Thermodynamic mean temperature \( T_{\text{KF}} \):  
+\[
+T_{\text{KF}} = \frac{\dot{m} \left( h_{\text{e}} - h_{\text{a}} \right)}{\dot{m} \left( s_{\text{e}} - s_{\text{a}} \right)} = \frac{c_w \left( T_{\text{in}} - T_{\text{out}} \right)}{c_w \ln \left( \frac{T_{\text{in}}}{T_{\text{out}}} \right)}
+\]  
+
+Substituting values:  
+\[
+T_{\text{KF}} = \frac{288.15 \, \text{K} - 298.15 \, \text{K}}{\ln \left( \frac{288.15 \, \text{K}}{298.15 \, \text{K}} \right)}
+\]  
+\[
+T_{\text{KF}} = 293.12 \, \text{K}
+\]  

@@ -1,0 +1,48 @@
+TASK 2a  
+The diagram is a qualitative representation of the jet engine process in a temperature-entropy (\(T\)-\(S\)) diagram. The axes are labeled as follows:  
+- The vertical axis represents temperature (\(T\)) in Kelvin (\([K]\)).  
+- The horizontal axis represents entropy (\(S\)) in \([kJ/kg·K]\).  
+
+The diagram includes the following features:  
+- Several isobaric lines are drawn, labeled as "isobar" and corresponding to different pressures.  
+- An adiabatic line labeled "adiabat" is shown.  
+- The states of the jet engine process are marked as points 0, 1, 2, 3, 4, 5, and 6.  
+- The pressure values \(p_2 = p_3\), \(p_0 = 0.5 \, \text{bar}\), and \(p_0 = 6.193 \, \text{bar}\) are indicated near the isobaric lines.  
+
+TASK 2b  
+The energy balance equation is written as:  
+\[
+\dot{m}_{\text{ges}} \left( h_5 - h_6 + \frac{w_5^2}{2} - \frac{w_6^2}{2} \right) = 0
+\]  
+This equation accounts for the enthalpy difference (\(h_5 - h_6\)) and the kinetic energy terms (\(w_5^2/2\) and \(w_6^2/2\)).  
+
+The following derivations are shown:  
+1. The polytropic relation for the temperature ratio:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}}
+\]  
+From this, \(T_6\) is calculated as:  
+\[
+T_6 = \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} T_5 = 328.0747 \, \text{K}
+\]  
+
+2. The enthalpy difference and kinetic energy terms are used to find \(w_6\):  
+\[
+h_5 - h_6 + \frac{1}{2} w_5^2 - \frac{1}{2} w_6^2 = 0
+\]  
+Rearranging for \(w_6\):  
+\[
+w_6 = \sqrt{2 \left( h_5 - h_6 \right) + w_5^2}
+\]  
+Substituting values:  
+\[
+w_6 = \sqrt{2 c_p \left( T_5 - T_6 \right) + w_5^2}
+\]  
+\[
+w_6 = \sqrt{2 \cdot 1.006 \cdot (403.8 - 328.0747) + 220^2}
+\]  
+\[
+w_6 = 507.25 \, \text{m/s}
+\]  
+
+This calculation determines the outlet velocity \(w_6\) as \(507.25 \, \text{m/s}\).

@@ -1,0 +1,17 @@
+The mass-specific increase in flow exergy is calculated using:  
+\[
+\dot{E}_{\text{ex,flow}} = \dot{m} \left( h_6 - h_0 - T_0 \left( s_6 - s_0 \right) + \dot{e} \right)
+\]  
+
+Substituting values:  
+\[
+h_6 - h_0 = c_p \left( T_6 - T_0 \right) = 1.006 \, \text{kJ/kg·K} \cdot \left( 340.1 - 273.15 \right) = 57.07 \, \text{kJ/kg}
+\]  
+\[
+T_0 \left( s_6 - s_0 \right) = T_0 \cdot c_p \ln \left( \frac{T_6}{T_0} \right) = 273.15 \cdot 1.006 \ln \left( \frac{340.1}{273.15} \right) = 170 \, \text{kJ/kg}
+\]  
+
+Final exergy calculation:  
+\[
+\dot{E}_{\text{ex,flow}} = \dot{m} \left( 57 - 52 + 170 \right) = 635 \, \text{kJ/kg}
+\]

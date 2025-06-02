@@ -1,0 +1,27 @@
+The heat flow through the wall (\( \dot{Q}_{\text{out}} \)) is calculated using an energy balance around the reactor.  
+
+Energy balance equation:  
+\[
+0 = \dot{m} \cdot (h_{\text{e}} - h_{\text{a}}) + \sum \dot{Q} - \sum \dot{W}
+\]  
+
+The enthalpy values are determined from water tables:  
+\[
+h_{\text{e}} = h_f + x \cdot h_{\text{fg}} = h_f[100^\circ\text{C}] + x \cdot h_{\text{fg}}[100^\circ\text{C}]
+\]  
+\[
+h_{\text{a}} = h_f[70^\circ\text{C}]
+\]  
+
+Substituting values:  
+\[
+h_{\text{e}} = 419.04 + 0.005 \cdot 2257.0 = 430.325 \, \text{kJ/kg}
+\]  
+\[
+h_{\text{a}} = 292.98 \, \text{kJ/kg}
+\]  
+
+Using the mass flow rate \( \dot{m} = 0.3 \, \text{kg/s} \):  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \cdot (h_{\text{e}} - h_{\text{a}}) = 0.3 \cdot (430.325 - 292.98) = 41.264 \, \text{kW}
+\]

@@ -1,0 +1,91 @@
+TASK 4a  
+The process is illustrated in a pressure-temperature (\(p\)-\(T\)) diagram. The diagram shows the isobaric evaporation and condensation processes of the refrigerant, as well as the adiabatic compression and expansion. The phase regions are labeled, and the transitions between states are marked as follows:  
+- \(p_1 \to p_2\): Isobaric evaporation  
+- \(p_2 \to p_3\): Adiabatic compression  
+- \(p_3 \to p_4\): Isobaric condensation  
+- \(p_4 \to p_1\): Adiabatic expansion  
+
+The graph includes the triple point of water, and the temperature \(T_i\) is determined from the graph.  
+\[
+T_i = -20^\circ\text{C}, \quad T_{\text{w}} = -26^\circ\text{C}
+\]
+
+TASK 4b  
+The system is modeled as stationary and adiabatic, with the following energy balance:  
+\[
+\dot{E}_{\text{in}} - \dot{E}_{\text{out}} = \frac{\partial E}{\partial t} = 0
+\]  
+This implies that the heat transfer (\(Q\)) and work (\(W\)) must balance.  
+
+The heat transfer during isobaric evaporation of R134a is calculated using:  
+\[
+\dot{Q}_K = \dot{m}_{\text{R134a}} \cdot \left( h_{g}(T_i) - h_{f}(T_i) \right)
+\]  
+From the tables (A-10) for R134a at \(T_i = -20^\circ\text{C}\):  
+\[
+h_{g}(T_i) = 245.94 \, \frac{\text{kJ}}{\text{kg}}, \quad h_{f}(T_i) = 24.17 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+\dot{Q}_K = \dot{m}_{\text{R134a}} \cdot (245.94 - 24.17) = \dot{m}_{\text{R134a}} \cdot 219.67 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The heat transfer during isobaric condensation of R134a at \(T_{\text{w}} = -26^\circ\text{C}\) is calculated similarly:  
+\[
+\dot{Q}_{\text{cond}} = \dot{m}_{\text{R134a}} \cdot \left( h_{g}(T_{\text{w}}) - h_{f}(T_{\text{w}}) \right)
+\]  
+From the tables (A-10) for R134a at \(T_{\text{w}} = -26^\circ\text{C}\):  
+\[
+h_{g}(T_{\text{w}}) = 242.43 \, \frac{\text{kJ}}{\text{kg}}, \quad h_{f}(T_{\text{w}}) = 16.25 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+\dot{Q}_{\text{cond}} = \dot{m}_{\text{R134a}} \cdot (242.43 - 16.25) = \dot{m}_{\text{R134a}} \cdot 226.18 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The mass flow rate of R134a (\(\dot{m}_{\text{R134a}}\)) is determined using the energy balance:  
+\[
+\dot{m}_{\text{R134a}} = \frac{\dot{Q}_K}{h_{g}(T_i) - h_{f}(T_i)}
+\]  
+From the tables:  
+\[
+h_{g}(T_i) = 245.94 \, \frac{\text{kJ}}{\text{kg}}, \quad h_{f}(T_i) = 24.17 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+\dot{m}_{\text{R134a}} = \frac{\dot{Q}_K}{245.94 - 24.17} = \frac{\dot{Q}_K}{219.67 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+TASK 4c  
+The vapor quality (\(x_1\)) of the refrigerant at state 1 after expansion is calculated using:  
+\[
+x_1 = \frac{h_1 - h_f(T_1)}{h_g(T_1) - h_f(T_1)}
+\]  
+From the tables:  
+\[
+h_f(T_1) = 16.25 \, \frac{\text{kJ}}{\text{kg}}, \quad h_g(T_1) = 242.43 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+x_1 = \frac{h_1 - 16.25}{242.43 - 16.25} \approx 0.93
+\]
+
+TASK 4d  
+The coefficient of performance (\(\epsilon_K\)) is calculated using:  
+\[
+\epsilon_K = \frac{\dot{Q}_K}{\dot{W}_K}
+\]  
+Where:  
+\[
+\dot{W}_K = \dot{m}_{\text{R134a}} \cdot (h_2 - h_1)
+\]  
+From the tables:  
+\[
+h_2 = h_g(T_i) = 235.34 \, \frac{\text{kJ}}{\text{kg}}, \quad h_1 = h_f(T_i) = 16.25 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+\dot{W}_K = \dot{m}_{\text{R134a}} \cdot (235.34 - 16.25) = \dot{m}_{\text{R134a}} \cdot 219.09 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+\epsilon_K = \frac{\dot{Q}_K}{\dot{m}_{\text{R134a}} \cdot 219.09}
+\]  
+Substituting values yields:  
+\[
+\epsilon_K \approx 4.69
+\]

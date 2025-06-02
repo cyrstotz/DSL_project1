@@ -1,0 +1,50 @@
+TASK 2a  
+The diagram shows a qualitative \( T \)-\( s \) diagram for the jet engine process. The vertical axis represents temperature \( T \) in Kelvin, and the horizontal axis represents entropy \( s \) in \( \text{J/kg·K} \). The process includes labeled isobars \( p_5 \) and \( p_0/p_6 \). An adiabatic compressor is indicated with an upward arrow, and the flow transitions between the isobars.  
+
+---
+
+TASK 2b  
+The outlet velocity \( w_6 \) and temperature \( T_6 \) are determined under the assumption that \( Q = 0 \) and \( W = 0 \).  
+\[
+w_5 = 220 \, \text{m/s}
+\]  
+From the energy balance:  
+\[
+0 = h_5 - h_6 + \frac{w_5^2 - w_6^2}{2}
+\]  
+This simplifies to:  
+\[
+w_6 = w_5 = 220 \, \text{m/s}
+\]  
+
+---
+
+TASK 2c  
+The mass-specific increase in flow exergy is calculated using the formula:  
+\[
+\dot{m}_{\text{ext}} = \dot{m} \left[ h_6 - h_0 - T_0 (s_6 - s_0) + \text{ke} + \text{pe} \right]
+\]  
+Expanding the terms:  
+\[
+\dot{m}_{\text{ext}} = \dot{m} \left[ c_p (T_6 - T_0) - T_0 \left( c_p \ln \frac{T_6}{T_0} - R \ln \frac{p_6}{p_0} \right) + \frac{(200 \, \text{m/s})^2 - (5 \times 10^{-3} \, \text{m/s})^2}{2} \right]
+\]  
+Substituting values:  
+\[
+\dot{m}_{\text{ext}} = \dot{m} \left[ 1.006 (340 \, \text{K} - 243.15 \, \text{K}) - 243.15 \left( 1.006 \ln \frac{340}{243.15} \right) \right]
+\]  
+
+Additional relationships are noted:  
+\[
+R = c_p - c_v
+\]  
+\[
+\eta = \frac{c_p}{c_v} \quad \text{and} \quad c_v = \frac{c_p}{\kappa}
+\]  
+
+---
+
+TASK 2d  
+The mass-specific exergy destruction is given by:  
+\[
+ex_{\text{vel}} = \frac{T_0 \dot{S}_{\text{gen}}}{\dot{m}_{\text{ges}}}
+\]  

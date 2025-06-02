@@ -1,0 +1,61 @@
+TASK 2a  
+The following equations are used to calculate the exergy terms:  
+
+\[
+0 \cdot ex_{str} = 1.006 (328.1 - 243.15) - \frac{243.15}{328} \left( 1.006 \cdot \ln \left( \frac{328.15}{243.15} \right) \right) + \frac{400.55^2}{2}
+\]
+
+\[
+0 \cdot ex_{str} = 80.2 \cdot 31.17 \, \text{J/s} = 80.2 \, \text{kJ/s}
+\]
+
+---
+
+TASK 2d  
+The exergy destruction rate is expressed as:  
+
+\[
+\frac{d ex}{dt} = \sum \dot{ex}_{str} - \sum \dot{ex}_{Q,j} - \sum \left( w_{in}(t) \cdot p \cdot \frac{dV}{dt} \right)
+\]
+
+For the exergy flow rate:  
+
+\[
+\dot{ex}_{Q,j} = \int_a \left( 1 - \frac{T_0}{T_a} \right) SQ \quad \text{(cos 98 approximation)}
+\]
+
+The exergy flow rate is simplified as:  
+
+\[
+\frac{d ex}{dt} = \sum \dot{ex}_{str} + \sum \dot{ex}_{Q,j} - \dot{ex}_{vel}
+\]
+
+Where:  
+
+\[
+\dot{ex}_{vel} = 80.2 \, \text{kJ/s}
+\]
+
+Thus:  
+
+\[
+\dot{ex}_{out} + KE = 80.2 + \dot{ex}_{Q} - \dot{ex}_{vel}
+\]
+
+\[
+\dot{ex}_{out} = 80.2 + \dot{ex}_{Q} - \dot{ex}_{vel} - KE
+\]
+
+And kinetic energy is expressed as:  
+
+\[
+KE = \frac{w^2}{2}
+\]
+
+---
+
+TASK 2a  
+A graph is drawn representing the process in a \( T-s \) diagram.  
+
+Description of the graph:  
+The diagram shows a thermodynamic process with labeled isobaric segments. The curve starts at the bottom left and rises vertically, indicating an isobaric heating process. It then transitions horizontally, representing an isothermal process. The curve descends vertically again, showing an isobaric cooling process. The labels "isobar" are marked on the vertical segments, and the notation \( T_6 > T_5 \) is written to indicate the temperature relationship between states.

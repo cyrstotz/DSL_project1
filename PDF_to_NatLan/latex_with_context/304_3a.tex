@@ -1,0 +1,45 @@
+The gas pressure \( p_{g,1} \) is calculated as the sum of three components:  
+\[
+p_{g,1} = p_{\text{amb}} + p_{\text{EW}} + p_{K}
+\]  
+The ambient pressure is given as:  
+\[
+p_{\text{amb}} = 1 \, \text{bar} = 10^5 \, \text{Pa}
+\]  
+
+Next, the area of the membrane and piston is calculated:  
+\[
+A = \pi r^2 = 2 \cdot 0.05^2 = 0.0157 \, \text{m}^2
+\]  
+
+The pressure contributions from the EW and piston are determined as follows:  
+\[
+p_{\text{EW}} = \frac{F}{A} = \frac{0.1 \cdot 9.81}{0.0157} = 62.48 \, \text{Pa}
+\]  
+\[
+p_{K} = \frac{F}{A} = \frac{32 \cdot 9.81}{0.0157} = 19994.90 \, \text{Pa}
+\]  
+
+Adding these values together:  
+\[
+p_{g,1} = 10^5 \, \text{Pa} + 62.48 \, \text{Pa} + 19994.90 \, \text{Pa} = 120057.38 \, \text{Pa}
+\]  
+This is approximately \( 1.2 \, \text{bar} \).  
+
+For the perfect gas, the mass \( m_g \) is calculated using the ideal gas law:  
+\[
+pV = mRT \quad \text{or} \quad m = \frac{pV}{RT}
+\]  
+The gas constant \( R \) is:  
+\[
+R = \frac{R_u}{M} = \frac{8.314}{50} = 0.16628 \, \text{kJ/kg·K}
+\]  
+
+Substituting the values:  
+\[
+m = \frac{0.00314 \, \text{m}^3 \cdot 120057.38 \, \text{Pa}}{0.16628 \, \text{kJ/kg·K} \cdot (500 + 273.15 \, \text{K})}
+\]  
+Simplifying:  
+\[
+m = 2.93 \, \text{g}
+\]

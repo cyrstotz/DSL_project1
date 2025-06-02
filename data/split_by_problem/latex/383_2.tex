@@ -1,0 +1,123 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{tabular}{c|c|c|c|c}
+Zustand & $p \, [\text{bar}]$ & $T \, [^\circ \text{C}]$ & $W \, [\frac{\text{kJ}}{\text{kg}}]$ & $s \, [\frac{\text{kJ}}{\text{kg K}}]$ \\
+\hline
+0 & & & & \\
+1 & 0,191 & & & \\
+2 & & 243,15 & & \\
+3 & & & & \\
+4 & & & & \\
+5 & 0,5 & 431,9 & 220 & \\
+6 & & & & \\
+\end{tabular}
+
+\[
+P_1 = P_5
+\]
+
+\[
+s_1 = s_2
+\]
+
+\[
+s_2 = s_1
+\]
+
+\[
+s_5 = s_6
+\]
+
+\[
+s_6 = s_5
+\]
+
+\subsection*{Graphical Description}
+
+The graph is a Temperature-Entropy ($T$-$s$) diagram. The x-axis is labeled $s \, [\frac{\text{kJ}}{\text{kg K}}]$ and the y-axis is labeled $T \, [K]$. 
+
+- There are two isobars drawn: one at 0.5 bar and another at 0.191 bar.
+- The isobar at 0.5 bar is drawn as a curve starting from the bottom left and curving upwards to the right.
+- The isobar at 0.191 bar is drawn similarly but is positioned to the left of the 0.5 bar isobar.
+- Points 1, 2, 3, 4, 5, and 6 are marked on the graph.
+- Point 1 is at the intersection of the 0.191 bar isobar and a vertical line.
+- Point 2 is slightly to the right of Point 1 on the same isobar.
+- Point 3 is on the 0.5 bar isobar, directly above Point 2.
+- Point 4 is to the right of Point 3 on the same isobar.
+- Point 5 is on the 0.191 bar isobar, directly below Point 4.
+- Point 6 is to the right of Point 5 on the same isobar.
+- Arrows indicate the transitions between these points: from 1 to 2, 2 to 3, 3 to 4, 4 to 5, and 5 to 6.
+
+\subsection*{b)}
+
+Energiebilanz um die Schubdüse:
+
+\[
+0 = \dot{m} \left[ h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right]
+\]
+
+\[
+h_5 - h_6 = \dots
+\]
+
+\[
+\Rightarrow w_6 = \sqrt{2 \left( h_5 - h_6 \right) + w_5^2}
+\]
+
+\[
+= \sqrt{2 \cdot 104,5 \frac{\text{kJ}}{\text{kg}} + (220 \frac{\text{m}}{\text{s}})^2} = 220,57 \frac{\text{m}}{\text{s}}
+\]
+
+``````latex
+
+
+\section*{Student Solution}
+
+\subsection*{c)}
+
+\begin{align*}
+\Delta e_{x,\text{istr}} &= \frac{\dot{E}_{x,\text{istr}}}{\dot{m}_{ges}} = \left[ h_6 - h_0 - T_0 (s_6 - s_0) \right] \\
+&= \\
+s_6 - s_0 &= s^0(T_6) - s^0(T_0) - R \ln \left( \frac{P_6}{P_0} \right) \\
+&= 0 \\
+h_6 - h_0 &= 189.88 \frac{\text{kJ}}{\text{kg}} \quad (\text{aus Teilaufgabe b})
+\end{align*}
+
+\subsection*{d)}
+
+\begin{align*}
+e_{x,\text{verl}} &= \frac{\dot{E}_{x,\text{verl}}}{\dot{m}_{ges}} = T_0 \dot{S}_{e, \text{verl}} \\
+\end{align*}
+
+\text{Entropiebilanz:} \quad 0 = \dot{m}_g s_0 - \dot{m}_k s_6 + \frac{\dot{Q}}{T_0} + \dot{S}_{e, \text{verl}}
+
+\begin{align*}
+\dot{S}_{e, \text{verl}} &= \frac{\dot{m}_g}{\dot{m}_{ges}} s_0 - s_0 \\
+&= \\
+\end{align*}
+
+\text{Massenstrombilanz am Verdichter:} \quad \dot{m}_g (h_0 - h_{ns}) = \dot{m}_k (h_0 - h_1)
+
+\begin{align*}
+\Rightarrow \eta_{ns} &= \frac{h_0 - h_{ns}}{h_0 - h_1} = \frac{\dot{m}_g}{\dot{m}_k}
+\end{align*}
+
+\subsection*{b)}
+
+\begin{align*}
+\frac{T_6}{T_5} &= \left( \frac{P_6}{P_5} \right)^{\frac{n-1}{n}} \\
+C_p &= 1.006 \frac{\text{kJ}}{\text{kg K}} \\
+n &= k = 1.4 \\
+\Rightarrow T_6 &= T_5 \left( \frac{P_6}{P_5} \right)^{\frac{n-1}{n}} = 437.9 \text{K} \left( \frac{0.191}{0.15} \right)^{\frac{1-1.4}{1.4}} = 328 \text{K} \\
+\Rightarrow h_5 - h_6 &= C_p (T_5 - T_6) = 104.95 \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+``````latex
+
+

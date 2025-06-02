@@ -1,0 +1,28 @@
+Given:  
+\[
+m_{\text{EW}} = 0.1 \, \text{kg}, \, T_{\text{EW},1} = 0^\circ\text{C}, \, x_1 = 0.6
+\]  
+Energy balance for the closed system:  
+\[
+Q_{12} = m \left[ u_1 - u_2 \right]
+\]  
+Where:  
+\[
+u_1(x = 0.6, T = 0^\circ\text{C}) = -200.093 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+To find \( u_2 \):  
+\[
+u_2 = \frac{Q_{12}}{m} - u_1
+\]  
+Substituting values:  
+\[
+u_2 = \frac{1500}{0.1} - (-200.1)
+\]  
+
+Interpolation for \( T_2 \):  
+\[
+T_2 = u(T_{\text{known}}) + \frac{T_{\text{gross}} - T_{\text{known}}}{u(T_{\text{gross}}) - u(T_{\text{known}})} \cdot \left[ u_2 - u(T_{\text{known}}) \right]
+\]  
+
+This equation allows for interpolation of \( T_2 \) based on known values of \( u \) at specific temperatures.

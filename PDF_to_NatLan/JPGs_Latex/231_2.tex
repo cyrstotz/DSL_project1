@@ -1,0 +1,50 @@
+TASK 2a  
+The diagram is a qualitative representation of the jet engine process on a temperature-entropy (\( T \)-\( s \)) diagram.  
+- The x-axis represents entropy (\( s \)) in \( \frac{\text{kJ}}{\text{kg·K}} \), and the y-axis represents temperature (\( T \)) in Kelvin (\( K \)).  
+- The process begins with compression in the "Verdichter" (compressor), shown as an upward curve.  
+- An isobaric heat addition ("isobare Wärmezufuhr") occurs, represented by a horizontal line.  
+- The turbine process is shown as a downward curve.  
+- The diagram includes labeled points \( P_1 \) and \( P_2 \), indicating pressure states, and a constant temperature line ("T-const").  
+- The shaded region represents the turbine's work output.  
+
+---
+
+TASK 2b  
+The flow process is stationary, and the energy balance is expressed as:  
+\[
+0 = \dot{m} \left( h_e - h_a + \frac{w_e^2 - w_a^2}{2} \right) + \sum Q_i - \sum W^o
+\]  
+For the combustion heat addition:  
+\[
+\frac{-Q_B}{\dot{m}} = h_e(T_5) - h_a(T_6) + \frac{w_6^2 - w_a^2}{2}
+\]  
+
+The following calculations are performed:  
+1. \( T_5 = 431.9 \, \text{K} \)  
+2. \( T_6 \):  
+\[
+T_6 = T_5 \left( \frac{P_6}{P_5} \right)^{\frac{\kappa - 1}{\kappa}}  
+\]  
+Substituting values:  
+\[
+T_6 = 431.9 \cdot \left( \frac{0.19 \, \text{bar}}{0.5 \, \text{bar}} \right)^{\frac{1.4 - 1}{1.4}} = 328.08 \, \text{K}
+\]  
+
+3. \( h_e(T_5) \):  
+\[
+h_e(T_5) = h(490) + \frac{431.9 - 430}{490 - 430} \cdot \left( h(490) - h(430) \right)  
+\]  
+Result: \( h_e(T_5) = 433.364 \, \text{kJ/kg} \).  
+
+4. \( h_a(T_6) \):  
+\[
+h_a(T_6) = h(330) + \frac{328.08 - 325}{330 - 325} \cdot \left( h(330) - h(325) \right)  
+\]  
+Result: \( h_a(T_6) = 328.38 \, \text{kJ/kg} \).  
+
+5. Final equation:  
+\[
+w_a = w_6^2 - \left( h_e(T_5) - h_a(T_6) \right) + \frac{Q_B}{\dot{m}} + w_6^2
+\]  
+
+The mass flow rate \( \dot{m} \) is left as an unknown.

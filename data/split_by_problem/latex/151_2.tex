@@ -1,0 +1,107 @@
+
+``````latex
+
+
+\section*{Aufgabe 7}
+
+\subsection*{a)}
+
+\begin{center}
+\textbf{Graph Description:}
+
+The graph is a Temperature-Entropy (T-s) diagram. The x-axis is labeled as $s$ with the unit $\left[\frac{kJ}{kgK}\right]$. The y-axis is labeled as $T$ with the unit $[K]$. 
+
+There are several curves and points labeled on the graph:
+- The curve labeled "isobare" (isobaric) appears multiple times.
+- The curve labeled "isentrope Verdichtung" (isentropic compression) starts from point 1 and goes to point 2.
+- The curve labeled "nicht-isentrope Verdichtung" (non-isentropic compression) starts from point 1 and goes to point 2'.
+- The curve labeled "isentrope Schubdüse" (isentropic nozzle) starts from point 2 and goes to point 3.
+- The curve labeled "nicht-isentrope Turbine" (non-isentropic turbine) starts from point 3 and goes to point 4.
+- The curve labeled "isentrope Schubdüse" (isentropic nozzle) starts from point 4 and goes to point 5.
+- The curve labeled "isobare" (isobaric) starts from point 5 and goes to point 6.
+- The curve labeled "isobare" (isobaric) starts from point 6 and goes to point 1.
+
+Points are labeled as follows:
+- Point 1 is at the intersection of the isobare and isentrope Verdichtung curves.
+- Point 2 is at the intersection of the isobare and isentrope Schubdüse curves.
+- Point 2' is at the intersection of the isobare and nicht-isentrope Verdichtung curves.
+- Point 3 is at the intersection of the isobare and nicht-isentrope Turbine curves.
+- Point 4 is at the intersection of the isobare and isentrope Schubdüse curves.
+- Point 5 is at the intersection of the isobare and isobare curves.
+- Point 6 is at the intersection of the isobare and isobare curves.
+
+\end{center}
+
+\subsection*{b)}
+
+\begin{align*}
+T_s &= 431.3 \, K \\
+p_s &= 0.5 \, bar \\
+w_s &= 720 \, \frac{m}{s} \\
+p_c &= p_0 = 0.151 \, bar
+\end{align*}
+
+\text{isentrope Schubdüse:} \quad \frac{1}{\kappa} = \frac{c_p}{c_v}
+
+\begin{align*}
+T_6 &= T_s \left( \frac{p_6}{p_s} \right)^{\frac{\kappa - 1}{\kappa}} \quad \Rightarrow \quad T_6 = T_s \left( \frac{p_0}{p_s} \right)^{\frac{\kappa - 1}{\kappa}} = 431.3 \, K \cdot \left( \frac{0.151 \, bar}{0.5 \, bar} \right)^{\frac{0.4}{1.4}} \approx 328.07 \, K
+\end{align*}
+
+\begin{align*}
+\Delta E &= 0 = \dot{m} \Delta h + \Delta KE = \dot{m} c_p (T_6 - T_s) + \frac{\dot{m}}{2} (w_6^2 - w_s^2) \\
+0 &= c_p (T_6 - T_s) + \frac{1}{2} (w_6^2 - w_s^2) \\
+0 &= 1.005 \left( 328.07 - 431.3 \right) + \frac{1}{2} w_6^2 - 720^2 \\
+0 &= -104.45 + \frac{1}{2} w_6^2 - 518400 \\
+\frac{1}{2} w_6^2 &= 74.605 \quad \Rightarrow \quad w_6 = \sqrt{2 \cdot 74.605} = 12.215 \, \frac{m}{s} \\
+w_c &= w_s + w_6 = 232.215 \, \```latex
+
+
+c) \quad \Delta e_{x,str} = e_{x,str,e} - e_{x,str,0}
+
+\[
+\begin{aligned}
+    \Delta e_{x,str} &= h - h_0 - T_0 (s - s_0) + \frac{c u^2}{2} \\
+    &= h_6 - h_0 - T_0 (s_6 - s_0) + \frac{c u^2}{2} \\
+    &= C_p (T_6 - T_0) - T_0 (s_6 - s_0) + \frac{c u^2}{2}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+    T_0 &= 293 \, \text{K} \\
+    T_6 &= 328.07 \, \text{K}
+\end{aligned}
+\]
+
+\[
+s_6 - s_0 = \int_{T_1}^{T_2} \frac{C_p}{T} \, dT - R \ln \left( \frac{p_6}{p_0} \right)
+\]
+
+\[
+\begin{aligned}
+    \frac{p_6}{p_0} &= 1, \quad \ln(1) = 0 \\
+    s_6 - s_0 &= C_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right)
+\end{aligned}
+\]
+
+\[
+R = C_p - C_v = C_p - \frac{C_p}{\kappa} = 0.2874
+\]
+
+\[
+C_v = \frac{C_p}{\kappa}
+\]
+
+\[
+\Rightarrow s_6 - s_0 = C_p \ln \left( \frac{328.07}{293} \right) - 293 \cdot 0.2874 + \frac{c u^2}{2} = 2.6974 \, \text{J/gK}
+\]
+
+d) \quad e_{x,res} = T_0 \dot{s}_{x,res} = \dots (s_6 - s_0) + \frac{q_i}{T_0} = T_0 (s_6 - s_0)
+
+\[
+= 
+\]
+
+``````latex
+
+

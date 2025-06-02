@@ -1,0 +1,46 @@
+TASK 4a  
+A graph is drawn showing pressure \( p \) (in bar) on the vertical axis and temperature \( T \) (in \( ^\circ \text{C} \)) on the horizontal axis. The graph depicts the phase regions of a substance, including the triple point labeled "Tripel."  
+- The pressure axis ranges from 1 mbar to 1 bar.  
+- The temperature axis includes a marked point \( T_i \), and the curve peaks at the triple point.  
+- Two states are labeled: state \( 1 \) at higher pressure and state \( 2 \) at lower pressure.  
+
+TASK 4b  
+The temperature at state \( 2 \) is given as \( T_2 = -10^\circ \text{C} \), which corresponds to \( 263.15 \, \text{K} \).  
+
+From the graph:  
+\[
+h_2 = h_g(-10^\circ \text{C}) = \frac{h(-8) - h(-12)}{-8 + 12} \cdot (-10 + 12) + h(-12)
+\]  
+Using Table A-10:  
+\[
+h_2 = 241.345 \, \text{kJ/kg}
+\]  
+
+For entropy:  
+\[
+s_2 = s_3 \quad \text{(isentropic process)}  
+\]  
+From Table A-10:  
+\[
+s_2 = s_g(-10^\circ \text{C}) = \frac{s(-8) - s(-12)}{-8 + 12} \cdot (-10 + 12) + s(-12)
+\]  
+\[
+s_2 = 0.9253 \, \text{kJ/kg·K}
+\]  
+
+For enthalpy at state \( 3 \):  
+\[
+h_3(8 \, \text{bar}, s_2) = \frac{h(40) - h(31.33)}{s(40) - s(31.33)} \cdot (s_2 - s(31.33)) + h(31.33)
+\]  
+\[
+h_3 = 269.92 \, \text{kJ/kg}
+\]  
+
+TASK 4b (continued)  
+Energy balance for the flow process:  
+\[
+\dot{m}_{\text{R134a}} = \frac{\dot{W}_{25}}{h_2 - h_3}
+\]  
+\[
+\dot{m}_{\text{R134a}} = \frac{3.798 \cdot 10^{-4} \, \text{kg/s}}{h_2 - h_3} = 3.52 \, \text{kg/s}
+\]

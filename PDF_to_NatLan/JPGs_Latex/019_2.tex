@@ -1,0 +1,47 @@
+TASK 2b  
+The goal is to calculate \( w_6 \) and \( T_6 \).  
+
+### Given:  
+- \( w_5 \), \( T_5 \), \( p_5 \), \( p_6 \)  
+
+### Assumptions from the problem statement:  
+1. The nozzle is reversible, which implies \( \dot{S}_{\text{gen}} = 0 \).  
+2. The nozzle process is adiabatic, so \( \dot{Q} = 0 \).  
+3. The process is isentropic.  
+
+### Isentropic relation for temperature:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+\[
+T_6 = 431.9 \, \text{K} \cdot \left( \frac{0.191}{0.5} \right)^{\frac{0.4}{1.4}}
+\]  
+\[
+T_6 = 328.1 \, \text{K}
+\]  
+
+### Energy balance for \( w_6 \):  
+\[
+w_6^2 = w_5^2 + 2 \cdot c_p \cdot (T_5 - T_6)
+\]  
+Substituting values:  
+\[
+w_6 = \sqrt{2 \cdot c_p \cdot (T_5 - T_6) + w_5^2}
+\]  
+\[
+w_6 = \sqrt{2 \cdot 1.006 \, \text{kJ/kg·K} \cdot (431.9 - 328.1) + 220^2}
+\]  
+\[
+w_6 = 507.2 \, \text{m/s}
+\]  
+
+### Final Results:  
+- Outlet temperature: \( T_6 = 328.1 \, \text{K} \)  
+- Outlet velocity: \( w_6 = 507.2 \, \text{m/s} \)  
+
+### Notes:  
+Units are consistent throughout the calculations. The process is modeled as isentropic and adiabatic, with no entropy generation.

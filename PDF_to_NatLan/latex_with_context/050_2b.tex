@@ -1,0 +1,39 @@
+The energy balance equation is written as:  
+\[
+\frac{dE}{dt} = 0 = \dot{m} \left( h_0 - h_6 \right) + \frac{\left( w_0^2 - w_6^2 \right)}{2} + \frac{q_{B}}{\dot{m}_K} + W
+\]  
+This equation accounts for enthalpy differences, kinetic energy changes, heat transfer, and work done.  
+
+Another form of the equation is shown:  
+\[
+0 = \dot{m} c_p \left( T_0 - T_6 \right) + \frac{\left( w_0^2 - w_6^2 \right)}{2} = -\frac{q_{B}}{\dot{m}_K}
+\]  
+This version uses specific heat capacity \( c_p \) and temperature differences.  
+
+Crossed-out calculations for mass flow rates and other parameters are ignored.  
+
+---
+
+The energy balance equation is written as:  
+\[
+\frac{dE}{dt} = 0 = \dot{m} \left( h_0 - h_6 + \frac{w_6^2 - w_0^2}{2} \right) + q_B - W
+\]  
+Rearranging the equation:  
+\[
+0 = h_0 - h_6 + \frac{w_6^2 - w_0^2}{2} + q_B
+\]  
+Solving for \( w_6 \):  
+\[
+w_6 = \sqrt{2 \left( h_0 - h_6 + q_B \right) + w_0^2}
+\]  
+Substituting \( h_0 - h_6 \) with \( c_p (T_0 - T_6) \):  
+\[
+w_6 = \sqrt{2 \left[ c_p (T_0 - T_6) + q_B \right] + w_0^2}
+\]  
+
+Given values:  
+\[
+q_B = 1195 \, \text{kJ/kg}, \quad T_0 = 243.15 \, \text{K}, \quad T_6 = \ldots, \quad w_0 = 200 \, \text{m/s}
+\]  
+
+A sketch of a turbine is drawn, showing inlet and outlet streams.

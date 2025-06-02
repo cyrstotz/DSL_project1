@@ -1,0 +1,24 @@
+The energy balance equation is written as:  
+\[
+\frac{dE}{dt} = \dot{m}(u + \frac{k^2}{2} + gz) \quad \text{(steady-state, kinetic and potential energy neglected)}
+\]  
+This simplifies to:  
+\[
+0 = \dot{m}(h_{\text{out}} - h_{\text{in}}) + \dot{Q}_R - \dot{Q}_{\text{out}}
+\]  
+Rearranging for the heat flow removed by the coolant:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}(h_{\text{out}} - h_{\text{in}}) + \dot{Q}_R
+\]  
+
+The enthalpy difference \( h_{\text{out}} - h_{\text{in}} \) is determined using water tables:  
+- \( h_{\text{in}} = h_f = 292.98 \, \text{kJ/kg} \)  
+- \( h_{\text{out}} = h_f = 420.04 \, \text{kJ/kg} \)  
+
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}(420.04 - 292.98) + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = 99962.28 \, \text{W}
+\]

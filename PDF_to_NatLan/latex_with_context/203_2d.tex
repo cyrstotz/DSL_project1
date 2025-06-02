@@ -1,0 +1,24 @@
+The mass-specific exergy destruction is calculated as:  
+\[
+ex_{\text{dest}} = T_0 s_{\text{gen}}
+\]  
+The entropy generation \( s_{\text{gen}} \) is expressed as:  
+\[
+s_{\text{gen}} = \frac{q}{mT} + (s_a - s_e) = s_6 - s_0 = \frac{q_B}{T_B} + c_p \ln \left(\frac{T_6}{T_0}\right) - R \ln \left(\frac{p_6}{p_0}\right)
+\]  
+Substituting values:  
+\[
+s_{\text{gen}} = c_p \ln \left(\frac{T_6}{T_0}\right) - R \ln \left(\frac{p_6}{p_0}\right) - \frac{q_B}{T_B}
+\]  
+\[
+= 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \ln \left(\frac{340 \, \text{K}}{243.15 \, \text{K}}\right) - \frac{1.006 \, \frac{\text{kJ}}{\text{kg·K}}}{1.4} \ln \left(\frac{0.5 \, \text{bar}}{0.191 \, \text{bar}}\right) - \frac{1195 \, \frac{\text{kJ}}{\text{kg}}}{1289 \, \text{K}}
+\]  
+\[
+= -0.5898 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+The student notes a sign error and adjusts accordingly.  
+
+Final exergy destruction:  
+\[
+ex_{\text{dest}} = T_0 s_{\text{gen}} = 243.15 \, \text{K} \cdot 0.5898 \, \frac{\text{kJ}}{\text{kg·K}} = 143.47 \, \frac{\text{kJ}}{\text{kg}}
+\]

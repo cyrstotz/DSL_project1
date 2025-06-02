@@ -1,0 +1,33 @@
+The coefficient of performance (\( \epsilon_K \)) is calculated as:  
+\[
+\epsilon_K = \frac{\dot{Q}_K}{\dot{W}_K} = \frac{Q_{12}}{W_{12}}
+\]  
+
+Using the first law of thermodynamics for the cooling process:  
+\[
+0 = \dot{m} (h_n - h_2) + \dot{Q}_K
+\]  
+Rearranging:  
+\[
+\dot{Q}_K = \dot{m} (h_2 - h_n)
+\]  
+
+From Table A-10, the enthalpy at state 2 is:  
+\[
+h_2 = 234.08 \, \text{kJ/kg}
+\]  
+
+The mass flow rate in seconds is converted as:  
+\[
+\dot{m} = \frac{4 \, \text{kg}}{\text{h}} \cdot \frac{1 \, \text{h}}{60 \, \text{min}} \cdot \frac{1 \, \text{min}}{60 \, \text{s}} = \frac{4}{3600} \, \text{kg/s}
+\]  
+
+Substituting values:  
+\[
+\dot{Q}_K = \frac{4}{3600} \cdot (234.08 - 93.42) \, \text{kJ/s} = 156.3 \, \text{W}
+\]  
+
+The coefficient of performance is then:  
+\[
+\epsilon_K = \frac{156.3 \, \text{W}}{28 \, \text{W}} = 5.582
+\]

@@ -1,0 +1,9 @@
+The change in exergy due to the stream, denoted as Delta e_x,str, is calculated as follows:
+- It is equal to the difference in enthalpy (h_aus minus h_ein) minus the product of the reference temperature (T_0) and the difference in entropy (s_aus minus s_ein), plus half the difference of the squares of the outlet and inlet velocities (v_aus squared minus v_ein squared divided by 2).
+
+Breaking down the components:
+- The difference in enthalpy (h_aus minus h_ein) is equal to h_2 minus h_0, which is calculated using the specific heat capacity at 15 degrees Celsius (c_p^15) times the difference in temperatures (T_2 minus T_0). This results in 1.006 kilojoules per kilogram Kelvin times (328.16 Kelvin minus 243.15 Kelvin), which equals 85.4597 kilojoules per kilogram.
+- The term T_0 times (s_aus minus s_ein) approximates to T_0 times (s_2 minus s_0), which is T_0 times the difference in specific heats at constant pressure for 15 degrees Celsius times the natural logarithm of the ratio of T_2 to T_0 minus the gas constant R times the natural logarithm of the ratio of p_0 to p_0 (since p_0 equals p_2, this term cancels out). This calculation gives 243.15 Kelvin times 1.006 kilojoules per kilogram Kelvin times the natural logarithm of (328.1 divided by 243.15), resulting in 73.2946 kilojoules per kilogram.
+- The kinetic energy term, half the difference of the squares of the velocities (v_aus squared minus v_ein squared divided by 2), is calculated as half of (507.1 meters squared per second squared minus 200 meters squared per second squared), which equals 108.621 kilojoules per kilogram.
+
+Summing these components, the change in exergy due to the stream, Delta e_x,str, is 85.4597 kilojoules per kilogram minus 73.2946 kilojoules per kilogram plus 108.621 kilojoules per kilogram, resulting in 120.786 kilojoules per kilogram.

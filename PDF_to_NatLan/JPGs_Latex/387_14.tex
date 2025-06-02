@@ -1,0 +1,66 @@
+TASK 1d  
+The heat released during cooling from state 1 to state 2 is calculated using the energy balance.  
+
+The mean temperature of the coolant is given as:  
+\[
+\bar{T}_{\text{KF}} = 255 \, \text{K}
+\]
+
+The heat flow rate is expressed as:  
+\[
+\dot{Q}_{\text{out}} = \frac{\dot{Q}_R}{\bar{T}_{\text{Reactor}}} + \frac{\dot{Q}_{\text{out}}}{\bar{T}_{\text{KF}}}
+\]
+
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = 0.08827 \, \text{kW/s}
+\]
+
+Entropy production is calculated as:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_R}{T_{\text{Reactor}}} - \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]
+
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = 638 \, \text{J/K} \, \text{s}
+\]
+
+TASK 1e  
+The mass of saturated liquid water added to reduce the temperature from \(100^\circ\text{C}\) to \(70^\circ\text{C}\) is calculated using the energy balance:  
+
+The heat released during cooling is:  
+\[
+Q_{R,12} = Q_{\text{out},12} = 35 \, \text{MJ}
+\]
+
+The energy balance equation is:  
+\[
+m_2 h_2 + m_1 h_1 = \Delta m h_f(20^\circ\text{C}) + Q_{R,12}
+\]
+
+Rearranging:  
+\[
+(m_1 + \Delta m) u_2 - m_1 u_1 = \Delta m h_f(20^\circ\text{C})
+\]
+
+Solving for \( \Delta m \):  
+\[
+\Delta m = \frac{m_1 u_1 - m_2 u_2}{h_{f,12} - h_f}
+\]
+
+Substituting values:  
+\[
+\Delta m = 3.668088 \, \text{kg}
+\]
+
+The specific internal energy values used are:  
+\[
+u_1 = 419.94 \, \text{kJ/kg}
+\]
+\[
+u_2 = 292.58 \, \text{kJ/kg}
+\]
+\[
+h_f = 83.96 \, \text{kJ/kg}
+\]

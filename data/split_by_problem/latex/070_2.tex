@@ -1,0 +1,168 @@
+
+``````latex
+
+
+A2)
+
+\begin{itemize}
+    \item[a)] 
+    \begin{itemize}
+        \item[1)] 
+        \begin{description}
+            \item[Graph Description:] 
+            The graph is a Temperature (T) vs Entropy (S) diagram. The vertical axis is labeled \( T \) and the horizontal axis is labeled \( S \). There are several curves and lines drawn on the graph:
+            \begin{itemize}
+                \item There are three main curves labeled as adiabatic, reversible \(\rightarrow\) isentropic.
+                \item The curves are labeled 1, 2, and 3 from bottom to top.
+                \item There are two isobar lines labeled \( P_1 \) and \( P_2 \) with \( P_2 \) being higher than \( P_1 \).
+                \item The isobar lines intersect the adiabatic curves at points labeled 0, 1, 2, 3, 4, 5, and 6.
+                \item The points 0, 1, 2, 3, 4, 5, and 6 are connected by arrows indicating the direction of the process.
+                \item The isobar lines are labeled with pressures \( P_0 = 0.75 \, \text{bar} \) and \( P_0 = 0.5 \, \text{bar} \).
+            \end{itemize}
+        \end{description}
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item[Graph Description:] 
+    The second graph is also a Temperature (T) vs Entropy (S) diagram. The vertical axis is labeled \( T \) and the horizontal axis is labeled \( S \, [\text{kJ}/\text{kgK}] \). There are several curves and lines drawn on the graph:
+    \begin{itemize}
+        \item There are three main curves labeled as adiabatic, reversible \(\rightarrow\) isentropic.
+        \item The curves are labeled 1, 2, and 3 from bottom to top.
+        \item There are two isobar lines labeled \( P_1 \) and \( P_2 \) with \( P_2 \) being higher than \( P_1 \).
+        \item The isobar lines intersect the adiabatic curves at points labeled 0, 1, 2, 3, 4, 5, and 6.
+        \item The points 0, 1, 2, 3, 4, 5, and 6 are connected by arrows indicating the direction of the process.
+        \item The isobar lines are labeled with pressures \( P_0 = 0.75 \, \text{bar} \) and \( P_0 = 0.5 \, \text{bar} \).
+        \item There is a temperature value \( T_5 = 437.96 \, \text{K} \) and another value 293.15.
+    \end{itemize}
+\end{itemize}
+
+``````latex
+
+b) \quad v_6 = ? \quad T_6 = ? 
+
+\[
+\begin{aligned}
+v_5 &= 220 \, \text{m/s} \\
+T_5 &= 437.5 \, \text{K} \\
+p_5 &= 0.5 \, \text{bar} \\
+p_6 &= p_0 = 0.197 \, \text{bar} \\
+\text{isentrop} & \quad s_5 = s_6
+\end{aligned}
+\]
+
+\text{Stationary Process}
+
+\[
+0 = \dot{m} \left( h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right) + \dot{Q} - \dot{W}
+\]
+
+\text{adiabatic} \quad \text{reversible}
+
+\[
+h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} = 0
+\]
+
+\[
+h_5 - h_6 = c_p (T_5 - T_6) = 146,2286 \, \text{kJ/kg}
+\]
+
+\[
+c_p = 1 \, \text{kJ/(kg K)} = n \cdot c_v = 1,4089 \, \text{kJ/(kg K)}
+\]
+
+\[
+\Rightarrow R = c_p - c_v = 0,4024 \, \text{kJ/(kg K)}
+\]
+
+\[
+\text{isentrop} \quad s_5 = s_6
+\]
+
+\[
+0 = c_p \ln \left( \frac{T_6}{T_5} \right) - R \ln \left( \frac{p_6}{p_5} \right)
+\]
+
+\[
+R \ln \left( \frac{p_6}{p_5} \right) = c_p \ln \left( \frac{T_6}{T_5} \right) \quad | e^x
+\]
+
+\[
+e^{R \ln \left( \frac{p_6}{p_5} \right)} = e^{c_p \ln \left( \frac{T_6}{T_5} \right)}
+\]
+
+\[
+\left( \frac{p_6}{p_5} \right)^R = \left( \frac{T_6}{T_5} \right)^{c_p} \Rightarrow T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{R}{c_p}} = 328,075 \, \text{K}
+\]
+
+\[
+w_6^2 = w_5^2 + 2 (h_5 - h_6)
+\]
+
+\[
+w_6 = \sqrt{w_5^2 + 2 \cdot 146,2286 \, \text{kJ/kg}}
+\]
+
+\[
+= \sqrt{220^2 + 2 \cdot 146,2286 \cdot 1000} \, \text{m/s}
+\]
+
+\[
+= 1729,93 \, \text{m/s}
+\]
+
+``````latex
+
+\section*{c)}
+
+\[
+\Delta e_{x,str} = e_{x,str,6} - e_{x,str,0} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]
+
+\[
+h_6 - h_0 = c_p (T_6 - T_0) = 719,608 \frac{kJ}{kg}
+\]
+
+\[
+s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) = 0,927905 \frac{kJ}{kg \cdot K}
+\]
+
+\[
+\frac{w_0^2}{2} = 20 \frac{kJ}{kg}
+\]
+
+\[
+\frac{W_6^2}{2} = 1487,8 \frac{kJ}{kg}
+\]
+
+\[
+\Delta e_{x,str} = 1487,21 \frac{kW}{kg}
+\]
+
+\section*{d)}
+
+\[
+\dot{E}_{x,vol} = T_0 \cdot \dot{S}_{ir,z}
+\]
+
+\textit{Stationäre Fließprozesse}
+
+\[
+0 = \dot{m} (s_0 - s_6) + \frac{\dot{Q}}{T_0} + \dot{S}_{ir,z}
+\]
+
+\[
+\dot{S}_{ir,z} = s_6 - s_0 - \frac{q}{T_0} = 0,927905 \frac{kJ}{kg \cdot K} - \frac{1795 \frac{kJ}{kg}}{728,8}
+\]
+
+\[
+= 0,505 \frac{kJ}{kg \cdot K}
+\]
+
+\[
+e_{x,vol} = T_0 \cdot \dot{S}_{ir,z} = 243,15 \cdot 0,505 = 122,832 \frac{kW}{kg}
+\]
+
+``````latex
+
+

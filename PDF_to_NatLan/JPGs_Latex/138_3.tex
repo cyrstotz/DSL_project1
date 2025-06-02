@@ -1,0 +1,86 @@
+TASK 3a  
+The system consists of two parts: the gas and the ice-water mixture.  
+
+For the gas:  
+\[
+T_{g,1} = 500^\circ\text{C} = 773.15 \, \text{K}
+\]  
+\[
+V_{g,1} = 3.14 \, \text{L} = 3.14 \times 10^{-3} \, \text{m}^3
+\]  
+\[
+M = 50 \, \text{kg/kmol}, \quad c_V = 0.633 \, \text{kJ/kg·K}
+\]  
+
+For the ice-water mixture:  
+\[
+m_{\text{EW}} = 0.1 \, \text{kg}, \quad T_{\text{EW},1} = 0^\circ\text{C}, \quad x_{\text{ice},1} = 0.6
+\]  
+
+The pressure in the ice-water mixture is atmospheric:  
+\[
+p_{\text{EW},1} = p_{\text{amb}} = 1 \, \text{bar}
+\]  
+
+Using the ideal gas law:  
+\[
+p_{g,1} = \frac{RT_{g,1}}{M} \cdot \frac{m_g}{V_{g,1}}
+\]  
+Substituting values:  
+\[
+p_{g,1} = \frac{1.39 \, \text{bar}}
+\]  
+
+The mass of the gas is calculated as:  
+\[
+m_g = \frac{p_{g,1} \cdot V_{g,1} \cdot M}{R \cdot T_{g,1}}
+\]  
+Substituting values:  
+\[
+m_g = 3.42 \, \text{g}
+\]  
+
+---
+
+TASK 3b  
+The gas transfers heat \( Q \) to the ice-water mixture, causing part of the ice to melt. In the final state, \( T_{g,2} = T_{\text{EW},2} \), and the equilibrium conditions are:  
+\[
+p_{g,2} < p_{g,1}, \quad T_{\text{EW},2} = T_{g,2}
+\]  
+
+The energy balance for the system is:  
+\[
+\dot{E} = \frac{d(\text{PE})}{dt} + \frac{d(\text{KE})}{dt} + \frac{d(\text{IE})}{dt} = \dot{Q} - \dot{W}
+\]  
+This simplifies to:  
+\[
+\Delta \dot{Q} = \Delta \dot{U}
+\]  
+
+For the gas:  
+The internal energy change depends on the temperature change:  
+\[
+\Delta U_{\text{gas}} = m_g \cdot c_V \cdot \Delta T = m_g \cdot c_V \cdot (T_{\text{EW},2} - T_{g,1})
+\]  
+
+For the ice-water mixture:  
+The change in internal energy is equal to the heat transferred plus the latent heat of melting:  
+\[
+\Delta U_{\text{EW}} = Q_{\text{EW},1} + (V_{\text{EW},2} - V_{\text{EW},1})
+\]  
+
+The heat transferred from the gas to the ice-water mixture is:  
+\[
+Q_{12} = m_g \cdot c_V \cdot (T_{\text{EW},2} - T_{g,1})
+\]  
+
+For the ice-water mixture:  
+The latent heat of melting is approximately:  
+\[
+Q_{\text{melt}} = x_{\text{ice},1} \cdot m_{\text{EW}} \cdot \Delta h_{\text{fusion}} \approx 200.93 \, \text{kJ/kg}
+\]  
+
+The final equilibrium temperature is:  
+\[
+T_{\text{EW},2} = T_{g,2}
+\]

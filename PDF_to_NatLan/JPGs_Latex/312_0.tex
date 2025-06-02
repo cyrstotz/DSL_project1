@@ -1,0 +1,78 @@
+TASK 1a  
+The problem involves a steady-state flow process. The energy balance is expressed as:  
+\[
+0 = \dot{m}_{\text{in}} (h_{\text{in}} - h_{\text{aus}}) + \dot{Q}_R - \dot{Q}_{\text{aus}}
+\]  
+Rearranging for the heat flow removed by the coolant:  
+\[
+\dot{Q}_{\text{aus}} = \dot{m}_{\text{in}} (h_{\text{in}} - h_{\text{aus}}) + \dot{Q}_R
+\]  
+The enthalpy values are determined using water tables:  
+\[
+h_{\text{in}} = h_f(70^\circ\text{C}, x = 0) = 292.98 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-2)}
+\]  
+\[
+h_{\text{aus}} = h_f(100^\circ\text{C}, x = 0) = 419.04 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-2)}
+\]  
+Substituting the values:  
+\[
+\dot{Q}_{\text{aus}} = 0.3 \, \frac{\text{kg}}{\text{s}} \left(292.98 \, \frac{\text{kJ}}{\text{kg}} - 419.04 \, \frac{\text{kJ}}{\text{kg}}\right) + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{aus}} = 62.18 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant is calculated using:  
+\[
+\bar{T}_{\text{KF}} = \frac{\int_{S_{\text{ein}}}^{S_{\text{aus}}} T \, dS}{S_{\text{aus}} - S_{\text{ein}}}
+\]  
+The relationship for enthalpy change is given as:  
+\[
+dH = T \, dS + v \, dp \quad \text{(ideal liquid assumption, } v \, dp \approx 0 \text{ for isobaric process)}
+\]  
+Thus,  
+\[
+h_{\text{aus}} - h_{\text{ein}} = c_{p,\text{KF}} (T_{\text{aus}} - T_{\text{ein}})
+\]  
+\[
+S_{\text{aus}} - S_{\text{ein}} = c_{p,\text{KF}} \ln \left(\frac{T_{\text{aus}}}{T_{\text{ein}}}\right)
+\]  
+Substituting the values:  
+\[
+\bar{T}_{\text{KF}} = \frac{T_{\text{aus}} - T_{\text{ein}}}{\ln \left(\frac{T_{\text{aus}}}{T_{\text{ein}}}\right)}
+\]  
+\[
+T_{\text{aus}} = 298.15 \, \text{K}, \quad T_{\text{ein}} = 288.15 \, \text{K}
+\]  
+\[
+\bar{T}_{\text{KF}} = \frac{298.15 - 288.15}{\ln \left(\frac{298.15}{288.15}\right)} = 293.12 \, \text{K}
+\]  
+
+TASK 1c  
+The entropy production rate is calculated using:  
+\[
+0 = \frac{\dot{Q}_{\text{aus}}}{\bar{T}_{\text{KF}}} - \frac{\dot{Q}_{\text{aus}}}{T_{\text{Reaktor,1}}} + \dot{S}_{\text{erz}}
+\]  
+Rearranging for entropy generation:  
+\[
+\dot{S}_{\text{erz}} = \frac{\dot{Q}_{\text{aus}}}{\bar{T}_{\text{KF}}} - \frac{\dot{Q}_{\text{aus}}}{T_{\text{Reaktor,1}}}
+\]  
+Substituting the values:  
+\[
+\dot{S}_{\text{erz}} = \frac{62.18 \, \text{kW}}{293.12 \, \text{K}} - \frac{62.18 \, \text{kW}}{373.15 \, \text{K}}
+\]  
+\[
+\dot{S}_{\text{erz}} = 0.0455 \, \frac{\text{kJ}}{\text{K·s}}
+\]  
+
+TASK 1d  
+The energy balance for the mass addition process is given as:  
+\[
+\Delta E = \Delta U = m_2 u_2 - m_1 u_1 = \Delta m_{12} h_{\text{ein,12}} - Q_{\text{aus,12}}
+\]  
+Rearranging for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = \frac{m_2 u_2 - m_1 u_1 + Q_{\text{aus,12}}}{h_{\text{ein,12}}}
+\]  
+This equation is used to determine the mass added to the reactor during cooling.

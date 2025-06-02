@@ -1,0 +1,15 @@
+Exergy balance for the entire turbine:  
+\( \dot{m}_{ex,str} = \dot{m} \left[ h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_e^2}{2} \right] \)  
+\( = \dot{m}_{ges} \)  
+
+Calculation for \( T_6 \):  
+\( T_6 = T_5 \left( \frac{p_0}{p_5} \right)^{\frac{\kappa - 1}{\kappa}} \)  
+\( T_6 = 431.9 \left( \frac{0.191}{0.5} \right)^{0.4 / 1.4} = 328.07 \, \text{K} \)  
+
+Energy balance for the nozzle:  
+\( 0 = \dot{m}_{ges} \left[ h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right] \)  
+
+Calculation for \( w_6 \):  
+\( w_6^2 = 2 \cdot c_p (T_5 - T_6) + w_5^2 \)  
+\( w_6^2 = 2 \cdot 1.006 \cdot (431.9 - 328.07) + 220^2 \)  
+\( w_6 = \sqrt{323^2} = 323 \, \text{m/s} \)

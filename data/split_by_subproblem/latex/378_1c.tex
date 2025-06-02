@@ -1,0 +1,78 @@
+
+
+\subsection*{c)}
+
+\[
+\dot{m} \overline{T}_{LF} = 295K, \quad \dot{Q}_{zu} = 65kW
+\]
+
+\[
+\frac{d\dot{Q}}{dt} = \dot{m} (s_e - s_a) + \frac{\dot{Q}_{zu}}{T} + \dot{S}_{erz}
+\]
+
+\[
+\dot{S}_{erz} = \dot{m} (s_{k} - s_{e}) + \frac{\dot{Q}_{zu}}{T}
+\]
+
+\[
+\dot{S}_{erz} = \frac{\dot{Q}_{zu}}{h_a - h_e} \left( s_{a} - s_{e} - \frac{1}{T} \right)
+\]
+
+\[
+= \dot{Q}_{zu} \left( \frac{\ln \left( \frac{T_a}{T_e} \right)}{(T_a - T_1)} - \frac{1}{T} \right) = 1.4118 \, \frac{kJ}{kg \cdot s}
+\]
+
+\[
+\Delta S = c_p \ln \left( \frac{T_2}{T_1} \right) - R \ln \left( \frac{p_2}{p_1} \right)
+\]
+
+``````latex
+
+
+\section*{A)}
+
+\begin{figure}[h!]
+\centering
+\begin{minipage}{0.5\textwidth}
+\centering
+\begin{description}
+\item[Description:] The figure is a rectangular box with two circular ends. There is an arrow pointing into the left circular end labeled $\dot{Q}_{ab}$ and another arrow pointing out of the right circular end labeled $\dot{Q}_A$. There is also an arrow pointing out of the side of the box labeled $\dot{Q}_{ab} = \text{losses}$.
+\end{description}
+\end{minipage}
+\end{figure}
+
+\begin{align*}
+1 \rightarrow 2 \quad & \dot{Q}_{ab} = \dot{Q}_A = 35 \text{MJ} \\
+\\
+\frac{dE}{dt} &= \dot{m} \left( h_{\text{wasser}} - h_{\text{wasser}} \right) + \dot{Q}_{ab} - \frac{v^2}{2} \\
+\\
+\Rightarrow \Delta E &= \dot{m} \left( h_{\text{eing}} - h_{\text{ausg}} \right) + Q_{ab,12} \\
+\\
+\Rightarrow \Delta E &= \Delta U = m_{\text{wasser}} \cdot U_1 - U_2 \\
+\\
+\text{where} \quad h_{\text{eing}} &= h_{\text{wasser}} + q_f (70^\circ C) = 4.18 \frac{\text{kJ}}{\text{kg}} \\
+\\
+U_2 &= h_{\text{ausg},1} + q_f (70^\circ C) = m \cdot 292.85 \frac{\text{kJ}}{\text{kg}} \\
+\\
+U_1 &= m_{\text{gas}} \cdot U_1 \Rightarrow U_1 &= U_f (120^\circ C) + \left( U_g (120^\circ C) - U_f (120^\circ C) \right) \cdot 0.005 \\
+&= 429.3728 \frac{\text{kJ}}{\text{kg}} \\
+\\
+\Rightarrow \Delta U &= -785.14 \text{kJ} \\
+\\
+\Rightarrow \dot{m}_{12} &= \frac{\Delta U - Q_{ab,12}}{h_{e,150} - h_{a,150}}
+\end{align*}
+
+``````latex
+
+
+\textbf{Kühlmittel:}
+
+\[
+c_p^s = \text{konst}
+\]
+
+\[
+\frac{d\dot{Q}}{dt} = \dot{m} \left( \Delta h \right) + \dot{Q}_v
+\]
+
+``````latex

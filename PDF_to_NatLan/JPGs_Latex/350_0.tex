@@ -1,0 +1,49 @@
+TASK 1a  
+The heat flow \( \dot{Q}_{\text{out}} \) is calculated using the steady-state energy balance for the reactor:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{H}_2\text{O}} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R
+\]  
+Substituting the given values:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \cdot (292.58 \, \text{kJ/kg} - 419.01 \, \text{kJ/kg}) + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = -37.83 \, \text{kW} + 100 \, \text{kW} = 62.182 \, \text{kW}
+\]  
+Thus, \( \dot{Q}_{\text{out}} = 62.182 \, \text{kW} \).  
+
+The enthalpy values are determined from water tables:  
+- \( h_{\text{in}} = 292.58 \, \text{kJ/kg} \) at \( T_{\text{in}} = 70^\circ\text{C} \).  
+- \( h_{\text{out}} = 419.01 \, \text{kJ/kg} \) at \( T_{\text{out}} = 100^\circ\text{C} \).  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is calculated as:  
+\[
+T_{\text{KF}} = \frac{\int_{\text{in}}^{\text{out}} T \, dS}{S_{\text{out}} - S_{\text{in}}}
+\]  
+For an ideal fluid, \( T_{\text{KF}} \) can be approximated arithmetically:  
+\[
+T_{\text{KF}} = \frac{T_{\text{out}} + T_{\text{in}}}{2}
+\]  
+Substituting the values:  
+\[
+T_{\text{KF}} = \frac{298.15 \, \text{K} + 288.15 \, \text{K}}{2} = 293.15 \, \text{K}
+\]  
+Thus, \( T_{\text{KF}} = 293.15 \, \text{K} \).  
+
+---
+
+TASK 1c  
+To calculate entropy production \( \dot{S}_{\text{gen}} \), the entropy balance is applied:  
+\[
+0 = \dot{m}_{\text{H}_2\text{O}} (u_{\text{in}} - u_{\text{out}}) + \frac{\dot{Q}}{T} + \dot{S}_{\text{gen}}
+\]  
+Rearranging:  
+\[
+\dot{S}_{\text{gen}} = \dot{m}_{\text{H}_2\text{O}} (u_{\text{out}} - u_{\text{in}}) + \frac{\dot{Q}}{T}
+\]  
+The enthalpy values \( u_{\text{in}} \) and \( u_{\text{out}} \) are taken from water tables at \( T_{\text{in}} = 70^\circ\text{C} \) and \( T_{\text{out}} = 100^\circ\text{C} \).  
+
+A small sketch of the reactor system is included, showing heat flow and entropy transfer.

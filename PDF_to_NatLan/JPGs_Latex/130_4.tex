@@ -1,0 +1,80 @@
+TASK 3a  
+The pressure exerted by the piston \( P_{\text{EW}} \) is calculated using the formula:  
+\[
+P_{\text{EW}} = \frac{m_{\text{piston}} \cdot g}{A}
+\]  
+where \( m_{\text{piston}} = 32 \, \text{kg} \), \( g = 9.81 \, \text{m/s}^2 \), and \( A = 0.005 \, \text{m}^2 \). Substituting these values:  
+\[
+P_{\text{EW}} = \frac{32 \cdot 9.81}{0.005} = 62,784 \, \text{Pa} = 12.7 \, \text{kPa}.
+\]  
+
+The atmospheric pressure \( P_{\text{atm}} \) is given as \( 100 \, \text{kPa} \).  
+
+The pressure of the gas \( P_{\text{g,1}} \) is calculated as:  
+\[
+P_{\text{g,1}} = P_{\text{atm}} + P_{\text{EW}} + \Delta P,
+\]  
+where \( \Delta P = 0.127 \, \text{kPa} \). Substituting the values:  
+\[
+P_{\text{g,1}} = 100 + 12.7 + 0.127 = 189.98 \, \text{kPa} = 1.89 \, \text{bar}.
+\]  
+
+The mass of the gas \( m_g \) is determined using the ideal gas law:  
+\[
+pV = mRT \quad \Rightarrow \quad m = \frac{pV}{RT}.
+\]  
+Substituting \( p = 189.98 \, \text{kPa} \), \( V = 0.00314 \, \text{m}^3 \), \( R = 50 \, \text{J/(kg·K)} \), and \( T = 773.15 \, \text{K} \):  
+\[
+m_g = \frac{189.98 \cdot 0.00314}{50 \cdot 773.15} = 0.01634 \, \text{kg}.
+\]  
+
+TASK 3b  
+The pressure \( P_{\text{g,2}} \) is approximately equal to \( P_{\text{atm}} \), which is \( 1.90 \, \text{bar} \).  
+
+Since \( \dot{m} = 0 \), the change in internal energy \( \Delta U \) is equal to the work done \( -W_{12} \):  
+\[
+\Delta U = -W_{12}.
+\]  
+
+TASK 3d  
+The change in internal energy \( \Delta U \) is calculated as:  
+\[
+\Delta U = Q_{12} - W_{12}.
+\]  
+
+The work \( W_{12} \) is calculated using:  
+\[
+W_{12} = P_1 \cdot (V_2 - V_1),
+\]  
+where \( P_1 = 760 \, \text{kPa} \), \( V_1 = 0.00314 \, \text{m}^3 \), and \( V_2 = 0.00411 \, \text{m}^3 \). Substituting:  
+\[
+W_{12} = 760 \cdot (0.00411 - 0.00314) = 284 \, \text{J}.
+\]  
+
+The volume \( V_2 \) is calculated as:  
+\[
+V_2 = \frac{m \cdot R \cdot T_2}{P},
+\]  
+where \( m = 0.0054 \, \text{kg} \), \( R = 50 \, \text{J/(kg·K)} \), \( T_2 = 273.15 \, \text{K} \), and \( P = 139.98 \, \text{kPa} \). Substituting:  
+\[
+V_2 = \frac{0.0054 \cdot 50 \cdot 273.15}{139.98} = 1.11 \, \text{L}.
+\]  
+
+The heat \( Q_{12} \) is calculated as:  
+\[
+Q_{12} = \Delta U + W_{12}.
+\]  
+
+The change in internal energy \( \Delta U \) is calculated using:  
+\[
+\Delta U = c_V \cdot m_g \cdot (T_2 - T_1),
+\]  
+where \( c_V = 0.633 \, \text{kJ/(kg·K)} \), \( m_g = 0.0054 \, \text{kg} \), \( T_2 = 273.15 \, \text{K} \), and \( T_1 = 773.15 \, \text{K} \). Substituting:  
+\[
+\Delta U = 0.633 \cdot 0.0054 \cdot (773.15 - 273.15) = 3.161498 \, \text{kJ}.
+\]  
+
+Finally, substituting into the formula for \( Q_{12} \):  
+\[
+Q_{12} = 3.161498 + 0.284 = 3.366 \, \text{kJ}.
+\]

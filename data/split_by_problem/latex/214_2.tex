@@ -1,0 +1,112 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph:] The graph is a Temperature-Entropy (T-s) diagram. The x-axis is labeled as $s$ in $\frac{kJ}{kg \cdot K}$ and the y-axis is labeled as $T$ in $K$. There are three isobars shown as dashed lines, and the region between two isobars is labeled as "Isobaren". There is a closed cycle with four points labeled as $1$, $2$, $3$, and $4$. The cycle starts at point $1$, moves to point $2$, then to point $3$, and finally back to point $1$. Point $1$ is at the intersection of the lowest isobar and the y-axis. Point $2$ is at a higher entropy and temperature than point $1$. Point $3$ is at a higher temperature but the same entropy as point $2$. Point $4$ is at the same temperature as point $1$ but at a higher entropy.
+\end{description}
+
+\subsection*{b)}
+
+\begin{align*}
+    w_5 &= 220 \frac{m}{s} \\
+    p_5 &= 0.5 \text{ bar} \\
+    T_5 &= 431.9 \text{ K} \\
+    w_6 &= 2 \\
+    p_6 &= 0.191 \text{ bar} \\
+    T_6 &= 2 \\
+    T_6 &= T_5 \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} \\
+    T_6 &= 293.9 \text{ K} \\
+    n &= k = 1.4
+\end{align*}
+
+\subsection*{Energiegleichung:}
+
+\begin{align*}
+    0 &= \dot{m}_{\text{gas}} \left( h_5 - h_6 + \frac{w_6^2 - w_5^2}{2} \right) \\
+    h_5 - h_6 &= c_p^{ig} \cdot (T_5 - T_6) \\
+    0 &= \dot{m}_{\text{gas}} \left( c_p^{ig} \cdot (T_5 - T_6) + \frac{w_6^2 - w_5^2}{2} \right) \\
+    -\frac{w_5^2 - w_6^2}{2} &= c_p^{ig} \cdot (T_5 - T_6)
+\end{align*}
+
+``````latex
+
+\[
+w_{6}^2 = 2 \, c_p^{\text{ig}} \, \left( T_5 - T_6 \right) + w_{5}^2
+\]
+
+\[
+w_6 = \cancel{220.63} \, 220.63 \, \frac{m}{s}
+\]
+
+\subsection*{c)}
+
+\[
+e_{x,\text{sir},6} = h_6 - h_0 - T_0 (s_6 - s_0) + \text{Ke} + \text{pe}
+\]
+
+\[
+h_6 = \cancel{h_6} \, (s_0, c, 1.91 \, \text{bar})
+\]
+
+\[
+T_6 = 340 \, K
+\]
+
+\[
+R = c_p - c_v = c_p - \frac{c_p}{k}
+\]
+
+\[
+= c_p^{\text{ig}} \, (T_6 - T_0) - T_0 \left( c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_0}{p_0} \right) \right) + \text{Ke}
+\]
+
+\[
+= 97.43 \, \frac{kJ}{kg} - 82.01 \, \frac{kJ}{kg} + \frac{w_6^2}{2} - \frac{w_0^2}{2} \cdot \frac{1}{\cancel{kg}}
+\]
+
+\[
+= 125.47 \, \frac{kJ}{kg}
+\]
+
+\[
+e_{x,\text{sir},0} = h_0 - h_0 - T_0 (s_0 - s_0) + \text{Ke} + \text{pe}
+\]
+
+\[
+= \text{Ke}
+\]
+
+\[
+= \frac{w_0^2}{2}
+\]
+
+\[
+= 0 \, \frac{kJ}{kg}
+\]
+
+\[
+\Delta e_{x,\text{sir}} = 105.47 \, \frac{kJ}{kg}
+\]
+
+\subsection*{d)}
+
+\[
+\dot{U} = \dot{m} e_{x,\text{sir}} + \cancel{h} - \dot{m} e_{x,\text{var}} + \left( 1 - \frac{T_0}{T} \right) \cdot \cancel{Q} \dot{m}
+\]
+
+\[
+e_{x,\text{var}} = e_{x,\text{sir}} + \left( 1 - \frac{T_0}{T_B} \right) \cdot 1195 \, \frac{kJ}{kg}
+\]
+
+\[
+= 1075.05 \, \frac{kJ}{kg}
+\]
+
+``````latex
+
+

@@ -1,0 +1,114 @@
+
+``````latex
+
+
+\section*{A2) a)}
+
+\begin{itemize}
+    \item[1:] $T_0, p_0$ \hspace{1cm} $\rightarrow$ \hspace{1cm} adiabatisch, isentrop, $w_{12} < \lambda$ komprimiert
+    \item[2:] $p_1 > p_0$ \hspace{1cm} $\dot{m}_k$ \hspace{1cm} wird im Mischer zugeführt
+    \item[3:] $\dot{m}_k$ \hspace{1cm} hochdruckverd., adiabatisch, $\rightarrow p_2, T_2$
+    \item[2 $\rightarrow$ 3:] Brennkammer, isobar, wärmezugef.
+    \item[3 $\rightarrow$ 4:] Adiabatisch, irreversibel, turbiniert $n_e < \lambda$
+    \item[5:] nach Mischkammer: $T_3, w_{15}, p_5$
+    \item[6:] irreversibel, adiabatisch, turbiniert $\rightarrow p_0, \text{ bleibt bei } T_0$
+\end{itemize}
+
+\section*{Graph Description}
+
+The graph is a plot with the x-axis labeled as $S \left[ \frac{kJ}{kg \cdot K} \right]$ and the y-axis labeled as $T \left[ K \right]$. The origin is marked as $T_0$. 
+
+There are several curves and points marked on the graph:
+- A curve starts from point 2 at the bottom left, moving upwards and to the right, labeled as $HO$ with a note "wird zugeführt".
+- The curve continues to point 3, which is marked with a vertical line and labeled as $3$.
+- From point 3, the curve moves downwards to point 4, which is labeled as $4$.
+- There is a small segment labeled as $4_s$ between points 4 and 5.
+- The curve then moves to point 6, which is labeled as $6$.
+- Finally, the curve returns to the origin, labeled as $O$.
+
+There are also several lines indicating different pressures:
+- A line labeled $p_2$ is drawn above the curve.
+- Another line labeled $p_A$ is drawn even higher.
+- A line labeled $p_0 = p_6$ is drawn below the curve, intersecting the x-axis at the origin.
+
+Additional notes on the graph include:
+- "irreversibler Austritt" near point 4.
+- "reversibler adiabater Eintritt" near point 6.
+- "p_6 = p_0 - T_6 = T_0" near the origin.
+
+``````latex
+
+
+5) \quad \omega_0, T_0 \text{ am Eintritt} \quad p_c = p_0
+
+\[
+\omega_s = 220 \frac{m}{s}
+\]
+
+\text{Isotherme, isobare und reversible.}
+
+\[
+\text{Da adiab. ist, werde isentropel. en mit } k = \kappa = 1.4
+\]
+
+\[
+\frac{T_0}{T_s} = \left( \frac{p_s}{p_0} \right)^{\frac{k-1}{k}} \Rightarrow T_0 = T_s \left( \frac{p_0}{p_s} \right)^{\frac{k-1}{k}} = T_s \left( \frac{p_0}{p_s} \right)^{\frac{k-1}{k}}
+\]
+
+\[
+\text{Mit } \dot{m} = \rho A \omega_s \Rightarrow \omega = \frac{\dot{m}}{\rho A} \Rightarrow \omega_0 = 510 \frac{m}{s} \quad T_s = 340 K
+\]
+
+C) \quad \Delta E_{x, \text{str}} \quad zwischen \quad 6 \quad und \quad 0
+
+\[
+\Delta E_{x, \text{str}} = \frac{\Delta \dot{E}_{x, \text{str}}}{\dot{m}} = (h_e - h_a - h_0 (e_a - e_0) + \Delta ke)
+\]
+
+\[
+\text{1d. Gasmodell:} \quad h_e - h_a = h_0 - h_a = C_p (T_0 - T_s)
+\]
+
+\[
+\text{1d. Gasmodell:} \quad s_e - s_a = s_0 - s_a = \left( \frac{T_0}{T_s} \right) \cdot C_p - R \ln \left( \frac{p_0}{p_s} \right)
+\]
+
+\[
+R = C_p - C_v \Rightarrow \frac{C_p}{C_v} = \kappa \Rightarrow C_v = \frac{C_p}{\kappa}
+\]
+
+\[
+\Rightarrow R = C_p - \frac{C_p}{\kappa} = 1.006 \frac{kJ}{kg \cdot K} - \frac{1.006}{1.4} = 0.287 = C_p \cdot j
+\]
+
+\[
+\Rightarrow \Delta E_{x, \text{str}} = \left( C_p j (T_0 - T_s) - T_0 \left( \ln \left( \frac{T_0}{T_s} \right) \cdot C_p j - R \ln \left( \frac{p_0}{p_s} \right) \right) + \left( \frac{\omega_2^2}{2} - \frac{\omega_0^2}{2} \right) \right)
+\]
+
+``````latex
+
+
+\section*{A2, a)}
+
+\begin{align*}
+Q_{\text{ex, vel}} &= E_{\text{ex, str}} \quad O = \sum \dot{E}_{\text{ex, str}} + \sum \dot{E}_{\text{ex, Q}} - \sum \dot{E}_{\text{W}} - \dot{E}_{\text{ex, vel}} \\
+&= \frac{\dot{E}_{\text{ex, vel}}}{\dot{m}} = \frac{\sum \dot{E}_{\text{ex, str}}}{\dot{m}}
+\end{align*}
+
+\begin{align*}
+O &= \sum \dot{E}_{\text{ex, str}} + \dot{E}_{\text{ex, Q}} - \dot{W}_{\text{t}} - \dot{E}_{\text{ex, vel}} \\
+&\quad O_{\text{d, diss}} \text{ bleibt konstant und sein Einfluss ist vernachlässigbar}
+\end{align*}
+
+\begin{align*}
+\Rightarrow \dot{Q}_{\text{ex, vel}} &= \frac{E_{\text{ex, vel}}}{\dot{m}_{\text{ges}}} = \Delta \dot{Q}_{\text{ex, str}} + \left(1 - \frac{T_0}{T_B}\right) \dot{Q}_B
+\end{align*}
+
+\begin{align*}
+\Rightarrow \dot{Q}_{\text{ex, vel}} - \Delta \dot{Q}_{\text{ex, str}} + \left(1 - \frac{T_0}{T_B}\right) \dot{Q}_B &= 100 \frac{\text{kJ}}{\text{kg}} \left(1 - \frac{243.15 \text{K}}{293 \text{K}}\right) - 10 \frac{\text{kJ}}{\text{kg}} \\
+&\approx 106.72 \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+``````latex
+
+

@@ -1,0 +1,72 @@
+The table outlines the initial and final states for the gas (G) and the ice-water mixture (EW).  
+
+**Gas (G):**  
+- State 1:  
+  - \( T = 500^\circ\text{C} \)  
+  - \( p = p_{\text{amb}} + p_{\text{piston}} \)  
+  - \( V = V_1 \)  
+
+- State 2:  
+  - \( T = T_{\text{end}} \)  
+  - \( p = p_{\text{end}} \)  
+  - \( V = V_2 \)  
+
+**Ice-Water Mixture (EW):**  
+- State 1:  
+  - \( T = 0^\circ\text{C} \)  
+  - \( p = p_{\text{amb}} \)  
+  - \( V = V_{\text{solid}} \)  
+  - \( x_{\text{ice}} = 0.6 \)  
+
+- State 2:  
+  - \( T = T_{\text{end}} \)  
+  - \( p = p_{\text{end}} \)  
+  - \( V = V_{\text{liquid}} \)  
+  - \( x_{\text{ice}} = x_{\text{end}} \)  
+
+The following calculations are performed:  
+
+1. **Pressure Calculation:**  
+   The pressure \( p \) is determined using the force exerted by the piston divided by the piston area:  
+   \[
+   p = \frac{F}{A}
+   \]  
+
+2. **Piston Area Calculation:**  
+   The piston area \( A \) is calculated using the diameter \( D = 10 \, \text{cm} = 0.1 \, \text{m} \):  
+   \[
+   A = \pi \left(\frac{D}{2}\right)^2 = \pi \left(0.05\right)^2 = 0.00785 \, \text{m}^2
+   \]  
+
+3. **Force Calculation:**  
+   The force \( F \) exerted by the piston is calculated using the mass of the piston \( m_K = 32 \, \text{kg} \) and the acceleration due to gravity \( g = 9.81 \, \text{m/s}^2 \):  
+   \[
+   F = m_K \cdot g = 32 \cdot 9.81 = 313.92 \, \text{N}
+   \]  
+
+4. **Gas Pressure Calculation:**  
+   The gas pressure \( p_g \) is the sum of the ambient pressure \( p_{\text{amb}} = 1 \, \text{bar} = 100,000 \, \text{Pa} \) and the pressure exerted by the piston:  
+   \[
+   p_g = p_{\text{amb}} + \frac{F}{A} = 100,000 + \frac{313.92}{0.00785} = 140,000 \, \text{Pa}
+   \]  
+
+5. **Mass Calculation:**  
+   The mass of the gas \( m \) is calculated using the ideal gas law:  
+   \[
+   p \cdot V = m \cdot R \cdot T
+   \]  
+   Rearranging for \( m \):  
+   \[
+   m = \frac{p \cdot V}{R \cdot T}
+   \]  
+   Given:  
+   - \( R = \frac{R_u}{M} = \frac{8.314}{50} = 0.16628 \, \text{kJ/kg·K} \)  
+   - \( V = 3.14 \, \text{L} = 3.14 \, \text{dm}^3 = 0.00314 \, \text{m}^3 \)  
+   - \( T = 500^\circ\text{C} = 773.15 \, \text{K} \)  
+
+   Substituting values:  
+   \[
+   m = \frac{140,000 \cdot 0.00314}{0.16628 \cdot 773.15} = 3.422 \, \text{kg}
+   \]  
+
+No diagrams or figures are present on this page.

@@ -1,0 +1,77 @@
+TASK 1a  
+The energy balance equation for the reactor is written as:  
+\[
+\dot{m} \left( h_e - h_a \right) = \dot{Q} + \dot{W}
+\]  
+where \(\dot{m}\) is the mass flow rate, \(h_e\) is the enthalpy at the outlet, \(h_a\) is the enthalpy at the inlet, \(\dot{Q}\) is the heat flow, and \(\dot{W}\) is the work done.  
+
+The work term \(\dot{W}\) is neglected, leading to:  
+\[
+0 = \dot{m} \left( h_e - h_a \right) + \dot{Q}
+\]  
+
+The enthalpy values are determined from the water tables (Table A-2):  
+\[
+h_e = h \left( 70^\circ\text{C} \right) = 292.98 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_a = h \left( 100^\circ\text{C} \right) = 419.04 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The heat flow \(\dot{Q}\) is calculated as:  
+\[
+\dot{Q} = \dot{m} \left( h_a - h_e \right)
+\]  
+Substituting values:  
+\[
+\dot{Q} = 0.3 \, \frac{\text{kg}}{\text{s}} \left( 419.04 \, \frac{\text{kJ}}{\text{kg}} - 292.98 \, \frac{\text{kJ}}{\text{kg}} \right) = 37.81 \, \text{kW}
+\]  
+
+The heat removed by the coolant \(\dot{Q}_{\text{out}}\) is calculated as:  
+\[
+-\dot{Q}_{\text{out}} = \dot{Q} - \dot{Q}_R
+\]  
+Substituting values:  
+\[
+-\dot{Q}_{\text{out}} = 37.81 \, \text{kW} - 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = -62.78 \, \text{kW}
+\]  
+
+Thus, the heat removed by the coolant is:  
+\[
+\dot{Q}_{\text{out}} = 62.78 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature \(T_{\text{KF}}\) of the coolant is calculated using the equation:  
+\[
+T_{\text{KF}} = \frac{\int_{T_1}^{T_2} T \, dS}{\Delta S}
+\]  
+
+Using the approximation for entropy change:  
+\[
+dS = \frac{dQ}{T}
+\]  
+and integrating:  
+\[
+T_{\text{KF}} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)}
+\]  
+
+Substituting the given temperatures:  
+\[
+T_{\text{KF}} = \frac{298.15 \, \text{K} - 288.15 \, \text{K}}{\ln \left( \frac{298.15 \, \text{K}}{288.15 \, \text{K}} \right)}
+\]  
+\[
+T_{\text{KF}} = \frac{10 \, \text{K}}{\ln \left( \frac{298.15}{288.15} \right)}
+\]  
+\[
+T_{\text{KF}} = 293.12 \, \text{K}
+\]  
+
+Thus, the thermodynamic mean temperature of the coolant is \(T_{\text{KF}} = 293.12 \, \text{K}\).  
+
+No diagrams or graphs are present on this page.

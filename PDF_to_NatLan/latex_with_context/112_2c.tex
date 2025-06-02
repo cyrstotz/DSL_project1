@@ -1,0 +1,33 @@
+The task involves calculating the mass-specific increase in flow exergy \( \Delta ex_{\text{flow}} \).  
+
+The equation for \( \Delta ex_{\text{flow}} \) is:  
+\[
+\Delta ex_{\text{flow}} = ex_{\text{flow},6} - ex_{\text{flow},0}
+\]  
+
+The mass flow rates are split into bypass and core streams:  
+\[
+\dot{m}_M = 5.293 \, \dot{m}_K, \quad \dot{m}_{\text{ges}} = 6.293 \, \dot{m}_K
+\]  
+
+The exergy flow difference is expressed as:  
+\[
+\Delta ex_{\text{flow},6} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{1}{2}(w_6^2 - w_0^2)
+\]  
+
+The enthalpy \( h_6 \) is given as:  
+\[
+h_6 = c_p (T_6 - T_0)
+\]  
+
+The entropy \( s_6 \) is calculated using:  
+\[
+s_6 = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+
+Substituting into the equation for \( \Delta ex_{\text{flow},6} \):  
+\[
+\Delta ex_{\text{flow},6} = h_6 - T_0 (s_6 - s_0) + \frac{1}{2}(w_6^2 - w_0^2)
+\]  
+
+---

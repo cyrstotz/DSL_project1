@@ -1,0 +1,37 @@
+The initial temperature \( T_i = -20^\circ\text{C} \) and the final temperature \( T_2 = -26^\circ\text{C} \) are given.  
+The entropy values are:  
+\[
+s_2 = s_3
+\]  
+
+The energy balance equation is written as:  
+\[
+Q = \dot{m} (h_2 - h_3) + \dot{W}_u
+\]  
+where \( \dot{W}_u = -28 \, \text{kW} \).  
+
+From Table A-10:  
+\[
+h_2 = h_g(-26^\circ\text{C}) = 237.62 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+s_2 = s_g(-26^\circ\text{C}) = 0.9330 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Since \( s_3 = s_2 \), \( h_3 \) is interpolated using Table A-12 at \( p_3 = 8 \, \text{bar} \):  
+\[
+h_3 = h(0.9371) - h(0.9334)
+\]  
+The interpolation formula is applied:  
+\[
+h_3 = \frac{h(0.9371) - h(0.9334)}{0.9371 - 0.9334} \cdot (0.9330 - 0.9334) + h(0.9334)
+\]  
+The result is:  
+\[
+h_3 = 274.169 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The mass flow rate is calculated:  
+\[
+\dot{m} = \frac{-28 \, \text{kW}}{h_2 - h_3} = \frac{-28}{237.62 - 274.169} = 0.65843 \, \frac{\text{kg}}{\text{s}}
+\]

@@ -1,0 +1,29 @@
+The refrigerant mass flow rate (\(\dot{m}_{\text{R134a}}\)) is calculated using the following equations:  
+\[
+\dot{m}_R = \frac{\dot{W}_K}{h_2 - h_3}
+\]  
+Where:  
+- \(T_i = -10^\circ\text{C}\)  
+- \(T_2 = -16^\circ\text{C}\)  
+- \(h_2 = h_g(-16^\circ\text{C}) = 237.79 \, \text{kJ/kg}\)  
+
+The entropy values are:  
+\[
+s_2 = s_3 = 0.5288 \, \text{kJ/kg·K}
+\]  
+
+The vapor quality (\(x_3\)) at state 3 is determined using:  
+\[
+x_3 = \frac{s_2 - s_f(8 \, \text{bar})}{s_g(8 \, \text{bar}) - s_f(8 \, \text{bar})}
+\]  
+Substituting values:  
+\[
+x_3 = \frac{0.5288 - 0.3859}{6.966 - 0.3859} = 1.064 \, (\text{not physically valid})
+\]  
+
+The refrigerant mass flow rate is expressed as:  
+\[
+\dot{m}_R = \frac{\dot{W}_K}{h_2 - h_3}
+\]  
+
+No further numerical results are provided for \(\dot{m}_R\).

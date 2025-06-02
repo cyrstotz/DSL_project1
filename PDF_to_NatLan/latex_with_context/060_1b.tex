@@ -1,0 +1,33 @@
+**Part (b): Determination of \( T_{\text{KF}} \)**  
+
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is calculated using the entropy balance:  
+\[
+T_{\text{KF}} = \frac{\int T \, dS}{\int dS}
+\]  
+
+The entropy change is given by:  
+\[
+s_2 - s_1 = \int_{T_1}^{T_2} \frac{\partial s}{\partial T} \, dT
+\]  
+
+For the coolant:  
+\[
+T_1 = 288.15 \, \text{K}, \quad T_2 = 298.15 \, \text{K}
+\]  
+\[
+\int \frac{dT}{T} = \ln \left( \frac{T_2}{T_1} \right) = \ln \left( \frac{298.15}{288.15} \right) = 0.0347
+\]  
+
+Using entropy values from tables:  
+At \( T = 25^\circ\text{C} \):  
+\[
+s_A = 0.2245 \, \text{kJ/kg·K}, \quad s_B = 0.3674 \, \text{kJ/kg·K}
+\]  
+
+The mean temperature is calculated as:  
+\[
+T_{\text{KF}} = \frac{\int T \, dS}{\int dS} = \frac{0.3674 - 0.2245}{0.1429}
+\]  
+\[
+T_{\text{KF}} = \frac{T_A \cdot s_A - T_B \cdot s_B}{s_B - s_A} = 313.86 \, \text{K}
+\]

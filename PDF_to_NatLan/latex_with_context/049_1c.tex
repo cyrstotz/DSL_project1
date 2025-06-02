@@ -1,0 +1,15 @@
+Using entropy balance, we have:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \cdot (s_{\text{out}} - s_{\text{in}}) + \dot{S}_{\text{gen}} \quad \Rightarrow \quad \dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{out}}}{T} - \dot{m} \cdot (s_{\text{out}} - s_{\text{in}})
+\]  
+The entropy values \( s_{\text{out}} \) and \( s_{\text{in}} \) are interpolated from Table A-2:  
+\[
+s_{\text{in}} = x_D \cdot s_g(T=70) + (1 - x_D) \cdot s_f(T=70) = 0.9889 \, \text{kJ/kg·K}
+\]  
+\[
+s_{\text{out}} = x_D \cdot s_g(T=100) + (1 - x_D) \cdot s_f(T=100) = 1.33719 \, \text{kJ/kg·K}
+\]  
+Substituting into the entropy generation equation:  
+\[
+\dot{S}_{\text{gen}} = \frac{62.289}{288.15} + 0.3 \cdot (1.33719 - 0.9889) \approx 211.18 \, \text{W/K}
+\]

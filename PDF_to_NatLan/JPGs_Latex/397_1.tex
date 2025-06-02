@@ -1,0 +1,46 @@
+TASK 1c  
+The heat flow \( \dot{Q}_{\text{out}} \) is given as \( 65 \, \text{kW} \), and the thermodynamic mean temperature of the coolant \( \bar{T}_{\text{KF}} \) is \( 298 \, \text{K} \).  
+
+From the entropy balance:  
+\[
+0 = \dot{m} \cdot (s_e - s_a) + \sum_j \frac{\dot{Q}_j}{T_j} + \dot{S}_{\text{gen}}
+\]  
+
+The entropy generation rate is expressed as:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \cdot (s_e - s_a) - \frac{\dot{Q}_j}{298 \, \text{K}}
+\]  
+
+From Table A-2:  
+\[
+s_e = s_f(15^\circ\text{C}) = 62.99 \, \text{kJ/kg·K}
+\]  
+\[
+s_a = s_f(100^\circ\text{C}) = 104.88 \, \text{kJ/kg·K}
+\]  
+
+The entropy generation rate is calculated as:  
+\[
+\dot{S}_{\text{gen}} = 0.3 \, \text{kg/s} \cdot (62.99 - 104.88) \, \text{kJ/kg·K} - \frac{65 \, \text{kW}}{298 \, \text{K}}
+\]  
+\[
+\dot{S}_{\text{gen}} = -12.79 \, \text{kW/K}
+\]  
+
+---
+
+TASK 1d  
+From the energy balance:  
+\[
+\Delta m_{12} \cdot (h_{\text{in}} - h_{\text{out}}) + Q - W = 0
+\]  
+
+Rearranging for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = \frac{Q_{\text{out},12}}{h_{\text{in}} - h_{\text{out}}}
+\]  
+\[
+\Delta m_{12} = \frac{\dot{Q}_{\text{out}}}{c_p \cdot (T_{\text{out}} - T_{\text{in}})}
+\]  
+
+The specific heat capacity \( c_p \) is left undefined.

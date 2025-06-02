@@ -1,0 +1,34 @@
+The following conditions are noted:  
+1. At state 2: \( s_2 = s_5 \), \( p_1 = p_2 \), and \( x \leq 1 \).  
+2. At state 1: \( s_1 = s_4 \).  
+3. At state 3: \( p_3 = 8 \, \text{bar} \).  
+4. At state 4: \( x = 0 \), \( p_4 = 8 \, \text{bar} \).  
+
+Using the given data:  
+- \( T_2 = -40^\circ\text{C} \) (from Table A10).  
+- \( h_2 = h_g = 254.08 \, \text{kJ/kg} \).  
+- \( s_3 = s_2 = 0.835 \, \text{kJ/kg·K} \).  
+
+Interpolating for \( h_3 \):  
+\[
+h_3 = h(40^\circ\text{C}, 8 \, \text{bar}) = h(\text{sat}, 8 \, \text{bar}) + \left[ s(40^\circ\text{C}, 8 \, \text{bar}) - s(\text{sat}, 8 \, \text{bar}) \right] + h(\text{sat}, 8 \, \text{bar})
+\]
+The final value is:  
+\[
+h_3 = 271.72 \, \text{kJ/kg}
+\]
+
+The vapor quality \( x_1 \) is calculated using the formula:  
+\[
+x_1 = \frac{S_4 - S_f}{S_g - S_f}
+\]  
+Given values:  
+\[
+p_4 = p_2 = 1.292 \, \text{bar}, \quad S_f = 0.3459 \, \text{kJ/kg·K}, \quad S_g = 0.9430 \, \text{kJ/kg·K}
+\]  
+Substituting into the formula:  
+\[
+x_1 = \frac{S_4 - S_f}{S_g - S_f} = \frac{0.9430 - 0.3459}{0.9430 - 0.3459} = 0.303
+\]  
+
+---

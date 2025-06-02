@@ -1,0 +1,41 @@
+The problem begins with the given reactor parameters:  
+- \( \dot{m}_{\text{in}} = 0.3 \, \text{kg/s} \)  
+- \( x_D = 0.005 \)  
+- \( m_{\text{total}} = 5755 \, \text{kg} \)  
+- \( T_{\text{Reactor}} = 100^\circ\text{C} \)  
+
+The goal is to calculate the heat flow \( \dot{Q}_{\text{out}} \) removed by the coolant.  
+
+### Energy Balance  
+The general energy balance equation is written as:  
+\[
+\dot{E}_{\text{in}} - \dot{E}_{\text{out}} + \dot{Q}_R = \sum \dot{W}_i
+\]  
+Since there is no work done (\( \sum \dot{W}_i = 0 \)), the equation simplifies to:  
+\[
+\dot{m}_{\text{in}} \cdot (h_{\text{in}} + h_{\text{out}}) + \dot{Q}_R = \dot{Q}_{\text{out}}
+\]  
+
+### Enthalpy Calculation  
+The enthalpy values are determined using water tables:  
+- At \( T_{\text{in}} = 70^\circ\text{C} \):  
+  \[
+  h_{\text{in}} = h_f = 293.85 \, \text{kJ/kg}
+  \]  
+- At \( T_{\text{out}} = 100^\circ\text{C} \):  
+  \[
+  h_{\text{out}} = h_f + x_D \cdot h_{fg} = 430.25 \, \text{kJ/kg}
+  \]  
+
+Substituting these values:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} \cdot (h_{\text{out}} - h_{\text{in}}) + \dot{Q}_R
+\]  
+\[
+\dot{Q}_{\text{out}} = 0.3 \cdot (430.25 - 293.85) + 100
+\]  
+\[
+\dot{Q}_{\text{out}} = 62.29 \, \text{kW}
+\]  
+
+---

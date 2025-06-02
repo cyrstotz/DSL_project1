@@ -1,0 +1,27 @@
+The temperature \( T_2 \) is calculated as:  
+\( T_2 = T_i - 6 \, \text{K} = 257.15 \, \text{K} = -16^\circ \text{C} \).  
+
+From Table A-10:  
+\( h_2 = h_{g}(T_2) = 238.74 \, \text{kJ/kg} \).  
+
+\( s_2 = s_{g}(T_2) = 0.9298 \, \text{kJ/kg·K} = s_3 \).  
+
+The enthalpy \( h_3 \) is calculated as:  
+\( h_3 = h(8 \, \text{bar}, s_3) = h(8 \, \text{bar}, 0.9066 \, \text{kJ/kg·K}) + \frac{s_3 - 0.9066}{0.9377 - 0.9066} \cdot \left[ h(8 \, \text{bar}, 0.9377 \, \text{kJ/kg·K}) - h(8 \, \text{bar}, 0.9066 \, \text{kJ/kg·K}) \right] \).  
+
+From Table A-12:  
+\( h(8 \, \text{bar}, 0.9066 \, \text{kJ/kg·K}) = 271.31 \, \text{kJ/kg} \).  
+\( h(8 \, \text{bar}, 0.9377 \, \text{kJ/kg·K}) = 284.15 \, \text{kJ/kg} \).  
+\( h(8 \, \text{bar}, 0.9377 \, \text{kJ/kg·K}) = 273.66 \, \text{kJ/kg} \).
+
+Energy balance for the compressor:  
+Steady-state, flow process:  
+dE/dt = Σṁi (hi + kinetic energy + potential energy) + ΣQ̇j - ΣẆn  
+
+Adiabatic:  
+dE/dt = Σṁi hi + ΣẆn  
+
+0 = ṁ (h2 - h3) - Ẇ23  
+Ẇ23 = -ẆK  
+
+ṁ = -WK / (h2 - h3) = 2.89 kg/h

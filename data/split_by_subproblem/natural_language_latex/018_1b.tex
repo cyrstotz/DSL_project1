@@ -1,0 +1,35 @@
+The average temperature \( \bar{T}_{\text{KF}} \) is given by the formula:
+\[
+\bar{T}_{\text{KF}} = \frac{\int_{s_a}^{s_e} T ds}{s_e - s_a}
+\]
+
+The difference \( s_e - s_a \) is calculated as:
+\[
+s_e - s_a = \int_{T_a}^{T_e} c \frac{1}{T} dT = c \ln \left( \frac{T_e}{T_a} \right)
+\]
+
+The integral from \( s_a \) to \( s_e \) of \( T ds \) equals the change in enthalpy \( \Delta H \), which is \( h_e - h_a \), and is calculated as:
+\[
+\int_{s_a}^{s_e} T ds = \Delta H = h_e - h_a = \int_{T_a}^{T_e} c dT + v^3 \left( p_e - p_a \right)
+\]
+
+This leads to the expression:
+\[
+\Rightarrow \frac{c \left( T_e - T_a \right)}{c \ln \left( \frac{T_e}{T_a} \right)} \Rightarrow \bar{T}_{\text{KF}} \quad | : c
+\]
+
+Simplifying, the average temperature \( \bar{T}_{\text{KF}} \) is:
+\[
+\bar{T}_{\text{KF}} = \frac{T_e - T_a}{\ln \left( \frac{T_e}{T_a} \right)}
+\]
+
+The temperatures \( T_{\text{kein}} \) and \( T_{\text{kaus}} \) are both given as 298.15 Kelvin:
+\[
+T_{\text{kein}} = 298.15 \\
+T_{\text{kaus}} = 298.15
+\]
+
+Calculating the average temperature \( \bar{T}_{\text{KF}} \) with these values results in:
+\[
+\frac{298.15 - 298.15}{\ln \left( \frac{298.15}{298.15} \right)} = 293.12\,K = \bar{T}_{\text{KF}}
+\]

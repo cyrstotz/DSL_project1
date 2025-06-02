@@ -1,0 +1,47 @@
+The exergy balance is written as:  
+\[
+\dot{E}_{\text{ex}} = \dot{E}_{\text{ex,in}} - \dot{E}_{\text{ex,out}}
+\]  
+Using the exergy balance equation:  
+\[
+\dot{E}_{\text{ex}} = \dot{m} \left[ h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_{\text{out}}^2 - w_6^2}{2} \right]
+\]  
+Substituting values:  
+\[
+\dot{E}_{\text{ex}} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{200^2 - 5.462^2}{2}
+\]  
+
+Entropy difference \( s_6 - s_0 \) is calculated:  
+\[
+s_6 - s_0 = s(T_6) - s(T_0) - R \ln \frac{p_6}{p_0}
+\]  
+Using the equation for entropy:  
+\[
+s(T_6) - s(T_0) = c_p \ln \frac{T_6}{T_0}
+\]  
+Substituting values:  
+\[
+s_6 - s_0 = 1.006 \ln \frac{314.95}{243.15} - 0.362 \ln \frac{p_6}{p_0}
+\]  
+\[
+s_6 - s_0 = 1.4889 - 0.362 \, \text{J/kg·K}
+\]  
+
+The ratio \( \frac{c_p}{c_v} \) is calculated:  
+\[
+\frac{c_p}{c_v} = n = \frac{k \cdot c_v}{c_v} = 1.4 \cdot 1.006 = 1.4084
+\]  
+
+---
+
+To find \( T_6 \), the following relationship is used based on the isentropic process between states 5 and 6:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}} = 431.9 \cdot \left( \frac{0.191}{0.5} \right)^{0.4 / 1.4}
+\]  
+\[
+T_6 = 344.4 \, \text{K}
+\]

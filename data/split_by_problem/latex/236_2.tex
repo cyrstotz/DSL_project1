@@ -1,0 +1,167 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{itemize}
+    \item A graph is drawn with the x-axis labeled as $S \left[\frac{t_1}{kg}\right]$ and the y-axis labeled as $T \left[E\right]$.
+    \item The graph contains a curve with five marked points labeled from 0 to 5.
+    \item The curve starts at point 0, moves vertically up to point 1, then follows a curved path to point 2, continues to point 3, then to point 4, and finally to point 5.
+    \item The segment from point 0 to point 1 is labeled as "isentrop".
+    \item The segment from point 1 to point 2 is labeled as "isobare".
+    \item The segment from point 2 to point 3 is labeled as "isobare p2=p3".
+    \item The segment from point 3 to point 4 is labeled as "isobare p3=p2".
+    \item The segment from point 4 to point 5 is labeled as "isobare p0=p0".
+    \item There is a small inset graph on the right side with axes labeled $T$ and $S$. It shows a simplified version of the main graph with points labeled 0, 1, and 2.
+\end{itemize}
+
+\subsection*{Zustandstabelle}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    Zustand & $p$ [bar] & $T$ [K] & $\dot{m}$ [\(\frac{kg}{s}\)] & $s$ & $h$ & $w$ [\(\frac{m}{s}\)] \\
+    \hline
+    1 & & & & $s_1=s_0$ & & \\
+    \hline
+    2 & $p_2=p_3$ & & & & & \\
+    \hline
+    3 & $p_3=p_2$ & & & & & \\
+    \hline
+    4 & & & & & & \\
+    \hline
+    5 & 0.5 & 431.9 & & & & 220 \\
+    \hline
+    6 & & & & & & \\
+    \hline
+    0 & 0.101 & 243.15 & & $s_0=s_1$ & & 200 \\
+    \hline
+\end{tabular}
+
+``````latex
+
+
+\section*{2 b)}
+
+\begin{align*}
+w_s &= 220 \frac{m}{s} \\
+T_s &= 431.9 K \\
+P_s &= 0.5 \text{ bar} = 50 \text{ kPa} \\
+\dot{m} &= A \rho w \\
+\end{align*}
+
+\text{Seite g}
+
+\subsection*{Ebilanz um Schaufelbase: Stat. Fließprozess mit $\dot{m}$}
+
+\begin{align*}
+0 &= \dot{m} \left[ h_e - h_a + \frac{(\omega_e^2 - \omega_a^2)}{2} \right] + \cancel{\dot{Q}} - \cancel{\dot{W}} \\
+0 &= \dot{m} \left[ h_s - h_0 + \frac{w_s^2 - w_0^2}{2} \right] \\
+h_0 - h_s &= \frac{w_s^2 - w_0^2}{2} \\
+w_0^2 &= 2 h_s - 2 h_0 + w_s^2 \\
+&= 2 (h_s - h_0) + w_s^2 \\
+&= 2 \left( \int_{T_0}^{T_s} c_p(T) dT \right) + w_s^2 = 2 c_p (T_s - T_0) + w_s^2
+\end{align*}
+
+\subsection*{$T_0$ über polytropes Temperaturverh.}
+
+\begin{align*}
+\frac{T_0}{T_s} &= \left( \frac{P_0}{P_s} \right)^{\frac{n-1}{n}} \Rightarrow T_0 = T_s \left( \frac{P_0}{P_s} \right)^{\frac{1.4 - 1}{1.4}} = 328.07 K
+\end{align*}
+
+\subsection*{Berechnung}
+
+\begin{align*}
+w_0^2 &= 2 \cdot 1.006 \frac{kJ}{kgK} (431.9 K - 328.07 K) + 220^2 \frac{m^2}{s^2} \\
+w_0 &= \sqrt{2 c_p (T_s - T_0) + w_s^2} = \sqrt{2 \cdot 1.006 \frac{kJ}{kgK} (431.9 K - 328.07 K) + 220^2 \frac{m^2}{s^2}} \\
+w_0^2 &= 48008.906 \frac{m^2}{s^2} \\
+w_0 &= 220.47 \frac{m}{s}
+\end{align*}
+
+``````latex
+
+
+\section*{c) Exergie einer Strömung}
+
+\[
+\dot{E}_{x,st} = \dot{m} \left[ h - h_0 - T_0 (s - s_0) + \frac{ke}{2} + \frac{pe}{2} \right]
+\]
+
+\subsection*{Zustand 0:}
+\[
+\dot{E}_{x,0} = \dot{m} g \left[ h_0 - h_0 - T_0 (s_0 - s_0) + ke \right]
+\]
+\[
+= \dot{m} g \left[ ke \right] = \dot{m} g e_0
+\]
+\[
+e_{x,0} = \frac{w_0^2}{2} = 20000 \frac{m^2}{s^2}
+\]
+
+\subsection*{Zustand 6:}
+\[
+\dot{E}_{x,6} = \dot{m} \left[ h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2} \right]
+\]
+\[
+h_6 - h_0 = c_p (T_6 - T_0) = 97,431 \frac{kJ}{kg}
+\]
+\[
+s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right)
+\]
+\[
+R_L = \frac{R}{M} = \frac{R}{28,97 \frac{kJ}{kmol \cdot K}} = 0,287 \frac{kJ}{kg \cdot K}
+\]
+\[
+e_{x,6} = 97,431 \frac{kJ}{kg} - R \left( \frac{p_6}{p_0} \right)
+\]
+\[
+s_6 - s_0 = \int_{T_0}^{T_6} \frac{c_p}{T} dT = \left[ c_p \ln (T) \right]_{T_0}^{T_6} = c_p \left( \ln (T_6) - \ln (T_0) \right)
+\]
+\[
+s_6 - s_0 = 0,337 \frac{kJ}{kg \cdot K}
+\]
+\[
+e_{x,6} = 97,431 \frac{kJ}{kg} - 243,15 K \cdot 0,337 \frac{kJ}{kg \cdot K} + \frac{510 \frac{m^2}{s^2}}{2}
+\]
+\[
+= 130065,5 \frac{kJ}{kg}
+\]
+
+``````latex
+
+
+\section*{Problem 2}
+
+\subsection*{c)}
+
+\[
+\Delta e_x = e_{x6} - e_{x0} = 110065.5 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\subsection*{d)}
+
+\textbf{Exergieverlust:}
+
+\[
+\dot{E}_{\text{ver}} \text{ to } \text{Sez}
+\]
+
+\textbf{Exergiebilanz:}
+
+\[
+\frac{d\dot{E}_x}{dt} \bigg|_{0, \text{stat.}} = \sum_i \dot{E}_{\text{str}, i} + \sum_j \dot{E}_{Q, j} \text{ adiabatic} - \sum_n \left( \dot{W}_n(t) - p_0 \frac{dV(t)}{dt} \right) - \dot{E}_{\text{ver}}
+\]
+
+\[
+\dot{E}_{\text{ver}} = \dot{E}_{\text{str}} - \dot{W} \text{ nach außen keine Arbeit}
+\]
+
+\[
+\frac{\dot{E}_{\text{ver}}}{m_{\text{ges}}} = \frac{\dot{E}_{\text{str}}}{\dot{m}_{\text{ges}}} \Rightarrow \dot{e}_{\text{ver}} = e_{\text{str}} = 100 \frac{\text{kJ}}{\text{kg}}
+\]
+
+``````latex
+
+

@@ -1,0 +1,23 @@
+Exergy balance for the system:  
+\[
+\Delta E = \sum \dot{m} \left( h_i + \frac{w_i^2}{2} + q_B \right) - \dot{W}
+\]  
+At steady state:  
+\[
+0 = \dot{m} \left( h_e - h_a - \frac{w_e^2 - w_a^2}{2} + g(z_e - z_a) \right) + \dot{Q}_B - \dot{W}
+\]  
+Assumptions:  
+- \( g(z_e - z_a) = 0 \), as elevation changes are negligible.  
+- \( \dot{W} = 0 \), as work is not considered.  
+
+The velocity at the nozzle exit (\( w_a \)) is calculated as:  
+\[
+w_a = \sqrt{\frac{\dot{Q}_B}{\dot{m}} - (h_e - h_a) - 200^2}
+\]  
+
+This equation accounts for the energy transfer from state 6 to the ambient conditions.
+
+The mass-specific exergy destruction is calculated using the formula:  
+\[
+\frac{\dot{e}_{\text{dest}}}{\dot{m}_{\text{gas}}} = e_{1,\text{mod}} - e_{2,\text{mod}} - T_0 \frac{\dot{S}_{\text{gen}}}{\dot{m}_{\text{gas}}}
+\]

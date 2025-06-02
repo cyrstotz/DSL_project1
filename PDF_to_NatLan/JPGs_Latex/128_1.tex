@@ -1,0 +1,46 @@
+TASK 2b  
+The expression for the outlet velocity and temperature is given as:  
+\[
+\dot{E}_{\text{flow}} = \dot{m}_{\text{gas}} \left( h_6 - h_0 - T_0 (s_6 - s_0) + \frac{1}{2} (w_6^2 - w_0^2) \right)
+\]
+
+---
+
+TASK 2d  
+The exergy destruction in the engine is calculated using the following expression:  
+\[
+\dot{E}_{\text{ex,dest}} = \dot{m}_{\text{gas}} \left( h_6 - h_0 - T_0 (s_6 - s_0) + \frac{1}{2} (w_6^2 + w_0^2) \right) + \sum \left( 1 - \frac{T_0}{T_B} \right) \dot{Q}_B - \sum \dot{W}_\text{turbine}
+\]
+
+The calculation includes:  
+\[
+\Delta c_{p,\text{air}} = 100 \, \frac{\text{kJ}}{\text{kg}}
+\]
+\[
+\dot{e}_{\text{ex,Q}} = \left( 1 - \frac{T_0}{T_B} \right) q_B = \left( 1 - \frac{243 \, \text{K}}{1289 \, \text{K}} \right) \cdot 1195 \, \frac{\text{kJ}}{\text{kg}} = 960.72 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+Additional entropy-related equations are provided:  
+\[
+s_0 = s_6 - s_c + \frac{q_B}{T_B} - \frac{s_{\text{ex}}}{\dot{m}_{\text{gas}}}
+\]
+\[
+\dot{E}_{\text{ex,ver}} = T_0 \cdot s_{\text{ex}} \quad \dot{E}_{\text{ex,dest}} = T_0 \cdot s_{\text{ex}}
+\]
+
+Entropy change is expressed as:  
+\[
+s_{\text{ex}} = s_6 - s_0 + \frac{q_B}{T_B} - \int_{T_0}^{T_B} \frac{c_p}{T} \, dT - R \ln \left( \frac{p_6}{p_5} \right)
+\]
+
+Constants and parameters used:  
+\[
+R = \frac{R}{M_{\text{air}}}, \quad M_{\text{air}} = 28.973 \, \frac{\text{kg}}{\text{kmol}}
+\]
+
+The exergy destruction equation is summarized as:  
+\[
+\dot{e}_{\text{ex,ver}} = T_0 \left( c_p \ln \left( \frac{T_6}{T_0} \right) - \frac{R}{M_{\text{air}}} \ln \left( \frac{p_6}{p_0} \right) - \frac{q_B}{T_B} \right)
+\]  
+
+Crossed-out equations and terms are ignored in the transcription.

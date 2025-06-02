@@ -1,0 +1,72 @@
+A table is presented with the following columns:  
+
+- \( p \) (bar)  
+- \( T \) (K)  
+- \( w \) (meters per second)  
+- \( \dot{m} \) (mass flow rate)  
+
+The rows are labeled numerically from 1 to 6, with an additional row labeled 0. The values in the table are:  
+
+1: Empty row.  
+2: Empty row, labeled \( \dot{m}_K \).  
+3: \( p_2 \), labeled \( \dot{m}_K \).  
+4: Empty row, labeled \( \dot{m}_K \).  
+5: \( p = 0.5 \), \( T = 431.9 \), \( w = 220 \), labeled \( \dot{m}_{ges} \).  
+6: \( p = 0.191 \), empty \( T \), empty \( w \).  
+0: \( p = 0.191 \), \( T = 243.15 \), \( w = 200 \), labeled \( \dot{m}_{ges} \).  
+
+The word "isotrop" is written next to rows 2 through 4.  
+
+Below the table, calculations are written:  
+
+\( c_p = 1.006 \, \text{kJ/kg·K} \)  
+\( k = \frac{c_p}{c_v} = 1.4 \)  
+\( c_v = \frac{1.006 \, \text{kJ/kg·K}}{1.4} = 0.719 \, \text{kJ/kg·K} \)  
+
+\( R = c_p - c_v = 0.287 \, \text{kJ/kg·K} \)  
+
+The value \( R = 0.287 \, \text{kJ/kg·K} \) is underlined.
+
+6 \( w_6^2 \)  
+
+5 → 6 isentrop  
+\( s_5 = s_6 \)  
+
+\( w_{rev} = - \int_1^2 v dp + \Delta ke \)  
+\( \Delta ke = \frac{w_6^2}{2} - \frac{w_5^2}{2} \)  
+
+polytrop \( n \neq 1 \)  
+
+\( \int_1^2 v dp = \frac{1}{n} \int_1^2 p dv \)  
+\( - \int_1^2 v dp = \frac{n}{1} \int_1^2 p dv \)  
+
+\( w_{rev} = \frac{w_{rev}}{\dot{m}} \)  
+
+\( h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} - w_{rev} = 0 \)  
+
+\( w_{rev} = \int_1^2 p dv = \frac{R (T_6 - T_5)}{1 - n} = \)  
+
+\( T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{1.4 - 1}{1.4}} = 431.9 \, \text{K} - \left( \frac{0.191 \, \text{bar}}{0.5} \right)^{\frac{0.4}{1.4}} \)  
+
+\( = 328.1 \, \text{K} \)  
+
+\( \frac{0.287 \, \text{kJ/kg}}{1 - 1.4} (328.1 \, \text{K} - 431.9 \, \text{K}) = -79.5 \, \text{kW} \)  
+
+\( w_{rev} \dot{m} = w_{rev} \)  
+
+\( \dot{m} (h_5 - h_6 + \frac{w_5^2 - w_6^2}{2}) - w_{rev} = 0 \)  
+
+\( \dot{m} c (T_5 - T_6) + \frac{w_5^2 - w_6^2}{2} - w_{rev} = 0 \)  
+
+\( w_{rev} = 0 \)
+
+A graph is drawn with the vertical axis labeled as "T" (temperature) and the horizontal axis labeled as "S" (entropy). The graph depicts a thermodynamic process with four labeled points: 1, 2, 3, and 4.  
+
+- Point 1 is at the lower left.  
+- Point 2 is to the right of point 1, forming a curve.  
+- Point 3 is above point 2, connected by another curve.  
+- Point 4 is vertically above point 3.  
+
+The segment between points 3 and 4 is labeled "isentrop" (indicating an isentropic process).  
+
+There are additional shaded regions and curved lines between points 1 and 3, suggesting transitions or processes.

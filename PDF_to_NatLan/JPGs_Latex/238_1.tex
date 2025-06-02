@@ -1,0 +1,24 @@
+TASK 3c  
+Since the system is a stationary flow process, the entropy balance equation is given as:  
+
+\[
+\frac{dS}{dt} = \sum m_i s_i + \sum \frac{\dot{Q}_i}{T_i} + \dot{S}_{\text{gen}}
+\]
+
+The entropy generation term \( \dot{S}_{\text{gen}} \) is expressed as:  
+
+\[
+\dot{S}_{\text{gen}} = m \cdot (s_{\text{out}} - s_{\text{in}}) + \frac{Q_{\text{ab}}}{T_{\text{job}}}
+\]
+
+Substituting values:  
+
+\[
+\dot{S}_{\text{gen}} = m \cdot c^{\text{liquid}} \ln \left( \frac{T_{\text{out}}}{T_{\text{in}}} \right) + \frac{65 \, \text{kW}}{295 \, \text{K}}
+\]
+
+Finally, calculating \( \dot{S}_{\text{gen}} \):  
+
+\[
+\dot{S}_{\text{gen}} = m \cdot c^{\text{liquid}} \ln \left( \frac{288.15 \, \text{K}}{283.15 \, \text{K}} \right) + 0.22 \, \frac{\text{kJ}}{\text{kg·K}}
+\]

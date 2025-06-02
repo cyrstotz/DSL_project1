@@ -1,0 +1,30 @@
+The heat transfer \( Q_{R,12} \) is 35 kilojoules, which is equal to 35,000 kilojoules.
+
+For a semi-open system, the equation is given by:
+\[ \dot{m}_2 u_2 - \dot{m}_1 u_1 = \Delta \dot{m}_{12} h_{\text{ein}} + Q_{\text{aus}} \]
+
+The internal energy \( u_1 \) for water at 70 degrees Celsius is for a boiling liquid with a dryness fraction \( x_D \) of 0.
+
+The internal energy \( u_1 \) for water at 100 degrees Celsius implies a dryness fraction \( x_D \) of 0.005.
+
+The enthalpy \( h_{\text{ein}} \) is for water at 20 degrees Celsius and is for a boiling liquid.
+
+The mass flow rate \( \dot{m}_2 \) is the sum of \( \dot{m}_1 \) and \( \dot{m}_{12} \).
+
+The equation simplifies to:
+\[ (\dot{m}_1 + \dot{m}_{12}) u_2 - \dot{m}_1 u_1 = \dot{m}_{12} h_{\text{ein}} + Q \]
+
+Further simplification gives:
+\[ \dot{m}_1 (u_2 - u_1) + \dot{m}_{12} (u_2 - h_{\text{ein}}) = Q \]
+
+Rearranging terms:
+\[ Q - \dot{m}_1 (u_2 - u_1) = \dot{m}_{12} (u_2 - h_{\text{ein}}) \]
+
+Solving for \( \dot{m}_{12} \):
+\[ \frac{Q - \dot{m}_1 (u_2 - u_1)}{(u_2 - h_{\text{ein}})} = \dot{m}_{12} \]
+
+Additional equations are:
+\[ u_2 = u_f(90^\circ \text{C}) = 292.5 \frac{\text{kJ}}{\text{kg}} \]
+\[ u_n = u_f(100^\circ \text{C}) + x_d \left( u_g(100^\circ \text{C}) - u_f(100^\circ \text{C}) \right) = 303.833 \frac{\text{kJ}}{\text{kg}} \]
+\[ h_{\text{ein}} = h_f(20^\circ \text{C}) = 83.96 \frac{\text{kJ}}{\text{kg}} \]
+\[ \Delta m_{12} = 132.275 \text{kg} \]

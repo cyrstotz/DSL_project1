@@ -1,0 +1,51 @@
+TASK 2b  
+The entropy difference between states 5 and 6 is calculated using the following relationship:  
+
+\[
+s_6 - s_5 = 0 = s^\circ(T_6) - s^\circ(T_5) - R \cdot \ln\left(\frac{p_6}{p_5}\right)
+\]
+
+Rearranging for \( s^\circ(T_6) \):  
+\[
+s^\circ(T_6) = s^\circ(T_5) + R \cdot \ln\left(\frac{p_6}{p_5}\right)
+\]
+
+From the reference table (TAB A-22), the entropy at \( T_5 = 431.9 \, \text{K} \) is:  
+\[
+s^\circ(T_5) = 2.06533 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+Interpolating between values in the table:  
+\[
+s^\circ(T_5) = 2.06533 + \frac{(2.08870 - 2.06533)}{(440 - 430)} \cdot (431.9 - 430) \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+This gives:  
+\[
+s^\circ(T_5) = 2.06997742 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+Using TAB A-1 for the gas constant \( R \):  
+\[
+R = \frac{8.314 \, \frac{\text{kJ}}{\text{kmol·K}}}{28.97 \, \frac{\text{kg}}{\text{kmol}}}
+\]
+
+Substituting into the equation:  
+\[
+s^\circ(T_6) = 2.06997742 \, \frac{\text{kJ}}{\text{kg·K}} + R \cdot \ln\left(\frac{0.1}{0.5}\right)
+\]
+
+After calculation:  
+\[
+s^\circ(T_6) = 1.793645 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+Finally, the temperature \( T_6 \) is interpolated using entropy values:  
+\[
+T_6(s^\circ(T_6)) = 325 \, \text{K} + \frac{(330 - 325) \, \text{K}}{(1.79783 - 1.78249) \, \frac{\text{kJ}}{\text{kg·K}}} \cdot (1.793645 - 1.78249) \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+This results in:  
+\[
+T_6 = 328.62 \, \text{K}
+\]

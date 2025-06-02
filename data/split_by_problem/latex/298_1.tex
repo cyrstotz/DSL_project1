@@ -1,0 +1,129 @@
+
+``````latex
+
+
+\section*{A1}
+
+\subsection*{a) $\dot{Q}_{\text{out}}$?}
+
+1. HS um Wasser:
+\[
+\frac{dE}{dt} = \dot{m} (\hat{h}_{\text{ein}} - \hat{h}_{\text{aus}}) + \dot{Q}_R + \dot{Q}_{\text{out}}
+\]
+
+\[
+\Rightarrow \dot{Q}_{\text{out}} = \dot{m} (\hat{h}_{\text{aus}} - \hat{h}_{\text{ein}}) - \dot{Q}_R
+\]
+
+\[
+\dot{Q}_{\text{out}} = 0.2 \frac{\text{kg}}{\text{s}} (4.43 \frac{\text{kJ}}{\text{kg}} - 2.92 \frac{\text{kJ}}{\text{kg}}) - 100 \text{kW}
+\]
+
+\[
+= -62.18 \text{kW} \quad \text{(Vorzeichen negativ da, nach außen)}
+\]
+
+\subsection*{b) Redum 1: $\dot{Q}_{\text{out}} = 6 \text{kW}$ weil:}
+
+\[
+\dot{Q}_{\text{out}} = \int_{s_a}^{s_e} T ds
+\]
+
+\[
+T_{ds} = T_{ds} + \dot{m} \cdot \dot{V} = \frac{h_a - h_e}{s_a - s_e}
+\]
+
+Stoffmodell ideale FL:
+\[
+h_a - h_e = c_p^i (T_a - T_e) + v (p_a - p_e)
+\]
+
+Stoffmodell:
+\[
+s_a - s_e = \int_{T_e}^{T_a} c_p^i \frac{1}{T} dT + \int_{p_e}^{p_a} v \frac{1}{T} dp
+\]
+
+\[
+= c_p^i \ln \left( \frac{T_a}{T_e} \right)
+\]
+
+\[
+= \frac{c_p^i (T_a - T_e)}{c_p^i \ln \left( \frac{T_a}{T_e} \right)} = \frac{288.15 \text{K} - 288.15 \text{K}}{\ln \left( \frac{288.15}{288.15} \right)} = -293.12 \frac{\text{kJ}}{\text{K}}
+\]
+
+\subsection*{c)}
+
+\[
+\dot{S}_{\text{ezu}} \text{ im WÜ zu rechnen und verteilen, im manth. Fließbild:}
+\]
+
+\[
+\text{Entropiebilanz im manth.} \quad \frac{dS}{dt} = \dot{m} \cdot s_1 + \sum \dot{Q}_j
+\]
+
+\[
+\Rightarrow \dot{S}_{\text{ezu}} = -\sum \frac{\dot{Q}}{T} = -\left( \frac{\dot{Q}_{\text{out}}}{T_{\text{um}}} \right) = -\left( \frac{6 \text{kW}}{373.15 \text{K}} - 293.15 \text{K} \right) = 0.047 \frac{\text{kW}}{\text{K}}
+\]
+
+\[
+\text{Temperatur = konstant 100°C = T_{\text{gescha}}}
+\]
+
+\[
+\dot{Q}_{\text{out}} \text{ ist negativ da } q_i \text{ as (leis)}
+\]
+
+``````latex
+
+
+\section*{Aufgabe}
+
+\subsection*{d)}
+
+\begin{align*}
+    \Delta m_{x2}, \text{ sodass } T_{R,2} = 70^\circ C \text{ erreicht wird.} \\
+    T_{ein, x2} = 20^\circ C \\
+    Q_{R, x2} = 35 \text{ MJ}
+\end{align*}
+
+Energiegleichung geschlossenes System:
+
+\begin{align*}
+    \Delta E &= m_2 u_2 - m_1 u_1 = \Delta m_{x2} \cdot h_{ein} + Q_{R, x2} - Q_{a, x1} \\
+    &\quad \text{(kein } Q_{a, x1} = 0) \\
+    m_2 &= m_1 + \Delta m_{x2}, \quad u_2 = u(70^\circ C, \text{sied. FL}) \\
+    m_1 &= m_{ges}, 1, \quad u_1 = u(100^\circ C, \text{sied. FL}) \\
+    h_{ein} &= h(20^\circ C, \text{sied. FL})
+\end{align*}
+
+\begin{align*}
+    (m_1 + \Delta m_{x2}) u_2 - m_1 u_1 &= \Delta m_{x2} \cdot h_{ein} + Q_{R, x2} \\
+    m_1 u_2 + \Delta m_{x2} u_2 - m_1 u_1 &= \Delta m_{x2} \cdot h_{ein} + Q_{R, x2} \\
+    \Delta m_{x2} (u_2 - h_{ein}) &= m_1 (u_1 - u_2) + Q_{R, x2}
+\end{align*}
+
+\begin{align*}
+    \Delta m_{x2} &= \frac{m_1 (u_1 - u_2) + Q_{R, x2}}{u_2 - h_{ein}} \\
+    &= \frac{5755 \text{ kg} \left( 418.54 \frac{\text{kJ}}{\text{kg}} - 252.57 \frac{\text{kJ}}{\text{kg}} \right) + 35000 \text{ kJ}}{252.57 \frac{\text{kJ}}{\text{kg}} - 83.96 \frac{\text{kJ}}{\text{kg}}} \\
+    &= \frac{5755 \text{ kg} \cdot 165.97 \frac{\text{kJ}}{\text{kg}} + 35000 \text{ kJ}}{168.61 \frac{\text{kJ}}{\text{kg}}} \\
+    &= \frac{955.36 \text{ kJ} + 35000 \text{ kJ}}{168.61 \frac{\text{kJ}}{\text{kg}}} \\
+    &= 3465.4 \text{ kg} + 167.4 \text{ kg} = 3636.8 \text{ kg} = \Delta m_{x2}
+\end{align*}
+
+\subsection*{e)}
+
+\begin{align*}
+    \Delta S_{II} \text{ für ein geschlossenes System}
+\end{align*}
+
+\begin{align*}
+    \Delta S &= m_2 s_2 - m_1 s_1 = \Delta m_{x2} \cdot s_{ein} + \sum \frac{Q_i}{T} \\
+    \Delta S &= m_2 s_2 - m_1 s_1 \Rightarrow (m_1 + \Delta m_{x2}) \cdot s_2 - m_1 s_1 \\
+    s_2 &= s(70^\circ C, \text{sied. FL}) \\
+    s_1 &= 100^\circ C, \text{sied. FL}
+\end{align*}
+
+\begin{align*}
+    \Delta S &= (5755 + 3465.4) \left( 0.954 \frac{\text{kJ}}{\text{kg K}} \right) - 5755 \left( 1.306 \frac{\text{kJ}}{\text{kg K```latex
+
+

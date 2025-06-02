@@ -1,0 +1,42 @@
+TASK 4c  
+The process described is reversible and adiabatic from state 3 to state 9, implying it is isentropic. Therefore, \( s_3 = s_9 = s_3(-16^\circ\text{C}) = 0.9298 \) (from Table A-11).  
+
+The pressure at state 3 is given as \( p_3 = 8 \, \text{bar} \). Using Table A-12 for \( p_3 = 8 \, \text{bar} \):  
+\[
+h_3 = h(p_3, s = 0.9298) = h_{\text{sat}} + \frac{0.9298 - 0.5379}{0.5066 - 0.5379} (h_{\text{g}} - h_{\text{sat}})
+\]
+Substituting values:  
+\[
+h_3 = 277.379 \, \text{kJ/kg}
+\]
+
+For part \( c \), the vapor quality \( x_4 \) is calculated:  
+Given \( x_4 = 0 \), \( p_3 = p_4 = 8 \, \text{bar} \).  
+
+From Table A-11:  
+\[
+s_4 = s_1 = s_f(p_4) = 0.3459
+\]
+
+The pressure at state 2 is interpolated using Table A-10, where \( T_2 = -16^\circ\text{C} \):  
+\[
+p_2 = 1.5748 \, \text{bar} \quad \text{(approximation from table)}
+\]
+
+For the isentropic process:  
+\[
+p_2 = p_2 = 1.2570 \, \text{bar}
+\]
+
+Using Table A-11 for interpolation:  
+
+| \( p \) (bar) | \( s_f \) | \( s_g \) | \( h_f \) | \( h_g \) |  
+|---------------|-----------|-----------|-----------|-----------|  
+| 1.4           | 0.1035    | 0.5372    | 25.77     | 238.059   |  
+| 7.5           | 0.1194    | 0.529384  | 29.195    | 237.6382  |  
+| 1.6           | 0.1277    | 0.5295    | 25.78     | 237.97    |  
+
+The vapor quality \( x_4 \) is calculated as:  
+\[
+x_4 = \frac{s - s_f}{s_g - s_f} = \frac{0.5295 - 0.3459}{0.5379 - 0.3459} = 0.2795
+\]

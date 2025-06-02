@@ -1,0 +1,29 @@
+The coefficient of performance \( \epsilon_K \) is calculated using the formula:  
+\[
+\epsilon_K = \frac{\dot{Q}_{zu}}{\dot{W}_{zu}} = \frac{\dot{Q}_{zu}}{|\dot{Q}_{out} - \dot{Q}_{zu}|}
+\]  
+
+The heat flow \( \dot{Q}_{zu} \) is given by:  
+\[
+\dot{Q}_{zu} = \dot{m} (h_2 - h_1)
+\]  
+
+The heat flow \( \dot{Q}_{ab} \) is given by:  
+\[
+\dot{Q}_{ab} = \dot{m} (h_a - h_3)
+\]  
+
+The enthalpy values are:  
+\[
+h_1 = 93.92 \, \frac{\text{kJ}}{\text{kg}}, \quad h_2 = 237.74 \, \frac{\text{kJ}}{\text{kg}}, \quad h_3 = 277.37 \, \frac{\text{kJ}}{\text{kg}}, \quad h_a = 93.92 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Substituting into the formula for \( \epsilon_K \):  
+\[
+\epsilon_K = \frac{|h_2 - h_1|}{|h_a - h_3| - |h_2 - h_1|} = \frac{|237.74 - 93.92|}{|93.92 - 277.37| - |237.74 - 93.92|}
+\]  
+
+Simplifying:  
+\[
+\epsilon_K = \frac{143.82}{77.99 - 143.82} = 4.299
+\]

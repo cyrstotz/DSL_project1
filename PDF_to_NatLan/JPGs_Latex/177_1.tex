@@ -1,0 +1,51 @@
+TASK 2a  
+The graph depicts a qualitative \( T \)-\( s \) diagram for the jet engine process. The diagram includes labeled isobars \( p_0 \), \( p_2/p_3 \), and \( p_5 \). The process is shown with six states:  
+- State 0: Ambient conditions.  
+- State 1: Pre-compression.  
+- State 2: Compression.  
+- State 3: Combustion.  
+- State 4: Turbine expansion.  
+- State 5: Mixing chamber.  
+- State 6: Nozzle exit.  
+
+The isobars are curved, and the transitions between states are represented by arrows indicating the thermodynamic processes. The axes are labeled \( T \) (temperature) and \( s \) (specific entropy) with units \( \text{kJ}/\text{kg·K} \).  
+
+---
+
+TASK 2b  
+The equation for the energy balance is given as:  
+\[
+Q = \dot{m}_{\text{gas}} \left( h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right) - \dot{W}_{\text{turbine}}
+\]  
+
+The work done by the isentropic compressor is expressed as:  
+\[
+\dot{W}_{\text{+isc}} = \dot{m} \left( - \int_{1}^{3} p v \, dp \right) = -\dot{m} \left( p_2 - p_1 \right) v
+\]  
+
+The relationship between pressure and temperature is given as:  
+\[
+p v = R T, \quad v_s = \frac{R T_s}{p_s}
+\]  
+
+The gas constant \( R \) is derived as:  
+\[
+R = c_p^{\text{is}} - c_v^{\text{is}}
+\]  
+
+The ratio of specific heats \( k \) is defined as:  
+\[
+k = \frac{c_p^{\text{is}}}{c_v^{\text{is}}}
+\]  
+
+Substituting \( c_p^{\text{is}} \) and \( c_v^{\text{is}} \), the gas constant \( R \) becomes:  
+\[
+R = c_p^{\text{is}} \left( 1 - \frac{1}{k} \right) = 0.287 \, \text{kJ}/\text{kg·K}
+\]  
+
+The specific volume \( v_s \) is calculated as:  
+\[
+v_s = \frac{0.287 \, \text{kJ}/\text{kg·K} \cdot 437.9 \, \text{K}}{50,000 \, \text{Pa}} = 0.00247 \, \text{m}^3/\text{kg}
+\]  
+
+Finally, the work done by the isentropic compressor \( \dot{W}_{\text{+isc}} \) is left incomplete.

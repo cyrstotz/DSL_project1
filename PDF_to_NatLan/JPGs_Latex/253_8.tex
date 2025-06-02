@@ -1,0 +1,29 @@
+TASK 4a  
+A graph is drawn with pressure \( p \) on the vertical axis and temperature \( T \) on the horizontal axis. The graph shows a phase diagram with labeled points corresponding to states in the refrigeration cycle:  
+- Point 1 is in the liquid region.  
+- Point 2 and Point 4 are on the saturation curve.  
+- Point 3 is in the superheated vapor region.  
+Arrows indicate the transitions between states, showing the process flow:  
+1 → 2 → 3 → 4 → 1.  
+
+TASK 4b  
+The first law of thermodynamics is applied to the compressor:  
+\[
+\dot{W}_K = \dot{m}_{\text{R134a}} \cdot (h_2 - h_3)
+\]  
+The enthalpy at state 2 is calculated using the saturation condition:  
+\[
+h_2 = h(x=1, T=T_i - 6) = 237.79 \, \text{kJ/kg} \quad \text{(from Table A-10)}
+\]  
+The enthalpy at state 3 is determined using the entropy at state 2 and the pressure at state 3:  
+\[
+h_3 = h(s=s_2, 8 \, \text{bar}) \quad \text{(adiabatic and reversible process)}
+\]  
+The mass flow rate of the refrigerant is then expressed as:  
+\[
+\dot{m}_{\text{R134a}} = \frac{\dot{W}_K}{h_2 - h_3}
+\]  
+Additional data provided:  
+\[
+T_i = -10^\circ\text{C}, \quad s_2 = 0.9298 \, \text{kJ/kg·K} \quad \text{(from Table A-10)}
+\]

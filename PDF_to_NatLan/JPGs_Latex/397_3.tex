@@ -1,0 +1,38 @@
+TASK 2a  
+The diagram is a qualitative representation of the jet engine process in a \( T \)-\( s \) diagram. It includes labeled isobars and process paths:  
+- State 1 to 2: Adiabatic compression, reversible.  
+- State 2 to 3: Isobaric heat addition.  
+- State 3 to 4: Adiabatic expansion, irreversible.  
+- State 4 to 5: Isobaric mixing.  
+- State 5 to 6: Adiabatic expansion through the nozzle.  
+
+The axes are labeled as follows:  
+- \( T \) (temperature) on the vertical axis.  
+- \( s \) (specific entropy, \( \text{kJ}/\text{kg·K} \)) on the horizontal axis.  
+
+Key points:  
+- \( p_0 = p_6 = 0.1916 \, \text{bar} \).  
+- \( p_5 = 0.5 \, \text{bar} \).  
+
+TASK 2b  
+From the energy balance:  
+\[
+0 = \dot{m} \left[ h_e - h_a + \frac{(w_e^2 - w_a^2)}{2} \right] + \sum_j \dot{Q}_j - \sum_n \dot{W}_{\text{en}} = 0.
+\]  
+Assuming \( \dot{W}_t = 0 \), \( q = 1195 \, \text{kJ/kg} \), and \( w_e = w_{\text{air}} = 200 \, \text{m/s} \), the equation simplifies:  
+\[
+\frac{(w_e^2 - w_a^2)}{2} = h_a - h_e - q.
+\]  
+This can be expressed as:  
+\[
+h_a - h_e = c_p (T_a - T_e) - q.
+\]  
+
+For the isentropic process from state 5 to state 6:  
+\[
+T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}.
+\]  
+Substituting values:  
+\[
+T_6 = T_5 \cdot 0.76 = 0.76 \cdot 431.9 \, \text{K} = 328.07 \, \text{K}.
+\]

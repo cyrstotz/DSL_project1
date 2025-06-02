@@ -1,0 +1,73 @@
+TASK 1a  
+The goal is to calculate \( \dot{Q}_{\text{out}} \).  
+
+The energy balance equation is written as:  
+\[
+Q = \dot{m} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R + \dot{Q}_{\text{out}}
+\]  
+Rearranging for \( \dot{Q}_{\text{out}} \):  
+\[
+-\dot{Q}_{\text{out}} = \dot{m} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R
+\]  
+\[
+\dot{Q}_{\text{out}} = \dot{m} (h_{\text{out}} - h_{\text{in}}) - \dot{Q}_R
+\]  
+
+Using the given values:  
+\[
+h_{\text{in}} = 292.98 \, \frac{\text{kJ}}{\text{kg}}, \quad h_{\text{out}} = 419.04 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+\dot{m} = 0.3 \, \frac{\text{kg}}{\text{s}}, \quad \dot{Q}_R = 100 \, \frac{\text{kJ}}{\text{s}}
+\]  
+
+Substituting:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \frac{\text{kg}}{\text{s}} (419.04 \, \frac{\text{kJ}}{\text{kg}} - 292.98 \, \frac{\text{kJ}}{\text{kg}}) - 100 \, \frac{\text{kJ}}{\text{s}}
+\]  
+\[
+\dot{Q}_{\text{out}} = -62.16 \, \frac{\text{kJ}}{\text{s}}
+\]  
+
+The mass flow rate removes \( \dot{Q}_{\text{out}} = 62.16 \, \frac{\text{kJ}}{\text{s}} \).  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) is calculated using the logarithmic mean temperature difference:  
+\[
+T_{\text{KF}} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)}
+\]  
+Substituting the given values:  
+\[
+T_2 = 288.15 \, \text{K}, \quad T_1 = 268.15 \, \text{K}
+\]  
+\[
+T_{\text{KF}} = \frac{288.15 \, \text{K} - 268.15 \, \text{K}}{\ln \left( \frac{288.15 \, \text{K}}{268.15 \, \text{K}} \right)}
+\]  
+\[
+T_{\text{KF}} = 293.12 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) is calculated using the entropy balance equation:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{out}}}{T_{\text{react}}} - \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+Substituting the given values:  
+\[
+\dot{Q}_{\text{out}} = 62.18 \, \frac{\text{kJ}}{\text{s}}, \quad T_{\text{react}} = 373.15 \, \text{K}, \quad T_{\text{KF}} = 293.12 \, \text{K}
+\]  
+\[
+\dot{S}_{\text{gen}} = \dot{Q}_{\text{out}} \left( \frac{1}{T_{\text{react}}} - \frac{1}{T_{\text{KF}}} \right)
+\]  
+\[
+\dot{S}_{\text{gen}} = 62.18 \, \frac{\text{kJ}}{\text{s}} \left( \frac{1}{373.15 \, \text{K}} - \frac{1}{293.12 \, \text{K}} \right)
+\]  
+\[
+\dot{S}_{\text{gen}} = -0.0455 \, \frac{\text{kJ}}{\text{s·K}}
+\]  
+
+A small diagram is drawn showing two boxes labeled with \( T_{\text{KF}} = 293.12 \, \text{K} \) and \( T_{\text{react}} = 373.15 \, \text{K} \), with arrows indicating heat flow.

@@ -1,0 +1,52 @@
+TASK 4a  
+The diagram is a pressure-temperature (\( p \)-\( T \)) graph illustrating the phase regions of a substance. The graph includes the following labeled regions:  
+- "fest" (solid phase)  
+- "flüssig" (liquid phase)  
+- "gasförmig" (gaseous phase)  
+
+The triple point (\( T_{\text{triple}} \)) is marked where the solid, liquid, and gaseous phases coexist. Two processes are indicated:  
+- Process (i): A horizontal line at constant pressure within the liquid phase.  
+- Process (ii): A vertical line at constant temperature transitioning from the liquid phase to the gaseous phase.  
+
+The axes are labeled:  
+- \( p \) [bar] for pressure (y-axis)  
+- \( T \) [°C] for temperature (x-axis).  
+
+TASK 4b  
+The inlet temperature of the refrigerant is given as \( T_i = -10^\circ\text{C} \).  
+
+An energy balance for the compressor is written as:  
+\[
+0 = \dot{m} [h_2 - h_3] - \dot{W}_K
+\]  
+Rearranging for the mass flow rate:  
+\[
+\dot{m} = \frac{\dot{W}_K}{h_2 - h_3}
+\]  
+
+The enthalpy at state 2 is calculated:  
+\[
+h_2 = h_3(T_i - 6 \, \text{K}) = 237.7 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-10)}
+\]  
+
+The entropy at state 3 is set equal to the entropy at state 2:  
+\[
+s_3 = s_2 = s_9(T_i - 6 \, \text{K}) = 0.928 \, \frac{\text{kJ}}{\text{kg·K}} \quad \text{(from Table A-10)}
+\]  
+
+The enthalpy at state 3 is calculated using the entropy and pressure:  
+\[
+h_3 = h(s = s_3, p = 8 \, \text{bar}) = h(T_{\text{sat}}, 8 \, \text{bar}) + h(40^\circ\text{C}, 8 \, \text{bar}) - h(T_{\text{sat}}, 8 \, \text{bar}) \cdots
+\]  
+After simplification:  
+\[
+h_3 = 271.31 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The mass flow rate is calculated:  
+\[
+\dot{m} = \frac{0.28 \times 10^3 \, \text{kW}}{h_2 - h_3} = 0.000834 \, \frac{\text{kg}}{\text{s}}
+\]  
+
+TASK 4c  
+No content found.

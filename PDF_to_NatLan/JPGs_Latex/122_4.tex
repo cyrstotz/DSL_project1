@@ -1,0 +1,74 @@
+TASK 1a  
+The problem begins with the assumption that kinetic energy (\( KE \)) and potential energy (\( PE \)) are negligible, so \( KE = PE = 0 \).  
+
+The process is described as a stationary flow process with mass flow. The energy balance equation is given as:  
+\[
+0 = \dot{m} \left( h_{\text{in}} - h_{\text{aus}} \right) + \dot{Q}_R - \dot{W}_t
+\]  
+
+The enthalpy values are calculated using water tables:  
+- For the outlet enthalpy (\( h_{\text{aus}} \)), the equation is:  
+\[
+h_{\text{aus}} = h_f + x_D \left( h_g - h_f \right)
+\]  
+Where:  
+  - \( h_f \) is the enthalpy of saturated liquid at \( T = 100^\circ\text{C} \):  
+    \[
+    h_f = 419.04 \, \frac{\text{kJ}}{\text{kg}}
+    \]  
+  - \( h_g \) is the enthalpy of saturated vapor at \( T = 100^\circ\text{C} \):  
+    \[
+    h_g = 2676.1 \, \frac{\text{kJ}}{\text{kg}}
+    \]  
+  - Substituting these values, \( h_{\text{aus}} \) is calculated as:  
+    \[
+    h_{\text{aus}} = 430.33 \, \frac{\text{kJ}}{\text{kg}}
+    \]  
+
+- For the inlet enthalpy (\( h_{\text{in}} \)), the equation is:  
+\[
+h_{\text{in}} = h_f \quad \text{(saturated liquid at \( T = 70^\circ\text{C} \))}  
+\]  
+Where:  
+  - \( h_f \) is the enthalpy of saturated liquid at \( T = 70^\circ\text{C} \):  
+    \[
+    h_f = 232.38 \, \frac{\text{kJ}}{\text{kg}}
+    \]  
+
+TASK 1b  
+The coolant is modeled as an ideal liquid. The specific heat capacity (\( c_p^{\text{KF}} \)) is constant and independent of temperature:  
+\[
+c_p^{\text{KF}} = c_p^{\text{KF}}(T) = \text{constant}
+\]  
+
+The temperature difference (\( \Delta T \)) is given as:  
+\[
+\Delta T = 10 \, \text{K}
+\]  
+
+The inlet enthalpy (\( h_{\text{in}} \)) is calculated as:  
+\[
+h_{\text{in}} = h_f + x_D \left( h_g - h_f \right) = 301.6491 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The mass flow rate (\( \dot{m} \)) is given as:  
+\[
+\dot{m} = 0.3 \, \frac{\text{kg}}{\text{s}}
+\]  
+
+The energy balance equation is applied:  
+\[
+0 = \dot{m} \left( h_{\text{in}} - h_{\text{aus}} \right) + \dot{Q}_R - \dot{Q}_{\text{aus}}
+\]  
+
+Rearranging for \( \dot{Q}_{\text{aus}} \):  
+\[
+\dot{Q}_{\text{aus}} = \dot{m} \left( h_{\text{in}} - h_{\text{aus}} \right) + \dot{Q}_R
+\]  
+
+Substituting values:  
+\[
+\dot{Q}_{\text{aus}} = 62.256 \, \text{kW}
+\]  
+
+This concludes the calculation for the heat flow removed by the coolant.

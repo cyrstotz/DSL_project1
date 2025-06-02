@@ -1,0 +1,26 @@
+The refrigerant mass flow rate (\(\dot{m}_{\text{R134a}}\)) is calculated using the enthalpy differences between states.  
+
+At state 2:  
+The refrigerant is saturated cooling vapor, and the enthalpy \(h_2\) is determined.  
+
+At state 3:  
+The pressure is \(p_3 = 8 \, \text{bar}\), and the enthalpy \(h_3\) is calculated using the saturated vapor enthalpy from Table A-11:  
+\[
+h_3 = 267.15 \, \text{kJ/kg}.
+\]  
+
+The work input to the compressor (\(\dot{W}_K\)) is given by:  
+\[
+\dot{m} \cdot (h_2 - h_3) = \dot{W}_K.
+\]  
+
+At state 4:  
+The refrigerant is fully condensed, and the enthalpy \(h_4\) is calculated as:  
+\[
+h_4 = 93.42 \, \text{kJ/kg}.
+\]  
+
+The heat removed by the condenser (\(\dot{Q}_{\text{ab}}\)) is given by:  
+\[
+\dot{m} \cdot (h_3 - h_4) = \dot{Q}_{\text{ab}}.
+\]

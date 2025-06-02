@@ -1,0 +1,42 @@
+The energy balance for the nozzle is written as:  
+\[
+0 = \dot{m} \left[ h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right]
+\]  
+This equation is used to calculate the outlet velocity \( w_6 \):  
+\[
+w_6 = \sqrt{2 \left( h_5 - h_6 \right) + w_5^2}
+\]  
+Substituting values:  
+\[
+w_6 = \sqrt{2 \cdot 104.45 \, \text{kJ/kg} + (220 \, \text{m/s})^2}
+\]  
+The result is:  
+\[
+w_6 = 220.57 \, \text{m/s}
+\]  
+
+Note: Some parts of the derivation are crossed out and not included in the transcription.
+
+The temperature ratio is expressed as:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}}
+\]  
+where \( n = \kappa = 1.4 \).  
+Using the given values:  
+\[
+\frac{T_6}{T_5} = \left( \frac{0.191}{0.5} \right)^{\frac{1.4 - 1}{1.4}}
+\]  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} = 431.9 \, \text{K} \left( \frac{0.191}{0.5} \right)^{\frac{1}{1.4}}
+\]  
+\[
+T_6 = 328 \, \text{K}
+\]  
+
+The enthalpy difference \( h_5 - h_6 \) is calculated as:  
+\[
+h_5 - h_6 = c_p \left( T_5 - T_6 \right) = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \left( 431.9 - 328 \right)
+\]  
+\[
+h_5 - h_6 = 104.95 \, \frac{\text{kJ}}{\text{kg}}
+\]

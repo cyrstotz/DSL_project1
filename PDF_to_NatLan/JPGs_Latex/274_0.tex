@@ -1,0 +1,70 @@
+TASK 1a  
+**a) Heat flow \( \dot{Q}_{\text{out}} \):**  
+The steady-state energy balance equation is written as:  
+\[
+U = \dot{m} \left[ h_e - h_a \right] + \Sigma Q
+\]  
+From this, the heat flow is expressed as:  
+\[
+Q = \dot{m} \left[ h_a - h_e \right]
+\]  
+Substituting for \( \dot{Q}_{\text{out}} \):  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \left[ c \left( T_2 - T_1 \right) + v \left( p_2 - p_1 \right) \right]
+\]  
+Here, \( v \left( p_2 - p_1 \right) = 0 \) because pressure is constant.  
+
+Using Table A2:  
+\[
+Q = \dot{m} \left[ h_{\text{aus}} - h_{\text{ein}} \right]
+\]  
+Values from the table:  
+\[
+h_{\text{ein}} = 2333.8 \, \text{kJ/kg}, \quad h_{\text{aus}} = 2957.0 \, \text{kJ/kg}
+\]  
+Thus:  
+\[
+\dot{Q}_{\text{out}} = -23.04 \, \text{kW}
+\]  
+
+---
+
+**b) Thermodynamic mean temperature \( T_{\text{KF}} \):**  
+The mean temperature is calculated using the entropy integral:  
+\[
+T_{\text{KF}} = \frac{\int_{s_a}^{s_e} T \, dS}{s_a - s_e}
+\]  
+This simplifies to:  
+\[
+T_{\text{KF}} = \frac{\Delta Q}{\Delta S} = \frac{c \left( T_2 - T_1 \right) + v \left( p_2 - p_1 \right)}{\ln \left( T_2 / T_1 \right)}
+\]  
+Here, \( v \left( p_2 - p_1 \right) = 0 \) because pressure is constant.  
+
+Substituting values:  
+\[
+T_{\text{KF}} = \frac{\tau_{\text{aus}} - \tau_{\text{ein}}}{\ln \left( \tau_{\text{aus}} / \tau_{\text{ein}} \right)}
+\]  
+Result:  
+\[
+T_{\text{KF}} = 294.57 \, \text{K}
+\]  
+
+---
+
+**c) Entropy production \( \dot{S}_{\text{gen}} \):**  
+For the reactor and coolant, the steady-state entropy balance is:  
+\[
+0 = \dot{m} \left[ s_e - s_a \right] + \Sigma \frac{\dot{Q}}{T} + \dot{S}_{\text{gen}}
+\]  
+Rearranging:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \left[ s_a - s_e \right] - \frac{\dot{Q}_{\text{ab}}}{T_{\text{KT}}}
+\]  
+Substituting:  
+\[
+\dot{S}_{\text{gen}} = \frac{m \cdot c \left( \tau_{\text{aus}} / \tau_{\text{ein}} \right) - \frac{\dot{Q}_{\text{ab}}}{T_{\text{KT}}}}
+\]  
+Final result:  
+\[
+\dot{S}_{\text{gen}} = -\frac{\dot{Q}_{\text{ab}}}{T_{\text{KT}}} = -0.165 \, \text{kW}
+\]  

@@ -1,0 +1,164 @@
+
+``````latex
+
+\section*{Aufgabe 1}
+
+\subsection*{a)}
+
+\[
+\dot{Q}_{\text{aus}}?
+\]
+
+\[
+Q_R = 100 \text{kW}
+\]
+
+\[
+m_{\text{ges},1} = 5.255 \text{ kg}
+\]
+
+\[
+\dot{m} = 0.3 \frac{\text{kg}}{\text{s}}
+\]
+
+\[
+x_0 = 0.005
+\]
+
+\textbf{Energieblianz: (Balkon)}
+
+\[
+0 = \dot{m}(h_e - h_a) + \dot{Q}_R \pm \dot{Q}_{\text{aus}} \rightarrow
+\]
+
+\[
+h_e = h_f(30^\circ \text{C}) + x_0 \cdot (h_{fg}(30^\circ \text{C}) - h_f(30^\circ \text{C}))
+\]
+
+\[
+h_e = 304.648 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_a = h_f(100^\circ \text{C}) + x_0 \cdot (h_{fg}(100^\circ \text{C}) - h_f(100^\circ \text{C}))
+\]
+
+\[
+h_a = 430.33 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\dot{Q}_{\text{aus}} = \dot{m} \cdot (h_e - h_a) + 100 \text{kW}
+\]
+
+\[
+\dot{Q}_{\text{aus}} = 62.3 \text{kW}
+\]
+
+\subsection*{b)}
+
+\[
+\overline{T}_{\text{KF}} = \frac{\int_{S_1}^{S_2} T \, ds}{S_2 - S_1} = \frac{q_{12, \text{rev}}}{S_2 - S_1} = \frac{h_2 - h_1}{S_2 - S_1}
+\]
+
+\[
+T_1 = 288.15
+\]
+
+\[
+T_2 = 238.15
+\]
+
+\textit{i.p.:} 
+
+\[
+h_2 - h_1 = \int_{T_1}^{T_2} c_i \, dT + v_i \cdot (\beta p_0) = c_i \cdot (T_2 - T_1)
+\]
+
+\[
+S_2 - S_1 = c_i \cdot \ln \left( \frac{T_2}{T_1} \right)
+\]
+
+\[
+\overline{T}_{\text{KF}} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)} = \frac{238.15 - 288.15}{\ln \left( \frac{238.15}{288.15} \right)} = 293.12 \text{K}
+\]
+
+``````latex
+
+
+\section*{c)}
+\underline{Entropiebilanz am Realkomando:}
+
+\[
+0 = \frac{\dot{Q}_{\text{ab}}}{T_{\text{ab}}} - \frac{\dot{Q}_{\text{aus}}}{T_{\text{KF}}} + \dot{S}_{\text{enz}}
+\]
+
+\[
+\dot{S}_{\text{enz}} = \dot{Q}_{\text{ab, abs}} \left( \frac{1}{T_{\text{KF}}} - \frac{1}{T_{\text{ab}}} \right)
+\]
+
+\[
+T_{\text{ab}} = 100^\circ C = 373.15 \, \text{K}
+\]
+
+\[
+\dot{S}_{\text{enz}} = 62.5 \, \text{kW} \cdot \left( \frac{1}{293.12} - \frac{1}{373.15} \right) = \dots 0.570 \, \frac{\text{W}}{\text{K}}
+\]
+
+\section*{d)}
+\[
+T_{\text{reaktor}} = 70^\circ C
+\]
+
+\[
+\Delta m_{12}, \quad T_1 = 20^\circ C
+\]
+
+\[
+Q_{R,12} = 35 \, \text{MJ}
+\]
+
+\underline{Hauhaltsgleichung:}
+
+\[
+\Delta E = \Delta U = m_2 u_2 - m_1 u_1 \stackrel{!}{=} \Delta m_{12} \left( h_{a, \text{ein}} \right) + Q_{R,12}
+\]
+
+\underline{Nebenbedingung:}
+
+\[
+m_2 = m_1 + \Delta m
+\]
+
+\[
+u_1 = u_f (100^\circ C) + x_0 \cdot (u_g (100^\circ C) - u_f (100^\circ C))
+\]
+
+\[
+u_2 = u_f (70^\circ C) + x_{10} \cdot (u_g (70^\circ C) - u_f (70^\circ C))
+\]
+
+\[
+h_{a, \text{ein}} = u_f (20^\circ C) + x_0 \cdot (u_g (20^\circ C) - u_f (20^\circ C))
+\]
+
+\section*{e)}
+\[
+\Delta S = m_2 s_2 - m_1 s_1 - (\Delta m_{12} s_{a, \text{ein}} \stackrel{!}{=} \frac{\dot{Q}_{\text{ab, 12}}}{T} + S_{\text{enz}})
+\]
+
+\[
+S_2 = S_f (70^\circ C) + x_0 \cdot (S_g (70^\circ C) - S_f (70^\circ C))
+\]
+
+\[
+S_1 = \dot{S}_f (100^\circ C) + x_0 \cdot (S_g (100^\circ C) - S_f (100^\circ C))
+\]
+
+\[
+\text{*} \quad m_2 = m_1 + \Delta m_{12}
+\]
+
+``````latex
+
+

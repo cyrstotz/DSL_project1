@@ -1,0 +1,43 @@
+TASK 2a  
+The process is represented qualitatively in a \( T \)-\( s \) diagram. The diagram includes labeled isobars and key states (0, 1, 2, 3, 4, 5, and 6).  
+- The curve begins at state 0 and progresses through states 1, 2, 3, 4, 5, and 6.  
+- State transitions are marked with processes such as "isentropic" and "isobaric."  
+- The axes are labeled: \( T \) (temperature) on the vertical axis and \( s \) (specific entropy) on the horizontal axis.  
+- The isobars are shown as curved lines, and the transitions between states are indicated with arrows.  
+
+TASK 2b  
+To calculate the outlet velocity \( w_6 \) and temperature \( T_6 \):  
+Given:  
+\[
+w_5 = 220 \, \text{m/s}, \quad p_5 = 0.5 \, \text{bar}, \quad T_5 = 431.9 \, \text{K}, \quad p_0 = 0.191 \, \text{bar}
+\]  
+The process is assumed to be isentropic (\( s_5 = s_6 \)).  
+
+The polytropic temperature \( T_6 \) is calculated using:  
+\[
+T_6 = T_5 \left( \frac{p_0}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = 431.9 \left( \frac{0.191}{0.5} \right)^{\frac{1.4 - 1}{1.4}} = 328.07 \, \text{K}
+\]  
+
+The outlet velocity \( w_6 \) is determined using the energy balance:  
+\[
+\frac{w_6^2}{2} = c_p (T_5 - T_6) + \frac{w_5^2}{2}
+\]  
+Substituting values:  
+\[
+\frac{w_6^2}{2} = 1.006 (431.9 - 328.07) + \frac{220^2}{2}
+\]  
+\[
+w_6^2 = 2304.45 + 77.95
+\]  
+\[
+w_6 = \sqrt{220.7} \, \text{m/s}
+\]  
+
+Final results:  
+\[
+T_6 = 328.07 \, \text{K}, \quad w_6 = 220.7 \, \text{m/s}
+\]

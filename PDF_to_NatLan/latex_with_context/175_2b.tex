@@ -1,0 +1,74 @@
+The energy balance equation is written as:  
+\[
+0 = \dot{m} \left[ h_0 - h_6 + \frac{w_e^2 - w_a^2}{2} \right] p_0 + \dot{Q}_j - \dot{W}_{\text{tn}}
+\]  
+Assuming the system is adiabatic to the surroundings (\( \dot{Q}_j = 0 \)), the equation simplifies to:  
+\[
+\dot{W}_{\text{tn}} = m \left[ h_5 - h_6 + \frac{w_e^2 - w_a^2}{2} \right]
+\]  
+
+Further derivations include:  
+\[
+\left[ \frac{\dot{W}_{\text{tn}}}{m} + h_6 - h_5 \right] \cdot 2 = w_e^2 - w_a^2
+\]  
+\[
+w_6^2 = w_5^2 - \frac{\dot{W}_{\text{tn}}}{\dot{m}} + \left[ h_5 - h_6 \right]
+\]  
+
+The specific volume \( v_5 \) is calculated using the ideal gas law:  
+\[
+v_5 = \frac{mRT_5}{p_5}
+\]  
+Substituting values:  
+\[
+v_5 = \frac{0.1286 \, \text{J/g} \cdot 431.13 \, \text{K} \cdot R}{0.5 \cdot 10^5 \, \text{Pa}}
+\]  
+\[
+R = \frac{8.314 \, \text{J/mol·K}}{28.97 \, \text{kg/kmol}} = 0.287 \, \text{J/g·K}
+\]  
+\[
+v_5 = 0.10024789 \, \text{m}^3/\text{g}
+\]  
+
+The temperature ratio is calculated as:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{4}{14}} = 328.107 \, \text{K}
+\]  
+
+The enthalpy difference is calculated as:  
+\[
+h_6 - h_5 = c_p \left( T_6 - T_5 \right)
+\]  
+\[
+h_5 - h_6 = c_p \left[ T_5 - T_6 \right]
+\]  
+Substituting values:  
+\[
+h_5 - h_6 = 1.006 \, \text{kJ/kg·K} \cdot \left( 431.13 \, \text{K} - 328.107 \, \text{K} \right)
+\]  
+\[
+h_5 - h_6 = 104.14 \, \text{kJ/kg}
+\]
+
+The outlet velocity \( w_6 \) is calculated using the following equation:  
+\[
+w_6^2 = w_5^2 - \frac{\dot{W}_{\text{en}}}{\dot{m}} + \left[h_5 - h_6\right]
+\]  
+The work per unit mass flow rate, \( \frac{\dot{W}_{\text{en}}}{\dot{m}} \), is determined as:  
+\[
+\frac{\dot{W}_{\text{en}}}{\dot{m}} = R \frac{T_6 - T_5}{1 - \kappa} = 0.12367 \, \frac{\text{J}}{\text{g}} \left[328.07 \, \text{K} - 431.13 \, \text{K}\right] / 0.4
+\]  
+This results in:  
+\[
+\frac{\dot{W}_{\text{en}}}{\dot{m}} = -741.42 \, \frac{\text{J}}{\text{g}}
+\]  
+The outlet velocity \( w_6 \) is then calculated as:  
+\[
+w_6 = \sqrt{\left(200 \, \frac{\text{m}}{\text{s}}\right)^2 + \frac{741.42 \, \frac{\text{J}}{\text{g}}}{\dot{m}_{\text{gas}}} + 104.45 \, \frac{\text{J}}{\text{kg}}}
+\]  
+
+---

@@ -1,0 +1,70 @@
+TASK 1a  
+**Energy Balance for Reactor:**  
+The energy balance equation for the reactor is given as:  
+\[
+\frac{dE}{dt} = \dot{m} \left( h_{\text{in}} - h_{\text{out}} \right) + \dot{Q} - \dot{W}
+\]  
+The heat flow removed by the coolant is expressed as:  
+\[
+\dot{Q} = \dot{m} \left( h_{\text{out}} - h_{\text{in}} \right)
+\]  
+From the water tables (Table A-2), the enthalpy values are:  
+\[
+h_{\text{out}} = 419.09 \, \text{kJ/kg}, \quad h_{\text{in}} = 292.38 \, \text{kJ/kg}
+\]  
+
+TASK 1b  
+**Thermodynamic Mean Temperature of Coolant:**  
+The mean temperature \( T_{\text{KF}} \) is calculated using the entropy relation:  
+\[
+\frac{1}{T} = \int \frac{dS}{T} = \frac{h_2 - h_1 + V(p_2 - p_1)}{c \ln \left( \frac{T_2}{T_1} \right)}
+\]  
+Simplifying for \( T_{\text{KF}} \):  
+\[
+T_{\text{KF}} = \frac{C \left( T_2 - T_1 \right)}{c \ln \left( \frac{T_2}{T_1} \right)} = 293.12 \, \text{K}
+\]  
+
+TASK 1c  
+**Entropy Production:**  
+The entropy balance equation is given as:  
+\[
+\frac{dS}{dt} = \sum \frac{\dot{Q}_i}{T} + \dot{S}_{\text{gen}}
+\]  
+Rearranging for \( \dot{S}_{\text{gen}} \):  
+\[
+\dot{S}_{\text{gen}} = -\frac{\dot{Q}}{T} = \frac{65 \, \text{kW}}{293.12 \, \text{K}} = 0.2218 \, \frac{\text{kJ}}{\text{s·K}}
+\]  
+
+TASK 1d  
+**Mass Added to Reduce Temperature:**  
+Using the energy balance equation:  
+\[
+\frac{dE}{dt} = 0
+\]  
+The heat transfer is expressed as:  
+\[
+Q = m_{\text{total},1} \left( h_{\text{out}}(70^\circ\text{C}) - h_{\text{out}}(100^\circ\text{C}) \right) + m_{12} \left( h_{\text{in}}(20^\circ\text{C}) - h_{\text{out}}(20^\circ\text{C}) \right)
+\]  
+Rearranging for \( m_{12} \):  
+\[
+m_{12} = \frac{-Q}{h(70^\circ\text{C}) - h(100^\circ\text{C})} = \frac{-35 \, \text{MJ}}{-83.96 \, \text{kJ/kg}} = 3970 \, \text{kg}
+\]  
+
+TASK 1e  
+**Entropy Change of Reactor Contents:**  
+The entropy change \( \Delta S \) is calculated as:  
+\[
+\Delta S = m_{S2} - m_{S1}
+\]  
+Expanding:  
+\[
+\Delta S = \left( m_{\text{total},1} + \Delta m_{12} \right) s(70^\circ\text{C}) - m_{\text{total},1} s(100^\circ\text{C})
+\]  
+Substituting values:  
+\[
+\Delta S = 8056 \, \frac{\text{kJ}}{\text{K}}
+\]  
+Where:  
+\[
+s(70^\circ\text{C}) = 0.9548, \quad s(100^\circ\text{C}) = 0.13064
+\]

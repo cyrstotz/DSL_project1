@@ -1,0 +1,94 @@
+TASK 1a  
+The heat flow through the wall (\( \dot{Q}_{\text{out}} \)) is calculated using an energy balance around the reactor.  
+
+Energy balance equation:  
+\[
+0 = \dot{m} \cdot (h_{\text{e}} - h_{\text{a}}) + \sum \dot{Q} - \sum \dot{W}
+\]  
+
+The enthalpy values are determined from water tables:  
+\[
+h_{\text{e}} = h_f + x \cdot h_{\text{fg}} = h_f[100^\circ\text{C}] + x \cdot h_{\text{fg}}[100^\circ\text{C}]
+\]  
+\[
+h_{\text{a}} = h_f[70^\circ\text{C}]
+\]  
+
+Substituting values:  
+\[
+h_{\text{e}} = 419.04 + 0.005 \cdot 2257.0 = 430.325 \, \text{kJ/kg}
+\]  
+\[
+h_{\text{a}} = 292.98 \, \text{kJ/kg}
+\]  
+
+Using the mass flow rate \( \dot{m} = 0.3 \, \text{kg/s} \):  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \cdot (h_{\text{e}} - h_{\text{a}}) = 0.3 \cdot (430.325 - 292.98) = 41.264 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant (\( T_{\text{KF}} \)) is calculated using the entropy difference:  
+\[
+T_{\text{KF}} = \frac{\int T \, dS}{S_{\text{a}} - S_{\text{e}}} = \frac{T \cdot (S_{\text{a}} - S_{\text{e}})}{S_{\text{a}} - S_{\text{e}}}
+\]  
+
+From Table A2:  
+\[
+S_{\text{a}} = 0.9949 \, \text{kJ/kg·K}, \quad S_{\text{e}} = 7.2553 \, \text{kJ/kg·K}
+\]  
+
+Substituting values:  
+\[
+T_{\text{KF}} = \frac{T_{\text{a}} - T_{\text{e}}}{S_{\text{a}} - S_{\text{e}}}
+\]  
+
+TASK 1c  
+The entropy production (\( \dot{S}_{\text{gen}} \)) is calculated using the entropy balance:  
+\[
+0 = \dot{m} \cdot (S_{\text{e}} - S_{\text{a}}) + \frac{\dot{Q}_{\text{out}}}{T} + \dot{S}_{\text{gen}}
+\]  
+
+Rearranging:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \cdot (S_{\text{e}} - S_{\text{a}}) + \frac{\dot{Q}_{\text{out}}}{T}
+\]  
+
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = 0.3 \cdot (7.2553 - 0.9949) + \frac{100 - 41.264}{298.15}
+\]  
+\[
+\dot{S}_{\text{gen}} = 2.225 \, \text{kJ/kg·K}
+\]  
+
+TASK 1d  
+For the semi-open system, the energy balance is applied to calculate the mass \( \Delta m_{12} \):  
+\[
+\Delta E = m_2 u_2 - m_1 u_1 = \Delta m \cdot h_i + \sum Q - \sum W
+\]  
+
+The change in internal energy (\( \Delta U \)) is expressed as:  
+\[
+\Delta U = \Delta m \cdot h_i + Q_{R,12}
+\]  
+
+Substituting values:  
+\[
+\Delta m = \frac{Q_{R,12}}{\Delta h \cdot (1 - x)}
+\]  
+
+Using enthalpy values from water tables:  
+\[
+h[100^\circ\text{C}] = 83.76 \, \text{kJ/kg}, \quad h[70^\circ\text{C}] = 92.95 \, \text{kJ/kg}
+\]  
+\[
+\Delta h = h[100^\circ\text{C}] - h[70^\circ\text{C}] = 292.98 \, \text{kJ/kg}
+\]  
+
+Final expression for \( \Delta m \):  
+\[
+\Delta m = \frac{Q_{R,12}}{\Delta h \cdot (1 - x)}
+\]  
+
+No diagrams are present on the page.

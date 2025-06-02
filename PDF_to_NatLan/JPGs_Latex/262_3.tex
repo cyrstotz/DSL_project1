@@ -1,0 +1,62 @@
+TASK 1d  
+The problem involves cooling the reactor contents from \( T_R = 100^\circ\text{C} \) to \( T_R = 70^\circ\text{C} \) by adding a mass \( \Delta m_{12} \) of saturated liquid water at \( T_{\text{in,12}} = 20^\circ\text{C} \). The heat released during cooling is \( Q_{R,12} = 35 \, \text{MJ} \).  
+
+### Energy Balance  
+The system is modeled as a half-open system where kinetic and potential energy are negligible (\( \text{KE} + \text{PE} = 0 \)).  
+
+The energy balance equation is:  
+\[
+\Delta E = m_2 U_2 - m_1 U_1 = m_i h_i + EQ - \dot{W}
+\]  
+
+Rewriting for this specific case:  
+\[
+m_2 U_2 - m_1 U_1 = \Delta m_{12} h_i(20^\circ\text{C}) + Q_{\text{out}}
+\]  
+or equivalently:  
+\[
+(m_2 - m_1) h_i(20^\circ\text{C}) + Q_{\text{out}}
+\]  
+
+### Known Values  
+- \( m_1 = 5755 \, \text{kg} \)  
+- \( h_i(20^\circ\text{C}) = h_f(20^\circ\text{C}) = 83.96 \, \frac{\text{kJ}}{\text{kg}} \) (from Table A-2)  
+- \( u_1 = u_f + x(u_g - u_f) \)  
+  - \( u_f(100^\circ\text{C}) = 918.92 \, \frac{\text{kJ}}{\text{kg}} \)  
+  - \( u_g(100^\circ\text{C}) = 2506.5 \, \frac{\text{kJ}}{\text{kg}} \)  
+  - \( x = 0.005 \)  
+  - \( u_1 = 918.92 + 0.005(2506.5 - 918.92) = 929.3788 \, \frac{\text{kJ}}{\text{kg}} \)  
+
+- \( u_2 = u_f(70^\circ\text{C}) = 292.35 \, \frac{\text{kJ}}{\text{kg}} \) (from Table A-2)  
+
+### Calculation  
+Using the energy balance equation:  
+\[
+m_2 U_2 - m_1 U_1 = m_2 h_i(20^\circ\text{C}) - m_1 h_i(20^\circ\text{C}) + Q_{\text{out}}
+\]  
+Rearranging:  
+\[
+m_2 (u_2 - h_i) = m_1 u_1 - m_1 h_i + Q_{\text{out}}
+\]  
+\[
+m_2 = \frac{m_1 U_1 - m_1 h_i + Q_{\text{out}}}{u_2 - h_i}
+\]  
+
+Substituting values:  
+\[
+m_2 = \frac{5755 \cdot 929.3788 - 5755 \cdot 83.96 + 35000}{292.35 - 83.96}
+\]  
+\[
+m_2 = 9629.31 \, \text{kg}
+\]  
+
+The added mass is:  
+\[
+\Delta m_{12} = m_2 - m_1 = 9629.31 - 5755 = 3874.31 \, \text{kg}
+\]  
+
+### Final Result  
+The mass of saturated liquid water added is:  
+\[
+\Delta m_{12} = 3874.31 \, \text{kg}
+\]

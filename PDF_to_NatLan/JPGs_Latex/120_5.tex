@@ -1,0 +1,49 @@
+TASK 3d  
+Determine the final ice fraction \( x_{\text{ice},2} \).
+
+The initial ice fraction is given as \( x_{\text{ice},1} = 0.6 \).  
+
+The masses of ice and water are:  
+\[
+m_{\text{ice}} = 0.06 \, \text{kg}, \quad m_{\text{water}} = 0.04 \, \text{kg}.
+\]
+
+The energy balance for the ice-water system is written as:  
+\[
+\Delta U = Q - W^0.
+\]
+
+The specific volume relationship is:  
+\[
+V_1 = m_{\text{EW}} \cdot v.
+\]
+
+Assuming steady-state conditions, the energy balance expands to:  
+\[
+\Delta U = Q - W^0 = m_{\text{EW}} \cdot x_2 \cdot u_{dE2} + m_{\text{EW}} \cdot (1 - x_2) \cdot u_{fE2} - m_{\text{EW}} \cdot x_1 \cdot u_{d1} - m_{\text{EW}} \cdot (1 - x_1) \cdot u_{f1}.
+\]
+
+The specific internal energy values are:  
+\[
+u_{d1} = u_{f1} = -0.045 \, \text{kJ/kg}, \quad u_{fE1} = u_{fE2} = -333.458 \, \text{kJ/kg}.
+\]
+
+The heat transfer \( Q \) is expressed as:  
+\[
+Q = m_{\text{EW}} \cdot \left( x_2 \cdot u_{d1} + (1 - x_2) \cdot u_f \right) - x_1 \cdot u_{d1} - (1 - x_1) \cdot u_f.
+\]
+
+Simplifying further:  
+\[
+\frac{Q}{m_{\text{EW}}} + x_1 \cdot u_{d1} + (1 - x_1) \cdot u_f = x_2 \cdot u_{d1} + u_f - x_2 \cdot u_f.
+\]
+
+Substituting numerical values:  
+\[
+\frac{-1.075 \, \text{kJ}}{0.1 \, \text{kg}} + 0.6 \cdot (-0.045) + (0.4) \cdot (-333.458) = x_2 \cdot (-0.045) + (-333.458) - x_2 \cdot (-333.458).
+\]
+
+After solving, the final ice fraction is:  
+\[
+x_{\text{ice},2} = 0.14325.
+\]

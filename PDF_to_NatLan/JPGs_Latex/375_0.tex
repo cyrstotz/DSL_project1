@@ -1,0 +1,53 @@
+TASK 1a  
+The energy balance equation is written as:  
+\[
+0 = \dot{m}_{\text{in}} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R - \dot{Q}_{\text{out}}
+\]  
+The enthalpy values are taken from water tables:  
+\[
+h_{\text{in}} \, (\text{saturated liquid at } 70^\circ\text{C}) \, \text{from A-2: } 292.88 \, \text{kJ/kg}
+\]  
+\[
+h_{\text{out}} \, (\text{saturated liquid at } 100^\circ\text{C}) \, \text{from A-2: } 419.04 \, \text{kJ/kg}
+\]  
+The heat flow removed by the coolant is calculated as:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \, (292.88 \, \text{kJ/kg} - 419.04 \, \text{kJ/kg}) + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = 62.182 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant is defined as:  
+\[
+T = \frac{\int_{s_a}^{s_e} T \, ds}{s_a - s_e}
+\]  
+The entropy difference is calculated as:  
+\[
+s_2 - s_1 = \int_{T_1}^{T_2} \frac{c}{T} \, dt = c \ln \left( \frac{T_2}{T_1} \right)
+\]  
+
+---
+
+TASK 1c  
+The entropy balance equation is written as:  
+\[
+0 = \dot{m}_{\text{in}} [s_e - s_a] + \sum \frac{\dot{Q}}{T} + \dot{S}_{\text{gen}}
+\]  
+The entropy values are taken from water tables:  
+\[
+s_a \, (\text{saturated liquid at } 70^\circ\text{C}) \, \text{from A-2: } 0.5519 \, \text{kJ/kg·K}
+\]  
+\[
+s_e \, (\text{saturated liquid at } 100^\circ\text{C}) \, \text{from A-2: } 1.3063 \, \text{kJ/kg·K}
+\]  
+The entropy generation is calculated as:  
+\[
+\dot{S}_{\text{gen}} = 0.3 \, \text{kg/s} \, [0.5519 \, \text{kJ/kg·K} - 1.3063 \, \text{kJ/kg·K}] + \frac{-251 \, \text{kW}}{298 \, \text{K}}
+\]  
+\[
+\dot{S}_{\text{gen}} = 325.94 \, \text{J/K}
+\]

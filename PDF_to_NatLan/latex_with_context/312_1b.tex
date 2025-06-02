@@ -1,0 +1,25 @@
+The thermodynamic mean temperature of the coolant is calculated using:  
+\[
+\bar{T}_{\text{KF}} = \frac{\int_{S_{\text{ein}}}^{S_{\text{aus}}} T \, dS}{S_{\text{aus}} - S_{\text{ein}}}
+\]  
+The relationship for enthalpy change is given as:  
+\[
+dH = T \, dS + v \, dp \quad \text{(ideal liquid assumption, } v \, dp \approx 0 \text{ for isobaric process)}
+\]  
+Thus,  
+\[
+h_{\text{aus}} - h_{\text{ein}} = c_{p,\text{KF}} (T_{\text{aus}} - T_{\text{ein}})
+\]  
+\[
+S_{\text{aus}} - S_{\text{ein}} = c_{p,\text{KF}} \ln \left(\frac{T_{\text{aus}}}{T_{\text{ein}}}\right)
+\]  
+Substituting the values:  
+\[
+\bar{T}_{\text{KF}} = \frac{T_{\text{aus}} - T_{\text{ein}}}{\ln \left(\frac{T_{\text{aus}}}{T_{\text{ein}}}\right)}
+\]  
+\[
+T_{\text{aus}} = 298.15 \, \text{K}, \quad T_{\text{ein}} = 288.15 \, \text{K}
+\]  
+\[
+\bar{T}_{\text{KF}} = \frac{298.15 - 288.15}{\ln \left(\frac{298.15}{288.15}\right)} = 293.12 \, \text{K}
+\]

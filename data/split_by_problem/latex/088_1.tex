@@ -1,0 +1,157 @@
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+\subsection*{a)}
+Energiegleichung um den Reaktor:
+\[
+\dot{S}_{1,2} = 0
+\]
+\[
+\frac{dE}{dt} = \sum \dot{m} (h + \frac{pe}{\rho}) + \sum \dot{Q} - \sum \dot{W} = 0
+\]
+\[
+\dot{m} (h_{\text{ein}} - h_{\text{aus}}) + \dot{Q}_2 - \dot{Q}_{\text{aus}} = 0
+\]
+\[
+\dot{Q}_{\text{aus}} = \dot{Q}_2 + \dot{m} (h_{\text{ein}} - h_{\text{aus}}) = 62.182 \frac{\text{kJ}}{\text{kg}}
+\]
+\[
+\dot{Q}_2 = 100 \text{kW}
+\]
+\[
+\begin{cases}
+h_{\text{ein}} = h_1(200^\circ \text{C}) = 292.88 \frac{\text{kJ}}{\text{kg}} \\
+h_{\text{aus}} = h_1(100^\circ \text{C}) = 418.04 \frac{\text{kJ}}{\text{kg}}
+\end{cases}
+\]
+
+\subsection*{b)}
+\[
+\overline{T}_{\text{KF}} = \frac{\int_{s_{\text{ein}}}^{s_{\text{aus}}} T \, ds}{s_{\text{ein}} - s_{\text{aus}}}
+\]
+isobar $\rightarrow$
+\[
+\overline{T}_{\text{KF}} = \frac{h_{\text{aus}} - h_{\text{ein}}}{s_{\text{aus}} - s_{\text{ein}}}
+\]
+ideale Flüssigkeit:
+\[
+\overline{T}_{\text{KF}} = \frac{\int_{T_1}^{T_2} c_p \, dT + s(T_2 - T_1)}{c_p \, dT}
+\]
+\[
+= \frac{c_p (T_2 - T_1)}{c_p \ln \left( \frac{T_2}{T_1} \right)}
+\]
+\[
+= \frac{(T_2 - T_1)}{\ln \left( \frac{T_2}{T_1} \right)}
+\]
+\[
+\overline{T}_{\text{KF}} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)} = 293.12 \text{K}
+\]
+
+\subsection*{c)}
+Entropiebilanz um die Reaktorwand:
+\[
+\begin{array}{c}
+\dot{Q}_{\text{aus}} \\
+\overline{T}_{\text{KF}}
+\end{array}
+\begin{array}{c}
+\dot{Q}_{\text{aus}}
+\end{array}
+\begin{array}{c}
+\overline{T}_{\text{Reaktor}}
+\end{array}
+\]
+\[
+0 = \dot{m} (s_{\text{ein}} - s_{\text{aus}}) + \frac{\dot{Q}}{\overline{T}} + \dot{S}_{\text{ez}}
+\]
+\[
+\dot{Q}_{\text{aus}} - \frac{\dot{Q}_{\text{aus}}}{\overline{T}_{\text{KF}}} + \dot{S}_{\text{ez}} = 0
+\]
+\[
+\dot{S}_{\text{ez}} = \dot{Q}_{\text{aus}} \left( \frac{1}{\overline{T}_{\text{KF}}} - \frac{1}{\overline{T}_{\text{Reaktor}}} \right)
+\]
+\[
+\dot{S}_{\text{ez}} = 0.0455 \frac{\text{kJ}}{\text{mg K}}
+\]
+\[
+= 45.5 \frac{\text{J}}{\text{mg K}}
+\]
+\[
+\overline{T}_{\text{KF}} = 293.12 \text{K}
+\```latex
+
+
+\section*{Student Solution}
+
+\subsection*{d)}
+
+\begin{align*}
+    m_1 &= 57.55 \, \text{kg} \\
+    x_1 &= 0.005 \\
+    T_1 &= 100^\circ \text{C}
+\end{align*}
+
+\begin{align*}
+    h_2 &= h_1(100^\circ) + x_1 \left( h_{lg}(100^\circ) - h_l(100^\circ) \right) = 430.3253 \, \frac{\text{kJ}}{\text{kg}} \\
+    u_2 &= u_1(100^\circ) + x_1 \left( u_{lg}(100^\circ) - u_l(100^\circ) \right) = 423.3778 \, \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+\begin{align*}
+    \text{hinzu} \quad m_h \Delta m_2 \quad T_{\text{ein}} = 20^\circ \text{C} \quad x_{\text{ein}} = 0 \quad u_{\text{ein}} = u_l(20^\circ \text{C}) = 83.85 \, \frac{\text{kJ}}{\text{kg}} \quad \Delta t
+\end{align*}
+
+\text{Energieerhaltung:}
+
+\begin{align*}
+    \frac{dE}{dt} &= \text{Eintritt} - \text{Austritt} + \sum Q - \sum W = 0 \\
+    \Delta U &= Q \quad Q = 55 \, \text{MJ}
+\end{align*}
+
+\subsection*{2:}
+
+\begin{align*}
+    T_2 &= 70^\circ \text{C} \\
+    x_2 &= 0
+\end{align*}
+
+\begin{align*}
+    h_2: \quad u_2 &= u_l(70^\circ) = 292.35 \, \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+\begin{align*}
+    (m_1 + \Delta m_2) u_2 - m_1 u_1 - \Delta m_2 u_{\text{ein}} &= Q \\
+    \Delta m_2 u_2 - \Delta m_2 u_{\text{ein}} &= Q - m_1 u_1 + m_1 u_2 \\
+    \Delta m_2 &= \frac{Q - m_1 u_1 + m_1 u_2}{u_2 - u_{\text{ein}}} = 35.83 \, \text{kg}
+\end{align*}
+
+\subsection*{e)}
+
+\begin{align*}
+    m_2 s_2 - m_1 s_1 &= \Delta m_2 s_{\text{ein}} + \frac{Q}{T} = S_{12}
+\end{align*}
+
+\begin{align*}
+    \Delta S_{12} &= m_2 s_2 - m_1 s_1 - \Delta m_2 s_{\text{ein}}
+\end{align*}
+
+\begin{align*}
+    s_2 &= s_l(70^\circ) = 0.3548 \, \frac{\text{kJ}}{\text{kg K}} \\
+    s_1 &= s_l(100^\circ) + x_1 \left( s_{lg}(100^\circ) - s_l(100^\circ) \right) = 1.357416 \, \frac{\text{kJ}}{\text{kg K}} \\
+    s_{\text{ein}} &= s_l(20^\circ) = 0.2966 \, \frac{\text{kJ}}{\text{kg K}}
+\end{align*}
+
+\begin{align*}
+    \Delta S_{12} &= 162.8 \, \frac{\text{kJ}}{\text{K}}
+\end{align*}
+
+\begin{align*}
+    m_2 &= m_1 + \Delta m_2 = 93.4 \, \text{kg} \\
+    m_1 &= 57.55 \, \text{kg}
+\end{align*}
+
+``````latex
+
+

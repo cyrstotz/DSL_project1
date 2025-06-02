@@ -1,0 +1,45 @@
+The exergy balance equation is:  
+\[
+Q = \Sigma ex_{\text{str}} + \Sigma ex_q - Z W - \frac{av}{p_c q} - \text{thermal terms}
+\]  
+
+The entropy production rate is given by:  
+\[
+\dot{S}_{\text{gen}} = S_6 - S_0 + \frac{\dot{Q}}{T} + S_{\text{mix}}
+\]  
+
+For an ideal gas:  
+\[
+\dot{S}_{\text{gen}} = S^0(T_6) - S^0(T_0) - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+
+Since \( p_6 = p_0 \), the pressure term simplifies.  
+
+The exergy destruction rate is:  
+\[
+\dot{e}_{\text{x,virt}} = T_0 \dot{S}_{\text{gen}}
+\]
+
+The entropy at \( T_6 \) is equal to the entropy at \( T_5 \):  
+\[
+s(T_6) = s(T_5)
+\]
+
+Interpolation is performed for the following values:  
+\[
+s^\circ(1240 \, \text{k}) \quad \text{and} \quad s^\circ(250 \, \text{K}) \quad \text{interpolated to} \quad s^\circ(243.15 \, \text{K}) = -243.17 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+\[
+s^\circ(325 \, \text{K}) \quad \text{and} \quad s^\circ(330 \, \text{K}) \quad \text{interpolated to} \quad s^\circ(328.71 \, \text{K}) = 328.33 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+The entropy production rate is calculated as:  
+\[
+\dot{s}_{\text{gen}} = 85.22 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+The exergy is determined using the formula:  
+\[
+ex_{\text{flow}} = T_0 \cdot \dot{s}_{\text{gen}} = 20.723 \, \frac{\text{MJ}}{\text{kg}}
+\]

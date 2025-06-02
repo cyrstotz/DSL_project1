@@ -1,0 +1,42 @@
+TASK 2a  
+The diagram represents a temperature (\(T\)) versus entropy (\(S\)) plot for the jet engine process. It includes labeled states (1 through 6) and isobars (\(p_0\), \(p_5\), \(p_4\), \(p_3\), \(p_2\)). The process transitions between states as follows:  
+- State 1 to 2: Compression  
+- State 2 to 3: Isobaric heat addition  
+- State 3 to 4: Expansion  
+- State 4 to 5: Mixing  
+- State 5 to 6: Nozzle expansion  
+
+Dashed lines indicate constant pressure levels, and arrows show the direction of the process.  
+
+---
+
+TASK 2b  
+The equation for the outlet velocity \(w_6\) is derived as follows:  
+
+\[
+Q = \dot{m} \left[ h_e - h_a + \frac{w_e^2 - w_a^2}{2} \right] - W_{\text{t,rev}}
+\]
+
+The enthalpy difference is calculated:  
+\[
+h_e - h_a = c_p (T_5 - T_0) = 104.448 \, \text{kJ/kg}
+\]
+
+The temperature \(T_c\) is determined using the relation:  
+\[
+T_c = \left( \frac{p_0}{p_5} \right)^{\frac{k-1}{k}} \cdot T_5 = 325.0746969 \, \text{K}
+\]
+
+Where \(k = 1.4\).  
+
+The reversible work per unit mass is calculated:  
+\[
+\dot{W}_{\text{t,rev}} = W_{\text{t,rev}} = R \frac{T_5 - T_0}{1 - k} = 74.608 \, \text{kJ/kg}
+\]
+
+Here, \(R = c_p - c_v = 0.297975471 \, \text{kJ/kg·K}\), and \(c_v = \frac{c_p}{k} = 0.718579 \, \text{kJ/kg·K}\).  
+
+Finally, the outlet velocity \(w_6\) is calculated:  
+\[
+w_6 = \sqrt{ \left( h_e - h_a + \frac{w_e^2}{2} - \frac{w_a^2}{2} - W_{\text{rev}} \right) \cdot 2 } = 220.13359 \, \text{m/s}
+\]

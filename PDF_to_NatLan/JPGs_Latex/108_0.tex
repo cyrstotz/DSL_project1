@@ -1,0 +1,92 @@
+TASK 1a  
+To determine \( \dot{Q}_{\text{out}} \), the energy balance equation is used:  
+\[
+E\text{-Bil: } 0 = \dot{m}_{\text{in}} (h_e - h_a) + \dot{Q}_R - \dot{Q}_{\text{out}}
+\]  
+The enthalpy values are:  
+\[
+h_e = 2626 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-2)}, \quad h_a = 2636 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-2)}
+\]  
+Substituting these values:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} (h_e - h_a) + \dot{Q}_R = 85.24 \, \text{kW}
+\]  
+
+TASK 1b  
+To determine the thermodynamic mean temperature \( T_{\text{KF}} \):  
+\[
+T_{\text{KF}} = \frac{\int T \, \text{d}S}{S_a - S_e}
+\]  
+The entropy difference is calculated using:  
+\[
+S_a - S_e = c_p \ln\left(\frac{T_a}{T_e}\right)
+\]  
+The energy balance equation is:  
+\[
+E\text{-Bil: } 0 = \dot{m}_{\text{KF}} (h_e - h_a) + \dot{Q}_{\text{out}}
+\]  
+Heat transfer is expressed as:  
+\[
+q = \frac{\dot{Q}_{\text{out}}}{\dot{m}_{\text{KF}}} = c_p (T_a - T_e)
+\]  
+Thus, \( T_{\text{KF}} \) is:  
+\[
+T_{\text{KF}} = \frac{q}{c_p \ln\left(\frac{T_a}{T_e}\right)} = 293.12 \, \text{K}
+\]  
+
+TASK 1c  
+To determine the entropy production \( \dot{S}_{\text{gen}} \):  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = 0.29 \, \frac{\text{kW}}{\text{K}}
+\]  
+
+TASK 1d  
+To determine \( \Delta m_{12} \):  
+The energy balance equation is:  
+\[
+E\text{-Bil: } \Delta U_{12} = Q_{R,12}
+\]  
+The mass \( m_1 \) is given as:  
+\[
+m_1 = 5755 \, \text{kg}, \quad m_2 = m_1 + \Delta m_{12}
+\]  
+The internal energy \( u_1 \) is calculated as:  
+\[
+u_1 = 448.94 + x_D (2506.5 - 448.94) = 429.38 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-2)}
+\]  
+The internal energy \( u_2 \) at \( 70^\circ\text{C} \) is:  
+\[
+u_2 = u_g(70^\circ\text{C}) = 246.6 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-2)}
+\]  
+The energy balance becomes:  
+\[
+m_2 u_2 + \Delta m_{12} u_2 - m_1 u_1 = Q_{R,12}
+\]  
+Solving for \( \Delta m_{12} \):  
+
+TASK 1e  
+Given \( \Delta m_{12} = 3600 \, \text{kg}, \) determine \( \Delta S_{12} \):  
+The entropy balance equation is:  
+\[
+S\text{-Bil: } \Delta S_{12} = \frac{Q_{R,12}}{T_{\text{KF}}} + S_{\text{gen}}
+\]  
+The entropy change is:  
+\[
+\Delta S_{12} = S_2 - S_1
+\]  
+The entropy values are:  
+\[
+S_2 = s_g(70^\circ\text{C}) = 7.553 \, \frac{\text{kJ}}{\text{kg·K}} \quad \text{(from Table A-2)}, \quad S_1 = m_1 s_1 = 72.55 \, \frac{\text{MJ}}{\text{K}}
+\]  
+Substituting:  
+\[
+S_2 = m_2 s_2 = 7.70 \, \frac{\text{MJ}}{\text{K}} \quad \text{(from Table A-2)}
+\]  
+The entropy change is:  
+\[
+\Delta S_{12} = S_2 - S_1 = 64.45 \, \frac{\text{MJ}}{\text{K}}
+\]

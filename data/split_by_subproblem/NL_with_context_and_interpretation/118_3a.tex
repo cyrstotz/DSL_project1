@@ -1,0 +1,26 @@
+A table is presented with the following data:  
+- \( T_g \) (degrees Celsius):  
+  - \( Z_1 \): 500  
+  - \( Z_2 \): (blank)  
+- \( V_g \) (meters cubed):  
+  - \( Z_1 \): 3.14 times 10 to the power of negative 3  
+  - \( Z_2 \): (blank)  
+- \( T_{EW} \):  
+  - \( Z_1 \): 0  
+  - \( Z_2 \): (blank)  
+
+Given values:  
+\( m_{EW} = 0.1 \, \text{kg} \), \( x_{Ice,1} = \frac{m_{Ice}}{m_{EW}} = 0.6 \)  
+\( D = 10 \, \text{cm} \), \( g = 9.81 \, \text{meters per second squared} \)  
+
+Equation for gas pressure:  
+\( p_{gas} = p_{amb} + p_{piston} \)  
+
+Calculation:  
+\( p_{gas,1} = 1 \, \text{bar} + g \cdot \frac{32 \, \text{kg} \cdot 9.81 \, \text{meters per second squared}}{\pi \cdot (D/2)^2} \)  
+\( p_{gas,1} = 1 \, \text{bar} + 0.4 \, \text{bar} = 1.4 \, \text{bar} \)  
+
+Mass of gas calculation:  
+\( m_{gas} = \frac{p \cdot V}{R \cdot T} \)  
+\( R = \frac{R}{M_g} \cdot 10^3 \)  
+\( m_{gas} = \frac{1.4 \cdot 10^5 \cdot 3.14 \cdot 10^{-3}}{R \cdot 10^3 \cdot 773.15} = 3.42 \, \text{g} \)

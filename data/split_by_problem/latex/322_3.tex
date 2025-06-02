@@ -1,0 +1,107 @@
+
+``````latex
+
+
+\section*{Aufgabe 3}
+
+\subsection*{a)}
+\begin{align*}
+    P_{st} \quad \text{und} \quad \text{Masse des Gases im Zylinder} \\
+    \text{Druck:} \quad P_G &= P_0 + P_{\text{innen}} + P_{\text{ew}} \\
+    &= 1 \, \text{bar} + \frac{M \cdot g}{A} + \frac{M \cdot g}{A} \\
+    & \\
+    \Rightarrow A &= \pi r^2 = \pi \cdot 5 \, \text{cm}^2 \\
+    &= \pi \cdot (0.05 \, \text{m})^2 = 0.00785 \, \text{m}^2 \\
+    & \\
+    P_{\text{innen}} &= \frac{32 \, \text{kg} \cdot 9.81 \, \frac{\text{m}}{\text{s}^2}}{0.00785 \, \text{m}^2} = \frac{0.01 \, \text{kg} \cdot 9.81 \, \frac{\text{m}}{\text{s}^2}}{0.00785 \, \text{m}^2} \\
+    &= 10^5 \, \text{Pa} + 39.36 \cdot 10^2 \, \text{Pa} + 124.1 \, \text{Pa} \\
+    &= 1.4 \cdot 10^5 \, \text{Pa} \approx 1.4 \, \text{bar} \\
+    & \\
+    \text{Masse (ideales Gasgesetz)} \\
+    m_G &= \frac{P_G V_1}{R T_1} \\
+    D V &= n R T \quad (V = 3.4 \, \text{L} = 0.0034 \, \text{m}^3) \\
+    & \\
+    \Rightarrow R_3 = \frac{R}{M} &= \frac{8.314 \, \frac{\text{m}^3 \text{bar}}{\text{kmol} \cdot \text{K}}}{50 \, \frac{\text{kmol}}{\text{kmol}}} = 0.16628 \, \frac{\text{m}^3 \text{bar}}{\text{kg} \cdot \text{K}} \\
+    & \\
+    \Rightarrow m_G &= \frac{1.4 \cdot 10^5 \, \text{Pa} \cdot 0.0034 \, \text{m}^3}{0.16628 \, \frac{\text{m}^3 \text{bar}}{\text{kg} \cdot \text{K}} \cdot 273.15 \, \text{K}} \\
+    &= 0.10342 \, \text{kg} \\
+    & \\
+    & \\
+    3.42 \, \text{s} \\
+\end{align*}
+
+\subsection*{b)}
+\begin{align*}
+    \text{Zustand 2} \quad T_{B2} \leftarrow P_{B2} \\
+    & \\
+    \left( \text{1. HS} \quad \text{Energie} \quad \text{Bilanz} \quad \text{um} \quad \text{Gas} \quad \text{phase} \right) \\
+    \frac{dE}{dt} &= \dot{m} \left( h_1 + \frac{v_1^2}{2} + g z_1 \right) - \sum Q_i - \sum W_i \\
+    & \\
+    \text{Verflüssigungsenthalpie} \quad U_{\text{verfl}} &= U_{\text{flüssig}} - U_{\text{fest}} \\
+    &= m_{\text{gas}} (h_{\text{flüssig}} - h_{\text{fest}}) \\
+    &= 533.413 \, \frac{\text{kJ}}{\text{kg}} \\
+\end{align*}
+
+\subsection*```latex
+
+
+\begin{itemize}
+    \item $Q_{12} = -1,14 \, \text{kJ}$
+    \item $\left| Q_{12} \right| = 1,14 \, \text{kJ}$
+\end{itemize}
+
+\begin{itemize}
+    \item[d)] $X_{E12} = $
+    \begin{itemize}
+        \item Energieinhalt um $EW \, (1. NS)$:
+        \begin{equation*}
+            \frac{dE}{dt} = \sum_i \dot{m}_i (h_i + \frac{c_i^2}{2} + p_i) + \sum_j \dot{Q}_j - \sum_k \dot{W}_k
+        \end{equation*}
+        \item adiabatisch $\rightarrow \dot{Q} = 0$
+        \item stationär (isochore) $\rightarrow EW \rightarrow \dot{m}_{ew} = \dot{m}_{ei} \quad \frac{V_{ew}}{V_{ei}} = \frac{V_{ew}}{V_{ei}}$
+        \item $m_{ew} (u_2 - u_1) = Q_{12}$
+        \item $u_2 = \frac{Q_{12}}{m_{ew}} + u_1$
+        \item $u_1 = u_{F,1} + X_{AE1} (u_{P,AE1} - u_{F,1})$
+        \item Da Druck nach $EW$ isochor
+        \begin{equation*}
+            p_{ei} = p_0 + p_{ext} \quad 1,14 \, \text{bar}
+        \end{equation*}
+        \begin{equation*}
+            u_{F,1} (1,14 \, \text{bar}) + X_{AE1} (u_{P,AE1} (1,14 \, \text{bar}) - u_{F,1} (1,14 \, \text{bar}))
+        \end{equation*}
+        \begin{equation*}
+            = -2,33 \, \frac{\text{kJ}}{\text{kg}} + 0,6 \left( -0,645 \, \frac{\text{kJ}}{\text{kg}} - (-333,4 \, \frac{\text{kJ}}{\text{kg}}) \right)
+        \end{equation*}
+        \begin{equation*}
+            = -1,33 \, \frac{\text{kJ}}{\text{kg}}
+        \end{equation*}
+        \item $u_2 = \frac{Q_{12}}{m_{ew}} + u_1$
+        \begin{equation*}
+            = \frac{1500 \, \text{J}}{0,1 \, \text{kg}} + (-133,4102 \, \frac{\text{kJ}}{\text{kg}})
+        \end{equation*}
+        \begin{equation*}
+            = -118,4102 \, \frac{\text{kJ}}{\text{kg}}
+        \end{equation*}
+        \item $X_{E12} = \frac{u_2 - u_{F,1}}{u_{P,AE1} - u_{F,1}} = \frac{-118,4102 - (-333,4)}{-0,645 - (-333,4)}$
+        \begin{equation*}
+            = \frac{-118,4102 + 333,4}{0,645 - 333,4}
+        \end{equation*}
+        \begin{equation*}
+            = 0,65
+        \end{equation*}
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item[5)] Energieinhalt um Gas:
+    \begin{equation*}
+        \left( \Delta E = Q - W \right)
+    \end{equation*}
+    \begin{itemize}
+        \item $\Delta E = \Delta E_{Zyl} + E_{Kolben}$
+        \item $W = \text{Volumenarbeit}$
+        \begin{equation*}
+            W = \int p \, dV
+        \end{equation*}```latex
+
+

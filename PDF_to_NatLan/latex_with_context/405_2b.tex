@@ -1,0 +1,40 @@
+A \( T \)-\( s \) diagram is drawn to represent the thermodynamic process of the jet engine.  
+
+- The vertical axis is labeled \( T \, [\text{K}] \) (temperature in Kelvin).  
+- The horizontal axis is labeled \( s \, [\frac{\text{kJ}}{\text{kg·K}}] \) (specific entropy).  
+- The process starts at state 0 and follows a curved line to state 2.  
+- From state 2, the process moves upward to state \( p_2 \), then downward to state G.  
+- The process continues to state S, then to state 5, and finally to state 6, which is connected back to \( p_0 \).  
+- The diagram includes arrows to indicate the direction of the process.  
+
+This diagram qualitatively represents the thermodynamic cycle of the jet engine, including compression, heat addition, expansion, and exhaust.
+
+The temperature \( T_6 \) for an ideal gas is calculated using the equation:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}}
+\]  
+Substituting values, \( T_6 = 328.075 \, \text{K} \).
+
+The outlet velocity \( w_6 \) is determined using the energy balance:  
+\[
+h_e + \frac{w_e^2}{2} = h_a + \frac{w_a^2}{2}
+\]  
+\[
+h_5 + \frac{w_5^2}{2} = h_6 + \frac{w_6^2}{2}
+\]  
+Rearranging for \( w_6 \):  
+\[
+w_6 = \sqrt{2(h_5 - h_6) + w_5^2}
+\]  
+Substituting values, \( w_6 = 507.94 \, \text{m/s} \).
+
+The enthalpy difference \( h_5 - h_6 \) is calculated as:  
+\[
+h_5 - h_6 = \int_{T_5}^{T_6} c_p \, dT
+\]  
+Approximated as:  
+\[
+h_5 - h_6 = c_p (T_5 - T_6) = 104667.95 \, \frac{\text{J}}{\text{kg}}
+\]
+
+---

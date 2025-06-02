@@ -1,0 +1,35 @@
+- \( Q_{12} = -1.14 \, \text{kJ} \)  
+- \( Q_{12} = 6.14 \, \text{kJ} \)  
+
+\( x_{\text{Ice},2} \):  
+Energy balance for EW (1. NS):  
+\( \frac{dE}{dt} = \sum \dot{m}_i (h_i + \frac{w_i^2}{2} + p_i) + \sum \dot{Q}_j - \sum \dot{W}_m \)  
+
+- Adiabatic: \( Q = Q_{12} \)  
+- Isothermal EW: \( m_{\text{EW}} \to m_{\text{EW}} \), \( V_{\text{EW}} = V_{\text{EW}} \)  
+
+\( m_{\text{EW}} (u_2 - u_1) = Q_{12} \)  
+\( u_2 = \frac{Q_{12}}{m_{\text{EW}}} + u_1 \)  
+
+\( u_1 = u_{\text{Frost}} + x_{\text{EW}} (u_{\text{Fusion}} - u_{\text{Frost}}) \)  
+
+For the pressure balance in EW:  
+\( p_{\text{EW}} = p_0 + p_{\text{Piston}} \)  
+\( p_{\text{Piston}} = \frac{m_K}{A} \cdot g \)  
+
+\( u_{\text{Frost}} (1.14 \, \text{kJ/kg}) + x_{\text{EW}} (u_{\text{Fusion}} (1.14 \, \text{kJ/kg}) - u_{\text{Frost}} (1.14 \, \text{kJ/kg})) \)  
+
+\( = -273.15 \, \text{K} \cdot \ln \left( \frac{0.645}{333.458} \right) \)  
+\( = -133.4102 \, \text{kJ/kg} \)  
+
+\( u_2 = \frac{Q_{12}}{m_{\text{EW}}} + u_1 \)  
+\( = \frac{1500 \, \text{J}}{0.1 \, \text{kg}} + (-133.4102 \, \text{kJ/kg}) \)  
+\( = -118.410 \, \text{kJ/kg} \)  
+
+\( x_{\text{Ice},2} = \frac{u_2 - u_{\text{Frost}}}{u_{\text{Fusion}} - u_{\text{Frost}}} \)  
+\( = \frac{-118.410 - (-333.458)}{-0.645 - (-333.458)} \)  
+\( = 0.65 \)  
+
+(Note: Partial melting of EW is likely.)  
+
+---

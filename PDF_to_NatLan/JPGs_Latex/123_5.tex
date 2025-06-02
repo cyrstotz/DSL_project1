@@ -1,0 +1,62 @@
+TASK 4a  
+The diagram shows the freeze-drying process in a \( p \)-\( T \) diagram. The phase regions are labeled as "Flüssig-Dampfgebiet" (liquid-vapor region). The process steps are marked as follows:  
+- State 1 to State 2: Isobaric evaporation.  
+- State 2 to State 3: Adiabatic compression.  
+- State 3 to State 4: Isobaric condensation.  
+- State 4 to State 1: Adiabatic expansion.  
+
+The axes are labeled as \( T \) (temperature in Kelvin) on the horizontal axis and \( p \) (pressure) on the vertical axis.  
+
+TASK 4b  
+The energy balance for the refrigerant \( \text{R134a} \) is written as:  
+\[
+0 = \dot{m} \left( h_1 - h_2 \right) + \dot{Q}_K
+\]
+\[
+\dot{Q}_K = \dot{m} \left( h_2 - h_1 \right)
+\]
+\[
+0 = \dot{m} \left( h_2 - h_3 \right) - W_K
+\]
+The mass flow rate \( \dot{m} \) is calculated using:  
+\[
+\dot{m} = \frac{W_K}{h_2 - h_3}
+\]
+Substituting values:  
+\[
+\dot{m} = \frac{-28 \, \text{kW}}{234.08 - 59.32 \, \text{kJ/kg}} = 0.083 \, \text{kg/s}
+\]
+
+A table summarizes the states:  
+\[
+\begin{array}{|c|c|c|c|c|}
+\hline
+\text{State} & P & x & T & h \\
+\hline
+1 & P_1 & 1 & T_i - 6 = -222 & 93.42 \\
+2 & P_2 & 1 & T_i - 6 & 234.08 \\
+3 & 8 \cdot 10^5 & - & T_i - 6 & 93.42 \\
+4 & 8 \cdot 10^5 & 0 & T_i - 6 & 93.42 \\
+\hline
+\end{array}
+\]
+
+Additional notes:  
+- \( P_3 = P_4 \), \( h_3 = h_4 \).  
+- \( T_3 = T_4 \).  
+- The process is reversible and adiabatic.  
+
+TASK 4c  
+Using interpolation from tables:  
+\[
+h_3 = h_{40} + \frac{h_{50} - h_{40}}{S_{50} - S_{40}} \cdot S_3
+\]
+Substituting values:  
+\[
+h_3 = 293.66 + \frac{284.33 - 293.66}{0.3351 - 0.3314} \cdot 0.3314
+\]
+\[
+h_3 = 293.66 + 284.33 - 293.66 = 521.39 \, \text{kJ/kg}
+\]  
+
+Entropy values are referenced from tables \( \text{A-10} \) and \( \text{A-12} \).

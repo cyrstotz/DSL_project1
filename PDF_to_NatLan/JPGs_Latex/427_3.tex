@@ -1,0 +1,41 @@
+TASK 3d  
+The ice mass fraction in state 1 is calculated as:  
+\[
+x_{\text{ice},1} = \frac{m_{\text{ice},1}}{m_{\text{EW}}} = \frac{0.06 \, \text{kg}}{0.1 \, \text{kg}} = 0.6
+\]  
+This implies:  
+\[
+m_{\text{ice},1} = 0.06 \, \text{kg}, \quad m_{\text{FL}} = m_{\text{EW}} - m_{\text{ice},1} = 0.04 \, \text{kg}
+\]  
+
+The internal energy of the ice-water mixture in state 1 is given by:  
+\[
+U_{\text{EW},1} = m_{\text{ice},1} \cdot u_{\text{ice}} + m_{\text{FL}} \cdot u_{\text{FL}} = 0.06 \, \text{kg} \cdot (-333.458 \, \text{kJ/kg}) + 0.04 \, \text{kg} \cdot (-0.045 \, \text{kJ/kg})
+\]  
+This results in:  
+\[
+U_{\text{EW},1} \approx -20 \, \text{kJ}
+\]  
+
+The internal energy of the ice-water mixture in state 2 is calculated as:  
+\[
+U_{\text{EW},2} = U_{\text{EW},1} + Q_{12} = -20 \, \text{kJ} + 1440.7 \, \text{J} = -18.56 \, \text{kJ}
+\]  
+
+Using the energy balance:  
+\[
+U_{\text{EW},2} = m_{\text{ice},2} \cdot u_{\text{ice}} + m_{\text{FL},2} \cdot u_{\text{FL}}
+\]  
+Substituting:  
+\[
+m_{\text{ice},2} \cdot (-333.458 \, \text{kJ/kg}) + (0.1 \, \text{kg} - m_{\text{ice},2}) \cdot (-0.045 \, \text{kJ/kg}) = -18.56 \, \text{kJ}
+\]  
+Rearranging:  
+\[
+m_{\text{ice},2} = \frac{0.1 \, \text{kg} \cdot 0.045 \, \text{kJ/kg} - 18.56 \, \text{kJ}}{-333.458 \, \text{kJ/kg} + 0.045 \, \text{kJ/kg}} \approx 0.0557 \, \text{kg}
+\]  
+
+The ice mass fraction in state 2 is then:  
+\[
+x_{\text{ice},2} = \frac{m_{\text{ice},2}}{m_{\text{EW}}} = \frac{0.0557 \, \text{kg}}{0.1 \, \text{kg}} = 0.557
+\]  

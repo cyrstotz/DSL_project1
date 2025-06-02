@@ -1,0 +1,160 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+Zustand & $T \left( ^{\circ}C \right)$ & $P \left[ \text{bar} \right]$ & $w \left[ \frac{\mu}{s} \right]$ & in & S & h & Notes \\
+\hline
+0 & 243.25 & 0.191 & 200 & & & & $S_1 = S_4$ \\
+\hline
+1 & & & & & & & $S_2 = S_3$ \\
+\hline
+2 & & & & & & & $P_2 = P_3$ \\
+\hline
+3 & & & & & & & $P_3 = P_2$ \\
+\hline
+4 & & 0.5 & & & & & \\
+\hline
+5 & 431.9 k (1.1st) & 0.5 & 920 & & & & $S_5 = S_6$ \\
+\hline
+6 & 37.87 & 0.191 & & & & & $S_5 = S_6$ \\
+\hline
+\end{tabular}
+
+\bigskip
+
+\noindent
+\textbf{Additional Calculation:}
+
+\[
+R = \frac{\frac{e}{k}}{\frac{28.97}{\mu}} = 0.297 \frac{J}{kg \cdot K}
+\]
+
+``````latex
+
+
+\section*{Problem a)}
+
+\begin{itemize}
+    \item The graph is a plot with the x-axis labeled as $s \left[ \frac{kJ}{kg \cdot K} \right]$ and the y-axis labeled as $T \left[ K \right]$.
+    \item There are several curves and points labeled on the graph:
+        \begin{itemize}
+            \item A curve labeled "Isobare von Zustand 1" starting from the bottom left and curving upwards to the right.
+            \item A point labeled "0" at the beginning of the "Isobare von Zustand 1" curve.
+            \item A point labeled "1" on the "Isobare von Zustand 1" curve.
+            \item A point labeled "2" above point "1" with a vertical arrow pointing upwards from "1" to "2".
+            \item A horizontal line from point "2" to point "3".
+            \item A point labeled "3" at the end of the horizontal line.
+            \item A curve labeled "Isobare von Zustand 4" starting from point "3" and curving upwards to the right.
+            \item A point labeled "4" on the "Isobare von Zustand 4" curve.
+            \item A point labeled "5" below point "4" with a vertical arrow pointing downwards from "4" to "5".
+            \item A curve labeled "Isobare von Zustand 2" starting from point "5" and curving downwards to the left.
+            \item A point labeled "6" on the "Isobare von Zustand 2" curve.
+        \end{itemize}
+    \item The graph also includes several isobars labeled as "Isobare Zustand 1", "Isobare Zustand 2", and "Isobare von Zustand 4".
+\end{itemize}
+
+``````latex
+
+
+b) $w_6$, $T_6$ = ?
+
+\textit{Energieblianz an der Schubdüse:}
+
+\[
+0 = \dot{m} (h_5 - h_6 + \frac{(w_5^2 - w_6^2)}{2}) \Rightarrow w_6
+\]
+
+\[
+h_5 = ?, \quad p_5 = 0.8 \, \text{bar}
+\]
+
+\[
+T_5 = 458.75 \, \text{K} \quad \text{(von isentropen Zustand)}
+\]
+
+\[
+T_6 = ? \quad \text{isentrop:} \quad \text{Polytropen Zustandlinie:}
+\]
+
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{k-1}{k}} = 328.0 \, \text{K}
+\]
+
+\[
+h_5 - h_6 = c_p (T_5 - T_6) = 104.453 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\frac{w_5^2}{2} - 104.453 \, \frac{\text{kJ}}{\text{kg}} = \frac{w_6^2}{2}
+\]
+
+\[
+2 \left( \frac{w_5^2}{2} + 104.453 \, \frac{\text{kJ}}{\text{kg}} \times 10^3 \, \frac{\text{J}}{\text{kg}} \right) = w_6^2
+\]
+
+\[
+w_6 = \sqrt{w_5^2 + 2 \times 104.453 \times 10^3 \, \frac{\text{J}}{\text{kg}}}
+\]
+
+\[
+w_6 = \sqrt{507.253 \, \frac{\text{m}^2}{\text{s}^2}}
+\]
+
+``````latex
+
+
+c) Zunahme der Strömungsenergie:
+
+\[
+e_{x,stro} - e_{r,stro} = v_r (s_{r} - s_{6}) + \Delta e_{ke} \quad \Rightarrow \quad e_{x,stro} - e_{r,stro} = \left[ h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2} - \frac{w_0^2}{2} \right]
+\]
+
+\[
+s_6 - s_0 = \int_{T_0}^{T} \frac{c_p}{T} dT = R \ln \left( \frac{p_6}{p_0} \right) \quad \Rightarrow \quad s_6 - s_0 = \int_{T_0}^{T_0} \frac{c_p}{T} dT = c_p \ln \left( \frac{T_0}{T_0} \right) = 0.30 \, \frac{kJ}{kg}
+\]
+
+\[
+s_0 - s_6 = c_p \ln \left( \frac{T_0}{T_6} \right) = -0.30 \, \frac{kJ}{kg}
+\]
+
+\[
+\frac{w_6^2}{2} - \frac{w_0^2}{2} = \frac{w_6^2}{2} - \frac{w_0^2}{2} = 10.8 \cdot 10^3 \, \frac{kJ}{kg}
+\]
+
+\[
+h_0 - h_6 = c_p (T_0 - T_6) = -95.43 \, \frac{kJ}{kg} \quad \Rightarrow \quad h_6 - h_0 = 95.43 \, \frac{kJ}{kg}
+\]
+
+\[
+\text{total:} \quad e_{x,stro} - e_{r,stro} = 95.43 \, \frac{kJ}{kg} - 243.15 \left( 0.30 \right) - 10.8 \cdot 653 = -96.41 \, \frac{kJ}{kg}
+\]
+
+``````latex
+
+
+d) Exergieverlust von ganzem Werk: \\
+\underline{Exergiebilanz am ganzen Kraftwerk:}
+
+\[
+0 = \dot{m} \left[ h_0 - h_6 - T_0 (s_0 - s_6) + \Delta \epsilon_k \right] + \left( 1 - \frac{T_0}{T_B} \right) \dot{Q}_B + \dot{W}_T - E_{\text{verlust}}
+\]
+
+\[
+\text{Ex}_{\text{verlust}} = \text{Nutzbarkeit C} \rightarrow \text{nur mit umgekehrtem Vorzeichen nun!}
+\]
+
+\[
+\dot{m} \left[ \frac{-203.5 \, \text{kJ}}{12.89 \, \text{kg}} \right] + 0 = 369.58 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+E_{\text{verlust}} = 496.41 \, \frac{\text{kJ}}{\text{kg}} + 569.57 \, \frac{\text{kJ}}{\text{kg}} = 1065.99 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+``````latex
+
+

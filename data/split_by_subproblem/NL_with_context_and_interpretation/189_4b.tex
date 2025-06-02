@@ -1,0 +1,20 @@
+Energy balance for the compressor:  
+- Stationary flow process.  
+- Equation: \( 0 = \dot{m}_{R134a} \cdot (h_2 - h_3) + \dot{W}_c \).  
+- Rearranged: \( \dot{m}_{R134a} = \frac{\dot{W}_c}{h_3 - h_2} \).  
+
+Determination of \( h_2 \):  
+- Isobaric process: \( s_2 = s_1 \).  
+- \( T_i = 20^\circ C \).  
+- \( T_{\text{evaporator}} = -26^\circ C \).  
+- \( h_2 = h_g(-26^\circ C) = 231.62 \, \text{kJ/kg} \) (from Table A-10 at \( -26^\circ C \)).  
+
+Determination of \( h_3 \):  
+- Isentropic process: \( s_3 = s_2 \).  
+- \( s_2 = s_g(-26^\circ C) = 0.9390 \, \text{kJ/kg·K} \) (from Table A-10 at \( -26^\circ C \)).  
+- Interpolation for \( h_3 \) from Table A-12 at \( s_3 \):  
+  - \( s_3 = 0.9390 \).  
+  - \( h_3 = 273.66 + (284.39 - 273.66) \cdot \frac{(0.9390 - 0.9374)}{(0.9571 - 0.9374)} = 274.17 \, \text{kJ/kg} \).  
+
+Calculation of \( \dot{m}_{R134a} \):  
+- \( \dot{m}_{R134a} = \frac{\dot{W}_c}{h_3 - h_2} = \frac{0.0006478 \, \text{kW}}{274.17 - 231.62} = 0.0152918 \, \text{kg/s} \).

@@ -1,0 +1,47 @@
+The diameter of the cylinder is given as \( D = 10 \, \text{cm} = 0.1 \, \text{m} \).  
+The radius is calculated as \( R = 0.05 \, \text{m} \).  
+The cross-sectional area is determined using the formula for the area of a circle:  
+\[
+A = 0.007854 \, \text{m}^2 = R^2 \cdot \pi
+\]
+
+**Calculation of pressure \( p_{g,1} \):**  
+The pressure \( p_{g,1} \) is derived using the equilibrium condition:  
+\[
+p_{g,1} = \frac{p_{\text{amb}} \cdot A + m_K \cdot g + m_{\text{EW}} \cdot g}{A}
+\]  
+Substituting values:  
+\[
+p_{g,1} = p_{\text{amb}} + A \cdot g \cdot (m_K + m_{\text{EW}})
+\]  
+\[
+p_{g,1} = 100 \, \text{kPa} + 0.007854 \, \text{m}^2 \cdot g \cdot (32 \, \text{kg} + 0.1 \, \text{kg})
+\]  
+\[
+p_{g,1} = p_{\text{amb}} + \frac{g}{A} \cdot (m_K + m_{\text{EW}})
+\]  
+The resulting pressure is:  
+\[
+p_{g,1} = 1.4 \, \text{bar}
+\]
+
+**Calculation of gas mass \( m_g \):**  
+Using the ideal gas law:  
+\[
+p_{g,1} \cdot V_{g,1} = m_g \cdot \frac{R}{M_g} \cdot T_{g,1}
+\]  
+Rearranging for \( m_g \):  
+\[
+m_g = \frac{p_{g,1} \cdot V_{g,1} \cdot M_g}{R \cdot T_{g,1}}
+\]  
+Substituting values:  
+\[
+V_{g,1} = 0.00314 \, \text{m}^3, \quad T_{g,1} = 773.15 \, \text{K}
+\]  
+\[
+m_g = \frac{1.4 \cdot 10^5 \, \text{Pa} \cdot 0.00314 \, \text{m}^3 \cdot 50 \, \text{kg/kmol}}{8.314 \, \text{J/mol·K} \cdot 773.15 \, \text{K}}
+\]  
+The calculated mass of the gas is:  
+\[
+m_g = 3.422 \, \text{g}
+\]

@@ -1,0 +1,54 @@
+TASK 2a  
+A graph is drawn with temperature \( T \) (in Kelvin) on the vertical axis and entropy \( S \) (in \( \frac{\text{MJ}}{\text{kg·K}} \)) on the horizontal axis. The graph represents a qualitative \( T \)-\( S \) diagram for the jet engine process.  
+- Three isobars are labeled \( p_0 \), \( p_1 \), and \( p_2 \), with \( p_2 > p_1 > p_0 \).  
+- The process includes labeled points:  
+  - Point \( O \) at the lowest entropy and temperature.  
+  - Point \( B \) at higher entropy and temperature, connected to \( O \) via a curved line labeled "isentropic compression."  
+  - Point \( C \) at even higher entropy and temperature, connected to \( B \) via a line labeled "isobaric combustion."  
+  - A curved line connects \( C \) back to \( O \), labeled "irreversible expansion."  
+
+Additional notes:  
+- Air is modeled as an ideal gas, with the assumption \( \text{kein Nachkompf} \) (no condensation).  
+- The process is stationary, and work \( W \) is generated.  
+
+---
+
+TASK 2b  
+The first law of thermodynamics is applied for a stationary system:  
+\[
+Q = 0, \quad W = 0
+\]  
+The energy balance equation is written as:  
+\[
+0 = \dot{m} \left( h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right)
+\]  
+This is expanded to:  
+\[
+w_6 = \sqrt{w_5^2 + 2 c_p (T_5 - T_6)}
+\]  
+
+Further calculations include:  
+- \( p_5 V = m R T \)  
+- \( p_5 = 0.5 \, \text{bar} \), \( T_5 = 431.9 \, \text{K} \)  
+- \( R = \frac{Q}{M} \), where \( Q = 8.314 \, \text{kJ/kmol·K} \), \( M = 28.97 \, \text{kg/kmol} \), resulting in \( R = 0.287 \, \text{kJ/kg·K} \).  
+
+The entropy change is calculated using the isentropic relation:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Where \( \kappa = 1.4 \). Substituting values:  
+\[
+T_6 = 431.9 \left( \frac{0.191}{0.5} \right)^{\frac{0.4}{1.4}} = 328.07 \, \text{K}
+\]  
+
+Finally, the outlet velocity \( w_6 \) is calculated:  
+\[
+w_6 = \sqrt{(270 \, \text{m/s})^2 + 2 \cdot 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \cdot (431.9 - 328.07)}
+\]  
+\[
+w_6 = 507.25 \, \text{m/s}
+\]  
+
+---
+
+No additional content or figures are visible beyond the above.

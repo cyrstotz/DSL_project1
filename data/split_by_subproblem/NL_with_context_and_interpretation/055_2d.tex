@@ -1,0 +1,34 @@
+No content found.
+
+The equation for exergy is written as:  
+d exergy over dt is greater than the sum of exergy in minus the sum of exergy out minus the sum of work terms minus \( p_0 \) times the derivative of volume over time minus exergy loss.  
+
+The exergy equation is expanded as:  
+\( \dot{m} \) times \( h_e - h_a - T_0 \) times \( (s_e - s_a) \) plus kinetic energy plus potential energy plus the sum of \( (1 - T_0 / T_j) \) times \( \dot{Q}_j \) minus the sum of \( \dot{W}_{in} \) minus exergy loss.  
+
+Find \( \sum (1 - T_0 / T_j) \dot{Q}_j \):  
+\( \sum (1 - T_0 / T_j) \dot{Q}_j = \sum (1 - T_0 / T_j) \dot{q}_j \)  
+\( = (1 - 243.15 / 1289) \times 1195 \, \text{kJ/kg} \)  
+\( = 868.581 \, \text{kJ/kg} \).  
+
+Let \( \eta \) range from 0 to 1, \( \eta_{vs} < 1 \):  
+\( \eta_{vs} = \frac{\text{actual work}}{\text{ideal work}} = \frac{h_0 - h_{ns}}{h_0 - h_1} \).  
+
+Energy balance:  
+\( 0 = \dot{m} (h_0 - h_1) + \dot{Q} - \dot{W} \).  
+
+\( \dot{W} / \dot{m} = W_{tot} = h_0 - h_4 = C_p \times (T_0 - T_1) = 1.006 \times (243.15 - T_1) \).  
+
+Find \( T_1 \):  
+In states 1 to 4:  
+\( 0 = \dot{m} (h_4 - h_1) \implies h_4 = h_1 \).  
+
+Find \( T_4 \):  
+\( p_4 = p_3 \), \( S_3 = S_4 \), \( T_4 = T_3 \) due to \( p_3 \propto T \).  
+\( T_3 = 1289 \, \text{K} \).  
+
+\( W_{tot} = 1.006 \times (243.15 - 1289) = -1272.429 \, \text{kW/kg} \).  
+
+Exergy equation:  
+\( \text{Exergy} = h_0 - h_6 - T_0 (s_0 - s_6) + 868.581 + 1272.429 \).  
+\( = C_p (T_0 - T_6) - T_0 \left( C_p \left( T_0 / T_6 \right) \right) + 2202.02 \).

@@ -1,0 +1,48 @@
+The initial conditions for the gas and the ice-water mixture (EW) are provided:  
+- \( T_{\text{EW},1} = 0^\circ\text{C} \), \( T_{\text{g},1} = 500^\circ\text{C} \)  
+- \( V_{\text{EW}} = 3.14 \, \text{L} \), \( V_{\text{gas}} = 3.14 \cdot 10^{-3} \, \text{m}^3 \)  
+- \( m_{\text{EW}} = 0.1 \, \text{kg} \), \( x_{\text{EW}} = 0.6 \)  
+- \( c_V = 0.633 \, \text{kJ/kg·K} \), \( M_g = 50 \, \text{kg/kmol} \)  
+
+The volume of the gas is converted:  
+\[
+V_{\text{gas}} = 3.14 \cdot 10^{-3} \, \text{m}^3
+\]
+
+The properties of the perfect gas are calculated:  
+\[
+c_p = c_V + \frac{R}{M} = 0.633 \, \text{kJ/kg·K} + \frac{8.314 \, \text{kJ/kmol·K}}{50 \, \text{kg/kmol}} = 0.79928 \, \text{kJ/kg·K}
+\]  
+\[
+R = \frac{R_{\text{univ}}}{M} = \frac{8.314 \, \text{kJ/kmol·K}}{50 \, \text{kg/kmol}} = 0.16628 \, \text{kJ/kg·K}
+\]
+
+The pressure \( p_{g,1} \) is determined using the ideal gas law:  
+\[
+p_{g,1} = \frac{m_g R T_1}{V_1}
+\]  
+Substituting values:  
+\[
+p_{g,1} = \frac{m_g \cdot 0.16628 \, \text{kJ/kg·K} \cdot (500 + 273.15) \, \text{K}}{3.14 \cdot 10^{-3} \, \text{m}^3}
+\]
+
+The total pressure \( p_g \) is calculated as the sum of atmospheric pressure, piston pressure, and EW pressure:  
+\[
+p_g = p_{\text{amb}} + p_{\text{piston}} + p_{\text{EW}}
+\]  
+\[
+p_g = 1 \, \text{bar} + 10^5 \, \text{Pa} + \frac{m_{\text{EW}} g}{A} = 1 \, \text{bar} + 10^5 \, \text{Pa} + \frac{0.1 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{0.1 \, \text{m}^2}
+\]  
+\[
+p_g = 10.3147 \, \text{Pa} = 1.034147 \, \text{bar}
+\]
+
+The mass \( m_g \) is calculated:  
+\[
+m_g = \frac{p_1 V_1}{R T_1} = \frac{103.147 \, \text{kPa} \cdot 3.14 \cdot 10^{-3} \, \text{m}^3}{0.16628 \, \text{kJ/kg·K} \cdot (500 + 273.15) \, \text{K}}
+\]  
+\[
+m_g = 0.002578 \, \text{kg} = 7.578 \, \text{g}
+\]
+
+---

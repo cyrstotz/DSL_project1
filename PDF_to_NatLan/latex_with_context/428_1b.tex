@@ -1,0 +1,19 @@
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is calculated assuming ideal liquid behavior with constant heat capacity \( c_p(T) = c_p \).  
+
+The formula for \( T_{\text{KF}} \) is:  
+\[
+T_{\text{KF}} = \frac{\int_{T_{\text{KF,in}}}^{T_{\text{KF,out}}} T \, c_p(T) \, dT}{\int_{T_{\text{KF,in}}}^{T_{\text{KF,out}}} c_p(T) \, dT}.
+\]  
+
+Assuming \( c_p(T) \) is constant:  
+\[
+T_{\text{KF}} = \frac{T_{\text{KF,in}} + T_{\text{KF,out}}}{2}.
+\]  
+
+Substituting values:  
+\[
+T_{\text{KF}} = \frac{288.15 \, \text{K} + 298.15 \, \text{K}}{2}.
+\]  
+\[
+T_{\text{KF}} = 293.15 \, \text{K}.
+\]

@@ -1,0 +1,72 @@
+TASK 2d  
+The exergy balance equation is written as:  
+\[
+\frac{d ex}{dt} = \sum \dot{ex}_{\text{stor}} + \sum \dot{ex}_{\text{eq}} - \sum \left[ \dot{W} - p_0 \frac{dV}{dt} \right] - \dot{ex}_{\text{rev}}
+\]  
+
+The energy equation is expressed as:  
+\[
+0 = \dot{m} \left[ h_e - h_a - T_0 (s_e - s_a) + \text{ke} + \text{pe} \right] + \sum \left( 1 - \frac{T_0}{T} \right) \dot{Q}_j - \sum \dot{W}_{\text{in}} - \dot{ex}_{\text{rev}}
+\]  
+
+Exergy is defined as:  
+\[
+\text{exergy} = h_0 - h_6 - T_0 (s_0 - s_6) + \text{ke} + \text{pe} - \sum \left( 1 - \frac{T_0}{T} \right) \frac{\dot{Q}_j}{\dot{m}}
+\]  
+
+The goal is to find:  
+\[
+\sum \left( 1 - \frac{T_0}{T} \right) \frac{\dot{Q}_j}{\dot{m}}
+\]  
+
+This is calculated as:  
+\[
+\sum \left( 1 - \frac{T_0}{T} \right) q_j = \left( 1 - \frac{243.15 \, \text{K}}{1289 \, \text{K}} \right) \cdot 1195 \, \text{kJ/kg} = 868.581 \, \text{kJ/kg}
+\]  
+
+For isentropic efficiency (\( \eta_{\text{vs}} \)):  
+\[
+\eta_{\text{vs}} = \frac{\dot{W}_{\text{rev}}}{\dot{W}} = \frac{h_0 - h_{\text{is}}}{h_0 - h_1}
+\]  
+where \( 0 < \eta_{\text{vs}} < 1 \).  
+
+The energy balance is written as:  
+\[
+0 = \dot{m} (h_0 - h_1) + \dot{Q} - \dot{W}
+\]  
+
+The work per unit mass flow rate is expressed as:  
+\[
+\frac{\dot{W}}{\dot{m}} = W_{\text{tot}} = h_0 - h_4 = c_p \cdot (T_0 - T_1) = 1.006 \cdot (243.15 \, \text{K} - T_1)
+\]  
+
+To find \( T_1 \):  
+From state 1 to state 4:  
+\[
+0 = \dot{m} (h_4 - h_1) \implies h_4 = h_1
+\]  
+
+For state 3 to state 4:  
+\[
+p_4 = p_3, \quad s_3 = s_4 \implies T_4 = T_3
+\]  
+
+Thus, \( T_3 \) is determined by pressure and temperature:  
+\[
+T_3 = T_4 = 1289 \, \text{K}
+\]  
+
+The total work is calculated as:  
+\[
+W_{\text{tot}} = 1.006 \cdot (243.15 - 1289) = -1272.429 \, \text{kW/kg}
+\]  
+
+Exergy is then expressed as:  
+\[
+\text{exergy} = h_0 - h_6 - T_0 (s_0 - s_6) + 868.581 + 1272.429
+\]  
+\[
+= c_p (T_0 - T_6) - T_0 \left( c_p \left( \frac{T_0}{T_6} \right) \right) + 2202.02
+\]  
+
+No diagrams or figures are present on this page.

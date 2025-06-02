@@ -1,0 +1,156 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{itemize}
+    \item A graph is drawn with the x-axis labeled $S$ and the y-axis labeled $T$ (in $K$).
+    \item There are several points and lines on the graph:
+    \begin{itemize}
+        \item Point $1$ is located on the left side of the graph.
+        \item Point $2$ is above point $1$.
+        \item Point $3$ is to the right of point $2$.
+        \item Point $4$ is to the right of point $3$.
+        \item Point $5$ is below point $4$ and to the right of point $1$.
+        \item Point $6$ is to the right of point $5$.
+    \end{itemize}
+    \item Arrows indicate transitions between points: $1 \rightarrow 2$, $2 \rightarrow 3$, $3 \rightarrow 4$, $4 \rightarrow 5$, and $5 \rightarrow 6$.
+    \item There is a label $T_S$ near point $5$.
+    \item There is a label $S$ near the bottom right corner of the graph.
+\end{itemize}
+
+\subsection*{b)}
+
+\[
+\left| \frac{T_5}{T_6} \right| = \left| \frac{p_5}{p_6} \right|^{\frac{\kappa - 1}{\kappa}}
+\]
+
+\[
+\frac{431.9}{T_6} = \left| \frac{0.5}{0.1911} \right|^{\frac{0.4}{1.4}}
+\]
+
+\[
+T_6 = 328.07 \, K
+\]
+
+\[
+0 = \dot{m} (h_5 - h_6) + \frac{w_5^2 - w_6^2}{2} + \dot{Q} - \dot{W}
+\]
+
+\[
+\dot{m} = \dot{m}_{\text{se}}
+\]
+
+\[
+\dot{m} (h_5 - h_6) = c_p (T_5 - T_6) + 0.006 \cdot 431.9
+\]
+
+\[
+h_5 - h_6 = c_p \cdot \Delta T = c_p (T_5 - T_6) = 1041.45 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\subsection*{c)}
+
+\[
+\omega_{5u}^2 - \frac{V_{5u}^2}{2} = - \int_{p_3}^{p_6} v \, dp + \Delta \text{ke} = - \left[ \frac{R}{1 - \kappa} \left( \frac{T_6}{T_5} - 1 \right) \right] + \left( \frac{w_5^2 - w_6^2}{2} \right)
+\]
+
+\[
+R = c_p - c_v
+\]
+
+\[
+\kappa = \frac{c_p}{c_v}
+\]
+
+\[
+c_v = \frac{c_p}{\kappa}
+\]
+
+\[
+0 = h_5 - h_6 - \frac{w_5^2 - w_6^2}{2} - \omega_{5u}^2
+\]
+
+\[
+1041.45 - \frac{w_5^2}{2} - \frac{w_6^2}{2} + \frac{R}{1 - \kappa} (T_6 - T_5) = 0
+\]
+
+\[
+1041.45 - \frac{w_6^2}{2} + \frac{R}{1 - 0.4} (328.07 - 431.9) = 0
+\]
+
+\[
+1041.45 - \frac{w_6^2}{2} + \frac{R}{0.6} (-103.83) = 0
+\]
+
+\[
+1041.45 - \frac{w_6^2}{2} + \frac{R}{0.6} (-103.83) = 0
+\]
+
+\[
+1041.45 - \frac{w_6^```latex
+
+
+\section*{2 Aufgabe 2}
+
+\subsection*{c)}
+
+\begin{align*}
+\text{ex}_{\text{erg,0}} &= h_0 - h_0(T_0) - T_0(s_0 - s_0) + \frac{w_0^2}{2} \\
+\text{ex}_{\text{erg,0}} &= h_0 - h_0(T_0) - T_0 \left[ s_0 - s_0 \right] + \frac{w_0^2}{2} \\
+\text{ex}_{\text{erg,0}} - \text{ex}_{\text{erg,0}} &= h_0 - h_0 - h_0(T_0) + h_0(T_0) - T_0 \left[ s_0 - s_0 \right] + T_0 \left[ s_0 - s_0 \right] + \frac{w_0^2 - w_0^2}{2} \\
+&= c_p \left[ T_0 - T_0 \right] - T_0 \left[ s_0 - s_0 \right] + \frac{w_0^2 - w_0^2}{2} \\
+&= c_p \left[ T_0 - T_0 \right] - T_0 \left[ \exp \left( \frac{m}{T_0} \right) - R \ln \left( \frac{p_0}{p_0} \right) \right] + \frac{w_0^2 - w_0^2}{2}
+\end{align*}
+
+\[
+\Delta_{\text{ex,ist}} = 110106 \, \text{kJ/kg}
+\]
+
+\begin{align*}
+T_0 &= 340 \, \text{K} \\
+T_0 &= 243,15 \, \text{K} \\
+w_c &= 310 \, \text{m/s} \\
+w_0 &= 200 \, \text{m/s}
+\end{align*}
+
+\subsection*{d)}
+
+\[
+O = \frac{E_{\text{ex,ist}} + ex_q - W - p_0 \frac{dV}{dt}}{T_0} - ex_{u_0}
+\]
+
+\[
+ex_q = 1 - \frac{T_0}{T_B} \quad q_B = 969,58 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+ex_{\text{ext}} = 969,58 + 100 = 1069,58
+\]
+
+``````latex
+
+
+\begin{figure}[h]
+    \centering
+    % Detailed verbal description of the graph
+    The graph is a plot with the vertical axis labeled \( a' \, [T_k] \) and the horizontal axis labeled \( S \left[ \frac{L F}{kg \cdot K} \right] \). The plot contains several curves and points:
+    \begin{itemize}
+        \item There is a curve starting from the origin (0,0) and moving upwards and to the right, labeled with points 1, 2, 3, 4, and 5.
+        \item Point 1 is located near the origin.
+        \item Point 2 is slightly above and to the right of point 1.
+        \item Point 3 is further up and to the right, with a label "Enden" pointing to it.
+        \item Point 4 is slightly below point 3, with a label "Enden" pointing to it.
+        \item Point 5 is below point 4, with a label "Enden" pointing to it.
+        \item There is another curve starting from the origin and moving upwards and to the right, labeled with points 6 and 7.
+        \item Point 6 is located near the origin.
+        \item Point 7 is slightly above and to the right of point 6.
+    \end{itemize}
+\end{figure}
+
+``````latex
+
+

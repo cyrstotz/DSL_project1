@@ -1,0 +1,67 @@
+Plug into energy balance equation:  
+2 times h6 minus h0 equals w6 squared plus w0 squared.  
+
+This simplifies to:  
+2 times h6 minus h0 minus w0 squared equals w6 squared.  
+
+Calculation:  
+202 squared divided by 2 minus 5.8 minus 7.9 equals w6 squared.  
+
+Result:  
+w6 equals 202.67 meters per second.  
+
+Note:  
+m might be wrong → may be too small!  
+
+---
+
+w6 with 576  
+
+0 = mass flow rate multiplied by (h6 minus h5) plus mass flow rate multiplied by (w5 squared minus w6 squared divided by 2)  
+
+2 multiplied by (h6 minus h5) = w5 squared minus w6 squared  
+=> w6 squared = w5 squared minus 2 multiplied by (h6 minus h5)  
+
+(h6 minus h5) = cp multiplied by (T5 minus T6) = 1.006 multiplied by (431.9 minus 431.9) = -118.25  
+
+w6 = square root of (220 squared minus 2 multiplied by -118.25) = 220.26 meters per second
+
+Energy balance in the surrounding system:  
+
+\( w_0 = w_{Luft} = 200 \, \text{m/s} \)  
+
+\( 0 = \dot{m} (h_6 - h_0 + \frac{(w_6^2 - w_0^2)}{2}) + \dot{Q}^0 - \dot{w}^0 \)  
+
+\( h_6 - h_0 = h(T_6 = 243.19) - h(T_0 = T_0) \)  
+
+\( = c_p (T_6 - T_0) = 1.006 (349.4 - 243.19) = 71.9 \, \text{kJ/kg} \, (h_6 - h_0) \)  
+
+---
+
+Find \( T_6 \) via isentropic relation \( 5 \rightarrow 6 \):  
+
+\( \frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}} \rightarrow T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}} \)  
+
+\( = 1 \cdot 431.9 \cdot \left( \frac{0.191}{0.5} \right)^{0.4 / 1.4} = 344.4 \, \text{K} = T_6 \)  
+
+---
+
+Find \( \dot{m}_K \) with \( \dot{m}_M / \dot{m}_K = 5.293 \):  
+
+\( \dot{m}_M = 5.293 \dot{m}_K \)  
+
+---
+
+Energy balance in the combustion chamber:  
+
+\( 0 = \dot{m}_K (h_2 - h_3) + \dot{Q}_B \)  
+
+\( \dot{m}_K = \frac{\dot{Q}_B}{h_2 - h_3} = \frac{1195}{1296.7 - 273.15} = 0.9215 \, \text{kg/s} \)  
+
+---
+
+\( \dot{m}_M = 5.293 \dot{m}_K = 4.8778 \, \text{kg/s} \)  
+
+\( \dot{m}_{total} = \dot{m}_K + \dot{m}_M = 5.7 \, \text{kg/s} \approx 5.8 \, \text{kg/s} \)  
+
+\( \dot{m}_{total} = 48778 \, \text{kg/s} \)

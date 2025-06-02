@@ -1,0 +1,28 @@
+The temperature of the reactor contents changes from \( T_1 = 100^\circ\text{C} \) (\( 373.15 \, \text{K} \)) to \( T_2 = 70^\circ\text{C} \) (\( 343.15 \, \text{K} \)). A mass \( \Delta m \) of saturated liquid water at \( T_{\text{in,12}} = 20^\circ\text{C} \) (\( 293.15 \, \text{K} \)) is added. The heat released during cooling is \( Q_{\text{out},12} = 35 \, \text{MJ} \).  
+
+The energy balance equation is:  
+\[
+\Delta E = m_2 u_2 - m_1 u_1 = \Delta m \cdot h_{\text{in}} + Q_{\text{out},12}
+\]  
+where \( m_1 = 5755 \, \text{kg} \).  
+
+From the water tables:  
+\[
+u_f(70^\circ\text{C}) = 292.95 \, \text{kJ/kg}, \quad u_f(100^\circ\text{C}) = 419.94 \, \text{kJ/kg}, \quad u_f(20^\circ\text{C}) = 83.96 \, \text{kJ/kg}
+\]  
+
+Substituting into the energy balance:  
+\[
+m_1 u_f(100^\circ\text{C}) + \Delta m \cdot u_f(20^\circ\text{C}) = m_1 u_f(70^\circ\text{C}) + Q_{\text{out},12}
+\]  
+Rearranging for \( \Delta m \):  
+\[
+\Delta m = \frac{m_1 \left( u_f(70^\circ\text{C}) - u_f(100^\circ\text{C}) \right) + Q_{\text{out},12}}{u_f(20^\circ\text{C})}
+\]  
+
+Substituting values:  
+\[
+\Delta m = \frac{5755 \cdot (292.95 - 419.94) + 35,000}{83.96} = 3637.9 \, \text{kg}
+\]  
+
+Thus, the mass of water added is \( \Delta m = 3637.9 \, \text{kg} \).

@@ -1,0 +1,123 @@
+
+``````latex
+
+
+\section*{Aufgabe 3}
+
+\subsection*{a) Kräftegleichgewicht im Zustand 1 am Membran}
+
+\begin{align*}
+    p_{g1} \cdot A &= p_{amb} \cdot A + (m_k + m_{ew}) \cdot g \\
+    p_{g1} &= \frac{10^5 + \frac{(32 + 0,1) \cdot 9,81}{0,12 \cdot \pi \cdot 1/4}}{10^5} \\
+    &= 1,401 \, \text{bar}
+\end{align*}
+
+Ideales Gas $\Rightarrow \frac{p_{g1} V_{g1}}{T_{g1}} = m_g R$
+
+\begin{align*}
+    R &= \frac{\bar{R}}{N_g} = \frac{8,314}{50} = 0,16628 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}} \\
+    m_g &= \frac{1,401 \cdot 10^5 \cdot 3,14 \cdot 10^{-3}}{166,28 \cdot 773,15} \\
+    &= 3,422 \, \text{g}
+\end{align*}
+
+\subsection*{b) Zustand 2 thermodynamisches Gleichgewicht}
+
+\begin{align*}
+    \Rightarrow T_{g1,2} &= T_{ew,2} \quad \text{oder} \quad x_{eis,2} > 0, \quad x_{eis,2} \neq 1 \\
+    \Rightarrow T_{ew,2} &= T_{ew,1} = 0^\circ \text{C} \quad \text{(2 Phasen gleich)} \\
+    \Rightarrow T_{g,2} &= 0^\circ \text{C} \quad (*)
+\end{align*}
+
+Ideales Gas $\Rightarrow p \cdot V = m \cdot R \cdot T$
+
+\begin{align*}
+    \text{Es gilt analog zu a)} \quad \text{das Kräftegleichgewicht} \Rightarrow p_{g2} = p_{g1} = 1,5 \, \text{bar} \\
+    \text{d.h.} \quad (*)
+\end{align*}
+
+\subsection*{c) (*) der Zustand 2 ist ein thermodynamisches Gleichgewicht d.h. $T_{g2} = T_{ew,2}$ d.h. $x_{eis,2} > 0$ und $x_{ew,2} < 1$, muss $T_{ew,2}$ gleich $T_{ew,1}$ sein, d.h. $T_{g2} = 0^\circ \text{C}$}
+
+``````latex
+
+
+\section*{Aufgabe c}
+
+\subsection*{c)}
+
+Betrachte Energiebilanz um Gas:
+
+\[
+\text{geschlossenes System} \implies \Delta E = Q_{12} - W_V
+\]
+
+\[
+\text{isobarer Prozess} \quad p_g = p_{g1} \implies W_V = \int p_g \, dV = p_{g1} (V_2 - V_1)
+\]
+
+\[
+\text{Ideales Gas} \implies \frac{p_{g1} V_1}{T_1} = \frac{p_{g1} V_{g1}}{T_{g1}} \implies V_{g2} = V_{g1} \frac{T_{g2}}{T_{g1}}
+\]
+
+\[
+= 3.14 \cdot \frac{273.153}{273.15} \cdot 10^{-3} = 1.10936 \cdot 10^{-3} \, \text{m}^3
+\]
+
+\[
+\implies W_V = 1.5 \cdot 10^3 \cdot (1.10936 - 3.14) \cdot 10^{-3} = -3.04596 \cdot 10^2
+\]
+
+\[
+\Delta E = m_g \cdot c_V (T_{g2} - T_{g1})
+\]
+
+\[
+\text{Ideales Gas}
+\]
+
+\[
+\implies Q_{12} = 8.6 \cdot 10^3 \cdot 6.33 \cdot (273.153 - 273.15) - 3.04596 \cdot 10^2 = -1.4143.99
+\]
+
+\subsection*{d)}
+
+Energiebilanz um EW:
+
+\[
+\text{geschlossenes System} \implies \Delta E = \left( Q_{12} - \sum W_V \right) \beta
+\]
+
+\[
+\text{Inkompressible Flüssigkeit} \implies dV = 0 \quad \text{kein} \, W_V
+\]
+
+\[
+\Delta E = m_{EW} (u_{EW,2} - u_{EW,1}) + \frac{U_{EW,1}}{m_{EW}}
+\]
+
+\[
+\implies U_{EW,2} = U_{EW,1} + \frac{Q_{12}}{m_{EW}} = 200.023 + \frac{11.5}{0.1} = 185.928 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\text{Tab. 1}
+\]
+
+\[
+U_{EW,1} = U_{\text{Flüssig}} + X_{Eis,1} (U_{\text{Fest}} - U_{\text{Flüssig}})
+\]
+
+\[
+= -0.0145 + 0.6 \cdot (-333.658 + 0.0145) = -200.0928 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+T_{EW} = 0^\circ
+\]
+
+\[
+\implies X_{Eis} = \frac{U_{EW,2} - U_{F}}{U_{\text{Fest}} - U_{F}} = \frac{-185.928 + 0.023}{-333.942 + 0.023} = 0.555
+\]
+
+``````latex
+
+

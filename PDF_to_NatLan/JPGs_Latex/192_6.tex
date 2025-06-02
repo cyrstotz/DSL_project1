@@ -1,0 +1,43 @@
+TASK 2c  
+The mass-specific increase in flow exergy is calculated using the following equation:  
+\[
+ex_{\text{site},6} - ex_{\text{site},0} = h_6 - h_0 - T_0 s_6 + T_0 s_0 + ke_6 - ke_0
+\]  
+Breaking down the terms:  
+\[
+h_6 - h_0 = C_p (T_6 - T_0)
+\]  
+\[
+s_0 - s_6 = C_p \ln\left(\frac{T_0}{T_6}\right) - R \ln\left(\frac{p_0}{p_6}\right)
+\]  
+\[
+ke_6 - ke_0 = \frac{1}{2}(w_6^2 - w_0^2)
+\]  
+Combining these terms:  
+\[
+se = C_p (T_6 - T_0) + T_0 \left[C_p \ln\left(\frac{T_0}{T_6}\right)\right] + \frac{1}{2}(w_6^2 - w_0^2)
+\]  
+Given values:  
+\[
+C_p = 1.006 \, \text{kJ/kg·K}, \, T_6 = 328.1 \, \text{K}, \, T_0 = 243.15 \, \text{K}, \, w_6 = 507.2 \, \text{m/s}, \, w_0 = 200 \, \text{m/s}
+\]  
+The calculated flow exergy increase is:  
+\[
+\Delta ex_{\text{flow}} = 120.8 \, \text{kJ/kg}
+\]  
+
+TASK 2d  
+A system boundary diagram is drawn, labeled "Sys. Grenze," showing inlet and outlet mass flows (\( \dot{m}_i \) and \( \dot{m}_o \)) with no heat transfer (\( \dot{Q} = 0 \)) and no work transfer (\( \dot{W} = 0 \)). A note indicates that work is used for compression.  
+
+The exergy balance equation is written as:  
+\[
+\frac{dE_x}{dt} = \sum \dot{E}_{x,\text{in}} - E_{x,\text{ver}}
+\]  
+This expands to:  
+\[
+\dot{e}_{x,0} - \dot{e}_{x,6} - e_{x,\text{ver}}
+\]  
+A note clarifies that \( \dot{Q} \neq 0 \).  
+
+Description of the diagram:  
+The diagram represents a steady-state system boundary with labeled input and output mass flows. It indicates no heat or work transfer across the boundary, with compression work occurring internally.

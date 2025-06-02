@@ -1,0 +1,88 @@
+TASK 2c  
+The equation for exergy destruction is written as:  
+\[
+\dot{e}_{\text{exergy}} = \dot{e}_{\text{exergy,in}} - \dot{e}_{\text{exergy,out}}
+\]  
+
+The entropy balance is expressed as:  
+\[
+\frac{dS}{dt} = \dot{m}_{\text{in}} \cdot s_{\text{in}} + \int \frac{\dot{Q}}{T} + \sum \dot{m}_{\text{out}} \cdot s_{\text{out}} + \dot{S}_{\text{gen}}
+\]  
+
+The entropy production term is derived as:  
+\[
+\dot{S}_{\text{gen}} = \dot{m}_{\text{in}} \cdot s_{\text{in}} - \dot{m}_{\text{out}} \cdot s_{\text{out}} + \frac{\dot{Q}}{T_j}
+\]  
+
+The exergy destruction is calculated using:  
+\[
+\Delta \dot{e}_{\text{exergy}} = \dot{e}_{\text{exergy,in}} - \dot{e}_{\text{exergy,out}}
+\]  
+
+The enthalpy and entropy terms are expanded as:  
+\[
+h_e - h_a - T_0 \cdot (s_e - s_a) + \frac{w_0^2 - w_a^2}{2} = \Delta \dot{e}_{\text{exergy}}
+\]  
+
+The specific exergy destruction is expressed as:  
+\[
+c_p \cdot (T_0 - T_6) - T_0 \cdot \left( c_p \cdot \ln \left( \frac{T_0}{T_6} \right) - R \cdot \ln \left( \frac{p_0}{p_6} \right) \right) = \Delta \dot{e}_{\text{exergy}}
+\]  
+
+Numerical calculations are performed:  
+\[
+1.006 \cdot \ln \left( \frac{243.15}{328.074} \right) = 243.15 \cdot \left( 1.006 \cdot \ln \left( \frac{237.15}{328.074} \right) \right)
+\]  
+
+Further terms include:  
+\[
+-2.933 \cdot \frac{w_0^2 - w_a^2}{2} + \frac{200 \cdot w_0^2}{2} + \frac{500 \cdot w_a^2}{2} = 145.55 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The final exergy destruction value is:  
+\[
+145.55 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+---
+
+TASK 2d  
+The exergy flow rate is calculated as:  
+\[
+\dot{e}_{\text{exergy}} = T_0 \cdot \dot{S}_{\text{exergy}}
+\]  
+
+The specific exergy flow is expressed as:  
+\[
+e_{\text{exergy}} = T_0 \cdot s_{\text{exergy}}
+\]  
+
+The heat addition term is given as:  
+\[
+q_B = \frac{\dot{Q}_B}{\dot{m}_K}
+\]  
+
+The bypass-to-core mass ratio is:  
+\[
+\frac{\dot{m}_M}{\dot{m}_K} = 5.293
+\]  
+
+The entropy balance is expanded:  
+\[
+O = \dot{m}_{\text{in}} \cdot (s_e - s_a) + \frac{\dot{Q}}{T_j} \cdot s_{\text{exergy}} + \frac{q_B}{T_B}
+\]  
+
+The entropy production term is expressed as:  
+\[
+O = s_e - s_a + \frac{q_B}{T_j} \cdot s_{\text{exergy}}
+\]  
+
+The specific heat capacity term is calculated:  
+\[
+c_p \cdot \ln \left( \frac{T_2}{T_3} \right) - R \cdot \ln \left( \frac{p_2}{p_3} \right) + 5.293 \cdot s_{\text{exergy}} + \frac{q_B}{T_B}
+\]  
+
+The temperatures \( T_2 \) and \( T_3 \) are queried for further calculations.  
+
+---  
+Descriptions of diagrams or figures are not present on this page.

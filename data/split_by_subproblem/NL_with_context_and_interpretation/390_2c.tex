@@ -1,0 +1,9 @@
+The change in flow exergy (\( \Delta ex_\text{str} \)) is calculated as:  
+\[ \Delta ex_\text{str} = \text{Exergy at state 6} - \text{Exergy at state 0} \]  
+\[ ex_\text{str,6} = h_6 - h_0 - T_0 \cdot \left( s_6 - s_0 \right) + \frac{w_6^2}{2} \]  
+\[ ex_\text{str,0} = h_0 - h_0 - T_0 \cdot \left( s_0 - s_0 \right) + \frac{w_0^2}{2} \]  
+\[ \Delta ex_\text{str} = h_6 - h_0 - T_0 \cdot \left( s_6 - s_0 \right) + \frac{w_6^2}{2} - \frac{w_0^2}{2} \]  
+Substituting \( h_6 - h_0 = c_p^\text{Luft} \cdot \left( T_6 - T_0 \right) \):  
+\[ \Delta ex_\text{str} = c_p^\text{Luft} \cdot \left( T_6 - T_0 \right) - T_0 \cdot c_p^\text{Luft} \cdot \ln \left( \frac{T_6}{T_0} \right) - \frac{w_6^2}{2} + \frac{w_0^2}{2} \]  
+Final calculation:  
+\[ \Delta ex_\text{str} = 125.47 \, \text{kJ/kg} \]

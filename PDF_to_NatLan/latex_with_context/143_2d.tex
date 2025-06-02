@@ -1,0 +1,33 @@
+No work is supplied; only streams and heat flows are considered. The exergy balance for the entire system (stationary) is expressed as:  
+\[
+0 = \dot{m}_{\text{ges}} (-\Delta ex_{\text{str}}) + \dot{E}_{x,QB} - \dot{E}_{x,\text{ver}}
+\]  
+
+The exergy flow from heat transfer is:  
+\[
+\dot{E}_{x,QB} = \left( 1 - \frac{T_0}{T_B} \right) \dot{Q}_B = \dot{m}_K \left( 1 - \frac{T_0}{T_B} \right) q_B
+\]  
+
+The total mass flow rate is calculated as:  
+\[
+\dot{m}_{\text{ges}} = \dot{m}_K + \dot{m}_M = \dot{m}_K + 5.293 \dot{m}_K = 6.293 \dot{m}_K
+\]  
+Thus:  
+\[
+\dot{m}_K = \frac{\dot{m}_{\text{ges}}}{6.293}
+\]  
+
+Substituting into the exergy balance:  
+\[
+0 = -\Delta ex_{\text{str}} + \frac{1}{6.293} \left( 1 - \frac{T_0}{T_B} \right) q_B - e_{x,\text{ver}}
+\]  
+
+The exergy destruction per unit mass is:  
+\[
+e_{x,\text{ver}} = \frac{1}{6.293} \left( 1 - \frac{T_0}{T_B} \right) q_B - \Delta ex_{\text{str}} = 137.89 \, \text{kJ/kg}
+\]  
+
+Final result:  
+\[
+\Delta ex_{\text{str}} = 79.78 \, \text{kJ/kg}
+\]

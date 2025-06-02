@@ -1,0 +1,72 @@
+A diagram is shown with a labeled box "EW" and an arrow pointing to it labeled \( Q_{12} \).
+
+The equation is written as:
+dE/dt = \( \sum \dot{Q} \) - \( \sum \dot{W} \),  
+where \( \dot{W} = 0 \), assuming negligible volume change.
+
+The energy balance equation is written as:
+\( U_2 - U_1 = Q_{12} \).
+
+The internal energy \( U_1 \) is expressed as:
+\( U_1 = U_f + x \cdot (U_g - U_f) \).
+
+A note states:
+"Pressure in EW at state 1: equilibrium pressure against atmospheric pressure \( p = p_{amb} = 1.01 \, \text{bar} \) (assumption)."
+
+From Table 1:
+\( U_1 = -0.045 \, \text{kJ/kg} \cdot 0.6 \cdot (-33.3 \, \text{kJ/kg} + 0.045 \, \text{kJ/kg}) \),
+resulting in:
+\( U_1 = -200.09 \, \text{kJ/kg} \).
+
+The internal energy \( U_2 \) is calculated as:
+\( U_2 = Q_{12} + U_1 = 1366.4 \, \text{kJ} - 200.1 \, \text{kJ} = -18.6336 \, \text{kJ} \).
+
+The ice content \( x \) is calculated as:
+\( x = \frac{U_2 - U_f}{U_g - U_f} \),
+substituting values:
+\( x = \frac{-18.6336 \, \text{kJ} + 0.045 \, \text{kJ/kg}}{0.1 \, \text{kg} \cdot (-33.3 \, \text{kJ/kg} + 0.045 \, \text{kJ/kg})} \),
+resulting in:
+\( x = 0.5587 \).
+
+The mass of ice \( m_{2,\text{Ice}} \) is calculated as:
+\( m_{2,\text{Ice}} = x_{2,\text{Ice}} \cdot m_{\text{EW}} = 0.5587 \cdot 0.1 \, \text{kg} = 0.05587 \, \text{kg} \).
+
+Energy balance for the cylinder system:  
+
+\( \frac{dE}{dt} = \sum_j \dot{Q}_j - \sum_n \dot{W}_n \)  
+
+\( \frac{dE}{dt} = \sum_j \dot{Q}_j - \sum_n \dot{W}_n \)  
+
+\( U_2 - U_1 = Q_{12} - W_{12} \)  
+
+Since there is no friction, \( W_{12} \) is reversible.  
+
+\( W_{12} = \int p \, dv \)  
+
+\( m_g = \frac{V_{g,1}}{v_{g,1}} \)  
+
+\( m_g = \frac{3.14 \cdot 10^{-3} \, \text{m}^3}{3.94 \cdot 10^{-2} \, \text{m}^3/\text{kg}} = 0.07968397 \, \text{kg} \)
+
+For \( V_{g,2} \):  
+\( m_{g} = 3.429 \times 10^{-3} \, \text{kg} \cdot 0.16628 \, \frac{\text{m}^3}{\text{kg}} \cdot 273.15 \, \text{K} \)  
+\( = 1.4 \times 10^2 \, \frac{\text{m}^3}{\text{kg}} \)  
+
+\( V_{g,2} = p = \frac{1.4 \times 10^2 \, \frac{\text{m}^3}{\text{kg}}}{1.101 \times 10^{-3} \, \text{m}^3} \)  
+\( = 1.101 \times 10^{-3} \, \text{m}^3 \)  
+
+\( v_{g,2} = \frac{1.101 \times 10^{-3} \, \text{m}^3}{3.429 \times 10^{-3} \, \text{kg}} = 0.324364 \, \frac{\text{m}^3}{\text{kg}} \)  
+
+For \( W_{12} \):  
+\( W_{12} = \int_{1}^{2} p \, dV = R \cdot p \cdot (V_{2} - V_{1}) = 1.4 \cdot 10^2 \, \frac{\text{J}}{\text{m}^3} \cdot (0.324364 \, \frac{\text{m}^3}{\text{kg}} - 0.948837 \, \frac{\text{m}^3}{\text{kg}}) \)  
+\( = -83.164 \, \frac{\text{J}}{\text{kg}} \)  
+
+\( W_{12} = w_{12} \cdot m_{g} = -83.164 \, \frac{\text{J}}{\text{kg}} \cdot 3.429 \times 10^{-3} \, \text{kg} = -0.28434 \, \text{J} \)  
+
+For \( U_{2} - U_{1} \):  
+\( U_{2} - U_{1} = w_{g} \cdot c_{V} \cdot (T_{2} - T_{1}) \cdot m_{g} = 0.683 \, \frac{\text{J}}{\text{kg·K}} \cdot (273.15 \, \text{K} - 773.15 \, \text{K}) \cdot 3.429 \times 10^{-3} \, \text{kg} \)  
+\( = -710.827 \, \text{J} \)  
+
+For \( Q_{12} \):  
+\( Q_{12} = U_{2} - U_{1} + W_{12} = -710.827 \, \text{J} + (-0.28434 \, \text{J}) = -73866.4 \, \text{J} \)  
+
+\( |Q_{12}| = 73866.4 \, \text{J} \)

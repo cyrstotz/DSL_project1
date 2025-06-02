@@ -1,0 +1,31 @@
+The temperature does not need to increase during a steady-state flow process.  
+
+The energy balance equation is given as:  
+\[
+0 = \dot{m}_{\text{in}} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R + \dot{Q}_{\text{out}}
+\]  
+
+Rearranging for the heat flow removed by the coolant:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} (h_{\text{out}} - h_{\text{in}}) - \dot{Q}_R
+\]  
+
+The boiling liquid is considered as pure water.  
+
+From the water tables:  
+\[
+h_{\text{out}} = h_f(100^\circ\text{C}) = 2257.0 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_{\text{in}} = h_f(70^\circ\text{C}) = 2333.8 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Given values:  
+\[
+\dot{m}_{\text{in}} = 0.3 \, \frac{\text{kg}}{\text{s}}, \quad \dot{Q}_R = 100 \, \text{kW}
+\]  
+
+Substituting into the equation:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, (2257.0 - 2333.8) - 100 = -123.04 \, \text{kW}
+\]

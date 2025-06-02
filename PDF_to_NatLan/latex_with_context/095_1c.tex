@@ -1,0 +1,45 @@
+The goal is to calculate the entropy production rate \( \dot{S}_{\text{gen}} \).  
+
+Starting from the steady-state energy balance equation:  
+\[
+0 = \dot{m}(s_e - s_a) + \frac{\dot{Q}_{\text{out}}}{T} + \dot{S}_{\text{gen}}
+\]  
+Rearranging for \( \dot{S}_{\text{gen}} \):  
+\[
+\dot{S}_{\text{gen}} = \dot{m}(s_a - s_e) - \frac{\dot{Q}_{\text{out}}}{T}
+\]  
+
+Known values:  
+\[
+\dot{m} = 0.3 \, \text{kg/s}, \quad \dot{Q}_{\text{out}} = 65 \, \text{kW}, \quad T = 100^\circ\text{C} = 373.15 \, \text{K}
+\]  
+
+Entropy values are calculated using the steam tables:  
+At \( T = 100^\circ\text{C} \):  
+\[
+s_a = s_{a,f} + x(s_{a,g} - s_{a,f})
+\]  
+\[
+s_a = 1.3069 + 0.005(7.3543 - 1.3069) \, \frac{\text{kJ}}{\text{kg·K}} = 1.33714 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+At \( T = 70^\circ\text{C} \):  
+\[
+s_e = s_{e,f} + x(s_{e,g} - s_{e,f})
+\]  
+\[
+s_e = 0.9585 + 0.005(7.7553 - 0.9585) \, \frac{\text{kJ}}{\text{kg·K}} = 0.9859 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Substituting into the entropy production rate equation:  
+\[
+\dot{S}_{\text{gen}} = 0.3 \, \text{kg/s} \cdot (1.33714 - 0.9859) \, \frac{\text{kJ}}{\text{kg·K}} - \frac{65 \, \text{kW}}{373.15 \, \text{K}}
+\]  
+\[
+\dot{S}_{\text{gen}} = 0.279 \, \frac{\text{kW}}{\text{K}}
+\]  
+
+Final result:  
+\[
+\dot{S}_{\text{gen}} = 0.279 \, \frac{\text{kW}}{\text{K}}
+\]

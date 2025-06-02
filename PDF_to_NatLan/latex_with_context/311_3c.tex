@@ -1,0 +1,48 @@
+The energy balance equation is written as:  
+\[
+\dot{m}_g \cdot (u_{2g} - u_{1g}) + m_{\text{EW}} \cdot (u_{2\text{EW}} - u_{1\text{EW}}) = 0
+\]  
+Here, \( \dot{m}_g \) represents the mass flow rate of the gas, \( u_{2g} \) and \( u_{1g} \) are the specific internal energies of the gas at states 2 and 1, respectively. Similarly, \( m_{\text{EW}} \) represents the mass of the ice-water mixture, and \( u_{2\text{EW}} \) and \( u_{1\text{EW}} \) are the specific internal energies of the ice-water mixture at states 2 and 1, respectively.
+
+The relationship for the mass of the ice-water mixture is given as:  
+\[
+m_{\text{EW}} = 0.4 \cdot m_{\text{EW}}
+\]  
+
+The work done by the gas is calculated as:  
+\[
+W_{12,\text{gas}} = \int p_g \, dV = \int_{V_1}^{V_2} p_0 + \frac{m_g \cdot g}{A} \, dV
+\]  
+Substituting the values:  
+\[
+W_{12,\text{gas}} = (p_0 + \frac{m_g \cdot g}{A}) \cdot (V_2 - V_1)
+\]  
+
+The specific volume of the gas at state 2 is calculated using the ideal gas law:  
+\[
+V_{2g} = \frac{m_g \cdot R \cdot T_{2g}}{p_2g}
+\]  
+Substituting the values:  
+\[
+V_{2g} = 0.001106 \, \text{m}^3
+\]  
+
+The heat transferred from the gas to the ice-water mixture is given as:  
+\[
+Q_{12} = \dot{m}_g \cdot (u_{2g} - u_{1g}) + W_{12}
+\]  
+Substituting the values:  
+\[
+Q_{12} = c_V \cdot (T_2 - T_1) = -233.586 \, \text{kJ/kg}
+\]  
+
+The specific heat capacity at constant volume is calculated as:  
+\[
+c_V = \frac{8 \cdot R}{\kappa - 1} = 0.46672 \, \text{kJ/kg·K}
+\]  
+Substituting the values:  
+\[
+c_V = -233.168 \, \text{kJ/kg}
+\]  
+
+No diagrams or graphs are present on the page.

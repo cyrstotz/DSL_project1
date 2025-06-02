@@ -1,0 +1,35 @@
+The mass-specific exergy destruction is calculated using the following formula:  
+\[
+-\Delta ex_{\text{str}} = \dot{m} \left( h_c - h_a - T_0 (s_e - s_a) + \frac{w_e^2 - w_a^2}{2} \right)
+\]  
+
+Breaking it down:  
+\[
+-\frac{\Delta ex_{\text{str}}}{\dot{m}} = h(-30^\circ\text{C}) - h(340 \, \text{K}) - T_0 \left( c_p \ln \frac{T_0}{T_a} \right) + \frac{w_e^2 - w_a^2}{2}
+\]  
+
+The enthalpy values are determined as follows:  
+\[
+h(293.15 \, \text{K}) = h(240 \, \text{K}) + \frac{243.15 \, \text{K} - 240 \, \text{K}}{250 \, \text{K} - 240 \, \text{K}} \left( h(250 \, \text{K}) - h(240 \, \text{K}) \right)
+\]  
+\[
+h(340 \, \text{K}) = 340.42 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h(293.15 \, \text{K}) = 243.150 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Substituting into the equation:  
+\[
+-\frac{\Delta ex_{\text{str}}}{\dot{m}} = 243.150 \, \frac{\text{kJ}}{\text{kg}} - 340.42 \, \frac{\text{kJ}}{\text{kg}} - 243.15 \, \text{K} \cdot (1.006 \, \frac{\text{kJ}}{\text{kg·K}} \cdot \ln \frac{340 \, \text{K}}{293.15 \, \text{K}})
+\]  
+\[
++ \frac{202^2 \, \frac{\text{m}^2}{\text{s}^2} - 510^2 \, \frac{\text{m}^2}{\text{s}^2}}{2}
+\]  
+
+Final result:  
+\[
+\Delta ex_{\text{str}} = 11,0229.27 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+---

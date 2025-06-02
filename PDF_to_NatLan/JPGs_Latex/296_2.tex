@@ -1,0 +1,60 @@
+TASK 2c  
+The mass-specific increase in flow exergy is calculated as:  
+\[
+\Delta ex_{\text{str}} = ex_{\text{str},6} - ex_{\text{str},0}
+\]  
+The expression for flow exergy is given by:  
+\[
+ex_{\text{str}} = h - h_0 - T_0 (s - s_0) + ke
+\]  
+Substituting for the specific states:  
+\[
+ex_{\text{str},6} - ex_{\text{str},0} = h_6 - h_0 - T_0 (s_6 - s_0) + ke_6 - ke_0
+\]  
+Using the specific heat capacity \( c_p \), the temperature difference, and entropy terms:  
+\[
+= c_p \Delta T_{6,0} - T_0 c_p \ln \left( \frac{T_6}{T_0} \right) - T_0 R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+Where \( p_6 = p_0 \).  
+
+The calculation proceeds as:  
+\[
+= 1.006 \, \text{kJ/kg·K} \left( 310 \, \text{K} - 243.15 \, \text{K} \right) - (243.15 \, \text{K}) \cdot 1.006 \ln \left( \frac{310}{243.15} \right)
+\]  
+\[
+= 67.226 \, \text{kJ/kg}
+\]  
+
+Adding the kinetic energy term:  
+\[
+ke = \frac{w^2}{2} = \frac{(220 \, \text{m/s})^2}{2} = 24.2 \, \text{kJ/kg}
+\]  
+Final result:  
+\[
+\Delta ex_{\text{str}} = 145.47 \, \text{kJ/kg}
+\]  
+
+---
+
+TASK 2d  
+The mass-specific exergy destruction in the engine is calculated as:  
+\[
+ex_{\text{val}} = ex_{\text{str},06} - ex_{\text{9b}} - ke
+\]  
+Where:  
+\[
+ex_{\text{9b}} = (1 - \frac{T_0}{T}) Q = (1 - \frac{243.15}{1289}) \cdot 969.582 \, \text{kJ/kg}
+\]  
+\[
+= 769.582 \, \text{kJ/kg}
+\]  
+
+The kinetic energy term is:  
+\[
+ke = 220.05 \, \text{kJ/kg}
+\]  
+
+Final result:  
+\[
+ex_{\text{val}} = 969.582 \, \text{kJ/kg} - 769.582 \, \text{kJ/kg} - 220.05 \, \text{kJ/kg} = 932.55 \, \text{kJ/kg}
+\]  

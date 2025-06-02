@@ -1,0 +1,42 @@
+TASK 2a  
+The diagram represents a qualitative \( T \)-\( s \) process for a jet engine cycle. The graph is labeled with key states:  
+- State 1: Inlet (irreversible process).  
+- State 2: Compression (irreversible process).  
+- State 3: Combustion (isobaric process).  
+- State 4: Expansion (reversible adiabatic process).  
+- State 5: Mixing chamber (isobaric process).  
+- State 6: Nozzle exit (irreversible process).  
+
+The x-axis is entropy \( s \) in \( \text{kJ}/\text{kg·K} \), and the y-axis is temperature \( T \) in Kelvin. The fluid is labeled as "ideal fluid." The pressure conditions are noted as \( p_4 = p_5 \) and \( p_0 = p_6 \).  
+
+---
+
+TASK 2b  
+To calculate \( w_6 \) and \( T_6 \):  
+The steady-state energy balance for the entire system is applied, assuming adiabatic conditions.  
+
+\[
+0 = h_{\text{in}} - h_{\text{out}} + \frac{w_{\text{in}}^2 - w_{\text{out}}^2}{2}
+\]
+
+Rearranging for \( w_{\text{out}} \):  
+\[
+w_{\text{out}} = \sqrt{2(h_{\text{in}} - h_{\text{out}}) + w_{\text{in}}^2}
+\]
+
+For an ideal gas:  
+\[
+h = c_{p,\text{air}}(T_{\text{in}} - T_{\text{out}}) + v^2 \frac{(p_3 - p_1)}{\rho}
+\]
+
+The temperature at the nozzle exit \( T_{\text{out}} \) is calculated using:  
+\[
+T_{\text{out}} = T_{\text{in}} \left(\frac{p_6}{p_0}\right)^{\frac{\kappa - 1}{\kappa}}
+\]
+
+Where \( \kappa = 1.4 \) for air. Substituting:  
+\[
+T_{\text{out}} = T_{\text{in}}
+\]
+
+In the limit, \( w_{\text{out}} = w_{\text{in}} \).

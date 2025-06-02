@@ -1,0 +1,79 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{center}
+\begin{tabular}{c}
+\includegraphics[width=0.8\textwidth]{graph.png}
+\end{tabular}
+\end{center}
+
+\textbf{Verbal Description of the Graph:}
+
+The graph is a Temperature-Entropy (T-S) diagram. The x-axis is labeled as $S \, (kJ/K)$ and the y-axis is labeled as $T \, (K)$. 
+
+There are six points labeled 1 through 6, connected by various processes:
+- Point 1 to Point 2 is labeled as "isobar".
+- Point 2 to Point 3 is labeled as "isobar".
+- Point 3 to Point 4 is labeled as "isentrope".
+- Point 4 to Point 5 is labeled as "isobar".
+- Point 5 to Point 6 is labeled as "isentrope".
+- Point 6 to Point 1 is labeled as "isobar".
+
+Additional labels include:
+- "p = 0.5 bar" near the top right.
+- "p0 = 0.99 bar" near the middle right.
+- "isobar" and "isentrope" labels along the respective process lines.
+- "M" and "m" near the middle of the graph.
+- "Bremskurve" near the top left.
+
+\subsection*{b)}
+
+\begin{align*}
+&5 \rightarrow 6 \text{ adiabatic, reversible} \\
+&\frac{dE}{dt} = \dot{m}_{\text{ges}} \left[ h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right] + \sum \dot{Q}_i^0 - \sum \dot{W}_{t,v} \\
+&O = \dot{m}_{\text{ges}} \left[ h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right] - \dot{W}_v \\
+&\boxed{\text{ideales Gas}} \\
+&h_5 - h_6 = \int_{T_0}^{T_5} c_p \, dT = c_p (T_5 - T_6) \\
+&\text{stat. FP} \\
+&\frac{d}{dt} \sum \dot{m}_i s_i + \sum \frac{\dot{Q}_i}{T_i} + \sum \dot{S}_{\text{verl}} = 0 \\
+&O = m (s_5 - s_6) \rightarrow s_5 = s_6 \text{ isentrop} \\
+&\text{stat. FP} \\
+&\frac{dE}{dt} = \sum \dot{E}_{\text{strm},i} + \sum \dot{E}_{\text{strm},a,j} - \sum \dot{W}_{t,v} - \sum \dot{E}_{\text{verl},i}^0 \\
+&O = \dot{m}_{\text{ges}} \left[ h_6 - h_5 - T_0 (s_6 - s_5) + ke \right] - \dot{W}_v
+\end{align*}
+
+``````latex
+
+
+c)
+
+d)
+
+\begin{equation*}
+\dot{Q}_{out} = \sum \dot{E}_{x,str,i} + \sum \dot{E}_{x,Q,i} - \sum \dot{W}_n - \dot{E}_{x,ver,l}
+\end{equation*}
+
+\begin{equation*}
+0 = \sum \dot{E}_{x,str,i} + \dot{E}_{x,Q,i} - \dot{E}_{x,ver,l}
+\end{equation*}
+
+\begin{equation*}
+\dot{e}_{x,ver,l} = h_0 - h_0 - T_0(s_0 - s_0) + ke + \left(1 - \frac{T_0}{T_B}\right)q_B
+\end{equation*}
+
+\begin{equation*}
+\dot{e}_{x,ver,l} = \Delta e_{x,str} + \left(1 - \frac{T_0}{T_B}\right)q_B
+\end{equation*}
+
+\begin{equation*}
+\dot{e}_{x,ver,l} = 100 \frac{kJ}{kg} + \left(1 - \frac{273,15 - 30}{1285}\right)1195 = \underline{1069,58 \, kJ}
+\end{equation*}
+
+``````latex
+
+

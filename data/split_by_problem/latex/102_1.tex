@@ -1,0 +1,114 @@
+
+``````latex
+
+
+\section*{Aufgabe 1: Reaktor}
+
+\begin{itemize}
+    \item $m_{\text{ein}} = 0,3 \frac{\text{kg}}{\text{s}}$
+    \item $x_D = \frac{m_D}{m_{\text{ges}}} = 0,0057$
+    \item $T_{\text{ein}} = 40^\circ \text{C}$
+\end{itemize}
+
+\subsection*{a) Q\textsubscript{aus}}
+
+\subsubsection*{1. Hauptsatz der Thermodynamik}
+\[
+\dot{Q}_E = \sum_i \dot{m}_i (h_i)_{\text{ein}} - \sum_j \dot{m}_j (h_j)_{\text{aus}} + \sum_i \dot{Q}_i (i) - \sum_j \dot{W}_j (j)
+\]
+\[
+\dot{Q}_E = \dot{m}_{\text{ein}} (h_{\text{ein}} + h_{\text{aus}}) + \dot{Q}_R + \dot{Q}_{\text{aus}}
+\]
+
+\subsubsection*{Zustandsgrößen}
+\[
+h_{\text{ein}} - h_{\text{aus}}
+\]
+
+\subsubsection*{Zustand 1}
+\[
+\text{Ein: } 70^\circ \text{C}
+\]
+\[
+\text{aus Tabelle A-2}
+\]
+\[
+\text{und } q_2: q_1 + (q_2 - q_1)
+\]
+
+\subsubsection*{Zustand 2}
+\[
+\text{Ein: } 100^\circ \text{C}
+\]
+\[
+\text{aus Tabelle A-2}
+\]
+\[
+\text{und } q_2: q_1 + (q_2 - q_1)
+\]
+
+\[
+h_{\text{ein}} = 297,35 + 0,005 \cdot 0,025 \cdot (297,35 - 253,15) \frac{\text{kJ}}{\text{kg}} = 304,643 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_{\text{aus}} = 473,04 + 0,005 \cdot 0,10 \cdot 5 \cdot 297,6 \cdot (473,04 - 253,15) \frac{\text{kJ}}{\text{kg}} = 430,325 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\dot{Q}_{\text{aus}} = 0,3 \frac{\text{kg}}{\text{s}} \cdot (304,643 \frac{\text{kJ}}{\text{kg}} - 430,325 \frac{\text{kJ}}{\text{kg}}) + 100 \frac{\text{kW}}{\text{kg}} - \dot{Q}_{\text{aus}}
+\]
+
+\[
+\Rightarrow \dot{Q}_{\text{aus}} = 62,29 \text{kJ}
+\]
+
+\subsection*{b) Mittelwert des Kühlflüssigkeitsstromes: $\overline{T}_{\text{KF}}$}
+
+\[
+T_{\text{KF, ein}} = 253,15 \text{K}, \quad T_{\text{KF, aus}} = 253,15 \text{K}, \quad \text{ideale Flüssigkeit}
+\]
+
+\[
+\frac{1}{\overline{T}_{\text{KF}}} = \int_{S_a}^{S_e} \frac{T \, ds}{T_{\text{KF, ein}}} = \int_{T_{\text{KF, ein}}}^{T_{\text{KF, aus}}} \frac{dT}{T}
+\]
+
+``````latex
+
+
+\section*{c)}
+\[
+\dot{S}_{ex} = \frac{\dot{Q}_{RF}}{T_{RF}} = 225 \, \text{K} \quad \text{nur innerhalb der Reaktionswand}
+\]
+
+\begin{description}
+    \item[Graphical Description:] 
+    There is a vertical rectangle labeled "Kühlwand" on the left and "Reaktionswand" on the right. The rectangle is divided into two sections by a vertical dashed line labeled "Systemgrenze" in red. The left section is labeled "Rechts < 0" and the right section is labeled "Links > 0".
+\end{description}
+
+\[
+\dot{S}_{ex} = \frac{\dot{Q}_{aus}}{T_{RF}} = \frac{-(-67.28 \, \text{kJ})}{295 \, \text{K}} = \frac{0.2112 \, \text{kJ}}{\text{s} \cdot \text{K}}
+\]
+
+\section*{d)}
+\begin{description}
+    \item[Graphical Description:] 
+    There is a closed loop diagram with four states labeled 1, 2, 3, and 4. State 1 is at the top left, state 2 at the top right, state 3 at the bottom right, and state 4 at the bottom left. The loop is traversed in a clockwise direction. The temperature at state 1 is labeled "T_{zu} = 20^\circ C", and the temperature at state 2 is labeled "T_{zu} = 70^\circ C". The heat transfer from state 1 to state 2 is labeled "Q_{aus,12} = 37.10^{-3} \, \text{kJ}".
+\end{description}
+
+\[
+\text{Problem: Holzstoffkreislauf System}
+\]
+
+\[
+\Delta S = m_2 s_2 - m_1 s_1 = \Delta m_2 s_{zu} + \frac{Q_{aus}}{T} - \sum \frac{W_{zu}}{T} \quad \text{mit} \quad m_2 = m_1
+\]
+
+\section*{e)}
+\[
+\Delta S = m_2 s_2 - m_1 s_1 = \Delta m_2 s_{zu} + \frac{Q_{aus}}{T}
+\]
+
+``````latex
+
+

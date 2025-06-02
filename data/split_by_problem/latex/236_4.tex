@@ -1,0 +1,127 @@
+
+``````latex
+
+
+\section*{Aufgabe 4}
+
+\subsection*{a) Zustandstabelle}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+Zustand & P & T & x \\
+\hline
+1 & $p_1 = p_2$ & & \\
+  & 1,5748 bar & & \\
+\hline
+2 & $p_2 = p_1$ & 257,15 K & 1 \\
+  & 1,5748 bar & & \\
+  & ges. Dampf & & \\
+\hline
+3 & 8 bar & & \\
+\hline
+4 & 8 bar & & 0 \\
+\hline
+\end{tabular}
+
+\begin{itemize}
+    \item[$\rightarrow$] $W_k = 25W$ adiabatic
+\end{itemize}
+
+\[
+T \text{ im Verdampfer} = T_i - 6K = 263,15K - 6K = \underline{257,15K}
+\]
+
+\[
+T_i \text{ aus Abb 5 abgelesen: Sublimationspkt} -20^\circ C = 253,15K
+\]
+
+\[
+T_i = 253,15K + 10K = \underline{263,15K}
+\]
+
+\subsection*{b) Energiebilanz um Verdichter, stat. Fließprozess mit $\dot{m}$}
+
+\[
+0 = \dot{m} \left[ h_e - h_a + \left( \frac{w_e^2 - w_a^2}{2} \right) + g \left( z_e - z_a \right) \right] + Q - W
+\]
+
+\[
+0 = \dot{m} \left[ h_2 - h_3 \right] + Q - W \rightarrow \dot{m} = \frac{W}{h_2 - h_3}
+\]
+
+``````latex
+
+
+\begin{enumerate}
+    \item[(4)] b) \( T_2 = \text{Temp im Verdampfer} = 257,15 \, \text{K} \)
+    
+    aus Abb. 5 abgelesen (siehe Seite 4)
+    
+    \[
+    \text{Druck } p_2 \text{ aus Tab A-10 bei } 257,15 \, \text{K} = -16^\circ \text{C}
+    \]
+    
+    \[
+    p_2 = 1,5748 \, \text{bar}
+    \]
+    
+    \[
+    \text{Druck } p_2 \text{ aus Tab A-12 bei } -16^\circ \text{C}
+    \]
+    
+    \(\rightarrow\) Dampf gesättigt \(\rightarrow\) interpoliert zw.
+    
+    \( T_{\text{sat}} = -18,8^\circ \text{C} \) \& \( T_{\text{sat}} = -12,73^\circ \text{C} \)
+    
+    Interpoliere nach Formel:
+    
+    \[
+    y = y_1 + \frac{y_2 - y_1}{x_2 - x_1} (x - x_1)
+    \]
+    
+    \[
+    p_2 = 1,4 \, \text{bar} + \frac{1,8 \, \text{bar} - 1,4 \, \text{bar}}{-12,73^\circ \text{C} + 18,8^\circ \text{C}} (-16^\circ \text{C} + 18,8^\circ \text{C}) = 1,58 \, \text{bar}
+    \]
+    
+    \[
+    h_2 = h_g \text{ aus Tab A-11 interpoliert für } 1,58 \, \text{bar}
+    \]
+    
+    \[
+    h_2 = 237,77 \, \frac{\text{kJ}}{\text{kg}}
+    \]
+    
+    \item[(a)] \( p \)
+    
+    \begin{description}
+        \item[Graph 1:] A graph with \( p \) [mbar] on the y-axis and \( T \) [°C] on the x-axis. The graph shows a curve that starts at the bottom left, rises steeply, then levels off, and finally rises steeply again. There are two points marked on the curve, labeled (i) and (ii), connected by a horizontal line labeled "isobar".
+        
+        \item[Graph 2:] A graph with \( p \) [mbar] on the y-axis and \( T \) [°C] on the x-axis. The graph shows a curve that starts at the bottom left, rises to a peak, and then falls back down. There are two points marked on the curve, labeled (i) at the peak and (ii) at the bottom left.
+    \end{description}
+\end{enumerate}
+
+``````latex
+
+
+\section*{Aufgabe 4}
+
+\subsection*{d)}
+\begin{equation*}
+    E_c = \frac{\dot{Q}_{\text{zul}}}{\left| \dot{W}_t \right|} = \frac{\dot{Q}_{\text{zul}}}{\left| \dot{Q}_{\text{ab}} - \dot{Q}_{\text{zul}} \right|} = \frac{\dot{Q}_{\text{Z1}}}{\dot{Q}_{\text{ab}}}
+\end{equation*}
+
+\begin{equation*}
+    E_c = \left| \frac{\dot{Q}_k}{\dot{W}_k} \right| = \frac{\dot{m}_{\text{R134a}} \left[ h_2 - h_1 \right]}{28 \, \text{W}}
+\end{equation*}
+
+\subsection*{Energiebilanz Verdampfer}
+\begin{equation*}
+    0 = \dot{m} \left[ h_1 - h_2 \right] + \dot{Q}_c
+\end{equation*}
+
+\begin{equation*}
+    \dot{Q}_c = \dot{m} \left[ h_2 - h_1 \right]
+\end{equation*}
+
+\subsection*{e)}
+```

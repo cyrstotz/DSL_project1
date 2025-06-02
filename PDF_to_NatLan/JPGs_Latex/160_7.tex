@@ -1,0 +1,67 @@
+TASK 3b  
+The mass of the ice-water mixture (EW) is equal to the mass of the gas:  
+\[
+m_{g,1} = m_{g,2} = 3.422 \, \text{g}
+\]  
+
+Since the ice-water mixture can be treated as water in equilibrium with vapor, and \( x_2 > 0 \), the temperature of the ice-water mixture in state 2 is:  
+\[
+T_{\text{EW},2} = T_{\text{EW},1} = 0^\circ\text{C}
+\]  
+
+For thermodynamic equilibrium, the gas temperature must also equal the ice-water temperature:  
+\[
+T_{g,2} = T_{\text{EW},2} = 0^\circ\text{C}
+\]  
+
+---
+
+TASK 3c  
+The system is modeled as a piston-cylinder system, focusing on the gas.  
+
+The energy balance is given by:  
+\[
+\Delta E = E_2 - E_1 = Q - W_V
+\]  
+where kinetic and potential energy are neglected.  
+
+Using the specific energy equation:  
+\[
+m_g (u_2 - u_1) = Q - W_V
+\]  
+and substituting \( u_2 - u_1 = c_V (T_2 - T_1) \), the heat transfer \( Q \) becomes:  
+\[
+Q = m_g c_V (T_2 - T_1) + W_V
+\]  
+
+The work done by the gas is expressed as:  
+\[
+W_V = V_2 p_g - V_1 p_g = p_g (V_2 - V_1)
+\]  
+
+The volume \( V_2 \) is calculated using the ideal gas law:  
+\[
+V_2 = \frac{m_g R T_2}{p_2}
+\]  
+Substituting values:  
+\[
+V_2 = \frac{0.003422 \, \text{kg} \cdot 0.166 \cdot 10^3 \, \frac{\text{J}}{\text{kg·K}} \cdot (273.15 \, \text{K})}{1.4 \cdot 10^5 \, \frac{\text{N}}{\text{m}^2}} = 0.000411 \, \text{m}^3
+\]  
+
+The work done is then:  
+\[
+W_V = 1.4 \cdot 10^5 \, \frac{\text{N}}{\text{m}^2} \cdot (0.000411 \, \text{m}^3 - 3.14 \cdot 10^{-3} \, \text{m}^3) = -284.187 \, \text{J}
+\]  
+
+The heat transfer \( Q_{12} \) is calculated as:  
+\[
+Q_{12} = m_g c_V (T_2 - T_1) + W_V
+\]  
+Substituting values:  
+\[
+Q_{12} = 3.422 \cdot 10^{-3} \, \text{kg} \cdot 0.633 \cdot 10^3 \, \frac{\text{J}}{\text{kg·K}} \cdot (273.15 - 500 + 273.15) \, \text{K} - 284.187 \, \text{J}
+\]  
+\[
+Q_{12} = -1367.2484 \, \text{J} \approx -1.367 \, \text{kJ}
+\]  
+

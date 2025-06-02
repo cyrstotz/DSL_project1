@@ -1,0 +1,28 @@
+(*) State 2 is a thermodynamic equilibrium, i.e., T_g2 = T_EW,2.  
+x_ice,2 > 0 and x_ice,2 ≠ 1 must hold.  
+T_EW,2 equals T_EW,1, i.e., T_g2 = 0°C.
+
+Consider the energy balance around the gas:  
+Closed system implies that the change in energy (ΔE) equals the heat transfer (Q12) minus the work done (Wv).  
+
+For an isobaric process:  
+Pressure of gas (pg) equals initial pressure (pg1).  
+Work done (Wv) equals the integral of pressure times the change in volume (∫pdV), which simplifies to:  
+Wv = pg1(V2 - V1).  
+
+For an ideal gas:  
+pg1V1/Tg1 = pg1V2/Tg2.  
+Thus, V2 = V1(Tg2/Tg1).  
+
+Substituting values:  
+V2 = 3.14 × (273.153 / 773.15) × 10^-3 = 1.10936 × 10^-3 m^3.  
+
+Calculating work done (Wv):  
+Wv = 1.5 × 10^5 × (1.10936 - 3.14 × 10^-3) = -3.04596 × 10^2 J.  
+
+Change in energy (ΔE):  
+ΔE = mg × cv × (Tg2 - Tg1).  
+
+For an ideal gas:  
+Q12 = ΔE + Wv = 3.6 × 10^-3 × 0.633 × (273.153 - 773.15) - (-3.04596 × 10^2).  
+Q12 = -1443.99 J.

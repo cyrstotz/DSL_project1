@@ -1,0 +1,73 @@
+TASK 1e  
+The entropy at the final state, \( S_{\text{f}} \), is calculated using the temperature \( T = 70^\circ\text{C} \):  
+\[
+S_{\text{f}}(T = 70^\circ\text{C}) = 0.9554 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+The entropy production rate, \( \dot{S}_{\text{gen}} \), is determined as:  
+\[
+\dot{S}_{\text{gen}} = \frac{58.886 \, \text{kW}}{293.15 \, \text{K}} + 0.3 \, \frac{\text{kg}}{\text{s}} \left( 1.3379 \, \frac{\text{kJ}}{\text{kg·K}} - 0.9554 \, \frac{\text{kJ}}{\text{kg·K}} \right)
+\]  
+\[
+\dot{S}_{\text{gen}} = \frac{100 \, \text{kW}}{371.15 \, \text{K}}
+\]  
+\[
+\dot{S}_{\text{gen}} = 0.096 \, \frac{\text{kW}}{\text{K}}
+\]
+
+---
+
+TASK 1d  
+Energy balance for the semi-open system is expressed as:  
+\[
+0 = \Delta m_{12} \left[ h_2 - h_1 \right] - Q_{\text{out},12}
+\]
+
+Rearranging for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = \frac{Q_{\text{out},12}}{h_2 - h_1}
+\]
+
+Using enthalpy values from Table A-2:  
+\[
+h_1 = h_f(20^\circ\text{C}) = 83.96 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_2 = h_f(70^\circ\text{C}) + x_D \left( h_g(70^\circ\text{C}) - h_f(70^\circ\text{C}) \right)
+\]  
+\[
+h_2 = 292.98 \, \frac{\text{kJ}}{\text{kg}} + 0.005 \left( 2662.8 \, \frac{\text{kJ}}{\text{kg}} - 292.98 \, \frac{\text{kJ}}{\text{kg}} \right)
+\]  
+\[
+h_2 = 304.65 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+---
+
+TASK 1e  
+The entropy change, \( \Delta S_{12} \), is calculated as:  
+\[
+\Delta S_{12} = S_2 - S_1 = m_2 S_2 - m_1 S_1 = \Delta m_{12} \Delta S_{12}
+\]
+
+For the semi-open system:  
+\[
+S_1 = S_f(20^\circ\text{C}) = 0.2966 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+S_2 = S_f(70^\circ\text{C}) + x_D \left( S_g(70^\circ\text{C}) - S_f(70^\circ\text{C}) \right)
+\]  
+\[
+S_2 = 0.9554 \, \frac{\text{kJ}}{\text{kg·K}} + 0.005 \left( 7.7353 \, \frac{\text{kJ}}{\text{kg·K}} - 0.9554 \, \frac{\text{kJ}}{\text{kg·K}} \right)
+\]  
+\[
+S_2 = 0.9889 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+The entropy change is then:  
+\[
+\Delta S_{12} = 3600 \, \text{kg} \cdot (0.9889 - 0.2966) \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+\Delta S_{12} = 2492.29 \, \frac{\text{kJ}}{\text{K}}
+\]

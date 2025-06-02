@@ -1,0 +1,52 @@
+TASK 2a  
+The diagram is a qualitative representation of the jet engine process in a \( T \)-\( s \) diagram. The temperature \( T \) is plotted on the vertical axis (in Kelvin), and the entropy \( s \) is plotted on the horizontal axis (in \( \text{kJ}/\text{kg·K} \)). The process includes labeled states:  
+- State 0: Ambient conditions (\( p_0 = p_6 \)).  
+- State 1: Pre-compressor (\( p_A \)).  
+- State 2: Post-compressor (\( p_2 = p_3 \)).  
+- State 3: Combustion chamber (\( p_2 = p_3 \)).  
+- State 4: Post-turbine (\( p_4 \)).  
+- State 5: Mixer (\( p_5 \)).  
+- State 6: Nozzle exit (\( p_0 = p_6 \)).  
+
+The diagram shows isobars for \( p_0 \), \( p_A \), \( p_2 = p_3 \), and \( p_5 \), with arrows indicating the direction of the process flow.  
+
+---
+
+TASK 2b  
+To determine \( w_6 \) and \( T_6 \):  
+
+The temperature at state 6 is calculated using the isentropic relation:  
+\[
+T_6 = T_5 \left( \frac{p_0}{p_5} \right)^{\frac{n-1}{n}}
+\]  
+Substituting values:  
+\[
+T_6 = 431.9 \, \text{K} \left( \frac{0.191 \, \text{bar}}{0.5 \, \text{bar}} \right)^{\frac{1.4-1}{1.4}} = 328 \, \text{K}
+\]  
+where \( n = 1.4 \).  
+
+The outlet velocity \( w_6 \) is determined using the energy balance:  
+\[
+0 = \dot{m}_{\text{gas}} \left( h_5 - h_6 + \frac{w_5^2}{2} - \frac{w_6^2}{2} \right)
+\]  
+Simplifying:  
+\[
+0 = h_5 - h_6 + \frac{w_5^2}{2} - \frac{w_6^2}{2}
+\]  
+Rearranging for \( w_6 \):  
+\[
+w_6 = \sqrt{2 \left( h_5 - h_6 + \frac{w_5^2}{2} \right)}
+\]  
+Substituting \( h_5 - h_6 = c_p (T_5 - T_6) \):  
+\[
+w_6 = \sqrt{2 \left( c_p (T_5 - T_6) + \frac{w_5^2}{2} \right)}
+\]  
+Using \( c_p = 1.006 \, \text{kJ/kg·K} \), \( T_5 = 431.9 \, \text{K} \), \( T_6 = 328 \, \text{K} \), and \( w_5 = 220 \, \text{m/s} \):  
+\[
+w_6 = \sqrt{2 \left( 1.006 \cdot (431.9 - 328) + \frac{220^2}{2} \right)} = 507.4 \, \text{m/s}
+\]  
+
+Final results:  
+\[
+T_6 = 328 \, \text{K}, \quad w_6 = 507.4 \, \text{m/s}
+\]

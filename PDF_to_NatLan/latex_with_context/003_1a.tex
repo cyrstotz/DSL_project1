@@ -1,0 +1,25 @@
+The energy balance equation is written as:  
+\[
+\frac{\partial E}{\partial t} = \sum_i \dot{m}_i(t) \left[ h_i(t) + \frac{v_i^2(t)}{2} + g z_i(t) \right] + \sum_j \dot{Q}_j(t) - \sum_k \dot{W}_k(t)
+\]  
+In steady-state conditions, this simplifies to:  
+\[
+0 = \dot{m} (h_e - h_a) + \dot{Q}_R - \dot{Q}_{\text{aus}}
+\]  
+Rearranging for the heat flow removed by the coolant:  
+\[
+\dot{Q}_{\text{aus}} = \dot{m} (h_e - h_a) + \dot{Q}_R
+\]  
+
+The enthalpy values are obtained from water tables:  
+\[
+h_e[100^\circ\text{C}] = 292.84 \, \text{kJ/kg} \quad \text{(from Table A-2)}
+\]  
+\[
+h_a[70^\circ\text{C}] = 419.04 \, \text{kJ/kg} \quad \text{(from Table A-2)}
+\]  
+
+Substituting the values:  
+\[
+\dot{Q}_{\text{aus}} = 0.3 \, \text{kg/s} \left[ 292.84 \, \text{kJ/kg} - 419.04 \, \text{kJ/kg} \right] + 100 \, \text{kW} = 62.182 \, \text{kW}
+\]

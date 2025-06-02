@@ -1,0 +1,57 @@
+TASK 1a  
+The energy balance for the reactor is written as:  
+\[
+0 = \dot{m}_{\text{in}} (h_e - h_a) + \dot{Q}_{\text{as}}
+\]  
+The heat flow removed by the coolant, \( \dot{Q}_{\text{as}} \), is calculated as:  
+\[
+\dot{Q}_{\text{as}} = \dot{m} (h_a - h_e)
+\]  
+Substituting values:  
+\[
+\dot{Q}_{\text{as}} = 0.3 \, \frac{\text{kg}}{\text{s}} \cdot (1407.6 \, \frac{\text{kJ}}{\text{kg}} - 1269.7 \, \frac{\text{kJ}}{\text{kg}})
+\]  
+\[
+\dot{Q}_{\text{as}} = 42.18 \, \text{kW}
+\]  
+
+The total heat flow removed by the coolant is:  
+\[
+\dot{Q}_{\text{out}} = \dot{Q}_R - \dot{Q}_{\text{as}}
+\]  
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = 100 \, \text{kW} - 42.18 \, \text{kW} = 57.82 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is calculated as:  
+\[
+T = \frac{\int_{S_a}^{S_e} T \, dS}{S_a - S_e} = \frac{h_a - h_e}{S_a - S_e}
+\]  
+Using the equation:  
+\[
+T = \frac{q (T_a - T_e) + v (p_a - p_e)}{q \ln \left( \frac{T_a}{T_e} \right)}
+\]  
+Substituting values:  
+\[
+T = \frac{298.15 \, \text{K} - 288.15 \, \text{K}}{\ln \left( \frac{298.15}{288.15} \right)}
+\]  
+\[
+T = 293.12 \, \text{K}
+\]  
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) is calculated using the entropy balance:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{out}}}{T_R} + \frac{\dot{Q}_{\text{out}}}{T}
+\]  
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = \frac{57.82 \, \text{kW}}{393.15 \, \text{K}} - \frac{57.82 \, \text{kW}}{293.12 \, \text{K}}
+\]  
+\[
+\dot{S}_{\text{gen}} = 42.6 \, \frac{\text{J}}{\text{K}}
+\]  
+
+No diagrams or figures are present on this page.

@@ -1,0 +1,24 @@
+The thermodynamic mean temperature of the coolant (\( T_{\text{KF}} \)) is calculated using the integral:  
+\[
+T_{\text{KF}} = \frac{\int T \, dS}{S_{\text{out}} - S_{\text{in}}}
+\]  
+
+For an ideal liquid:  
+\[
+S = S_e + c_p \ln \left( \frac{T}{T_e} \right)
+\]  
+
+Substituting into the integral:  
+\[
+T_{\text{KF}} = T_e \frac{\int S_e e^{-\frac{S}{c_p}} \, dS}{c_p \ln \left( \frac{T_{\text{out}}}{T_{\text{in}}} \right)}
+\]  
+
+Simplifying further:  
+\[
+T = T_e e^{\frac{S - S_e}{c_p}}
+\]  
+
+This expression relates the temperature to entropy changes. Further simplifications or numerical evaluations are not shown.  
+
+---  
+No diagrams or figures are present on this page.

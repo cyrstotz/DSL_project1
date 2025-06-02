@@ -1,0 +1,69 @@
+TASK 2a  
+Two diagrams are drawn to represent the thermodynamic processes in a jet engine.  
+
+1. **First diagram**:  
+   - The axes are labeled as \( T \) (temperature) and \( S \) (entropy).  
+   - The process starts at point 1 and follows an isentropic path to point 2.  
+   - From point 2, the process moves to point 3 along an isobaric path.  
+   - The process then transitions to point 4 via an adiabatic path.  
+   - From point 4, the process moves to point 5 along another isobaric path.  
+   - Finally, the process transitions to point 6 along an isentropic path.  
+   - The diagram includes annotations for "isentrop" (isentropic) and "isobar" (isobaric) processes.  
+
+2. **Second diagram**:  
+   - The axes are labeled as \( T \) (temperature) and \( S \) (entropy).  
+   - The process starts at point 1 and follows an isentropic path to point 2.  
+   - From point 2, the process moves to point 3 along an isobaric path.  
+   - The process transitions to point 4 via an adiabatic path.  
+   - From point 4, the process moves to point 5 along another isobaric path.  
+   - Finally, the process transitions to point 6 along an isentropic path.  
+   - The diagram includes annotations for "isentrop" (isentropic) and "isobar" (isobaric) processes.  
+
+---
+
+TASK 2b  
+The first law of thermodynamics is applied to the jet engine.  
+
+\[
+0 = \dot{m} \left( h_e - h_a + \frac{w_e^2 - w_a^2}{2} \right) + \dot{Q} - \dot{W}
+\]
+
+Simplified to:  
+\[
+0 = h_o - h_s + \frac{w_{\text{out}}^2 - w_0^2}{2}
+\]
+
+The equation for work output:  
+\[
+w_c = z \left( h_o - h_s \right) + w_{\text{out}}^2
+\]
+
+The enthalpy difference is expressed as:  
+\[
+h_o - h_s = \int_{T_0}^{T_o} c_p(T) \, dT
+\]
+
+To determine \( T_6 \):  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}}
+\]
+
+Substituting values:  
+\[
+T_6 = 431.8 \, \text{K} \left( \frac{0.191 \cdot 10^5 \, \text{Pa}}{0.5 \cdot 10^5 \, \text{Pa}} \right)^{\frac{0.4}{1.4}}
+\]
+
+Result:  
+\[
+T_6 = 328.075 \, \text{K}
+\]
+
+The enthalpy difference \( h_6 - h_o \):  
+\[
+h_6 - h_o = c_p \left( T_6 - T_0 \right) = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \left( 328.075 \, \text{K} - 243 \, \text{K} \right)
+\]
+
+Result:  
+\[
+h_6 - h_o = 85.41355 \, \frac{\text{kJ}}{\text{kg}}
+\]

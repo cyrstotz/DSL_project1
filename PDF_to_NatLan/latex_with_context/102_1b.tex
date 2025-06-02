@@ -1,0 +1,31 @@
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is calculated.  
+
+### Coolant Properties  
+The inlet and outlet temperatures of the coolant are:  
+\[
+T_{\text{KF,in}} = 288.15 \, \text{K}, \quad T_{\text{KF,out}} = 298.15 \, \text{K}
+\]  
+
+Assuming the coolant behaves as an ideal liquid, the mean temperature is derived using the entropy relation:  
+\[
+T_{\text{KF}} = \frac{\int T \, ds}{s_a - s_e}
+\]  
+
+For an ideal liquid:  
+\[
+T_{\text{KF}} = \frac{\int_{T_{\text{KF,in}}}^{T_{\text{KF,out}}} T \, dT}{T_{\text{KF,out}} - T_{\text{KF,in}}}
+\]  
+
+Substituting the values:  
+\[
+T_{\text{KF}} = \frac{\int_{288.15}^{298.15} T \, dT}{298.15 - 288.15}
+\]  
+
+This integral simplifies to:  
+\[
+T_{\text{KF}} = \frac{1}{10} \cdot \int_{288.15}^{298.15} T \, dT
+\]  
+
+The result is the mean temperature of the coolant.  
+
+No diagrams or figures are present on this page.

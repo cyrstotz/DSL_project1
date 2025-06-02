@@ -1,0 +1,75 @@
+TASK 2a  
+Given:  
+- \( w_{\text{air}} = 200 \, \text{m/s} \)  
+- \( c_p = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \)  
+- \( \kappa = 1.4 \)  
+
+Table of states:  
+\[
+\begin{array}{|c|c|c|c|c|c|}
+\hline
+\text{State} & T & p & Q & W & h & s \\
+\hline
+0 & -30^\circ\text{C} & 0.191 \, \text{bar} & 0 & 0 & h_0 & s_0 \\
+1 & & 0.5 \, \text{bar} & & & h_1 & s_1 \\
+2 & & & & & h_2 & s_2 \\
+3 & & & & & h_3 & s_3 \\
+4 & & 0.5 \, \text{bar} & & & h_4 & s_4 \\
+5 & 431.9 \, \text{K} & 0.5 \, \text{bar} & 0 & 0 & h_5 & s_5 \\
+6 & 293.9 \, \text{K} & 0.191 \, \text{bar} & & & h_6 & s_6 \\
+\hline
+\end{array}
+\]
+
+Additional data:  
+- \( \frac{\dot{m}_M}{\dot{m}_K} = 5.293 \)  
+- \( \bar{T}_B = 1289 \, \text{K} \)  
+- \( w_5 = 220 \, \text{m/s} \)  
+
+---
+
+TASK 2b  
+a) A qualitative \( T \)-\( s \) diagram is drawn.  
+- The diagram shows temperature \( T \) on the vertical axis (in Kelvin) and entropy \( s \) on the horizontal axis (in \( \frac{\text{kJ}}{\text{kg·K}} \)).  
+- States 0 through 6 are labeled along the process curve.  
+- The process includes compression, combustion, expansion, and mixing.  
+- Isobars are indicated with dashed lines for \( p_0 = 0.191 \, \text{bar} \) and \( p_5 = 0.5 \, \text{bar} \).  
+
+---
+
+TASK 2c  
+Given:  
+- \( w_6 \) and \( T_6 \)  
+
+To calculate \( T_6 \), use the isentropic relation:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substitute \( p_6 = p_0 \), \( p_5 = 0.5 \, \text{bar} \), \( T_5 = 431.9 \, \text{K} \), and \( \kappa = 1.4 \):  
+\[
+T_6 = 293.9 \, \text{K}
+\]  
+
+Energy balance for \( w_6 \):  
+\[
+w_6 = \sqrt{2 \left( h_5 - h_6 \right)}
+\]  
+
+---
+
+TASK 2d  
+Energy balance equation for the engine:  
+\[
+\Delta ex_{\text{flow}} = \sum \left( m_i \cdot h_i + \frac{1}{2} w_i^2 \right) - \sum \left( m_e \cdot h_e + \frac{1}{2} w_e^2 \right) - \sum \dot{W}
+\]  
+Simplified for steady-state flow:  
+\[
+\Delta ex_{\text{flow}} = \dot{m} \left( h_6 - h_0 + \frac{1}{2} w_6^2 - \frac{1}{2} w_0^2 \right) - \dot{W}
+\]  
+
+No further numerical values are provided for calculation.  
+
+---
+
+Description of Diagram:  
+The \( T \)-\( s \) diagram visually represents the thermodynamic process of the jet engine, including compression, combustion, expansion, and mixing. States 0 through 6 are marked along the curve, with dashed lines indicating isobars at \( p_0 = 0.191 \, \text{bar} \) and \( p_5 = 0.5 \, \text{bar} \). The entropy increases during combustion and decreases during expansion.

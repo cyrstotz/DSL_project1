@@ -1,0 +1,171 @@
+
+``````latex
+
+
+\section*{Aufgabe 3}
+
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ & Oberes Abteil & & & & \\
+\hline
+T & V & V & m & Phase & \\
+\hline
+Z1 & 0°C & V1 & 0.1kg & x = \frac{m_{weis}}{m_{EW}} = 0.1 & \\
+\hline
+Z2 & & V2 & & & \\
+\hline
+\end{tabular}
+
+\begin{itemize}
+    \item - EW anmischen.
+\end{itemize}
+
+\begin{tabular}{|c|c|c|}
+\hline
+ & Unteres Abteil & \\
+\hline
+T & V_{s1} & \\
+\hline
+Z1 & 500°C & 0.0034 \, \text{m}^3 \\
+\hline
+Z2 & 0.003°C & \\
+\hline
+\end{tabular}
+
+\begin{itemize}
+    \item perf. Gas, C_v = \cancel{0.63 \, \frac{L^2}{kgK}}
+    \item M_0 = 50 \, \frac{L^2}{kgK}
+\end{itemize}
+
+\begin{itemize}
+    \item Koben m_k = 32 \, \text{kg}, D = 10 \, \text{cm} = 0.1 \, \text{m}
+    \item p_{amb} = 1 \, \text{bar}
+\end{itemize}
+
+\begin{itemize}
+    \item Quasi
+\end{itemize}
+
+``````latex
+
+
+\section*{Aufgabe 3: 3.2}
+
+\subsection*{a)}
+
+\[
+p_A \vec{V}_A = m_k R \vec{T}_1
+\]
+
+\[
+\begin{array}{c}
+\downarrow \\
+m_{EW} \cdot g
+\end{array}
+\quad
+\begin{array}{c}
+\downarrow \\
+m_k \cdot g
+\end{array}
+\quad
+\begin{array}{c}
+\downarrow \\
+p_0 \cdot A
+\end{array}
+\quad
+\begin{array}{c}
+\downarrow \\
+p_A \cdot A
+\end{array}
+\]
+
+\[
+p = \frac{F}{A}
+\]
+
+\[
+A = \pi r^2 = \pi \left( \frac{0.1}{2} \, m \right)^2 = 0.007854 \, m^2
+\]
+
+\subsubsection*{KGW:}
+
+\[
+m_{EW} \cdot g + m_k \cdot g + p_0 \cdot A = p_1 \cdot A
+\]
+
+\[
+p_1 = \frac{0.4 \, kg \cdot 9.81 \, m/s^2 + 32 \, kg \cdot 9.81 \, m/s^2 + 10^5 \, Pa \cdot 0.007854 \, m^2}{0.007854 \, m^2} = 1.4 \, bar
+\]
+
+\[
+W_{g1} = \frac{p_0 V_{A3}}{R \cdot T_1} = \frac{1.4 \cdot 10^5 \, Pa \cdot 0.00314 \, m^3}{166.25 \, \frac{J}{kg \cdot K} \cdot (500 + 273.15) \, K}
+\]
+
+\[
+R = \frac{\mathcal{R}}{M} = \frac{8.314 \, \frac{J}{mol \cdot K}}{50 \, \frac{kg}{kmol}} = 166.28 \, \frac{J}{kg \cdot K}
+\]
+
+\[
+m = \frac{32}{9.81} = 3.449 \, kg
+\]
+
+\subsection*{b)}
+
+Der Druck ist derselbe wie im Zustand 1, da sich die auf den Kolben wirkenden Kräfte nicht verändert haben. \( p_{g2} = p_{g3} = 1.4 \, bar \).
+
+Die Temperatur hat sich verändert, da Energie aufgenommen wurde, um das Eiswasser zum Schmelzen zu bringen.
+
+\[
+C_v = 0.633 \, \frac{kJ}{kg \cdot K}
+\]
+
+\[
+C_p = R + C_v = 166.28 \, \frac{J}{kg \cdot K} + 633 \, \frac{J}{kg \cdot K} = 799.28 \, \frac{J}{kg \cdot K}
+\]
+
+``````latex
+
+
+\section*{Aufgabe 3: 3.3}
+
+\subsection*{c)}
+
+\begin{align*}
+\Delta E &= \dot{Q}_{12} - \dot{W}_{12} \\
+m_{g2} \cdot U_2 - m_{g1} \cdot U_1 &= \dot{Q}_{12} - W_{A2} \\
+W_{A2} &= \int pdV \\
+&= \frac{R \cdot (T_{2g} - T_{A2})}{1 - n} \\
+&= \frac{166.25 \frac{J}{kgK} (273.15K - 773.15K)}{1 - 1.263} \\
+&= 316.12 \frac{kJ}{kg}
+\end{align*}
+
+\begin{align*}
+n &= \frac{c_p}{c_v} = \frac{0.79528}{0.633} \approx 1.263
+\end{align*}
+
+\begin{align*}
+Q_{12} &= \Delta E + W_{A2} = m_{g} \left( T_{2g} - T_{g} \right) (c_v) V \\
+&= 0.00349 \left( 273.15K - 773.15K \right) \cdot 0.633 \frac{kJ}{kgK} + 316.12 \frac{kJ}{kg} \\
+&= -315.12 \frac{kJ}{kg}
+\end{align*}
+
+\subsection*{d)}
+
+\begin{align*}
+\text{im Zustand 2:} \\
+m_{mis} (U_2 - U_A) &= 0 \\
+U_2 &= U_A \\
+U_A &= U_{Fl} + 0.6 \left( U_{mis} - U_{Fl} \right) \\
+&= -0.045 \frac{kJ}{kg} + 0.6 \left( -333.45 \frac{kJ}{kg} + 0.045 \frac{kJ}{kg} \right) \\
+&= -9.002 \frac{kJ}{kg}
+\end{align*}
+
+\begin{align*}
+U_{A, mis} &= m_{Fl} \cdot 0.6 = 0.1kg \cdot 0.6 = 0.06kg \\
+m_{A2, mis} &= 0.04kg \\
+X &= \frac{m_{Fl}}{m_{Fl} + m_{Fr}}
+\end{align*}
+
+``````latex
+
+

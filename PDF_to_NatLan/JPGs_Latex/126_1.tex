@@ -1,0 +1,75 @@
+TASK 1d  
+The first law of thermodynamics is applied to determine the mass \( \Delta m_{12} \) added to the reactor during cooling. The energy balance is expressed as:  
+\[
+\Delta E = \Delta m_{12} h + \dot{Q}
+\]  
+This can be rearranged as:  
+\[
+m_2 u_2 - m_1 u_1 = \Delta m_{12} h + \dot{Q}
+\]  
+Solving for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = \frac{1}{h} (m_2 u_2 - m_1 u_1 - \dot{Q})
+\]  
+
+The enthalpy \( h \) at \( T_{\text{in,12}} = 20^\circ\text{C} \) is given as:  
+\[
+h = h_f(20^\circ\text{C}) = 83.96 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A2)}
+\]  
+
+The heat released during cooling is:  
+\[
+\dot{Q} = -35 \, \text{MJ}
+\]  
+
+The internal energy values are calculated from the water tables:  
+\[
+u_2 = u_f(T_2) = 292.15 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A2)}
+\]  
+\[
+u_1 = u_f(T_1) = 418.94 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A2)}
+\]  
+
+The reactor mass values are:  
+\[
+m_1 = 5755 \, \text{kg}, \quad m_2 = m_1 + \Delta m
+\]  
+
+Substituting these values into the equation:  
+\[
+\Delta m_{12} = \frac{1}{h} \left( m_2 u_2 - m_1 u_1 - \dot{Q} \right)
+\]  
+\[
+\Delta m_{12} = \frac{1}{83.96} \left( 5755 \cdot 292.15 - 5755 \cdot 418.94 - (-35 \cdot 10^3) \right)
+\]  
+\[
+\Delta m_{12} = 3969.9 \, \text{kg}
+\]  
+
+---
+
+TASK 1e  
+The entropy change \( \Delta S_{12} \) of the reactor contents is calculated as:  
+\[
+\Delta S = S_2 - S_1
+\]  
+Using the mass and specific entropy values:  
+\[
+m_2 s_2 - m_1 s_1
+\]  
+
+The specific entropy values are:  
+\[
+s_2 = s_f(T_2) = 0.9590 \, \frac{\text{kJ}}{\text{kg·K}} \quad \text{(from Table A2)}
+\]  
+\[
+s_1 = s_f(T_1) = 1.3069 \, \frac{\text{kJ}}{\text{kg·K}} \quad \text{(from Table A2)}
+\]  
+
+Substituting the mass and entropy values:  
+\[
+\Delta S = (5755 + 3969.9) \cdot 0.9590 - 5755 \cdot 1.3069
+\]  
+\[
+\Delta S = 1025.18 \, \frac{\text{kJ}}{\text{K}}
+\]  

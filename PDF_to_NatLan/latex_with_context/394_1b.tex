@@ -1,0 +1,21 @@
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is derived using the entropy relation:  
+\[
+T dS = dq
+\]  
+
+The mean temperature is calculated as:  
+\[
+T_{\text{KF}} = \frac{\int_{1}^{2} T dS}{s_2 - s_1} = \frac{\int_{1}^{2} dq}{c_{\text{KF}} \ln\left(\frac{T_2}{T_1}\right)} = \frac{q_{12}}{c_{\text{KF}} \ln\left(\frac{T_2}{T_1}\right)} = \frac{h_2 - h_1}{c_{\text{KF}} \ln\left(\frac{T_2}{T_1}\right)}
+\]  
+
+From the energy balance:  
+\[
+\frac{dE}{dt} = \dot{m} (h_2 - h_1) + \dot{Q}_R - \dot{Q}_{\text{out}} - \dot{W}_{\text{in}}
+\]  
+
+Thus:  
+\[
+h_2 - h_1 = -\frac{\dot{Q}_{\text{out}}}{\dot{m}}
+\]  
+
+---

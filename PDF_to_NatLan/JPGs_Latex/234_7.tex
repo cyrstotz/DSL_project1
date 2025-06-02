@@ -1,0 +1,55 @@
+TASK 4b  
+The enthalpy at state 3 is given as \( h_3 = h(8 \, \text{bar}, s = 0.9298 \, \frac{\text{kJ}}{\text{kg·K}}) \), which can be found in Table A-12.  
+
+The enthalpy at state 5 is \( h_5 = 0.9066 \, \frac{\text{kJ}}{\text{kg·K}} \), and \( h_3(s = 0.9298 \, \frac{\text{kJ}}{\text{kg·K}}) \) is calculated as:  
+\[
+h_3 = \frac{273.66 \, \frac{\text{kJ}}{\text{kg}} - 264.15 \, \frac{\text{kJ}}{\text{kg}}}{0.9398 \, \frac{\text{kJ}}{\text{kg·K}} - 0.9066 \, \frac{\text{kJ}}{\text{kg·K}}} \cdot (0.9298 \, \frac{\text{kJ}}{\text{kg·K}} - 0.9066 \, \frac{\text{kJ}}{\text{kg·K}}) + 264.15 \, \frac{\text{kJ}}{\text{kg}}  
+\]
+This results in \( h_3 = 273.66 \, \frac{\text{kJ}}{\text{kg}} \).  
+
+The mass flow rate of refrigerant \( \dot{m}_{\text{R134a}} \) is calculated as:  
+\[
+\dot{m}_{\text{R134a}} = \frac{-28 \cdot 10^{-3} \, \text{kW}}{h_2 - h_3} = \frac{-28 \cdot 10^{-3} \, \text{kW}}{273.66 \, \frac{\text{kJ}}{\text{kg}} - 264.15 \, \frac{\text{kJ}}{\text{kg}}} = 0.00383 \, \frac{\text{kg}}{\text{s}}
+\]
+This simplifies to \( \dot{m}_{\text{R134a}} = 3.0024 \, \frac{\text{kg}}{\text{h}} \).  
+
+---
+
+TASK 4c  
+For the isenthalpic throttling process:  
+\[
+h_4 = h_1
+\]
+The enthalpy at state 4 is \( h_4 = h_f(8 \, \text{bar}) = 93.42 \, \frac{\text{kJ}}{\text{kg}} \), which is found in Table A-11.  
+
+The vapor quality \( x_1 \) at state 1 is calculated as:  
+\[
+x_1 = \frac{h_1 - h_f(-16^\circ \text{C})}{h_g(-16^\circ \text{C}) - h_f(-16^\circ \text{C})} = \frac{93.42 \, \frac{\text{kJ}}{\text{kg}} - 29.3 \, \frac{\text{kJ}}{\text{kg}}}{237.74 \, \frac{\text{kJ}}{\text{kg}} - 29.3 \, \frac{\text{kJ}}{\text{kg}}}
+\]
+This results in \( x_1 = 0.3076 \).  
+
+---
+
+TASK 4d  
+The coefficient of performance \( \epsilon_K \) is calculated as:  
+\[
+\epsilon_K = \frac{|\dot{Q}_{\text{zul}}|}{|\dot{Q}_{\text{ab}} - \dot{Q}_{\text{zul}}|} = \frac{|\dot{Q}_{\text{in}}|}{|\dot{Q}_{\text{ab}} - \dot{Q}_{\text{in}}|} = \frac{|\dot{Q}_{12}|}{|\dot{Q}_{34} - \dot{Q}_{12}|}
+\]
+
+Using the energy balance for the steady-state flow process:  
+\[
+0 = \dot{m}(h_1 - h_2) + \dot{Q}_{12}
+\]
+\[
+\dot{Q}_{12} = \dot{m}(h_2 - h_1)
+\]
+Substituting values:  
+\[
+\dot{Q}_{12} = \dot{m}(237.74 \, \frac{\text{kJ}}{\text{kg}} - 93.42 \, \frac{\text{kJ}}{\text{kg}})
+\]
+
+For \( \dot{Q}_{34} \):  
+\[
+\dot{Q}_{34} = \dot{m}(h_4 - h_3)
+\]
+Finally, \( \epsilon_K = 5.465 \).  

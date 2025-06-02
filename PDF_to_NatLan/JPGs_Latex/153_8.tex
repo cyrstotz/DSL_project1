@@ -1,0 +1,52 @@
+TASK 4c  
+The temperature \( T_2 = -22^\circ \text{C} \) and the vapor quality \( x_2 = 4 \).  
+
+The pressure \( p_2 = 7.160 \, \text{bar} = p_1 \).  
+The pressure \( p_3 = p_4 = 8 \, \text{bar} \), and the vapor quality \( x_0 = 0 \).  
+
+The enthalpy \( h_2 \) is obtained from Table A10:  
+\[
+h_2 = 0.1580 \, \frac{\text{m}^3}{\text{kg}}
+\]  
+
+The heat transfer rate is given by:  
+\[
+\dot{Q} = \dot{m} \left[ h_1 - h_2 \right] + \dot{Q}_u
+\]  
+
+The enthalpy \( h_{01} \) is obtained from the table:  
+\[
+h_{01} = 0.8951 + 0.3 \, \frac{\text{m}^3}{\text{kg}}
+\]  
+
+The pressure \( p_1 = 7.160 \, \text{bar} \), and the enthalpy \( h_1 = 0.8954 \cdot 10^3 \, \frac{\text{m}^3}{\text{kg}} \).  
+
+The vapor quality \( x \) is calculated as:  
+\[
+x = \frac{h_1 - h_f}{h_g - h_f}
+\]  
+
+The enthalpy values \( h_f \) and \( h_g \) are interpolated as follows:  
+\[
+h_f (7.160 \, \text{bar}) = \frac{(7.160 \, \text{bar} - 7 \, \text{bar})}{(7.2 \, \text{bar} - 7 \, \text{bar})} \cdot \left[ h_f (7.2 \, \text{bar}) - h_f (7.0 \, \text{bar}) \right] + h_f (7.0 \, \text{bar})
+\]  
+
+\[
+h_g (7.160 \, \text{bar}) = \frac{(7.160 \, \text{bar} - 7 \, \text{bar})}{(7.2 \, \text{bar} - 7 \, \text{bar})} \cdot \left[ h_g (7.2 \, \text{bar}) - h_g (7.0 \, \text{bar}) \right] + h_g (7.0 \, \text{bar})
+\]  
+
+---
+
+TASK 4a  
+The coefficient of performance \( \epsilon \) is calculated as:  
+\[
+\epsilon = \frac{\dot{Q}_{\text{ab}}}{\dot{W}_K} = \frac{\dot{Q}_{\text{Zyl}}}{\dot{W}_K} = \frac{\dot{Q}_{\text{K}}}{\dot{Q}_{\text{ab}} - \dot{Q}_{\text{Zyl}}}
+\]  
+
+The heat transfer rates are defined as:  
+\[
+\dot{Q}_{\text{K}} = \dot{m} \left[ h_2 - h_3 \right]
+\]  
+\[
+\dot{Q}_{\text{ab}} = \dot{m} \left[ h_4 - h_3 \right]
+\]  

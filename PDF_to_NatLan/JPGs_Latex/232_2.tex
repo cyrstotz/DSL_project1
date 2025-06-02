@@ -1,0 +1,88 @@
+TASK 2a  
+The diagram is a qualitative representation of the jet engine process in a \( T \)-\( s \) diagram. The axes are labeled as follows:  
+- The horizontal axis represents entropy (\( s \)) in \( \text{kJ}/\text{kg·K} \).  
+- The vertical axis represents temperature (\( T \)) in Kelvin (\( \text{K} \)).  
+
+The process is divided into several states:  
+1. State 1 to 2: Adiabatic compression (isentropic).  
+2. State 2 to 3: Isobaric heat addition.  
+3. State 3 to 4: Adiabatic expansion (isentropic).  
+4. State 4 to 5: Mixing process.  
+5. State 5 to 6: Expansion through the nozzle.  
+
+The diagram includes labeled isobars and arrows indicating the transitions between states.  
+
+---
+
+TASK 2b  
+The steady-state energy balance for a mass stream is written as:  
+\[
+0 = \dot{m}_{\text{ges}} \left( h_5 - h_6 \right) + \frac{w_5^2 - w_6^2}{2} - \dot{W}_e
+\]  
+where \( pV = mRT \).  
+
+For the first sum balance:  
+\[
+0 = \dot{m}_K \left( h_2 - h_3 \right) + \dot{Q} - \dot{W}
+\]  
+Substituting \( h = cp(T_2 - T_3) \):  
+\[
+0 = \dot{m}_K \left( cp(T_2 - T_3) \right) + \frac{\dot{Q}}{\dot{m}_K}
+\]  
+
+For the nozzle:  
+\[
+0 = \dot{m}_{\text{ges}} \left( cp(T_1 - T_6) \right) + \frac{w_2^2 - w_6^2}{2}
+\]  
+
+The total mass flow is given by:  
+\[
+\dot{m}_{\text{ges}} = \dot{m}_K + \dot{m}_M
+\]  
+
+Using the isentropic relation:  
+\[
+\frac{T_2}{T_1} = \left( \frac{p_2}{p_1} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+where \( \kappa = \frac{c_p}{c_v} \).  
+
+The specific gas constant is calculated as:  
+\[
+R = c_p - c_v
+\]  
+Substituting values:  
+\[
+R = 1.006 - \frac{1.006}{1.4} = 0.287 \, \text{kJ/kg·K}
+\]  
+
+---
+
+TASK 2c  
+The mass-specific increase in flow exergy is calculated as:  
+\[
+\Delta ex_{\text{flow}} = h_6 - h_0 - T_0(S_6 - S_0) + \Delta ke
+\]  
+Substituting the specific enthalpy and entropy terms:  
+\[
+\Delta ex_{\text{flow}} = cp(T_6 - T_0) - T_0 \left( cp \ln \frac{T_6}{T_0} - R \ln \frac{p_6}{p_0} \right) + \Delta ke
+\]  
+
+For the kinetic energy term:  
+\[
+\Delta ke = \frac{w_6^2 - w_0^2}{2}
+\]  
+
+Substituting numerical values:  
+\[
+\Delta ex_{\text{flow}} = 1.006(340 - 243.15) - 243.15 \left( 1.006 \ln \frac{340}{243.15} - 0.287 \ln \frac{0.5}{0.191} \right) + \frac{570^2 - 200^2}{2 \cdot 1000}
+\]  
+
+After calculation:  
+\[
+\Delta ex_{\text{flow}} = 125.47 \, \text{kJ/kg}
+\]  
+
+The kinetic energy term contributes:  
+\[
+\Delta ke = 110050 \, \text{N}
+\]

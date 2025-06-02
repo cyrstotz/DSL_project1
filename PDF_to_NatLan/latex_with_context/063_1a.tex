@@ -1,0 +1,41 @@
+The solution begins with an energy balance for the cooling jacket (KF):  
+
+\[
+0 = \dot{m}_{\text{KF}} \left[ h_{\text{in}} - h_{\text{out}} \right] + Q_{\text{out}}
+\]  
+
+The heat flow removed by the coolant is expressed as:  
+
+\[
+Q_{\text{out}} = \dot{m}_{\text{KF}} \left[ h_{\text{out}} - h_{\text{in}} \right]
+\]  
+
+The heat transfer through the reactor wall to the coolant is given by:  
+
+\[
+Q_{\text{out}} = \dot{m}_{\text{KF}} c \left( T_{\text{out}} - T_{\text{in}} \right)
+\]  
+
+Rewriting the energy balance:  
+
+\[
+0 = \dot{m}_{\text{in}} \left[ h_{\text{in}} - h_{\text{out}} \right] + Q_R - Q_{\text{out}}
+\]  
+
+The heat flow removed by the coolant is calculated as:  
+
+\[
+Q_{\text{out}} = m_{\text{in}} \left[ h_{\text{e}} - h_{\text{out}} \right] + Q_R
+\]  
+
+The enthalpy values are determined from water tables:  
+
+\[
+h_{\text{out}} = h_f(100^\circ\text{C}) = 419.04 \, \text{kJ/kg}
+\]  
+
+\[
+h_{\text{in}} = h_f(70^\circ\text{C}) + x \cdot \left( h_g(70^\circ\text{C}) - h_f(70^\circ\text{C}) \right)
+\]  
+
+---

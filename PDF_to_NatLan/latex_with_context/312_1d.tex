@@ -1,0 +1,50 @@
+The energy balance for the mass addition process is given as:  
+\[
+\Delta E = \Delta U = m_2 u_2 - m_1 u_1 = \Delta m_{12} h_{\text{ein,12}} - Q_{\text{aus,12}}
+\]  
+Rearranging for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = \frac{m_2 u_2 - m_1 u_1 + Q_{\text{aus,12}}}{h_{\text{ein,12}}}
+\]  
+This equation is used to determine the mass added to the reactor during cooling.
+
+The energy balance equation is written as:  
+\[
+(m_1 + \Delta m_{12}) U_2 - m_1 U_1 = \Delta m_{12} \, h_{\text{ein,12}} - Q_{\text{aus,12}}
+\]  
+Rearranging to solve for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} (U_2 - h_{\text{ein,12}}) = m_1 U_1 - m_1 U_2 - Q_{\text{aus,12}}
+\]  
+\[
+\Delta m_{12} = \frac{m_1 U_1 - m_1 U_2 - Q_{\text{aus,12}}}{U_2 - h_{\text{ein,12}}}
+\]  
+The mass of the reactor contents is given as:  
+\[
+m_1 = m_{\text{ges,1}} = 5755 \, \text{kg}
+\]  
+
+The enthalpy at the inlet is calculated using water tables:  
+\[
+h_{\text{ein,12}} = h(20^\circ\text{C}, x=0) = h_f(20^\circ\text{C}) = 83.36 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(A-2)}
+\]  
+
+The internal energy values are determined:  
+\[
+U_1 = u(100^\circ\text{C}, x=0) = u_f(100^\circ\text{C}) = 418.94 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(A-2)}
+\]  
+\[
+U_2 = u(70^\circ\text{C}, x=0) = u_f(70^\circ\text{C}) = 282.95 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(A-2)}
+\]  
+
+The change in internal energy is calculated:  
+\[
+\Delta U_{12} = U_1 = u(100^\circ\text{C}, x=0.005) - u_f(100^\circ\text{C}) + x \, (u_g(100^\circ\text{C}) - u_f(100^\circ\text{C})) = 429.38 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(A-2)}
+\]  
+
+Finally, the mass change is determined:  
+\[
+\Delta m_{12} = 3588.4 \, \text{kg}
+\]  
+
+---

@@ -1,0 +1,56 @@
+The energy balance equation for the jet engine is written as:  
+\[
+0 = \dot{m} \left[ h_e - h_a + \frac{w_e^2 - w_a^2}{2} + g(z_e - z_a) \right] + \dot{Q} - \sum \dot{W}.
+\]  
+For the process from state 5 to state 6 (isentropic):  
+\[
+0 = \dot{m} \left[ h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right] + 0 - 0.
+\]  
+This simplifies to:  
+\[
+0 = \dot{m} \left[ h_5 - h_6 + \frac{220^2 - w_6^2}{2} \right].
+\]  
+
+To find \( h_5 - h_6 \):  
+- Air is modeled as an ideal gas with \( c_p = 1.006 \, \text{kJ/kg·K} \).  
+- For the isentropic process from state 5 to state 6, \( n = k = 1.4 \):  
+\[
+h(T_5) - h(T_6) = c_p \cdot (T_5 - T_6).
+\]  
+Substituting values:  
+\[
+h(T_5) - h(T_6) = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \cdot (431.9 - T_6).
+\]  
+
+---
+
+The outlet temperature \( T_6 \) is calculated using the isentropic relation:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa-1}{\kappa}}
+\]  
+Substituting the given values:  
+\[
+\frac{T_6}{T_5} = \left( \frac{0.191}{0.5} \right)^{\frac{1.4-1}{1.4}} = 0.759608
+\]  
+Thus,  
+\[
+T_6 = 0.759608 \cdot 431.9 \, \text{K} = 328.0747 \, \text{K}
+\]  
+
+The outlet velocity \( w_6 \) is determined using the energy balance:  
+\[
+0 = c_p \cdot (T_5 - T_6) + \frac{w_5^2}{2} - \frac{w_6^2}{2}
+\]  
+Substituting the values:  
+\[
+0 = 1.006 \cdot (431.9 - 328.0747) + \frac{220^2}{2} - \frac{w_6^2}{2}
+\]  
+\[
+0 = 104.4882 + 24200 - \frac{w_6^2}{2}
+\]  
+\[
+\frac{w_6^2}{2} = 24304
+\]  
+\[
+w_6 = \sqrt{2 \cdot 24304} = 220.472 \, \text{m/s}
+\]

@@ -1,0 +1,58 @@
+TASK 1a  
+The system is described as stationary and without kinetic or potential energy contributions. The energy balance equation is given as:  
+\[
+0 = \dot{m} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R + \dot{Q}_{\text{out}}
+\]  
+Rearranging for the heat flow removed by the coolant (\( \dot{Q}_{\text{out}} \)):  
+\[
+\dot{Q}_{\text{out}} = \dot{m} (h_{\text{out}} - h_{\text{in}}) - \dot{Q}_R
+\]  
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = 2.62 \, \text{kW} - 123.04 \, \text{kW}
+\]  
+
+Additional notes reference enthalpy values from water tables:  
+- \( h_{\text{in}} = h_{f}(70^\circ\text{C}) = 2333.8 \, \text{kJ/kg} \)  
+- \( h_{\text{out}} = h_{f}(100^\circ\text{C}) = 2576.1 \, \text{kJ/kg} \)  
+
+TASK 1b  
+The entropy production equation is given as:  
+\[
+\dot{S}_{\text{gen}} + \dot{m} (s_{\text{e}} - s_{\text{a}}) + \frac{\dot{Q}}{T} = 0
+\]  
+Since entropy production is zero (\( \dot{S}_{\text{gen}} = 0 \)), the equation simplifies to:  
+\[
+\frac{\dot{Q}_{\text{out}}}{T} = \dot{m} (s_{\text{e}} - s_{\text{a}})
+\]  
+The thermodynamic mean temperature of the coolant (\( T_{\text{KF}} \)) is calculated as:  
+\[
+T_{\text{KF}} = c \frac{(T_2 - T_1)}{\ln \left( \frac{T_2}{T_1} \right)}
+\]  
+Substituting values:  
+\[
+T_{\text{KF}} = 293.12 \, \text{K}
+\]  
+
+TASK 1c  
+The entropy production equation is applied again:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \left( \frac{h_{\text{out}} - h_{\text{in}}}{T} \right) + \frac{\dot{Q}}{T}
+\]  
+Substituting values:  
+\[
+s_{\text{out}} = \frac{7.3935 - 1.3065}{kJ/kg·K} \cdot 2257.0 + 1.3065 = 7.3547 \, \text{kJ/kg·K}
+\]  
+Entropy production is calculated as:  
+\[
+\dot{S}_{\text{gen}} = \frac{26.26 - 25.28}{kJ/kg} \cdot 2333.8 + 0.25 = 7.7852 \, \text{kJ/kg·K}
+\]  
+
+Final result:  
+\[
+\dot{S}_{\text{gen}} = 0.70268 \, \text{kJ/kg·K}
+\]  
+The heat flow per unit mass is:  
+\[
+26.6 \, \text{kJ/kg}
+\]

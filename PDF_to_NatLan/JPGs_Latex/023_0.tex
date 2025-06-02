@@ -1,0 +1,43 @@
+TASK 1a  
+The heat flow \( \dot{Q}_{\text{out}} \) is to be determined.  
+
+The equation for heat flow includes contributions from various terms, but some parts are crossed out and not considered further.  
+
+In the reactor:  
+\[
+m_D = m_{\text{total}} \cdot x = 28.775 \, \text{kg}
+\]  
+\[
+m_f = m_{\text{total}} \cdot (1 - x) = 5726.23 \, \text{kg}
+\]  
+
+The enthalpy difference is expressed as:  
+\[
+h_{\text{rein}} - h_{\text{aus}} = c_{p} \cdot (T_{\text{rein}} - T_{\text{aus}})
+\]  
+
+The entropy values are given as:  
+\[
+S_{\text{ein}} = S_f(70^\circ\text{C})
+\]  
+\[
+S_{\text{aus}} = S_f(100^\circ\text{C})
+\]  
+
+The integral for entropy production is:  
+\[
+\int T \, dS = h_{\text{aus}} - h_{\text{rein}} = \frac{\dot{Q}}{\dot{m}} = 216.6
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature \( \bar{T} \) of the coolant is calculated using the formula:  
+\[
+\bar{T} = \frac{\int T \, dS}{S_e - S_a} = \frac{T_{\text{KF,out}} - T_{\text{KF,in}}}{\ln \left( \frac{T_{\text{KF,out}}}{T_{\text{KF,in}}} \right)}
+\]  
+
+Substituting values:  
+\[
+\bar{T} = \frac{T_{\text{KF,out}} - T_{\text{KF,in}}}{\ln \left( \frac{T_{\text{KF,out}}}{T_{\text{KF,in}}} \right)} = 293.12 \, \text{K}
+\]  
+
+This concludes the calculation for the thermodynamic mean temperature.

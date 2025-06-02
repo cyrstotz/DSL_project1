@@ -1,0 +1,77 @@
+TASK 1a  
+The heat flow \( \dot{Q}_{\text{out}} \) to be removed by the coolant is calculated using the energy balance equation:  
+
+\[
+0 = \dot{m} \left[ h_e - h_a + \frac{w_e^2 - w_a^2}{2} \right] + p \left( z_e - z_a \right) + Q - \dot{Q}_{\text{out}}
+\]
+
+Assuming steady-state operation and neglecting kinetic and potential energy terms, the equation simplifies to:  
+
+\[
+0 = \dot{m} \left[ h_e - h_a \right] + \dot{Q}_R - \dot{Q}_{\text{out}}
+\]
+
+Rearranging for \( \dot{Q}_{\text{out}} \):  
+
+\[
+\dot{Q}_{\text{out}} = \dot{m} \left[ h_e - h_a \right] + \dot{Q}_R
+\]
+
+Substituting values:  
+
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \left[ 292.98 \, \text{kJ/kg} - 419.04 \, \text{kJ/kg} \right] + 100 \, \text{kW}
+\]
+
+\[
+\dot{Q}_{\text{out}} = 62.182 \, \text{kW}
+\]
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is calculated using the integral definition:  
+
+\[
+T = \frac{\int T \, dS}{S_a - S_e}
+\]
+
+For an isobaric process, this simplifies to:  
+
+\[
+T = \frac{du}{S_a - S_e} = \frac{d \left( T_2 - T_1 \right)}{k \, \ln \left( \frac{T_2}{T_1} \right)}
+\]
+
+Substituting values:  
+
+\[
+T = \frac{278.15 \, \text{K} - 288.15 \, \text{K}}{\ln \left( \frac{278.15}{288.15} \right)}
+\]
+
+\[
+T = 293.72 \, \text{K}
+\]
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) is calculated using the entropy balance equation:  
+
+\[
+0 = \dot{m} \left[ S_e - S_a \right] + \frac{\dot{Q}_j}{T_j} + \dot{S}_{\text{gen}}
+\]
+
+Rearranging for \( \dot{S}_{\text{gen}} \):  
+
+\[
+\dot{S}_{\text{gen}} = \dot{m} \left[ S_a - S_e \right] - \frac{\dot{Q}_j}{T_j}
+\]
+
+Substituting values:  
+
+\[
+\dot{S}_{\text{gen}} = 0.3 \, \text{kg/s} \left[ 1.300 \, \text{kJ/kg·K} - 0.549 \, \text{kJ/kg·K} \right] - \frac{-62.182 \, \text{kW} + 100 \, \text{kW}}{293.72 \, \text{K}}
+\]
+
+\[
+\dot{S}_{\text{gen}} = 0.02344 \, \text{kJ/s·K}
+\]  
+
+Additional notes:  
+- \( S_a \) and \( S_e \) values are referenced from tables (TAB A2 and TAB A12).

@@ -1,0 +1,19 @@
+The energy balance equation is written as:  
+\[ \frac{\text{d}E}{\text{d}t} = \sum \dot{m} (h + \text{ke} + \text{pe}) + \sum \dot{Q} - \sum \dot{W} \]  
+
+This is simplified to:  
+\[ 0 = m (h_e - h_a + \frac{w_e^2}{2} - \frac{w_a^2}{2}) \]  
+
+The velocity at state 6 is calculated using:  
+\[ w_e = \sqrt{2 (h_e - h_a + \frac{w_a^2}{2})} \]  
+
+Values are referenced from Table A-22:  
+- \( h_e \): Interpolated using the formula:  
+\[ y = \frac{(x - x_1)}{(x_2 - x_1)} (y_2 - y_1) + y_1 \]  
+Where:  
+  - \( x_1 = 240 \, \text{K} \), \( x_2 = 243.15 \, \text{K} \), \( x = 250 \, \text{K} \).  
+  - \( y_1 = 210.02 \), \( y_2 = 250.05 \).  
+  - Result: \( h_e = 243.77945 \, \text{kJ/kg} \).  
+
+Additional notes:  
+- \( w_{\text{Luft}} = 200 \, \text{m/s} \).

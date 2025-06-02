@@ -1,0 +1,27 @@
+The entropy production rate \( \dot{S}_{\text{gen}} \) is calculated using the entropy balance equation:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \left( s_{\text{out}} - s_{\text{in}} \right) + \frac{\dot{Q}_{\text{out}}}{T_{\text{mean}}}
+\]  
+where \( T_{\text{mean}} \) is the thermodynamic mean temperature of the coolant.  
+
+The diagram shows a rectangular reactor with labeled inlet and outlet streams for the coolant (\( T_{\text{KF,in}} \) and \( T_{\text{KF,out}} \)), as well as the heat transfer \( \dot{Q}_{\text{out}} \) from the reactor to the coolant.  
+
+From the water tables:  
+\[
+s_f(70^\circ\text{C}) = 0.9584 \, \text{kJ/kg·K}, \quad s_g(70^\circ\text{C}) = 7.7555 \, \text{kJ/kg·K}
+\]  
+\[
+s_f(100^\circ\text{C}) = 1.3069 \, \text{kJ/kg·K}, \quad s_g(100^\circ\text{C}) = 7.3599 \, \text{kJ/kg·K}
+\]  
+
+For saturated liquid at \( T_{\text{Reactor}} = 100^\circ\text{C} \):  
+\[
+s = s_f + x \cdot (s_g - s_f) = 1.33779 \, \text{kJ/kg·K}
+\]  
+
+The entropy production rate is then calculated as:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{out}}}{T_{\text{mean}}} = \frac{100 \, \text{kW}}{373.15 \, \text{K}} = 0.268 \, \text{kW/K}
+\]  
+
+---

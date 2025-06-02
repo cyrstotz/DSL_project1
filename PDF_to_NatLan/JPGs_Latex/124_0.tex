@@ -1,0 +1,81 @@
+TASK 1a  
+The heat flow \( \dot{Q}_{\text{out}} \) removed by the coolant is calculated using the energy balance equation:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} \left( h_{\text{in}} - h_{\text{out}} \right) + \dot{Q}_R
+\]  
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} \left( h_{\text{out}} - h_{\text{in}} \right) + \dot{Q}_R
+\]  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \left( 473.04 \, \frac{\text{kJ}}{\text{kg}} - 292.39 \, \frac{\text{kJ}}{\text{kg}} \right) + \dot{Q}_R
+\]  
+\[
+\dot{Q}_{\text{out}} = -62.782 \, \text{kW}
+\]  
+
+Values used:  
+\[
+h_{\text{in}} = 292.39 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from water tables A2)}
+\]  
+\[
+h_{\text{out}} = 473.04 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from water tables A2)}
+\]  
+
+---
+
+TASK 1d  
+The mass \( \Delta m_{12} \) required to reduce the reactor temperature from \( 100^\circ\text{C} \) to \( 70^\circ\text{C} \) is calculated using an energy balance:  
+\[
+m_2 - m_1 = \sum_i \left[ h_i \right] + Q_{\text{out},12}
+\]  
+Rearranging:  
+\[
+\Delta m \cdot h_{\text{in}} = m_2 \cdot u_2 - m_1 \cdot u_1 + Q_{\text{out},12}
+\]  
+\[
+\Delta m \cdot \left( h_{\text{in}} - u_2 \right) = m_1 \cdot \left( u_2 - u_1 \right) + Q_{\text{out},12}
+\]  
+\[
+\Delta m = \frac{1}{h_{\text{in}} - u_2} \left( m_1 \cdot \left( u_2 - u_1 \right) + Q_{\text{out},12} \right)
+\]  
+Substituting values:  
+\[
+\Delta m = \dots = 3307.3 \, \text{kg}
+\]  
+
+Values used:  
+\[
+h_{\text{in}} = 292.39 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from water tables A2)}
+\]  
+\[
+u_2 = 232.55 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from water tables A2)}
+\]  
+
+---
+
+TASK 1e  
+The entropy change \( \Delta S_{12} \) of the reactor contents from state 1 to state 2 is calculated as:  
+\[
+\Delta S = m_2 \cdot s_2 - m_1 \cdot s_1
+\]  
+Substituting values:  
+\[
+\Delta S = \left( 5755 \, \text{kg} + 3307.3 \, \text{kg} \right) \cdot 0.2594 \, \frac{\text{kJ}}{\text{kg·K}} - 5755 \, \text{kg} \cdot 0.2306 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+\Delta S = 7768 \, \frac{\text{kJ}}{\text{K}}
+\]  
+
+Values used:  
+\[
+s_1 = 0.2306 \, \frac{\text{kJ}}{\text{kg·K}} \quad \text{(from water tables A2)}
+\]  
+\[
+s_2 = 0.2594 \, \frac{\text{kJ}}{\text{kg·K}} \quad \text{(from water tables A2)}
+\]  
+\[
+m_2 = m_1 + \Delta m
+\]  
+
+No diagrams or graphs are present on the page.

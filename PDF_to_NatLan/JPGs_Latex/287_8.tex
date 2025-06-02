@@ -1,0 +1,71 @@
+TASK 3a  
+The pressure \( p_{g,1} \) and mass \( m_g \) of the gas in state 1 are calculated as follows:  
+
+The cross-sectional area of the cylinder is given as \( A = 0.05 \, \text{m}^2 \).  
+
+The pressure \( p_{g,1} \) is determined using the force balance equation:  
+\[
+p_{g,1} = \frac{32 \cdot 9.81 + 0.1 \cdot 9.81 + 10.5 \cdot 0.05 \cdot \pi}{0.05 \cdot \pi}
+\]  
+After solving, \( p_{g,1} \approx 1.4 \, \text{bar} \).  
+
+The mass \( m_g \) is calculated using the ideal gas law:  
+\[
+pV = mRT
+\]  
+Rearranging for \( m_g \):  
+\[
+m_g = \frac{p_{g,1} V_{g,1}}{R T_{g,1}}
+\]  
+The gas constant \( R \) is given as:  
+\[
+R = \frac{R_u}{M_g} = \frac{8.314 \, \text{J/mol·K}}{50 \, \text{kg/kmol}} = 0.166 \, \text{J/g·K}
+\]  
+Substituting values:  
+\[
+m_g = \frac{1.4 \cdot 10^5 \cdot 3.14 \cdot 10^{-3}}{0.166 \cdot 773.15} = 0.0639 \, \text{kg} = 63.9 \, \text{g}
+\]  
+
+---
+
+TASK 3b  
+The temperature \( T_{g,2} \) and pressure \( p_{g,2} \) in state 2 are determined as follows:  
+
+The temperature \( T_{g,2} \) is equal to \( 0^\circ\text{C} \) because the ice-water mixture (EW) remains in the two-phase region. Since the system is in thermal equilibrium, the temperature of the gas also equals \( T_{g,2} = 0^\circ\text{C} \).  
+
+The pressure \( p_{g,2} \) is equal to \( p_{g,1} = 1.4 \, \text{bar} \). This is because the EW retains the same mass, and the piston weight remains constant. Therefore, the pressure does not change.  
+
+---
+
+TASK 3c  
+The transferred heat \( Q_{12} \) is calculated using the energy balance:  
+\[
+U_2 - U_1 = Q_{12} - W
+\]  
+The internal energy change is given by:  
+\[
+U_2 - U_1 = m_g c_V (T_{g,2} - T_{g,1}) = 3.9 \cdot 0.633 \, \text{kJ/kg·K} \cdot (0 - 500^\circ\text{C}) = -1076 \, \text{J}
+\]  
+
+The work \( W \) is calculated using:  
+\[
+W = \int p \, dV
+\]  
+Approximating for constant pressure:  
+\[
+W = p_g (V_2 - V_1)
+\]  
+Substituting values:  
+\[
+V_2 = \frac{m_g R T_2}{p}, \quad V_1 = \frac{m_g R T_1}{p}
+\]  
+\[
+W = m_g R \left( \frac{T_2 - T_1}{p} \right) = 3.9 \cdot 0.166 \cdot \frac{(500 - 0)}{1.4 \, \text{bar}} = -0.00131 \, \text{m}^3
+\]  
+
+Finally, the heat transfer is:  
+\[
+Q_{12} = U_2 - U_1 + W = -1076 + (-0.00131) = -0.961078 \, \text{J}
+\]  
+
+(Note: The page ends with "nächste Seite," indicating continuation.)

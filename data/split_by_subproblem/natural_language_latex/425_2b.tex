@@ -1,0 +1,31 @@
+Energy balance at the blade cascade:
+
+The specific work \( w_s \) is 220 joules per kilogram.
+
+At point 5, the pressure \( P_5 \) is 0.5 bar and the temperature \( T_5 \) is 431.9 Kelvin.
+
+The mass flow rate \( m_s \) is given by the product of the mass flow rate \( \dot{m} \), density \( \rho \), velocity \( v \), and area \( A \).
+
+At point 6, the pressure \( P_6 \) is 0.19 bar and the temperature \( T_6 \) equals the reference temperature \( T_0 \) which is -30 degrees Celsius or 243.15 Kelvin.
+
+The heat transfer \( Q \) is calculated as \( \dot{m} \) times the bracketed expression \( h_5 - h_1 + \frac{(w_5^2 - w_6^2)}{2} \) minus the work transfer \( \dot{W}_{t,56} \).
+
+The work transfer \( \dot{W}_{t,56} \) from point 5 to 6 is the integral of \( v \, dp \) from 5 to 6 plus \( \dot{ske} \), which equals \(-RT_5 \ln \left( \frac{P_6}{P_5} \right) + \frac{(w_6^2 - w_5^2)}{2}\).
+
+The specific volume \( V_5 \) at point 5 is \( \frac{RT_5}{P_5} \).
+
+The heat transfer \( Q \) is also expressed as \( h_5 - h_6 + w_5^2 \).
+
+For the extended specific energy \( e_{x,str} \), it is given by \( h - h_0 - T_0(s - s_0) + ke + \frac{\omega^2 r^2}{2} \).
+
+The initial extended specific energy \( e_{x,str,0} \) is \( h_0 - h_0 - T_0(s_0 - s_0) + \frac{\omega_0^2 r^2}{2} \).
+
+The expression simplifies to \( c_p (T - T_0) - T_0 \left( c_p \ln \left( \frac{T}{T_0} \right) - R \ln \left( \frac{P}{P_0} \right) \right) + \frac{\omega^2 r^2}{2} \).
+
+The gas constant \( R \) is \( c_p - \frac{c_p}{k} \) and equals 0.287 kilojoules per kilogram Kelvin.
+
+The expression for \( e_{x,str} \) is \( c_p \left( T - T_0 \right) - T_0 \left( c_p \ln \left( \frac{T}{T_0} \right) - R \ln \left( \frac{P}{P_0} \right) \right) + \frac{\omega^2 r^2}{2} \) and equals 130.05 kilojoules per kilogram or 130 megajoules per kilogram.
+
+The initial extended specific energy \( e_{x,str,0} \) is \( ke = \frac{\omega^2 r^2}{2} \).
+
+The change in extended specific energy \( \Delta e_{x,str} \) is \( e_{x,str,0} - ke_0 \).

@@ -1,0 +1,27 @@
+The equation for mass-specific increase in flow exergy \( \Delta ex_{str} \) is written as:  
+\( \Delta ex_{str} = ex_{str,6} - ex_{str,0} \).  
+
+Detailed derivation:  
+\( \dot{m} \cdot ex_{str} = \dot{m} \cdot \left[ h_6 - h_0 - T_0 \cdot (s_6 - s_0) + \frac{w_6^2}{2} - \frac{w_0^2}{2} \right] \).  
+
+Given values:  
+\( h_6 - h_0 = c_{p} \cdot (T_6 - T_0) \),  
+\( s_6 - s_0 = c_{p} \cdot \ln \left( \frac{T_6}{T_0} \right) - R \cdot \ln \left( \frac{p_6}{p_0} \right) \),  
+\( T_0 = 243.15 \, \text{K} \), \( R = c_{p} - c_{v} = 1.006 - 0.718 = 0.287 \, \text{kJ/kg·K} \),  
+\( c_{p} = 1.006 \, \text{kJ/kg·K} \).  
+
+Calculation:  
+\( s_6 - s_0 = 1.006 \cdot \ln \left( \frac{328.075}{243.15} \right) - 0.287 \cdot \ln \left( \frac{0.5}{0.191} \right) \),  
+\( s_6 - s_0 = 1.006 \cdot \ln \left( 1.348 \right) - 0.287 \cdot \ln \left( 2.617 \right) \),  
+\( s_6 - s_0 = 1.006 \cdot 0.300 - 0.287 \cdot 0.962 \),  
+\( s_6 - s_0 = 0.301 - 0.276 = 0.025 \, \text{kJ/kg·K} \).  
+
+Entropy change \( \Delta S = 243.15 \cdot 0.301 = 73.22 \, \text{kJ/kg} \).  
+\( \Delta S / T_0 \).
+
+Delta ke equals w squared subscript 2 divided by 2 minus w squared subscript 5 divided by 2.  
+Delta e subscript x,str equals 85.43 kilojoules per kilogram minus 73.27 kilojoules per kilogram plus w squared subscript 2 divided by 2 minus w squared subscript 5 divided by 2.  
+w squared subscript 2 divided by 2 equals 12 times 12 divided by 2 equals 72 kilojoules per kilogram.  
+w squared subscript 5 divided by 2 equals 220 squared divided by 2 equals 48,050 divided by 2 equals 24,025 kilojoules per kilogram.  
+Delta ke equals w squared subscript 2 divided by 2 minus w squared subscript 5 divided by 2 equals 72 minus 48,050 equals negative 47,978 kilojoules per kilogram.  
+Delta e subscript x,str equals 85.43 minus 73.27 plus negative 47,978 equals 60.21 kilojoules per kilogram.

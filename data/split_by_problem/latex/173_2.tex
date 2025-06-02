@@ -1,0 +1,222 @@
+
+``````latex
+
+
+\section*{Aufgabe 3}
+
+\subsection*{a) Druck $p_{g,1}$ und Masse Gas $m_g$}
+
+\begin{equation*}
+\begin{aligned}
+    &\text{EV Kolben Atmos} \\
+    &\downarrow \quad \downarrow \quad \downarrow \\
+    &p_{g,1}
+\end{aligned}
+\end{equation*}
+
+\begin{equation*}
+    p_{g,1} \cdot A_{zy1} = m_{ev} \cdot g + m_{k} \cdot g + p_{atmos} \cdot A_{zy1}
+\end{equation*}
+
+\begin{equation*}
+    A_{zy1} = \pi r^2 = \pi (0,05 \, \text{m})^2 = \pi \cdot 7,853982 \cdot 10^{-3} \, \text{m}^2
+\end{equation*}
+
+\begin{equation*}
+    p_{g,1} = \frac{m_{ev} \cdot g + m_k \cdot g}{A_{zy1}} + p_{atmos}
+\end{equation*}
+
+\begin{equation*}
+    p_{g,1} = \frac{0,1 \, \text{kg} \cdot 9,81 \, \text{m/s}^2 + 32 \cdot 9,81 \, \text{m/s}^2}{7,853982 \cdot 10^{-3} \, \text{m}^2} + 10^5 \, \text{Pa}
+\end{equation*}
+
+\begin{equation*}
+    p_{g,1} = 140094,4137 \, \text{Pa}
+\end{equation*}
+
+\begin{equation*}
+    pV = mRT \quad T_1 = 500^\circ \text{C} = 773,15 \, \text{K}
+\end{equation*}
+
+\begin{equation*}
+    p_1 = 140000 \, \text{Pa} \quad V_1 = 3,141 \cdot 0,0037 \, \text{m}^3
+\end{equation*}
+
+\begin{equation*}
+    m_g = \frac{p_1 V_1}{RT_1}
+\end{equation*}
+
+\begin{equation*}
+    R = \frac{R}{M} = \frac{8314 \, \text{J/(kmol K)}}{56 \, \text{kg/kmol}} = 0,16628 \, \text{KJ/(kg K)}
+\end{equation*}
+
+\begin{equation*}
+    m_g = \frac{0,0037 \cdot 140000}{0,16628 \cdot 773,15} = 0,2922 \, \text{kg}
+\end{equation*}
+
+\subsection*{b)}
+
+\begin{equation*}
+    T_{g2} \text{ ist } 0^\circ \text{C weil immer noch } Es \text{ vorhanden ist und im Gleichgewicht ist } T_{ev} = T_g
+\end{equation*}
+
+\begin{equation*}
+    p_{g,2} = p_{g,1} = 140100 \, \text{Pa weil die Kraft welche der Druck } p_{g,2} \text{ entgegenwirkt}
+\end{equation*}
+
+\begin{equation*}
+    \text{da immer noch derselbe ist (} p_{atmos}, m_k, m_{ev} \text{ sind noch gleich)}
+\end{equation*}
+
+``````latex
+
+
+c)
+\begin{align*}
+    T_1 &= 773.15 \, \text{K} \\
+    T_2 &= 273.15 \, \text{K} \\
+    p_1 &= 101000 \, \text{Pa} \\
+    p_2 &= 101000 \, \text{Pa}
+\end{align*}
+
+\begin{align*}
+    \frac{dU}{dt} &= \sum \dot{m}(i) + \sum \dot{Q} - \sum \dot{w}
+\end{align*}
+
+\begin{align*}
+    \Delta u &= Q - w
+\end{align*}
+
+\begin{align*}
+    Q_{12} &= \Delta u + W_{12}
+\end{align*}
+
+\begin{align*}
+    W_{12} &= \int_{V_1}^{V_2} p \, dV
+\end{align*}
+
+\begin{align*}
+    pV &= mRT \\
+    V_2 &= \frac{mRT_2}{p_2} = \frac{0.2922 \, \text{kg} \cdot 0.16628 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}} \cdot 273.15 \, \text{K}}{101000 \, \text{Pa}} = 9.474 \cdot 10^{-5} \, \text{m}^3
+\end{align*}
+
+\begin{align*}
+    W_{12} &= \int_{V_1}^{V_2} p \, dV = p \int_{V_1}^{V_2} dV = p (V_2 - V_1) = 101000 \, \text{Pa} \left(9.474 \cdot 10^{-5} \, \text{m}^3 - 0.00314 \, \text{m}^3 \right)
+\end{align*}
+
+\begin{align*}
+    W_{12} &= -426.64 \, \text{J}
+\end{align*}
+
+\begin{align*}
+    \Delta u &= C_v (T_2 - T_1) = 0.633 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}} (273.15 \, \text{K} - 773.15 \, \text{K}) \\
+    \Delta u &= -319.5 \, \text{J}
+\end{align*}
+
+\begin{align*}
+    Q_{12} &= \Delta u + W_{12} = -319.5 \, \text{J} - 426.64 \, \text{J} = -746.14 \, \text{J}
+\end{align*}
+
+\begin{align*}
+    W_{12} &= \int_{V_1}^{V_2} p \, dV
+\end{align*}
+
+\begin{align*}
+    W_{12} &= p (V_2 - V_1) = 101000 \, \text{Pa} \left(9.474 \cdot 10^{-5} \, \text{m}^3 - 0.00314 \, \text{m}^3 \right) \\
+    W_{12} &= -426.64 \, \text{J}
+\end{align*}
+
+\begin{align*}
+    Q_{12} &= \Delta u + W_{12} = -746.14 \, \text{J}
+\end{align*}
+
+\underline{Graphical Description:}
+
+There is a diagram of a piston-cylinder device. The cylinder is drawn as a rectangle with a horizontal line at the top representing the piston. Inside the cylinder, there is a shaded area labeled as $V_2$. An arrow pointing upwards next to the piston indicates the work done by the gas, labeled as $w$.
+
+``````latex
+
+
+\section*{Aufgabe 3}
+\subsection*{d)}
+
+\begin{center}
+\begin{tabular}{c}
+\framebox{
+\begin{minipage}{0.2\textwidth}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{house.png} \\
+$Q$
+\end{center}
+\end{minipage}
+}
+\end{tabular}
+\end{center}
+
+\[
+\frac{dE}{dt} = \dot{Q} + \sum Q - \sum W
+\]
+
+\[
+\Delta U = Q
+\]
+
+\[
+\Delta u = q
+\]
+
+\[
+q = \frac{Q_{12}}{m} = \frac{1500 \, \text{J}}{0.1 \, \text{kg}} = 15000 \, \frac{\text{J}}{\text{kg}} = 15 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+u_2 - u_4 = 15 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+u_2 = 15 \, \frac{\text{kJ}}{\text{kg}} + u_4
+\]
+
+\[
+u_1: \quad p = 1.1 \, \text{bar} \quad T_f = 0^\circ \text{C} \quad x_1 = 0.6
+\]
+
+\[
+u_1 = x_1 u_{\text{Fest}} + (1 - x_1) u_{\text{Flüssig}} = 0.6 \cdot (-333.458) + 0.4 \cdot (-3.045) \quad \text{(Tab. 1)}
+\]
+
+\[
+u_1 = -200.0928 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+u_2 = 15 \, \frac{\text{kJ}}{\text{kg}} - 200.0928 \, \frac{\text{kJ}}{\text{kg}} = -185.0928 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+X_{Eis,2}
+\]
+
+\[
+X_{Eis} \cdot u_{\text{Fest}} + (1 - X_{Eis}) u_{\text{Flüssig}} = -185.0928
+\]
+
+\[
+X \cdot u_{\text{Fest}} + u_{\text{Fl}} - X \cdot u_{\text{Fl}} = -185
+\]
+
+\[
+X (u_{\text{Fest}} - u_{\text{Fl}}) - 185 = u_{\text{Fl}}
+\]
+
+\[
+X_{Eis} = \frac{-185.0928 - u_{\text{Flüssig}}}{u_{\text{Fest}} - u_{\text{Flüssig}}} = \frac{-185.0928 + 0.045}{-333.458 + 0.045}
+\]
+
+\[
+X_{Eis,2} = 0.555
+\]
+
+``````latex
+
+

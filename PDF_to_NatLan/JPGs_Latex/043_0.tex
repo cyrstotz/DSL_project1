@@ -1,0 +1,52 @@
+TASK 1a  
+The energy balance equation is written as:  
+\[
+\frac{dE}{dt} = \dot{m} \left[ h_e - h_a \right] + \dot{Q}_R + \sum \dot{W}
+\]  
+For steady-state operation, this simplifies to:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \left[ h_a - h_e \right] + \dot{Q}_R
+\]  
+
+The enthalpy values are determined using water property tables:  
+- \( h_{\text{out}} = h(100^\circ\text{C}) \), which corresponds to saturated water at \( 100^\circ\text{C} \). From Table A-2, \( h_{\text{out}} = 419.4 \, \text{kJ/kg} \).  
+- \( h_{\text{in}} = h(20^\circ\text{C}) \), which corresponds to saturated water at \( 20^\circ\text{C} \). From Table A-2, \( h_{\text{in}} = 292.98 \, \text{kJ/kg} \).  
+
+Substituting these values into the equation:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \cdot \left( 419.4 - 292.98 \right) + 100
+\]  
+\[
+\dot{Q}_{\text{out}} = 62.074 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant, \( \bar{T}_{\text{KF}} \), is calculated using the entropy difference:  
+\[
+\bar{T}_{\text{KF}} = \frac{\int T \, dS}{S_a - S_e}
+\]  
+For an ideal liquid, this simplifies to:  
+\[
+\bar{T}_{\text{KF}} = \frac{h_a - h_e}{S_a - S_e}
+\]  
+
+The pressure in the cooling jacket remains constant. Using the heat capacity \( c_p \):  
+\[
+\bar{T}_{\text{KF}} = \frac{c_p (T_a - T_e)}{c_p \ln \left( \frac{T_a}{T_e} \right)} = \frac{(T_a - T_e)}{\ln \left( \frac{T_a}{T_e} \right)}
+\]  
+
+Substituting the given temperatures:  
+\[
+T_a = 298.15 \, \text{K}, \quad T_e = 288.15 \, \text{K}
+\]  
+\[
+\bar{T}_{\text{KF}} = \frac{298.15 - 288.15}{\ln \left( \frac{298.15}{288.15} \right)}
+\]  
+\[
+\bar{T}_{\text{KF}} = 293.12 \, \text{K}
+\]  
+
+The final result is boxed:  
+\[
+\boxed{\bar{T}_{\text{KF}} = 293.12 \, \text{K}}
+\]

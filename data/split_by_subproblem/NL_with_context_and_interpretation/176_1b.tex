@@ -1,0 +1,23 @@
+\( \dot{m}_{KF} = ? \)  
+
+Energy balance:  
+\( 0 = \dot{m}_{KF} (\text{h}_e - \text{h}_a) + \dot{Q}_{\text{out}} \)  
+\( \dot{Q}_{\text{out}} = \dot{m}_{KF} (\text{h}_a - \text{h}_e) \)  
+
+\( \dot{Q}_{\text{out}} = \dot{m}_{KF} \cdot c_i \left( T_{\text{out}} - T_{\text{in}} \right) \)  
+\( \dot{Q}_{\text{out}} = \dot{m}_{KF} \cdot c_i \left( 298.15 - 288.15 \right) \)  
+\( \dot{Q}_{\text{out}} = 63.3 \, \text{kW} \)  
+
+\( \dot{m}_{KF} = \frac{63.3 \, \text{kW}}{c_i (298.15 - 288.15)} \)  
+\( = \frac{63.3 \, \text{kW}}{6.33 \, \text{kW/K}} = \dot{m}_{KF} \cdot c_i \)
+
+The thermodynamic mean temperature \( T \) is calculated as:  
+\( T = \frac{\int_{s_e}^{s_a} T \, ds}{s_a - s_e} = \frac{h_a - h_e}{s_a - s_e} = \frac{\dot{Q}_{aus}}{\dot{m}_{KF} \cdot (s_a - s_e)} = \frac{633.3 \, \text{W}}{6.33 \, \text{W/K} \cdot \text{ln} \left( \frac{T_{KF,out}}{T_{KF,in}} \right)} \).  
+
+Substituting values:  
+\( \text{ln} \left( \frac{T_{KF,out}}{T_{KF,in}} \right) = \text{ln} \left( \frac{298.15 \, \text{K}}{288.15 \, \text{K}} \right) \).  
+
+This gives:  
+\( \frac{10 \, \text{K}}{\text{ln} \left( \frac{288.15 \, \text{K}}{298.15 \, \text{K}} \right)} = 293.12 \, \text{K} \).  
+
+---

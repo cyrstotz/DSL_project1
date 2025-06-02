@@ -1,0 +1,255 @@
+
+``````latex
+
+
+\section*{Problem 2}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a plot with the x-axis labeled as $S$ and the y-axis labeled as $T$. There are several points and lines marked on the graph:
+    \begin{itemize}
+        \item Point $1$ at the bottom left corner, labeled $T=243.15$.
+        \item Point $2$ above point $1$, with a vertical arrow pointing upwards labeled $T=311.9$.
+        \item Point $3$ to the right of point $2$, with a horizontal arrow pointing right.
+        \item Point $4$ above point $3$, with a vertical arrow pointing upwards labeled $0.5 \text{ bar}$.
+        \item Point $5$ to the right of point $4$, with a horizontal arrow pointing right labeled $P_2 = P_3$.
+        \item Point $6$ below point $5$, with a vertical arrow pointing downwards labeled $0.5 \text{ bar}$.
+        \item Point $7$ to the left of point $6$, with a horizontal arrow pointing left labeled $P_4 = P_5$.
+        \item Point $8$ below point $7$, with a vertical arrow pointing downwards labeled $0.5 \text{ bar}$.
+        \item Point $9$ to the left of point $8$, with a horizontal arrow pointing left labeled $P_2 = P_3$.
+    \end{itemize}
+    There are also several annotations:
+    \begin{itemize}
+        \item $c_1 = c_2$
+        \item $P_1 = P_2$
+        \item $P_2 = P_3$
+        \item $c_1, 9 \text{ isar}$
+        \item $W_{\text{out}} = 200 \text{ m/s}$
+        \item $v/s < 1$
+    \end{itemize}
+\end{description}
+
+\[
+\begin{array}{|c|c|c|c|c|c|c|}
+\hline
+ & P & V & T & c & Q & s \\
+\hline
+1 & 0.191 & 30 & & & & \\
+\hline
+2 & P_2 = P_3 & & & & & \\
+\hline
+3 & & & & & & \\
+\hline
+4 & 0.5 & & & & & \\
+\hline
+5 & P_4 = P_5 & & & & & \\
+\hline
+6 & 0.5 & & & & & \\
+\hline
+\end{array}
+\]
+
+\subsection*{b)}
+
+\[
+0 = \dot{m} \left[ h_e - h_a + \frac{w_e^2 - w_a^2}{2} + g \frac{z_e - z_a}{2} \right] + \dot{Q} - \sum \dot{W}
+\]
+
+For $5-6$, isentropic:
+
+\[
+0 = \dot{m} \left[ h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right] + 0 - 0
+\]
+
+\[
+= \dot{m}_{\text{ges}} \left[ h_5 - h_6 + \frac{220^2 - w_6^2}{2} \right]
+\]
+
+\[
+\text{suche } h_5 - h_6
+\]
+
+\[
+\text{Luft ist } ZG \text{ mit } C_p \approx 1.006 \frac{\text{kJ}}{\text{kg K}}, \quad 5-6 \text{ isentrope, } n = k = 1.4,
+\]
+
+\[
+h(T_5) - h(T_6) = C_p (T_5 - T_6)
+\]
+
+\[
+= 1.006 \frac{\text{kJ}}{\text{kg K}} (431.9 \text{K} - T_6)
+\]
+
+\[
+\text{suche für } w_6
+\]
+
+\[
+\text{Für gesamte System } 0-6,
+\]
+
+\[
+0 = \dot{m} \left[ h_e - h_a```latex
+
+
+\section*{Solution}
+
+\subsection*{1.}
+
+\[
+h_6 - h_5 = \frac{220^2 - w_6^2}{2}
+\]
+
+\[
+h_6 - h_5 = h_6 - h_5 = \frac{220^2 - w_6^2}{2}
+\]
+
+\[
+h_5 + h_6 = \frac{220^2 - w_6^2}{2}
+\]
+
+\[
+5 - 6 \text{ isentropic}
+\]
+
+\[
+\frac{T_5}{T_6} = \left( \frac{P_5}{P_6} \right)^{\frac{n-1}{n}}
+\]
+
+\[
+\frac{T_5}{T_6} = \left( \frac{0.5}{P_6} \right)^{\frac{k-1}{k}}
+\]
+
+\[
+T_6 = 431.8K
+\]
+
+\[
+\frac{T_6}{T_5} = \left( \frac{P_6}{P_5} \right)^{\frac{k-1}{k}} = \left( \frac{0.111}{0.5} \right)^{\frac{0.4}{1.4}} = 0.759608
+\]
+
+\[
+T_6 = 0.759608 \cdot 431.8K
+\]
+
+\[
+T_6 = 328.0747K
+\]
+
+\[
+V_{on(1)}: 0 = 1.006(431.8K - 328.0747K) + \frac{220^2 - w_6^2}{2}
+\]
+
+\[
+= 104.4882 + 24200 - \frac{w_6^2}{2}
+\]
+
+\[
+\frac{w_6^2}{2} = 24304
+\]
+
+\[
+w_6^2 = 48608 \quad w_6 = 220.472 \frac{m}{s}
+\]
+
+\subsection*{2.}
+
+\subsection*{2C.}
+
+\[
+\Delta e_{exter} = e_{x6} - e_{x40}
+\]
+
+\[
+= h - h_0 - T_0(S - S_0) + ke + pe
+\]
+
+\[
+= h_6 - h_0 - T_0(S_6 - S_0) + ke \frac{w_6^2 - w_0^2}{2}
+\]
+
+\[
+P_0 - P_0 \text{ isobar, adiabat: } 6 - 1 \text{ isentropic.}
+\]
+
+\[
+S: S_6 - S_0 = Cp \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{P_6}{P_0} \right)
+\]
+
+\[
+= 1.006 \ln \left( \frac{340}{243.15} \right) - R \ln \left( 1 \right)^0 = 0.337278 \frac{kJ}{kg \cdot K}
+\]
+
+\[
+h_6 - h_0 = Cp(T_6 - T_0) = 1.006 \times (340 - 243.15) = 97.4311 \frac{kJ}{kg}
+\]
+
+\[
+\Delta e_{exter} = 97.4311 \frac{kJ}{kg} - (243.15K) (0.337278) \frac{kJ}{kg \cdot K}
+\]
+
+\[
+= 100.05 \frac{kJ}{kg} + \frac{510^2 - 200^2}{2 \cdot 1000}
+\]
+
+\[
+= 100.05 + 15.42 = 125.47 \frac{kJ}{kg}
+\]
+
+``````latex
+
+\section*{Problem 2d}
+
+\begin{align*}
+\text{Q}_{\text{in}} - \frac{dE}{dt} &> \sum \dot{E}_{\text{stor}} + \sum \dot{E}_{\text{xa}} - \sum \left[ \dot{W}_{\text{n}} - p_0 \frac{dV}{dt} \right] - \dot{E}_{\text{ver}} \\
+0 &= \dot{m} \left[ h_e - h_a - T_0 (s_e - s_a) + \text{ke} + \text{pe} \right] + \sum \left( 1 - \frac{T_0}{T} \right) \dot{Q}_j - \sum \dot{W}_{\text{in}} - \dot{E}_{\text{ver}} \\
+\text{Exer} &= \text{exer} \\
+\text{exer} &= h_0 - h_6 - T_0 (s_0 - s_6) + \text{ke} + \text{pe} - \frac{\dot{Q}_{\text{ex}}}{\dot{m}} - \frac{\sum \dot{W}_{\text{ex}}}{\dot{m}}
+\end{align*}
+
+\text{find} \quad \sum \left( 1 - \frac{T_0}{T} \right) \frac{\dot{Q}_j}{\dot{m}}
+
+\begin{align*}
+&= \sum \left( 1 - \frac{T_0}{T} \right) \cdot q_j \\
+&= \left( 1 - \frac{243.15 \, \text{K}}{1289 \, \text{K}} \right) \cdot 1185 \, \frac{\text{kJ}}{\text{kg}} \\
+&= 968.581 \, \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+\begin{itemize}
+    \item $0 < \eta < 1, \quad \eta_{\text{vs}} < 1$
+    \item $\eta_{\text{vs}} = \frac{\text{reversible}}{\text{actual}} = \frac{h_0 - h_{\text{ns}}}{h_0 - h_1}$
+    \item \text{energy balance:} $0 = \dot{m} (h_0 - h_1) + \dot{Q} - \dot{W}$
+\end{itemize}
+
+\begin{align*}
+\frac{\dot{W}}{\dot{m}} &= W_{\text{tot}} = h_0 - h_4 = C_p \dot{m} (T_0 - T_1) = 1.006 \cdot (243.15 \, \text{K} - T_1)
+\end{align*}
+
+\text{find} $T_1$
+
+\begin{align*}
+\text{in 1-4,} \quad 0 &= \dot{m} (h_4 - h_1) \\
+h_4 &= h_1 \\
+\text{since} \quad IG \, \text{m.f. const.} \quad C_p \implies T_4 = T_1
+\end{align*}
+
+\text{find} $T_4$
+
+\begin{align*}
+p_4 &= p_3 \\
+\text{so} \quad 3-4 \, \text{isentropic,} \quad s_3 = s_4 \\
+\therefore T_4 &= T_3 \quad \text{due to} \quad p_6 \propto T \\
+&= 1289 \, \text{K}
+\end{align*}
+
+\begin{align*}
+W_{\text{tot}} &= 1.006 (243.15 - 1289) = -1272.438 \, \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+\begin{align*}
+\text{Exer} &= h_0 - h_6 - T_0 (s_0 - s_6) + 968.581 + 1272.438 \\
+&= C_p (T_0 - T_6) - T_0 \left(```latex
+
+

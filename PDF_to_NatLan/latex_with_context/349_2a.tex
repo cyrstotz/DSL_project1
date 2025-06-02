@@ -1,0 +1,35 @@
+The page contains two diagrams related to thermodynamic processes.
+
+1. **First Diagram**:  
+   - The graph is labeled with \( T \, [K] \) on the vertical axis and \( S \, [\frac{\text{kJ}}{\text{kg·K}}] \) on the horizontal axis.  
+   - It appears to be a qualitative representation of a thermodynamic cycle on a temperature-entropy (\( T \)-\( S \)) diagram.  
+   - The cycle includes numbered points (1, 2, 3, 4) connected by arrows indicating the direction of the process.  
+   - The graph includes curved and straight lines, suggesting different thermodynamic processes such as isobaric or adiabatic transitions.  
+
+2. **Second Diagram**:  
+   - This graph is also labeled with \( T \, [K] \) on the vertical axis and \( S \, [\frac{\text{kJ}}{\text{kg·K}}] \) on the horizontal axis.  
+   - It depicts a closed thermodynamic cycle with five numbered points (1, 2, 3, 4, 5) connected by arrows.  
+   - Two segments are explicitly labeled as "isobar," indicating constant pressure processes.  
+   - The cycle forms a polygonal shape, representing a sequence of thermodynamic states.  
+
+Both diagrams are qualitative and do not include numerical values or specific equations. They visually describe the thermodynamic processes occurring in the system.
+
+The exergy balance equation is expressed as:  
+\[
+E_{x,\text{vol}} = \dot{m} \left[ h_e - h_a - T_0 (s_e - s_a) + \delta h_e \right] + \sum_i \left( 1 - \frac{T_0}{T_i} \right) \dot{Q}_j = e_{x,\text{vol}} \cdot \dot{m}
+\]
+
+Setting the equation to zero:  
+\[
+0 = \dot{m} \left[ h_e - h_a + \delta h_e \right] + \sum_j \dot{Q}_j
+\]
+
+From this, the exergy destruction term can be derived:  
+\[
+E_{x,\text{vol}} = \dot{m} \left[ -T_0 (s_e - s_a) \right] + \sum_i \left( 1 - \frac{T_0}{T_i} \right) \dot{Q}_j - \sum_j \dot{Q}_j
+\]
+
+Simplifying further:  
+\[
+e_{x,\text{vol}} = -T_0 (s_e - s_a) + \frac{\sum_i \left( 1 - \frac{T_0}{T_i} \right) \dot{Q}_j}{\dot{m}} - \frac{\sum_j \dot{Q}_j}{\dot{m}}
+\]

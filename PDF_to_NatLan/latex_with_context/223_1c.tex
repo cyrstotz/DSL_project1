@@ -1,0 +1,27 @@
+The entropy balance for the reactor with stationary mass flow is expressed as:  
+\[
+0 = \dot{m}_{\text{in}} [s_{\text{out}} - s_{\text{in}}] + \frac{\dot{Q}_R}{T} - \frac{\dot{Q}_{\text{out}}}{T} + \dot{S}_{\text{gen}}
+\]  
+
+Rearranging for entropy generation:  
+\[
+\dot{S}_{\text{gen}} = \dot{m}_{\text{in}} [s_{\text{out}} - s_{\text{in}}] - \frac{\dot{Q}_R}{T} + \frac{\dot{Q}_{\text{out}}}{T}
+\]  
+
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = 0.3 \, \frac{\text{kg}}{\text{s}} \cdot (7.3553 - 7.1553) - \frac{100 \, \text{kW}}{255 \, \text{K}} + \frac{76.96 \, \text{kW}}{295 \, \text{K}}
+\]  
+
+The entropy values are:  
+\[
+s_{\text{in}} = s(T = 70^\circ\text{C}) = 7.1553 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+s_{\text{out}} = s(T = 100^\circ\text{C}) = 7.3553 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Final calculation:  
+\[
+\dot{S}_{\text{gen}} = -0.2015 \, \frac{\text{kJ}}{\text{kg·K}}
+\]

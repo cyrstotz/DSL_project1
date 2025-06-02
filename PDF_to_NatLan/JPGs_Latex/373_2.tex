@@ -1,0 +1,100 @@
+TASK 3a  
+The gas pressure \( p_{g,1} \) is calculated using the formula:  
+\[
+p_{g,1} = \frac{m_{K} g}{A} + \frac{m_{\text{EW}} g}{A} + p_{\text{amb}}
+\]  
+The area \( A \) is determined as:  
+\[
+A = \pi \left(\frac{D}{2}\right)^2 = 7.854 \times 10^{-3} \, \text{m}^2
+\]  
+Substituting the values:  
+\[
+p_{g,1} = \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{7.854 \times 10^{-3} \, \text{m}^2} + \frac{0.1 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{7.854 \times 10^{-3} \, \text{m}^2} + 1.013 \, \text{bar}
+\]  
+\[
+p_{g,1} = 3.997 \, \text{bar} + 1.013 \, \text{bar} = 5.010 \, \text{bar}
+\]  
+
+For the gas:  
+\[
+p V = n R T
+\]  
+The gas mass \( m_g \) is calculated as:  
+\[
+m_g = \frac{p_{g,1} V_{g,1}}{R T_{g,1}}
+\]  
+Substituting the values:  
+\[
+m_g = \frac{5.010 \times 10^5 \, \text{N/m}^2 \cdot 3.14 \times 10^{-3} \, \text{m}^3}{8.314 \, \text{J/mol·K} \cdot 273.15 \, \text{K}} \cdot \frac{50 \, \text{kg}}{\text{kmol}}
+\]  
+\[
+m_g = 3.198 \times 10^{-3} \, \text{kg}
+\]  
+
+---
+
+TASK 3b  
+The pressure \( p_{g,2} = p_{g,1} \) because the mass on the piston remains constant.
+
+---
+
+TASK 3c  
+The energy balance is given as:  
+\[
+\Delta U_g = Q - W
+\]  
+Where:  
+\[
+Q = \Delta U_g + W
+\]  
+
+The work \( W \) is calculated as:  
+\[
+W = \int_{V_1}^{V_2} p_{g,1} \, dV = p_{g,1} (V_2 - V_1)
+\]  
+
+The internal energy change \( \Delta U_g \) is:  
+\[
+\Delta U_g = m_g (u_2 - u_1) = m_g (T_2 - T_1) c_V
+\]  
+
+For \( V_2 \):  
+\[
+V_2 = \frac{m_g R T_2}{p_{g,1}}
+\]  
+Substituting the values:  
+\[
+V_2 = \frac{3.198 \times 10^{-3} \, \text{kg} \cdot 8.314 \, \text{J/mol·K} \cdot 273.15 \, \text{K}}{5.010 \times 10^5 \, \text{N/m}^2} \cdot \frac{1}{50 \, \text{kg/kmol}}
+\]  
+\[
+V_2 = 1.108 \times 10^{-3} \, \text{m}^3
+\]  
+
+The work \( W \) is:  
+\[
+W = 5.010 \times 10^5 \, \text{N/m}^2 \cdot (1.108 \times 10^{-3} \, \text{m}^3 - 3.14 \times 10^{-3} \, \text{m}^3)
+\]  
+\[
+W = -2.8212 \, \text{kJ}
+\]  
+
+The internal energy change \( \Delta U_g \) is:  
+\[
+\Delta U_g = 3.198 \times 10^{-3} \, \text{kg} \cdot (273.15 \, \text{K} - 773.15 \, \text{K}) \cdot 0.633 \, \text{kJ/kg·K}
+\]  
+\[
+\Delta U_g = -1.0920 \, \text{kJ}
+\]  
+
+The heat \( Q \) is:  
+\[
+Q = \Delta U_g + W = -1.0920 \, \text{kJ} + (-2.8212 \, \text{kJ})
+\]  
+\[
+Q = -3.3662 \, \text{kJ}
+\]  
+
+The heat \( Q_{12} \) transferred from the gas is:  
+\[
+Q_{12} = +3.3662 \, \text{kJ}
+\]

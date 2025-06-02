@@ -1,0 +1,63 @@
+TASK 2b  
+The outlet velocity \( w_6 \) and temperature \( T_6 \) are calculated. The ambient pressure \( p_0 \) is equal to the nozzle exit pressure \( p_6 \). The velocity at state 5 is given as \( w_5 = 220 \, \text{m/s} \). The process is modeled as adiabatic and isentropic.  
+
+The temperature ratio is expressed as:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting \( \kappa = 1.4 \), \( p_6 = p_0 \), and \( p_5 = 0.5 \, \text{bar} \):  
+\[
+T_6 = T_5 \left( \frac{p_0}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+\[
+T_6 = 431.9 \, \text{K} \left( \frac{0.191}{0.5} \right)^{\frac{0.4}{1.4}} = 390 \, \text{K}
+\]  
+
+The mass flow rate is expressed as:  
+\[
+\dot{m} = \rho A w
+\]  
+where \( \rho \) is the density, \( A \) is the cross-sectional area, and \( w \) is the velocity.  
+
+The outlet velocity \( w_6 \) is calculated as:  
+\[
+w_6 = 510 \, \text{m/s}
+\]  
+
+---
+
+TASK 2c  
+The mass-specific increase in flow exergy \( \Delta ex_{\text{flow}} \) between states 6 and 0 is determined.  
+
+The formula for \( \Delta ex_{\text{flow}} \) is:  
+\[
+\Delta ex_{\text{flow}} = \frac{\Delta \dot{E}_{\text{flow},6 \to 0}}{\dot{m}} = (h_e - h_a) - T_0 (s_e - s_a) + \Delta ke
+\]  
+
+The enthalpy difference is expressed as:  
+\[
+h_e - h_a = c_p (T_0 - T_6)
+\]  
+
+The entropy difference is expressed as:  
+\[
+s_e - s_a = c_p \ln \left( \frac{T_0}{T_6} \right) - R \ln \left( \frac{p_0}{p_6} \right)
+\]  
+
+The kinetic energy difference is expressed as:  
+\[
+\Delta ke = \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]  
+
+The specific gas constant \( R \) is calculated as:  
+\[
+R = c_p - c_v
+\]  
+\[
+R = \frac{c_p}{\kappa} = \frac{1.006 \, \text{kJ/kg·K}}{1.4} = 0.287 \, \text{kJ/kg·K}
+\]  
+
+Substituting into the exergy formula:  
+\[
+\Delta ex_{\text{flow}} = c_p \left( T_0 - T_6 \right) - T_0 \left[ \ln \left( \frac{T_0}{T_6} \right) c_p - R \ln \left( \frac{p_0}{p_6} \right) \right] + \left( \frac{w_6^2}{2} - \frac{w_0^2}{2} \right)
+\]

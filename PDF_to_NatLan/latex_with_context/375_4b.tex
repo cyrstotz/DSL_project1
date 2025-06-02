@@ -1,0 +1,40 @@
+The equation for energy balance is given as:  
+\[
+0 = \dot{m} (h_2 - h_3) + \dot{Q}_K + \dot{W}_K
+\]
+
+The pressure at state 3 is \(p_3 = 8 \, \text{bar}\), and the temperature at state 2 is \(T_2 = 6 \, \text{K}\) below \(T_i\).  
+\[
+T_i = 273 \, \text{K} + 10 \, \text{K} = 283 \, \text{K}
+\]
+\[
+T_2 = 283 \, \text{K} - 6 \, \text{K} = 277 \, \text{K} \, (50^\circ\text{C})
+\]
+
+To interpolate \(h_2\), the following formula is used:  
+\[
+y = \frac{x - x_2}{x_3 - x_2} (y_3 - y_2) + y_2
+\]
+
+Values for enthalpy are given:  
+\[
+h_{40^\circ\text{C}} = 249.53 \, \frac{\text{kJ}}{\text{kg}}
+\]
+\[
+h_{80^\circ\text{C}} = 251.80 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+Interpolating \(h_{277^\circ\text{C}}\):  
+\[
+h_{277^\circ\text{C}} = \frac{T_2 - 40^\circ\text{C}}{80^\circ\text{C} - 40^\circ\text{C}} (h_{80^\circ\text{C}} - h_{40^\circ\text{C}}) + h_{40^\circ\text{C}}
+\]
+\[
+h_2 = 250.087 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+At state 3 (\(p_3 = 8 \, \text{bar}\)), entropy is assumed constant:  
+\[
+s_2 = s_3
+\]
+
+Further interpolation is required for \(s_2\).

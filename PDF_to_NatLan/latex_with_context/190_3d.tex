@@ -1,0 +1,29 @@
+To determine the final ice fraction \( x_{\text{ice},2} \):  
+
+The external pressure must remain constant, so:  
+\[
+p_{\text{ext}} = p_{4,\text{EW}} = 1 \, \text{bar} + \frac{g \cdot m_K}{A} = 1.0993 \, \text{bar}
+\]  
+
+Using interpolation for \( u_1 \):  
+\[
+\frac{1.1 \, \text{bar} - 1.1 \, \text{bar}}{1.1 \, \text{bar} - 1 \, \text{bar}} = \frac{u_{g1} - (-333.4659)}{-333.4658 - (-333.4642)}
+\]  
+From interpolation:  
+\[
+u_{g1} = -333.446 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Similarly, for \( u_{fe} \):  
+\[
+\frac{1.1 \, \text{bar} - 1.1 \, \text{bar}}{1.1 \, \text{bar} - 1 \, \text{bar}} = \frac{u_{fe} - (-0.045)}{-0.045 - (-0.033)}
+\]  
+From interpolation:  
+\[
+u_{fe} = -0.036 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Finally, the equation for \( u_1 \):  
+\[
+u_1 = -333.446 + 0.6 \cdot (-0.036 - (-333.446)) = -133.4 \, \frac{\text{kJ}}{\text{kg}}
+\]

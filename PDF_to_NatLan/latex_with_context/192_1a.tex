@@ -1,0 +1,47 @@
+A schematic diagram is drawn showing a reactor with inlet and outlet mass flows (\( \dot{m}_{\text{in}} \) and \( \dot{m}_{\text{out}} \)), heat input (\( \dot{Q}_R = 100 \, \text{kW} \)), and heat removed (\( \dot{Q}_{\text{out}} \)).  
+
+The first law of thermodynamics is applied:  
+\[
+\dot{m} (h_1 - h_2 + \frac{v^2}{2} + gz) + \sum \dot{Q} - \dot{W} = 0 \quad \text{(stationary)}
+\]  
+
+It is noted that \( 0 < x_D < 1 \), indicating the steam quality \( x_D \) is within the saturated region.  
+
+For state 1:  
+\[
+T_1 = 70^\circ\text{C}, \quad x_D = 0.005
+\]  
+The enthalpy at state 1 is calculated:  
+\[
+h_1 = h_f(70) + x_D \cdot (h_g(70) - h_f(70))
+\]  
+Using values from the water tables:  
+\[
+h_f = 292.58 \, \frac{\text{kJ}}{\text{kg}}, \quad h_g = 2626.8 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_1 = 304.65 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+For state 2:  
+\[
+h_2 = h_f(100) + x_D \cdot (h_g(100) - h_f(100))
+\]  
+Using values from the water tables:  
+\[
+h_f = 419.04 \, \frac{\text{kJ}}{\text{kg}}, \quad h_g = 2676.1 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_2 = 430.33 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The energy balance equation is applied:  
+\[
+\dot{m} (h_1 - h_2) + 100 \, \text{kW} - \dot{Q}_{\text{out}} = 0
+\]  
+Solving for \( \dot{Q}_{\text{out}} \):  
+\[
+\dot{Q}_{\text{out}} = 62.3 \, \text{kW}
+\]  
+
+---

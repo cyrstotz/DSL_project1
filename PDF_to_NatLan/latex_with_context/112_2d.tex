@@ -1,0 +1,26 @@
+The task involves computing the mass-specific exergy destruction \( ex_{\text{dest}} \) in the engine.  
+
+The exergy destruction is expressed as:  
+\[
+ex_{\text{dest}} = T_0 (s_6 - s_0)
+\]  
+
+Given:  
+\[
+q_B = \frac{\dot{Q}_B}{\dot{m}_{\text{ges}}}, \quad \dot{m}_{\text{ges}} = 6.293 \, \dot{m}_K
+\]  
+
+Substituting:  
+\[
+q_B = \frac{\dot{Q}_B}{6.293}
+\]  
+
+The entropy difference \( s_6 - s_0 \) is calculated using:  
+\[
+s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right)
+\]  
+
+Final expression for \( ex_{\text{dest}} \):  
+\[
+ex_{\text{dest}} = T_0 (s_6 - s_0) - \frac{1}{6.293} q_B
+\]

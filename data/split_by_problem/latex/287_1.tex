@@ -1,0 +1,118 @@
+
+``````latex
+
+
+1) a) $\dot{Q}_{aus}$: Energiebilanz (stationär)
+
+\[
+0 = \dot{m} \left( h_{1}(70^\circ C) - h_{2}(100^\circ C) \right) + \dot{Q}_{R} + \dot{Q}_{aus} \quad \xrightarrow{\dot{Q}_{R} = 0}
+\]
+
+\[
+\text{im Reaktor, } x = 0.005
+\]
+
+\[
+h_{ein} = h(70^\circ C, 0.005) \quad \text{TAB A-2}
+\]
+
+\[
+h_{ein} = h(70^\circ C, 0.005) = 232.88 + 0.005 (2628.8 - 232.88) = 394.691 \frac{kJ}{kg}
+\]
+
+\[
+h_{aus} = h(100^\circ C, 0.005) \quad \text{TAB A-2}
+\]
+
+\[
+h_{aus} = h(100^\circ C, 0.005) = 211.04 + 0.005 (2676.1 - 419.04) = 436.3253 \frac{kJ}{kg}
+\]
+
+\[
+\Rightarrow \dot{Q}_{aus} = \dot{m} (h_{aus} - h_{ein}) - \dot{Q}_{R} = 0.3 (436.3253 - 394.691) - 100 = -62.297 \frac{kJ}{s} \quad \text{(Vorzeichenkonvention: } Q_{ein} \text{ positiv, } Q_{aus} \text{ negativ)}
+\]
+
+\[
+\text{(wenn wie auf Skizze: } \dot{Q}_{aus} = 62.297 \frac{kJ}{s})
+\]
+
+b) $\bar{T} = \frac{\int T ds}{s_{2} - s_{1}}$
+
+\[
+s_{2}'' - s_{1}'' = \int_{T_{1}}^{T_{2}} \frac{c^{ig}}{T} dT = c^{ig} \ln \left( \frac{T_{2}}{T_{1}} \right)
+\]
+
+\[
+\int T ds = \dot{H} - V \dot{p} \approx 0, \text{ da Druck konstant}
+\]
+
+\[
+\int T ds = c^{ig} \int_{T_{1}}^{T_{2}} dT = c^{ig} (T_{2} - T_{1})
+\]
+
+\[
+\bar{T} = \frac{c^{ig} (T_{2} - T_{1})}{c^{ig} \ln \left( \frac{T_{2}}{T_{1}} \right)} = \frac{298.15 - 288.15}{\ln \left( \frac{298.15}{288.15} \right)} = 293.12 K
+\]
+
+c) Sez:
+
+\[
+\text{(Skizze)}
+\]
+
+\text{Description of the sketch: The sketch shows a rectangle labeled "Reaktor" with an arrow pointing upwards labeled "$\dot{Q}_{aus}$".}
+
+\[
+\text{Energiebilanz: } 0 = \dot{m} (s_{2} - s_{1}) + \frac{\dot{Q}_{aus}}{\bar{T}} + Sez
+\]
+
+\[
+Sez = \dot{m} (s_{2} - s_{1}) - \frac{\dot{Q}_{aus}}{\bar{T}}
+\]
+
+\[
+s_{2} = s(100^\circ C, x = 0.005) = 1.30 c^{ig} + 0.005 (7.3549 - 1.30 c^{ig}) = 1.3374 \frac{kJ}{kg K}
+\]
+
+\[
+s_{1} = s(70^\circ C, x = 0.005) = 0.9574 + 0.005 (7.7553 - 0.9574) = 0.9885 \frac{kJ}{kg K}
+\]
+
+\[
+Sez = 0.3 (1.3374 - 0.9885) + \frac{62.297}{293.12} = 0```latex
+
+
+a) Energiebilanz:
+\[
+m_2 u_2 - m_1 u_1 = (m_2 - m_1) h_{\text{ein}} + \dot{Q}_{12} - \dot{W} = 0
+\]
+
+Tabelle A2
+\[
+u_2 = u \left( \text{bei } 100^\circ C, x = 0.05 \right) = 418.94 + 0.05 \cdot (2505.5 - 418.94) = 129.3878 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+m_2 = (m_1 + \Delta m)
+\]
+
+\[
+(m_1 + \Delta m) u_2 = \Delta m h_{\text{ein}} + \dot{Q}_{12}
+\]
+
+\[
+\Delta m (h_{\text{ein}} - u_2) = m_1 u_2 - m_1 u_1 - \dot{Q}_{12}
+\]
+
+\[
+\Delta m = \frac{m_1 (u_2 - u_1) - \dot{Q}_{12}}{h_{\text{ein}} - u_2}
+\]
+
+e) \(\Delta S_{12} = m_2 s_2 - m_1 s_1\) aus Aufgabe d)
+\[
+m_2 = 5.755 \frac{\text{kg}}{\text{s}} + 3.600 \frac{\text{kg}}{\text{s}} = 6.355 \frac{\text{kg}}{\text{s}}
+\]
+
+``````latex
+
+

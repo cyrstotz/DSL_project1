@@ -1,0 +1,40 @@
+Energy balance equation for the engine:  
+\[
+\Delta ex_{\text{flow}} = \sum \left( m_i \cdot h_i + \frac{1}{2} w_i^2 \right) - \sum \left( m_e \cdot h_e + \frac{1}{2} w_e^2 \right) - \sum \dot{W}
+\]  
+Simplified for steady-state flow:  
+\[
+\Delta ex_{\text{flow}} = \dot{m} \left( h_6 - h_0 + \frac{1}{2} w_6^2 - \frac{1}{2} w_0^2 \right) - \dot{W}
+\]  
+
+No further numerical values are provided for calculation.  
+
+---
+
+Description of Diagram:  
+The \( T \)-\( s \) diagram visually represents the thermodynamic process of the jet engine, including compression, combustion, expansion, and mixing. States 0 through 6 are marked along the curve, with dashed lines indicating isobars at \( p_0 = 0.191 \, \text{bar} \) and \( p_5 = 0.5 \, \text{bar} \). The entropy increases during combustion and decreases during expansion.
+
+The exergy destruction (\( ex_{\text{dest}} \)) is calculated using the exergy balance equation:  
+\[
+\frac{d ex}{dt} = \sum \dot{ex}_{\text{flow}} + \sum \dot{ex}_{\text{Q}} - \sum \dot{W} - \rho \frac{d}{dt} ex_{\text{flow}} - ex_{\text{dest}}
+\]  
+
+For steady-state and adiabatic conditions:  
+\[
+C = ex_{\text{flow}} - W - ex_{\text{dest}}
+\]  
+
+Rearranging:  
+\[
+ex_{\text{dest}} = ex_{\text{flow}} - W
+\]  
+
+Energy balance from state \( 0 \to 1 \):  
+\[
+0 = \dot{m} \cdot (ri + kei + pei) + \sum \dot{Q} - \sum \dot{W}
+\]  
+
+Where:  
+- \( ri \): internal energy  
+- \( kei \): kinetic energy  
+- \( pei \): potential energy

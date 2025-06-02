@@ -1,0 +1,84 @@
+TASK 1b  
+The thermodynamic mean temperature \( \bar{T}_{\text{KF}} \) is calculated using the integral formula:  
+\[
+\bar{T}_{\text{KF}} = \int_{T_{\text{in}}}^{T_{\text{out}}} T \, dS_{\text{iso}} \quad \text{which simplifies to} \quad \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)}
+\]  
+Substituting the given values:  
+\[
+\bar{T}_{\text{KF}} = \frac{(298.15 \, \text{K} - 288.15 \, \text{K})}{\ln \left( \frac{298.15 \, \text{K}}{288.15 \, \text{K}} \right)} = 293.12 \, \text{K}
+\]
+
+---
+
+TASK 1c  
+The entropy production rate \( \dot{S}_{\text{gen}} \) is calculated as:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{out}}}{T_{\text{Reactor}}} + \frac{\dot{Q}_{\text{out}}}{\bar{T}_{\text{KF}}}
+\]  
+Substituting the values:  
+\[
+\dot{S}_{\text{gen}} = \frac{65 \, \text{kW}}{373.15 \, \text{K}} + \frac{65 \, \text{kW}}{293.12 \, \text{K}} = 0.174 \, \text{kW/K} + 0.222 \, \text{kW/K} = 0.396 \, \text{kW/K}
+\]
+
+---
+
+TASK 1e  
+The entropy change \( \Delta S_{12} \) of the reactor contents is calculated using the formula:  
+\[
+\Delta S_{12} = m_2 \, (s_2 - s_1)
+\]  
+Where \( s_1 = s_f(100^\circ\text{C}) + x_D \, (s_g(100^\circ\text{C}) - s_f(100^\circ\text{C})) \):  
+\[
+s_1 = 3.3069 \, \frac{\text{kJ}}{\text{kg·K}} + 0.005 \, (7.3589 - 3.3069) \, \frac{\text{kJ}}{\text{kg·K}} = 3.3347 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+And \( s_2 = s_f(20^\circ\text{C}) \):  
+\[
+s_2 = 0.3549 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+The mass \( m_2 \) is calculated as:  
+\[
+m_2 = m_{\text{gas}} = m_{\text{total}} + \Delta m_{12} = 5755 \, \text{kg} + 3600 \, \text{kg} = 9355 \, \text{kg}
+\]  
+Thus:  
+\[
+\Delta S_{12} = 9355 \, \text{kg} \, (0.3549 - 3.3347) \, \frac{\text{kJ}}{\text{kg·K}} = -35757 \, \frac{\text{kJ}}{\text{K}}
+\]
+
+---
+
+TASK 1d  
+The mass \( \Delta m_{12} \) is determined using the energy balance:  
+\[
+Q_{R,12} = m_1 \, (u_2 - u_{\text{in}}) + \Delta m_{12} \, (u_2 - u_{\text{in}})
+\]  
+Rearranging:  
+\[
+\Delta m_{12} = \frac{Q_{R,12} - m_1 \, (u_2 - u_{\text{in}})}{u_2 - u_{\text{in}}}
+\]  
+Where:  
+\[
+u_2 = u_f(70^\circ\text{C}) = 292.95 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_{\text{in}} = u_f(20^\circ\text{C}) = 83.96 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Substituting values:  
+\[
+\Delta m_{12} = \frac{35,000 \, \text{kJ} - 5755 \, \text{kg} \, (292.95 - 83.96) \, \frac{\text{kJ}}{\text{kg}}}{292.95 - 83.96 \, \frac{\text{kJ}}{\text{kg}}} = 3600 \, \text{kg}
+\]
+
+---
+
+TASK 1a  
+Using the energy balance:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \, (h_2 - h_1) - \dot{Q}_R
+\]  
+Where:  
+\[
+h_1 = h_f(70^\circ\text{C}) = 252.38 \, \frac{\text{kJ}}{\text{kg}}, \quad h_2 = h_f(100^\circ\text{C}) = 418.34 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \frac{\text{kg}}{\text{s}} \, (418.34 - 252.38) \, \frac{\text{kJ}}{\text{kg}} - 100 \, \text{kW} = -62.21 \, \text{kW}
+\]

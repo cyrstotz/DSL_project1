@@ -1,0 +1,20 @@
+The mass flow rate \( \dot{m}_{R134a} \) is calculated using the energy balance for the stationary flow process:  
+\[ 0 = \dot{m} \cdot (h_2 - h_3) + \dot{W}_K \]  
+\[ \dot{m} = \frac{\dot{W}_K}{h_2 - h_3} = \frac{-28 \, \text{kW}}{(234.08 - 93.42) \, \text{kJ/kg}} = 0.083 \, \text{kg/s} \]  
+
+A table is provided with the following columns:  
+- \( p \): Pressure values for states 1, 2, 3, and 4 (state 1 and state 2 are not provided, state 3 and state 4 are \( 8 \cdot 10^5 \, \text{Pa} \)).  
+- \( x \): Vapor quality (state 1 = 1, state 4 = 0).  
+- \( T \): Temperature values (state 1 = \( T_i - 6 = -22^\circ \text{C} \), state 4 = \( T_i - 6 \)).  
+- \( h \): Enthalpy values (state 1 = 93.42, state 2 = 234.08, state 3 = 234.08, state 4 = 93.42).  
+
+Additional notes:  
+- \( p_3 = p_4 \), \( h_3 = h_4 \).  
+- \( T_4 = T_1 \).  
+- \( s_2 = s_3 = s_{ei} - 22 \cdot x = 0.3351 \, \text{kJ/kg·K} \) (from Table A-10).  
+- \( s_3 (8 \, \text{bar}) = 0.3351 \).  
+
+Interpolation for \( h_3 \):  
+\[ h_3 = h(400) + \frac{h(50) - h(400)}{s(50) - s(400)} \cdot s_3 \]  
+\[ h_3 = 293.66 + \frac{284.33 - 293.66}{0.3351 - 0.3344} \cdot 0.3351 \]  
+\[ h_3 = 293.66 + 284.33 - 293.66 = 521.33 \, \text{kJ/kg} \]

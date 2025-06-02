@@ -1,0 +1,88 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{itemize}
+    \item The graph is a Temperature-Entropy (T-S) diagram.
+    \item The x-axis is labeled \( S \left( \frac{kJ}{kg \cdot K} \right) \).
+    \item The y-axis is labeled \( T(K) \).
+    \item There are two isobars labeled \( P_1 \) and \( P_2 \) with \( P_2 > P_1 \).
+    \item The process starts at a point on the lower isobar \( P_1 \), moves vertically up to the upper isobar \( P_2 \) through a process labeled "Verdichter".
+    \item From the upper isobar \( P_2 \), the process moves rightward and slightly downward through a process labeled "isobare Wärmezufuhr".
+    \item The process then moves downward to the lower isobar \( P_1 \) through a process labeled "Turbine".
+    \item Finally, the process moves leftward and slightly downward back to the starting point on the lower isobar \( P_1 \) through a process labeled "T=const".
+\end{itemize}
+
+\subsection*{b)}
+
+\begin{align*}
+    &\text{Fließprozess stationär:} \\
+    &0 = \dot{m} \left( h_e - h_a + \frac{w_{e}^2 - w_{a}^2}{2} \right) + \sum \dot{Q}_i - \sum \dot{W}^o \\
+    &\frac{-Q_B}{\dot{m}} = h_e(T_5) - h_a(T_6) + \frac{w_{e}^2 - w_{a}^2}{2} \\
+    &T_5 = 431.9K \\
+    &T_6: \frac{T_6}{T_5} = \left( \frac{P_6}{P_5} \right)^{\frac{n-1}{n}} \Rightarrow T_6 = 431.8K \cdot \left( \frac{0.18 \text{bar}}{0.5 \text{bar}} \right)^{\frac{1.4-1}{1.4}} \\
+    &T_6 = 328.47K \approx 328.08K \\
+    &h_e(T_5) = h(490) + 431.9K - 430K \left( \frac{h(490) - h(430)}{490K - 430K} \right) = 433.364 \frac{kJ}{kg} \\
+    &h_a(T_6) = h(330) + 328.08K - 325K \left( \frac{h(330) - h(325)}{330K - 325K} \right) = 328.38 \frac{kJ}{kg} \\
+    &w_a = w_e^2 - \left( h_e(T_5) - h_a(T_6) \right) + \frac{Q_B}{\dot{m}} + w_e^2 \\
+    &\dot{m} = ?
+\end{align*}
+
+``````latex
+
+
+\section*{Problem c}
+
+\begin{equation*}
+- \Delta \dot{E}_{x,str} = \dot{m} (h_c - h_a - T_0 (s_e - s_a)) + \frac{\dot{m} \omega_e^2 - \dot{m} \omega_a^2}{2}
+\end{equation*}
+
+\begin{equation*}
+- \frac{\Delta \dot{E}_{x,str}}{\dot{m}} = h(300) - h(340K) - T_0 \left( C_p \ln \left( \frac{T_0}{T_0} \right) \right) + \frac{\omega_e^2 - \omega_a^2}{2}
+\end{equation*}
+
+\begin{equation*}
+h(293,15) = h(240) + \frac{293,15K - 240K}{(250) - h(240)}
+\end{equation*}
+
+\begin{equation*}
+h(340K) = 340,42 \frac{kJ}{kg}
+\end{equation*}
+
+\begin{equation*}
+h(293,15) = 243,15 \frac{kJ}{kg}
+\end{equation*}
+
+\begin{equation*}
+- \frac{\Delta \dot{E}_{x,str}}{\dot{m}} = 243,15 \frac{kJ}{kg} - 340,42 \frac{kJ}{kg} + \frac{200 \frac{m^2}{s^2} - 510 \frac{m^2}{s^2}}{2}
+\end{equation*}
+
+\begin{equation*}
+\frac{\Delta \dot{E}_{x,str}}{\dot{m}} = 11 \cdot 0229,27 \frac{kJ}{kg}
+\end{equation*}
+
+\section*{Problem d}
+
+\begin{equation*}
+\dot{E}_{x,verl} = T_0 \cdot \dot{S}_{ez}
+\end{equation*}
+
+\begin{equation*}
+\dot{S}_{ez} = \dot{m} (s_2 - s_1) = \dot{m} \left( \ln \left( \frac{T_2}{T_1} \right) C_p \right)
+\end{equation*}
+
+\begin{equation*}
+\frac{\dot{E}_{x,verl}}{\dot{m}} = T_0 \cdot C_p \ln \left( \frac{T_0}{T_0} \right) - 293,15K \cdot 1,006 \frac{kJ}{kgK} \cdot \ln \left( \frac{340K}{293,15K} \right)
+\end{equation*}
+
+\begin{equation*}
+= 82,01 \frac{kJ}{kg}
+\end{equation*}
+
+``````latex
+
+

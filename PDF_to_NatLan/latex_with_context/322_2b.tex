@@ -1,0 +1,24 @@
+The outlet velocity \( w_6 \) and temperature \( T_6 \) are determined using the energy balance for the adiabatic nozzle process:  
+\[
+w_6 = \sqrt{2 \cdot (\dot{h}_5 - \dot{h}_6) + w_5^2 - w_0^2}
+\]  
+The enthalpy difference \( h_6 - h_5 \) is calculated as:  
+\[
+h_6 - h_5 = \int_{T_5}^{T_6} c_p \, dT = c_p (T_6 - T_5)
+\]  
+For the compression process, the temperature ratio is derived using the polytropic relation:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = 431.9 \, \text{K} \cdot \left( \frac{0.191 \, \text{bar}}{0.5 \, \text{bar}} \right)^{\frac{1.4 - 1}{1.4}} = 326.07 \, \text{K}
+\]  
+The enthalpy difference is:  
+\[
+h_6 - h_5 = c_p (T_6 - T_5) = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \cdot (326.07 \, \text{K} - 431.9 \, \text{K}) = -106.45 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Finally, the outlet velocity is:  
+\[
+w_6 = \sqrt{2 \cdot (-106.45 \, \frac{\text{kJ}}{\text{kg}}) + w_5^2} = 243.54 \, \text{m/s}
+\]

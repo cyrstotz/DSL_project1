@@ -1,0 +1,40 @@
+TASK 1a  
+Energy balance for a stationary system:  
+\[
+Q = \dot{m} (h_{\text{in}} - h_{\text{out}}) + \dot{Q} - \dot{W}
+\]  
+The heat flow removed by the coolant is given as:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} (h_{\text{out}} - h_{\text{in}})
+\]  
+where \( \dot{Q}_{\text{out}} = 100 \, \text{kW} \).  
+Reference: Table A-2.
+
+---
+
+TASK 1b  
+(With \( Q_{\text{out}} = 65 \, \text{kW} \))  
+
+The thermodynamic mean temperature \( T_{\text{KF}} \) is derived using the entropy relation:  
+\[
+dH = T \, dS + V \, dp \quad \text{(isobaric process)}
+\]  
+\[
+dS = \frac{dH}{T}
+\]  
+
+Integrating over the temperature range:  
+\[
+T = \int_{s_a}^{s_e} T \, dS = \int_{T_e}^{T_a} \frac{dH}{T}
+\]  
+\[
+T = \frac{\int_{T_e}^{T_a} c_p \, dT}{\int_{T_e}^{T_a} \frac{1}{T} \, dT}
+\]  
+
+Substituting values:  
+\[
+T = c_p \cdot \frac{(T_a - T_e)}{\ln \left( \frac{T_a}{T_e} \right)}
+\]  
+\[
+T = 2.94 \cdot \frac{(298.15 - 288.75)}{\ln \left( \frac{298.15}{288.75} \right)} = 293.72 \, \text{K}
+\]

@@ -1,0 +1,67 @@
+
+``````latex
+
+
+3) \\
+a) 
+\begin{align*}
+    p_{g1} &= p_{amb} + p_{Kolben} \\
+    p_{Kolben} &= \frac{32 \text{kg} \cdot 9.81 \frac{\text{m}}{\text{s}^2}}{(0.05 \text{m})^2 \cdot \pi} = 35.9635 \text{kPa} \\
+    \Rightarrow p_{g1} &= 100 \text{kPa} + 35.9635 \text{kPa} = 135.97 \text{kPa} \\
+    m_{g1} &= \frac{V_{g1} \cdot p_{g1}}{R \cdot T_{g1}} = \frac{0.00314 \text{m}^3 \cdot 135.97 \text{kPa}}{8.314 \frac{\text{kJ}}{\text{kmol K}} \cdot \frac{50 \text{kg}}{\text{kmol}} \cdot 273.15 \text{K}} = 3.41 \text{g}
+\end{align*}
+
+b) 
+\begin{align*}
+    p_{g2} &= p_{g1} = 135.97 \text{kPa} \\
+    &\text{bleibt gleich, weil die Masse des Kolbens und der Druck der Atmosphäre gleich bleiben.}
+\end{align*}
+
+c) 
+\begin{align*}
+    Q_{12} &= \Delta E_{12} = Q_{u2} - W_{12} \\
+    W_{12} &= p_{g1} \left( V_{g2} - V_{g1} \right) \\
+    V_{g2} &= \frac{m_{g1}}{\frac{R}{M_S} \cdot T_{g2}} \cdot p_{g2} = \frac{3.41 \text{g}}{\frac{8.314 \frac{\text{kJ}}{\text{kmol K}}}{50 \frac{\text{kg}}{\text{kmol}}} \cdot 273.15 \text{K}} \cdot 135.97 \text{kPa} = 0.004105 \text{m}^3 \\
+    \Rightarrow W_{12} &= 135.97 \text{kPa} \cdot (0.004105 \text{m}^3 - 0.00314 \text{m}^3) = -0.2582 \text{kJ} \\
+    \Rightarrow \Delta E_{12} &= \Delta U_{12} = m_{g1} \cdot (u_{g2} - u_{g1}) + m_{g2} \cdot (u_{g2} - u_{g1})
+\end{align*}
+
+``````latex
+
+
+\section*{Problem d}
+
+\begin{align*}
+Q_{A2} &= x_{Eis2} \cdot m_{EW} \cdot (v_{w2} - v_{Eis2}) + x_{Eis1} \cdot m_{EW} \cdot (v_{w1} - v_{Eis1}) \\
+&\quad + (1 - x_{Eis2}) \cdot m_{EW} \cdot (v_{w2} - v_{Eis2}) + (1 - x_{Eis1}) \cdot m_{EW} \cdot (v_{w1} - v_{Eis1}) \\
+&\quad + m_{g} \cdot (v_{g2} - v_{g1})
+\end{align*}
+
+\begin{align*}
+Q_{A2} &= x_{Eis2} \frac{m_{EW} v_{w2}}{v_{Eis2}} + (1 - x_{Eis2}) \frac{m_{EW} v_{w2}}{v_{Eis2}} + m_{g} \cdot v_{g2} \\
+&\quad - x_{Eis1} \frac{m_{EW} v_{w1}}{v_{Eis1}} - (1 - x_{Eis1}) \frac{m_{EW} v_{w1}}{v_{Eis1}} - m_{g} \cdot v_{g1}
+\end{align*}
+
+\begin{align*}
+m_{EW} &= 0.1 \, \text{kg} \\
+v_{Eis1,2} &= v_{fest} (0.033 \frac{\text{kJ}}{\text{kg}}) = -333.442 \frac{\text{kJ}}{\text{kg}} \\
+v_{w2} &= v_{flüssig} (0.003 \frac{\text{kJ}}{\text{kg}}) = -0.033 \frac{\text{kJ}}{\text{kg}} \\
+v_{Eis1} &= v_{fest} (0.1) = -333.455 \frac{\text{kJ}}{\text{kg}} \\
+v_{w1} &= v_{flüssig} (0.2) = -0.045 \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+\begin{align*}
+x_{Eis} (m_{EW} (v_{w2} - v_{Eis2})) &= m_{EW} v_{w2} - x_{Eis} m_{EW} v_{Eis2} + (1 - x_{Eis}) m_{EW} v_{w1} \\
+&\quad + m_{g} (v_{g2} - v_{g1}) \\
+&= c_{v} m_{g} (T_{2} - T_{1})
+\end{align*}
+
+\begin{align*}
+x_{Eis} &= \frac{0.1 \, \text{kg} \cdot (-0.033 \frac{\text{kJ}}{\text{kg}}) + 0.6 \cdot 0.1 \, \text{kg} \cdot (-333.455 \frac{\text{kJ}}{\text{kg}}) - (1 - 0.6) \cdot 0.1 \, \text{kg} \cdot (-0.045 \frac{\text{kJ}}{\text{kg}})}{0.1 \, \text{kg} \cdot (-0.033 + 333.442) \frac{\text{kJ}}{\text{kg}}} \\
+&\quad + \frac{0.033 \frac{\text{kJ}}{\text{kg}} - 0.003 \cdot 0.1 \, \text{kg} (279.173 \text{k} - 773.15 \text{k})}{0.1 \, \text{kg} \cdot (-0.033 + 333.442) \frac{\text{kJ}}{\text{kg}}}
+\end{align*}
+
+\begin{align*}
+Q_{A2} &= x_{2} m_{EW} v_{Eis2} - x_{2} m_{EW} v_{Eis2} + m_{EW```latex
+
+

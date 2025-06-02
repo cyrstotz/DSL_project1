@@ -1,0 +1,40 @@
+The task involves determining the outlet velocity \( w_6 \) and temperature \( T_6 \).  
+
+The energy balance equation is applied:  
+\[
+O = \dot{m}_{\text{gas}} \left( h_5 - h_6 + \frac{1}{2} w_5^2 - \frac{1}{2} w_6^2 \right)
+\]
+
+The enthalpy \( h_5 \) is calculated using the given temperature \( T_5 = 437.9 \, \text{K} \) and pressure \( p_5 = 0.5 \, \text{bar} \):  
+\[
+h_5 = h(T_5, p_5) = A - B + C - D
+\]
+Where:  
+- \( A = 490 \), \( B = 490 \), \( C = 431.9 \times 10^3 \), \( D = 441.6 \times 10^3 \).  
+
+The enthalpy \( h_6 \) is calculated using \( T_6 = 328.07 \, \text{K} \) and \( p_6 = 0.191 \, \text{bar} \):  
+\[
+h_6 = h(T_6, p_6) = A - B + C - D
+\]
+Where:  
+- \( A = 325 \), \( B = 325 \), \( C = 330.3 \times 10^3 \), \( D = 330.3 \times 10^3 \).  
+
+The temperature ratio is used to calculate \( T_6 \):  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]
+Substituting values:  
+\[
+\frac{T_6}{T_5} = \left( \frac{0.191}{0.5} \right)^{\frac{0.4}{1.4}} \implies T_6 = 328.07 \, \text{K}
+\]
+
+The outlet velocity \( w_6 \) is determined using:  
+\[
+w_6^2 = \frac{2}{m} \left( h_5 - h_6 \right) + w_5^2
+\]
+Substituting values:  
+\[
+w_6 = \sqrt{\frac{2}{m} \left( h_5 - h_6 \right) + w_5^2} = 508.26 \, \text{m/s}
+\]  
+
+---

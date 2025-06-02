@@ -1,0 +1,41 @@
+TASK 1b  
+The mean thermodynamic temperature of the coolant, \( \bar{T}_{\text{KF}} \), is calculated as follows:  
+\[
+T_{\text{KF,out}} = 298.15 \, \text{K} = T_{2}
+\]  
+\[
+T_{\text{KF,in}} = 288.15 \, \text{K} = T_{1}
+\]  
+The mean temperature is given by:  
+\[
+\bar{T} = \frac{\int_{s_e}^{s_a} T \, ds}{s_a - s_e} \quad \Rightarrow \quad \bar{T} = \frac{T_2 - T_1}{\ln\left(\frac{T_2}{T_1}\right)}
+\]  
+Substituting the values:  
+\[
+\bar{T} = \frac{298.15 - 288.15}{\ln\left(\frac{298.15}{288.15}\right)} = 293.12 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+The entropy production rate, \( \dot{S}_{\text{gen}} \), is calculated for the reactor and cooling jacket system. The entropy balance equation is:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \cdot (s_e - s_a) + \frac{\dot{Q}_R}{T_R} + \frac{\dot{Q}_{\text{out}}}{\bar{T}}
+\]  
+Given values:  
+\[
+\dot{Q}_R = 100 \, \text{kW}, \quad \dot{Q}_{\text{out}} = -62.182 \, \text{kW}, \quad \bar{T} = 293.12 \, \text{K}, \quad \dot{m} = 0.3 \, \text{kg/s}
+\]  
+Substituting into the equation:  
+\[
+\dot{S}_{\text{gen}} = \frac{-62.182}{293.12} = -0.2121 \, \text{kW/K}
+\]  
+Thus:  
+\[
+\dot{S}_{\text{gen}} = 0.2121 \, \text{kW/K}
+\]  
+
+---
+
+Description of the figure:  
+The figure depicts a cylindrical reactor with labeled heat flows. The heat flow \( \dot{Q}_R \) enters the reactor, while \( \dot{Q}_{\text{out}} \) exits through the cooling jacket. The reactor temperature \( T_R \) is indicated, along with the coolant flow \( \bar{T} \).

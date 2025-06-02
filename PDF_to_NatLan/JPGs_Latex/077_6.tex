@@ -1,0 +1,44 @@
+TASK 3a  
+The goal is to determine the gas pressure \( p_{g,1} \) in state 1.  
+
+Given data:  
+- \( c_V = 0.633 \, \text{kJ/kg·K} \)  
+- \( M_g = 50 \, \text{kg/kmol} \)  
+- \( T = 500^\circ\text{C} = 773 \, \text{K} \)  
+- \( V = 3.14 \, \text{L} = 3.14 \times 10^{-3} \, \text{m}^3 \)  
+
+The equation of state \( pV = mRT \) is used, where \( m \) is unknown.  
+
+Steps:  
+1. Find \( p \).  
+2. Use \( m = \frac{pV}{RT} \) to find \( m \).  
+
+Pressure calculation:  
+Atmospheric pressure is \( p_{\text{amb}} = 1 \, \text{bar} \). The piston adds pressure:  
+\[
+p = p_{\text{amb}} + \frac{32 \, \text{kg} \cdot g}{A_0}
+\]  
+
+The cross-sectional area \( A_0 \) is calculated:  
+\[
+A_0 = \pi r^2 = \pi \left( \frac{D}{2} \right)^2 = \pi \left( \frac{10 \, \text{cm}}{2} \right)^2 = \pi \cdot (5 \, \text{cm})^2 = \pi \cdot 25 \, \text{cm}^2 = 25 \pi \, \text{cm}^2 = 25 \pi \cdot 0.01 \, \text{m}^2 = 0.25 \pi \, \text{m}^2
+\]  
+
+Substitute \( g = 9.81 \, \text{m/s}^2 \):  
+\[
+p = 1 \, \text{bar} + \frac{32 \cdot 9.81}{0.25 \pi \cdot 10^{-4}}
+\]  
+
+Convert units:  
+\[
+1 \, \text{bar} = 10^5 \, \text{Pa}, \quad \text{and} \quad \text{force per unit area} = \frac{\text{kg} \cdot \text{m/s}^2}{\text{m}^2} = \text{N/m}^2 = \text{Pa}
+\]  
+
+Final calculation:  
+\[
+p = 1 \, \text{bar} + 39,971 \, \text{Pa} = 1 \, \text{bar} + 0.3997 \, \text{bar} = 1.3997 \, \text{bar}
+\]  
+
+The gas pressure \( p_{g,1} \) is \( 1.3997 \, \text{bar} \).  
+
+No diagrams or graphs are present on this page.

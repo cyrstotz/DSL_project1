@@ -1,0 +1,45 @@
+TASK 3a  
+The table lists the initial and final states for the system:  
+
+\[
+\begin{array}{|c|c|c|c|}
+\hline
+\text{State} & T_g \, [^\circ\text{C}] & V_g \, [\text{m}^3] & T_{\text{EW}} \, [^\circ\text{C}] \\
+\hline
+1 & 500 & 3.14 \times 10^{-3} & 0 \\
+\hline
+2 & & & \\
+\hline
+\end{array}
+\]
+
+The mass of the ice-water mixture is given as \( m_{\text{EW}} = 0.1 \, \text{kg} \), and the initial ice mass fraction is \( x_{\text{ice},1} = 0.6 \).  
+
+The diameter of the cylinder is \( D = 10 \, \text{cm} \), and the gravitational acceleration is \( g = 9.81 \, \text{m/s}^2 \).  
+
+The gas pressure \( p_{\text{gas}} \) is calculated as:  
+\[
+p_{\text{gas}} = p_{\text{amb}} + p_{\text{piston}}
+\]
+Substituting values:  
+\[
+p_{\text{gas},1} = 1 \, \text{bar} + g \cdot \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{\pi \cdot (D/2)^2}
+\]
+\[
+p_{\text{gas},1} = 1 \, \text{bar} + 0.4 \, \text{bar} = 1.4 \, \text{bar}
+\]
+
+The mass of the gas \( m_g \) is calculated using the ideal gas law:  
+\[
+m_g = \frac{p \cdot V}{R \cdot T}
+\]
+where \( R = \frac{\bar{R}}{M_g} \). Substituting values:  
+\[
+m_g = \frac{1.4 \times 10^5 \cdot 3.14 \times 10^{-3}}{\frac{8.314}{50} \cdot 773.15}
+\]
+\[
+m_g = 3.42 \, \text{g}
+\]
+
+TASK 3b  
+The gas pressure \( p_{\text{gas}} \) remains constant because the thermodynamic equilibrium is maintained, and the ice-water mixture is incompressible. The EW does not exert additional pressure, so \( p_1 = p_2 \).

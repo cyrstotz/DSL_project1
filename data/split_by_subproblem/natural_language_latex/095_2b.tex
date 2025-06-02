@@ -1,0 +1,47 @@
+The speed \( w_s \) is 220 meters per second, the pressure \( p_5 \) is 6.56 bar, and the temperature \( T_5 \) is 431.5 Kelvin.
+
+Considering an adiabatic reversible thrust nozzle, the entropy at state 5 is equal to the entropy at state 6 (\( s_5 = s_6 \)).
+
+For an ideal gas, the relationship between the pressures and temperatures at states 6 and 5 is given by:
+\[
+\left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} = \frac{T_6}{T_5}
+\]
+This leads to the temperature at state 6 being:
+\[
+T_6 = 431.9 \text{ Kelvin} \cdot \left( \frac{4.56 \text{ bar}}{0.5 \text{ bar}} \right)^{0.4/1.4} = 328.07 \text{ Kelvin}
+\]
+
+For the entire turbine, the steady flow process equation is:
+\[
+0 = \dot{m} (h_2 - h_1 + \frac{w_e^2 - w_a^2}{2}) + q - \dot{W}_t
+\]
+Simplifying, it becomes:
+\[
+0 = \dot{m} (h_2 - h_1 + \frac{w_e^2 - w_a^2}{2})
+\]
+(Continued on another sheet)
+
+For the water section:
+\[
+\dot{m}(h_a + \frac{v_a^2}{2}) = \dot{m} (h_e + \frac{v_e^2}{2})
+\]
+This simplifies to:
+\[
+h_a - h_e = \frac{v_e^2 - v_a^2}{2}
+\]
+The squared exit velocity under isentropic conditions is:
+\[
+v_{e, \text{isuff}}^2 = 2(h_a - h_e) = v_e^2
+\]
+Thus, the exit velocity \( v_e \) is:
+\[
+v_e = \sqrt{v_{e, \text{isuff}}^2 - 2(h_a - h_b)}
+\]
+The initial velocity \( v_0 \) is calculated as:
+\[
+v_0 = \sqrt{\frac{200 - 7 \cdot v_e^2}{5} - 7 \cdot 1.000 \frac{v_e^2}{5} \cdot (325.69 \text{ Kelvin} - 293.15 \text{ Kelvin})}
+\]
+Resulting in:
+\[
+v_0 = 195.07 \text{ meters per second}
+\]

@@ -1,0 +1,31 @@
+The heat flow removed by the coolant is calculated using the equation:  
+\[
+\dot{Q}_{\text{out}} = -\dot{m} \left( h_e - h_a \right)
+\]  
+The inlet temperature of the coolant is \( T_{\text{KF,in}} = 288.15 \, \text{K} \), and the outlet temperature is \( T_{\text{KF,out}} = 298.15 \, \text{K} \). The inlet temperature of the reactor is \( T_{\text{in}} = 70^\circ\text{C} \), and the outlet temperature is \( T_{\text{out}} = 100^\circ\text{C} \). The reactor contains pure water.  
+
+The enthalpy at the inlet is determined from the water table (Table A-2):  
+\[
+h_e = h_f(70^\circ\text{C}) = 252.98 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The enthalpy at the outlet is calculated as:  
+\[
+h_a = h_f(100^\circ\text{C}) + x_D \left( h_g(100^\circ\text{C}) - h_f(100^\circ\text{C}) \right)
+\]  
+Substituting values:  
+\[
+h_a = 419.04 + 0.005 \left( 2676.1 - 419.04 \right) = 430.33 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The heat flow is then:  
+\[
+\dot{Q}_{\text{out}} = -0.3 \, \frac{\text{kg}}{\text{s}} \left( 252.98 - 430.33 \right) = 41.2 \, \text{kW}
+\]  
+
+The total heat flow removed is adjusted to include the reaction heat:  
+\[
+\dot{Q}_{\text{out}} = \dot{Q}_R - \dot{Q}_{\text{out}} = 100 \, \text{kW} - 41.2 \, \text{kW} = 58.8 \, \text{kW}
+\]  
+
+---

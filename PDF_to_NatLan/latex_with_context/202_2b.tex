@@ -1,0 +1,35 @@
+Given:  
+\[
+p_5 = 0.56 \, \text{bar}, \quad T_5 = 431.9 \, \text{K}, \quad w_5 = 220 \, \text{m/s}
+\]  
+The outlet velocity \( w_6 \) and temperature \( T_6 \) are calculated as follows:  
+
+1. Adiabatic reversible process:  
+\[
+s_5 = s_6
+\]  
+
+2. Enthalpy difference:  
+\[
+h_6 - h_5 = \int_{T_5}^{T_6} c_p(T) \, dT
+\]  
+Approximated as:  
+\[
+h_6 - h_5 = c_p (T_6 - T_5)
+\]  
+
+3. Temperature ratio:  
+\[
+T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = 431.9 \cdot \left( \frac{1.0}{0.56} \right)^{\frac{0.4}{1.4}} = 528 \, \text{K}
+\]  
+
+The outlet velocity \( w_6 \) is determined using the energy balance:  
+\[
+w_6^2 = w_5^2 + 2 c_p (T_6 - T_5)
+\]  
+
+---

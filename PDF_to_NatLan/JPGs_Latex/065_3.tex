@@ -1,0 +1,79 @@
+TASK 2c  
+The mass-specific increase in flow exergy is calculated as:  
+\[
+\Delta ex_{\text{str}} = ex_{\text{str},6} - ex_{\text{str},0}
+\]  
+This is expressed as:  
+\[
+\Delta ex_{\text{str}} = h_c - h_0 - T_0 (s_{c} - s_{0}) + ke_c - ke_0
+\]  
+
+The enthalpy \( h_c - h_0 \) is determined using the integral:  
+\[
+h_c - h_0 = \int_{T_0}^{T_c} c_{p,\text{luft}} \, dT = c_{p,\text{luft}} (T_c - T_0)
+\]  
+Substituting values:  
+\[
+c_{p,\text{luft}} = 1.006 \, \frac{\text{kJ}}{\text{kg·K}}, \quad T_c = 325.0 \, \text{K}, \quad T_0 = 243.15 \, \text{K}
+\]  
+\[
+h_c - h_0 = 1.006 \cdot (325.0 - 243.15) = 85.43 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+From Table A-22, the entropy values are:  
+\[
+s^0(T_c) = (1.97833 - 1.97829) \, \frac{\text{kJ}}{\text{kg·K}} \quad \text{(330 - 325 K range)}
+\]  
+\[
+s^0(T_c) = 1.97915 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+s^0(T_0) = (1.49819 - 1.49824) \, \frac{\text{kJ}}{\text{kg·K}} \quad \text{(250 - 240 K range)}
+\]  
+\[
+s^0(T_0) = 1.49111 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+The kinetic energy terms are calculated as:  
+\[
+ke_c = \frac{w_c^2}{2}, \quad ke_0 = \frac{w_0^2}{2}
+\]  
+Substituting values:  
+\[
+ke_c = \frac{1288651.28}{2}, \quad ke_0 = \frac{20000}{2}
+\]  
+\[
+ke_c - ke_0 = 1288651.28 - 20000 \, \frac{\text{m}^2}{\text{s}^2}
+\]  
+
+Finally, substituting all terms:  
+\[
+\Delta ex_{\text{str}} = 85.43 \, \frac{\text{kJ}}{\text{kg}} - 243.15 \, \text{K} \cdot (1.97915 - 1.49111) \, \frac{\text{kJ}}{\text{kg·K}} + (1288651.28 - 20000) \, \frac{\text{m}^2}{\text{s}^2}
+\]  
+\[
+\Delta ex_{\text{str}} = 1280.94 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+---
+
+TASK 2d  
+The mass-specific exergy destruction is calculated as:  
+\[
+\dot{E}_{\text{ex,dest}} = T_0 \dot{S}_{\text{gen}}
+\]  
+Expressing in terms of entropy:  
+\[
+e_{\text{ex,dest}} = T_0 \frac{\dot{S}_{\text{gen}}}{\dot{m}_{\text{gas}}} = T_0 (s_{a} - s_{e}) = T_0 \left[ s^0(T_c) - s^0(T_0) - R \ln \left( \frac{p_c}{p_0} \right) \right]
+\]  
+
+Substituting values:  
+\[
+T_0 = 243.15 \, \text{K}, \quad s^0(T_c) = 1.97915 \, \frac{\text{kJ}}{\text{kg·K}}, \quad s^0(T_0) = 1.49111 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+e_{\text{ex,dest}} = 243.15 \cdot (1.97915 - 1.49111) \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+e_{\text{ex,dest}} = 73.42 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+

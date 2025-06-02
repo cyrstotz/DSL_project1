@@ -1,0 +1,32 @@
+The mass-specific exergy destruction is calculated using the following formula:  
+\[
+ex_{\text{dest}} = \Delta ex_{\text{flow},\text{st}} + \left( \frac{T_0}{T_B} \right) q_B
+\]  
+The entropy generation is given by:  
+\[
+\dot{S}_{\text{gen}} = (s_6 - s_0) + \frac{q_B}{T_B}
+\]  
+Expanding the entropy terms:  
+\[
+\dot{S}_{\text{gen}} = c_p \ln \frac{T_0}{T_6} - R \ln \frac{p_6}{p_0} + \frac{q_B}{T_B}
+\]  
+Substituting the given values:  
+\[
+= 1.006 \, \frac{\text{kW}}{\text{kg·K}} \ln \frac{243.15 \, \text{K}}{328.07 \, \text{K}} + \frac{1.195 \, \frac{\text{kW}}{\text{kg}}}{1289 \, \text{K}}
+\]  
+Simplifying:  
+\[
+= -0.6257 \, \frac{\text{kW}}{\text{kg·K}}
+\]  
+Using the entropy generation to calculate exergy destruction:  
+\[
+ex_{\text{dest}} = \dot{S}_{\text{gen}} \cdot T_0
+\]  
+Substituting values:  
+\[
+ex_{\text{dest}} = -0.6257 \, \frac{\text{kW}}{\text{kg·K}} \cdot 243.15 \, \text{K} = 152.14 \, \frac{\text{kW}}{\text{kg}}
+\]  
+Final result:  
+\[
+ex_{\text{dest}} = 152.14 \, \frac{\text{kW}}{\text{kg}
+\]

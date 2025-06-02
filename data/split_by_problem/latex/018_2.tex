@@ -1,0 +1,94 @@
+
+``````latex
+
+
+$w_5 = 220 \, \text{m/s}$
+
+\begin{enumerate}
+    \item $w_e = 200 \, \text{m/s}$
+    \item $m_{ges}$
+    \item $h_{2v,s} < h_2 \quad \text{isotrop}$
+    \item $\frac{\dot{m}h}{\dot{m}c} = 5.293$
+    \item $h_6 = \frac{\dot{Q}_0}{\dot{m}} = 11.95 \frac{kJ}{kg}$
+    \item $T_6 = 1289$
+\end{enumerate}
+
+\[
+\begin{array}{c|c|c}
+ & P & T \\
+\hline
+0 & 0.194 \, \text{bar} & -30^\circ \\
+5 & 0.5 \, \text{bar} & 431.9 \, \text{K} \\
+\end{array}
+\]
+
+\[
+c_p = 1.005
+\]
+\[
+n = k = 1.4
+\]
+
+\subsection*{a)}
+Graph description: The graph is a Temperature-Entropy ($T$-$s$) diagram. The x-axis is labeled $s \, \left[\frac{kJ}{kgK}\right]$ and the y-axis is labeled $T \, [K]$. The graph contains six points labeled 1 through 6. The points are connected as follows:
+- Point 1 to Point 2 is a vertical line labeled "isotrop".
+- Point 2 to Point 3 is a curved line labeled "isobar".
+- Point 3 to Point 4 is a vertical line labeled "isotrop".
+- Point 4 to Point 5 is a curved line labeled "isobar".
+- Point 5 to Point 6 is a vertical line labeled "isotrop".
+- Point 6 to Point 1 is a curved line labeled "isobar".
+
+\subsection*{b)}
+$w_6 = ? \quad T_6 = ?$
+
+\[
+w_{\text{rev}} = \int_0^6 p \, dv = p
+\]
+
+\[
+\frac{T_6}{T_0} = \frac{T_6}{T_5} \left( \frac{P_6}{P_5} \right)^{\frac{n-1}{n}}
+\]
+
+\[
+\Rightarrow T_6 = T_5 \left( \frac{P_0}{P_5} \right)^{\frac{n-1}{n}} = 431.9 \, \text{K} \left( \frac{0.194 \, \text{bar}}{0.5 \, \text{bar}} \right)^{\frac{0.4}{1.4}} = \underline{328.075 \, \text{K}} = T_6
+\]
+
+\[
+\text{isotrop} \quad n = k = 1.4
+\]
+
+\subsection*{stat. 1x m}
+\[
+0 = \dot{m} \left( h_2 - h_3 \right) + \frac{w_2^2 - w_3^2}{2} + \dot{Z} \ddot{Q} - \dot{Z} \ddot{W}_e
+\]
+
+``````latex
+
+c) $\dot{m}_{ges} = ?$ \\
+$\Delta e_{x,stc} = ?$
+
+\[
+\dot{m}_{ges} \left( h_0 - h_e + \frac{w_e^2 - w_0^2}{2} \right) + \sum \dot{Q} + \dot{W}_t = 0 \quad \leftarrow \quad W_t = \frac{\dot{W}_t}{\dot{m}} = \int_{0}^{6} \delta \varphi + \Delta e + \Delta pe
+\]
+
+\[
+= -n \int pdv + \Delta e
+\]
+
+\[
+= -n \left( \frac{R \left( T_6 - T_0 \right)}{1 - n} + \frac{1}{2} \dot{m} \left( w_0^2 - w_6^2 \right) \right)
+\]
+
+\[
+\dot{m}_{ges} \left( h_6 - h_0 - T_0 \left( s_6 - s_0 \right) + \Delta \varphi e + \Delta pe \right) = \Delta e_{x,stc}
+\]
+
+d) exval = $T_0 \dot{S}_{exz}$
+
+\[
+\dot{S}_{exz} = \dot{m}_{ges} \left( s_6 - s_0 \right) = \frac{\dot{Q}}{T}
+\]
+
+``````latex
+
+

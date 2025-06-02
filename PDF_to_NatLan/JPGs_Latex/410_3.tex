@@ -1,0 +1,68 @@
+TASK 2b  
+The outlet velocity \( w_6 \) is calculated using the formula:  
+\[
+w = R \frac{(T_6 - T_5)}{1 - \eta}
+\]  
+where \( R = c_p - \frac{c_v}{\kappa} = 0.2879 \, \text{kJ/kg·K} \).  
+
+The calculated value for \( w_6 \) is:  
+\[
+w_6 = 259.56 \, \text{kJ}
+\]  
+
+The outlet temperature \( T_6 \) is determined using the following equation:  
+\[
+w_c = \sqrt{2 \left( (h_5 - h_c) - \dot{w}_6 \right) - \frac{w_5^2}{2}}
+\]  
+where \( h_5 - h_c = c_p (T_6 - T_5) \).  
+
+Substituting values:  
+\[
+w_c = \sqrt{2 \left( c_p (T_6 - T_5) - R \frac{(T_6 - T_5)}{1 - \eta} \right) - \frac{w_5^2}{2}}
+\]  
+The calculated value for \( w_c \) is:  
+\[
+w_c = 551.5 \, \text{m/s}
+\]  
+
+---
+
+TASK 2c  
+The mass-specific increase in flow exergy is calculated using the formula:  
+\[
+\Delta ex_{\text{flow}} = \dot{w}_6 - \frac{w_5^2}{T_6 - T_0}
+\]  
+
+The entropy generation term is expressed as:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \left( s_{\text{out}} - s_{\text{in}} \right) + \frac{w_5^2 - w_6^2}{2} + \dot{Q}_{\text{in}} - E_{\text{ideal}}
+\]  
+
+The exergy destruction is calculated as:  
+\[
+\Delta ex_{\text{dest}} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_5^2 - w_6^2}{2}
+\]  
+Substituting \( h_6 - h_0 = c_p (T_6 - T_0) \) and \( s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) \), the formula becomes:  
+\[
+\Delta ex_{\text{dest}} = c_p (T_6 - T_0 - T_0 \ln \left( \frac{T_6}{T_0} \right)) + \frac{w_5^2 - w_6^2}{2}
+\]  
+
+---
+
+TASK 2d  
+The exergy destruction term is expressed as:  
+\[
+E_{\text{ideal}} = T_0 \dot{S}_{\text{gen}}
+\]  
+
+The entropy generation term is given by:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \left( s_{\text{out}} - s_{\text{in}} \right)
+\]  
+
+The exergy destruction is calculated as:  
+\[
+E_{\text{exergy}} = T_0 \left( s_{\text{out}} - s_{\text{in}} \right)
+\]  
+
+No further numerical values are provided for this subtask.

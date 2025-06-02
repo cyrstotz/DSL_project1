@@ -1,0 +1,57 @@
+The problem involves a steady-state flow process and the energy balance around a reactor.  
+
+The energy balance equation is given as:  
+\[
+0 = \dot{m}_{\text{in}} \left[ h_e - h_a \right] + \dot{Q}_R + \dot{Q}_{\text{out}}
+\]  
+
+Where:  
+- \( h_e \): specific enthalpy at the outlet  
+- \( h_a \): specific enthalpy at the inlet  
+- \( \dot{Q}_R \): heat released by the chemical reaction  
+- \( \dot{Q}_{\text{out}} \): heat removed by the coolant  
+
+Using water tables (TAG A-2), the enthalpy values are calculated as follows:  
+
+For the outlet enthalpy \( h_e \):  
+\[
+h_e = h_p + x \cdot \left( h_y - h_p \right)
+\]  
+Substituting values:  
+\[
+h_e = 292.58 \, \frac{\text{kJ}}{\text{kg}} + 0.005 \cdot \left( 2626 \, \frac{\text{kJ}}{\text{kg}} - 292.58 \, \frac{\text{kJ}}{\text{kg}} \right)
+\]  
+\[
+h_e = 304.65 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+For the inlet enthalpy \( h_a \):  
+\[
+h_a = h_p + x \cdot \left( h_y - h_p \right)
+\]  
+Substituting values:  
+\[
+h_a = 419.17 \, \frac{\text{kJ}}{\text{kg}} + 0.005 \cdot \left( 2626 \, \frac{\text{kJ}}{\text{kg}} - 419.17 \, \frac{\text{kJ}}{\text{kg}} \right)
+\]  
+\[
+h_a = 430.33 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The heat flow removed by the coolant \( \dot{Q}_{\text{out}} \) is calculated as:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} \left[ h_e - h_a \right] + \dot{Q}_R
+\]  
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \frac{\text{kg}}{\text{s}} \left[ 430.33 \, \frac{\text{kJ}}{\text{kg}} - 304.65 \, \frac{\text{kJ}}{\text{kg}} \right] - 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = -62.5 \, \text{kW}
+\]  
+
+Verification:  
+\[
+\dot{Q}_{\text{out}} = -62.5 \, \text{kW}
+\]  
+
+No diagrams or figures are present on this page.

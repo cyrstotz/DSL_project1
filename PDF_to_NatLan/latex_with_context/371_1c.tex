@@ -1,0 +1,30 @@
+The entropy production is calculated using the steady-state entropy balance equation:  
+
+\[
+0 = \dot{m}(s_i - s_e) + \frac{\dot{Q}_{\text{out}}}{T} + \dot{S}_{\text{gen}}
+\]
+
+From the water tables (TAB A2), the entropy values are:  
+\[
+s_e = s_i - \Delta s
+\]
+\[
+s_e = 0.954 \, \frac{\text{kJ}}{\text{kg·K}}, \quad s_i = 1.306 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+\[
+s_e - s_i = -0.352 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+The entropy production term is then expressed as:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{out}}}{T} - \dot{m}(s_e - s_i)
+\]
+
+Substituting the values:  
+\[
+\dot{S}_{\text{gen}} = \frac{-165 \, \text{kW}}{295 \, \text{K}} - 0.3 \, \frac{\text{kg}}{\text{s}} \cdot (-0.352 \, \frac{\text{kJ}}{\text{kg·K}})
+\]
+
+\[
+\dot{S}_{\text{gen}} = -664.32 \, \frac{\text{kW}}{\text{K}}
+\]

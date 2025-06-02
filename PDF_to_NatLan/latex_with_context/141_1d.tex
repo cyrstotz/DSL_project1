@@ -1,0 +1,51 @@
+Energy balance for determining \( \Delta m_{12} \):  
+
+The reactor temperature \( T_{\text{Reactor},2} = 70^\circ\text{C} \).  
+The system is modeled as a closed system.  
+
+The energy balance equation for the closed system is:  
+\[
+m_2 u_2 - m_1 u_1 + \Delta E = \Delta m_{12} \left( h_e + \frac{w^2}{2} + g z \right)
+\]  
+Neglecting kinetic and potential energy terms:  
+\[
+m_2 u_2 - m_1 u_1 = \Delta m_{12} h_e
+\]  
+
+Rearranging for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = \frac{m_2 u_2 - m_1 u_1}{h_e}
+\]  
+
+Given:  
+- \( h_e = 83.96 \, \text{kJ/kg} \)  
+- \( m_2 = (5755 - \Delta m_{12}) \, \text{kg} \)  
+- \( m_1 = 5755 \, \text{kg} \)  
+- \( u_2 \, \text{at} \, 70^\circ\text{C} = 292.28 \, \text{kJ/kg} \)  
+- \( u_1 \, \text{at} \, 100^\circ\text{C} = 418.04 \, \text{kJ/kg} \)  
+
+Substituting values:  
+\[
+\Delta m_{12} \left( 1 - \frac{u_2}{h_e} \right) = \frac{m_1 u_1 - m_1 u_2}{h_e}
+\]  
+
+Simplified form:  
+\[
+\Delta m_{12} = \frac{m_1 (u_2 - u_1)}{h_e - u_2}
+\]  
+
+Final calculation:  
+\[
+\Delta m_{12} = \frac{5755 \, (418.04 - 292.28)}{83.96 - 292.28} = 3474.3 \, \text{kg}
+\]  
+
+---
+
+The entropy balance for the system is given as:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \left( s_2 - s_a \right) - \frac{\dot{Q}_K}{T}
+\]  
+Substituting the values:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \left( s_2 - s_a \right) - \frac{\dot{Q}_K}{T}
+\]

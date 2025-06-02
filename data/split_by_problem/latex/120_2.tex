@@ -1,0 +1,163 @@
+
+``````latex
+
+
+\section*{2)}
+
+\subsection*{a)}
+
+\[
+\begin{array}{c}
+\text{[°C]} \\
+\text{T}
+\end{array}
+\]
+
+\begin{verbatim}
+Graph Description:
+- The graph is a plot with the x-axis labeled "s [kJ/kg*K]" and the y-axis labeled "[°C] T".
+- There are six points labeled 1 through 6.
+- Point 1 is at the origin.
+- Point 2 is slightly above and to the right of point 1, connected by a curve labeled "isentrop".
+- Point 3 is above point 2, connected by a vertical line labeled "isobar".
+- Point 4 is to the right of point 3, connected by a horizontal line labeled "isotherm".
+- Point 5 is above point 4, connected by a vertical line labeled "isobar".
+- Point 6 is to the right of point 5, connected by a horizontal line labeled "isotherm".
+- The graph is labeled "Scale 3/7" on the top right.
+\end{verbatim}
+
+\subsection*{b)}
+
+\[
+w_c, T_6 \quad \text{Systemgrenze um gesamtes}
+\]
+
+\[
+0 = \dot{m} \left( h_e - h_q + \frac{w_e^2 - w_q^2}{2} \right) + \dot{Q} - \dot{W}
+\]
+
+\[
+0 = h_e - h_q + \frac{w_e^2 - w_q^2}{2}
+\]
+
+\[
+0 = h_0 - h_6 + \frac{w_0^2 - w_6^2}{2}
+\]
+
+\[
+w_6^2 = 2 \left( h_0 - h_6 \right) + w_0^2
+\]
+
+\[
+w_6^2 = 2 \cdot c_p \cdot \left( T_1 - T_6 \right) + w_0^2
+\]
+
+\[
+\text{zustand 5-6 = isentrop}
+\]
+
+\[
+p_5 = 0,13 \, \text{bar} \quad p_6 = 0,15 \, \text{bar}
+\]
+
+\[
+T_5 = 431,9 \, \text{K}
+\]
+
+\[
+\frac{T_6}{T_5} = \left( \frac{p_c}{p_5} \right)^{\frac{n-1}{n}} \quad n = 1,4
+\]
+
+\[
+T_6 = T_5 \cdot \left( \frac{p_c}{p_5} \right)^{\frac{0,4}{1,4}} = 431,9 \, \text{K} \cdot \left( \frac{0,15 \, \text{bar}}{0,13 \, \text{bar}} \right)^{\frac{0,4}{1,4}} = 328,07 \, \text{K}
+\]
+
+\[
+w_6 = \sqrt{2 \cdot 1,006 \cdot \left( (-36 \, \text{°C} + 273,15 \, \text{K}) - 328,07 \, \text{K} \right) + 200 \, \frac{\text{m}^2}{\text{s}^2}}
+\]
+
+\[
+w_c = 193,5 \, \frac{\text{m}}{\text{s}}
+\]
+
+``````latex
+
+\section*{2) c)}
+
+\[
+\Delta e_{xshr} = 0.5 \dot{m} v^2 - e_{xshr0}
+\]
+
+\[
+\Delta e_{xshr} = \dot{m} (h_6 - h_0 - T_0 (s_6 - s_0)) - \dot{m} (h_4 - h_0 - T_0 (s_4 - s_0))
+\]
+
+\[
+\Delta e_{xshr} = \dot{m} (h_6 - \frac{y_6}{c} - T_0 (s_c - s_0) - h_4 + \frac{y_4}{c} + T_0 (s_4 - s_0))
+\]
+
+\[
+\Delta e_{xshr} = \dot{m} (h_6 - h_4 - T_0 (s_c + \frac{y_6}{c} - s_0 - \frac{y_4}{c}))
+\]
+
+\[
+\Delta e_{xshr} = \dot{m} (h_6 - h_4 - T_0 (s_6 - s_1) + \frac{v_6^2}{2} - \frac{v_1^2}{2})
+\]
+
+\[
+\Delta e_{xshr} = \dot{m} \cdot (cp (T_6 - T_1) - T_0 \cdot cp \cdot \ln \left( \frac{T_6}{T_1} \right) - R \cdot \ln \left( \frac{p_6}{p_1} \right) + \frac{v_6^2}{2} - \frac{v_1^2}{2})
+\]
+
+\[
+\Delta e_{xshr} = \frac{\Delta e_{xshr}}{\dot{m}} = \frac{e_{xshr}}{\text{mass spez}}
+\]
+
+\[
+\Delta e_x = 1.006 \cdot (340K - 253.15K) - (301273.5) - 1.006 \cdot \ln \left( \frac{340K}{253.15K} \right)
+\]
+
+\[
++ \frac{700^2}{2} - \frac{510^2}{2}
+\]
+
+\[
+\Delta e_x = -110034.7796 \frac{J}{h_s}
+\]
+
+\[
+\Delta e_x = -110,034 \frac{kJ}{h_s}
+\]
+
+\section*{a)}
+
+\[
+\Delta e_{xver} = T_0 \cdot s_{ver}
+\]
+
+\[
+0 = \dot{m} (s_0 - s_6) + \frac{Q}{T_j} + s_{ver}
+\]
+
+\[
+s_{ver} = \dot{m} (s_c - s_0)
+\]
+
+\[
+s_{ver} = \dot{m} \cdot cp \cdot \ln \left( \frac{T_6}{T_0} \right) - R \cdot \ln \left( \frac{p_6}{p_1} \right)
+\]
+
+\[
+\frac{s_{ver}}{\dot{m}} = 1.006 \cdot \ln \left( \frac{340K}{253.15K} \right) = 0.337727 \frac{kJ}{k}
+\]
+
+\[
+e_x = T_0 \cdot s_{ver} = (-301273.15) \cdot 0.337727 \frac{kJ}{k}
+\]
+
+\[
+= 82,003 kJ
+\]
+
+``````latex
+
+

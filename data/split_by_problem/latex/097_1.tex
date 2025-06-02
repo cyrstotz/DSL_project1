@@ -1,0 +1,173 @@
+
+``````latex
+
+
+\section*{Thermo I - Winter 24}
+
+\subsection*{1) Reaktor}
+
+\subsubsection*{a) ges. $\dot{Q}_{\text{aus}}$}
+
+\[
+0 = \dot{m} (h_e - h_a) + \sum \dot{Q} - \sum \dot{W}
+\]
+\[
+\text{kein Arbeit} \quad \dot{W} = 0
+\]
+\[
+0 = \dot{m} (h_e - h_a) + \dot{Q}_{R} + \dot{Q}_{\text{aus}}
+\]
+\[
+-\dot{Q}_{\text{aus}} = \dot{m} (h_e - h_a) + \dot{Q}_{R}
+\]
+
+\[
+\dot{m} = 0.3 \, \frac{\text{kg}}{\text{s}} \quad \dot{Q}_{R} = 100 \, \text{kW}
+\]
+
+\subsubsection*{h_e @ T = 70°}
+
+\[
+h_c = 292.98 \, \frac{\text{kJ}}{\text{kg}} \quad h_g = 2626.8 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\subsubsection*{Siedende Flüssigkeit}
+
+\[
+\rightarrow h_e = h_f (70°)
+\]
+
+\subsubsection*{h_a @ T = 100°}
+
+\[
+h_c = 419.04 \, \frac{\text{kJ}}{\text{kg}} \quad h_g = 2675.1 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\subsubsection*{T.A-Z}
+
+\[
+\rightarrow h_a = h_f (100°)
+\]
+
+\[
+-\dot{Q}_{\text{aus}} = 0.3 \, \frac{\text{kg}}{\text{s}} \left( 292.98 - 419.04 \right) \, \frac{\text{kJ}}{\text{kg}} + 100 \, \text{kW} = -62.182 \, \text{kW}
+\]
+
+\[
+\dot{Q}_{\text{aus}} = 62.182 \, \text{kW}
+\]
+
+``````latex
+
+
+b) ges:
+\[
+\overline{T}_{\text{m}} = \frac{T_{\text{K}}}{T_{\text{K}}}
+\]
+
+\[
+T_{\text{U,aus}} = 298,12 \, \text{K} = T_{\text{K2}}
+\]
+
+\[
+T_{\text{K,aus}} = 288,15 \, \text{K} = T_{\text{K1}}
+\]
+
+\[
+\overline{T} = \frac{\int_{s_e}^{s_a} T \, ds}{s_a - s_e} \implies \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)} = 293,12 \, \text{K}
+\]
+
+g) ges: $\dot{S}_{\text{evz}}$
+
+\[
+\text{zum Reaktor und Kühlmantel}
+\]
+
+\[
+\text{nur } \dot{S}_{\text{evz}} \text{ auf } \dot{Q} \implies \text{geschlossenes System}
+\]
+
+\[
+0 = \dot{m} (s_e - s_a) + \frac{\dot{Q}}{T} + \dot{S}_{\text{evz}}
+\]
+
+\[
+-\dot{S}_{\text{evz}} = \dot{m} (s_e - s_a) + \frac{\dot{Q}_R}{T_R} + \frac{\dot{Q}_{\text{aus}}}{T_{\text{K}}}
+\]
+
+\[
+-\dot{S}_{\text{evz}} = \frac{-62,182 \, \text{kW}}{293,12 \, \text{K}} = -0,2121 \, \frac{\text{kW}}{\text{K}}
+\]
+
+\[
+\dot{S}_{\text{evz}} = 0,2121 \, \frac{\text{kW}}{\text{K}}
+\]
+
+\begin{description}
+\item[Figure Description:] The figure is a cylindrical reactor with a cooling jacket. The cylinder is oriented vertically. There are arrows pointing to the left and right sides of the cylinder, labeled $T$ and $\dot{Q}_{\text{aus}}$ respectively. At the bottom of the cylinder, there is an arrow pointing downwards labeled $\dot{Q}_R$. There is also a label $s_{\text{ps}}$ near the bottom right of the cylinder.
+
+\item[Equations next to the figure:]
+\[
+T = 293,12 \, \text{K}
+\]
+\[
+\dot{Q}_R = 100 \, \text{kW}
+\]
+\[
+\dot{Q}_{\text{aus}} = -62,182 \, \text{kW}
+\]
+\[
+\dot{m} = 0,3 \, \frac{\text{kg}}{\text{s}}
+\]
+\end{description}
+
+``````latex
+
+d) \\
+\text{ges: } \Delta m_{12} \\
+
+\Delta E = \Delta m_{12} [h_{12}] + \sum \dot{Q}_{12} - \sum W_n \quad \text{(Lücke hier)} \\
+
+m_2 \dot{u}_2 - m_1 \dot{u}_1 = \Delta m_{12} h_{12} + \dot{Q}_R \\
+
+\begin{array}{c}
+m_2 \dot{u}_2 - m_1 \dot{u}_1 \\
+\downarrow \\
+\frac{m_2 - m_1}{m_2 h_2 - m_1 h_1} (h_2 - h_1)
+\end{array} \\
+
+\dot{Q}_{12} = -35 \text{MJ} \\
+m_1 = 5285 \text{kg} \\
+
+u_1 \quad @ \quad x_b = 0.0005, \quad @ 20^\circ \text{C} \\
+\underline{\hspace{5cm}}
+``````latex
+
+e) \\
+\[
+\delta s_{1,2}
+\]
+\[
+\Delta s_{1,2} = \sum \dot{m} s + \sum \frac{Q}{T_j} + s_{e1-2}
+\]
+\[
+\Delta s = s_2 - s_1 = m (s_2 - s_1) \sum \frac{Q}{T} + s_{e1-2}
+\]
+\[
+m_{ges1} + \Delta m_{12}
+\]
+\[
+m_f = 5750 \times 1.300 \, kg
+\]
+\[
+= 9350 \, kg
+\]
+
+\begin{itemize}
+    \item There is a question mark symbol (?) written on the left side of the page.
+    \item Below the question mark, there are two variables written vertically: \( s_2 \) and \( s_1 \).
+\end{itemize}
+
+``````latex
+
+

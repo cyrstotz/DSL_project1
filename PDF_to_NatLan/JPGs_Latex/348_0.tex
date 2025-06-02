@@ -1,0 +1,64 @@
+TASK 1a  
+The reactor process is isothermal because the mass and steam quality remain constant.  
+
+Energy balance for the reactor:  
+\[
+Q_{\text{out}} + Q_R = \dot{m} \cdot (h_{\text{in}} - h_{\text{out}})
+\]  
+where \( W = 0 \), as there is no mechanical work or pressure change.  
+
+The inlet temperature is \( T_{\text{in}} = 70^\circ\text{C} \), corresponding to saturated liquid. Using Table A-2:  
+\[
+h_f(T_{\text{in}} = 70^\circ\text{C}) = 292.98 \, \text{kJ/kg}
+\]  
+
+The outlet temperature is \( T_{\text{out}} = 100^\circ\text{C} \), also corresponding to saturated liquid. Using Table A-2:  
+\[
+h_f(T_{\text{out}} = 100^\circ\text{C}) = 419.07 \, \text{kJ/kg}
+\]  
+
+The heat flow removed by the coolant is:  
+\[
+Q_{\text{out}} = \dot{m} \cdot (h_{\text{in}} - h_{\text{out}}) - Q_R = -62.182 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+To determine the thermodynamic mean temperature \( T_{\text{KF}} \):  
+\[
+T_{\text{KF}} = \frac{\int_{s_a}^{s_e} T \, ds}{s_a - s_e} = \frac{q_{\text{out}}}{s_a - s_e}
+\]  
+
+Since the process occurs in the cooling jacket, \( q_{\text{out}} = \Delta h \):  
+\[
+\Delta h = c_p \cdot (T_{\text{out}} - T_{\text{in}})
+\]  
+
+For an ideal liquid, \( \Delta s = c_p \cdot \ln\left(\frac{T_{\text{out}}}{T_{\text{in}}}\right) \).  
+
+Substituting:  
+\[
+T_{\text{KF}} = \frac{T_{\text{out}} - T_{\text{in}}}{\ln\left(\frac{T_{\text{out}}}{T_{\text{in}}}\right)} = 293.12 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+Entropy production during heat transfer:  
+
+\[
+\dot{S}_{\text{gen}} = \sum \frac{\dot{Q}_i}{T_i} + \dot{S}_{\text{gen}}
+\]  
+
+For the cooling process:  
+\[
+\dot{S}_{\text{gen}} = -\frac{\dot{Q}_{\text{in}}}{T_{\text{reactor}}} + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = -\frac{Q_{\text{in}}}{T_{\text{reactor}}} + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} = 45.15 \, \text{W/K}
+\]  
+
+A small sketch is included showing heat transfer \( Q \) between the reactor and cooling jacket.

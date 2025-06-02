@@ -1,0 +1,33 @@
+A T-s diagram is drawn with the following details:  
+- The x-axis is labeled as 's [kJ/kgK]'.  
+- The y-axis is labeled as 'T [K]'.  
+- Two dashed curves represent isobars, labeled as 'p = pL' and 'p = pA'.  
+- Points labeled '1', '2', '3', and '4,5' are connected by solid lines, forming a process path.  
+
+Below the diagram, a table is drawn with the following columns:  
+- 'T [K]', 'P [bar]', and 'w [m/s]'.  
+The rows are labeled '1', '2', '3', '4', '5', and '6'.  
+Only row 5 contains values:  
+- T = 431.9 K  
+- P = 0.5 bar  
+- w = 220 m/s
+
+\( \dot{E}_{verl} = T_0 \dot{S}_{erz} = 0 \) (since reversible)  
+
+\( O = \dot{m} (h_s - h_c - T_0 (s_s - s_c) + \alpha k e) - \dot{W}_t \)  
+
+\( \dot{W}_t = \frac{R (T_G - T_S)}{\kappa - 1} \) (ideal gas and isentropic)  
+
+\( W_t = \dot{m} \cdot c_p \cdot \Delta T \)  
+
+\( \Rightarrow O = \dot{m} (h_s - h_c - T_0 (s_s - s_c)) + \frac{1}{2} (w_0^2 - w_s^2) - \frac{R (T_G - T_S)}{\kappa - 1} - \dot{m} \cdot \alpha k e \)  
+
+\( \frac{R (T_G - T_S)}{\kappa - 1} = h_s - h_c - T_0 (s_s - s_c) + \frac{1}{2} w_s^2 - \frac{1}{2} w_0^2 \)  
+
+\( (s_s - s_c) = c_p \ln \left( \frac{T_S}{T_G} \right) - R \ln \left( \frac{p_S}{p_G} \right) \)  
+
+\( (h_c - h_s) = c_p (T_G - T_S) \)  
+
+\( \Rightarrow \frac{1}{2} w_G^2 = \frac{R (T_G - T_S)}{\kappa - 1} + \frac{1}{2} w_S^2 + T_0 \left[ c_p \ln \left( \frac{T_S}{T_G} \right) - R \ln \left( \frac{p_S}{p_G} \right) \right] + c_p (T_G - T_S) \)  
+
+\( \Rightarrow w_G = \sqrt{\frac{2 R (T_G - T_S)}{\kappa - 1} - w_S^2 + 2 T_0 \left[ c_p \ln \left( \frac{T_S}{T_G} \right) - R \ln \left( \frac{p_S}{p_G} \right) \right] + c_p (T_G - T_S)} \)

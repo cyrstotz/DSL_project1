@@ -1,0 +1,54 @@
+\( T_{R,1} = 100^\circ \text{C} \)  
+\( x_D = 0.005 \)  
+\( m_1 = 5755 \, \text{kg} \)  
+
+\( T_{R,2} = 70^\circ \text{C} \)  
+\( x_2 = 0 \)  
+\( m_2 = m_1 + \Delta m_{12} \)  
+
+Energy balance for the system:  
+\[
+\Delta E = m_2 u_2 - m_1 u_1 = \Delta m_{12} (h_{ein}) + Q_{R,12}
+\]  
+\[
+(m_1 + \Delta m_{12}) u_2 - m_1 u_1 = \Delta m_{12} (h_e) + Q_{R,12}
+\]  
+\[
+m_1 u_2 - Q_{R,12} - m_1 u_1 = \Delta m_{12} (h_c) - \Delta m_{12} u_2
+\]  
+\[
+m_1 u_2 - Q_{R,12} - m_1 u_1 = \Delta m_{12} (h_c - u_2)
+\]  
+
+Properties:  
+\( h_{ein}: \)  
+Temperature = \( 20^\circ \text{C} \)  
+\( x = 0 \)  
+\( p_{ein} = 0.02339 \, \text{bar} \) (from A-2)  
+\( h_{ein} = h_f = 83.96 \, \text{kJ/kg} \)  
+
+\( u_2: \)  
+\( x_1 = 0.005 \)  
+\( u_2 = u_f (70^\circ \text{C}) = 292.95 \, \text{kJ/kg} \) (from A-2)  
+
+\( u_1: \)  
+\[
+u_1 = x_1 u_g (100^\circ \text{C}) + (1 - x_1) u_f (100^\circ \text{C})
+\]  
+\[
+u_1 = x_1 (2506.5 \, \text{kJ/kg}) + (1 - x_1) (418.91 \, \text{kJ/kg})
+\]  
+\[
+u_1 = 429.37 \, \text{kJ/kg}
+\]  
+
+Mass calculation:  
+\[
+\Delta m_{12} = \frac{m_1 u_2 + Q_{R,12} - m_1 u_1}{h_e - u_2}
+\]  
+\[
+\Delta m_{12} = \frac{5755 \cdot 292.95 + 35,000 - 5755 \cdot 429.37}{83.96 - 292.95}
+\]  
+\[
+\Delta m_{12} = 3589.37 \, \text{kg}
+\]

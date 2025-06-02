@@ -1,0 +1,40 @@
+TASK 1a  
+Energy balance at the reactor wall:  
+The inlet and outlet temperatures of the coolant are given as:  
+\[
+T_{\text{in}} = 288.15 \, \text{K}, \quad T_{\text{out}} = 298.15 \, \text{K}.
+\]  
+The energy balance equation is expressed as:  
+\[
+0 = \dot{m}_{\text{in}} \left( h_e - h_a \right) = Q_{\text{out}} + Q_R,
+\]  
+where \( h(70^\circ\text{C}) - h(100^\circ\text{C}) \) represents the enthalpy difference.  
+
+The change in internal energy is given by:  
+\[
+\Delta U = Q.
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is calculated using the following formula:  
+\[
+T = \frac{\int_{S_a}^{S_e} T \, dS}{S_a - S_e} = \frac{\Delta U}{c_p \ln\left(\frac{T_{\text{out}}}{T_{\text{in}}}\right)} = \frac{\Delta U}{c_p \ln\left(\frac{T_{\text{out}} - T_{\text{in}}}{T_{\text{in}}}\right)}.
+\]  
+Substituting the values:  
+\[
+T = \frac{298.15 \, \text{K} - 288.15 \, \text{K}}{\ln\left(\frac{298.15 \, \text{K}}{288.15 \, \text{K}}\right)} = 293.12 \, \text{K}.
+\]  
+
+---
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) is calculated using the entropy balance equation:  
+\[
+\Delta S = \sum \frac{Q_i}{T_i} + S_{\text{gen}} \quad \Rightarrow \quad S_{\text{gen}} = -\frac{Q_{\text{out}}}{T}.
+\]  
+Substituting the values:  
+\[
+S_{\text{gen}} = -\frac{-65 \, \text{kW}}{293.12 \, \text{K}} = 0.222 \, \text{kW/K}.
+\]  

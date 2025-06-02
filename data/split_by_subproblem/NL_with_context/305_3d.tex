@@ -1,0 +1,13 @@
+\( Q_{12} = x_{Eis,2} \cdot m_{EW} \cdot u_{Eis,2} + x_{Eis,2} \cdot m_{EW} \cdot u_{Eis,1} + (1 - x_{Eis,2}) \cdot m_{EW} \cdot u_{W,2} - m_g \cdot u_{g,2} \)  
+\( + (1 - x_{Eis,1}) \cdot m_{EW} \cdot u_{W,1} - m_g \cdot u_{g,1} \)  
+
+\( m_{EW} = 0.1 \, \text{kg}, \, u_{Eis,2} = u_{Fest}(0.033 \, \text{°C}) = -333.442 \, \text{kJ/kg} \)  
+\( u_{W,2} = u_{Flüssig}(0.033 \, \text{°C}) = -0.033 \, \text{kJ/kg} \)  
+\( u_{Eis,1} = u_{Fest}(0 \, \text{°C}) = -333.455 \, \text{kJ/kg} \)  
+\( u_{W,1} = u_{Flüssig}(0 \, \text{°C}) = -0.045 \, \text{kJ/kg} \)  
+
+\( Q_{12} = x_{Eis} \cdot (m_{EW} \cdot u_{W,2} - u_{Eis,2}) = m_{EW} \cdot u_{W,2} - x_{Eis} \cdot m_{EW} \cdot u_{Eis,1} - (1 - x_{Eis}) \cdot m_{EW} \cdot u_{W,1} \)  
+\( + m_g \cdot (u_{g,2} - u_{g,1}) = c_V \cdot m_g \cdot (T_2 - T_1) \)  
+
+\( x_{Eis} = \frac{0.1 \, \text{kg} \cdot (-0.033 \, \text{kJ/kg}) + 0.6 \cdot 0.1 \, \text{kg} \cdot (-333.455 \, \text{kJ/kg}) - (1 - 0.6) \cdot 0.1 \, \text{kg} \cdot (-0.045 \, \text{kJ/kg})} {0.1 \, \text{kg} \cdot (-0.033 + 333.442) \, \text{kJ/kg}} \)  
+\( + \frac{0.1 \cdot (-0.033 \, \text{kJ/kg} - 0.033 \cdot 0.1 \, \text{kg} \cdot (275.173 \, \text{K} - 773.15 \, \text{K})} {0.1 \, \text{kg} \cdot (-0.033 + 333.442) \, \text{kJ/kg}} \)

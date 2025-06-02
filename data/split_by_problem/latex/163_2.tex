@@ -1,0 +1,102 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{Graphical Descriptions}
+
+\textbf{Top Left Graph:}
+This graph has the y-axis labeled as $T/t\leftarrow$ and the x-axis labeled as $S/k_{s} \rightarrow$. There are several curves drawn, with one prominent curve starting from the bottom left and curving upwards to the right. Points are marked on the curve and labeled as 1, 2, 3, and 4. There is an arrow pointing from point 1 to point 2, another arrow from point 2 to point 3, and another from point 3 to point 4. There is also a horizontal arrow pointing to the right labeled $S_{k_{s}}/S_{k_{s}}$.
+
+\textbf{Top Right Graph:}
+This graph has the y-axis labeled as $N/w$ and the x-axis labeled as $S$. There are several curves drawn, with one prominent curve starting from the bottom left and curving upwards to the right. Points are marked on the curve and labeled as 1, 2, 3, 4, and 5. There is an arrow pointing from point 1 to point 2, another arrow from point 2 to point 3, and another from point 3 to point 4. There is also a vertical arrow pointing upwards labeled "Isobar" and another vertical arrow labeled "Isotherm".
+
+\textbf{Bottom Graph:}
+This graph has the y-axis labeled as $T/k_{s}$ and the x-axis labeled as $S/k_{s}$. There are several curves drawn, with one prominent curve starting from the bottom left and curving upwards to the right. Points are marked on the curve and labeled as 1, 2, 3, 4, and 5. There is an arrow pointing from point 1 to point 2, another arrow from point 2 to point 3, and another from point 3 to point 4. There is also a horizontal arrow pointing to the right labeled $S_{k_{s}}/S_{k_{s}}$.
+
+\subsection*{Text and Formulas}
+
+\begin{align*}
+\text{Energiebilanz im Schubdüse} \quad & \text{Düse = Drossel Keine Arbeit} \\
+0 &= \text{in} \rightarrow \text{aus} \\
+0 &= h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} = 0 \rightarrow 0 = 0 \rightarrow 0 = \frac{1}{\text{mges}} \\
+0 &= \Delta RE + Q_{45} - W_{45} \rightarrow h_6 - h_5 = \frac{w_5^2 - w_6^2}{2}
+\end{align*}
+
+\text{Isentrop Adiabat reversibel}
+
+\begin{align*}
+n &= k + 1 \\
+\frac{T_6}{T_5} &= \left( \frac{P_6}{P_5} \right)^{\frac{n-1}{n}} \rightarrow T_6 - T_5 = 431.8 \times \left( \frac{0.94}{0.5} \right)^{0.4/1.4} = 328.1K
+\end{align*}
+
+\text{h6 - h5 ideales gas}
+
+\begin{align*}
+C_p \cdot \left( T_6 - T_5 \right) &= 1.006 \frac{w_5^2}{2} \left( T_6 - T_5 \right) \\
+h_6 - h_5 &= -1.01 \cdot 1.45 \frac{w_5^2}{2} \\
+h_6 - h_5 &= 1.006 \frac{w_5^2}{2} \left( 328.1K - 431.8K \right)
+\end{align*}
+
+``````latex
+
+\section*{Aufgabe 2}
+
+\subsection*{b)}
+
+\[
+(h_6 - h_5) = \frac{w_5^2 - w_6^2}{2} \quad \Rightarrow \quad w_6 = \sqrt{w_5^2 - (h_6 - h_5) \cdot 2}
+\]
+
+\[
+= \sqrt{220 \frac{m^2}{s^2} + 104,15 \frac{kJ}{kg} \cdot 2 \cdot 10^3 \frac{m^2}{s^2}}
+\]
+
+\[
+= 507,24 \frac{m}{s}
+\]
+
+\subsection*{c)}
+
+\[
+\Delta s_{e, str} = \left[ h_0 - h_6 - T_0 (s_0 - s_6) + \frac{w_0^2 - w_6^2}{2} \right] + \left( 1 - \frac{T_0}{T_B} \right) \frac{Q_B}{\dot{m}} - \psi_{tn}
+\]
+
+\textit{Ideal Gas}
+
+\[
+h_0 - h_6 = c_p (T_0 - T_6) = 1,006 \frac{kJ}{kgK} \cdot (-30^\circ C - 328,1K + 273,15K)
+\]
+
+\[
+= -85,46 \frac{kJ}{kg}
+\]
+
+\[
+T_0 (s_0 - s_6) = T_0 \cdot c_p \ln \left( \frac{T_0}{T_6} \right) - R \ln \left( \frac{p_0}{p_6} \right) = 243,15K \cdot 1,006 \frac{kJ}{kgK} \ln \left( \frac{243,15K}{328,1K} \right)
+\]
+
+\[
+= -73,3 \frac{kJ}{kg}
+\]
+
+\[
+\frac{200 \frac{m^2}{s^2} - 507,24 \frac{m^2}{s^2}}{2} = -108,65 \frac{kJ}{kg}
+\]
+
+\[
+\left( 1 - \frac{T_0}{T_B} \right) Q_B = \left( 1 - \frac{243,15K}{1783K} \right) \cdot 1,855 \frac{kJ}{kg} = Q_B \cdot 1,580 \frac{kJ}{kg}
+\]
+
+\[
+\Delta s_{e, str} = -85,46 + 73,3 \frac{kJ}{kg} - 108,65 \frac{kJ}{kg} + Q_B \cdot 1,580 \frac{kJ}{kg} = -84,81
+\]
+
+\[
+\Rightarrow \Delta s_{e, str} = -\Delta s_{0,6} = -84,81
+\]
+
+``````latex
+
+

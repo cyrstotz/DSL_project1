@@ -1,0 +1,74 @@
+TASK 4a  
+A pressure-temperature (\( p \)-\( T \)) diagram is drawn. The diagram shows the freeze-drying process with labeled states:  
+- State \( 1i \) is at low pressure and temperature.  
+- State \( 2i \) shows an increase in temperature while maintaining low pressure.  
+- State \( 3i \) represents high pressure and temperature.  
+- State \( 4i \) returns to low pressure and temperature.  
+
+The diagram includes arrows indicating the transitions between states and labels for the axes:  
+- \( p \) [bar] on the vertical axis.  
+- \( T \) [K] on the horizontal axis.  
+
+TASK 4b  
+The initial temperature \( T_i = -20^\circ\text{C} \) and the final temperature \( T_2 = -26^\circ\text{C} \) are given.  
+The entropy values are:  
+\[
+s_2 = s_3
+\]  
+
+The energy balance equation is written as:  
+\[
+Q = \dot{m} (h_2 - h_3) + \dot{W}_u
+\]  
+where \( \dot{W}_u = -28 \, \text{kW} \).  
+
+From Table A-10:  
+\[
+h_2 = h_g(-26^\circ\text{C}) = 237.62 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+s_2 = s_g(-26^\circ\text{C}) = 0.9330 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Since \( s_3 = s_2 \), \( h_3 \) is interpolated using Table A-12 at \( p_3 = 8 \, \text{bar} \):  
+\[
+h_3 = h(0.9371) - h(0.9334)
+\]  
+The interpolation formula is applied:  
+\[
+h_3 = \frac{h(0.9371) - h(0.9334)}{0.9371 - 0.9334} \cdot (0.9330 - 0.9334) + h(0.9334)
+\]  
+The result is:  
+\[
+h_3 = 274.169 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The mass flow rate is calculated:  
+\[
+\dot{m} = \frac{-28 \, \text{kW}}{h_2 - h_3} = \frac{-28}{237.62 - 274.169} = 0.65843 \, \frac{\text{kg}}{\text{s}}
+\]  
+
+TASK 4d  
+The coefficient of performance (\( \epsilon_K \)) is calculated using the formula:  
+\[
+\epsilon_K = \frac{\dot{Q}_K}{\dot{W}_K}
+\]  
+where \( \dot{Q}_K = \dot{m} (h_2 - h_1) \).  
+
+From Table A-11:  
+\[
+h_1 = h_f(-26^\circ\text{C}) = 33.42 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The heat transfer rate is:  
+\[
+\dot{Q}_K = \dot{m} (h_2 - h_1) = 0.65843 \cdot (237.62 - 33.42) = 133.42 \, \text{kW}
+\]  
+
+The coefficient of performance is:  
+\[
+\epsilon_K = \frac{133.42}{28} = 4.765
+\]  
+
+TASK 4e  
+The evolution of \( T_i \) in Step ii is briefly discussed. If the cooling cycle from Step i continues with constant \( \dot{Q}_K \), the temperature \( T_i \) would decrease further due to continued heat removal.

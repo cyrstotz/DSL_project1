@@ -1,0 +1,21 @@
+Given:  
+\( \dot{m}_{in} = 0.3 \, \text{kg/s} \), \( x_D = 0.005 \), \( m_{total} = 5755 \, \text{kg} \), \( T_{Reactor,1} = 100^\circ \text{C} \).  
+
+Assumptions:  
+Steady-state operation, no work.  
+
+Energy balance:  
+\( \dot{Q}_{out} = \dot{m}_{in} \cdot (h_{out} - h_{in}) + \dot{Q}_R \).  
+
+From Table A-2:  
+At \( T_{in} = 70^\circ \text{C} \):  
+\( h_{in} = 297.35 + 0.005 \cdot (2276.9 - 297.35) = 303.643 \, \text{kJ/kg} \).  
+
+At \( T_{out} = 100^\circ \text{C} \):  
+\( h_{out} = 473.04 + 0.005 \cdot (2676.1 - 473.04) = 430.325 \, \text{kJ/kg} \).  
+
+Substitute values:  
+\( \dot{Q}_{out} = 0.3 \, \text{kg/s} \cdot (430.325 - 303.643) \, \text{kJ/kg} + 100 \, \text{kW} \).  
+\( \dot{Q}_{out} = 62.29 \, \text{kW} \).  
+
+---

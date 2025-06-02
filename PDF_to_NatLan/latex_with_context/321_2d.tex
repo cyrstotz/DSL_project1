@@ -1,0 +1,24 @@
+The mass-specific exergy destruction \( ex_{\text{dest}} \) is calculated using the exergy balance for a stationary system:  
+\[
+0 = (h_{\text{in}} - h_{\text{out}}) - T_0 (s_{\text{in}} - s_{\text{out}}) + Q_{\text{in}} + \left( 1 - \frac{T_0}{T_B} \right) Q_B - W_{\text{rev}} - ex_{\text{dest}}
+\]
+Rearranging:  
+\[
+ex_{\text{dest}} = -\Delta ex_{\text{flow}} + \left( 1 - \frac{T_0}{T_B} \right) Q_B
+\]
+
+Substituting values:  
+\[
+ex_{\text{dest}} = -120.786 \, \frac{\text{kJ}}{\text{kg}} + \left( 1 - \frac{243.15 \, \text{K}}{1289 \, \text{K}} \right) \cdot 1195 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+Simplifying:  
+\[
+ex_{\text{dest}} = -120.786 \, \frac{\text{kJ}}{\text{kg}} + \left( 1 - 0.1887 \right) \cdot 1195 \, \frac{\text{kJ}}{\text{kg}}
+\]
+\[
+ex_{\text{dest}} = -120.786 \, \frac{\text{kJ}}{\text{kg}} + 0.8113 \cdot 1195 \, \frac{\text{kJ}}{\text{kg}}
+\]
+\[
+ex_{\text{dest}} = -120.786 \, \frac{\text{kJ}}{\text{kg}} + 968.796 \, \frac{\text{kJ}}{\text{kg}} = 848.796 \, \frac{\text{kJ}}{\text{kg}}
+\]

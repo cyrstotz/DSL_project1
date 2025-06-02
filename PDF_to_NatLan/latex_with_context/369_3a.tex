@@ -1,0 +1,44 @@
+Given: \( p_{g,1} \) and \( m_g \).  
+
+The gas pressure \( p_{g,1} \) is calculated as the sum of the atmospheric pressure \( p_{\text{amb}} \) and the pressure exerted by the piston. The pressure exerted by the piston is determined using the formula:  
+\[
+p_{\text{piston}} = \frac{F_{\text{piston}}}{A}
+\]  
+where \( F_{\text{piston}} \) is the force due to the weight of the piston, and \( A \) is the cross-sectional area of the cylinder.  
+
+The force is calculated as:  
+\[
+F_{\text{piston}} = \text{mass of piston} \cdot g = 32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2
+\]  
+The area \( A \) is given by:  
+\[
+A = \frac{\pi}{4} \cdot D^2 = \frac{\pi}{4} \cdot (0.1 \, \text{m})^2
+\]  
+
+Thus, the total pressure is:  
+\[
+p_{g,1} = p_{\text{amb}} + p_{\text{piston}} = 10^5 \, \text{Pa} + \frac{(32 \, \text{kg} + 0.7 \, \text{kg}) \cdot 9.81 \, \text{m/s}^2}{0.00785 \, \text{m}^2}
+\]  
+This results in:  
+\[
+p_{g,1} \approx 3.74 \, \text{bar}
+\]  
+
+For the perfect gas, the equation of state is used:  
+\[
+p \cdot V = m \cdot R \cdot T
+\]  
+Rearranging for mass \( m \):  
+\[
+m = \frac{p \cdot V \cdot M}{R \cdot T}
+\]  
+Substituting values:  
+\[
+m = \frac{7.4 \cdot 10^5 \, \text{Pa} \cdot 3.74 \cdot 10^{-3} \, \text{m}^3 \cdot 50 \, \text{kg/kmol}}{8314 \, \text{J/(kmol·K)} \cdot 773.15 \, \text{K}}
+\]  
+This gives:  
+\[
+m = 3.42 \, \text{g} = 3.42 \cdot 10^{-3} \, \text{kg}
+\]  
+
+---

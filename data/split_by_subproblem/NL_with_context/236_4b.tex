@@ -1,0 +1,23 @@
+Energy balance around the compressor, stationary flow process with m dot:  
+
+0 = m dot times [he minus ha plus (w2 squared minus wa squared divided by 2) plus g times (ze minus za)] plus Q minus W  
+
+0 = m dot times [h2 minus h3] plus Q minus W → m dot = W divided by h2 minus h3
+
+T2 = Temperature in the evaporator = 257.15 K, read from Figure 5 (see page 4).  
+
+From Table A-10:  
+Pressure p2 from Table A-10 at 257.15 K = -16°C.  
+p2 = 1.5748 bar.  
+
+From Table A-12:  
+Pressure p2 from Table A-12 at -16°C → Saturated vapor → Interpolated between:  
+Tsat = -18.8°C and Tsat = -12.73°C.  
+
+Interpolation formula:  
+y = y1 + (y2 - y1) / (x2 - x1) * (x - x1).  
+
+p2 = 1.4 bar + (1.8 bar - 1.4 bar) / (-12.73°C - 18.8°C) * (-16°C - 18.8°C) = 1.588 bar.  
+
+h2 = hg from Table A-11 interpolated for 1.588 bar.  
+h2 = 257.77 kJ/kg.

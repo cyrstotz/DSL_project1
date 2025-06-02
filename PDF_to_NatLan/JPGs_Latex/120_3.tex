@@ -1,0 +1,68 @@
+TASK 2c  
+The mass-specific exergy destruction is calculated using the following formula:  
+\[
+\Delta ex_{\text{str}} = os_{\text{strg}} - ex_{\text{sro}} + \text{KE}
+\]  
+Expanding the terms:  
+\[
+\Delta ex_{\text{str}} = \dot{m} \left( h_6 - h_0 - T_0 \left| s_6 - s_0 \right| \right) - \dot{m} \left( h_4 - h_0 - T_0 \left( s_4 - s_0 \right) \right)
+\]  
+\[
+\Delta ex_{\text{str}} = \dot{m} \left( h_6 - h_4 - T_0 s_6 + T_0 s_0 + T_0 s_1 - T_0 s_6 \right)
+\]  
+\[
+\Delta ex_{\text{str}} = \dot{m} \left( h_6 - h_4 - T_0 \left( s_6 - s_1 \right) + \text{KE}_6 - \text{KE}_1 \right)
+\]  
+Substituting the kinetic energy terms:  
+\[
+\Delta ex_{\text{str}} = \dot{m} \cdot c_p \left( T_g - T_1 \right) - T_0 \cdot c_p \ln \left( \frac{T_g}{T_1} \right) - R \ln \left( \frac{p_2}{p_1} \right) + \frac{w_6^2}{2} - \frac{w_1^2}{2}
+\]  
+
+The specific exergy destruction per unit mass is given by:  
+\[
+\frac{\Delta ex_{\text{str}}}{\dot{m}} = \Delta ex_{\text{mass spec}}
+\]  
+
+Substituting values:  
+\[
+\Delta ex = 1.006 \cdot \left( 340 \, \text{K} - 253.15 \, \text{K} \right) - \left( -301273.5 \right) - 1.006 \ln \left( \frac{340 \, \text{K}}{253.15 \, \text{K}} \right) + \frac{700^2}{2} - \frac{510^2}{2}
+\]  
+
+Final result:  
+\[
+\Delta ex = -110034.7796 \, \text{J/kg}
+\]  
+\[
+\Delta ex = -110,034 \, \text{kJ/kg}
+\]  
+
+---
+
+TASK 2d  
+The exergy balance equation is used to calculate the exergy destruction:  
+\[
+0 = \dot{m} \left( s_0 - s_6 \right) + \frac{Q}{T_0} + s_{\text{env}}
+\]  
+Expanding the entropy terms:  
+\[
+s_{\text{env}} = \dot{m} \left( s_6 - s_0 \right)
+\]  
+\[
+s_{\text{env}} = \dot{m} \cdot c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_2}{p_1} \right)
+\]  
+
+Substituting values:  
+\[
+\frac{s_{\text{env}}}{\dot{m}} = 1.006 \ln \left( \frac{340 \, \text{K}}{243.15 \, \text{K}} \right) = 0.33727 \, \text{kJ/kg}
+\]  
+
+Final exergy destruction:  
+\[
+\text{Ex} = T_0 \cdot s_{\text{env}}
+\]  
+\[
+\text{Ex} = \left( -301273.15 \right) + 0.33727 \, \text{kJ/kg}
+\]  
+\[
+\text{Ex} = 82,003 \, \text{kJ}
+\]

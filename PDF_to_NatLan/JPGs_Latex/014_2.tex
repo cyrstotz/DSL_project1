@@ -1,0 +1,55 @@
+TASK 2a  
+The diagram is a T-s (temperature-entropy) plot illustrating the thermodynamic process of a jet engine. The graph includes labeled points corresponding to different states in the engine cycle:  
+- State 0 represents ambient conditions.  
+- State 1 shows the pre-compression stage.  
+- State 2 is the compressed air state.  
+- State 3 represents the combustion chamber.  
+- State 4 is the turbine outlet.  
+- State 5 is the mixing chamber.  
+- State 6 is the nozzle exit.  
+
+The isobars \( p_0 \) and \( p_5 = 0.5 \, \text{bar} \) are shown as dashed lines. The process transitions are marked with arrows, indicating compression, combustion, expansion, and mixing.  
+
+---
+
+TASK 2b  
+The energy balance for the system is written as:  
+\[
+Q = \dot{m} \left( h_{\text{exit}} - h_{\text{inlet}} + \frac{w_{\text{exit}}^2 - w_{\text{inlet}}^2}{2} \right) + \dot{Q}^{\text{int}} - W
+\]
+
+For the isentropic process from state 5 to state 6:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = 328.1 \, \text{K} \quad \text{(denoted as A)}
+\]
+
+The energy balance around the mixing chamber is expressed as:  
+\[
+0 = \dot{m} \left( h_c - h_a + \frac{w_c^2 - w_a^2}{2} + \dot{Q}^{\text{int}} \right) - \dot{W}
+\]  
+where \( \dot{m} \) is the mass flow rate.  
+
+The velocity terms are simplified:  
+\[
+\frac{w_0^2}{2} = h_5 - h_6 + \frac{w_5^2}{2} - W_{\text{rev56}}
+\]
+
+The nozzle exit velocity \( w_6 \) is calculated as:  
+\[
+w_6 = \sqrt{2 \left( c_p (T_5 - T_6) + \frac{w_5^2}{2} - 2 W_{\text{rev56}} \right)}
+\]  
+where \( h_5 - h_6 = c_p (T_5 - T_6) \), and \( W_{\text{rev56}} = \frac{R (T_6 - T_5)}{\kappa - 1} \).  
+
+The specific gas constant \( R \) is determined as:  
+\[
+R = \frac{\bar{R}}{M_{\text{air}}} = 28.649 \, \text{J/(kg·K)} \quad \text{(denoted as B)}
+\]
+
+Substituting values, the nozzle exit velocity is:  
+\[
+w_6 = 329.11 \, \text{m/s} \quad \text{(denoted as C)}
+\]

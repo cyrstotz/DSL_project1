@@ -1,0 +1,38 @@
+TASK 4a  
+The diagram is a pressure-temperature (\( p \)-\( T \)) plot showing phase regions for a substance. The solid phase ("Fest") is on the left, the liquid phase ("Flüssig") is in the middle, and the gas phase ("Gas") is on the right. Two processes are labeled:  
+1) Step i: A vertical line from the liquid phase to the gas phase, representing isobaric evaporation.  
+2) Step ii: A horizontal line from the liquid phase to the solid phase, representing sublimation.  
+
+TASK 4b  
+Energy balance for the compressor:  
+The steady-state energy balance is written as:  
+\[
+0 = \dot{m}_{\text{R134a}} \left( h_2 - h_3 + \text{ke}_{\text{rel}} \right) - \dot{W}_K
+\]  
+where \( \text{ke}_{\text{rel}} \) is neglected due to adiabatic assumptions.  
+
+The temperature at state 2 is calculated as:  
+\[
+T_2 = T_i - 6 \, \text{K} = -10^\circ\text{C} - 6^\circ\text{C} = -16^\circ\text{C}
+\]  
+
+The enthalpy at state 2 is determined using:  
+\[
+h_2 = h_f(-16^\circ\text{C}) + x_1 \left( h_g - h_f \right) = 257.74 + 0.1 \cdot (273.3 - 257.74) = 259.47 \, \text{kJ/kg}
+\]  
+(using Table A10).  
+
+For adiabatic and reversible processes:  
+\[
+s_3 = s_2 = s_f(-16^\circ\text{C}) = 0.192 \, \text{kJ/kg·K} \quad \text{(from Table A10)}  
+\]  
+
+State 3 is superheated vapor. Using interpolation from Table A12:  
+\[
+T_3 = 31.33 + \frac{0.9298 - 0.9266}{0.9374 - 0.9266} \cdot (40 - 31.33) = 37.8^\circ\text{C}
+\]  
+
+The enthalpy at state 3 is calculated as:  
+\[
+h_3 = 2641.15 + \frac{37.8 - 31.33}{40 - 31.33} \cdot (2716.66 - 2641.15) = 2713.13 \, \text{kJ/kg}
+\]

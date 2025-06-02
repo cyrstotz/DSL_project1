@@ -1,0 +1,16 @@
+The mass-specific increase in flow exergy is calculated using the formula:  
+\[
+ex_{\text{flow},6} - ex_{\text{flow},0} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2}
+\]  
+Expanding the terms:  
+\[
+ex_{\text{flow},6} - ex_{\text{flow},0} = c_{p,\text{air}} (T_6 - T_0) - T_0 \left( c_{p,\text{air}} \ln \left( \frac{T_6}{T_0} \right) \right) + \frac{w_6^2}{2}
+\]  
+Substituting numerical values:  
+\[
+ex_{\text{flow},6} - ex_{\text{flow},0} = 1.006 (328.07 - 293.15) - 293.15 \left( 1.006 \ln \left( \frac{328.07}{293.15} \right) \right) + \frac{510^2}{2 \cdot 10^3}
+\]  
+Simplifying:  
+\[
+ex_{\text{flow},6} - ex_{\text{flow},0} = 192.2 \, \frac{\text{kJ}}{\text{kg}}
+\]

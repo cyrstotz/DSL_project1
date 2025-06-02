@@ -1,0 +1,104 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a Temperature-Entropy (T-s) diagram. The vertical axis is labeled \( T \) [K] and the horizontal axis is labeled \( s \) [\(\frac{kJ}{K}\)]. The graph consists of six points labeled 1 through 6. The points are connected by various lines indicating different processes:
+    \begin{itemize}
+        \item Point 1 to Point 2: A vertical line labeled "isentrop".
+        \item Point 2 to Point 3: A horizontal line labeled "isobar".
+        \item Point 3 to Point 4: A vertical line labeled "isentrop".
+        \item Point 4 to Point 5: A horizontal line labeled "isobar".
+        \item Point 5 to Point 6: A vertical line labeled "isentrop".
+    \end{itemize}
+    There are also two isobars labeled \( p_0 \) (isobare) and \( p_5 \) drawn as curved lines. The points \( p_3 = p_4 \) and \( 5_s, 5 \) are also indicated.
+\end{description}
+
+\subsection*{b)}
+
+Energiebilanz ganze Turbine:
+
+\[
+\text{st. Fp.} \quad \frac{dE}{dt} = \sum_i \dot{m}_i (h_i + k.e._i + p.e._i) + \sum \dot{Q}_j - \sum \dot{W}_n
+\]
+
+\[
+0 = \dot{m}_{\text{ges}} (h_0 - h_6 + \frac{w_0^2 - w_6^2}{2})
+\]
+
+5 + 6 Isentrop:
+
+\[
+\Rightarrow \frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} \quad T_6 = \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} T_5 = 328,07 \, K
+\]
+
+``````latex
+
+
+\[
+w_{b}^2 = 2 \left( h_0 - h_b \right) + w_0^2
+\]
+
+\[
+w_0 = w_{\text{in}} 
+\]
+
+\[
+T_0 = 273{,}15 \, \text{K}
+\]
+
+\[
+w_{b}^2 = 2 \left( h_0 - h_b \right) + w_0^2
+\]
+
+\[
+w_{b} = \sqrt{2 \left( h_0 - h_b \right) + w_0^2}
+\]
+
+\[
+w_{b} = \sqrt{2 \int_{T_b}^{T_0} c_{p,\text{Luft}} \, dT + w_0^2} = \sqrt{2 \, c_{p,\text{Luft}} \left( T_0 - T_b \right) + w_0^2}
+\]
+
+\[
+=
+\]
+
+\subsection*{c) Mit gegebenen Werten weiter gerechnet:}
+
+\[
+\Delta e_{x,\text{str}} = \underline{u_0 - u_0} \quad p_0 = p_b
+\]
+
+\[
+\Delta e_{x,\text{str}} = h_b - h_0 - T_0 \left( s_b - s_0 \right) + \frac{w_b^2 - w_0^2}{2}
+\]
+
+\[
+= c_{p,\text{Luft}} \left( T_b - T_0 \right) - T_0 \left( c_p \ln \left( \frac{T_b}{T_0} \right) - R \ln \left( \frac{p_b}{p_0} \right) \right) + \frac{w_b^2 - w_0^2}{2}
+\]
+
+\[
+= 125{,}47 \, \frac{kJ}{kg}
+\]
+
+\subsection*{d) st. Fp.}
+
+\[
+\frac{d\dot{E}_x}{dt} = \sum \dot{E}_{x,\text{str},i} - \dot{E}_{x,\text{verl}} \quad \text{(restliche Therme der Bilanz sind 0)}
+\]
+
+\[
+\dot{E}_{x,\text{verl}} = \Delta \dot{E}_{x,\text{str}}
+\]
+
+\[
+e_{x,\text{verl}} = \delta e_{x,\text{str}} = 125{,}47 \, \frac{kJ}{kg}
+\]
+
+``````latex
+
+

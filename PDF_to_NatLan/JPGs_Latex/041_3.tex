@@ -1,0 +1,33 @@
+TASK 2c  
+The equation for the rate of change of exergy is written as:  
+\[
+\frac{dE_x}{dt} = \sum \dot{E}_{x,\text{str},i} + \sum \dot{E}_{x,Q,j} - \sum \dot{W}_n - \dot{E}_{x,\text{verl}}
+\]  
+Under steady-state conditions and assuming the system is adiabatic, the equation simplifies to:  
+\[
+0 = \sum \dot{E}_{x,\text{str},i} + \dot{E}_{x,Q} - \dot{E}_{x,\text{verl}}
+\]  
+
+The specific exergy loss is expressed as:  
+\[
+\dot{e}_{x,\text{verl}} = h_0 - h + T_0(s_0 - s) + \text{ke} + \left( 1 - \frac{T_0}{T_B} \right) q_B
+\]  
+
+Substituting the relevant terms, the equation becomes:  
+\[
+\dot{e}_{x,\text{verl}} = \Delta e_{x,\text{str}} + \left( 1 - \frac{T_0}{T_B} \right) q_B
+\]  
+Where:  
+- \( T_0 = 70^\circ\text{C} \)  
+- \( q_B = 100 \, \text{kJ/kg} \)  
+- \( T_B = 1289 \, \text{K} \)  
+
+Finally, the calculation is performed as follows:  
+\[
+\dot{e}_{x,\text{verl}} = 100 \, \frac{\text{kJ}}{\text{kg}} + \left( 1 - \frac{273.15 - 30}{1289} \right) 1195 = 1069.58 \, \text{kJ}
+\]  
+
+The result is boxed as:  
+\[
+\boxed{1069.58 \, \text{kJ}}
+\]

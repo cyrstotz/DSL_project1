@@ -1,0 +1,153 @@
+
+``````latex
+
+
+\section*{A2)}
+
+\subsection*{a)}
+
+\begin{itemize}
+    \item The graph is a Temperature-Entropy (T-S) diagram.
+    \item The x-axis is labeled $S \left( \frac{kJ}{kg \cdot K} \right)$.
+    \item The y-axis is labeled $T [K]$.
+    \item There are three pressure lines labeled $p_0$, $p_1$, and $p_c$ (with $p_c$ being much greater than $p_0$).
+    \item The graph contains five points labeled 1, 2, 3, 4, and 5.
+    \item The process from point 1 to point 2 is a vertical line labeled "isentrop".
+    \item The process from point 2 to point 3 is a diagonal line labeled "n<1".
+    \item The process from point 3 to point 4 is a horizontal line labeled "isentrop".
+    \item The process from point 4 to point 5 is a diagonal line labeled "n<1".
+    \item The process from point 5 to point 1 is a vertical line labeled "isentrop".
+\end{itemize}
+
+\begin{align*}
+    z_0 &: 0.1 \, \text{bar} \quad -30^\circ C \\
+    z_1 &: p_1 \quad (\text{\# adiabatic } n<1) \\
+    z_2 &: \text{isentrop} \quad p_2 \\
+    z_3 &: \text{isochor} \\
+    p^4 &= p_4 = p_5
+\end{align*}
+
+``````latex
+
+\section*{A2) b)}
+
+\begin{align*}
+p_T &= 0.5 \, \text{bar} \\
+T_5 &= 473.1 \, \text{K} \\
+w_5 &= 720 \, \text{m/s}
+\end{align*}
+
+$T_6$ mit Polytropenverhältnis, $n = \kappa = 1.4$
+
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}}
+\]
+
+$p_6 = 0.181 \, \text{bar}$
+
+\[
+T_6 = 328.1 \, \text{K}
+\]
+
+\underline{$T_6 = 328.1 \, \text{K}$}
+
+\[
+\rightarrow \text{1. HS stationär}
+\]
+
+\[
+0 = \dot{m} \left( h_e - h_a + \frac{1}{2} (w_e^2 - w_a^2) \right) + \cancel{\dot{Q}} - \cancel{\dot{W}} \quad \text{adiabat} \quad v = c
+\]
+
+\[
+2(h_6 - h_5) = w_5^2 - w_6^2
+\]
+
+\[
+2(h_6 - h_5) - w_5^2 = -w_6^2
+\]
+
+\[
+\sqrt{w_5^2 + 2(h_5 - h_6)} = w_6
+\]
+
+\[
+h_5 - h_6 = c_p (T_5 - T_6)
+\]
+
+\[
+c_p = 1.006
+\]
+
+\underline{$w_6 = 507.2 \, \text{m/s}$}
+
+``````latex
+
+
+\section*{A2) c)}
+
+\begin{align*}
+    e_{x,sito}^\# - e_{x,sito} &= h_6 - h_0 - T_0 s_6 + T_0 s_0 + ke_6 - ke_0 \\
+    h_6 - h_0 &= C_p (T_6 - T_0) \\
+    s_0 - s_6 &= C_p \ln \left( \frac{T_0}{T_6} \right) - R \ln \left( \frac{p_0}{p_6} \right) \\
+    ke_6 - ke_0 &= \frac{1}{2} (w_6^2 - w_0^2)
+\end{align*}
+
+\begin{align*}
+    s_e &= C_p (T_6 - T_0) + T_0 \left( C_p \ln \left( \frac{T_0}{T_6} \right) \right) + \frac{1}{2} (w_6^2 - w_0^2)
+\end{align*}
+
+\begin{align*}
+    C_p &= 1.006 \\
+    T_6 &= 328.1 \quad T_0 = 293.15 = T_4 \\
+    W_6 &= 507.2 \\
+    W_0 &= 200
+\end{align*}
+
+\begin{align*}
+    s_{ex,tr} &= 120.8 \frac{kJ}{kg}
+\end{align*}
+
+\section*{d)}
+
+\textbf{Description of the diagram:}
+
+The diagram is a rectangular box labeled "Sys.grenze" (system boundary). Inside the box, there are five shapes representing components of a system, drawn from left to right. The first shape is a small rectangle, followed by a larger rectangle, then a trapezoid, another rectangle, and finally a triangle pointing to the right. 
+
+On the left side of the box, there is an arrow pointing into the box labeled $\dot{m}_i$. On the right side of the box, there is an arrow pointing out of the box labeled $\dot{m}_i$.
+
+Above the box, there are two equations:
+\begin{align*}
+    \dot{Q} &= 0 \\
+    \dot{W} &= 0 \quad (\text{Wärme geht für Kompression drauf})
+\end{align*}
+
+Below the box, there is a label "stationär" (stationary).
+
+\begin{align*}
+    \frac{dE_x}{dt} &= \sum \dot{E}_{x,istir} - E_{x,verl} \\
+    &= \dot{e}_{x,i0} - e_{x,6} - e_{x,verl}
+\end{align*}
+
+To the right of the equations, there is a note "stimmt nicht" (not correct) and an arrow pointing to $\dot{Q} \neq 0$.
+
+``````latex
+
+\section*{Aufgabe 2d)}
+
+\begin{align*}
+O &= e_{x,0} - e_{x,6} + \\
+\text{Entropie:} \quad O &= \dot{m} (s_e - s_a) + \frac{\dot{Q}}{T} + \dot{S}_{0z} \\
+O &= s_e - s_a + \frac{\dot{Q}}{T} + \dot{S}_{0z} \\
+\dot{S}_{0z} &= \frac{e_{x,\text{voll}}}{T_0} \\
+O &= s_e - s_a + \frac{\dot{Q}}{T} + \frac{e_{x,\text{voll}}}{T_0} \\
+c \ln \left( \frac{T_0}{T_6} \right) + \frac{\dot{Q}}{T} + \frac{e_{x,\text{voll}}}{T_0} &= 0 \\
+\dot{q} &= 1.455 \, \frac{\text{kJ}}{\text{kg}} \\
+T &= 1285 \, \text{K} \\
+e_{x,\text{voll}} &= \left( -c \ln \left( \frac{T_0}{T_6} \right) + \frac{q}{T} \right) \cdot T_0 \\
+e_{x,\text{voll}} &= -152.1 \, \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+``````latex
+
+

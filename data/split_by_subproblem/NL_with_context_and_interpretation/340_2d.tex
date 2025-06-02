@@ -1,0 +1,27 @@
+The specific exergy loss \( ex_{\text{verl}} \) is calculated as:  
+\( ex_{\text{verl}} = R \cdot \left( T_0 \cdot T_5 \right) / \left( T_6 - T_0 \right) \).  
+
+Substituting values:  
+\( R = c_p \cdot \kappa / (\kappa - 1) \).  
+\( R = 1.006 \cdot 1.4 / (1.4 - 1) = 7.006 \, \text{kJ/kg·K} \).  
+
+Further calculations:  
+\( ex_{\text{verl}} = 7.006 \cdot \left( 303.15 - 243.15 \right) / \left( 431.9 - 243.15 \right) = 6.287 \, \text{kJ/kg} \).  
+
+Final result:  
+\( ex_{\text{verl}} = 7.659 \, \text{kJ/kg} \).
+
+\( \dot{S}_{\text{verl}} = \dot{m} \cdot \left( s_6 - s_5 \right) + \dot{S}_{\text{rest}} \)  
+\( \dot{S}_{\text{rest}} = 0 \)  
+
+\( s_6 - s_5 = c_p \cdot \ln \left( \frac{T_6}{T_5} \right) - R \cdot \ln \left( \frac{p_6}{p_5} \right) \)  
+
+\( = 1.006 \, \text{kJ/kgK} \cdot \ln \left( \frac{431.9}{288.15} \right) - 0.287 \, \text{kJ/kgK} \cdot \ln \left( \frac{0.5}{0.191} \right) \)  
+
+\( = 0.367 \, \text{kJ/kgK} \)  
+
+---
+
+\( \Delta ex_{\text{str}} = T_0 \cdot \Delta s_{\text{str}} = 288.15 \cdot 0.367 \, \text{kJ/kgK} = 73.276 \, \text{kJ/kg} \)  
+
+\( = 73.3 \, \text{kJ/kg} \) (rounded)

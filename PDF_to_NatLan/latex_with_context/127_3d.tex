@@ -1,0 +1,52 @@
+The specific internal energy \( u_1 \) is calculated as:  
+\[
+u_1 = u_{\text{ice}} + (1 - x_1)(u_{\text{fusion}} - u_{\text{ice}})
+\]  
+Substituting values:  
+\[
+u_1 = -333.485 + 0.6 \cdot (1 - 0.6)(-0.005 + 333.458)
+\]  
+This simplifies to:  
+\[
+u_1 = -200.1768 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The energy change is expressed as:  
+\[
+\Delta E = E_2 - E_1 = Q_{12}
+\]  
+Expanding further:  
+\[
+Q_{12} = m_{\text{EW}} (u_{\text{EW},2} - u_{\text{EW},1})
+\]  
+Substituting \( u_2 = u_{\text{test}} + (1 - x_2)(u_{\text{fusion}} - u_{\text{test}}) \):  
+\[
+Q_{12} = m_{\text{EW}} \left( u_{\text{test}} + (1 - x_2)(u_{\text{fusion}} - u_{\text{test}}) - u_1 \right)
+\]
+
+The equation for the heat transfer \( Q_{12} \) per unit mass of the ice-water mixture is given as:  
+\[
+\frac{Q_{12}}{m_{\text{EW}}} = u_{\text{fest}} + (1 - x_{2,\text{eis}})(u_{\text{fl}} - u_{\text{fest}}) - u_1
+\]
+
+Rearranging the equation to solve for \( x_{2,\text{eis}} \):  
+\[
+\frac{1}{(u_{\text{fl}} - u_{\text{fest}})} \left( \frac{Q_{12}}{m_{\text{EW}}} - u_{\text{fest}} + u_1 \right) = 1 - x_{2,\text{eis}}
+\]
+
+Thus, \( x_{2,\text{eis}} \) becomes:  
+\[
+x_{2,\text{eis}} = 1 - \frac{1}{(u_{\text{fl}} - u_{\text{fest}})} \left( \frac{Q_{12}}{m_{\text{EW}}} - u_{\text{fest}} + u_1 \right)
+\]
+
+Substituting numerical values:  
+\[
+x_{2,\text{eis}} = 1 - \frac{1}{(-q_{\text{aus}} + 333,485)} \left( \frac{4.08564}{0.1} - 333,485 + 200,700 \right)
+\]
+
+The calculated value for \( x_{2,\text{eis}} \) is:  
+\[
+x_{2,\text{eis}} = 0.567
+\]
+
+The incorrect value \( x_{2,\text{eis}} = 0.6828 \) is crossed out, and the correct value \( x_{2,\text{eis}} = 0.567 \) is boxed.

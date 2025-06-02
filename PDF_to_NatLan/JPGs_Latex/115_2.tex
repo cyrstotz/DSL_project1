@@ -1,0 +1,55 @@
+TASK 1c  
+The entropy production rate \( \dot{S}_{\text{gen}} \) is calculated using the following equation:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \cdot (s_a - s_e) - \frac{\dot{Q}_{R}}{T_{12}} - \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+Substituting the given values:  
+\[
+\dot{S}_{\text{gen}} = 0.3 \, \text{kg/s} \cdot (1.3009 - 0.9549) \, \frac{\text{kJ}}{\text{kg·K}} - \frac{100 \, \text{kW}}{337.75 \, \text{K}} - \frac{-62.782 \, \text{kW}}{793.122 \, \text{K}}
+\]  
+Simplifying further:  
+\[
+\dot{S}_{\text{gen}} = 0.0497 \, \frac{\text{kW}}{\text{K}} - \dot{S}_{\text{gen}}
+\]  
+
+TASK 1d  
+The energy balance for the system is derived as follows:  
+\[
+\Delta E = m_2 \cdot u_2 - m_1 \cdot u_1 = \Delta m \cdot h_{\text{in}} + \sum Q_i - \sum W_i
+\]  
+Assumptions:  
+- \( \xi Q_i = 0 \), and \( Q_{12} = Q_{\text{out},12} \).  
+- \( W_i = 0 \), as there is no work.  
+
+Rearranging the equation:  
+\[
+\Delta m = \frac{m_2 \cdot u_2 - m_1 \cdot u_1}{h_{\text{in}}}
+\]  
+Substituting \( m_2 = m_1 + \Delta m \):  
+\[
+\Delta m = \frac{m_1 \cdot (u_2 - u_1)}{h_{\text{in}} - \left( \frac{u_2}{h_{\text{in}}} \right)}
+\]  
+
+Further simplifications lead to:  
+\[
+\Delta m = \frac{m_1 \cdot (u_2 - u_1)}{h_{\text{in}} \cdot \left( 1 - \frac{u_2}{h_{\text{in}}} \right)}
+\]  
+
+Given values:  
+\[
+h_{\text{in}} = h_{f}(200 \, \text{C}) = 88.96 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+m_1 = 5755 \, \text{kg}
+\]  
+Using \( u_1 \) and \( u_2 \) from the water tables:  
+\[
+u_2 = h_{f}(100 \, \text{C}) = 419.85 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_1 = h_{f}(100 \, \text{C}) \cdot x_D + (1 - x_D) \cdot h_{f}(100 \, \text{C}) = 478.94 \cdot 0.005 + (2.5665 - 478.94) \cdot \left( \frac{1}{h_{f}(100 \, \text{C})} \right)
+\]  
+Final calculation yields:  
+\[
+\Delta m = 429.3778 \, \text{kg}
+\]

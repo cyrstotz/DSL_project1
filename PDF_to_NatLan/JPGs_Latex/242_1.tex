@@ -1,0 +1,72 @@
+TASK 1d  
+The temperature at state 1 is \( 100^\circ\text{C} \), and at state 2 it is \( 70^\circ\text{C} \). The inlet temperature of the added mass is \( T_{\text{in}} = 20^\circ\text{C} \). The heat released during cooling is \( Q_{R,12} = 35 \, \text{MJ} \).  
+
+Using the energy balance equation:  
+\[
+Q_{12} = m_2 u_2 - m_1 u_1 + m_{\text{in}} h_{\text{in}} - Q_R
+\]  
+
+The internal energy at state 2 is:  
+\[
+u_2 = u_f(70^\circ\text{C}) = 202.95 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The internal energy at state 1 is:  
+\[
+u_1 = u_f(100^\circ\text{C}) + x_D \cdot (u_g(100^\circ\text{C}) - u_f(100^\circ\text{C})) = 417.42 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The enthalpy of the inlet mass is:  
+\[
+h_{\text{in}} = h_f(20^\circ\text{C}) = 83.86 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The total mass at state 1 is:  
+\[
+m_1 = 5755 \, \text{kg}
+\]  
+
+Rearranging the energy balance equation:  
+\[
+m_2 = m_1 + \Delta m
+\]  
+\[
+Q_{12} = (m_1 + \Delta m) u_2 - m_1 u_1 + \Delta m h_{\text{in}}
+\]  
+\[
+m_1 (u_2 - u_1) = \Delta m (h_{\text{in}} - u_2)
+\]  
+\[
+\Delta m = \frac{m_1 (u_2 - u_1)}{h_{\text{in}} - u_2}
+\]  
+
+Substituting values:  
+\[
+\Delta m = \frac{5755 \cdot (202.95 - 417.42)}{83.86 - 202.95} = 3757.45 \, \text{kg}
+\]  
+
+TASK 1e  
+The entropy change \( \Delta S_{12} \) is calculated as follows:  
+\[
+\Delta S_{12} = m_2 s_2 - m_1 s_1
+\]  
+
+The total mass at state 2 is:  
+\[
+m_2 = m_1 + \Delta m = 5755 + 3757.45 = 9512.45 \, \text{kg}
+\]  
+
+The specific entropy at state 2 is:  
+\[
+s_2 = s_f(70^\circ\text{C}) = 0.95 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+The specific entropy at state 1 is:  
+\[
+s_1 = s_f(100^\circ\text{C}) + x_D \cdot (s_g(100^\circ\text{C}) - s_f(100^\circ\text{C})) = 1.33714 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Substituting values:  
+\[
+\Delta S_{12} = 9512.45 \cdot 0.95 - 5755 \cdot 1.33714 = 1388.2 \, \frac{\text{kJ}}{\text{K}}
+\]

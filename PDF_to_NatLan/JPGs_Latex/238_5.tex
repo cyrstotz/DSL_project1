@@ -1,0 +1,85 @@
+TASK 3c  
+To solve this task, we need the energy balance equation:  
+\[
+\frac{dE}{dt} = \sum_i \dot{m}_i \left[ h_i + \frac{w_i^2}{2} + \frac{p_i}{\rho_i} \right] + \sum_j \dot{Q}_j - \sum_k \dot{W}_k
+\]  
+This assumes a closed system where \( \frac{dE}{dt} = 0 \) and the mass remains constant.  
+
+**System Description:**  
+A sketch of the system is provided, showing a cylinder with a gas chamber and an ice-water mixture separated by a membrane. The system is labeled "Systemgrenze" (system boundary).  
+
+The energy balance is applied:  
+\[
+u_1 - u_2 = Q_{12}
+\]  
+where \( u_1 \) and \( u_2 \) are specific internal energies.  
+
+For \( u_1 \):  
+\[
+u_1 = u_{\text{flüssig}}(1 \, \text{bar}) + x_{\text{eis},1} \cdot \left[ u_{\text{fest}}(1 \, \text{bar}) - u_{\text{flüssig}}(1 \, \text{bar}) \right]
+\]  
+\[
+u_{\text{flüssig}}(1 \, \text{bar}) = -0.045 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_{\text{fest}}(1 \, \text{bar}) = 333.458 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_1 = -200.0928 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+For \( u_2 \):  
+The value is not explicitly calculated on this page.  
+
+Using the energy balance for the gas system:  
+\[
+m \cdot (u_2 - u_1) = \dot{Q}
+\]  
+\[
+u_2 - u_1 = c_v \cdot (T_2 - T_1) = c_v \cdot (0^\circ\text{C} - 500^\circ\text{C}) = 0.633 \, \frac{\text{kJ}}{\text{kg·K}} \cdot (-500 \, \text{K}) = -331.5 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+\dot{m}_{\text{gas}} \cdot (u_2 - u_1) = Q
+\]  
+\[
+Q = -1.134 \, \text{kJ}
+\]  
+This is the amount of heat removed from the gas.
+
+---
+
+TASK 3d  
+For the ice-water system:  
+\[
+m_{\text{gas}} \cdot (u_2, \text{eis} - u_1, \text{gas}) = -Q
+\]  
+
+Given:  
+\[
+u_1, \text{gas} = u_{\text{flüssig}}(1 \, \text{bar}) + x_{\text{eis}} \cdot (u_{\text{fest}} - u_{\text{flüssig}})
+\]  
+\[
+u_{\text{flüssig}}(1 \, \text{bar}) = -0.045 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_{\text{fest}}(1 \, \text{bar}) = 333.458 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_2, \text{eis} = -200.0928 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The heat transfer is calculated:  
+\[
+m_{\text{gas}} \cdot u_2, \text{eis} = -18.875 \, \text{kJ}
+\]  
+\[
+u_2, \text{eis} = -185.75 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The final ice fraction \( x_{\text{eis},2} \) is determined:  
+\[
+x_{\text{eis},2} = \frac{u_2, \text{eis} - u_{\text{flüssig}}(1 \, \text{bar})}{u_{\text{fest}}(1 \, \text{bar}) - u_{\text{flüssig}}(1 \, \text{bar})} = 0.566
+\]  
+
+**Conclusion:**  
+The final ice fraction is \( x_{\text{eis},2} = 0.566 \).

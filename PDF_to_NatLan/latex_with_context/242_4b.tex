@@ -1,0 +1,38 @@
+The section begins with the equation for energy balance in the compressor:  
+\[
+0 = \dot{m} (h_2 - h_3) - W_u
+\]  
+Rearranging, the mass flow rate is expressed as:  
+\[
+\dot{m} = \frac{W_u}{h_2 - h_3}
+\]  
+
+The temperature at state 1 is given as \( T_1 = -20^\circ\text{C} = 253.15 \, \text{K} \).  
+The temperature at state 2 is calculated as:  
+\[
+T_2 = 247.15 \, \text{K} \, (-26^\circ\text{C})
+\]  
+
+The enthalpy at state 2 is determined using the relation:  
+\[
+h_2 = h_g(-26^\circ\text{C}) = 231.02 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+For state 3, the process is isentropic, so \( s_3 = s_2 \). Using the entropy relation:  
+\[
+s_3 = s_g(-26^\circ\text{C}) = 0.08330 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+The enthalpy at state 3 is calculated using interpolation:  
+\[
+h_3 = h(40^\circ\text{C}, 8 \, \text{bar}) = h(502.8 \, \text{kPa}) - h(402.8 \, \text{kPa}) \cdot \frac{0.08330 \, \frac{\text{kJ}}{\text{kg·K}} - 0.08374 \, \frac{\text{kJ}}{\text{kg·K}}}{0.08390 \, \frac{\text{kJ}}{\text{kg·K}} - 0.08374 \, \frac{\text{kJ}}{\text{kg·K}}}
+\]  
+The interpolated value is:  
+\[
+h_3 = 274.17 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Finally, the mass flow rate is calculated as:  
+\[
+\dot{m} = \frac{-28 \, \frac{\text{kJ}}{\text{s}}}{h_2 - h_3} = \frac{0.658 \cdot 10^4 \, \frac{\text{kJ}}{\text{kg}}}{h_3} = 2.4 \, \frac{\text{kg}}{\text{s}}
+\]

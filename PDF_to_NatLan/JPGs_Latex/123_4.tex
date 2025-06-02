@@ -1,0 +1,62 @@
+TASK 3b  
+The process is adiabatic; therefore, the polytropic relationship \( pV^n = \text{constant} \) applies. Using the ideal gas law \( pV = mRT \), it follows that if \( pV^n \) is constant, the process must also be isothermal.  
+
+Thus, \( T_{g,2} = T_{g,1} = 500^\circ\text{C} \).  
+
+\[
+pV^n = mRT
+\]  
+\[
+p_2 = \frac{mRT}{V^n} = \frac{3.1422 \times 10^{-3} \cdot 166.28}{3 \times 10^{-3}}
+\]  
+
+TASK 3c  
+The heat transferred \( Q_{12} \) is calculated using the energy balance:  
+
+\[
+\frac{dE}{dt} = Q - W = 0
+\]  
+
+Since the process is adiabatic, \( Q = W \). The work done is:  
+\[
+Q = W = \int p \, dV = p_0 (V_{g,2} - V_{g,1}) = 1500 \, \text{J}
+\]  
+
+TASK 3d  
+The final ice fraction \( x_{\text{ice},2} \) is determined as follows:  
+
+Given:  
+\[
+m_{\text{EW},1} = 0.6 \, \text{kg}, \quad m_e = 0.06 \, \text{kg}, \quad m_{\text{water}} = 0.04 \, \text{kg}
+\]  
+
+The energy balance is:  
+\[
+\Delta U = Q = U(T_2) - U(T_1) = m_{EW} c_V (T_2 - T_1)
+\]  
+
+\[
+T_2 - T_1 = \frac{Q}{m c_V} \quad \text{where} \quad c_V = 0.633 \, \text{kJ/kg·K}
+\]  
+
+Substituting values:  
+\[
+T_2 - T_1 = \frac{1500}{0.1 \cdot 0.633} = 23.7 \, \text{K}
+\]  
+
+Thus:  
+\[
+T_2 = T_1 + (T_2 - T_1) = 273.15 + 23.7 = 296.846 \, \text{K}
+\]  
+
+The change in internal energy is:  
+\[
+\Delta u = u_{FI} + x (u_{FE} - u_{FI})
+\]  
+
+Solving for \( x \):  
+\[
+x = \frac{\Delta u - u_{FI}}{u_{FE} - u_{FI}} = \frac{15 - 0.045}{333.458 - 0.045} = 0.045
+\]  
+
+The final ice fraction is \( x_{\text{ice},2} = 0.045 \).

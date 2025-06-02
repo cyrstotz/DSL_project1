@@ -1,0 +1,68 @@
+TASK 3a  
+The initial state of the system is described as follows:  
+- Gas temperature: \( T_g = 500^\circ\text{C} \)  
+- Gas volume: \( V_g = 3.14 \, \text{L} \)  
+- Ice-water temperature: \( T_{\text{EW}} = 0^\circ\text{C} \)  
+- Ice mass fraction: \( x_{\text{ice}} = 0.6 \)  
+
+The pressure \( p_g \) in state 1 is calculated using the equation:  
+\[
+p_g = p_0 + \frac{m_K g}{A} + \frac{m_{\text{EW}} g}{A}
+\]  
+where \( A \) is the cross-sectional area of the cylinder, given by:  
+\[
+A = \pi \frac{D^2}{4} = 0.07854 \, \text{m}^2
+\]  
+
+Substituting values:  
+\[
+p_g = 1 \, \text{bar} + \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{0.07854 \, \text{m}^2} + \frac{0.1 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{0.07854 \, \text{m}^2}
+\]  
+\[
+p_g = 1.0401 \, \text{bar}
+\]  
+
+The mass of the gas \( m_g \) is calculated using the ideal gas law:  
+\[
+m_g = \frac{p_g V_g}{R T_g}
+\]  
+where \( R \) is the specific gas constant:  
+\[
+R = \frac{R_u}{M_g} = \frac{8.314 \, \text{J/(mol·K)}}{50.1 \, \text{kg/kmol}} = 166.28 \, \text{J/(kg·K)}
+\]  
+
+Substituting values:  
+\[
+m_g = \frac{1.0401 \, \text{bar} \cdot 3.14 \, \text{L}}{166.28 \, \text{J/(kg·K)} \cdot (500 + 273.15) \, \text{K}}
+\]  
+\[
+m_g = 0.025401 \, \text{kg} = 2.5401 \, \text{g}
+\]  
+
+---
+
+TASK 3b  
+The temperature of the ice-water mixture in state 2 is given as:  
+\[
+T_{\text{EW,2}} = T_{g,2} = 0^\circ\text{C}
+\]  
+This holds because thermodynamic equilibrium is established.  
+
+The gas volume in state 2 is calculated as:  
+\[
+V_{g,2} = V_{g,1} - \frac{m_{\text{EW}}}{\rho_{\text{EW}}}
+\]  
+Substituting values:  
+\[
+V_{g,2} = 3.14 \, \text{L} - \frac{0.1 \, \text{kg}}{1000 \, \text{kg/m}^3} = 1.2362 \, \text{m}^3
+\]  
+
+The pressure in state 2 remains unchanged:  
+\[
+p_{g,2} = p_{g,1} = 1.0401 \, \text{bar}
+\]  
+This is because the gravitational force and external pressure do not change.  
+
+---
+
+No diagrams or figures are present on this page.

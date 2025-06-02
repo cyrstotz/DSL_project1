@@ -1,0 +1,67 @@
+TASK 4a  
+A graph is drawn representing the freeze-drying process in a pressure-temperature (\(p\)-\(T\)) diagram. The diagram includes labeled phase regions: "Fest" (solid), "Flüssig" (liquid), and "Gasförmig" (gaseous). The triple point is marked, and the curve transitions between the phases. The temperature axis is labeled as \( T \) in degrees Celsius (\( ^\circ\text{C} \)). The process path is indicated, showing the isobaric evaporation and sublimation steps.
+
+---
+
+TASK 5a  
+The work output is given as \( W_t = 28 \, \text{W} \).  
+
+The energy balance for a stationary, adiabatic, and reversible system is described as:  
+\[
+0 = \dot{m} (h_2 - h_3) - W_t
+\]  
+Rearranging for \( W_t \):  
+\[
+W_t = \dot{m} (h_2 - h_3)
+\]  
+Solving for \( \dot{m} \):  
+\[
+\dot{m} = \frac{W_t}{h_2 - h_3}
+\]  
+
+The enthalpy \( h_2 \) corresponds to saturated vapor, with the temperature \( T \) being 6 K below \( T_i \).  
+
+Given values:  
+- \( p_3 = 8 \, \text{bar} \)  
+- \( T_2 = -18^\circ\text{C} \)  
+- \( T_i = -10^\circ\text{C} \)  
+
+---
+
+TASK 4b  
+Interpolation is performed to find enthalpy values:  
+\[
+h_g(p_3) = h_g(p_1) + \frac{(h_g(p_2) - h_g(p_1))}{(p_2 - p_1)} \cdot (p_3 - p_1)
+\]  
+
+The entropy values are calculated as:  
+\[
+s_2 = s_g(p_3)  
+\]  
+\[
+s_2 - s_f(p_3) = x \cdot (s_g(p_3) - s_f(p_3))
+\]  
+
+The vapor quality \( x \) is determined using:  
+\[
+x = \frac{s_2 - s_f}{s_g - s_f}
+\]  
+
+Final temperature \( T \) is interpolated as \( T = 51.13^\circ\text{C} \).  
+
+---
+
+TASK 4c  
+The enthalpy \( h_2 \) is calculated as:  
+\[
+h_2 = h_{\text{sat}} + x \cdot h_{\text{fg,sat}}
+\]  
+
+Where \( h_{\text{sat}} \) is the saturated liquid enthalpy, \( h_{\text{fg,sat}} \) is the latent heat of vaporization, and \( x \) is the vapor quality.  
+
+Entropy interpolation is performed for \( s_2 \) and \( s_f \), using the saturated values at \( p_3 = 0.5 \, \text{bar} \).  
+
+---
+
+Description of crossed-out content:  
+Several equations and calculations are crossed out, including entropy interpolation steps and values for \( s_2 \), \( s_f \), and \( h_g \). These are ignored as per instructions.

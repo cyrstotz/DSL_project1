@@ -1,0 +1,62 @@
+TASK 1a  
+The problem involves a steady-state process where kinetic and potential energy are neglected (\( ke = pe = 0 \)). The energy balance equation is given as:  
+\[
+0 = \dot{m}(h_e - h_a) + \dot{Q}_R - \dot{Q}_{\text{out}} - W
+\]  
+Since \( W = 0 \), the equation simplifies to:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}(h_e - h_a) + \dot{Q}_R
+\]  
+Substituting the values:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \left( 282.98 - 419.04 \right) + 100 \, \text{kW} = 62.782 \, \text{kW}
+\]  
+
+The mass flow rate is \( \dot{m} = 0.3 \, \text{kg/s} \). The enthalpy values are:  
+- \( h_e = h_f(70^\circ\text{C}) = 292.98 \, \text{kJ/kg} \)  
+- \( h_a = h_f(100^\circ\text{C}) = 419.04 \, \text{kJ/kg} \)  
+
+These values are obtained from Table A-2.  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant (\( T_{\text{KF}} \)) is calculated using the integral expression:  
+\[
+T_{\text{KF}} = \frac{\int_{T_e}^{T_a} T \, dS}{\int_{T_e}^{T_a} dS}
+\]  
+For an ideal liquid, this simplifies to:  
+\[
+T_{\text{KF}} = \frac{\int_{T_e}^{T_a} c_p \, dT}{\int_{T_e}^{T_a} \frac{c_p}{T} \, dT}
+\]  
+Substituting the values:  
+\[
+T_{\text{KF}} = \frac{10}{\ln\left(\frac{288.15}{278.15}\right)} = 283.12 \, \text{K}
+\]  
+
+---
+
+TASK 1d  
+The energy balance for the cooling process is applied to determine the mass \( \Delta m_{12} \) added to the reactor. The system is isolated, and the equation is:  
+\[
+\Delta E = Q_e - Q_{\text{out}} = \dot{m}_{12} h_e
+\]  
+Rewriting:  
+\[
+m_2 u_2 = m_1 u_1 + \Delta m_{12} u_2 - m_1 u_1
+\]  
+Thus, \( \Delta m_{12} \) is given by:  
+\[
+\Delta m_{12}(h_e - u_e) = m(u_2 - u_1)
+\]  
+Substituting values:  
+\[
+\Delta m_{12} = \frac{5755 \left( 292.98 - 419.04 \right)}{83.96 - 292.98} = 37.69 \, \text{kg}
+\]  
+
+The enthalpy and internal energy values are:  
+- \( h_e = h_f(20^\circ\text{C}) = 83.96 \, \text{kJ/kg} \)  
+- \( u_2 = u_f(70^\circ\text{C}) = 292.98 \, \text{kJ/kg} \)  
+- \( u_1 = u_f(100^\circ\text{C}) = 419.04 \, \text{kJ/kg} \)  
+
+These values are obtained from Table A-2.

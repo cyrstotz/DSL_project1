@@ -1,0 +1,38 @@
+The heat flow \( \dot{Q}_{\text{aus}} \) is to be determined.  
+
+The mass flow rate is given as:  
+\[
+\dot{m}_{\text{in}} = \dot{m}_{\text{aus}} \implies \dot{m} = 0.3 \, \text{kg/s}
+\]  
+
+From the stationary flow process:  
+\[
+0 = \dot{m} \left( \Delta h + \Delta e^{\circ} + \Delta \frac{p^{\circ}}{\rho^{\circ}} \right) + \sum \dot{Q} - \sum \dot{W}
+\]  
+Neglecting kinetic and potential energy terms, the equation simplifies to:  
+\[
+\dot{m} \Delta h + \sum \dot{Q} = 0
+\]  
+
+The enthalpy values are calculated using the steam quality \( x_D \) and water tables:  
+\[
+h_a = h_f + x_D (h_g - h_f) = 304.6491 \, \frac{\text{J}}{\text{kg}} \quad \text{(from Table A-2 at } 70^\circ\text{C})
+\]  
+\[
+h_e = h_f + x_D (h_g - h_f) = 430.3253 \, \frac{\text{J}}{\text{kg}} \quad \text{(from Table A-2 at } 100^\circ\text{C})
+\]  
+
+Using the energy balance:  
+\[
+\dot{m} \Delta h + \dot{Q}_R + \dot{Q}_{\text{aus}} = 0
+\]  
+Rearranging for \( \dot{Q}_{\text{aus}} \):  
+\[
+\dot{Q}_{\text{aus}} = -\dot{Q}_R = -100 \, \text{kW}
+\]  
+The magnitude of \( \dot{Q}_{\text{aus}} \) is:  
+\[
+\lvert \dot{Q}_{\text{aus}} \rvert = 62.294 \, \text{kW}
+\]  
+
+---

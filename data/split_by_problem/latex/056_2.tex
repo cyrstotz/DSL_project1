@@ -1,0 +1,114 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\begin{align*}
+w_{\text{auf}} &= 200 \frac{m^2}{s^2} \\
+p_0 &= 0.15 \, \text{bar} \\
+T_0 &= -30^\circ \text{C} \\
+m_{\text{ges}} &= \dot{m}_K + \dot{m}_M \\
+\eta_B &= \frac{Q_B}{\dot{m}_K} \\
+\frac{\dot{m}_M}{\dot{m}_K} &= 5.253 \\
+c_{pL} - c_{p2} &= 1.006 \frac{kJ}{kg \cdot K} \\
+n &= 1.4
+\end{align*}
+
+\subsection*{a)}
+
+\textbf{Graph Description:}
+
+The graph is a Temperature-Entropy (T-s) diagram. The x-axis is labeled as \( s \left[ \frac{kJ}{kg \cdot K} \right] \) and the y-axis is labeled as \( T \, (K) \).
+
+There are six points labeled from 0 to 6, connected by different types of lines indicating different processes:
+
+- From point 0 to point 1, the line is curved upwards, labeled as "isentrop".
+- From point 1 to point 2, the line is horizontal, labeled as "isotrop".
+- From point 2 to point 3, the line is curved upwards, labeled as "isobar" with an increase in temperature (\(+T\)).
+- From point 3 to point 4, the line is curved downwards, labeled as "isentrop".
+- From point 4 to point 5, the line is horizontal, labeled as "isobar".
+- From point 5 to point 6, the line is curved downwards, labeled as "isentrop".
+
+Additional labels on the graph:
+- \( p_2 = p_3 \)
+- \( p_5 \)
+- \( p_0 \)
+
+\subsection*{Process Descriptions:}
+
+\begin{align*}
+0 \rightarrow 1 &: \eta_{\text{vs}} < 1 \\
+1 \rightarrow 2 &: \text{isotrop} \\
+2 \rightarrow 3 &: \text{isobar} \, (+T) \\
+3 \rightarrow 4 &: \eta_{\text{ts}} < 1 \\
+4 \rightarrow 5 &: \text{isobar} \quad p_4 = p_5 = 0.5 \, \text{bar} \\
+5 \rightarrow 6 &: \text{isentrop}
+\end{align*}
+
+``````latex
+
+
+\section*{Problem b)}
+
+\textbf{Given:} \\
+\[
+\dot{Q} = \dot{m}(h_5 - h_6 + \frac{w_5^2 - w_6^2}{2}) + \dot{Q} - \dot{W}
+\]
+\[
+\dot{Q} = \dot{m}_{ges}(h_5 - h_6 + \frac{w_5^2}{2} - \frac{w_6^2}{2})
+\]
+\[
+h_5 - h_6 = (T_5 - T_6)c_p
+\]
+\[
+\dot{m}_{ges} = \dot{m}_k + \dot{m}_H
+\]
+\[
+\dot{m}_M = 51.253 \frac{kg}{s}
+\]
+\[
+T_6 = 328.07 K
+\]
+\[
+T_6 = T_5 \left( \frac{p_0}{p_5} \right)^{\frac{n-1}{n}}
+\]
+\[
+T_1 = T_0 \left( \frac{p_1}{p_0} \right)^{\frac{n-1}{n}} = 320.059 K
+\]
+
+\textbf{Assumption:} \\
+\[
+\dot{m}_{ges} h_5 - \dot{m}_{ges} h_6 + \frac{w_5^2}{2} - \frac{w_6^2}{2} = \dot{W}
+\]
+\[
+w_6^2 = 2(h_5 - h_6) + w_5^2
+\]
+\[
+U_6 = \sqrt{2(h_5 - h_6) + w_5^2}
+\]
+\[
+w_6 = \sqrt{2c_p(T_5 - T_6) + w_5^2} = 220.474 \frac{m}{s}
+\]
+
+\section*{Problem c)}
+
+\[
+\Delta e_x = e_{x,6} - e_{x,1}
+\]
+\[
+\Delta e_x = h_6 - h_0 - T_0(s_6 - s_0) + \frac{w_6^2}{2} - \left( h_0 - T_0(s_0 - s_0) + \frac{w_0^2}{2} \right)
+\]
+\[
+h_6 - h_0 = c_p(T_6 - T_0) = 85.429
+\]
+\[
+s_6 - s_0 = \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) = 0.2395
+\]
+\[
+\Delta e_x = 130 \frac{kJ}{kg}
+\]
+
+``````latex
+
+

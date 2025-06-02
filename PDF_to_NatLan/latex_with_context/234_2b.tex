@@ -1,0 +1,46 @@
+The subtask focuses on determining the outlet velocity (\( w_6 \)) and temperature (\( T_6 \)).  
+
+**Velocity Calculation:**  
+The energy balance for a stationary flow process is applied:  
+\[
+0 = m_{\text{ges}} \left( h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right)
+\]  
+
+Rewriting for \( T_6 \):  
+\[
+0 = c_p \left( T_5 - T_6 \right) + \frac{w_5^2 - w_6^2}{2 c_p}
+\]  
+
+**System Energy Balance:**  
+For the entire system:  
+\[
+0 = m_{\text{ges}} \left( h_0 - h_4 + \frac{w_{\text{luft}}^2 - w_6^2}{2} \right) + \dot{m}_M \cdot q_B
+\]  
+
+Rewriting:  
+\[
+0 = h_0 - h_4 + \frac{w_{\text{luft}}^2 - w_6^2}{2 c_p} + 0.159 \cdot q_B
+\]  
+
+Substituting values:  
+\[
+0 = c_p \left( T_0 - T_6 \right) + \frac{w_{\text{luft}}^2 - w_6^2}{2 c_p} + 0.159 \cdot q_B
+\]  
+
+Final equation for solving \( T_6 \) and \( w_6 \):  
+\[
+0 = c_p \left( T_0 - T_5 \right) + \frac{w_5^2 - w_6^2}{2 c_p} + \frac{w_{\text{luft}}^2 - w_6^2}{2 c_p} + 0.159 \cdot q_B
+\]  
+
+Constants and relationships:  
+\[
+\dot{m}_M = 5.293 \cdot \dot{m}_K  
+\]  
+\[
+m_{\text{ges}} = 6.293 \cdot \dot{m}_K  
+\]  
+\[
+\dot{m}_M = 0.159 \cdot m_{\text{ges}}  
+\]  
+
+The equations are set up to solve for \( T_6 \) and \( w_6 \).

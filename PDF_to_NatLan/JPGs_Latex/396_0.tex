@@ -1,0 +1,49 @@
+TASK 1a  
+The problem setup involves a reactor operating in steady-state conditions. The given parameters are:  
+- Inlet mass flow rate: \( \dot{m}_{\text{in}} = 0.3 \, \text{kg/s} \)  
+- Inlet temperature: \( T_{\text{in}} = 70^\circ\text{C} \)  
+- Inlet steam quality: \( x_{\text{in}} = 0.005 \)  
+- Outlet temperature: \( T_{\text{out}} = 100^\circ\text{C} \)  
+- Outlet steam quality: \( x_{\text{out}} = 0.005 \)  
+- Reactor mass: \( m_{\text{total}} = 5755 \, \text{kg} \)  
+- Steam quality in the reactor: \( x_D = 0.005 \)  
+- Reactor temperature: \( T_{R,1} = 100^\circ\text{C} \)  
+- Heat released by the chemical reaction: \( \dot{Q}_R = 100 \, \text{kW} \)  
+
+The energy balance equation for the reactor is written as:  
+\[
+Q = \dot{m}_{\text{in}} (h_e - h_a) - \dot{m}_{\text{out}}
+\]  
+This equation is modified to include the heat released by the reaction:  
+\[
+Q = \dot{m}_{\text{in}} (h_e - h_a) + \dot{Q}_R + \dot{Q}_{\text{out}}
+\]  
+
+The heat flow removed by the coolant, \( \dot{Q}_{\text{out}} \), is calculated as:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} (h_a - h_e) - \dot{Q}_R  
+\]  
+Substituting values, \( \dot{Q}_{\text{out}} = 62.297 \, \text{kW} \).  
+
+The enthalpy values are determined using steam tables:  
+\[
+h_e = x_{\text{in}} h_g + (1 - x_{\text{in}}) h_f = 304.649 \, \text{kJ/kg}  
+\]  
+\[
+h_a = x_{\text{out}} h_g + (1 - x_{\text{out}}) h_f = 430.325 \, \text{kJ/kg}  
+\]  
+
+A small diagram is included, showing the reactor with labeled inlet (\( \dot{m}_{\text{in}} \)), outlet (\( \dot{m}_{\text{out}} \)), and heat flow (\( \dot{Q}_{\text{out}} \)).  
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant, \( T_{\text{KF}} \), is calculated using the entropy balance:  
+\[
+T_{\text{KF}} = \frac{\int_{T_a}^{T_e} T \, dS}{S_a - S_e} = \frac{q_{\text{ea}}}{S_a - S_e} = \frac{h_a - h_e}{S_a - S_e} = \frac{c_p (T_a - T_e)}{c_p \ln \left( \frac{T_a}{T_e} \right)}  
+\]  
+
+Substituting values:  
+\[
+T_{\text{KF}} = \frac{T_{\text{KF,out}} - T_{\text{KF,in}}}{\ln \left( \frac{T_{\text{KF,out}}}{T_{\text{KF,in}}} \right)} = \frac{298.15 - 288.15}{\ln \left( \frac{298.15}{288.15} \right)} = 293.12157 \, \text{K}  
+\]  
+
+Thus, \( T_{\text{KF}} = 293.12157 \, \text{K} \).

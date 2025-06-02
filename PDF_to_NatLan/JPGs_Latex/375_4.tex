@@ -1,0 +1,58 @@
+TASK 2a  
+A graph is drawn representing the process in a temperature-entropy (\( T \)-\( s \)) diagram. The axes are labeled as follows:  
+- The vertical axis is labeled \( T [K] \), representing temperature in Kelvin.  
+- The horizontal axis is labeled \( s [\frac{\text{kJ}}{\text{kg·K}}] \), representing specific entropy in kilojoules per kilogram per Kelvin.  
+
+The diagram shows six states labeled \( 1 \), \( 2 \), \( 3 \), \( 4 \), \( 5 \), and \( 6 \), connected by curves and lines.  
+- States \( 1 \) and \( 2 \) are connected by a curve.  
+- States \( 2 \) and \( 3 \) are connected by a vertical line.  
+- States \( 3 \) and \( 4 \) are connected by a curve.  
+- States \( 4 \) and \( 5 \) are connected by a diagonal line.  
+- States \( 5 \) and \( 6 \) are connected by a curve.  
+
+The pressures \( p_0 \), \( p_3 \), \( p_4 \), and \( p_5 \) are marked along the curves, indicating isobars (lines of constant pressure).  
+
+---
+
+TASK 2b  
+The reversible adiabatic isentropic relation is derived:  
+\[
+p_6 = p_5
+\]
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}}
+\]
+where \( n = \kappa = 1.4 \).  
+
+The temperature \( T_6 \) is calculated as:  
+\[
+T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}}
+\]
+Substituting values:  
+\[
+T_6 = 431.3 \, \text{K} \cdot \left( \frac{0.831}{0.5} \right)^{\frac{0.4}{1.4}} = 328.07 \, \text{K}
+\]
+Thus, \( T_6 = 328.07 \, \text{K} \).  
+
+---
+
+The steady-state energy balance equation is written as:  
+\[
+0 = \dot{m} \left[ h_e - h_a + \frac{w_e^2}{2} - \frac{w_a^2}{2} \right]
+\]
+where \( h_s - h_c = c_p (T_s - T_c) \).  
+
+Substituting values:  
+\[
+h_s - h_c = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \cdot (431.3 \, \text{K} - 328.07 \, \text{K}) = 104.45 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The outlet velocity \( w_a \) is calculated as:  
+\[
+w_a = \sqrt{\frac{104.45 \, \frac{\text{kJ}}{\text{kg}} \cdot 2 + (220 \, \frac{\text{m}}{\text{s}})^2}{1}}
+\]
+\[
+w_a = 390.96 \, \frac{\text{m}}{\text{s}}
+\]  
+
+Thus, \( w_a = 390.96 \, \frac{\text{m}}{\text{s}} \).

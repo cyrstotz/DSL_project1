@@ -1,0 +1,112 @@
+
+``````latex
+
+
+\section*{Ideales Gas, Luft:}
+
+\begin{tabular}{|c|c|c|}
+\hline
+$P[\text{bar}]$ & $T[^\circ C]$ & $T[\text{K}]$ \\
+\hline
+0 & 0.011 & -30 \\
+1 & & \\
+2 & & \\
+3 & & \\
+4 & & \\
+5 & & \\
+6 & 328.07 & \\
+\hline
+\end{tabular}
+
+\begin{itemize}
+    \item $\Delta Q = 0$, isentrop wg. $c < 1$ \\
+    \item isentrop = adiabatic reversible \\
+    \item adiabatic \\
+    \item isobar $P_4 = P_1 = P_5$ \\
+    \item isentrop = rev/adiabatic \\
+\end{itemize}
+
+\subsection*{a)}
+
+Graph description: The graph is a Pressure-Volume (P-V) diagram with the x-axis labeled as $s \left[ \frac{u^3}{u \cdot k} \right]$ and the y-axis labeled as $T \left[ u \right]$. There are six points labeled 1 through 6. The points are connected by lines indicating different processes:
+
+\begin{itemize}
+    \item Point 1 to Point 2: Isentropic process
+    \item Point 2 to Point 3: Isobaric process
+    \item Point 3 to Point 4: Isentropic process
+    \item Point 4 to Point 5: Isobaric process
+    \item Point 5 to Point 6: Isentropic process
+\end{itemize}
+
+The graph also includes curves labeled as "isobare" and "isentrope".
+
+\subsection*{b)}
+
+\begin{align*}
+    \text{Energie Bilanz} &\rightarrow \text{isentrop, da reversibel} \rightarrow \Delta Q = 0 \\
+    &\rightarrow n = k = \frac{c_p}{c_v} = 1.4 \\
+    T_0 &= T_s \left( \frac{P_0}{P_s} \right)^{\frac{n-1}{n}} \\
+    &= 328.07 \, K
+\end{align*}
+
+Wo: Energie Bilanz um Schubdüse, stationär, ein Massenstrom:
+\begin{itemize}
+    \item $P_e = 0$
+\end{itemize}
+
+\[
+0 = \dot{m} \left( h_s - h_e + \frac{w_s^2 - w_e^2}{2} \right) + \dot{Q}_{s \rightarrow e} - \dot{W}_{t, re}
+\]
+
+\[
+\text{Wiese: } \dot{W}_{t, re} = \dot{m} \cdot \left( h_s - h_e \right)
+\]
+
+``````latex
+
+\section*{Problem 2}
+
+\subsection*{c)}
+
+\begin{align*}
+W_e &= 5.10 \frac{m}{s}, \quad T_0 = 340 \, K \\
+\text{Exergiebilanz um Turbine, stationär, 1 massenstrom:} \\
+\text{alles im Trockenlauf} \\
+\Delta e_{\text{ex,str}} &= -\left[ h_0 - h_e - T_0 \left( s_0 - s_e \right) + \text{alle } \frac{w^2}{2} \right] \\
+\text{alle} &= \frac{w_0^2 - w_e^2}{2}
+\end{align*}
+
+\begin{align*}
+h_0 - h_e &= c_p \left( T_0 - T_e \right) = -97.4311 \frac{kJ}{kg} \\
+s_0 - s_e &= c_p \ln \left( \frac{T_0}{T_e} \right) = -0.57927 \frac{kJ}{kg \cdot K} \\
+\frac{w_0^2 - w_e^2}{2} &= -1.00050 \frac{kJ}{kg}
+\end{align*}
+
+\begin{align*}
+\Delta e_{\text{ex,str}} &= -\left[ 207.878 \frac{kJ}{kg} \right] \\
+\Delta e_{\text{ex,str}} &= 115.797 \frac{kJ}{kg}
+\end{align*}
+
+\subsection*{d)}
+
+\begin{align*}
+\dot{e}_{\text{ex,verl}} &= T_0 \cdot \dot{s}_{\text{erz}} \\
+\text{alles im Trockenlauf} \\
+\text{Entropiebilanz um Turbine:} \\
+0 &= \dot{m} \left( s_0 - s_e \right) + \frac{\dot{Q}_{0e}}{T_{0e}} + \dot{s}_{\text{erz}} \\
+&\Rightarrow \text{alles adiabatisch außer Brennkammer} \\
+\frac{\dot{Q}_{0e}}{\dot{m}} &= -q_B = -1195 \frac{kJ}{kg} \\
+T_{0e} &= \overline{T}_B = 1289 \, K
+\end{align*}
+
+\begin{align*}
+\frac{\dot{s}_{\text{erz}}}{\dot{m}} &= s_e - s_0 - \frac{q_B}{T_B} = 1.304 \frac{kJ}{kg \cdot K}
+\end{align*}
+
+\begin{align*}
+e_{\text{ex,verl}} &= 317.15 \frac{kJ}{kg}
+\end{align*}
+
+``````latex
+
+

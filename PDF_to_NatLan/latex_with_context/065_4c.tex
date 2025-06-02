@@ -1,0 +1,45 @@
+The equation for the pressure ratio is:  
+\[
+\epsilon = \left( \frac{p_1}{p_4} \right)^{\frac{n-1}{n}}
+\]  
+
+Using the first law of thermodynamics for the compressor:  
+\[
+\dot{Q} = 0 \quad \text{(adiabatic process)}
+\]  
+\[
+\dot{m} \left[ h_2 - h_3 \right] = -\dot{W}_k
+\]  
+
+Rearranging for the work done by the compressor:  
+\[
+\dot{W}_k = \dot{m} \left[ h_2 - h_3 \right]
+\]  
+
+The mass flow rate of the refrigerant is:  
+\[
+\dot{m}_{\text{R134a}} = \frac{\dot{W}_k}{h_2 - h_3}
+\]
+
+The vapor quality \( x_1 \) is calculated using the formula:  
+\[
+x_1 = \frac{h_4 - h_f}{h_{g} - h_f}
+\]  
+The throttling process is isenthalpic, so \( h_4 = h_a = 26.0 \, \frac{\text{kJ}}{\text{kg}} \).  
+
+From Table A10:  
+\[
+h_f(T_a = -16^\circ\text{C}) = 29.30 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_g(T_a = -16^\circ\text{C}) = 237.4 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Substituting values:  
+\[
+x_1 = \frac{26.0 \, \frac{\text{kJ}}{\text{kg}} - 29.30 \, \frac{\text{kJ}}{\text{kg}}}{237.4 \, \frac{\text{kJ}}{\text{kg}} - 29.30 \, \frac{\text{kJ}}{\text{kg}}} = \frac{-3.30 \, \frac{\text{kJ}}{\text{kg}}}{208.1 \, \frac{\text{kJ}}{\text{kg}}} = -1.127
+\]  
+
+(Note: The negative value suggests an issue with the calculation or assumptions.)  
+
+---

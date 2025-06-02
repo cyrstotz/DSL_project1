@@ -1,0 +1,32 @@
+Heat removed \( Q_{out,12} = \Delta Q = 35 \, \text{MJ} \)  
+
+Energy balance:  
+\( m_2 \cdot u_2 - m_1 \cdot u_1 = \Delta m \cdot h_{ein} + Q \)  
+
+\( h_{ein} = h \, \text{at boiling liquid 20°C, saturated} = 83.96 \, \text{kJ/kg} \)  
+
+\( m_1 = 5755 \, \text{kg} \)  
+
+\( m_2 = m_1 + \Delta m \)  
+
+Internal energy calculations:  
+\( u_1 = h - x \cdot h_{fg} = 697.04 \, \text{kJ/kg} - 0.005 \cdot (2676.1 - 400.05 \, \text{kJ/kg}) = 30.33 \, \text{kJ/kg} \)  
+
+\( u_2 = h_{saturated} = 292.95 \, \text{kJ/kg} \)  
+
+From Table A2:  
+\( u_2 = 418.94 \, \text{kJ/kg} + 0.005 \cdot (2500.5 - 612.95 \, \text{kJ/kg}) = 429.38 \, \text{kJ/kg} \)  
+
+Entropy balance:  
+\( m_2 \cdot u_2 - m_1 \cdot u_1 - \Delta m \cdot h_{ein} = Q \)  
+
+Rearranging:  
+\( \Delta m = \frac{Q + m_1 \cdot u_1 - m_2 \cdot u_2}{u_2 - h_{ein}} \)  
+
+Substituting values:  
+\( \Delta m = \frac{35000 \, \text{kJ} + 5755 \, \text{kg} \cdot (429.38 \, \text{kJ/kg} - 292.95 \, \text{kJ/kg})}{292.95 \, \text{kJ/kg} - 83.96 \, \text{kJ/kg}} \)  
+
+Final result:  
+\( \Delta m = 3924 \, \text{kg} \)  
+
+\( h_{ein} = 3924 \, \text{kg} \)

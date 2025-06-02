@@ -1,0 +1,29 @@
+System (stationary, thermodynamically balanced):  
+Energy balance equation:  
+\( \dot{E}_w = \frac{d}{dt}(PE) + \frac{d}{dt}(KE) + \dot{Q} + \dot{W} = 0 \).  
+From this, \( \dot{Q} \) and \( \dot{W} \) are balanced.  
+
+The heat flow \( \dot{Q}_K \) is the heat of isobaric evaporation of R134a:  
+\( \dot{Q}_K = \dot{m}_{R134a} \cdot (h_{g}(T_i) - h_{f}(T_i)) \).  
+Using values from Table A-10 at \( T_i = -20^\circ C \):  
+\( h_{g}(T_i) = 245.94 \, \text{kJ/kg} \), \( h_{f}(T_i) = 24.17 \, \text{kJ/kg} \).  
+Thus, \( h_{g}(T_i) - h_{f}(T_i) = 245.94 - 24.17 = 219.67 \, \text{kJ/kg} \).  
+
+The heat flow \( \dot{Q}_K \) is the heat of isobaric condensation of R134a at \( T_{tr} = -26^\circ C \):  
+\( \dot{Q}_K = \dot{m}_{R134a} \cdot (h_{g}(T_{tr}) - h_{f}(T_{tr})) \).  
+Using values from Table A-10 at \( T_{tr} = -26^\circ C \):  
+\( h_{g}(T_{tr}) = 186.25 \, \text{kJ/kg} \), \( h_{f}(T_{tr}) = -242.43 \, \text{kJ/kg} \).  
+Thus, \( h_{g}(T_{tr}) - h_{f}(T_{tr}) = 186.25 - (-242.43) = 435.68 \, \text{kJ/kg} \).  
+
+The mass flow rate \( \dot{m}_{R134a} \) is calculated as:  
+\( \dot{m}_{R134a} = \frac{\dot{Q}_K}{h_{g}(T_i) - h_{f}(T_i)} \).  
+
+From the energy balance:  
+\( \dot{m}_{R134a} = \frac{\dot{Q}_K}{h_{g}(T_i) - h_{f}(T_i)} + \dot{Q}_K = \frac{\dot{W}}{h_{g}(T_i) - h_{f}(T_i)} \).  
+
+Using values from the table:  
+\( h_{g}(T_i) = 235.34 \, \text{kJ/kg} \), \( h_{f}(T_i) = 186.92 \, \text{kJ/kg} \).  
+Thus, \( h_{g}(T_i) - h_{f}(T_i) = 235.34 - 186.92 = 48.42 \, \text{kJ/kg} \).  
+
+Final calculation:  
+\( \dot{m}_{R134a} = 0.93 \, \text{kg/s} \approx 4.69 \, \text{kg/s} \).

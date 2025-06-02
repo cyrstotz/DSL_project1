@@ -1,0 +1,97 @@
+
+``````latex
+
+
+\section*{A2}
+
+\subsection*{a)}
+
+\begin{center}
+\begin{tabular}{c}
+\includegraphics[width=0.8\textwidth]{graph.png}
+\end{tabular}
+\end{center}
+
+\textbf{Description of the graph:} The graph is a plot with the vertical axis labeled $T \, [K]$ and the horizontal axis labeled $s \, \left[\frac{kJ}{kg \cdot K}\right]$. The plot consists of a curve that starts at point 1, moves to point 2, then to point 3, and finally to point 4. There is a dashed line connecting points 2 and 3, labeled $P_{23}$. The curve continues from point 4 to point 5, and then to point 6. The curve is smooth and shows a typical thermodynamic process.
+
+\subsection*{b)}
+
+\begin{align*}
+& w_c, T_f \\
+& T_s = 431.9 \, K \\
+& P_s = 0.5 \, bar \\
+& w_s = 220 \, \frac{m}{s} \\
+& P_6 = 0.197 \, bar \\
+& \dot{Q} = \dot{m} \left( h_s - h_c + \frac{w_s^2 - w_6^2}{2} \right) \\
+& h_s - h_c = - \int_{T_c}^{T_s} c_p dT = -1.606 \, \frac{kJ}{kg \cdot K} \\
+& T_c = T_s \left( \frac{P_6}{P_s} \right)^{\frac{n-1}{n}} = 328.07 \, K \\
+& v = \frac{RT}{P} \\
+& \int_{5}^{6} v dp = R \left( T_6 - T_s \right) \\
+& R = c_p - c_v = 1.725 \, \frac{kJ}{kg \cdot K} \\
+& W_v = R \left( T_6 - T_s \right) = \frac{1.725 \left( 328.07 - 431.9 \right)}{1 - 1.4} = -6.477 \, \frac{kJ}{kg} \\
+& \Delta h = \Delta v \frac{1}{k} \\
+& w_6^2 = w_s^2 + 2 \Delta h \\
+& w_6 = \sqrt{447.77 + 2 \cdot w_s^2} = 312.50 \, \frac{m}{s}
+\end{align*}
+
+``````latex
+
+c)
+
+\[
+\dot{m} (\cancel{h_a} - h_o - T_o (s_{1} - s_{6}) + \Delta k)_{12}
+\]
+
+\[
+T_o = 243,15 K
+\]
+
+\[
+\Delta e_{x,str} = \dot{m} (h_e - h_s)
+\]
+
+\[
+\dot{m} \left( h_e + h_o - T_o (s_6 - s_o) + k_e \right) - \dot{m} \left( h_s - h_o - T_o (s_5 - s_o) + k_{e5} \right) =
+\]
+
+\[
+= \dot{m} \left( h_e - h_s - T_o (s_6 - s_5) + \frac{w_{e}^{2} - w_{s}^{2}}{2} \right)
+\]
+
+\[
+h_e - h_s = \int_{T_o}^{T_o} c_p dT = 1,006 \left( 328,07 + 243,15 \right) = 243,15 \frac{kJ}{kg}
+\]
+
+\[
+s_6 - s_5 = \int_{T_o}^{T_o} \frac{c_p}{T} dT - R \ln \left( \frac{p_o}{p_o} \right) =
+\]
+
+\[
+= 1,006 \ln \left( \frac{328,07}{243,15} \right) - 1,725 \cancel{\frac{kJ}{kgK}} \left( \ln \left( \frac{4}{1} \right) \right)
+\]
+
+\[
+= 0,301 \frac{kJ}{kgK}
+\]
+
+\[
+\Delta E_{x,str} = \dot{m}_{ges} \left( 85,43 \frac{kJ}{kg} - 243,15 \frac{kJ}{kg} \cdot 0,301 \frac{kJ}{kgK} \right)
+\]
+
+\[
+= \dot{m}_{ges} \left( 24659,122 \frac{kJ}{kg} \right) \quad e_x = 24659,122 \frac{kJ}{kg}
+\]
+
+d)
+
+\[
+\dot{m}_{ges} \left( 24659,122 \frac{kJ}{kg} \right) \quad Q = \dot{m} \left( 100 \frac{kJ}{kg} \right) + \left( 1 - \frac{T_o}{T_B} \right) \dot{Q}_B - E_{x,ver}
+\]
+
+\[
+e_{x,ver} = 100 \frac{kJ}{kg} + \left( 1 - \frac{243,15}{1288} \right) 1195 \frac{kJ}{kg} = 1009,41 \frac{kJ}{kg}
+\]
+
+``````latex
+
+

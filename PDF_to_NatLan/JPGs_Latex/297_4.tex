@@ -1,0 +1,45 @@
+TASK 2a  
+The diagram is a T-s diagram (temperature vs. entropy) illustrating the thermodynamic processes in a jet engine. The following features are labeled:  
+- Isobars (constant pressure lines) are shown, with one labeled as \( p_0 \) and another as \( p_5 \).  
+- The process includes labeled states: 1, 2, 3, 4, 5, and 6.  
+- The transitions between states are described as follows:  
+  - Between states 1 and 2: Isentropic compression (adiabatic and reversible).  
+  - Between states 2 and 3: Isobaric heat addition.  
+  - Between states 3 and 4: Adiabatic and irreversible expansion.  
+  - Between states 5 and 6: Mixing and nozzle expansion.  
+- The diagram includes arrows indicating the direction of the processes, and the entropy axis is labeled as \( s \, [\text{kJ/kg·K}] \).  
+
+TASK 2b  
+The equation for the outlet velocity \( w_6 \) is written as:  
+\[
+w_6 = \sqrt{w_5^2 + 2 \left( h_5 - h_6 \right)}
+\]  
+where:  
+- \( w_5 \) is the velocity at state 5.  
+- \( h_5 \) and \( h_6 \) are the specific enthalpies at states 5 and 6, respectively.  
+
+TASK 2c  
+The mass-specific exergy destruction \( ex_{\text{dest}} \) is calculated using the following equation:  
+\[
+\Delta ex_{\text{dest}} = ex_{\text{flow},0} - ex_{\text{flow},6}
+\]  
+Expanding the terms:  
+\[
+\Delta ex_{\text{dest}} = \dot{m} \left[ h_6 - h_0 - T_0 \left( s_6 - s_0 \right) + \frac{w_6^2 - w_0^2}{2} \right]
+\]  
+For an ideal gas:  
+\[
+h_6 - h_0 = c_p \left( T_6 - T_0 \right), \quad s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+Substituting values:  
+\[
+\Delta ex_{\text{dest}} = \dot{m} \left[ c_p \left( T_6 - T_0 \right) - T_0 \left( c_p \ln \left( \frac{T_6}{T_0} \right) + \frac{w_6^2}{2} - \frac{w_0^2}{2} \right) \right]
+\]  
+Given:  
+- \( T_0 = 396 \, \text{K} \)  
+- \( w_6 = 546.67 \, \text{m/s} \)  
+
+Final result:  
+\[
+\Delta ex_{\text{dest}} = \text{value not fully legible, approximately } 26258672.5 \, \text{kJ}.
+\]  

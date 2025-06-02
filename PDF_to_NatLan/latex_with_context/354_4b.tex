@@ -1,0 +1,40 @@
+The required refrigerant mass flow rate (\( \dot{m}_{\text{R134a}} \)) is to be calculated.  
+
+The temperature in the evaporator is given as \( T_i - 6 \, \text{K} \).  
+From the diagram:  
+\[
+T_i = -10^\circ\text{C}, \quad T_f = -16^\circ\text{C}
+\]  
+
+Using \( x_2 = n \), entropy and enthalpy values are obtained from Table A-10:  
+\[
+s_g(-16^\circ\text{C}) = 0.5298 \, \frac{\text{kJ}}{\text{kg·K}}, \quad h_g(-16^\circ\text{C}) = 237.74 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Since the compressor is adiabatic and reversible, the entropy remains constant:  
+\[
+S_2 = S_3
+\]
+
+From Table A-12, the enthalpy can now be determined using entropy. It is known that:  
+\[
+s_2 = s_3 = 6.528 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+The enthalpy \( h_3 \) is calculated as:  
+\[
+h_3 = h(8 \, \text{bar}, 40^\circ\text{C}) - h(8 \, \text{bar}, T_{\text{sat}}) + \frac{s_3 - s(8 \, \text{bar}, T_{\text{sat}})}{s(8 \, \text{bar}, 40^\circ\text{C}) - s(8 \, \text{bar}, T_{\text{sat}})} \cdot h(8 \, \text{bar}, T_{\text{sat}})
+\]  
+\[
+h_3 = 277.37 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Using this, for the balance equation under the compressor, which is adiabatic:  
+\[
+0 = \dot{m}(h_2 - h_3) + \dot{Q} - \dot{W}
+\]  
+
+The mass flow rate \( \dot{m} \) is calculated as:  
+\[
+\dot{m} = \frac{\dot{W}}{h_2 - h_3} = 8.34 \cdot 10^{-4} \, \frac{\text{kg}}{\text{s}}
+\]

@@ -1,0 +1,47 @@
+The table lists the temperatures for two states:  
+- State 1: \( T = 100^\circ\text{C} \)  
+- State 2: \( T = 70^\circ\text{C} \)  
+
+The inlet temperature for the added mass is given as \( T_{\text{in,12}} = 20^\circ\text{C} \), and the task involves determining \( \Delta m_{12} \).  
+
+A schematic diagram is drawn showing a system labeled "adiabatic system" with heat flow \( Q_{\text{out}} \) leaving the system, steam quality \( x = 0 \), and a reaction heat \( \dot{Q}_R \) entering the system. The inlet temperature \( T_{\text{in,12}} = 20^\circ\text{C} \) is noted.  
+
+The energy balance equation is written as:  
+\[
+\Delta E = m_2 \cdot u_2 - m_1 \cdot u_1 + \Delta KE + \Delta PE  
+\]  
+Neglecting kinetic and potential energy changes, this simplifies to:  
+\[
+\Delta E = \Delta m_{12} \cdot u_{12} + Q_{\text{out}} + \dot{Q}_R  
+\]  
+The heat terms \( Q_{\text{out}} \) and \( \dot{Q}_R \) are crossed out, leaving:  
+\[
+m_2 \cdot u_2 - m_1 \cdot u_1 = \Delta m_{12} \cdot u_{12}  
+\]  
+
+Further simplification gives:  
+\[
+(m_1 + \Delta m_{12}) \cdot u_2 - m_1 \cdot u_1 = \Delta m_{12} \cdot u_{12}  
+\]  
+
+Using water table data (Table A-2):  
+- \( u_2(x = 0, 70^\circ\text{C}) = u_f(70^\circ\text{C}) = 292.95 \, \text{kJ/kg} \)  
+- \( u_1(x = 0.005, 100^\circ\text{C}) = u_f(100^\circ\text{C}) + x \cdot u_{fg}(100^\circ\text{C}) = 423.64 \, \text{kJ/kg} \)  
+- \( u_{12}(x = 0, 20^\circ\text{C}) = u_f(20^\circ\text{C}) = 83.96 \, \text{kJ/kg} \)  
+
+These values are used to calculate \( \Delta m_{12} \).
+
+The energy balance equation is written as:  
+\[
+m_1 u_2 + \Delta m_{12} u_2 - m_1 u_1 = \Delta m_{12} h_{12}
+\]  
+Rearranging terms:  
+\[
+m_1 u_2 - m_1 u_1 = \Delta m_{12} (h_{12} - u_2)
+\]  
+Solving for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = 3764.28 \, \text{kg}
+\]  
+
+---

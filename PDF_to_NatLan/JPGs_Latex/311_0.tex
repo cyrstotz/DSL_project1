@@ -1,0 +1,48 @@
+TASK 1a  
+The reactor operates under steady-state conditions. The energy balance equation is written as:  
+\[
+0 = \dot{m}_{\text{in}} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R - \dot{Q}_{\text{out}}
+\]  
+where \( \dot{m}_{\text{in}} = \dot{m}_{\text{out}} \).  
+
+The heat flow removed by the coolant is expressed as:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant, \( T_{\text{KF}} \), is calculated using the integral expression:  
+\[
+T_{\text{KF}} = \frac{\int_{S_a}^{S_e} T \, dS}{S_e - S_a}
+\]  
+
+For isobaric conditions (\( p_{\text{KF}} = \text{constant} \)), the heat transfer equation is:  
+\[
+\dot{Q} = \dot{m}_{\text{KF}} (S_{\text{KF,in}} - S_{\text{KF,out}}) + \dot{Q}_{\text{out}}
+\]  
+where \( S_{\text{KF,in}} \) and \( S_{\text{KF,out}} \) are the specific entropies of the coolant at inlet and outlet, respectively.  
+
+The mean temperature is further simplified as:  
+\[
+T_{\text{KF}} = \frac{T_{\text{out}} - T_{\text{in}}}{\ln \left( \frac{T_{\text{out}}}{T_{\text{in}}} \right)}
+\]  
+Substituting values:  
+\[
+T_{\text{KF}} = \frac{T_{\text{out}} \cdot T_{\text{in}}}{\ln \left( \frac{T_{\text{out}}}{T_{\text{in}}} \right)} = 357.844 \, \text{K}
+\]  
+
+TASK 1c  
+The entropy production rate, \( \dot{S}_{\text{gen}} \), is calculated as:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{out}}}{T_{\text{reactor}}} + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+
+Rewriting:  
+\[
+\dot{S}_{\text{gen}} = -\frac{\dot{Q}_{\text{out}}}{T_{\text{reactor}}} + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+
+Substituting values, the entropy production rate is:  
+\[
+\dot{S}_{\text{gen}} = 46.146 \, \frac{\text{W}}{\text{K}}
+\]

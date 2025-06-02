@@ -1,0 +1,58 @@
+TASK 2a  
+The diagram represents a qualitative T-s diagram for a jet engine process. The graph includes labeled isobars and key states:  
+- State 1: Compression (adiabatic and reversible).  
+- State 2: Combustion (isobaric heat addition).  
+- State 3: Expansion in the turbine (adiabatic and irreversible).  
+- State 4: Mixing and nozzle process.  
+
+The vertical axis is labeled as \( T \) (temperature), and the horizontal axis is labeled as \( s \) (entropy). The process transitions are shown with arrows indicating the direction of change.  
+
+Below the diagram, the text explains:  
+- The compression process is adiabatic and reversible.  
+- The combustion process is isobaric.  
+- The turbine process involves irreversible adiabatic expansion.  
+
+TASK 2d  
+The calculation focuses on the exergy destruction in the jet engine.  
+
+The exergy balance is given as:  
+\[
+ex_{\text{dest}} = T_0 \cdot S_{\text{gen}}
+\]  
+where \( T_0 = T_{\text{ambient}} \).  
+
+Entropy generation is calculated as:  
+\[
+\text{Entropy balance for the turbine: }  
+\frac{dS}{dt} = \sum \dot{m}_i s_i - \sum \dot{m}_e s_e + S_{\text{gen}}
+\]  
+\[
+S_{\text{gen}} = \dot{m} (s_e - s_i)
+\]  
+
+The entropy at different states is expressed as:  
+\[
+s_0 = S(p_0, T_0)  
+\]  
+\[
+s_e = S(p_0, T_e) = \int_{T_0}^{T_e} \frac{c_{p,\text{air}}}{T} \, dT  
+\]  
+
+The integral is solved:  
+\[
+s_e - s_0 = c_{p,\text{air}} \ln \left( \frac{T_e}{T_0} \right)  
+\]  
+Substituting values:  
+\[
+s_e - s_0 = 1.006 \cdot \ln \left( \frac{431.9}{240.15} \right) = 0.3373 \, \text{kJ/(kg·K)}  
+\]  
+
+Exergy destruction is then calculated:  
+\[
+ex_{\text{dest}} = T_0 \cdot S_{\text{gen}}  
+\]  
+\[
+ex_{\text{dest}} = 82.1 \, \text{kJ/kg}  
+\]  
+
+This concludes the calculation of exergy destruction in the jet engine.

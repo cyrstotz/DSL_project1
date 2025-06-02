@@ -1,0 +1,43 @@
+TASK 1d  
+The heat released during cooling is given as:  
+\[
+Q_{R,12} = 35 \, \text{MJ} = 35,000 \, \text{kJ}
+\]  
+
+The system is described as an open system.  
+
+The energy balance equation is written as:  
+\[
+m_2 u_2 - m_1 u_1 = \Delta m_{12} h_{\text{ein}} + Q_{\text{aus}}
+\]  
+
+The internal energy values are specified:  
+\[
+u_1 = u_{\text{water}}(70^\circ\text{C}) \quad \text{saturated liquid, } x_D = 0
+\]  
+\[
+u_2 = u_{\text{water}}(100^\circ\text{C}) \quad \text{saturated liquid, } x_D = 0.005
+\]  
+
+The enthalpy of the incoming mass is given as:  
+\[
+h_{\text{ein}} = h(20^\circ\text{C}) \quad \text{saturated liquid}
+\]  
+
+The relationship between \( u_2 \), \( u_1 \), and \( h_{\text{ein}} \) is expressed as:  
+\[
+u_2 = u_1 + s_{\text{m,12}} \quad \text{where } Q < 0
+\]  
+
+The detailed energy balance equation is expanded:  
+\[
+(m_2 + s_{\text{m,12}}) u_2 - m_1 u_1 = s_{\text{m,12}} h_{\text{ein}} + Q
+\]  
+\[
+m_1 (u_2 - u_1) + s_{\text{m,12}} (u_2 - h_{\text{ein}}) = Q
+\]  
+
+Finally, solving for \( s_{\text{m,12}} \):  
+\[
+s_{\text{m,12}} = \frac{Q - m_1 (u_2 - u_1)}{(u_2 - h_{\text{ein}})}
+\]

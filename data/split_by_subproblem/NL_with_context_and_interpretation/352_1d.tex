@@ -1,0 +1,27 @@
+Energy balance:  
+
+dE/dt = Σṁ_in * h_in - Σṁ_out * h_out + ΣQ̇ - ΣẆ  
+
+At steady state:  
+ΔU = Δm_12 * h_en_12 + Q_R - Q_out  
+
+ΔU = Δm_12 * h_en_12  
+
+Δm_12 = (ΔU - (m_2 + Δm_12) * h_2 + (m_1 * h_1)) / h_en_12  
+
+Δm_12 = (m_2 * h_2 - m_1 * h_1) / h_en_12  
+
+Δm_12 * (1 - h_2/h_en_12) = m_1/h_en_12 * (h_2 - h_1)  
+
+=> Δm_12 = m_1/h_en_12 * (h_2 - h_1) / (1 - h_2/h_en_12)
+
+h_1 = h(100°C, x = 0.005) = h_f(100°C) + x * (h_g(100°C) - h_f(100°C))  
+≈ 430.3 kilojoules per kilogram (from Table A-2)  
+
+h_2 = h(30°C, x = 0) = h_f(30°C) = 292.88 kilojoules per kilogram (from Table A-2)  
+
+h_en,12 = h(20°C, x = 0) = h_f(20°C) = 83.98 kilojoules per kilogram (from Table A-2)  
+
+Δm_12 = 5755 / 83.98 * (292.88 - 430.3) / (1 - 83.98)  
+
+≈ 109.5 kilograms

@@ -1,0 +1,32 @@
+| p [bar] | T [°C] | h [kJ/kg] | s [kJ/kg·K] |  
+|---------|---------|------------|--------------|  
+| 1       | 500     |            |              |  
+| 2       |         |            |              |  
+| 3       |         |            |              |  
+
+Additional:  
+V_g1 = 3.14 L  
+
+amb: p = 1 bar, m_k = 32 kg  
+
+a) p_g1 = ?, m_g = ?  
+
+Perfect gas:  
+m_g = (rho_g * V_g)  
+
+V_g1 = 3.14 L = 0.00314 m³  
+
+p via forces equilibrium:  
+p_g1 * A = p_amb * A + m_k * 9.81 N/kg + m_EW * 9.81 N/kg  
+
+p_g1 = p_amb + (9.81 N/kg * (m_k + m_EW)) / A  
+
+A = π * (D/2)² = π * (0.1 m / 2)² = 0.00785 m²  
+
+p_g1 = 1 bar + (9.81 N/kg * 32.1 kg) / 0.00785 m² = 1.3986 bar  
+
+= 1.4 bar  
+
+→ m_g = (p_g1 * V_g1) / (R * T) = (1.4 * 10⁵ Pa * 0.00314 m³) / (8.314 J/mol·K * 773.15 K)  
+
+m_g = 3.42 g

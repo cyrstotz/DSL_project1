@@ -1,0 +1,24 @@
+The thermodynamic mean temperature of the coolant is derived using the following equation:  
+\[
+\bar{T}_{\text{KF}} = \frac{T_{\text{aus}} - T_{\text{ein}}}{\ln \left( \frac{T_{\text{aus}}}{T_{\text{ein}}} \right)}
+\]  
+Substituting values:  
+\[
+\bar{T}_{\text{KF}} = \frac{T_{\text{aus}} - T_{\text{ein}}}{\ln \left( \frac{T_{\text{aus}}}{T_{\text{ein}}} \right)} = \frac{298.15 - 288.15}{\ln \left( \frac{298.15}{288.15} \right)} = 293.72 \, \text{K}
+\]  
+
+Additional thermodynamic relationships are provided:  
+The entropy change is given by:  
+\[
+\Delta S = \dot{m} \cdot c_{\text{f}} \cdot \ln \left( \frac{T_{\text{aus}}}{T_{\text{ein}}} \right)
+\]  
+The change in internal energy is expressed as:  
+\[
+\Delta U = c_{\text{f}} \cdot \left( T_{\text{aus}} - T_{\text{ein}} \right)
+\]  
+
+These equations are derived from the integral of the entropy equation:  
+\[
+\int_{s_{\text{ein}}}^{s_{\text{aus}}} T \, ds = \Delta U + p \, dV
+\]  
+and the material model assumptions.

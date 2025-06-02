@@ -1,0 +1,70 @@
+TASK 2b  
+The entropy at state \( T_6 \) is calculated using the following equation:  
+\[
+s^\circ(T_6) = s^\circ(T_5) - R_{\text{loft}} \ln\left(\frac{p_5}{p_6}\right)
+\]  
+Substituting values:  
+\[
+s^\circ(T_5) = s^\circ(431.5 \, \text{K}) = s^\circ(430 \, \text{K}) + \frac{s^\circ(440 \, \text{K}) - s^\circ(430 \, \text{K})}{440 \, \text{K} - 430 \, \text{K}} \cdot (431.5 \, \text{K} - 430 \, \text{K})
+\]  
+This results in:  
+\[
+s^\circ(T_5) = 2.0638 \, \frac{\text{kJ}}{\text{kg·K}} \quad \text{(from Table A-22)}
+\]  
+
+Next,  
+\[
+s^\circ(T_6) = 1.7336 \, \frac{\text{kJ}}{\text{kg·K}} \quad \text{(from Table A-22)}
+\]  
+
+The temperature \( T_6 \) is calculated as:  
+\[
+T_6 = s^\circ(330 \, \text{K}) + \frac{s^\circ(380 \, \text{K}) - s^\circ(325 \, \text{K})}{s^\circ(330 \, \text{K}) - s^\circ(325 \, \text{K}} \cdot (s^\circ(T_6) - s^\circ(325 \, \text{K}))
+\]  
+This gives:  
+\[
+T_6 = 328.6 \, \text{K} \quad \text{(from Table A-22)}
+\]  
+
+TASK 2b (continued)  
+The outlet velocity \( w_6 \) is calculated using:  
+\[
+w_6^2 = w_5^2 + 2 c_{p,\text{loft}} (T_5 - T_6)
+\]  
+Substituting values:  
+\[
+w_6^2 = w_5^2 + 2 c_{p,\text{loft}} (T_5 - T_6)
+\]  
+\[
+w_6 = 390.26 \, \text{m/s}
+\]  
+
+TASK 2c  
+The mass-specific increase in flow exergy is calculated as:  
+\[
+\Delta e_{x,\text{str}} = e_{x,\text{str},6} - e_{x,\text{str},0}
+\]  
+Using the equation:  
+\[
+e_{x,\text{str}} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2 - w_0^2}{2}
+\]  
+Substituting values:  
+\[
+w_0 = 200 \, \text{m/s}
+\]  
+\[
+\Delta e_{x,\text{str}} = 68.45 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+TASK 2d  
+The mass-specific exergy destruction is calculated as:  
+\[
+e_{x,\text{verd}} = -\Delta e_{x,\text{str}} + \left(1 - \frac{T_0}{T_B}\right) q_B
+\]  
+Substituting values:  
+\[
+e_{x,\text{verd}} = -\Delta e_{x,\text{str}} + \left(1 - \frac{T_0}{T_B}\right) q_B
+\]  
+\[
+e_{x,\text{verd}} = 1038 \, \frac{\text{kJ}}{\text{kg}}
+\]

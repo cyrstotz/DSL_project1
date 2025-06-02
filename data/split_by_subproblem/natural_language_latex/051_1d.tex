@@ -1,0 +1,39 @@
+The section contains a series of equations and values related to a thermodynamics problem:
+
+1. For the first set of values:
+   - The temperature \( T_{R1} \) is 100 degrees Celsius.
+   - The fraction \( x_D \) is 0.005.
+   - The mass \( m_1 \) is 5755 kilograms.
+
+2. For the second set of values:
+   - The temperature \( T_{R2} \) is 70 degrees Celsius.
+   - The fraction \( x_2 \) is 0.
+   - The mass \( m_2 \) is equal to \( m_1 \) plus \( \Delta m_{12} \).
+
+The system is described as a semi-open system.
+
+The energy change \( \Delta E \) is given by the equation:
+\[ \Delta E = m_2 u_2 - m_1 u_1 = \Delta m_{12} (h_{ein}) + Q \]
+Further simplifying and rearranging gives:
+\[ (m_1 + \Delta m_{12}) u_2 - m_1 u_1 = \Delta m_{12} (h_e) + Q_{R12} \]
+\[ m_1 u_2 - Q_{R12} - m_1 u_1 = \Delta m_{12} (h_e) - \Delta m_{12} u_2 \]
+\[ m_1 u_2 - Q_{R12} - m_1 u_1 = \Delta m_{12} (h_e - u_2) \]
+
+For the input conditions \( h_{ein} \):
+- The temperature \( T_{ein} \) is 20 degrees Celsius.
+- The fraction \( x \) is 0.
+- The pressure \( p_{ein} \) is 0.02339.
+- The enthalpy \( h_{ein} \) equals \( h_f \) which is 83.96 kilojoules per kilogram, taken from table A-2.
+
+For \( U_2 \):
+- The fraction \( x_1 \) is 0.005.
+- \( U_2 \) at 70 degrees Celsius is 292.95, also from table A-2.
+
+For \( U_A \):
+\[ U_A = x_1 u_g (100^\circ C) + (1 - x_1) u_f (100^\circ C) \]
+\[ = x_1 \left( 2506.5 \frac{\text{kJ}}{\text{kg}} \right) + (1 - x_1) \left( 419.89 \frac{\text{kJ}}{\text{kg}} \right) \]
+\[ = 429.37 \frac{\text{kJ}}{\text{kg}} \]
+
+Finally, the mass change \( \Delta m_{12} \) is calculated as:
+\[ \Delta m_{12} = \frac{m_1 u_2 + Q_{R12} - m_1 u_1}{h_e - u_2} \]
+\[ = 3589.37 \text{ kg} \]

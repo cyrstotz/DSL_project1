@@ -1,0 +1,20 @@
+The mass-specific increase in flow exergy is calculated using the formula:  
+\[
+\Delta ex_{\text{flow}} = \dot{w}_6 - \frac{w_5^2}{T_6 - T_0}
+\]  
+
+The entropy generation term is expressed as:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \left( s_{\text{out}} - s_{\text{in}} \right) + \frac{w_5^2 - w_6^2}{2} + \dot{Q}_{\text{in}} - E_{\text{ideal}}
+\]  
+
+The exergy destruction is calculated as:  
+\[
+\Delta ex_{\text{dest}} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_5^2 - w_6^2}{2}
+\]  
+Substituting \( h_6 - h_0 = c_p (T_6 - T_0) \) and \( s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) \), the formula becomes:  
+\[
+\Delta ex_{\text{dest}} = c_p (T_6 - T_0 - T_0 \ln \left( \frac{T_6}{T_0} \right)) + \frac{w_5^2 - w_6^2}{2}
+\]  
+
+---

@@ -1,0 +1,36 @@
+Problem d) includes the following parameters:
+
+- The pressure \( p_g \) is 1.5 bar.
+- The mass \( m_g \) is 3.6 grams.
+- The mass \( m_{EW} \) is 0.1 kilograms.
+- The heat transfer \( Q_{12} \) is 1500 Joules.
+- The temperature \( T_{EW2} \) is 0.003 degrees Celsius.
+- The quality \( x_{FW1} \) is 0.6.
+- The temperature \( T_1 \) is 0 degrees Celsius.
+
+The heat transfer \( Q_{12} \) is calculated as the product of the mass \( m_{EW} \) and the change in internal energy \( \Delta u \).
+
+The change in internal energy \( \Delta u \) is calculated as:
+\[
+\Delta u = \left( -333.442 + 58 \right) + 0.4 \left( -0.033 \right) = 200.0828
+\]
+
+The internal energy at state 1 \( u_1 \) is:
+\[
+u_1 = 0.6 \left( -333.442 \right) + (1 - x) \left( -0.033 \right)
+\]
+
+The internal energy at state 2 \( u_2 \) is:
+\[
+u_2 = x \left( -333.442 \right) + (1 - x) \left( -0.033 \right)
+\]
+
+The equation relating the heat transfer to the internal energies and mass is:
+\[
+1500 = 0.1 \left( 200.0828 + x \cdot 333.442 x - 0.033 + 0.033 x \right)
+\]
+
+Solving for \( x \), the quality at state 2 is approximately:
+\[
+x = 0.554944 \rightarrow 0.555 \quad \text{(rounded to 3 significant figures)}
+\]

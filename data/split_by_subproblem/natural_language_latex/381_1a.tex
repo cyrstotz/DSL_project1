@@ -1,0 +1,50 @@
+The heat output, denoted as \( Q_{\text{aus}} \).
+
+The equation is:
+\[ 0 = \dot{m}_{\text{ein}} (h_e - h_a) + \dot{\varphi} + Q_{\text{aus}} - \dot{W}_{\text{turbine}} \]
+
+The heat output \( Q_{\text{aus}} \) is given by:
+\[ Q_{\text{aus}} = \dot{m}_{\text{ein}} (h_a - h_e) = 37.8 \, \text{kW} \]
+
+The enthalpy at 70 degrees Celsius is:
+\[ h_e = h_f (70^\circ \text{C}) = 292.58 \, \frac{\text{kJ}}{\text{kg}} \]
+
+The enthalpy at 100 degrees Celsius for boiling liquid is:
+\[ h_{a} (100^\circ \text{C}) = h_f (100^\circ \text{C}) = 419.04 \, \frac{\text{kJ}}{\text{kg}} \]
+
+For a half-open system, the change in energy is:
+\[ \Delta E = m_2 u_2 - m_1 u_1 = \Delta m_{12} u_{12} + Q - \dot{W} \]
+
+The velocity \( v_2 \) is:
+\[ v_2 = \frac{m_1 + m_2}{\dot{m}_1} = 5.7556 \frac{\text{kg}}{\text{s}} - 35000 \frac{\text{kJ}}{\text{s}} \]
+
+The internal energy at 20 degrees Celsius is:
+\[ h_{12} (20^\circ \text{C}) = u_f (20^\circ \text{C}) = 83.96 \frac{\text{kJ}}{\text{kg}} \]
+
+The internal energy at 70 degrees Celsius is:
+\[ u_2 (70^\circ \text{C}) = u_f (70^\circ \text{C}) = 232.95 \frac{\text{kJ}}{\text{kg}} \]
+
+The internal energy at 100 degrees Celsius is:
+\[ u_1 (100^\circ \text{C}) = 84.41 \frac{\text{kJ}}{\text{kg}} + 0.005 (2506.5 - 84.41) \frac{\text{kJ}}{\text{kg}} = 429.377 \frac{\text{kJ}}{\text{kg}} \]
+
+The change in mass \( \Delta m_{12} \) is:
+\[ \Delta m_{12} = \frac{Q - m_1 (u_2 - u_1)}{u_2 - h_{12}} = 3589.346 \frac{\text{kg}}{\text{s}} \]
+
+The change in entropy \( \Delta S \) is:
+\[ \Delta S = \dot{m} \]
+\[ \Delta S = (m_1 + m_2) s_2 - m_1 s_1 \]
+
+The entropy at 100 degrees Celsius is:
+\[ s_1 (100^\circ \text{C}) = 1.3069 \frac{\text{kJ}}{\text{kg K}} \]
+
+The entropy at 70 degrees Celsius is:
+\[ s_2 (70^\circ \text{C}) = 0.9549 \frac{\text{kJ}}{\text{kg K}} \]
+
+The average temperature \( \overline{T} \) is calculated as:
+\[ \overline{T} = \frac{\int_{s_e}^{s_a} T ds}{(s_a - s_e)} \]
+
+The differential temperature \( T ds \) is:
+\[ T ds = \frac{\dot{Q}_{\text{out}}}{\dot{m}} \]
+\[ = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)} \]
+
+This is for an ideal fluid.

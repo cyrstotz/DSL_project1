@@ -1,0 +1,73 @@
+The problem involves cooling the reactor contents from state 1 to state 2. The initial and final states are defined as follows:  
+
+State 1:  
+- Temperature \( T = 100^\circ\text{C} \)  
+- Mass \( m = 5755 \, \text{kg} \)  
+- Steam quality \( x = 0.005 \)  
+
+State 2:  
+- Temperature \( T = 70^\circ\text{C} \)  
+- Steam quality \( x = 0 \)  
+
+Additional parameters:  
+- Inlet temperature of added water \( T_{\text{in}} = 20^\circ\text{C} \)  
+- Mass of added water \( \Delta m_{12} \)  
+
+Assumptions:  
+- Heat transfer \( Q = 0 \)  
+- Work \( W = 0 \)  
+
+### Energy Balance (First Law of Thermodynamics):  
+The energy balance equation is written as:  
+\[
+m_2 u_2 - m_1 u_1 = \Delta m_{12} h_{\text{in}}
+\]  
+
+The specific internal energy \( u_1 \) is calculated using:  
+\[
+u_1 = u_f + x \cdot (u_g - u_f) = 418.84 + 0.005 \cdot (2506.5 - 418.84) \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_1 = 423.38 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The specific internal energy \( u_2 \) at \( 70^\circ\text{C} \) is:  
+\[
+u_2 = u_f(70^\circ\text{C}) = 232.35 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The specific enthalpy of the inlet water at \( 20^\circ\text{C} \) is:  
+\[
+h_{\text{in}} = h_f(20^\circ\text{C}) = 83.36 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+### Mass Balance:  
+The total mass at state 2 is:  
+\[
+m_2 = m_1 + \Delta m_{12}
+\]  
+
+Substituting into the energy balance equation:  
+\[
+\Delta m_{12} h_{\text{in}} = m_2 u_2 - m_1 u_1
+\]  
+\[
+\Delta m_{12} h_{\text{in}} = (m_1 + \Delta m_{12}) u_2 - m_1 u_1
+\]  
+Rearranging:  
+\[
+\Delta m_{12} (h_{\text{in}} - u_2) = m_1 u_2 - m_1 u_1
+\]  
+\[
+\Delta m_{12} = \frac{m_1 (u_2 - u_1)}{h_{\text{in}} - u_2}
+\]  
+
+Substituting values:  
+\[
+\Delta m_{12} = \frac{5755 \cdot (232.35 - 423.38)}{83.36 - 232.35}
+\]  
+\[
+\Delta m_{12} = 1178.1 \, \text{kg}
+\]  
+
+---

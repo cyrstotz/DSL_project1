@@ -1,0 +1,59 @@
+TASK 2b  
+The temperature \( T_6 \) is calculated using the following formula:  
+\[
+T_6 = 431.9 \left( \frac{191,100 \, \text{Pa}}{50,000 \, \text{Pa}} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+where \( \kappa = 1.4 \). Substituting the values:  
+\[
+T_6 = 328.67469 \, \text{K} \approx 328.1 \, \text{K}
+\]  
+
+Interpolation is performed using Table A-22 to determine \( h_6 \):  
+\[
+h_6 = 325.31 + \frac{328.1 - 325}{330 - 325} \times (330.34 - 325.31)
+\]  
+This yields:  
+\[
+h_6 = 328.4031 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The outlet velocity \( w_6 \) is calculated using:  
+\[
+w_0 = w_s = \sqrt{\frac{h_s}{h_6}}
+\]  
+Substituting the values:  
+\[
+w_6 = \sqrt{\frac{220 \, \text{m/s}^2}{328.4031 / 421.48366}} = 194.2051 \, \text{m/s}
+\]  
+Thus:  
+\[
+w_6 = 194.2 \, \text{m/s}
+\]  
+
+---
+
+TASK 2c  
+The mass-specific increase in flow exergy is calculated as:  
+\[
+ex_{\text{flow},6} - ex_{\text{flow},0} = (h_0 - h_0 - T_0(S_{0,6} - S_0) + p_0(v_{0,6} - v_0)) - (h_6 - h_0 - T_0(S_{6} - S_0) + p_0(v_6 - v_0))
+\]  
+Simplifying:  
+\[
+ex_{\text{flow},6} - ex_{\text{flow},0} = h_0 - h_6 + T_0(S_6 - S_0)
+\]  
+
+For \( T_0 = -30^\circ\text{C} \):  
+\[
+T_0 = 273.15 - 30 = 243.15 \, \text{K}
+\]  
+
+Using Table A-22 for \( h_0 \):  
+\[
+h_0 = 250.65 - 240.02 + \frac{243.15 - 240}{250 - 240} \times (250.65 - 240.02)
+\]  
+This yields:  
+\[
+h_0 = 244.7387 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+\( h_0 \) is confirmed. Further calculations for \( S_6 \) and \( S_0 \) are referenced in Table A-22.

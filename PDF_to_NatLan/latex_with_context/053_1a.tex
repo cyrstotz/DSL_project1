@@ -1,0 +1,28 @@
+The heat flow equation is given as:  
+\[
+Q = \dot{m} (h_1 - h_2) + \dot{Q}_R - \dot{Q}_{\text{out}} - \dot{W}_{\text{e}}
+\]  
+From the water tables (Table A2), the enthalpy values for saturated liquid water are:  
+\[
+h_f(70^\circ\text{C}) = 292.58 \, \text{kJ/kg} \quad \text{(denoted as } h_1\text{)}
+\]  
+\[
+h_f(100^\circ\text{C}) = 419.09 \, \text{kJ/kg} \quad \text{(denoted as } h_2\text{)}
+\]  
+
+The volumetric flow rate is calculated as:  
+\[
+v = \frac{v_f(100^\circ\text{C}) + v_f(70^\circ\text{C})}{2} = 1.03375 \, \text{m}^3/\text{kg}
+\]  
+
+The work term is calculated as:  
+\[
+\dot{W}_{\text{e}} = \int_{P_2}^{P_1} v \, dp = -v \cdot (P_2 - P_1) \cdot \dot{m} = -0.2153 \, \text{m}^3/\text{s} \cdot 100 \, \text{kPa} = -21.53 \, \text{kW}
+\]  
+
+Finally, the heat flow removed by the coolant is:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} (h_1 - h_2) + \dot{Q}_R - \dot{W}_{\text{e}} = 83.68 \, \text{kW}
+\]  
+
+---

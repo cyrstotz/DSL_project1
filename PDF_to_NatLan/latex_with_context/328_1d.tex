@@ -1,0 +1,34 @@
+Energy balance equations are applied to determine the mass \( \Delta m \) added to the reactor during cooling. The general energy balance is expressed as:  
+\[
+\Delta E = m_2 u_2 - m_1 u_1 = \sum \Delta m \left[ h + \frac{v^2}{2} + gz \right] + \xi Q - \sum \mu_r
+\]  
+Simplifying for the given system:  
+\[
+(m_1 + \Delta m) u_2 - m_1 u_1 - \Delta m h_e + Q_{12}
+\]  
+Rearranging to solve for \( \Delta m \):  
+\[
+\Delta m = \frac{Q_{12} + m_1 u_1 - m_1 u_2}{u_2 - h_e}
+\]  
+Substituting values:  
+\[
+Q_{12} = 35 \cdot 10^6 \, \text{J} = 35 \cdot 10^3 \, \text{kJ}, \quad m_1 = 5755 \, \text{kg}
+\]  
+\[
+u_1 = u_f(100^\circ\text{C}) + x \cdot u_{fg}(100^\circ\text{C}), \quad h_e = h_f(20^\circ\text{C}), \quad u_2 = u_f(70^\circ\text{C})
+\]  
+Calculations:  
+\[
+u_1 = 418.94 + 0.005 \cdot (2506.5 - 418.94) = 431.47 \, \text{kJ/kg}
+\]  
+\[
+u_2 = 292.75 \, \text{kJ/kg}, \quad h_e = 83.96 \, \text{kJ/kg}
+\]  
+Substituting into the formula:  
+\[
+\Delta m = \frac{35 \cdot 10^3 + 5755 \cdot 431.47 - 5755 \cdot 292.75}{292.75 - 83.96}
+\]  
+Result:  
+\[
+\Delta m = 3924.31 \, \text{kg}
+\]

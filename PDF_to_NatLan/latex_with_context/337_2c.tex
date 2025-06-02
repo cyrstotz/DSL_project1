@@ -1,0 +1,21 @@
+The change in flow exergy is calculated using the following equation:  
+\[
+\Delta ex_{\text{str}} = \dot{m} \left[ h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2} \right]
+\]  
+Substituting values:  
+\[
+h_6 - h_0 = c_p (T_6 - T_0) + v_i (p_6 - p_0) = 85.434 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+T_0 = 328.075 \, \text{K}, \quad T_6 = -30 + 273.15 = 243.15 \, \text{K}
+\]  
+\[
+s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) = 0.301 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+\frac{w_6^2}{2} = 507.24^2 \, \frac{\text{m}^2}{\text{s}^2} = 128646 \, \text{J}
+\]  
+Thus:  
+\[
+\Delta ex_{\text{str}} = 12.158 \, \frac{\text{kJ}}{\text{kg}} + \frac{w_6^2}{2} = 116.487 \, \frac{\text{kJ}}{\text{kg}}
+\]

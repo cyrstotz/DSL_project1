@@ -1,0 +1,66 @@
+TASK 4a  
+A graph is drawn representing the freeze-drying process in a \( p \)-\( T \) diagram. The graph includes a blue curve indicating phase boundaries. Four states (1, 2, 3, and 4) are labeled, forming a cycle. The pressure axis is labeled \( p \, [\text{bar}] \), and the temperature axis is labeled \( T \, [\text{K}] \). The pressure at state 3 is marked as \( 150 \, \text{bar} \), and the pressure at state 1 is marked as \( 1 \, \text{bar} \).  
+
+TASK 4b  
+The vapor quality at state 1 is given as \( x_1 = 1 \).  
+The pressures at state 2 and state 3 are \( p_2 = p_3 = 8 \, \text{bar} \), and the vapor quality at state 3 is \( x_3 = 0 \).  
+
+The energy balance equation is written as:  
+\[
+\dot{m} \cdot (h_2 - h_3) = \dot{W}_K
+\]  
+where \( \dot{m} \) is the mass flow rate, \( h_2 \) and \( h_3 \) are enthalpies, and \( \dot{W}_K \) is the work input to the compressor.  
+
+Entropy values are noted as \( s_2 = s_3 \).  
+The pressure at state 4 is \( p_4 = p_3 = 8 \, \text{bar} \), and the internal chamber pressure is \( p_{\text{Innenraum}} = 1 \, \text{bar} \).  
+
+TASK 4c  
+The mass flow rate \( \dot{m} \) is calculated using the following assumptions:  
+The temperature at state 2 is \( T_2 = -22^\circ\text{C} \), and data is taken from Table A-10.  
+
+The pressure at state 2 is \( p_2 = 1.292 \, \text{bar} \), and the pressure at state 4 is \( p_4 = 8 \, \text{bar} \).  
+
+The energy balance equation is written as:  
+\[
+\dot{m} \cdot (h_{u,4} - h_{u,1}) = 0 \implies h_{u,4} = h_{u,1}
+\]  
+where \( h_{u,4} \) and \( h_{u,1} \) are enthalpies.  
+
+From Table A-10:  
+\[
+h_{u,4} = 93.62 \, \frac{\text{kJ}}{\text{kg}}, \quad h_{u,1} = 234.08 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The vapor quality \( x \) is calculated as:  
+\[
+x = \frac{h_{u,4} - h_f}{h_g - h_f} = 0.337
+\]  
+
+TASK 4d  
+The coefficient of performance \( \epsilon_K \) is calculated as:  
+\[
+\epsilon_K = \frac{\dot{Q}_K}{\dot{W}_K}
+\]  
+
+The energy balance for the evaporator is written as:  
+\[
+\dot{Q}_K = \dot{m} \cdot (h_2 - h_1) + \dot{Q}_{\text{zu}}
+\]  
+
+From Table A-10:  
+\[
+h_2 = 234.08 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The heat transfer rate \( \dot{Q}_K \) is calculated as:  
+\[
+\dot{Q}_K = \dot{m} \cdot (h_2 - h_1) = 0.005 \, \frac{\text{kg}}{\text{s}} \cdot (234.08 \, \frac{\text{kJ}}{\text{kg}} - 93.62 \, \frac{\text{kJ}}{\text{kg}}) = 0.146 \, \text{kW}
+\]  
+
+The coefficient of performance is then calculated as:  
+\[
+\epsilon_K = \frac{0.146}{38 \, \text{kW}} = 0.005
+\]  
+
+TASK 4e  
+The temperature would decrease. The internal pressure remains constant, and the volume also remains unchanged. The only way to remove energy from the system is by reducing the temperature.

@@ -1,0 +1,29 @@
+The mass-specific increase in flow exergy is calculated using the following equation:  
+\[
+ex_{5 \to 6} - ex_{5 \to 0} = \dot{m} \left( h_6 - h_0 - T_0 (s_6 - s_0) + p_0 \frac{v_6 - v_0}{k} \right)
+\]  
+The term \( h_6 - h_0 \) is expanded as:  
+\[
+h_6 - h_0 = c_p \left( T_6 - T_0 \right) = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \cdot (328.07 - 243.15) = 85.43 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The entropy term \( T_0 (s_6 - s_0) \) is calculated as:  
+\[
+T_0 (s_6 - s_0) = 243.15 \, \text{K} \cdot c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+Substituting values:  
+\[
+T_0 (s_6 - s_0) = 243.15 \cdot 1.006 \ln \left( \frac{328.07}{243.15} \right) = 73.27 \, \text{kJ}
+\]  
+
+The kinetic energy term is calculated as:  
+\[
+ke = \frac{w_6^2}{2} = \frac{50.25^2}{2} = 1285.13 \, \text{W}
+\]  
+
+The total change in flow exergy is then:  
+\[
+\Delta ex_{1 \to 6} = 85.43 + 73.27 + 1285.13 = 140.82 \, \text{kW} = \Delta ex
+\]  
+
+---

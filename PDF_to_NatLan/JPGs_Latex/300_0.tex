@@ -1,0 +1,61 @@
+TASK 1a  
+The temperature does not need to increase during a steady-state flow process.  
+
+The energy balance equation is given as:  
+\[
+0 = \dot{m}_{\text{in}} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R + \dot{Q}_{\text{out}}
+\]  
+
+Rearranging for the heat flow removed by the coolant:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} (h_{\text{out}} - h_{\text{in}}) - \dot{Q}_R
+\]  
+
+The boiling liquid is considered as pure water.  
+
+From the water tables:  
+\[
+h_{\text{out}} = h_f(100^\circ\text{C}) = 2257.0 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_{\text{in}} = h_f(70^\circ\text{C}) = 2333.8 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Given values:  
+\[
+\dot{m}_{\text{in}} = 0.3 \, \frac{\text{kg}}{\text{s}}, \quad \dot{Q}_R = 100 \, \text{kW}
+\]  
+
+Substituting into the equation:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, (2257.0 - 2333.8) - 100 = -123.04 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant is calculated using:  
+\[
+T_{\text{KF}} = \frac{T_{\text{in}} + T_{\text{out}}}{2}
+\]  
+
+Substituting the inlet and outlet temperatures:  
+\[
+T_{\text{KF}} = \frac{288.15 + 298.15}{2} = 293.65 \, \text{K}
+\]  
+
+This is valid because the heat capacity is assumed constant.  
+
+TASK 1c  
+For a closed system, entropy production is calculated using:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{out}}}{T_{\text{out}}} - \frac{\dot{Q}_{\text{out}}}{T_{\text{in}}}
+\]  
+
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = \frac{-123.04}{100} - \frac{-123.04}{20} = 0.085 \, \frac{\text{kJ}}{\text{K}}
+\]  
+
+Temperatures used:  
+\[
+T_{\text{out}} = 100^\circ\text{C}, \quad T_{\text{in}} = 20^\circ\text{C}
+\]

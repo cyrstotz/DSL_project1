@@ -1,0 +1,85 @@
+The heat flow removed by the coolant is given as \( \dot{Q}_{\text{aus}} = 65 \, \text{kW} \).  
+
+The thermodynamic mean temperature \( \bar{T}_{\text{KF}} \) is calculated using the following equation:  
+\[
+\bar{T}_{\text{KF}} = \frac{\int_{T_{\text{ein}}}^{T_{\text{aus}}} T \, dS}{S_{\text{aus}} - S_{\text{ein}}} = \frac{\dot{Q}_{\text{KV}}}{S_{\text{aus}} - S_{\text{ein}}}
+\]
+
+From the energy balance:  
+\[
+q_{\text{KV}} = h_{\text{aus}} - h_{\text{ein}} = c^i F (T_{\text{aus}} - T_{\text{ein}})
+\]
+
+The entropy difference is expressed as:  
+\[
+S_{\text{aus}} - S_{\text{ein}} = \int_{T_{\text{ein}}}^{T_{\text{aus}}} \frac{c^i F}{T} \, dT = c^i F \ln \left( \frac{T_{\text{aus}}}{T_{\text{ein}}} \right)
+\]
+
+Thus, the thermodynamic mean temperature becomes:  
+\[
+\bar{T}_{\text{KF}} = \frac{T_{\text{aus}} - T_{\text{ein}}}{\ln \left( \frac{T_{\text{aus}}}{T_{\text{ein}}} \right)} = 293.123 \, \text{K}
+\]
+
+---
+
+Given:  
+\[
+p_c = p_0 = 0.191 \, \text{bar}, \quad T_6 = ?, \quad T_5 = 431.9 \, \text{K}, \quad p_5 = 0.5 \, \text{bar}, \quad \kappa = 1.4
+\]  
+
+Using the isentropic relation:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_c}{p_5} \right)^{\frac{\kappa - 1}{\kappa}} \quad \Rightarrow \quad T_6 = T_5 \left( \frac{p_c}{p_5} \right)^{\frac{\kappa - 1}{\kappa}} = 328.07 \, \text{K}
+\]  
+
+---
+
+Energy balance:  
+\[
+0 = \dot{m} \left( h_0 - h_6 + \frac{1}{2} \left( w_0^2 - w_6^2 \right) \right) + \sum \dot{Q}_j - \sum \dot{W}_{\text{in}}
+\]  
+Assuming adiabatic conditions and neglecting heat and work terms:  
+\[
+0 = h_0 - h_6 + \frac{1}{2} \left( w_0^2 - w_6^2 \right)
+\]  
+
+Rearranging:  
+\[
+2 \left( h_6 - h_0 \right) = w_0^2 - w_6^2
+\]  
+\[
+w_6^2 = w_0^2 + 2 \left( h_0 - h_6 \right)
+\]  
+
+Substituting enthalpy difference:  
+\[
+w_6^2 = w_0^2 + 2 c_{p,\text{air}} \left( T_0 - T_6 \right)
+\]  
+
+Calculations:  
+\[
+w_6^2 = 200^2 \, \frac{\text{m}^2}{\text{s}^2} + 2 \cdot 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \cdot \left( 293.15 - 328.07 \right) \, \text{K}
+\]  
+\[
+w_6^2 = 200^2 \, \frac{\text{m}^2}{\text{s}^2} + 2 \cdot 1.006 \cdot (-34.92) \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+w_6^2 = 200^2 \, \frac{\text{m}^2}{\text{s}^2} - 70.23 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Converting units:  
+\[
+w_6^2 = 200^2 \, \frac{\text{m}^2}{\text{s}^2} - 70230 \, \frac{\text{m}^2}{\text{s}^2}
+\]  
+\[
+w_6 = \sqrt{45819} \, \frac{\text{m}}{\text{s}} \approx 214.2 \, \frac{\text{m}}{\text{s}}
+\]  
+
+Final velocity:  
+\[
+w_6 = 214.2 \, \frac{\text{m}}{\text{s}}
+\]  
+
+---
+
+Additional notes:  
+The calculations assume adiabatic conditions and neglect external heat and work inputs.

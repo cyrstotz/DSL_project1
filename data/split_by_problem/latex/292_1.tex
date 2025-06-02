@@ -1,0 +1,84 @@
+
+``````latex
+
+
+1 a) $\dot{Q}_{\text{aus}} = ? \text{ kW}$
+
+\[
+0 = \dot{m} \left[ h_e - h_a + \frac{w_e^2 - w_a^2}{2} \right] + \varphi (z_e - z_a) + Q - \dot{m} \cdot v_e \quad \text{(isobare)}
+\]
+
+\[
+0 = \dot{m} \left[ h_e - h_a \right] + \dot{Q}_R - \dot{Q}_{\text{aus}}
+\]
+
+\[
+\dot{Q}_{\text{aus}} = \dot{m} \left[ h_e - h_a \right] + \dot{Q}_R = 0.3 \frac{\text{kg}}{\text{s}} \left[ 292.82 \frac{\text{kJ}}{\text{kg}} - 419.04 \frac{\text{kJ}}{\text{kg}} \right] + 100 \text{ kW}
+\]
+
+\[
+\approx 62.182 \text{ kW}
+\]
+
+\textbf{Tabelle A 2:}
+
+\[
+h_f (70^\circ \text{C}) = 292.82 \frac{\text{kJ}}{\text{kg}} = h_e
+\]
+
+\[
+h_f (100^\circ \text{C}) = 419.04 \frac{\text{kJ}}{\text{kg}} = h_a
+\]
+
+b) $\bar{T}_{\text{mK}} = ? \text{ K}$
+
+\[
+\bar{T} = \frac{\int_{e}^{a} T \, dS}{S_a - S_e} \quad \text{isobar} = \frac{dU}{S_a - S_e} = \frac{d(T_2 - T_1)}{k \, \ln \left( \frac{T_2}{T_1} \right)} = \frac{278.15 \text{ K} - 292.15 \text{ K}}{k \, \ln \left( \frac{278.15 \text{ K}}{292.15 \text{ K}} \right)}
+\]
+
+\[
+\approx 293.12 \text{ K}
+\]
+
+c) $\dot{S}_{\text{erz}} = ?$
+
+\[
+0 = \dot{m} \left[ s_e - s_a \right] + \sum \frac{\dot{Q}_j}{T_j} + \dot{S}_{\text{erz}}
+\]
+
+\[
+\dot{S}_{\text{erz}} = \dot{m} \left[ s_a - s_e \right] - \sum \frac{\dot{Q}_j}{T_j}
+\]
+
+\[
+\dot{S}_{\text{erz}} = 0.3 \frac{\text{kg}}{\text{s}} \left[ 1.3000 \frac{\text{kJ}}{\text{kg K}} - 0.9549 \frac{\text{kJ}}{\text{kg K}} \right] - \frac{62.182 \text{ kW} + 100 \text{ kW}}{293.12 \text{ K}}
+\]
+
+\[
+= -0.0234 \frac{\text{kJ}}{\text{K s}}
+\]
+
+\textbf{S$_a$: TAB A2}
+
+\textbf{S$_e$: TAB A2}
+
+``````latex
+
+\section*{d) Aufgabe}
+
+\begin{itemize}
+    \item $T_1 = 100^\circ C$
+    \item $T_2 = 70^\circ C$
+    \item $T_{ein,12} = 70^\circ C$
+\end{itemize}
+
+\textbf{Energiebilanz halboffenes System:}
+
+\begin{align*}
+    \Delta E &= \dot{m}_2 u_2 - \dot{m}_1 u_1 + \Delta \dot{KE} + \Delta \dot{PE} \\
+    &= -\xi \dot{m}_i \left[ h_i + \frac{w_i^2}{2} + g z_i \right] + \sum_j \dot{Q}_j - \sum_k \dot{W}_k
+\end{align*}
+
+``````latex
+
+

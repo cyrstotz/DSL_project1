@@ -1,0 +1,57 @@
+TASK 3c  
+The temperature \( T_{g,2} \) is given as \( 0.003^\circ\text{C} \).  
+
+The energy balance equation is written as:  
+\[
+Q_{12} = m_g (u_2 - u_1)
+\]  
+Expanding this, it becomes:  
+\[
+m_g (h_2 - h_1) = Q_{12}
+\]  
+Or equivalently:  
+\[
+m_g (h_1 - h_2) = Q_{12}
+\]  
+
+Using the specific heat capacity \( c_p \), the equation is expressed as:  
+\[
+m \, c_p (T_2 - T_1) = -Q_{12}
+\]  
+The calculated heat transfer is:  
+\[
+|Q_{12}| = 1358.71 \, \text{J}
+\]  
+
+---
+
+TASK 3d  
+The pressure of the ice-water mixture \( p_{\text{EW}} \) is calculated using:  
+\[
+p_{\text{EW}} = \frac{m_K \cdot g}{A} + p_{\text{amb}}
+\]  
+Substituting values:  
+\[
+p_{\text{EW}} = \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{(0.05 \, \text{m})^2 \cdot \pi} + 1 \, \text{bar}
+\]  
+This results in:  
+\[
+p_{\text{EW}} = 39989.51 \, \text{Pa} + 1 \, \text{bar} = 1.399 \, \text{bar}
+\]  
+
+The internal energy \( u \) is expressed as:  
+\[
+u = u_{\text{flüssig}} + x \cdot (u_{\text{fest}} - u_{\text{flüssig}})
+\]  
+Rearranging to solve for \( x \):  
+\[
+x = \frac{u - u_{\text{flüssig}}}{u_{\text{fest}} - u_{\text{flüssig}}}
+\]  
+
+Interpolation is used to find intermediate values:  
+\[
+y = \frac{x - x_1}{x_2 - x_1} (y_2 - y_1) + y_1
+\]  
+Where \( x_1 = \text{tab}(0.003) \), and \( x_2 \) is left unspecified.  
+
+No further numerical results are provided for \( x_2 \).

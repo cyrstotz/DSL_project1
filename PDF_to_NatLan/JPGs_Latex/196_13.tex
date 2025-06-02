@@ -1,0 +1,61 @@
+TASK 4b  
+Using Table A-11:  
+At \( p = 8 \, \text{bar} \):  
+\[
+h_f = 93.92 \, \text{kJ/kg}, \quad h_g = 269.15 \, \text{kJ/kg}
+\]  
+
+The process is adiabatic and reversible, so:  
+\[
+\Delta S = 0 \quad \text{and} \quad s_1 = s_3
+\]  
+
+From Table A-10:  
+At \( T = -10^\circ\text{C} \):  
+\[
+s_g = 0.9238 \, \text{kJ/kg·K}
+\]  
+
+From Table A-72:  
+At \( p = 8 \, \text{bar} \):  
+\[
+s_{\text{sat}} = 0.5066 \, \text{kJ/kg·K}, \quad s@60^\circ\text{C} = 0.9379 \, \text{kJ/kg·K}
+\]  
+
+To calculate \( h_3 \):  
+\[
+h_3 = h@60^\circ\text{C} - h_{\text{sat}} + \left( s - s_{\text{sat}} \right) \cdot \frac{h@60^\circ\text{C} - h_{\text{sat}}}{s@60^\circ\text{C} - s_{\text{sat}}}
+\]  
+
+Substituting values:  
+\[
+h_3 = \frac{273.66 \, \text{kJ/kg} - 269.15 \, \text{kJ/kg}}{0.9379 \, \text{kJ/kg·K} - 0.5066 \, \text{kJ/kg·K}} \cdot \left( 0.9238 \, \text{kJ/kg·K} - 0.5066 \, \text{kJ/kg·K} \right) + 269.15 \, \text{kJ/kg}
+\]  
+\[
+h_3 = 273.66 \, \text{kJ/kg} - 271.313 \, \text{kJ/kg}
+\]  
+\[
+h_3 = 271.313 \, \text{kJ/kg}
+\]  
+
+Energy balance over the compressor:  
+\[
+\dot{Q} = \dot{m} \cdot (h_e - h_a) = \dot{W}_{\text{in}}
+\]  
+\[
+\dot{m} = \frac{\dot{W}_{\text{in}}}{h_e - h_a}
+\]  
+
+From Table A-10:  
+At \( T = 16^\circ\text{C} \):  
+\[
+h_g = 237.74 \, \text{kJ/kg}
+\]  
+
+Substituting values:  
+\[
+\dot{m} = \frac{-0.028 \, \text{kW}}{237.74 \, \text{kJ/kg} - 271.313 \, \text{kJ/kg}}
+\]  
+\[
+\dot{m} = 0.8333 \, \text{kg/s}
+\]

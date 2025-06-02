@@ -1,0 +1,29 @@
+The exergy destruction \( ex_{\text{dest}} \) is calculated using the following equations:
+
+\[
+ex_{\text{dest}} = T_0 \cdot \dot{S}_{\text{gen}}
+\]
+
+The entropy generation \( \dot{S}_{\text{gen}} \) is expressed as:
+
+\[
+\dot{S}_{\text{gen}} = \dot{m} \cdot (S_e - S_a) + \frac{\dot{Q}_B}{T_B} + \int S_{e,2}
+\]
+
+The entropy change per unit mass \( S_{e,2} / \dot{m} \) is derived as:
+
+\[
+S_{e,2} = S_a - S_e - \frac{Q_B}{T_B} = \int_{T_2}^{T_3} \frac{c_p}{T} \, dT - R \ln\left(\frac{p_B}{p_2}\right)
+\]
+
+After simplifying and substituting values:
+
+\[
+S_{e,2} = c_p \cdot \ln\left(\frac{T_B}{T_B}\right) - \frac{Q_B}{T_B} = -1295.81 \, \frac{\text{kJ}}{\text{K}}
+\]
+
+The final calculation for \( ex_{\text{dest}} \) is:
+
+\[
+ex_{\text{dest}} = 243.13 \, \text{K} \cdot -1295.81 \, \frac{\text{kJ}}{\text{K}} = -315076.20 \, \text{kJ}
+\]

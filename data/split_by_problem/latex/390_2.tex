@@ -1,0 +1,88 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{itemize}
+    \item The graph is a plot with the x-axis labeled as $s \left[ \frac{kJ}{kg \cdot K} \right]$ and the y-axis labeled as $T \left[ ^\circ C \right]$.
+    \item The x-axis starts at $-30^\circ C$.
+    \item There are six points labeled 0, 1, 2, 3, 4, 5, and 6.
+    \item The points are connected by curves and lines, forming a cycle.
+    \item The points are connected as follows: 0 to 1, 1 to 2, 2 to 3, 3 to 4, 4 to 5, and 5 to 6.
+    \item The curve from 0 to 1 is labeled as $p_0 = 0.191 \, bar$.
+    \item The curve from 1 to 2 is labeled as $p_2, p_1$.
+    \item The curve from 2 to 3 is labeled as $p_3, p_4$.
+    \item The curve from 3 to 4 is labeled as $p_4, p_5$.
+    \item The curve from 4 to 5 is labeled as $p_5, p_6$.
+    \item The curve from 5 to 6 is labeled as $p_6, p_7$.
+    \item The points are connected by the following processes:
+        \begin{itemize}
+            \item 0 to 1: adiabatic compression
+            \item 1 to 2: adiabatic compression with $\eta_{is} < 1$
+            \item 2 to 3: adiabatic compression
+            \item 3 to 4: isothermal heat addition
+            \item 4 to 5: adiabatic expansion
+            \item 5 to 6: adiabatic expansion with $\eta_{is} < 1$
+        \end{itemize}
+\end{itemize}
+
+\subsection*{b)}
+
+\begin{itemize}
+    \item 1. HS im kompletten Flügelkreisprozess, keine FP.
+    \item \[
+    0 = \dot{m} \left[ h_e - h_0 + \frac{w_e^2 - w_0^2}{2} \right] + \dot{Q}_{zu}
+    \]
+    \item \[
+    w_{q} = 2 \left( h_e - h_0 \right) + w_e^2 + \frac{2 \dot{Q}_{zu}}{\dot{m}_{ges}}
+    \]
+    \item \[
+    w_{q} = 2 c_p^{Luft} \left( T_1 - T_0 \right) + w_e^2 + \frac{2 \dot{Q}_{zu}}{G_{ges}}
+    \]
+    \item \[
+    \dot{Q}_{zu} = \dot{m} \cdot q_B
+    \]
+    \item \[
+    q_B = \frac{\dot{Q}_{zu}}{\dot{m}} = \frac{q_B}{1 + \frac{q_B}{2}}
+    \]
+    \item \[
+    2 \dot{Q}_{zu} = \dot{m}_{ges} \cdot \frac{q_B}{1 + \frac{q_B}{2}} = \frac{q_B}{1 + \frac{q_B}{2}} + \frac{2 q_B}{G_{ges}}
+    \]
+    \item \[
+    h_e - h_0 = c_p^{Luft} \left( T_q - T_0 \right)
+    \]
+\end{itemize}
+
+\subsection*{c)}
+
+\begin{itemize}
+    \item \[
+    \Delta e_{ex, str} = e_{ex, str} - e_{ex, 1}
+    \]
+    \item \[
+    e_{ex, 6} = h_6 - h_0 - T_0 \left( s_6 - s_0 \right) + ke_6
+    \]
+    \item \[
+    e_{ex, str} = h_1 - h_0 - T_0 \left```latex
+
+
+\section*{d) Exergie-Bilanz, staat FD:}
+
+\[
+\dot{e}_{\text{kur}} = \dot{e}_{\text{exter}} + \left( 1 - \frac{T_0}{T_B} \right) \cdot \frac{\dot{Q}_B}{\dot{m}_{\text{kur}}}
+\]
+
+\[
+= 100 \frac{\text{kJ}}{\text{kg}} + \left( 1 - \frac{293.15 \text{K}}{72.65 \text{K}} \right) \cdot \frac{1455 \frac{\text{kJ}}{\text{s}}}{6.25 \frac{\text{kg}}{\text{s}}}
+\]
+
+\[
+= 259.02 \frac{\text{kJ}}{\text{kg}}
+\]
+
+``````latex
+
+

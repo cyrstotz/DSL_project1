@@ -1,0 +1,24 @@
+The steady-state flow process is described using the energy balance equation:  
+\[
+0 = \dot{m} \left[ h_0 - h_6 + \frac{w_6^2 - w_0^2}{2} \right]
+\]  
+From this, the outlet velocity \( w_6 \) is derived:  
+\[
+w_6 = \sqrt{2 \left( h_0 - h_6 \right) + w_0^2}
+\]  
+The enthalpy difference \( h_0 - h_6 \) is calculated using:  
+\[
+h_0 - h_6 = c_p \left( T_0 - T_6 \right)
+\]  
+The entropy equality \( s_5 = s_6 \) leads to:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values, \( T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}} = 328.07 \, \text{K} \).
+
+Finally, the outlet velocity is calculated:  
+\[
+w_6 = \sqrt{1.006 \, \frac{\text{kJ}}{\text{kg·K}} \left( 253.15 \, \text{K} - 328.07 \, \text{K} \right) + 200^2 \, \left( \frac{\text{m}}{\text{s}} \right)^2} = 199.6 \, \text{m/s}
+\]
+
+---

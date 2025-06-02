@@ -1,0 +1,43 @@
+The energy balance equation is written as:  
+\[
+0 = \dot{m} \left[ h_6 - h_5 + \frac{w_6^2 - w_5^2}{2} \right]
+\]  
+where \( Q = 0 \) and \( \dot{W} \) is neglected.
+
+The enthalpy at state 5 is given as:  
+\[
+h_5 (0.5 \, \text{bar}, 431.9 \, \text{K})
+\]  
+
+The temperature at state 6 is calculated using the isentropic relation:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{0.4}{1.4}}
+\]  
+\[
+T_6 = 431.9 \, \text{K} \left( \frac{0.191}{0.5} \right)^{\frac{0.4}{1.4}} = 254.1 \, \text{K}
+\]  
+
+The specific heat capacity of air is given as:  
+\[
+c_p = 1.006 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+The enthalpy difference between states 5 and 6 is calculated as:  
+\[
+h_5 - h_6 = \int_{T_5}^{T_6} c_p \, dT = (T_5 - T_6) c_p
+\]  
+Substituting values:  
+\[
+h_5 - h_6 = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \cdot (431.9 \, \text{K} - 254.1 \, \text{K}) = 178.2 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The energy balance equation is updated as:  
+\[
+0 = \dot{m} \left[ 178.2 \, \frac{\text{kJ}}{\text{kg}} + \frac{(220 \, \text{m/s})^2 - w^2}{2} \right]
+\]  
+
+No diagrams or additional graphical content are present on this page.

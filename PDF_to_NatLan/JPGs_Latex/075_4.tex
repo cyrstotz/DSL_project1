@@ -1,0 +1,72 @@
+TASK 2c  
+The mass-specific increase in flow exergy is calculated as:  
+\[
+\Delta ex_{\text{flow}} = ex_{\text{flow},6} - ex_{\text{flow},0}
+\]  
+Expanding the equation:  
+\[
+\Delta ex_{\text{flow}} = (h_6 - h_0) - T_0(S_6 - S_0) + \Delta ke
+\]  
+The kinetic energy difference (\( \Delta ke \)) is given by:  
+\[
+\Delta ke = \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]  
+Substituting values:  
+\[
+\Delta ke = \frac{(510 \, \text{m/s})^2}{2} - \frac{(200 \, \text{m/s})^2}{2}
+\]  
+\[
+\Delta ke = \frac{260100 \, \text{m}^2/\text{s}^2}{2} - \frac{40000 \, \text{m}^2/\text{s}^2}{2}
+\]  
+\[
+\Delta ke = 110050 \, \text{J/kg} = 110.05 \, \text{kJ/kg}
+\]  
+
+The enthalpy difference (\( h_6 - h_0 \)) is calculated using:  
+\[
+h_6 - h_0 = c_p(T_6 - T_0)
+\]  
+Substituting values:  
+\[
+h_6 - h_0 = 1.006 \, \text{kJ/kg·K} \cdot (431.9 \, \text{K} - 243.15 \, \text{K})
+\]  
+\[
+h_6 - h_0 = 1.006 \cdot 188.75 = 189.86 \, \text{kJ/kg}
+\]  
+
+The entropy term (\( T_0(S_6 - S_0) \)) is calculated using:  
+\[
+T_0(S_6 - S_0) = 243.15 \, \text{K} \cdot c_p \cdot \ln\left(\frac{T_6}{T_0}\right) - R \cdot \ln\left(\frac{p_6}{p_0}\right)
+\]  
+Substituting values:  
+\[
+T_0(S_6 - S_0) = 243.15 \cdot 1.006 \cdot \ln\left(\frac{431.9}{243.15}\right) - 0.287 \cdot \ln\left(\frac{0.5}{0.191}\right)
+\]  
+\[
+T_0(S_6 - S_0) = 243.15 \cdot 1.006 \cdot \ln(1.776) - 0.287 \cdot \ln(2.617)
+\]  
+\[
+T_0(S_6 - S_0) = 243.15 \cdot 1.006 \cdot 0.574 - 0.287 \cdot 0.962
+\]  
+\[
+T_0(S_6 - S_0) = 140.34 - 0.276 = 82.01 \, \text{kJ/kg}
+\]  
+
+Finally, combining all terms:  
+\[
+\Delta ex_{\text{flow}} = 189.86 - 82.01 + 110.05 = 125.09 \, \text{kJ/kg}
+\]  
+
+---
+
+TASK 2d  
+The mass-specific exergy destruction (\( ex_{\text{dest}} \)) is calculated as:  
+\[
+ex_{\text{dest}} = -T_0 \dot{S}_{\text{gen}}
+\]  
+Alternatively:  
+\[
+ex_{\text{dest}} = \Delta ex_{\text{flow}} + \sum_j \dot{B}_{\text{ex},j} - \sum_n \dot{W}_{\text{tn}}
+\]  
+
+No further numerical values are provided for this task.

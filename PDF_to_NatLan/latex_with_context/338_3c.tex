@@ -1,0 +1,43 @@
+The goal is to calculate the transferred heat \( Q_{12} \) from gas to EW between states 1 and 2.  
+
+The energy balance is written as:  
+\[
+\Delta E = Q_{12} - W_{12}
+\]  
+\[
+\Delta E_{12} = m (u_2 - u_1)
+\]  
+
+The internal energy difference is calculated using:  
+\[
+u_2 - u_1 = c_V (T_2 - T_1)
+\]  
+\[
+c_V = 0.633 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+u_2 - u_1 = 0.633 (0.003 - 500) = -316.488 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The work done is calculated as:  
+\[
+W_{12} = \int p_{1} \, dV = p_{1} (V_2 - V_1)
+\]  
+
+The system efficiency around the gas is considered.  
+
+The reversible work is calculated as:  
+\[
+\omega_{12}^{\text{rev}} = \frac{R (T_2 - T_1)}{1 - n}
+\]  
+\[
+n = \frac{c_p}{c_v} = \frac{R + c_v}{c_v} = 1.263
+\]  
+\[
+\omega_{12}^{\text{rev}} = -112.822 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The total work is:  
+\[
+W_{12}^{\text{rev}} = m \omega_{12}^{\text{rev}} = -0.386 \, \frac{\text{kJ}}{\text{kg}}
+\]

@@ -1,0 +1,75 @@
+The gas pressure \( p_{g,1} \) is calculated as:  
+\[
+p_{g,1} = 1 \, \text{bar} + \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{\pi \cdot (0.05 \, \text{m})^2}
+\]  
+This results in:  
+\[
+p_{g,1} = 1 \, \text{bar} + 1.399655 \, \text{bar} = 2.399655 \, \text{bar}
+\]  
+
+The gas mass \( M \) is determined using the ideal gas law:  
+\[
+M = \frac{p \cdot V}{R \cdot T_1}
+\]  
+Substituting values:  
+\[
+M = \frac{2.399655 \, \text{bar} \cdot 0.00314 \, \text{m}^3}{0.16683 \, \frac{\text{kJ}}{\text{kg·K}} \cdot 773.15 \, \text{K}} = 0.009749 \, \text{kg}
+\]  
+
+The specific gas constant \( R \) is calculated as:  
+\[
+R = \frac{R_{\text{universal}}}{M_g} = \frac{8.314 \, \frac{\text{kJ}}{\text{kmol·K}}}{50 \, \frac{\text{kg}}{\text{kmol}}} = 0.16683 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+---
+
+The energy change of the ice-water mixture (\( \Delta E_{\text{EW}} \)) is equal to the heat transferred (\( Q_{12} \)):
+
+\[
+\Delta E_{\text{EW}} = \Delta U_{\text{EW}} = Q_{12}
+\]
+
+The specific internal energy change is calculated as:
+
+\[
+u_{\text{EW}} - u_{\text{EW,ref}} + Q_{12} = \frac{1500}{m_{\text{EW}}} = \frac{75 \, \text{kJ}}{\text{kg}}
+\]
+
+The internal energy at state 2 (\( u_2 \)) is expressed as:
+
+\[
+u_2 = (x_2 \cdot u_{\text{rest}}[0^\circ] + (1 - x_2) \cdot u_{\text{fusion}}[0^\circ]) \, \text{EW}
+\]
+
+Where \( x_2 \) is the ice fraction at state 2, \( u_{\text{rest}} \) is the specific internal energy of ice, and \( u_{\text{fusion}} \) is the specific internal energy of fusion.
+
+The specific internal energy values are provided as:
+\[
+u_{\text{rest}}[0^\circ] = -333.438 \, \frac{\text{kJ}}{\text{kg}}
+\]
+\[
+u_{\text{fusion}}[0^\circ] = -0.045 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+For the melted fraction:
+\[
+u_{\text{rest}}[0.009^\circ] = 333.442 \, \frac{\text{kJ}}{\text{kg}}
+\]
+\[
+u_{\text{fusion}}[0.009^\circ] = -0.033 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The equation for \( x_2 \) is derived as:
+\[
+x_2 \cdot 333.442 \, \frac{\text{kJ}}{\text{kg}} - (1 - x_2) \cdot 0.033 \, \frac{\text{kJ}}{\text{kg}} = \frac{75 \, \text{kJ}}{\text{kg}} - 200.092 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+Simplifying:
+\[
+x_2 = \frac{185.092 \, \frac{\text{kJ}}{\text{kg}} - 0.033 \, \frac{\text{kJ}}{\text{kg}}}{333.442 \, \frac{\text{kJ}}{\text{kg}} - 0.033 \, \frac{\text{kJ}}{\text{kg}}}
+\]
+
+The final value for \( x_2 \) is calculated as:
+\[
+x_2 = 0.555
+\]

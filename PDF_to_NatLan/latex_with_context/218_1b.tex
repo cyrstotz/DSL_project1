@@ -1,0 +1,37 @@
+The goal is to determine the thermodynamic mean temperature \( \bar{T}_{\text{KF}} \) of the coolant.  
+
+The mean temperature is defined as:  
+\[
+\bar{T}_{\text{KF}} = \frac{\int_{s_a}^{s_e} T \, ds}{s_a - s_e}
+\]  
+
+Using the enthalpy-entropy relationship:  
+\[
+\bar{T}_{\text{KF}} = \frac{h_a - h_e}{s_a - s_e} \quad \text{(from the first law of thermodynamics)}
+\]  
+
+For an ideal liquid:  
+\[
+h_a - h_e = c_{\text{KF}}(T_2 - T_1)
+\]  
+\[
+s_a - s_e = c_{\text{KF}} \ln \left( \frac{T_2}{T_1} \right)
+\]  
+
+Substituting these into the mean temperature formula:  
+\[
+\bar{T}_{\text{KF}} = \frac{c_{\text{KF}}(T_2 - T_1)}{c_{\text{KF}} \ln \left( \frac{T_2}{T_1} \right)}
+\]  
+\[
+\bar{T}_{\text{KF}} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)}
+\]  
+
+Substituting numerical values:  
+\[
+\bar{T}_{\text{KF}} = \frac{288.15 \, \text{K} - 278.15 \, \text{K}}{\ln \left( \frac{288.15}{278.15} \right)}
+\]  
+\[
+\bar{T}_{\text{KF}} = 293.12 \, \text{K}
+\]  
+
+The thermodynamic mean temperature of the coolant is \( \bar{T}_{\text{KF}} = 293.12 \, \text{K} \).

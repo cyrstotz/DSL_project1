@@ -1,0 +1,54 @@
+TASK 1d  
+The energy balance equation for the reactor system is written as:  
+\[
+m_2 u_2 - m_1 u_1 = \Delta m_{12} h_{12} + Q_{R,12}
+\]  
+
+The given values are:  
+\[
+m_1 = 5755 \, \text{kg}
+\]  
+\[
+m_2 = 5755 \, \text{kg} + \Delta m_{12}
+\]  
+
+The specific internal energy at state 2 is:  
+\[
+u_2 = u_{f}(100^\circ\text{C}) = 292.95 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A2)}
+\]  
+
+The specific internal energy at state 1 is calculated as:  
+\[
+u_1 = u_f + x_D (u_g - u_f)
+\]  
+Substituting the values:  
+\[
+u_1 = 418.94 + 0.005 (2506.5 - 418.94) \, \frac{\text{kJ}}{\text{kg}} \quad \text{(water at 100°C, from Table A2)}
+\]  
+\[
+u_1 = 429.3378 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The specific enthalpy at state 12 is:  
+\[
+h_{12} = h_f(20^\circ\text{C}) = 83.96 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A2)}
+\]  
+
+Rewriting the energy balance equation:  
+\[
+(m_1 + \Delta m_{12}) u_2 - m_1 u_1 = \Delta m_{12} h_{12} + Q_{R,12}
+\]  
+Solving for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = \frac{m_1 u_2 - m_1 u_1 - Q_{R,12}}{h_{12} - u_2}
+\]  
+
+Substituting the values:  
+\[
+\Delta m_{12} = \frac{5755 \cdot 292.95 - 5755 \cdot 429.3378 - 35,000}{83.96 - 292.95}
+\]  
+\[
+\Delta m_{12} = 3538.57 \, \text{kg}
+\]  
+
+This calculation determines the mass of saturated liquid water added to the reactor to reduce the temperature from \( 100^\circ\text{C} \) to \( 70^\circ\text{C} \).

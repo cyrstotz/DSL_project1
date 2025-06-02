@@ -1,0 +1,49 @@
+The problem involves determining the outlet velocity \( w_6 \) and temperature \( T_6 \) for a jet engine system.  
+
+**First Law of Thermodynamics for the Nozzle:**  
+The steady-state energy balance is applied with no heat transfer (\( Q = 0 \)) and no work (\( W = 0 \)). The equation simplifies to:  
+\[
+0 = \dot{m} \left( h_6 - h_5 + \frac{w_6^2}{2} - \frac{w_5^2}{2} \right)
+\]  
+
+Rearranging for \( w_6 \):  
+\[
+w_6 = \sqrt{2 \left( h_5 - h_6 \right) + w_5^2}
+\]  
+
+**Enthalpy Calculation:**  
+The enthalpy difference \( h_5 - h_6 \) is determined using the specific heat capacity \( c_p \) and temperature difference:  
+\[
+h_5 - h_6 = c_p \left( T_5 - T_6 \right)
+\]  
+
+Given values:  
+- \( T_0 = -30^\circ\text{C} \)  
+- \( T_5 = 431.9 \, \text{K} \)  
+- \( p_5 = 0.5 \, \text{bar} \)  
+- \( p_6 = p_0 = 0.191 \, \text{bar} \)  
+
+Using the isentropic relation for temperature at state 6:  
+\[
+T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = 431.9 \cdot \left( \frac{0.191}{0.5} \right)^{\frac{1.4 - 1}{1.4}} = 328.075 \, \text{K} \, \text{or} \, 54.925^\circ\text{C}
+\]  
+
+**Final Velocity Calculation:**  
+Substitute \( h_5 - h_6 \) and \( w_5 = 220 \, \text{m/s} \) into the velocity equation:  
+\[
+w_6 = \sqrt{2 c_p \left( T_5 - T_6 \right) + w_5^2}
+\]  
+Using \( c_p = 1.006 \, \text{kJ/kg·K} \):  
+\[
+w_6 = \sqrt{2 \cdot 1.006 \cdot (431.9 - 328.075) + 220^2} = 160 \, \text{m/s}
+\]  
+
+**Summary:**  
+- Outlet temperature: \( T_6 = 328.075 \, \text{K} \) or \( 54.925^\circ\text{C} \)  
+- Outlet velocity: \( w_6 = 160 \, \text{m/s} \)  
+
+No diagrams or figures are present on this page.

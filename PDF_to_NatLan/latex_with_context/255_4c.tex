@@ -1,0 +1,39 @@
+The first law of thermodynamics is applied to the system, represented by the equation:  
+\[
+0 = \dot{m}_{\text{R134a}} \left[ h_1 - h_2 \right] + \dot{Q}_K
+\]  
+where \( h_1 \) and \( h_2 \) are enthalpies at states 1 and 2, respectively.  
+
+The enthalpy at state 1 is calculated as:  
+\[
+h_1 = -\frac{\dot{Q}_K}{\dot{m}_{\text{R134a}}} + h_2
+\]  
+
+The pressure at state 1 is given as \( p_1 = p_2 = 3.3756 \, \text{bar} \), referencing Table A10 for R134a properties.  
+
+The vapor quality \( x_1 \) at state 1 is determined using the enthalpy relation:  
+\[
+h_1 = h_f + x_1 \left( h_g - h_f \right)
+\]  
+Solving for \( x_1 \):  
+\[
+x_1 = \frac{h_1 - h_f}{h_g - h_f}
+\]
+
+The entropy at state 2 is equal to the entropy at state 3:  
+\[
+s_2 = s_3
+\]  
+From the saturated liquid data:  
+\[
+s_3 = s_f + x_3 (s_g - s_f)
+\]  
+The vapor quality at state 3 is calculated as:  
+\[
+x_3 = \frac{s_3 - s_f}{s_g - s_f}
+\]  
+
+The enthalpy at state 3 is given by:  
+\[
+h_3 = h_f + x_3 (h_g - h_f)
+\]

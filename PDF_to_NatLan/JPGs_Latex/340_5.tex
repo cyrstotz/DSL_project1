@@ -1,0 +1,53 @@
+TASK 4a  
+A graph is drawn with axes labeled \( p \) (pressure) on the vertical axis and \( T \) (temperature) on the horizontal axis. Two distinct regions are marked:  
+- Region labeled "i)" with a horizontal line indicating isobaric evaporation.  
+- Region labeled "ii)" with a vertical line indicating sublimation.  
+
+TASK 4b  
+The initial temperature is given as \( T_i = -16^\circ\text{C} \).  
+The condensation temperature is calculated as:  
+\[
+T_{\text{condensate}} = T_i - 6 \, \text{K} = -16^\circ\text{C} - 6^\circ\text{C} = -22^\circ\text{C} = T_2
+\]  
+The enthalpy at state 2 is:  
+\[
+h_2 = h_{\text{R134a, A10, -16^\circ\text{C}}} \rightarrow h_2 = 217.7 \, \text{kJ/kg}
+\]  
+
+The energy balance for the refrigerant is expressed as:  
+\[
+\dot{Q}_K = \dot{m} \cdot (h_1 - h_2) \cdot (x_1 - x_2)
+\]  
+
+The entropy values are noted:  
+\[
+s_1 = s_2 \quad \text{(ideal adiabatic process, reversible)} \quad s_2 = 0.92 \, \text{kJ/kg·K}
+\]  
+
+The enthalpy at state 3 is calculated using interpolation:  
+\[
+h_3 = \text{interpolation with Table A12 for } -22^\circ\text{C} \quad h_3 = 279.7 \, \text{kJ/kg}
+\]  
+
+The mass flow rate of the refrigerant is determined:  
+\[
+\dot{m} = \frac{\dot{W}_K}{h_2 - h_3} = \frac{-28 \, \text{kJ/s}}{217.7 - 279.7} = 0.6 \, \text{kg/s}
+\]  
+
+TASK 4c  
+The process is described as adiabatic and reversible, with \( h_3 = h_4 \).  
+The enthalpy at state 4 is calculated:  
+\[
+h_4 = h_{\text{R134a, A10}} - h_3 = 93.42 \, \text{kJ/kg}
+\]  
+
+The vapor quality \( x_1 \) at state 1 is determined using the formula:  
+\[
+x_1 = \frac{h_1 - h_f}{h_g - h_f}
+\]  
+Substituting values:  
+\[
+x_1 = \frac{93.42 - 29.74}{279.7 - 29.74} = 0.367
+\]  
+
+No additional diagrams or figures are present beyond the graph described in TASK 4a.

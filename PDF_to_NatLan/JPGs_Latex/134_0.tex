@@ -1,0 +1,92 @@
+TASK 1a  
+Determine \( \dot{Q}_{\text{out}} \):  
+
+The energy balance for the reactor is given as:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} \cdot (h_{\text{in}} - h_{\text{out}})
+\]  
+
+Using the enthalpy values from water tables:  
+\[
+h_1(70^\circ\text{C}) = h_f(70^\circ\text{C}) + x \cdot h_g(70^\circ\text{C}) = 304.649 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_2(100^\circ\text{C}) = h_f(100^\circ\text{C}) + x \cdot h_g(100^\circ\text{C}) = 431.4725 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Substituting into the equation:  
+\[
+\dot{Q}_{\text{out}} = 38.047 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+Determine the thermodynamic mean temperature \( T_{\text{KF}} \):  
+
+The entropy difference is calculated as:  
+\[
+T_{\text{mean}} = \frac{s_2 - s_1}{\Delta s}
+\]  
+
+Using the entropy relation:  
+\[
+T \cdot \Delta s = q_{\text{rev}} = h_2 - h_1
+\]  
+
+The mean temperature is derived as:  
+\[
+T_{\text{mean}} = \frac{T_2 - T_1}{\ln\left(\frac{T_2}{T_1}\right)}
+\]  
+
+Substituting values:  
+\[
+T_{\text{mean}} = \frac{373 - 343}{\ln\left(\frac{373}{343}\right)} = 293.122 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+Determine the entropy production \( \dot{S}_{\text{gen}} \):  
+
+The entropy balance is applied:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \cdot (s_2 - s_1) - \frac{\dot{Q}_{\text{out}}}{T_{\text{mean}}}
+\]  
+
+From water tables:  
+\[
+s_1(70^\circ\text{C}, x = 0.005) = s_f(70^\circ\text{C}) + x \cdot s_g(70^\circ\text{C}) = 0.988 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+s_2(100^\circ\text{C}, x = 0.005) = s_f(100^\circ\text{C}) + x \cdot s_g(100^\circ\text{C}) = 1.337 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Substituting into the entropy production equation:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \cdot (s_2 - s_1) - \frac{\dot{Q}_{\text{out}}}{T_{\text{mean}}}
+\]  
+\[
+\dot{S}_{\text{gen}} = 0.117 \, \frac{\text{kW}}{\text{K}}
+\]  
+
+---
+
+TASK 1d  
+Determine \( \Delta m_{12} \) for \( T_2 = 70^\circ\text{C} \):  
+
+Using the energy balance:  
+\[
+\Delta m_{12} \cdot h_{\text{in}} = \Delta m_{12} \cdot u_{\text{in}} + Q_{\text{out}} - W
+\]  
+
+The mass balance is:  
+\[
+m_{\text{total}} = m_{\text{total},1} + \Delta m_{12}
+\]  
+
+The enthalpy difference is calculated as:  
+\[
+u_2 - u_1 = c_v \cdot (T_2 - T_1) = c_v \cdot (70 - 100)
+\]  
+

@@ -1,0 +1,34 @@
+The equation is written:  
+O = ṁ_R134a [h2 - h1] + Q̇ - ṁ̇  
+
+Below this:  
+ṁ_R134a = -Ẇ / (h2 - h3)  
+
+h2 => Tab, A-10 LERP mit (y2 - y1) / (x2 - x1) (x - x1) + y1  
+h2 = 243.72 kJ/kg  
+
+Further notes:  
+t3 x tab finden  
+x = (hg - hf) / (A-10) => x LERP hgf 42.445 hf = ...  
+
+On the right side:  
+(-8, 242.54)  
+(-1, 249.50)  
+
+An arrow points to "nächste Seite" (next page).
+
+continued:  
+LERP A-10  
+S_1,3 = 0.5226 kilojoules per kilogram Kelvin  
+
+COP  
+(0.0066 → 264.75)  
+(0.3374 → 273.66)  
+
+h_3 = 269.03 kilojoules per kilogram  
+
+\(\dot{m}_{R134a}\) = -28 W  
+243.72 - 269.03 = [kilojoules per kilogram]  
+= 1.10 kilograms per second  
+
+---

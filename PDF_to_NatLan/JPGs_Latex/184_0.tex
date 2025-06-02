@@ -1,0 +1,59 @@
+TASK 1a  
+The energy balance equation for the reactor is written as:  
+\[
+0 = \dot{m}(h_e - h_a) + \dot{Q}_R - \dot{Q}_{\text{aus}}
+\]  
+Rearranging to solve for the heat flow removed by the coolant:  
+\[
+\dot{Q}_{\text{aus}} = \dot{m}(h_e - h_a) + \dot{Q}_R
+\]  
+
+The enthalpy difference \( h_e - h_a \) is calculated using the specific enthalpy values of saturated liquid water at \( T_e = 70^\circ\text{C} \) and \( T_a = 100^\circ\text{C} \):  
+- At \( T_e = 70^\circ\text{C} \): \( h_e = 292.98 \, \text{kJ/kg} \)  
+- At \( T_a = 100^\circ\text{C} \): \( h_a = 419.04 \, \text{kJ/kg} \)  
+
+Substituting into the equation:  
+\[
+\dot{Q}_{\text{aus}} = 0.3 \left(292.98 \cdot 10^3 - 419.04 \cdot 10^3\right) + 100 \cdot 10^3
+\]  
+\[
+\dot{Q}_{\text{aus}} = -62.182 \, \text{kW}
+\]  
+
+The heat flow removed by the coolant is negative, indicating heat is leaving the reactor system.  
+
+---
+
+TASK 1b  
+The calculation for the thermodynamic mean temperature \( T_{\text{KF}} \) is not shown explicitly but mentions using \( 295 \, \text{K} \) for calculations.  
+
+---
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) is calculated using the entropy balance equation:  
+\[
+0 = \dot{m}(s_e - s_a) + \frac{\dot{Q}_e}{T_e} - \frac{\dot{Q}_{\text{aus}}}{T_{\text{KF}}} + \dot{S}_{\text{gen}}
+\]  
+Rearranging to solve for \( \dot{S}_{\text{gen}} \):  
+\[
+\dot{S}_{\text{gen}} = \dot{m}(s_a - s_e) - \frac{\dot{Q}_e}{T_e} + \frac{\dot{Q}_{\text{aus}}}{T_{\text{KF}}}
+\]  
+
+Substituting values:  
+- \( s_a \) at \( T_a = 100^\circ\text{C} \): \( 1.3068 \cdot 10^3 \, \text{J/kg·K} \)  
+- \( s_e \) at \( T_e = 70^\circ\text{C} \): \( 0.95449 \cdot 10^3 \, \text{J/kg·K} \)  
+- \( \dot{Q}_e = 100 \cdot 10^3 \, \text{W} \), \( T_e = 100^\circ\text{C} = 373.15 \, \text{K} \)  
+- \( \dot{Q}_{\text{aus}} = -62.182 \cdot 10^3 \, \text{W} \), \( T_{\text{KF}} = 295 \, \text{K} \)  
+
+\[
+\dot{S}_{\text{gen}} = 0.3(1.3068 \cdot 10^3 - 0.95449 \cdot 10^3) - \frac{100 \cdot 10^3}{373.15} + \frac{-62.182 \cdot 10^3}{295}
+\]  
+\[
+\dot{S}_{\text{gen}} = -0.373 \, \text{kW/K}
+\]  
+
+The entropy production is negative, indicating irreversibilities in the process.  
+
+---
+
+No diagrams or graphs are present on the page.

@@ -1,0 +1,28 @@
+TASK 2c  
+The mass-specific increase in flow exergy is calculated using the following equation:  
+\[
+\Delta ex_{\text{flow}} = \dot{m} \left( h_c - h_0 - T_0 (s_c - s_0) + k_c - k_0 \right)
+\]
+
+The entropy difference \( s_c - s_0 \) is determined using:  
+\[
+s_c - s_0 = s^o(T_c) - s^o(T_0) - R \ln \left( \frac{p_c}{p_0} \right)
+\]
+
+From the water table (Table A-12):  
+\[
+s^o(T_c) - s^o(T_0) = s^o(323.15 \, \text{K}) - s^o(273.15 \, \text{K}) = 1.78243 - 1.78524
+\]  
+\[
+= (323.67 \, \text{K} - 325) \cdot 1.78243 = 1.26743 \, \text{kJ/kg·K}
+\]
+
+For \( h_0 \):  
+\[
+h_0 = h(273.15 \, \text{K}) = 256.05 - 240.02 = (243.15 - 260) + 246.02 = 293.21 \, \text{kJ/kg}
+\]
+
+Finally, the mass-specific flow exergy \( ex_{\text{flow}} \) is calculated as:  
+\[
+ex_{\text{flow}} = \dot{m} \left( 328.40 - 243.21 - 213.15 (1.7794 - 1.4811) - \frac{1}{2} (568.26^2 - 70c^2) \right)
+\]

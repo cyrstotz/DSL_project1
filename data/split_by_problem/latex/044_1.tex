@@ -1,0 +1,196 @@
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+\subsection*{a)}
+\(\dot{Q}_{zu}\) ist der größere von \(\dot{Q}_2 = 100 \, \text{kW}\) und \(\dot{Q}_w\) aus dem SMO.
+
+\[
+\frac{dE}{dt} = \dot{m} (h_e - h_a) + \dot{Q}_w + \dot{Q}_{zu}
+\]
+
+\(\dot{Q}_w = \dot{m} (h_a - h_e)\)
+
+\[
+\text{gesucht:} \quad \text{Fehlstellen:} \quad x = 0 = x_a
+\]
+
+\[
+\begin{aligned}
+    h_a &= 252,50 \, \text{kJ/kg} \quad \text{(Tabelle A2)} \\
+    h_e &= 417,04 \, \text{kJ/kg} \\
+    \dot{Q}_w &= 37,8 \, \text{kW} \quad \left(\text{an sich möglich, weil die} \, \text{entsprechende Linie im} \, \text{Diagramm}\right) \\
+    \dot{Q}_{zu} &= \dot{Q}_2 - \dot{Q}_w = 62,2 \, \text{kW}
+\end{aligned}
+\]
+
+\subsection*{b)}
+\(\dot{Q}_{zu} = 65 \, \text{kW}\)
+
+\[
+T_{KF} = \frac{S_e}{S_a} T_{eS} = \frac{4}{3} \frac{h_{ea} - h_{ep}}{S_a - S_e}
+\]
+
+\[
+\frac{dE}{dt} = \dot{m} (h_{KF} - h_{Fa}) + \dot{Q}_{zu} + \beta
+\]
+
+\(\dot{Q}_{zu} = (h_{Fa} - h_{ep}) \cdot \dot{m}_{KF}\)
+
+\[
+\text{isobare} \quad \text{isochore} \quad \text{Reaktionen}
+\]
+
+\[
+h_{Fa} - h_{KF} = c^* (T_2 - T_1) + v^* (p_2 - p_1)
+\]
+
+\[
+S_a - S_e = c^* \cdot \ln \left( \frac{T_2}{T_1} \right)
+\]
+
+\[
+T_{KF} = \frac{h_{ea} - h_{ep}}{S_a - S_e} = 253,21 \, \text{K}
+\]
+
+\subsection*{c)}
+\[
+\text{Fein:} \quad T_{EF} = 255 \, \text{K} \quad \text{of} \quad T_w = 100 \degree \text{C} + 273,15 \, \text{K}
+\]
+
+\[
+\text{Entropie:}
+\]
+
+\[
+\text{Schließung:} \quad \text{System} \quad \text{(wie vorher)}
+\]
+
+\[
+\frac{dS}{dt} = \frac{\dot{Q}_{zu}}{T_{EF}} + \frac{\dot{Q}_{zu}}{T_w} + S_{zu}
+\]
+
+\[
+\text{wobei} \quad T_w = 100 \degree \text{C}
+\]
+
+\[
+S_{zu} = \dot{Q}_{zu} \left( \frac{1}{T_{zu}} + \frac{1}{T_{KF}} \right)
+\]
+
+\[
+\Rightarrow S_{zu} = +0,04615 \, \frac{\text{kW}}{\text{K}}
+\]
+
+``````latex
+
+
+\section*{Problem d)}
+
+\subsection*{d) Sickernde Flüssigkeit: $x_2 = 0$}
+
+\textbf{Heißdampf System}
+
+\[
+m_1 u_1 - m_2 u_2 = -\Delta m \cdot u + Q_{\text{aus},12}
+\]
+
+\[
+\text{TAB A2}
+\]
+
+\[
+u_1 (20^\circ C, x = 0) = 8,356 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+m_1 = 5355 \text{kg}
+\]
+
+\[
+m_2 = m_1 + \Delta m
+\]
+
+\[
+\text{(TAB A2)}
+\]
+
+\[
+u_2 (x = 0, 70^\circ C) = 252,55 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+u_1 (x = 0,005, 100^\circ C) = x \cdot u_{g,100} + u_{f,100} \cdot (1-x)
+\]
+
+\[
+u_{f,100} = 416,54 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+u_{g,100} = 2506,05 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+u_1 = 42,8377 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+-\Delta m \cdot u + m_1 \cdot u_2 = Q_{\text{aus},12} + m_1 \cdot u_1 - m_2 \cdot u_2
+\]
+
+\[
+\Rightarrow \Delta m = \frac{Q_{\text{aus},12} + m_1 \cdot u_1 - m_2 \cdot u_2}{u_2 - u_1}
+\]
+
+\[
+\Delta m = 3924,3 \text{ kg}
+\]
+
+\subsection*{e)}
+
+\[
+Q_{\text{zu}} = 30000 \text{ kJ}
+\]
+
+\[
+\Delta S_{1-2} = m_2 \cdot s_2 - m_1 \cdot s_1 + \frac{Q_{\text{zu}}}{T}
+\]
+
+\[
+\text{(TAB A2)}
+\]
+
+\[
+s_2 (70^\circ C, x = 0) = 0,5545 \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+
+\[
+s_1 (100^\circ C, x = 0,005) = x \cdot s_{g,100} + s_{f,100} \cdot (1-x)
+\]
+
+\[
+s_{f,100} = 1,3065 \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+
+\[
+s_{g,100} = 7,3594 \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+
+\[
+s_1 = 1,3377 \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+
+\[
+m_2 \cdot s_2 - m_1 \cdot s_1 + \frac{Q_{\text{zu}}}{T} = 5355 \cdot s_2
+\]
+
+\[
+\Delta S = 1237 \frac{\text{kJ}}{\text{K}}
+\]
+
+``````latex
+
+

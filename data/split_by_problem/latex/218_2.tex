@@ -1,0 +1,103 @@
+
+``````latex
+
+
+\section*{Aufgabe 2 (ideales Gas, Luft)}
+
+\subsection*{a)}
+
+\begin{align*}
+&0 \quad 0,191 \, \text{bar} \quad -30^\circ \text{C} \\
+&1 \\
+&2 \quad p_2 = p_3 \\
+&3 \quad p_5 = p_2 \\
+&4 \\
+&5 \quad 0,5 \, \text{bar} \quad 431,9 \, \text{K} \\
+&6 \quad 0,191 \, \text{bar}
+\end{align*}
+
+\begin{align*}
+&s_1 = s_2 \\
+&s_2 = s_1
+\end{align*}
+
+\subsection*{Graphical Description}
+
+The graph is a Temperature-Entropy (T-S) diagram. The x-axis is labeled $S$ with units $[\frac{kJ}{kg \cdot K}]$. The y-axis is labeled $T [K]$. 
+
+Points are marked as follows:
+- Point 0 at the origin.
+- Point 1 slightly to the right of Point 0.
+- Point 2 above Point 1.
+- Point 3 to the right of Point 2.
+- Point 4 below Point 3.
+- Point 5 to the right of Point 4.
+- Point 6 below Point 5 and to the right of Point 2.
+
+The lines connecting the points form a closed loop with the following connections:
+- Line from Point 0 to Point 2.
+- Line from Point 2 to Point 3.
+- Line from Point 3 to Point 4.
+- Line from Point 4 to Point 5.
+- Line from Point 5 to Point 6.
+- Line from Point 6 back to Point 0.
+
+\subsection*{b)}
+
+\begin{align*}
+&\dot{Q} = \dot{m} \left( h_e - h_a + \frac{w_e^2 - w_a^2}{2} \right) \\
+&\dot{Q} = 0 \\
+&w_a^2 = h_e - h_a + \frac{w_e^2}{2} \\
+&w_a = \sqrt{h_e - h_a + \frac{w_e^2}{2}} \\
+&w_a = \sqrt{c_p (T_5 - T_6) + \frac{w_e^2}{2}} \\
+&\frac{T_0}{T_5} = \left( \frac{p_0}{p_5} \right)^{\frac{n-1}{n \cdot T_5}} = \left( \frac{p_0}{p_5} \right)^{\frac{k-1}{k \cdot T_5}} = \left( \frac{0,191}{0,5} \right)^{\frac{0,4}{1,4}} \cdot 431,9 \, \text{K} \\
+&= 328,07 \, \text{K} \\
+&w_a = \sqrt{1,006 \frac{kJ}{kg \cdot K} (431,9 - 328,07) + \frac{220 \frac{m^2}{s^2}}{2}} = 682,79 \, \frac{m}{s}
+\end{align*}
+
+``````latex
+
+
+\section*{c)}
+\[
+\Delta_{ex,s}
+\]
+\[
+0 = \dot{m} \left( h_e - h_a - T_0 (s_e - s_a) \right) + \frac{w_e^2}{2} - \frac{w_a^2}{2} = -\Delta E_{x,st}
+\]
+\[
+T_0 = 243.15 \, K, \quad T_0 = 340 \, K
+\]
+\[
+h_0 - h_e = cp \left( T_0 - T_e \right) = 1.006 \, \frac{kJ}{kgK} \cdot 96.85 \, K = 97.43 \, \frac{kJ}{kg}
+\]
+\[
+s_e - s_d = cp \cdot \ln \left( \frac{T_0}{T_e} \right) - R \ln \left( \frac{p_0}{p_0} \right)
+\]
+\[
+= cp \cdot \ln \left( \frac{T_0}{T_0} \right) = 1.006 \, \frac{kJ}{kgK} \cdot \ln \left( \frac{243.15 \, K}{240 \, K} \right) = -0.033
+\]
+\[
+\Delta_{ex,st} = -\dot{m} \left( cp (h_0 - h_e) - T_0 \left( cp \ln \left( \frac{T_0}{T_e} \right) + \frac{w_e^2}{2} - \frac{w_a^2}{2} \right) \right)
+\]
+
+\section*{d)}
+\[
+Ex \, vel:
+\]
+\[
+0 = \dot{m} \left[ -\Delta E_x \right] + \left( 1 - \frac{T_0}{T} \right) Q_j - Ex \, vel
+\]
+\[
+Ex \, vel = 100 \, \frac{kJ}{kg} - 4.5 \, \frac{kJ}{kg}
+\]
+\[
+Ex \, vel = 100 \, \frac{kJ}{kg} + \left( 1 - \frac{243.15 \, K}{1289 \, K} \right) \frac{1.195 \, kJ}{kg}
+\]
+\[
+= \underline{1069.55 \, \frac{kJ}{kg}}
+\]
+
+``````latex
+
+

@@ -1,0 +1,43 @@
+The mass-specific increase in flow exergy is calculated using the following expression:  
+\[
+\dot{E}_{\text{ex,str}} = \dot{m}_{\text{ex,str}} = \dot{m} \left[ h_6 - h_0 - T_0 (s_6 - s_0) + \Delta \text{ke}_6 \right]
+\]  
+
+The kinetic energy term at state 6 is given by:  
+\[
+\text{ke}_6 = \frac{1}{2} m w_6^2 = \frac{1}{2} m w_0^2
+\]  
+
+The exergy at state 0 is expressed as:  
+\[
+\dot{E}_{\text{ex,str},0} = \dot{m}_{\text{ex,str},0} = \dot{m} h_0
+\]  
+
+The change in flow exergy is then calculated as:  
+\[
+\Delta \dot{E}_{\text{ex,str}} = \dot{E}_{\text{ex,str},6} - \dot{E}_{\text{ex,str},0}
+\]  
+\[
+= \dot{m} \left[ h_6 - h_0 - T_0 (s_6 - s_0) + \Delta \text{ke} \right]
+\]  
+
+The change in kinetic energy is given by:  
+\[
+\Delta \text{ke} = \frac{1}{2} m w_0 \left( w_6 - w_0 \right)^2
+\]  
+\[
+= \frac{1}{2} m w_0 \left( 510 \, \text{m/s} - 200 \, \text{m/s} \right)^2
+\]  
+
+Using Table A-22, the enthalpy \( h_0 \) is interpolated as:  
+\[
+h_0 (243 \, \text{K}, 0.1 \, \text{bar}) = \frac{250.05 - 240.02}{250 - 240} (250 - 243) + 240.02
+\]  
+\[
+= 247.04 \, \text{kJ/kg}
+\]  
+
+The entropy difference is calculated as:  
+\[
+s_0 - s_6 = s^0(T_0) - s^0(T_6) - R \ln \left( \frac{p_0}{p_c} \right)
+\]

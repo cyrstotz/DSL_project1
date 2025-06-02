@@ -1,0 +1,45 @@
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is calculated using the integral of \( T \, dS \). The relationship between entropy and enthalpy changes is expressed as:  
+\[
+T_{\text{KF}} = \frac{\int T \, dS}{S_2 - S_1} = \frac{q_{12}}{S_2 - S_1} = \frac{h_2 - h_1}{S_2 - S_1}
+\]  
+Since the coolant is modeled as an ideal liquid under isobaric conditions, the following simplifications apply:  
+\[
+h_2 - h_1 = c \cdot (T_2 - T_1)
+\]  
+\[
+S_2 - S_1 = c \cdot \ln\left(\frac{T_2}{T_1}\right)
+\]  
+Substituting these into the equation for \( T_{\text{KF}} \):  
+\[
+T_{\text{KF}} = \frac{c \cdot (T_2 - T_1)}{c \cdot \ln\left(\frac{T_2}{T_1}\right)} = \frac{T_2 - T_1}{\ln\left(\frac{T_2}{T_1}\right)}
+\]  
+Given values:  
+\[
+T_2 = 298.15 \, \text{K}, \quad T_1 = 288.15 \, \text{K}
+\]  
+\[
+T_{\text{KF}} = \frac{298.15 - 288.15}{\ln\left(\frac{298.15}{288.15}\right)} = \frac{10}{\ln\left(\frac{298.15}{288.15}\right)} = 293.17 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) from the heat transfer between the reactor and the cooling jacket is calculated using the entropy balance equation:  
+\[
+\dot{Q}_{\text{out}} \cdot \frac{1}{T_{\text{KF}}} + \dot{S}_{\text{gen}} - \dot{Q}_{\text{out}} \cdot \frac{1}{T_R} = 0
+\]  
+Rearranging for \( \dot{S}_{\text{gen}} \):  
+\[
+\dot{S}_{\text{gen}} = \dot{Q}_{\text{out}} \left(-\frac{1}{T_{\text{KF}}} + \frac{1}{T_R}\right)
+\]  
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = 62.33 \, \text{kW}, \quad T_{\text{KF}} = 293.17 \, \text{K}, \quad T_R = 373.15 \, \text{K}
+\]  
+\[
+\dot{S}_{\text{gen}} = 62.33 \, \text{kW} \left(-\frac{1}{293.17} + \frac{1}{373.15}\right)
+\]  
+\[
+\dot{S}_{\text{gen}} = 46 \, \text{J}
+\]  

@@ -1,0 +1,93 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\begin{itemize}
+    \item Graph: A graph with an upward pointing arrow labeled $T_{in} \, ^\circ K$ on the y-axis and a horizontal arrow labeled $s$ on the x-axis. The graph contains several overlapping curves that start from the y-axis, rise to a peak, and then fall back down towards the x-axis. The x-axis is labeled with the value $75 \, \frac{J}{K \cdot kg}$.
+\end{itemize}
+
+\begin{itemize}
+    \item 0-1: \textit{vorverdichter, irreversibel}
+    \item $p_1 = 1.2$
+    \item 1-2: \textit{verdichter, irreversibel}
+    \item 2-3: \textit{isobar, brennkammer}
+    \item 3-4: \textit{Turbine, irreversibel}
+    \item 4-5: \textit{Mischkammer, 0.5 bar}
+    \item 5-6: \textit{Schubdüse, von 0.5 bar auf 0.19 bar}
+\end{itemize}
+
+\begin{itemize}
+    \item Graph: A graph with an upward pointing arrow labeled $T$ on the y-axis and a horizontal arrow labeled $s$ on the x-axis. The graph contains several curves labeled $p_0$, $p_1$, $p_2$, $p_4$, $p_5$, and $p_6$. The curves are drawn in blue and represent isobars. The points 0, 1, 2, 3, 4, 5, and 6 are marked on the graph, with lines connecting them to indicate transitions between states. The transitions are labeled as follows:
+    \begin{itemize}
+        \item 0 to 1
+        \item 1 to 2
+        \item 2 to 3
+        \item 3 to 4
+        \item 4 to 5
+        \item 5 to 6
+    \end{itemize}
+    The isobars are labeled as follows:
+    \begin{itemize}
+        \item $p_0 = p_6$
+        \item $p_1$
+        \item $p_2 = p_3$
+        \item $p_4 = p_5$
+        \item $MPAT$
+    \end{itemize}
+\end{itemize}
+
+``````latex
+
+
+\section*{1)}
+
+\begin{align*}
+w_6 & \quad Q \quad T_6 \\
+w_6 &= 720 \frac{m}{s} \\
+p_6 &= 0.5 \, \text{bar} \\
+T_5 &= 437.9 \, K
+\end{align*}
+
+\begin{align*}
+T_5 \quad \frac{T_6}{T_5} &= \left( \frac{p_6}{p_5} \right)^{\frac{k-1}{k}} \\
+T_6 &= \left( \frac{p_6}{p_5} \right)^{\frac{k-1}{k}} \\
+&= 329.07 \, K
+\end{align*}
+
+\begin{align*}
+h_5 + \frac{w_5^2}{2} &= h_6 + \frac{w_6^2}{2} \\
+\frac{w_6^2}{2} &= h_5 - h_6 + \frac{w_5^2}{2} \\
+&= \dot{m} \cdot cp (T_5 - T_6) + \frac{w_5^2}{2} \\
+w_6 &= \sqrt{2 \left( cp (T_5 - T_6) + \frac{w_5^2}{2} \right)} \\
+&= 507.25 \frac{m}{s}
+\end{align*}
+
+\section*{c)}
+
+\begin{align*}
+\Delta ex_{s,HT} &= \frac{w_6^2}{2} - T_0 (s_6 - s_0) + \dot{e} + \dot{e}_0 \\
+&= cp (T_6 - T_0) - T_0 \left( cp \ln \left( \frac{T_6}{T_0} \right) \right) + \frac{w_6^2}{2} - \frac{w_0^2}{2} \\
+&= + 46.533 \frac{kJ}{kg}
+\end{align*}
+
+\section*{c1)}
+
+\begin{align*}
+0 &= -\Delta ex_{s,HT} + \dot{e}_{x,Q} - \dot{V}_{1 \rightarrow 2} - ex_{iner} \\
+ex_{iner} &= -\Delta ex_{s,HT} + \dot{e}_{x,Q} - \dot{V}_{1 \rightarrow 2}
+\end{align*}
+
+\section*{d)}
+
+\begin{align*}
+ex_{iner} &= T_0 \cdot s_0 \\
+S_{ex} &= s_0 - s_e - \frac{Q}{T} \\
+&= \frac{\dot{m}}{T_0} \left( cp \left( T_6 - T_0 \right) - T_0 cp \ln \left( \frac{T_6}{T_0} \right) \right) \\
+&= \frac{Q}{T} = 73.29 \frac{kJ}{kg}
+\end{align*}
+
+``````latex
+
+

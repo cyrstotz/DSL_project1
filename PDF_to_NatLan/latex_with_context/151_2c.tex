@@ -1,0 +1,46 @@
+The mass-specific increase in flow exergy is calculated as:  
+\[
+\Delta ex_{\text{str}} = ex_{\text{str},6} - ex_{\text{str},0}
+\]  
+Expanding the terms:  
+\[
+\Delta ex_{\text{str}} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2}
+\]  
+The enthalpy difference is expressed as:  
+\[
+h_6 - h_0 = c_p (T_6 - T_0)
+\]  
+The entropy difference is expressed as:  
+\[
+s_6 - s_0 = \int_{T_0}^{T_6} \frac{c_p}{T} dT - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+For simplification, assuming \( \ln(1) = 0 \):  
+\[
+s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+
+Constants used:  
+\[
+T_0 = 293 \, \text{K}, \quad T_6 = 328.07 \, \text{K}
+\]  
+\[
+R = c_p - c_v = c_p \frac{c_p}{c_v} = 0.2874
+\]  
+\[
+c_v = \frac{c_p}{\kappa}
+\]  
+
+Substituting values:  
+\[
+s_6 - s_0 = 0.302
+\]  
+
+The final expression for \( \Delta ex_{\text{str}} \) is:  
+\[
+\Delta ex_{\text{str}} = 1.006 (328.07 - 293) - 293 \cdot 0.302 + \frac{220^2}{2}
+\]  
+\[
+\Delta ex_{\text{str}} = 26574.037 \, \text{J/kg}
+\]  
+
+---

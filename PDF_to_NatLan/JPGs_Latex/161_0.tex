@@ -1,0 +1,70 @@
+TASK 1a  
+The energy balance for a steady-state system is written as:  
+\[
+0 = \dot{m} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_{\text{out}}
+\]  
+where \( \dot{m} \) is the mass flow rate, \( h_{\text{in}} \) and \( h_{\text{out}} \) are the specific enthalpies at the inlet and outlet, and \( \dot{Q}_{\text{out}} \) is the heat flow removed by the coolant.  
+
+From Table A-2:  
+\[
+h_{\text{in}} = h_f(70^\circ\text{C}) = 2337 \, \frac{\text{kJ}}{\text{kg}} \quad \text{or} \quad 232.95 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_{\text{out}} = h_f(100^\circ\text{C}) = 2217 \, \frac{\text{kJ}}{\text{kg}} \quad \text{or} \quad 445.04 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The heat flow removed by the coolant is calculated as:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} (h_{\text{out}} - h_{\text{in}})
+\]  
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \frac{\text{kg}}{\text{s}} \cdot (2217 - 2337) \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+\dot{Q}_{\text{out}} = 23.04 \, \frac{\text{kJ}}{\text{s}} \quad \text{or} \quad 37.82 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant is calculated as:  
+\[
+T_{\text{KF}} = \frac{h_{\text{KF,out}} - h_{\text{KF,in}}}{s_{\text{KF,out}} - s_{\text{KF,in}}}
+\]  
+where \( h_{\text{KF,out}} \) and \( h_{\text{KF,in}} \) are the specific enthalpies of the coolant at the outlet and inlet, and \( s_{\text{KF,out}} \) and \( s_{\text{KF,in}} \) are the specific entropies of the coolant at the outlet and inlet.
+
+---
+
+TASK 1c  
+The entropy generation rate is calculated as:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} (s_{\text{in}} - s_{\text{out}}) + \frac{\dot{Q}_{\text{out}}}{T_w}
+\]  
+where \( s_{\text{in}} \) and \( s_{\text{out}} \) are the specific entropies at the inlet and outlet, \( \dot{Q}_{\text{out}} \) is the heat flow removed, and \( T_w \) is the wall temperature.  
+
+The wall temperature is calculated as:  
+\[
+T_w = \frac{h_{\text{out}} - h_{\text{in}}}{s_{\text{out}} - s_{\text{in}}}
+\]  
+
+From Table A-2:  
+\[
+h_{\text{out}} = h_f(100^\circ\text{C}) = 479.04 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_{\text{in}} = h_f(70^\circ\text{C}) = 232.95 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+s_{\text{in}} = s_f(70^\circ\text{C}) = 0.9569 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+s_{\text{out}} = s_f(100^\circ\text{C}) = 1.3069 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Substituting values into the entropy generation equation:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} (s_{\text{in}} - s_{\text{out}}) + \frac{\dot{Q}_{\text{out}}}{T_w}
+\]  
+
+No diagrams or graphs are present on the page.

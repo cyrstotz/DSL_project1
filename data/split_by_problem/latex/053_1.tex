@@ -1,0 +1,65 @@
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+\subsection*{a)}
+\begin{align*}
+Q &= \dot{m} (h_1 - h_2) + \dot{Q}_R - \dot{Q}_{\text{aus}} - \dot{W}_e \\
+h_1, h_2 &\text{ siehe TAB A2, gesättigte Flüssigkeit} \\
+h_f(70^\circ C) &= 292.58 \frac{\text{kJ}}{\text{kg}} = h_1 \\
+h_f(100^\circ C) &= 419.09 \frac{\text{kJ}}{\text{kg}} = h_2 \\
+\dot{W}_e &= \int_{1}^{2} \dot{V} dp \approx \dot{V} \cdot \Delta p \cdot \dot{m} \\
+\dot{V} &= \frac{v_f(100^\circ C) + v_f(70^\circ C)}{2} = 1.03375 \frac{\text{m}^3}{\text{kg}} \\
+\dot{W}_e &= \dot{V} \cdot 0.03375 (p_2 - p_1) \cdot \dot{m} = 0.2153 \frac{\text{m}^3 \text{bar}}{\text{s}} \cdot \frac{100 \text{kJ}}{\text{m}^3 \text{bar}} = 21.513 \text{kW} \\
+\dot{Q}_{\text{aus}} &= \dot{m} (h_1 - h_2) + \dot{Q}_R - \dot{W}_e = 83.68 \text{kW}
+\end{align*}
+
+\subsection*{b)}
+\begin{align*}
+Q_{\text{aus rein}} &\rightarrow \text{reversibel} \rightarrow S_{\text{tot}} = 0 \\
+Q &= \dot{m} (s_1 - s_2) + \frac{Q_{\text{aus}}}{T} \rightarrow \overline{T} = \dot{m} (s_2 - s_1) + \dot{Q}_{\text{aus}} \\
+Q &= \dot{m} (u_{EF1} - u_{EF2}) + Q_{\text{aus}} \\
+\frac{Q_{\text{aus}}}{u_{EF1} - u_{EF2}} &= \dot{m} \cdot \overline{T} \\
+\frac{Q_{\text{aus}}}{e^{\frac{(T_1 - T_2)}{T_1}}} &= \dot{m} \cdot e^{\frac{(T_1 - T_2)}{T_1}} \\
+\overline{T} &= \frac{1}{\frac{Q_{\text{aus}}}{e^{\frac{(T_2}{T_1}}}}} = \frac{Q_{\text{aus}}}{e^{\frac{(T_1 - T_2)}{T_1}}} = \frac{(T_1 - T_2)}{\ln \left( \frac{T_2}{T_1} \right)} \rightarrow 293.12 \text{K}
+\end{align*}
+
+\subsection*{c)}
+\begin{align*}
+Q &= \frac{Q_{\text{aus}}}{T_{\text{reaktor}}} - \frac{Q_{\text{aus}}}{T_{EF}} \rightarrow \text{Entropiebilanz} \text{ des um Wind} \\
+\dot{S}_{\text{tot}} &= \frac{Q_{\text{aus}}}{T_{EF}} - \frac{Q_{\text{aus}}}{T_{\text{reaktor}}} = \frac{654 \text{kJ}}{285 \text{K}} - \frac{654 \text{kJ}}{373.15 \text{K}} = 0.04615 \frac{\text{kJ}}{\text{K}} \\
+&\text{Resultate aus Prüfung benutzt}
+\end{align*}
+
+``````latex
+
+\section*{Problem d}
+
+\begin{align*}
+M_2 \, U_2 - M_1 \, U_1 &= \Delta M_{12} \, [h_a] + \cancel{Q_{ab}} - \cancel{Q_{ab}} \\
+M_2 &= M_1 + \Delta M_{12} \\
+h_s &= h_f(20^\circ C) = 83.86 \, \frac{kJ}{kg} \\
+U_2 &= U_f(70^\circ C) = 292.55 \, \frac{kJ}{kg} \\
+U_1 &= U_f(100^\circ C) + x_0 \left( U_g(100^\circ C) - U_f(100^\circ C) \right) = 425.378 \, \frac{kJ}{kg} \\
+M_1 &= 57.55 \, kg \\
+(m_1 + \Delta m_{12}) U_2 - m_1 (U_1) &= \Delta M_{12} \, h_0 \\
+\frac{U_2 M_1 - M_1 U_1}{h_0 - U_2} &= \Delta M_{12} = 3756.844 \, kg
+\end{align*}
+
+\section*{Problem e}
+
+\begin{align*}
+M_2 S_2 - M_1 S_1 &= \Delta M_{12} S_0 + \frac{Q_{ab}}{T_{ein}} - \frac{Q_{ab}}{T_{aus}} + S_{erz} \\
+S_2 &= S_f(70^\circ C) = 0.9549 \, \frac{kJ}{kg \cdot K} \\
+S_1 &= S_f(100^\circ C) + x_0 \left( S_g(100^\circ C) - S_f(100^\circ C) \right) = 1.3374 \, \frac{kJ}{kg \cdot K} \\
+S_0 &= S_f(20^\circ C) = 0.296 \, \frac{kJ}{kg \cdot K} \\
+T_{ein} &= \frac{q_{rev}}{S_2 - S_e} = \frac{q_{rev}}{S_2 - S_n} = \frac{Q_{ab}}{S_2 - S_n} = \frac{3545000 \, kJ}{(0.954 - 1.3374) \, \frac{kJ}{kg \cdot K}} \\
+T_{aus} &= 285 \, K \quad \text{(from b)} \\
+S_{erz} &= M_1 S_n - M_2 S_2 - \Delta M_{12} S_0 - \frac{Q_{ab}}{T_{ein}} + \frac{Q_{ab}}{T_{aus}}
+\end{align*}
+
+``````latex
+
+

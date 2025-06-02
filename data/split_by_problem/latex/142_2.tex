@@ -1,0 +1,175 @@
+
+``````latex
+
+
+\section*{Aufgabe 3}
+
+\begin{figure}[h]
+\centering
+\begin{minipage}{0.8\textwidth}
+\centering
+\textbf{Graphical Description:} \\
+The graph is a pressure-volume (P-V) diagram with a closed cycle consisting of six points labeled 1 through 6. The x-axis is labeled as $V$ and the y-axis is labeled as $p$. The cycle starts at point 1, moves to point 2, then to point 3, 4, 5, and finally back to point 1. The lines connecting these points represent different processes:
+\begin{itemize}
+    \item From point 1 to point 2: A vertical line downwards.
+    \item From point 2 to point 3: A horizontal line to the right.
+    \item From point 3 to point 4: An upward sloping line.
+    \item From point 4 to point 5: A vertical line downwards with a spring symbol indicating a compression or expansion process.
+    \item From point 5 to point 6: A downward sloping line.
+    \item From point 6 to point 1: A horizontal line to the left.
+\end{itemize}
+The points are connected with arrows indicating the direction of the cycle. Various pressures and volumes are labeled at each point, such as $p_1$, $p_2$, $p_3$, $p_4$, $p_5$, $V_1$, $V_2$, $V_3$, $V_4$, $V_5$.
+\end{minipage}
+\end{figure}
+
+\[
+\dot{w}_{\text{turb}} = 200 \frac{\text{m}^3}{\text{s}} \quad \dot{w}_{e} = ?
+\]
+
+\[
+p_5 = 0.5 \text{bar} \quad T_5 = 437.8 \text{K}
+\]
+
+\[
+p_2 = p_6 = 0.107 \text{bar} \quad T_0 = -30^\circ \text{C}
+\]
+
+\[
+n = 1.4
+\]
+
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}}
+\]
+
+\[
+T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{0.4}{1.4}} = 329.07 \text{K}
+\]
+
+\text{adiabatic reversible}
+
+\[
+h_5 = h_6
+\]
+
+\[
+\dot{Q} = \dot{m} \left[ h_e - h_a + \frac{w_e^2 - w_a^2}{2} \right]
+\]
+
+\[
+h_a - h_e = \sqrt{2 \left( c_p \cdot (T_6 - T_5) + \frac{w_e^2}{2} \right)}
+\]
+
+\[
+w_a = \sqrt{2 \left( c_p \cdot (T_6 - T_5) + \frac{w_e^2}{2} \right)}
+\]
+
+\[
+w_e = w_5 = 220 \frac{\text{m}}{\text{s}}
+\]
+
+\[
+c_p = 1.006 \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+
+\[
+h_a - h_e = \int_{T_5}^{T_6} c_p \, dT
+\]
+
+\[
+= c_p \cdot (T_6 - T_5)
+\]
+
+\[
+= 507.25 \frac{\text{m}}{\text{s}}
+\]
+
+``````latex
+
+
+c)
+\begin{align*}
+e_{x, \text{ist}} &= h_1 - h_2 - T_0 (s_1 - s_2) + \frac{\omega_2^2 - \omega_1^2}{2} \\
+&= h_1 - h_2 - T_0 \left( \frac{q_2}{T_2} - \frac{q_1}{T_1} \right) + \frac{\omega_2^2 - \omega_1^2}{2}
+\end{align*}
+
+\[
+T_0 = 273.15 \, K
+\]
+
+\[
+q_1 - q_0 = \int_{T_0}^{T_1} c_p \, dT = c_p (T_1 - T_0)
+\]
+
+\[
+q_2 - q_0 = \int_{T_0}^{T_2} c_p \, dT = c_p (T_2 - T_0)
+\]
+
+\[
+q_2 - q_0 = \int_{T_0}^{T_2} \frac{c_p}{T} \, dT - R \ln \left( \frac{p_2}{p_0} \right) = 0 \degree T_2 - 0 \degree T_1 - 0
+\]
+
+\[
+e_{x, \text{ist}} = 133.6 \frac{kJ}{kg}
+\]
+
+\[
+\omega_2 = 50 \cdot 2.25 \frac{m}{s}
+\]
+
+\[
+\omega_0 = 200 \frac{m}{s}
+\]
+
+\[
+T_0 = 273.15 \, K
+\]
+
+\[
+s_2 (325.07 \, K) = s_2 (T_2) + \int_{T_0}^{T_2} \frac{c_p}{T} \, dT
+\]
+
+\[
+= s_2 (T_0) + \frac{c_p}{T} \, dT
+\]
+
+\[
+= 2.703 \frac{kJ}{kg \cdot K}
+\]
+
+\[
+s_0 = 273.15 \, K
+\]
+
+\[
+s_0 (325.07 \, K) = s_0 (T_2) + \frac{c_p}{T} \, dT
+\]
+
+\[
+= 2.703 \frac{kJ}{kg \cdot K}
+\]
+
+\[
+= 2.654 \frac{kJ}{kg \cdot K}
+\]
+
+d)
+\[
+e_{x, \text{ist}} = 100 \frac{kJ}{kg}
+\]
+
+\[
+0 = e_{x, \text{ist}} + \left( 1 - \frac{T_0}{T} \right) q_B + e_{x, \text{real}}
+\]
+
+\[
+e_{x, \text{real}} = -e_{x, \text{ist}} + \left( 1 - \frac{T_0}{T} \right) q_B
+\]
+
+\[
+= -69.58 \frac{kJ}{kg}
+\]
+
+``````latex
+
+

@@ -1,0 +1,104 @@
+No content found.
+
+The change in internal energy \( \Delta U \) is calculated as:  
+\[
+\Delta U = Q_{12} - W_{12}.
+\]  
+
+The work \( W_{12} \) is calculated using:  
+\[
+W_{12} = P_1 \cdot (V_2 - V_1),
+\]  
+where \( P_1 = 760 \, \text{kPa} \), \( V_1 = 0.00314 \, \text{m}^3 \), and \( V_2 = 0.00411 \, \text{m}^3 \). Substituting:  
+\[
+W_{12} = 760 \cdot (0.00411 - 0.00314) = 284 \, \text{J}.
+\]  
+
+The volume \( V_2 \) is calculated as:  
+\[
+V_2 = \frac{m \cdot R \cdot T_2}{P},
+\]  
+where \( m = 0.0054 \, \text{kg} \), \( R = 50 \, \text{J/(kg·K)} \), \( T_2 = 273.15 \, \text{K} \), and \( P = 139.98 \, \text{kPa} \). Substituting:  
+\[
+V_2 = \frac{0.0054 \cdot 50 \cdot 273.15}{139.98} = 1.11 \, \text{L}.
+\]  
+
+The heat \( Q_{12} \) is calculated as:  
+\[
+Q_{12} = \Delta U + W_{12}.
+\]  
+
+The change in internal energy \( \Delta U \) is calculated using:  
+\[
+\Delta U = c_V \cdot m_g \cdot (T_2 - T_1),
+\]  
+where \( c_V = 0.633 \, \text{kJ/(kg·K)} \), \( m_g = 0.0054 \, \text{kg} \), \( T_2 = 273.15 \, \text{K} \), and \( T_1 = 773.15 \, \text{K} \). Substituting:  
+\[
+\Delta U = 0.633 \cdot 0.0054 \cdot (773.15 - 273.15) = 3.161498 \, \text{kJ}.
+\]  
+
+Finally, substituting into the formula for \( Q_{12} \):  
+\[
+Q_{12} = 3.161498 + 0.284 = 3.366 \, \text{kJ}.
+\]
+
+The final ice fraction \( x_{\text{ice},2} \) is calculated using the following relationships:  
+
+1. The ice mass fraction \( x_{\text{ice}} \) is defined as:  
+\[
+x_{\text{ice}} = \frac{m_{\text{ice}}}{m_{\text{EW}}}
+\]  
+
+2. The total energy change \( \Delta U \) is zero, and the internal energy change of the ice-water mixture (\( \Delta U_{\text{EW}} \)) is equal to the internal energy change of the gas (\( \Delta U_g \)):  
+\[
+\Delta U_g = \Delta U_{\text{EW}}
+\]  
+
+3. The internal energy change of the ice-water mixture is expressed as:  
+\[
+\Delta U_{\text{EW}} = 3.16 \times 10^3 + U_{1,\text{EW}} = U_{2,\text{EW}}
+\]  
+
+4. Using the energy balance:  
+\[
+Q_{12} = -3.16 \times 10^3 + 1 - 0.6 \cdot 45 + 0.6 \cdot (-333 + 158 + 0.6 \cdot 45) = -546.56 \, \text{kJ}
+\]  
+
+From Table 1:  
+\[
+U_{2,\text{EW}} - U_{1,\text{EW}} = -546.56 + 0.083
+\]  
+\[
+U_{\text{ice}} - U_{\text{liquid}} = -333.442 + 0.083
+\]  
+
+5. The internal energy change is expressed as:  
+\[
+\Delta U = G_{12} + U_{12}
+\]  
+
+6. The internal energy of state 2 is calculated as:  
+\[
+\Delta U_{2,\text{EW}} = \frac{1500}{m} \rightarrow U_2 = \frac{1500}{m} + U_1
+\]  
+
+7. The internal energy of state 2 is further expanded:  
+\[
+U_2 = U_{\text{fluid}} + x_2 (U_{\text{ice}} - U_{\text{fluid}})
+\]  
+\[
+U_1 = -0.6 \cdot 45 + 0.6 \cdot (-333 + 158 + 0.6 \cdot 45) = -200.083
+\]  
+
+8. The ice fraction \( x_2 \) is calculated as:  
+\[
+x_2 = \frac{Q_{12} + U_1 - U_{\text{fluid}}}{U_{\text{ice}} - U_{\text{fluid}}}
+\]  
+\[
+x_2 = \frac{-1500}{0.1} - 200.083 + 0.083}{-333.442 + 0.083}
+\]  
+
+Finally, it is concluded that:  
+\[
+x_{\text{ice},2} \text{ is greater than } 0.6 \text{ since the temperature increases.}
+\]

@@ -1,0 +1,71 @@
+
+``````latex
+
+
+\section*{Problem 2}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a plot with the x-axis labeled as $s$ in $\frac{kJ}{kg}$ and the y-axis labeled as $T$ in $K$. There are three curves labeled as "isobar" with the following labels: $p_0 = 0,15 \, \text{bar}$, $p_1 = p_5$, and $p_2 = p_5$. The curves are connected by lines labeled as follows:
+    \begin{itemize}
+        \item Point 1 to Point 2 labeled as "isotrop"
+        \item Point 2 to Point 3 labeled as "isobar"
+        \item Point 3 to Point 4 labeled as "isotrop"
+        \item Point 4 to Point 5 labeled as "isobar"
+        \item Point 5 to Point 6 labeled as "isotrop"
+    \end{itemize}
+    The points are connected in a cycle, starting and ending at the same point on the $p_0 = 0,15 \, \text{bar}$ curve.
+\end{description}
+
+\subsection*{b)}
+
+\begin{align*}
+    T_5 &= 431,9 \, K, \quad p_5 = 0,5 \, \text{bar}, \quad w_5 = 720 \, \frac{m}{s} \\
+    5-6 &\text{ adiabatisch reversibel} \rightarrow \text{isentrop} \quad k = 1,4 \quad p_0 = p_6 \\
+    T_6 &\text{ über Polytrop} \quad T_6 = \left( \frac{p_6}{p_5} \right)^{\frac{k-1}{k}} \cdot T_5 = 328,1 \, K \\
+    \text{Schubdüse:} &\quad W = 0 \quad Q = 0, \text{ adiabatisch} \\
+    \text{Stationär:} &\quad 0 = h_e - h_a + \frac{w_e^2 - w_a^2}{2} \\
+    &\quad 0 = h_e - h_a + \frac{w_e^2}{2} - \frac{w_a^2}{2} \\
+    &\quad \frac{w_6^2}{2} = h_e - h_a + \frac{w_e^2}{2} \\
+    &\quad w_6 = \sqrt{2 \cdot (h_e - h_a) + w_e^2} \\
+    &\quad 1,2 \sqrt{} \\
+    &\quad \approx 507,2 \, \frac{m}{s}
+\end{align*}
+
+\begin{description}
+    \item[Additional Notes:] 
+    \begin{itemize}
+        \item $c_p \text{ konstant!}$
+        \item $c_p \text{ ideal} = 1006 \, \frac{J}{kg \cdot K}$
+        \item $c_p: c_p (T_5 - T_6) = 104432 \, \frac{J}{kg}$
+    \end{itemize}
+\end{description}
+
+``````latex
+
+
+\section*{Student Solution}
+
+\subsection*{c)}
+\begin{align*}
+\Delta e_{xstr} &= e_{xstr,6} - e_{xstr,0} \\
+&= 30^\circ C \quad \text{(Auf 30°C bezogen)} \\
+\text{Energieänderung:} \quad &= C(h_6 - h_0 - T_0 (s_6 - s_0) + \left( \frac{w_0^2}{2} - \frac{w_0^2}{2} \right)) \\
+&= 120,8 \frac{kJ}{kg} \quad \text{(PO=R6)} \\
+\text{(Ideales Gas!)} \quad T_0 &= 273,15 K \\
+C_p \mu (T_6 - T_0) &= 85,46 \frac{kJ}{kg} \\
+&= 30,14 \frac{kJ}{kg \cdot K} \\
+s_6 - s_0 &= h \left( \frac{T_0}{T_0} \right) \quad \text{(Polytrop)} \\
+\end{align*}
+
+\subsection*{d)}
+\text{Erweit des Teilsystems $\rightarrow$ Gesamtsystem!} \\
+\text{Energiebilanz:} \quad \Theta = \dot{X} (\Delta e_{xstr}) + (1 - \frac{T_0}{T}) \dot{Q} - \dot{W} + \dot{E}_{x,vol} \\
+\dot{E}_{x,vol} &= -\dot{e}_{xstr} + C \left( \frac{T_0}{T} \right) - 98 \\
+&= 948,8 \text{kW} \\
+&= 115,1 \frac{kJ}{kg} \quad \text{(polytrop, da isotherm)} \\
+&= 120,8 \\
+``````latex
+
+

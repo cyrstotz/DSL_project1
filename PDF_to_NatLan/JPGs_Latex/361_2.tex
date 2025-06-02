@@ -1,0 +1,64 @@
+TASK 2a  
+A graph is drawn representing the process in a \( T \)-\( s \) diagram. The graph includes labeled states \( 0 \), \( 2 \), \( 5 \), and \( 6 \), with arrows indicating transitions between these states. The process includes isobars and curves, with dashed lines showing the transitions.  
+
+Below the graph, the following values are provided:  
+\[
+T_0 = -30^\circ\text{C}, \quad p_0 = 0.191 \, \text{bar}, \quad p_1 > p_0, \quad p_2 > p_1
+\]
+
+---
+
+TASK 2b  
+The steady-flow energy equation is written as:  
+\[
+0 = \dot{m} \left( h_e - h_a + \frac{w_e^2 - w_a^2}{2} \right) + Q - W
+\]  
+For an adiabatic process (\( Q = 0 \)):  
+\[
+h_e - h_a = c_p (T_e - T_a), \quad \frac{w_e^2}{2} = \dot{m} \frac{w_e^2}{2}
+\]  
+The enthalpy difference is expressed as:  
+\[
+h_e - h_a = \int c_p dT = c_p (T_e - T_a)
+\]  
+
+The outlet velocity \( w_e \) is calculated using:  
+\[
+w_e^2 = 2 \left[ c_p (T_2 - T_1) + \frac{w_c^2}{2} \right]
+\]  
+Substituting values:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}} = 431.9 \left( \frac{0.191}{0.5} \right)^{\frac{1.4 - 1}{1.4}} = 323.075 \, \text{K}
+\]  
+
+\[
+w_e^2 = 2 \left[ c_p (T_2 - T_1) + \frac{w_c^2}{2} \right] = 257.28 \, \text{m/s}^2
+\]  
+Final result:  
+\[
+w_e = 507.24 \, \text{m/s}
+\]
+
+---
+
+TASK 2c  
+The mass-specific increase in flow exergy is calculated as:  
+\[
+\Delta ex_{\text{flow}} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2 - w_0^2}{2}
+\]  
+Breaking down the terms:  
+\[
+h_6 - h_0 = c_p (T_6 - T_0), \quad s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+
+Substituting values:  
+\[
+h_6 - h_0 = c_p (T_6 - T_0) = 1.006 \cdot (323.075 - 243.15) = 126.805 \, \text{kJ/kg}
+\]  
+\[
+s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+Final result:  
+\[
+\Delta ex_{\text{flow}} = 126.805 \, \text{kJ/kg}
+\]

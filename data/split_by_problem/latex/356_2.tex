@@ -1,0 +1,116 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph:] The graph is a Temperature-Entropy (T-S) diagram. The vertical axis is labeled \( T \) with units in brackets \([U]\). The horizontal axis is labeled \( S \) with units in brackets \([S]\). The graph contains several curves and points:
+    \begin{itemize}
+        \item Point 0 at the bottom left.
+        \item Point 1 directly above point 0, labeled "isentrop".
+        \item Point 2 to the right of point 1, labeled "isentrop".
+        \item Point 3 above point 2, labeled "adiabat + irreversibel".
+        \item Point 4 to the left of point 3, labeled "isobar".
+        \item Point 5 below point 4, labeled "isobar".
+        \item Point 6 below point 5, labeled "isentrop".
+    \end{itemize}
+    The points are connected by arrows indicating the direction of the process:
+    \begin{itemize}
+        \item An arrow from point 0 to point 1.
+        \item An arrow from point 1 to point 2.
+        \item An arrow from point 2 to point 3.
+        \item An arrow from point 3 to point 4.
+        \item An arrow from point 4 to point 5.
+        \item An arrow from point 5 to point 6.
+    \end{itemize}
+    The temperature at point 0 is marked as 243.15.
+\end{description}
+
+\subsection*{b)}
+
+\begin{align*}
+    W_6 \text{ und } T_6 = ? \\
+    W_5 &= 220 \frac{m}{s} \\
+    p_0 &= p_c = 0.191 \text{ bar} \\
+    p_5 &= 0.5 \text{ bar} \\
+    T_5 &= 431.9 \, U \\
+    \text{ideales Gas} \Rightarrow \frac{T_6}{T_5} &= \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} \\
+    \Rightarrow T_6 &= \left( \frac{p_6}{p_5} \right)^{\frac{0.4}{1.4}} \cdot T_5 = 328.0746565 \, U
+\end{align*}
+
+``````latex
+
+stationärer Prozess
+
+\[
+\Rightarrow \dot{m}_{\text{ges}} (\Delta h + \frac{\omega_G^2 - \omega_5^2}{2}) + \sum_j \dot{Q}_j^0 - \sum_n \dot{W}_n^0 = 0
+\]
+
+\[
+\Rightarrow \Delta h = \frac{\omega_0^2 - \omega_5^2}{2}
+\]
+
+\[
+\Delta h = \int_{T_5}^{T_G} c_p dT = c_p ( \ln(T_G) - \ln(T_5) ) = 
+\]
+
+\[
+= -0,27 + 66024 \frac{K}{J}
+\]
+
+\[
+0,27 \cdot 66024 \cdot 2 + \omega_5^2 = \omega_G^2 = 48400,553 \frac{m^2}{s^2}
+\]
+
+\[
+\Rightarrow \omega_G = 
+\]
+
+\[
+\Delta h = \int_{T_5}^{T_G} c_p dT = c_p ( T_G - T_5 ) = -104,448 \frac{K}{J}
+\]
+
+\[
+\Rightarrow \Delta h \cdot 2 + \omega_5^2 = \omega_G^2 = 252294,912 \frac{m^2}{s^2}
+\]
+
+\[
+\omega_G = 504,2454159 \frac{m}{s}
+\]
+
+``````latex
+
+\section*{Aufgabe 2}
+
+c) $\Delta e_{x,str} = e_{x,str,6} - e_{x,str,0} = ?$
+
+\[
+\Delta e_{x,str,6} = \Delta h_{0G} - T_0 (s_6 - s_0) + \Delta \frac{\omega^2_6 - \omega^2_0}{2}
+\]
+
+\[
+\Delta h_{0G} = \int_{T_0}^{T_6} c_p dT = c_p (T_6 - T_0) = 360 \frac{J}{kgK} (273,15 K - 288,15 K) = -5400 \frac{J}{kg}
+\]
+
+\[
+\Delta s_{60} = \int_{T_0}^{T_6} \frac{c_p}{T} dT - R \ln \left( \frac{p_6}{p_0} \right) = c_p \left( \ln(T_6) - \ln(T_0) \right) - R \ln \left( \frac{p_6}{p_0} \right)
+\]
+
+\[
+= 360 \frac{J}{kgK} \left( \ln(288,15 K) - \ln(273,15 K) \right) - 287 \frac{J}{kgK} \ln \left( \frac{1}{1} \right) = 6,30135 \frac{J}{kgK}
+\]
+
+\[
+\Delta \frac{\omega^2_6 - \omega^2_0}{2} = \frac{\omega^2_6 - \omega^2_0}{2} = 102,648 \frac{J}{kg}
+\]
+
+\[
+\Rightarrow \Delta e_{x,str} = \Delta h - T_0 \Delta s + \Delta \frac{\omega^2}{2} = 118,426 \frac{J}{kg}
+\]
+
+``````latex
+
+

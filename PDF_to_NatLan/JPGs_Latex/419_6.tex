@@ -1,0 +1,53 @@
+TASK 4a  
+A graph is drawn with the x-axis labeled as \( T [K] \) and the y-axis labeled as \( h [\text{kJ}] \). The graph includes several curves and points, with labels indicating states \( 1 \) and \( 2 \). The curves appear to represent thermodynamic processes, possibly phase transitions or heat transfer, with arrows indicating directionality.  
+
+TASK 4b  
+The energy balance equation is written as:  
+\[
+\frac{dE}{dt} = \dot{m} \cdot h_{\text{inlet}} + \dot{Q} + \dot{W}
+\]  
+Simplified to:  
+\[
+Q = \dot{m}(h_2 - h_3) + \dot{W}
+\]  
+
+The enthalpy difference \( h_2 - h_3 \) is calculated using tabulated values:  
+\[
+h_2 = h_{\text{g}}(T_2)
+\]  
+Where \( T_2 = -6^\circ\text{C} \).  
+
+From the table:  
+\[
+h_{\text{g}}(4) = 244.9 \, \text{kJ/kg}, \quad h_{\text{g}}(8) = 292.54 \, \text{kJ/kg}
+\]  
+Interpolating for \( h_2 \):  
+\[
+h_2 = 292.54 + \frac{-8}{-4} \cdot (244.9 - 292.54)
+\]  
+\[
+h_2 = 245.72 \, \text{kJ/kg}
+\]  
+
+The vapor quality \( s_2 \) is calculated:  
+\[
+s_2 = 0.925 + \frac{8 - 6}{8 - 4} \cdot (0.9239 - 0.9253)
+\]  
+\[
+s_2 = 0.9226
+\]  
+
+TASK 4c  
+At \( 8 \, \text{bar} \), interpolation is performed using tabulated values:  
+\[
+s_2 = 0.9226, \quad s_{\text{sat}} = 0.8066, \quad s_{40} = 0.9376
+\]  
+Interpolating for \( h_3 \):  
+\[
+h_3 = 264.75 + \frac{0.9276 - 0.8066}{0.9376 - 0.8066} \cdot (283.15 - 264.75)
+\]  
+\[
+h_3 = 268.82 \, \text{kJ/kg}
+\]  
+
+No further content is visible.

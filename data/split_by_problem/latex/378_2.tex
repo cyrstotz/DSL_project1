@@ -1,0 +1,103 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a Temperature-Entropy (T-s) diagram. The x-axis is labeled \( s \left[ \frac{\text{kJ}}{\text{kg K}} \right] \) and the y-axis is labeled \( T \left[ \text{K} \right] \). There are six points labeled 1 through 6. The graph shows several isobars (constant pressure lines) labeled \( p_0 \), \( p_1 \), \( p_2 \), \( p_3 \), and \( p_4 \). The isobars are curved lines that generally slope upwards to the right. The process path is indicated by arrows connecting the points in the following sequence: 1 to 2, 2 to 3, 3 to 4, 4 to 5, and 5 to 6. The path from 1 to 2 and 3 to 4 is vertical, indicating an isentropic process (constant entropy). The path from 2 to 3 and 4 to 5 is horizontal, indicating an isothermal process (constant temperature). The path from 5 to 6 is a downward sloping line, indicating a polytropic process. There are also dashed lines indicating the saturation lines.
+\end{description}
+
+\subsection*{b)}
+
+\textbf{Schubdüse:} \\
+\( v_5 = 220 \frac{m}{s} \quad p_5 = 0.56 \, \text{bar} \quad T_1 = 431 \, \text{K} \)
+
+\[
+\frac{d \dot{E}}{d t} = \dot{m}_5 \left( h_5 - h_6 + \frac{v_6^2 - v_5^2}{2} \right) + \dot{Q}_{zu} - \dot{Y}_{v}
+\]
+
+\text{reversible \& adiabatic Schubdüse, isentrop mit } n = 1.4
+
+\[
+\Delta h = c_p (T_5 - T_c) \quad \Rightarrow \quad \Delta h = 10.4 \cdot 4.88 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+T_c = T_5 \left( \frac{p_0}{p_1} \right)^{\frac{n-1}{n}} = 328.07 \, \text{K}
+\]
+
+\[
+h_5 = \dot{m} \cdot \dot{m}_k \cdot t \cdot \dot{m}_5 \quad \Rightarrow \quad \dot{m}_k = \dot{m}_k \cdot t \cdot \dot{m}_5
+\]
+
+\[
+W_q = \sqrt{v_e^2 + \Delta h \cdot 2} = 498.29 \frac{m}{s}
+\]
+
+``````latex
+
+
+c) 
+\[
+\dot{e}_{x1,sto} = \int_{v_0}^{v} \frac{v_0 v}{2} dv \quad T_0, \text{pro bezogen auf für Enge} \quad \Rightarrow \dot{e}_{x1,sto} = 20 \frac{kJ}{kg}
+\]
+
+\[
+\dot{e}_{x1,sto} = h_1 - h_0 - T_0 (s_1 - s_0) + \frac{v_0^2}{2}
+\]
+
+\[
+= c_p (T_0 - T_0) - T_0 \left( c_p \ln \left( \frac{T_0}{T_0} \right) \right) - R \ln \left( \frac{p}{p_0} \right) + \frac{v_0^2}{2}
+\]
+
+\[
+= 85.149 \frac{kJ}{kg} - 73.27 \frac{kJ}{kg} + 124.448 \frac{kJ}{kg} = 136.605 \frac{kJ}{kg}
+\]
+
+\[
+\Rightarrow \Delta \dot{e}_{x1,sto} = \underline{116.60 \frac{kJ}{kg}}
+\]
+
+d) 
+\[
+\dot{e}_{x1} \frac{d \dot{E}_x}{dt} = \dot{E}_{x1,dir} + \dot{E}_{x1,Q} - \left[ \dot{V}_u \left( e_0 - \frac{\Delta U(t)}{dt} \right) \right] = \dot{E}_{x1,vel}
+\]
+
+\[
+\Rightarrow \dot{e}_{x1,vel} = \dot{e}_{x1,dir} + \dot{e}_{x1,Q}
+\]
+
+\[
+\dot{e}_{x1,Q} = \frac{\dot{E}_{x1,Q}}{\dot{m}} = \frac{1}{\dot{m}} \left( 1 - \frac{T_0}{T} \right) \cdot \dot{Q} = \left( 1 - \frac{T_0}{T} \right) q \cdot y
+\]
+
+\[
+q = 1785 \frac{kJ}{kg} \quad T = 1725 K
+\]
+
+\[
+\dot{e}_{x1,vel} = 116.60 \frac{kJ}{kg} + \left( 869.58 \cdot \frac{1}{6.293} \right) \frac{kJ}{kg}
+\]
+
+\[
+= \underline{270.67 \frac{kJ}{kg}}
+\]
+
+\[
+y \text{inges} = \dot{m}
+\]
+
+\[
+\dot{m}_{inges} = \dot{m}_K + 5.253 \dot{m}_K
+\]
+
+\[
+\dot{m}_K = \frac{\dot{m}}{6.293} \text{ inges}
+\]
+
+``````latex
+
+

@@ -1,0 +1,135 @@
+
+``````latex
+
+
+\section*{1. Energy balance}
+
+\subsection*{a) 1st. FP}
+\begin{align*}
+Q &= \dot{m} [h_e - h_a + \frac{v_e^2}{2} - \frac{v_a^2}{2} + \sum \dot{Q} - \sum \dot{W}] \\
+&= \dot{m} (h_e - h_a) + \dot{Q} - \dot{Q}_{\text{aus}} \\
+\dot{Q}_{\text{aus}} &= \dot{m} (h_e - h_a) + \dot{Q}_r \\
+&= 0.3 \frac{\text{kg}}{\text{s}} (h_e (T = 70^\circ \text{C}) - h_a (T = 400^\circ \text{C})) + 100 \text{kW} \\
+&= 0.3 (292.93 - 419.04) + 100 \text{kW} \\
+&\approx 62.182 \text{kW}
+\end{align*}
+
+\subsection*{b) Thermo. Mittel temp.}
+\begin{align*}
+\tilde{T} &= \frac{\int_{S_a}^{S_e} T dS}{S_a - S_e} \\
+&= \frac{c_w \ln \left( \frac{T_a}{T_e} \right)}{c_w \ln \left( \frac{T_a}{T_e} \right)} \\
+&= \frac{h_a - h_e}{S_a - S_e} = \frac{c_w (T_a - T_e) + v (p_2 / p_1)}{c_w \ln \left( \frac{T_a}{T_e} \right)} \\
+&= \frac{10}{\ln \left( \frac{292.15}{288.15} \right)} \approx 293.121 \text{K}
+\end{align*}
+
+\subsection*{c) Entropie bilanz}
+\textbf{Geschlossenes System:}
+\begin{align*}
+\Delta S &= S_e - S_a + \dot{S}_{\text{erz}} \\
+\Delta S^2 &= \sum \frac{\dot{Q}_j}{T_j} + \dot{S}_{\text{erz}}
+\end{align*}
+
+\textbf{Q}_{\text{aus}}:
+\begin{align*}
+\dot{S}_{\text{erz}} &= -\dot{Q}_{\text{aus}} \left( \frac{1}{T_R} - \frac{1}{T} \right) = -65 \text{kW} \cdot \left( \frac{1}{373.15 \text{K}} - \frac{1}{275 \text{K}} \right) \\
+&= 0.04615 + 46.15 \frac{J}{\text{kg}}
+\end{align*}
+
+``````latex
+
+
+\section*{d) Energie bilanz Halbleiters}
+
+\[
+\Delta E = m_2 u_2 - m_1 u_1 = \sum \Delta m_i \left[ h_i + \frac{v_i^2}{2} + g z_i \right] + \sum Q_i - \sum W_i - \sum \mu_i n_i
+\]
+
+\[
+= (m_1 + \Delta m) u_2 - m_1 u_1 - \Delta m \, h_e + Q_{12}
+\]
+
+\[
+m_1 u_1 + \Delta m u_2
+\]
+
+\[
+- \Delta m \, \cancel{h_e}
+\]
+
+\[
+\Delta m = \frac{Q_{12} + m_1 u_1 - m_1 u_2}{u_2 - h_e} \quad \text{mit}
+\]
+
+\[
+= 2.7 \cdot 10^6 \, \text{kg}
+\]
+
+\[
+= 3924.3 \, \text{kg}
+\]
+
+\[
+Q_{12} = 35 \cdot 10^6 \, \text{J} = 35 \cdot 10^6 \, \text{J}
+\]
+
+\[
+m_1 = 5755 \, \text{kg}
+\]
+
+\[
+u_1 = u_f (100^\circ \text{C}) + x \, u_g (100^\circ \text{C})
+\]
+
+\[
+h_e = h_e (20^\circ \text{C})
+\]
+
+\[
+u_2 = u_f (70^\circ \text{C})
+\]
+
+\[
+\text{stimmt dabei:}
+\]
+
+\[
+u_1 = 418.94 + 0.005 (2506.5 - 418.94)
+\]
+
+\[
+u_2 = 292.75
+\]
+
+\[
+h_e = 83.96
+\]
+
+\section*{e)}
+
+\[
+\Delta S = m_2 s_2 - m_1 s_1
+\]
+
+\[
+= 9355 \, \text{kg} \, s_f (70^\circ \text{C}) - 5755 \, \text{kg} \, s_1
+\]
+
+\[
+= 1237.85 \, \text{b}
+\]
+
+\[
+s_1 = s_f (100^\circ \text{C}) + x \, s_g (100^\circ \text{C})
+\]
+
+\[
+= 1.3069 + 0.0205 \cdot (7.3549 - 1.3069)
+\]
+
+\[
+= 1.33714
+\]
+
+``````latex
+
+

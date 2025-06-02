@@ -1,0 +1,62 @@
+TASK 2c  
+The change in flow exergy (\( \Delta ex_{\text{flow}} \)) is calculated as the difference between the specific exergy at the outlet and the inlet. The equation is given as:  
+
+\[
+\Delta ex_{\text{flow}} = E_{\text{specific,6}} - E_{\text{specific,0}}
+\]
+
+Expanding the terms:  
+
+\[
+\Delta ex_{\text{flow}} = \dot{m}_6 \left( h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2} - \frac{w_0^2}{2} \right)
+\]
+
+Substituting the enthalpy difference (\( h_6 - h_0 \)) and entropy difference (\( s_6 - s_0 \)):  
+
+\[
+\Delta ex_{\text{flow}} = \dot{m}_6 \left( h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2} - \frac{w_0^2}{2} \right)
+\]
+
+The equation for \( h_0 \) is derived as:  
+
+\[
+h_0 = h_6 - h_0 = c_p (T_6 - T_0) = 85.03 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The reference temperature \( T_0 \) is given as:  
+
+\[
+T_0 = 293.15 \, \text{K}
+\]
+
+The entropy difference (\( s_6 - s_0 \)) is calculated using:  
+
+\[
+s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right)
+\]
+
+Simplifying further:  
+
+\[
+s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) = 0.307 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+The kinetic energy difference is calculated as:  
+
+\[
+\frac{w_6^2}{2} - \frac{w_0^2}{2} = 44.01 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+Finally, the full expression for \( \Delta ex_{\text{flow}} \) is:  
+
+\[
+\Delta ex_{\text{flow}} = \dot{m}_6 \left( c_p (T_6 - T_0) - T_0 \ln \left( \frac{T_6}{T_0} \right) + \frac{w_6^2}{2} - \frac{w_0^2}{2} \right)
+\]
+
+The numerical result is:  
+
+\[
+\Delta ex_{\text{flow}} = 56.25 \cdot \dot{m}_6 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+No diagrams or figures are present on this page.

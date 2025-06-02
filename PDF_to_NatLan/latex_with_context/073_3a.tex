@@ -1,0 +1,39 @@
+The gas pressure \( p_{g,1} \) is calculated using the following equation:  
+\[
+p_{g,1} = p_{\text{amb}} + \frac{m_K \cdot g}{A} + \frac{m_{\text{EW}} \cdot g}{A} + p_{\text{EW}}
+\]  
+Where:  
+- \( p_{\text{EW}} \) is given as \( 1.1 \, \text{bar} \) (assuming \( T_{\text{EW}} = 0^\circ\text{C} \)).  
+- The cross-sectional area \( A \) is calculated as:  
+\[
+A = \pi \left( \frac{d}{2} \right)^2 = \pi \left( \frac{0.1 \, \text{m}}{2} \right)^2 = 0.00785 \, \text{m}^2
+\]  
+Substituting values:  
+\[
+p_{g,1} = 1 \, \text{bar} + \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{0.00785 \, \text{m}^2} + \frac{0.1 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{0.00785 \, \text{m}^2} + 1.1 \, \text{bar}
+\]  
+\[
+p_{g,1} = 2.8 \, \text{bar}
+\]  
+
+Next, the gas mass \( m_g \) is determined using the ideal gas law:  
+\[
+p_{g,1} V_{g,1} = m_g R T_{g,1}
+\]  
+Where \( R \) is calculated as:  
+\[
+R = \frac{\bar{R}}{M_g} = \frac{8.314 \, \text{J/mol·K}}{0.05 \, \text{kg/mol}} = 166.28 \, \text{J/kg·K}
+\]  
+Rearranging for \( m_g \):  
+\[
+m_g = \frac{p_{g,1} V_{g,1}}{R T_{g,1}}
+\]  
+Substituting values:  
+\[
+m_g = \frac{2.8 \cdot 10^5 \, \text{Pa} \cdot 3.14 \cdot 10^{-3} \, \text{m}^3}{166.28 \, \text{J/kg·K} \cdot 773.15 \, \text{K}}
+\]  
+\[
+m_g = 0.006833 \, \text{kg} = 6.84 \, \text{g}
+\]  
+
+---

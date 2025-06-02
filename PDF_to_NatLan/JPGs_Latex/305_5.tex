@@ -1,0 +1,48 @@
+TASK 3d
+
+The energy balance equation is written as follows:
+\[
+Q_{12} = x_{\text{ice},2} m_{\text{EW}} u_{\text{ice},2} + (1 - x_{\text{ice},2}) m_{\text{EW}} u_{\text{w},2} + m_g u_{g,2} - x_{\text{ice},1} m_{\text{EW}} u_{\text{ice},1} - (1 - x_{\text{ice},1}) m_{\text{EW}} u_{\text{w},1} - m_g u_{g,1}
+\]
+
+Given:
+\[
+m_{\text{EW}} = 0.1 \, \text{kg}, \quad u_{\text{ice},2} = u_{\text{ref}}(0.033^\circ\text{C}) = -333.442 \, \text{kJ/kg}
+\]
+\[
+u_{\text{w},2} = u_{\text{liquid}}(0.033^\circ\text{C}) = -0.033 \, \text{kJ/kg}
+\]
+\[
+u_{\text{ice},1} = u_{\text{ref}}(0^\circ\text{C}) = -333.455 \, \text{kJ/kg}
+\]
+\[
+u_{\text{w},1} = u_{\text{liquid}}(0^\circ\text{C}) = -0.045 \, \text{kJ/kg}
+\]
+
+The equation is expanded:
+\[
+Q_{12} = x_{\text{ice},2} m_{\text{EW}} (u_{\text{w},2} - u_{\text{ice},2}) = m_{\text{EW}} u_{\text{w},2} - x_{\text{ice},1} m_{\text{EW}} u_{\text{ice},1} - (1 - x_{\text{ice},1}) m_{\text{EW}} u_{\text{w},1} + m_g c_V (T_2 - T_1)
+\]
+
+Substituting values:
+\[
+x_{\text{ice},2} = \frac{0.1 \, \text{kg} (-0.033 \, \text{kJ/kg}) + 0.6 \cdot 0.1 \, \text{kg} (-333.455 \, \text{kJ/kg}) - (1 - 0.6) \cdot 0.1 \, \text{kg} (-0.045 \, \text{kJ/kg})}{0.1 \, \text{kg} (-0.033 + 333.442) \, \text{kJ/kg}}
+\]
+\[
++ \frac{0.633 \, \text{kJ/kg·K} \cdot 0.00349489 \, \text{kg} (275.173 \, \text{K} - 773.15 \, \text{K})}{0.1 \, \text{kg} (-0.033 + 333.442) \, \text{kJ/kg}}
+\]
+
+TASK 3e
+
+The entropy balance equation is written as:
+\[
+Q_{12} = x_2 m_{\text{EW}} u_{\text{ice},2} - x_2 m_{\text{EW}} u_{\text{ice},1} + (1 - x_2) m_{\text{EW}} u_{\text{w},2} - (1 - x_2) m_{\text{EW}} u_{\text{w},1}
+\]
+
+Substituting values:
+\[
+x_2 = \frac{1.5 \, \text{kJ} - 0.6 \cdot 0.1 \, \text{kg} (-333.455 \, \text{kJ/kg})}{0.1 \, \text{kg} (-0.033 + 333.442) \, \text{kJ/kg}}
+\]
+\[
+= 0.52
+\]

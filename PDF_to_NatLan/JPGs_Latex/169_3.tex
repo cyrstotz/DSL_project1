@@ -1,0 +1,60 @@
+TASK 2c  
+The mass-specific increase in flow exergy \( \Delta ex_{\text{flow}} \) is calculated using the following equation:  
+\[
+\Delta ex_{\text{flow}} = h_6 - h_0 - T_0 \cdot (s_6 - s_0) + \Delta ke
+\]
+where \( \Delta ke = \frac{w_6^2 - w_0^2}{2} \).  
+
+Given from Task 2:  
+\[
+h_0 - h_6 = c_p \cdot (T_0 - T_6) = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \cdot (243.15 \, \text{K} - 340 \, \text{K})
+\]
+\[
+T_0 = -30^\circ\text{C} + 273.15 = 243.15 \, \text{K}
+\]
+\[
+h_0 - h_6 \approx -97.43 \, \frac{\text{kJ}}{\text{kg}}
+\]
+\[
+s_0 - s_6 = 0, \text{ since the process is adiabatic and reversible.}
+\]
+
+Substituting into the equation for \( \Delta ex_{\text{flow}} \):  
+\[
+\Delta ex_{\text{flow}} = (h_0 - h_6) + \frac{w_6^2 - w_0^2}{2}
+\]
+\[
+= -97.43 \, \frac{\text{kJ}}{\text{kg}} + \frac{200^2 \, \frac{\text{m}^2}{\text{s}^2} - 510^2 \, \frac{\text{m}^2}{\text{s}^2}}{2}
+\]
+\[
+= -97.43 \, \frac{\text{kJ}}{\text{kg}} + \frac{200^2 - 510^2}{2} \, \frac{\text{m}^2}{\text{s}^2}
+\]
+\[
+\approx +207.48 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+TASK 2d  
+The mass-specific exergy destruction \( ex_{\text{dest}} \) in the engine is calculated using the exergy balance equation:  
+\[
+\sum \dot{e}_{\text{in}} - \sum \dot{e}_{\text{out}} = \dot{e}_{\text{dest}}
+\]
+where:  
+\[
+\dot{e}_{\text{in}} = \sum \left( \frac{T_C}{T} \cdot \dot{Q} \right) + \sum \dot{W}_{\text{in}} - \dot{e}_{\text{out}}
+\]
+
+For the reversible adiabatic process:  
+\[
+\dot{e}_{\text{in}} = -\Delta ex_{\text{flow}}
+\]
+\[
+\dot{e}_{\text{in}} = -207.48 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The equation simplifies for the adiabatic and reversible case, as heat transfer terms vanish:  
+\[
+ex_{\text{dest}} = -\Delta ex_{\text{flow}}
+\]
+\[
+ex_{\text{dest}} = -207.48 \, \frac{\text{kJ}}{\text{kg}}
+\]

@@ -1,0 +1,165 @@
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+\subsection*{a)}
+
+\[
+\frac{d\dot{E}}{dt} = \dot{m} (h_{\text{ein}} - h_{\text{aus}}) + \dot{Q}_{\text{ab}} - \dot{W}
+\]
+
+\begin{itemize}
+    \item A diagram is drawn here. It is a rectangular box with arrows pointing in and out.
+    \item The left side of the box is labeled $h_{\text{ein}}, \dot{m}_{\text{ein}}$.
+    \item The right side of the box is labeled $h_{\text{aus}}, \dot{m}_{\text{aus}}$.
+    \item The top side of the box is labeled $\dot{Q}_{\text{ab}}$ with an arrow pointing into the box.
+    \item The bottom side of the box is labeled $\dot{W}$ with an arrow pointing out of the box.
+\end{itemize}
+
+\[
+\Rightarrow \dot{Q}_{\text{ab}} = \dot{m} (h_{\text{aus}} - h_{\text{ein}})
+\]
+
+\[
+h_{\text{ein}} = h(70^\circ C, x=0) = h_f(70^\circ C) = 292.58 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_{\text{aus}} = h(100^\circ C, x=0) = h_f(100^\circ C) = 419.04 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\Rightarrow \dot{Q}_{\text{ab}} = 0.3 \frac{\text{kg}}{\text{s}} \cdot \left( 419.04 \frac{\text{kJ}}{\text{kg}} - 292.58 \frac{\text{kJ}}{\text{kg}} \right) = 37.818 \text{kW}
+\]
+
+\[
+\dot{Q}_{\text{ab}} = \dot{Q}_{\text{zu}} - \dot{Q}_{\text{aus}} \Rightarrow \dot{Q}_{\text{aus}} = 62.982 \text{kW}
+\]
+
+\subsection*{b)}
+
+\[
+\overline{T}_{\text{KF}} = \frac{\int_1^2 T \, ds}{s_2 - s_1}
+\]
+
+\[
+\frac{d\dot{S}}{dt} = \dot{m} (s_A - s_E) + \frac{\dot{Q}_{\text{zu}}}{\overline{T}} + s_{f,2}
+\]
+
+\[
+\dot{Q}_{\text{zu}} = \dot{q}_{\text{zu}} = (s_2 - s_1) \cdot \overline{T} \Rightarrow \overline{T} = \frac{\dot{q}_{\text{zu}}}{(s_2 - s_1)}
+\]
+
+\[
+\dot{q}_{\text{zu}} = \frac{Q_{\text{aus}}}{\dot{m}}
+\]
+
+``````latex
+
+
+\section*{Student Solution}
+
+\subsection*{b)}
+
+\[
+\overline{T} = \frac{\int_{a}^{e} T \, ds}{s_a - s_e}
+\]
+
+\[
+\frac{d\dot{Q}}{dt} = \dot{m} (s_e - s_a) + \frac{\dot{Q}_{zu}}{T} + \dot{S}_{erz}
+\]
+
+\textbf{Description of the figure:} There is an arrow pointing to the right labeled "Wärmeübertrager hoher".
+
+\[
+\frac{d\dot{Q}}{dt} = \dot{m} (h_e - h_a) + \dot{Q}_{zu} - \dot{W}
+\]
+
+\[
+\dot{m} = \frac{\dot{Q}_{zu}}{h_a - h_e}
+\]
+
+\[
+h_a - h_e = \Delta h = c_p^{(0)} (T_{a0} - T_e)
+\]
+
+\subsection*{c)}
+
+\[
+\dot{m} \overline{T}_{LF} = 295K, \quad \dot{Q}_{zu} = 65kW
+\]
+
+\[
+\frac{d\dot{Q}}{dt} = \dot{m} (s_e - s_a) + \frac{\dot{Q}_{zu}}{T} + \dot{S}_{erz}
+\]
+
+\[
+\dot{S}_{erz} = \dot{m} (s_{k} - s_{e}) + \frac{\dot{Q}_{zu}}{T}
+\]
+
+\[
+\dot{S}_{erz} = \frac{\dot{Q}_{zu}}{h_a - h_e} \left( s_{a} - s_{e} - \frac{1}{T} \right)
+\]
+
+\[
+= \dot{Q}_{zu} \left( \frac{\ln \left( \frac{T_a}{T_e} \right)}{(T_a - T_1)} - \frac{1}{T} \right) = 1.4118 \, \frac{kJ}{kg \cdot s}
+\]
+
+\[
+\Delta S = c_p \ln \left( \frac{T_2}{T_1} \right) - R \ln \left( \frac{p_2}{p_1} \right)
+\]
+
+``````latex
+
+
+\section*{A)}
+
+\begin{figure}[h!]
+\centering
+\begin{minipage}{0.5\textwidth}
+\centering
+\begin{description}
+\item[Description:] The figure is a rectangular box with two circular ends. There is an arrow pointing into the left circular end labeled $\dot{Q}_{ab}$ and another arrow pointing out of the right circular end labeled $\dot{Q}_A$. There is also an arrow pointing out of the side of the box labeled $\dot{Q}_{ab} = \text{losses}$.
+\end{description}
+\end{minipage}
+\end{figure}
+
+\begin{align*}
+1 \rightarrow 2 \quad & \dot{Q}_{ab} = \dot{Q}_A = 35 \text{MJ} \\
+\\
+\frac{dE}{dt} &= \dot{m} \left( h_{\text{wasser}} - h_{\text{wasser}} \right) + \dot{Q}_{ab} - \frac{v^2}{2} \\
+\\
+\Rightarrow \Delta E &= \dot{m} \left( h_{\text{eing}} - h_{\text{ausg}} \right) + Q_{ab,12} \\
+\\
+\Rightarrow \Delta E &= \Delta U = m_{\text{wasser}} \cdot U_1 - U_2 \\
+\\
+\text{where} \quad h_{\text{eing}} &= h_{\text{wasser}} + q_f (70^\circ C) = 4.18 \frac{\text{kJ}}{\text{kg}} \\
+\\
+U_2 &= h_{\text{ausg},1} + q_f (70^\circ C) = m \cdot 292.85 \frac{\text{kJ}}{\text{kg}} \\
+\\
+U_1 &= m_{\text{gas}} \cdot U_1 \Rightarrow U_1 &= U_f (120^\circ C) + \left( U_g (120^\circ C) - U_f (120^\circ C) \right) \cdot 0.005 \\
+&= 429.3728 \frac{\text{kJ}}{\text{kg}} \\
+\\
+\Rightarrow \Delta U &= -785.14 \text{kJ} \\
+\\
+\Rightarrow \dot{m}_{12} &= \frac{\Delta U - Q_{ab,12}}{h_{e,150} - h_{a,150}}
+\end{align*}
+
+``````latex
+
+
+\textbf{Kühlmittel:}
+
+\[
+c_p^s = \text{konst}
+\]
+
+\[
+\frac{d\dot{Q}}{dt} = \dot{m} \left( \Delta h \right) + \dot{Q}_v
+\]
+
+``````latex
+
+

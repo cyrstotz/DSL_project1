@@ -1,0 +1,32 @@
+The specific exergy destruction is calculated using the energy balance:  
+\[
+w_e = h_e - h_a + \frac{w_e^2 - w_a^2}{2}
+\]  
+
+Further calculations include:  
+\[
+w_A^2 = 2h_5 - 2h_6 + w_e^2 - 2w_e
+\]  
+\[
+w_A' = 2c_p (T_5 - T_6) + (1000 \, \text{m/s})^2 - 2w_e
+\]  
+\[
+w_s = 3.16 \, \text{m/s}
+\]
+
+The mass-specific exergy destruction \( \Delta ex_{\text{dest}} \) is calculated using the following formula:  
+\[
+\Delta ex_{\text{dest}} = (h_6 - h_0 - T_0(s_6 - s_0)) + \frac{1}{2} m w_6^2 - \frac{1}{2} m w_0^2
+\]  
+
+Further derivation includes:  
+\[
+\dot{m} \cdot \Delta ex_{\text{dest}} = c_p(T_6 - T_0) - T_0 \left( c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_0}{p_0} \right) \right) + \frac{w_6^2 - w_0^2}{2}
+\]  
+
+The solution for \( s_{\text{ext}} \) is given as:  
+\[
+s_{\text{ext}} = 14.413 \, \text{kJ/kg} + 110.050 \, \text{kJ/kg} = 269.18 \, \text{kJ/kg}
+\]  
+
+---

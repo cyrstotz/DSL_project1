@@ -1,0 +1,28 @@
+To determine the gas pressure \( p_{g,1} \) and mass \( m_g \) in state 1:  
+
+Since the ice-water mixture (EW) is incompressible, the pressure is calculated as:  
+\[
+p_{g,1} = \frac{m_g}{A} + p_{\text{atm}}
+\]  
+where \( A \) is the cross-sectional area of the cylinder.  
+
+The area \( A \) is calculated using the formula for the area of a circle:  
+\[
+A = \pi \left( \frac{D}{2} \right)^2 = \pi \left( \frac{0.1}{2} \right)^2 = \frac{\pi}{400} \, \text{m}^2
+\]  
+
+Substituting values:  
+\[
+p_{g,1} = \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{\frac{\pi}{400}} + 100000 \, \text{Pa} = 131396.54 \, \text{Pa}
+\]  
+
+Next, the mass \( m_g \) is calculated using the ideal gas law:  
+\[
+p V = R m T \quad \Rightarrow \quad m_g = \frac{p V}{R T}
+\]  
+where \( R = \frac{8.314 \, \text{J/mol·K}}{50 \, \text{kg/kmol}} = 166.28 \, \text{J/kg·K} \).  
+
+Substituting values:  
+\[
+m_g = \frac{131396.54 \cdot 0.00314}{166.28 \cdot 773.15} = 0.0034 \, \text{kg} = 3.4 \, \text{g}
+\]

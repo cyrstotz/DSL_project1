@@ -1,0 +1,35 @@
+Heat removed \( Q_{out,12} = 35 \, \text{MJ} \)  
+
+Energy balance equation:  
+\( m_2 \cdot u_2 - m_1 \cdot u_1 = \Delta m \cdot h_{ein} + Q \)  
+
+\( h_{ein} = h \, \text{at} \, 20^\circ \text{C}, \, \text{saturated liquid} = 83.96 \, \text{kJ/kg} \)  
+
+Mass at state 1:  
+\( m_1 = 5755 \, \text{kg} \)  
+
+Mass at state 2:  
+\( m_2 = m_1 + \Delta m \)  
+
+Specific internal energy at state 1:  
+\( u_1 = h = 679.04 \, \text{kJ/kg} + 0.005 \cdot (2676.1 - 400.05) \, \text{kJ/kg} = 680.33 \, \text{kJ/kg} \)  
+
+Specific internal energy at state 2:  
+\( u_2 = h = 418.94 \, \text{kJ/kg} + 0.005 \cdot (2500.5 - 612.95) \, \text{kJ/kg} = 429.38 \, \text{kJ/kg} \)  
+
+From Table A2:  
+\( u_2 = 292.95 \, \text{kJ/kg} \)  
+
+Rearranging the energy balance:  
+\( m_2 \cdot u_2 - m_1 \cdot u_1 - \Delta m \cdot h_{ein} = Q \)  
+
+Solving for \( \Delta m \):  
+\( \Delta m = \frac{Q + m_1 \cdot u_1 - m_2 \cdot u_2}{u_2 - h_{ein}} \)  
+
+Substituting values:  
+\( \Delta m = \frac{35000 \, \text{kJ} + 5755 \, \text{kg} \cdot 429.38 \, \text{kJ/kg} - 292.95 \, \text{kJ/kg}}{292.95 \, \text{kJ/kg} - 83.96 \, \text{kJ/kg}} \)  
+
+Final result:  
+\( \Delta m = 3924 \, \text{kg} \)  
+
+\( h_{ein} = 83.96 \, \text{kJ/kg} \)

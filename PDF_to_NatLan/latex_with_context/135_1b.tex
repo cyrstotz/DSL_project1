@@ -1,0 +1,25 @@
+(With \( Q_{\text{out}} = 65 \, \text{kW} \))  
+
+The thermodynamic mean temperature \( T_{\text{KF}} \) is derived using the entropy relation:  
+\[
+dH = T \, dS + V \, dp \quad \text{(isobaric process)}
+\]  
+\[
+dS = \frac{dH}{T}
+\]  
+
+Integrating over the temperature range:  
+\[
+T = \int_{s_a}^{s_e} T \, dS = \int_{T_e}^{T_a} \frac{dH}{T}
+\]  
+\[
+T = \frac{\int_{T_e}^{T_a} c_p \, dT}{\int_{T_e}^{T_a} \frac{1}{T} \, dT}
+\]  
+
+Substituting values:  
+\[
+T = c_p \cdot \frac{(T_a - T_e)}{\ln \left( \frac{T_a}{T_e} \right)}
+\]  
+\[
+T = 2.94 \cdot \frac{(298.15 - 288.75)}{\ln \left( \frac{298.15}{288.75} \right)} = 293.72 \, \text{K}
+\]

@@ -1,0 +1,49 @@
+TASK 1d  
+The reactor mass at state 1 is \( m_{\text{total},1} = 5755 \, \text{kg} \) at \( T = 100^\circ\text{C} \) with steam quality \( x = 0.005 \).  
+
+At \( T = 70^\circ\text{C} \), the reactor mass at state 2 is given as \( m_{\text{total},2} = m_{\text{total},1} + \Delta m_{12} \).  
+
+Using the energy balance:  
+\[
+m_{\text{total},2} U_2 - m_{\text{total},1} U_1 = \Delta m_{12} + Q_{\text{out},12}
+\]  
+
+The internal energy values are calculated as:  
+\[
+U_1 = 418.1 + 0.005 (2506.5 - 418.1) \quad \text{(from Table A-2, \( U_{\text{fld}} \) at \( 100^\circ\text{C} \))}
+\]  
+\[
+U_2 = 252.85 + 0.005 (2466.6 - 252.85) \quad \text{(from Table A-2, \( U_{\text{fld}} \) at \( 70^\circ\text{C} \))}
+\]  
+
+Substituting into the energy balance equation:  
+\[
+\Delta m_{12} = \frac{m_{\text{total},2}(U_2 - U_1) - Q_{\text{out},12}}{1 - U_2}
+\]  
+
+The result is:  
+\[
+\Delta m_{12} = 2501.405 \, \text{kg}
+\]  
+
+---
+
+TASK 1e  
+The entropy values are calculated as follows:  
+\[
+S_1 = m_{\text{total},1} (1.306 + 0.005 (7.3545 - 1.306)) \quad \text{(from Table A-2, \( S_{\text{fld}} \) at \( 100^\circ\text{C} \))}
+\]  
+\[
+S_2 = m_{\text{total},2} (0.554 + 0.005 (7.553 - 0.554)) \quad \text{(from Table A-2, \( S_{\text{fld}} \) at \( 70^\circ\text{C} \))}
+\]  
+
+The entropy change is given by:  
+\[
+\Delta S_{12} = S_2 - S_1
+\]  
+
+Substituting the values:  
+\[
+\Delta S_{12} = 269.53 \, \frac{\text{kJ}}{\text{K}}
+\]  
+

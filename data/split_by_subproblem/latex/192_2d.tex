@@ -1,0 +1,43 @@
+
+
+\section*{d)}
+
+\textbf{Description of the diagram:}
+
+The diagram is a rectangular box labeled "Sys.grenze" (system boundary). Inside the box, there are five shapes representing components of a system, drawn from left to right. The first shape is a small rectangle, followed by a larger rectangle, then a trapezoid, another rectangle, and finally a triangle pointing to the right. 
+
+On the left side of the box, there is an arrow pointing into the box labeled $\dot{m}_i$. On the right side of the box, there is an arrow pointing out of the box labeled $\dot{m}_i$.
+
+Above the box, there are two equations:
+\begin{align*}
+    \dot{Q} &= 0 \\
+    \dot{W} &= 0 \quad (\text{Wärme geht für Kompression drauf})
+\end{align*}
+
+Below the box, there is a label "stationär" (stationary).
+
+\begin{align*}
+    \frac{dE_x}{dt} &= \sum \dot{E}_{x,istir} - E_{x,verl} \\
+    &= \dot{e}_{x,i0} - e_{x,6} - e_{x,verl}
+\end{align*}
+
+To the right of the equations, there is a note "stimmt nicht" (not correct) and an arrow pointing to $\dot{Q} \neq 0$.
+
+``````latex
+
+\section*{Aufgabe 2d)}
+
+\begin{align*}
+O &= e_{x,0} - e_{x,6} + \\
+\text{Entropie:} \quad O &= \dot{m} (s_e - s_a) + \frac{\dot{Q}}{T} + \dot{S}_{0z} \\
+O &= s_e - s_a + \frac{\dot{Q}}{T} + \dot{S}_{0z} \\
+\dot{S}_{0z} &= \frac{e_{x,\text{voll}}}{T_0} \\
+O &= s_e - s_a + \frac{\dot{Q}}{T} + \frac{e_{x,\text{voll}}}{T_0} \\
+c \ln \left( \frac{T_0}{T_6} \right) + \frac{\dot{Q}}{T} + \frac{e_{x,\text{voll}}}{T_0} &= 0 \\
+\dot{q} &= 1.455 \, \frac{\text{kJ}}{\text{kg}} \\
+T &= 1285 \, \text{K} \\
+e_{x,\text{voll}} &= \left( -c \ln \left( \frac{T_0}{T_6} \right) + \frac{q}{T} \right) \cdot T_0 \\
+e_{x,\text{voll}} &= -152.1 \, \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+``````latex

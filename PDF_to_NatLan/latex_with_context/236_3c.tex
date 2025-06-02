@@ -1,0 +1,76 @@
+The pressure of the gas is calculated using the ideal gas law:  
+\[
+pV = mRT \quad \Rightarrow \quad p = \frac{mRT}{V} = \frac{RT}{v}
+\]  
+The specific volume is determined:  
+\[
+v = \frac{V}{m} = \frac{3.14 \cdot 10^{-3} \, \text{m}^3}{3.43 \cdot 10^{-3} \, \text{kg}} = 0.915 \, \text{m}^3/\text{kg}
+\]  
+The pressure at state 2 is:  
+\[
+p_2 = \frac{RT}{v_1} = 49.56 \, \text{kPa}
+\]
+
+The total energy is expressed as:  
+\[
+E = U + \text{KE} + \text{PE}
+\]  
+Kinetic and potential energy terms are negligible.  
+
+For a perfect gas, the change in internal energy is:  
+\[
+\Delta U = c_V (T_2 - T_1)
+\]  
+Substituting values:  
+\[
+\Delta U = 0.633 \, \frac{\text{kJ}}{\text{kg·K}} \cdot (273.153 \, \text{K} - 773.15 \, \text{K}) = -316.5 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The heat transfer is calculated as:  
+\[
+Q_{12} = \Delta U + W_{12} = W_{12} - 316.5 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+Energy balance for the ice system (closed system):  
+\[
+\Delta E = Q - W \quad \text{(Volume of EW does not change)}
+\]  
+\[
+\Delta E = \Delta U + \Delta KE + \Delta PE = U_2 - U_1
+\]
+
+The internal energy \( U_1 \) of the ice at \( x_1 = 0.6 \) and \( T = 0^\circ\text{C} \) is calculated using Table 1:  
+\[
+U_1 = U_f + x \cdot (U_g - U_f)
+\]  
+Where:  
+- \( U_g = U_{\text{gas}} \)  
+- \( U_f = U_{\text{fluid}} \)  
+
+Substituting values:  
+\[
+U_1 = -0.1045 + 0.6 \cdot (-333.458 + 0.045) \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+U_1 = -200.093 \, \frac{\text{kJ}}{\text{kg}} \approx -200.1 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The internal energy \( U_2 \) is calculated as:  
+\[
+U_2 - U_1 = Q_{12} \quad \Rightarrow \quad U_2 = Q_{12} + m \cdot U_{\text{per}}
+\]  
+Substituting values:  
+\[
+U_2 = 1500 \, \text{J} + 0.1 \, \text{kg} \cdot (-200.1 \, \frac{\text{kJ}}{\text{kg}})
+\]  
+\[
+U_2 = 1500 \, \text{J} - 20.01 \, \text{kJ} = 1500 \, \text{J} - 20010 \, \text{J}
+\]  
+\[
+U_2 = -18510 \, \text{J}
+\]
+
+Finally, the specific internal energy \( U_2 \) is:  
+\[
+U_2 = \frac{-18510 \, \text{J}}{0.1 \, \text{kg}} = -185100 \, \frac{\text{J}}{\text{kg}} = -185.100 \, \frac{\text{kJ}}{\text{kg}}
+\]

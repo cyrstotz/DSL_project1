@@ -1,0 +1,75 @@
+TASK 1a  
+The goal is to calculate \( \dot{Q}_{\text{out}} \), the heat flow removed by the coolant.  
+
+Given data:  
+\[
+\dot{Q}_R = 100 \, \text{kW}, \quad m_{\text{total},1} = 5755 \, \text{kg}, \quad \dot{m} = 0.3 \, \frac{\text{kg}}{\text{s}}, \quad x_0 = 0.005
+\]  
+
+Energy balance (steady-state):  
+\[
+0 = \dot{m} (h_e - h_a) + \dot{Q}_R - \dot{Q}_{\text{out}}
+\]  
+
+The enthalpy at the inlet (\( h_e \)) is calculated as:  
+\[
+h_e = h_f(70^\circ\text{C}) + x_0 \cdot \left( h_g(70^\circ\text{C}) - h_f(70^\circ\text{C}) \right)
+\]  
+Using water table values:  
+\[
+h_f(70^\circ\text{C}) = 293.38 \, \frac{\text{kJ}}{\text{kg}} \quad (\text{Table A-2}), \quad h_g(70^\circ\text{C}) = 2626.8 \, \frac{\text{kJ}}{\text{kg}} \quad (\text{Table A-2})
+\]  
+\[
+h_e = 304.648 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The enthalpy at the outlet (\( h_a \)) is calculated as:  
+\[
+h_a = h_f(100^\circ\text{C}) + x_0 \cdot \left( h_g(100^\circ\text{C}) - h_f(100^\circ\text{C}) \right)
+\]  
+Using water table values:  
+\[
+h_f(100^\circ\text{C}) = 418.94 \, \frac{\text{kJ}}{\text{kg}} \quad (\text{Table A-2}), \quad h_g(100^\circ\text{C}) = 2676.1 \, \frac{\text{kJ}}{\text{kg}} \quad (\text{Table A-2})
+\]  
+\[
+h_a = 430.33 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Substituting into the energy balance equation:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \cdot (h_e - h_a) + \dot{Q}_R
+\]  
+\[
+\dot{Q}_{\text{out}} = 0.3 \cdot (304.648 - 430.33) + 100
+\]  
+\[
+\dot{Q}_{\text{out}} = 62.3 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+The goal is to calculate the thermodynamic mean temperature \( \bar{T}_{\text{KF}} \) of the coolant.  
+
+The formula for \( \bar{T}_{\text{KF}} \) is:  
+\[
+\bar{T}_{\text{KF}} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)}
+\]  
+
+Given data:  
+\[
+T_1 = 288.15 \, \text{K}, \quad T_2 = 298.15 \, \text{K}
+\]  
+
+Substituting into the formula:  
+\[
+\bar{T}_{\text{KF}} = \frac{298.15 - 288.15}{\ln \left( \frac{298.15}{288.15} \right)}
+\]  
+\[
+\bar{T}_{\text{KF}} = \frac{10}{\ln \left( \frac{298.15}{288.15} \right)} = 293.12 \, \text{K}
+\]  
+
+The thermodynamic mean temperature of the coolant is \( 293.12 \, \text{K} \).  
+
+---  
+No diagrams or graphs are present on this page.

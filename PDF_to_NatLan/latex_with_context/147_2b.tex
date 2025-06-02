@@ -1,0 +1,36 @@
+The energy balance for the steady flow process is derived. The temperature \( T_6 \) is calculated using the following equation:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}} \implies T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = 431.9 \, \text{K} \cdot \left( \frac{0.191 \, \text{bar}}{0.5 \, \text{bar}} \right)^{\frac{0.4}{1.4}}
+\]  
+\[
+T_6 = 328.07 \, \text{K}
+\]
+
+The equation for the outlet velocity \( w_6 \) is derived using the energy balance:  
+\[
+(h_0 - h_6) \cdot 2 = w_6^2 - w_0^2
+\]  
+Rearranging for \( w_6^2 \):  
+\[
+w_6^2 = w_0^2 + 2 \cdot (h_0 - h_6)
+\]  
+Since \( c_p \) is constant and the gas is ideal, the enthalpy difference is expressed as:  
+\[
+h_0 - h_6 = c_p \cdot (T_6 - T_0)
+\]  
+Substituting values:  
+\[
+w_6 = \sqrt{w_0^2 + 2 \cdot c_p \cdot (T_6 - T_0)}
+\]  
+\[
+w_6 = \sqrt{220^2 \, \text{m}^2/\text{s}^2 + 2 \cdot 1.006 \, \text{kJ}/\text{kg·K} \cdot (328.07 \, \text{K} - 243.15 \, \text{K})}
+\]  
+\[
+w_6 = 507.25 \, \text{m/s}
+\]  
+
+---

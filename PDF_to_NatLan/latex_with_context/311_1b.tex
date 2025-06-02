@@ -1,0 +1,19 @@
+The thermodynamic mean temperature of the coolant, \( T_{\text{KF}} \), is calculated using the integral expression:  
+\[
+T_{\text{KF}} = \frac{\int_{S_a}^{S_e} T \, dS}{S_e - S_a}
+\]  
+
+For isobaric conditions (\( p_{\text{KF}} = \text{constant} \)), the heat transfer equation is:  
+\[
+\dot{Q} = \dot{m}_{\text{KF}} (S_{\text{KF,in}} - S_{\text{KF,out}}) + \dot{Q}_{\text{out}}
+\]  
+where \( S_{\text{KF,in}} \) and \( S_{\text{KF,out}} \) are the specific entropies of the coolant at inlet and outlet, respectively.  
+
+The mean temperature is further simplified as:  
+\[
+T_{\text{KF}} = \frac{T_{\text{out}} - T_{\text{in}}}{\ln \left( \frac{T_{\text{out}}}{T_{\text{in}}} \right)}
+\]  
+Substituting values:  
+\[
+T_{\text{KF}} = \frac{T_{\text{out}} \cdot T_{\text{in}}}{\ln \left( \frac{T_{\text{out}}}{T_{\text{in}}} \right)} = 357.844 \, \text{K}
+\]

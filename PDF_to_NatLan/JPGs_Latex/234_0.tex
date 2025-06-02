@@ -1,0 +1,47 @@
+TASK 1a  
+The energy balance for the steady-state process is written as:  
+\[
+0 = \dot{m} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R - \dot{Q}_{\text{out}} - \dot{W}
+\]  
+Rearranging to solve for the heat flow removed by the coolant (\( \dot{Q}_{\text{out}} \)):  
+\[
+\dot{Q}_{\text{out}} = \dot{m} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R
+\]  
+Using the enthalpy values from the water tables:  
+\[
+h_f(100^\circ\text{C}) = 449.04 \, \frac{\text{kJ}}{\text{kg}}, \quad h_f(70^\circ\text{C}) = 292.98 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Substituting these values:  
+\[
+\dot{Q}_{\text{out}} = 92.182 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant (\( T_{\text{KF}} \)) is calculated using:  
+\[
+T = \frac{\int T \, dS}{S_a - S_e} = \frac{h_a - h_e}{S_a - S_e}
+\]  
+Alternatively:  
+\[
+T = \frac{\dot{Q}_{\text{out}}}{\dot{m} \, c_p \ln\left(\frac{T_{\text{out}}}{T_{\text{in}}}\right)}
+\]  
+Substituting the values:  
+\[
+T_{\text{KF}} = \frac{298.15 \, \text{K} - 288.15 \, \text{K}}{\ln\left(\frac{298.15}{288.15}\right)} = 293.12 \, \text{K}
+\]  
+
+TASK 1c  
+A sketch is provided showing the heat flow (\( \dot{Q}_{\text{out}} \)) at \( T_{\text{KF}} = 293.12 \, \text{K} \) and reactor temperature \( T = 100^\circ\text{C} \).  
+
+The entropy balance for the steady-state process is written as:  
+\[
+0 = \dot{m} (S_e - S_a) + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} + \frac{\dot{Q}_{\text{out}}}{T_{\text{Reactor}}} + \dot{S}_{\text{gen}}
+\]  
+Rearranging to solve for entropy generation (\( \dot{S}_{\text{gen}} \)):  
+\[
+\dot{S}_{\text{gen}} = \dot{Q}_{\text{out}} \left( \frac{1}{T_{\text{KF}}} - \frac{1}{T_{\text{Reactor}}} \right)
+\]  
+Substituting the values:  
+\[
+\dot{S}_{\text{gen}} = 53.91 \, \frac{\text{W}}{\text{K}}
+\]

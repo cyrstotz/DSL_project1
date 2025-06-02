@@ -1,0 +1,83 @@
+TASK 3a  
+Determine the gas pressure \( p_{g,1} \) and mass \( m_g \) in the cylinder:  
+
+The specific heat capacity at constant volume is given as:  
+\[
+C_v = 0.633 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+The gas pressure \( p_{g,1} \) is calculated using the equation:  
+\[
+p_{g,1} = p_{\text{amb}} + \left( \frac{m_K g}{A_{\text{cyl}}} \right) + \left( \frac{m_{\text{EW}} g}{A_{\text{cyl}}} \right)
+\]  
+Substituting values:  
+\[
+p_{g,1} = 1.05 \, \text{bar} + \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{0.00785 \, \text{m}^2} + \frac{0.1 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{0.00785 \, \text{m}^2}
+\]  
+\[
+p_{g,1} = 1.05 \, \text{bar} + 39,983.8 \, \text{Pa} + 125 \, \text{Pa}
+\]  
+\[
+p_{g,1} = 1.1 \, \text{bar}
+\]  
+
+The cross-sectional area of the cylinder is calculated as:  
+\[
+A_{\text{cyl}} = \left( \frac{D}{2} \right)^2 \pi
+\]  
+\[
+A_{\text{cyl}} = \left( \frac{0.1 \, \text{m}}{2} \right)^2 \pi = 0.05^2 \pi \, \text{m}^2
+\]  
+
+The gas mass \( m_g \) is determined using the ideal gas law:  
+\[
+p_{g,1} V_{g,1} = m_g R_g T_{g,1}
+\]  
+Rearranging:  
+\[
+m_g = \frac{p_{g,1} V_{g,1}}{R_g T_{g,1}}
+\]  
+Substituting values:  
+\[
+R_g = \frac{8.314 \, \text{J/mol·K}}{50 \, \text{kg/kmol}} = 166.28 \, \frac{\text{J}}{\text{kg·K}}
+\]  
+\[
+m_g = \frac{1.46 \, \text{bar} \cdot 3.14 \cdot 10^{-3} \, \text{m}^3}{166.28 \, \frac{\text{J}}{\text{kg·K}} \cdot 773 \, \text{K}}
+\]  
+\[
+m_g = 0.00342 \, \text{kg} = 3.42 \, \text{g}
+\]  
+
+The volume is converted as:  
+\[
+3.14 \, \text{L} = 3.14 \, \text{dm}^3 = 3.14 \cdot 10^{-3} \, \text{m}^3
+\]  
+
+The temperature is converted as:  
+\[
+500^\circ\text{C} = 773 \, \text{K}
+\]  
+
+---
+
+TASK 3b  
+Thermodynamic equilibrium: \( T_{g,2} = T_{\text{EW},2} \).  
+
+The energy balance equation is given as:  
+\[
+\Delta h = Q = C_v \cdot m_g \cdot (T_{g,2} - T_{g,1})
+\]  
+
+Rearranging for \( T_{g,2} \):  
+\[
+T_{g,2} = \frac{T_{1,g}}{C_v \cdot m_g}
+\]  
+
+Substituting values:  
+\[
+T_{g,2} = \frac{773 \, \text{K}}{0.633 \, \frac{\text{kJ}}{\text{kg·K}} \cdot 3.42 \cdot 10^{-3} \, \text{kg}}
+\]  
+\[
+T_{g,2} = 273 \, \text{K}
+\]  
+

@@ -1,0 +1,43 @@
+TASK 2a  
+A graph is drawn representing the thermodynamic process in a jet engine on a \( T \)-\( s \) diagram. The vertical axis is labeled \( T \, [K] \), and the horizontal axis is labeled \( s \, \left[\frac{\text{kJ}}{\text{kg·K}}\right] \). The process includes the following states:  
+- State 1 to 2: A curved line indicating compression.  
+- State 2 to 3: A vertical line labeled \( P_{23} \), representing isobaric heat addition.  
+- State 3 to 4: A curved line indicating expansion.  
+- State 4 to 5: A vertical line representing mixing.  
+- State 5 to 6: A horizontal line indicating the nozzle process.  
+
+TASK 2b  
+The outlet velocity \( w_6 \) and temperature \( T_6 \) are calculated.  
+
+Given values:  
+\[
+T_5 = 431.9 \, \text{K}, \quad p_5 = 0.5 \, \text{bar}, \quad w_5 = 220 \, \text{m/s}, \quad p_0 = 0.191 \, \text{bar}
+\]
+
+The enthalpy difference \( h_s - h_c \) is calculated using the integral:  
+\[
+h_s - h_c = -\int c_p dT = -1.006 \, \text{kJ/kg·K} \cdot (328.07 - 431.9) = -104.453 \, \text{kJ/kg}
+\]
+
+The temperature \( T_c \) is determined using the isentropic relation:  
+\[
+T_c = T_s \left( \frac{p_0}{p_s} \right)^{\frac{\kappa - 1}{\kappa}} = 328.07 \, \text{K}
+\]
+
+The specific volume \( v \) is calculated using the ideal gas law:  
+\[
+v = \frac{RT}{p}
+\]
+
+The work \( W_v \) is calculated as:  
+\[
+W_v = R \frac{T_6 - T_5}{1 - \kappa} = \frac{c_p}{\kappa} \cdot \frac{328.07 - 431.9}{1 - 1.4} = 447.77 \, \text{kJ/kg}
+\]
+
+The outlet velocity \( w_6 \) is determined using the energy balance:  
+\[
+w_6^2 = w_5^2 + 2W_v
+\]
+\[
+w_6 = \sqrt{447.77 \cdot 2 + 220^2} = 312.56 \, \text{m/s}
+\]

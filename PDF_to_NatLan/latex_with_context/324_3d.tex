@@ -1,0 +1,42 @@
+Using the first law of thermodynamics for the EW mixture:  
+\[
+\Delta U = Q_{12} - W_{12}
+\]  
+
+For incompressible EW:  
+\[
+m_{\text{EW}} (u_2 - u_1) = Q_{12}
+\]  
+Rearranging:  
+\[
+u_2 = \frac{Q_{12}}{m_{\text{EW}}} + u_1
+\]  
+Substituting values:  
+\[
+u_2 = \frac{-1371.54}{0.1} + (-200)
+\]  
+\[
+u_2 = -186.3836 \, \text{kJ/kg}
+\]  
+
+Interpolating \( u_2 \) using the solid-liquid equilibrium table:  
+\[
+u_2(T=0) = -186.3836 = u_{\text{flüssig}} + x \cdot (u_{\text{fest}} - u_{\text{flüssig}})
+\]  
+Where:  
+\[
+u_{\text{flüssig}} = -0.045 \, \text{kJ/kg}, \quad u_{\text{fest}} = -333.458 \, \text{kJ/kg}
+\]  
+
+Solving for \( x \):  
+\[
+x = \frac{u_2 - u_{\text{flüssig}}}{u_{\text{fest}} - u_{\text{flüssig}}}
+\]  
+\[
+x = \frac{-186.3836 - (-0.045)}{-333.458 - (-0.045)}
+\]  
+\[
+x = 0.553
+\]  
+
+The final ice fraction \( x_2 \) is \( 0.553 \).

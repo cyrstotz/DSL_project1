@@ -1,0 +1,135 @@
+
+``````latex
+
+
+\section*{2)}
+
+\begin{itemize}
+    \item A graph is drawn with the y-axis labeled $T[K]$ and the x-axis labeled $s$. The graph shows a curve starting from the origin and moving upwards to the right. There are several points marked on the graph:
+    \begin{itemize}
+        \item Point 0 at the bottom left.
+        \item Point 1 slightly above and to the right of point 0.
+        \item Point 2 further up and to the right.
+        \item Point 3 even further up and to the right.
+        \item Point 4 further up and to the right.
+        \item Point 5 at the top right.
+        \item Point 6 directly below point 5.
+    \end{itemize}
+    \item The graph has several annotations:
+    \begin{itemize}
+        \item $P_5 = P_4$ near point 5.
+        \item $0.5 \text{ bar}$ near point 5.
+        \item $P_2 = P_3$ near point 2.
+        \item $P_6 = P_4$ near point 6.
+        \item $0.1916 \text{ bar}$ near point 6.
+    \end{itemize}
+\end{itemize}
+
+\begin{tabular}{|c|c|c|}
+    \hline
+    0 & 0.1916 \text{ bar} & -30^\circ C \\
+    \hline
+    1 & & \\
+    \hline
+    2 & & \\
+    \hline
+    3 & & \\
+    \hline
+    4 & 0.5 \text{ bar} & \\
+    \hline
+    5 & 0.5 \text{ bar} & 431.9 \text{ K} \\
+    \hline
+    6 & 0.1916 \text{ bar} & 328.07 \text{ K} \\
+    \hline
+\end{tabular}
+
+\subsection*{b)}
+
+$5 \rightarrow 6 \quad \text{isentrop}$
+
+\[
+T_6 = T_5 \left( \frac{P_6}{P_5} \right)^{\frac{n-1}{n}}
+\]
+
+\[
+= 328.07 \text{ K} = T_6
+\]
+
+\subsection*{Energiebilanz}
+
+\[
+0 = \dot{m}_{\text{ges}} (h_5 - h_6) + \dot{m}_1 \left( \frac{w_5^2 - w_6^2}{2} \right) + \dot{Q}^0 - \dot{W}^0
+\]
+
+\[
+2 (h_6 - h_5) = w_5^2 - w_6^2 \rightarrow w_6^2 - w_5^2 = 2 (h_6 - h_5)
+\]
+
+``````latex
+
+\begin{align*}
+&\omega_G^2 - \omega_0^2 = 2(h_G - h_0) \\
+&0 = mg(h_5 - h_G) + \dot{m}g \left( \frac{\omega_5^2 - \omega_G^2}{2} \right) + \cancel{Q} - \cancel{W} \\
+&\omega_G^2 = 2(h_5 - h_G) + \omega_5^2 \\
+&= 2c_p(T_5 - T_6) + \omega_5^2
+\end{align*}
+
+\text{Diagram: A diagram with three arrows labeled as follows:}
+\begin{itemize}
+    \item The first arrow is labeled $Q$.
+    \item The second arrow is labeled $W$.
+    \item The third arrow is labeled $Q - W$.
+\end{itemize}
+
+\text{Additionally, there is a note:}
+\begin{itemize}
+    \item \text{isobar:} \quad \frac{T}{V} = \text{const}
+\end{itemize}
+
+\section*{c)}
+\begin{align*}
+&\Delta ex_{str,G} = (h_G - h_0 - T_0(s_G - s_0) + \frac{\omega_G^2}{2}) \\
+&ex_{str,0} = 0 \\
+&\text{Ideal Gas:} \quad ex_G = (c_p(T_G - T_0) - T_0 c_p \left( \frac{T_G}{T_0} \right) + R \ln \left( \frac{P_G}{P_0} \right)) \\
+&ex_{str,G} = h_1 - h_0 - T_0(s_1 - s_0) + \frac{\omega_G^2}{2} = \frac{\omega_{u,ft}^2}{2} = 
+\end{align*}
+
+\section*{d)}
+\begin{align*}
+Q &= \sum ex_{str} + \sum ex_q - \sum W - \frac{av}{P_0 a_0} - ex_{verl} \\
+0 &= \dot{m}(s_0 - s_a) + \frac{\dot{Q}}{T} + S_{elvz} \\
+S_{elvz} &= S_6 - S_0 \quad \text{da ideales gas} \\
+&= S^0(T_6) - S^0(T_0) - R \ln \left( \frac{P_6}{P_0} \right) \\
+&\quad \text{, da } P_6 = P_0 \\
+\dot{e}_{ex,verl} &= T_0 \cdot S_{elvz}
+\end{align*}
+
+``````latex
+
+2. d)
+
+\[
+s(T_1) = s^0(T_1)
+\]
+
+\[
+\begin{aligned}
+s^0(1240 \, \text{K}) & \quad \text{interpolieren auf} \quad s^0(1243.15 \, \text{K}) = 243.17 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}} \\
+s^0(1250 \, \text{K}) & \\
+\\
+s^0(325 \, \text{K}) & \quad \text{interpolieren auf} \quad s^0(328.71 \, \text{K}) = 328.39 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}} \\
+s^0(330 \, \text{K}) & \\
+\end{aligned}
+\]
+
+\[
+\dot{s}_{erz} = 85.22 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+
+\[
+\Rightarrow \, ex_{ver1} = T_0 \cdot \dot{s}_{erz} = 20.723 \, \frac{\text{MJ}}{\text{kg}}
+\]
+
+``````latex
+
+

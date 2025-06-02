@@ -1,0 +1,63 @@
+TASK 4a  
+Two pressure-temperature (\(p\)-\(T\)) diagrams are drawn.  
+
+1. The first diagram shows phase regions labeled as "fest" (solid), "flüssig" (liquid), and "gas" (gas). The triple point (TP) is marked, and the phase boundaries are clearly indicated. The diagram includes points labeled "1" and "2" within the gas region.  
+2. The second diagram is similar, with the same phase regions and triple point labeled. The phase boundaries are drawn, and points "1" and "2" are marked in the gas region.  
+
+TASK 4b  
+A table is partially drawn with columns labeled "Temp." (temperature) and "Druck" (pressure). The rows are numbered 1 through 4, with pressures for states 3 and 4 given as 8 bar. No further numerical values are provided.  
+
+TASK 4c  
+The assumption is stated:  
+\[
+T_2 = -22^\circ\text{C}, \quad \dot{m} = 4 \, \text{kg/h}
+\]  
+
+Using Table A-10, the pressure \(p_2 = 1.2182 \, \text{bar}\) is identified as \(p_4\).  
+
+The entropy \(S_4\) is calculated as follows:  
+\[
+S_4 = S_1 \quad \text{(adiabatic process)}
+\]  
+
+Using interpolation from Table A-11:  
+\[
+S_4 = S_f(1.2182 \, \text{bar}) + x \cdot \left(S_g(1.2182 \, \text{bar}) - S_f(1.2182 \, \text{bar})\right)
+\]  
+
+The quality \(x\) is calculated as:  
+\[
+x = \frac{S_1 - S_f}{S_g - S_f} = 0.303 = x_4
+\]  
+
+Interpolation details:  
+\[
+S_f = 0.0879 + \frac{0.4055 - 0.0879}{1.4 - 1.2} \cdot (1.2182 - 1.2) = 0.09859
+\]  
+\[
+S_g = 0.9354 + \frac{0.9322 - 0.9354}{1.4 - 1.2} \cdot (1.2182 - 1.2) = 0.9348
+\]  
+
+Final entropy values:  
+\[
+S_f = 0.09859, \quad S_g = 0.9348
+\]  
+
+TASK 4b (continued)  
+Energy balance for the compressor:  
+\[
+\frac{dE}{dt} = \dot{m}(h_2 - h_3) + \dot{W}
+\]  
+
+Mass flow rate:  
+\[
+\dot{m} = \frac{\dot{W}}{h_2 - h_3}
+\]  
+
+Temperatures and enthalpies are given:  
+\[
+T_i = -20^\circ\text{C} \quad \Rightarrow \quad T_2 = -26^\circ\text{C}
+\]  
+\[
+h_2 = 231.62 \, \text{kJ/kg} \quad \text{(from Table A-10)}
+\]  

@@ -1,0 +1,145 @@
+
+``````latex
+
+
+\section*{2)}
+
+\begin{tabular}{ccc}
+ & $T$ [K] & $p$ [\text{bar}] \\
+\text{isentrope} $p$ (,) & 1 & \\
+ & 2 & \\
+ & 3 & \\
+ & 4 & \\
+ & 5 & 431.9 & \\
+\text{isentrop} (,) & 6 & 0.5 \\
+ & & 0.191 \\
+\end{tabular}
+
+\subsection*{Graph Description}
+The graph is a plot with the x-axis labeled $s$ [kJ/kgK] and the y-axis labeled $T$ [K]. There are several curves and lines drawn:
+
+- A downward sloping straight line from the top left to the bottom right.
+- Several curved lines that intersect this straight line.
+- Points labeled 1, 2, 3, 4, 5, and 6 along the curves.
+- The points 4 and 5 are connected by a horizontal line segment.
+- The point 6 is connected to the curve by a vertical line segment.
+- The points are annotated with $p_2 = p_3$, $p_4$, $p_5$, $p_0$, and $p_4 + p_5$.
+
+\subsection*{b)}
+
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}}
+\]
+
+\[
+T_6 = T_5 \left( \frac{0.191}{0.5} \right)^{0.1/1.4} = 328.07 \text{K}
+\]
+
+\[
+\dot{m} \left( h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right) = 0 \quad \text{(stationär)}
+\]
+
+\[
+\left( h_5 - h_6 \right) - \left( \frac{w_5^2}{2} - \frac{w_6^2}{2} \right) = 0
+\]
+
+\[
+w_6^2 = 2 \left( h_5 - h_6 \right) + w_5^2
+\]
+
+``````latex
+
+
+\section*{Solution}
+
+\subsection*{a)}
+
+\[
+h_f - h_0 = \int_{T_0}^{T_f} c_p \, dT = c_p (T_f - T_0) = 1.006 \, \frac{\text{kJ}}{\text{kg K}} (431.9 \, \text{K} - 288.07 \, \text{K}) = 107.5 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\subsection*{b)}
+
+\[
+w_0 = \sqrt{2(h_f - h_0)} + u_{c, \text{ist}} = \sqrt{2 \cdot 107.5 \cdot 10^3 \, \frac{\text{J}}{\text{kg}} \left( \frac{200 \, \text{m}^2}{\text{s}^2} \right)} = 498.80 \, \frac{\text{m}}{\text{s}}
+\]
+
+\subsection*{c)}
+
+\[
+e_{k, \text{ist,0}} = e_{k, \text{ist,0}} + \frac{u_{c, \text{ist}}^2}{2} = \frac{u_{c, \text{ist}}^2}{2}
+\]
+
+\[
+h_c - h_0 = c_p (T_6 - T_0) = 1.006 \, \frac{\text{kJ}}{\text{kg K}} (382.07 \, \text{K} - 243.15 \, \text{K}) = 85.43 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) = 1.006 \, \frac{\text{kJ}}{\text{kg K}} \ln \left( \frac{382.07}{243.15} \right) - 0.30 \, \frac{\text{kJ}}{\text{kg K}}
+\]
+
+\[
+\Delta e_{k, \text{ist}} = \frac{u_{c, \text{ist}}^2}{2}
+\]
+
+\[
+\Delta e_{k, \text{ist}} = 85.43 \, \frac{\text{kJ}}{\text{kg}} - 243.15 \cdot 15 \, \text{K} (0.3 \, \frac{\text{kJ}}{\text{kg K}}) + \frac{(498.80 \, \frac{\text{m}}{\text{s}})^2 - (200 \, \frac{\text{m}}{\text{s}})^2}{2}
+\]
+
+\[
+= 116.63 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\subsection*{d)}
+
+\[
+\dot{m}_H = 5.279 \cdot \dot{m}_K
+\]
+
+\[
+\dot{m}_{\text{ges}} = \dot{m}_H + \dot{m}_K
+\]
+
+\[
+0 = \sum \dot{m} \dot{m}
+\]
+
+\[
+e_{k, \text{verlust}} = T_0 \dot{s}_{\text{verlust}}
+\]
+
+\[
+\dot{S}_{\text{ges}} \text{ in Brennkammer, Turbine, Mischkammer, Verdichter}
+\]
+
+\subsection*{Graphical Content Description}
+
+There is a diagram in part (d) that shows a control volume with four arrows indicating mass flow rates. The arrows are labeled as follows:
+- The arrow entering from the left is labeled $\dot{m}_H$.
+- The arrow entering from the right is labeled $\dot{m}_K$.
+- The arrow exiting from the top is labeled $\dot{m}_H$.
+- The arrow exiting from the bottom is labeled $\dot{m}_K$.
+
+The control volume is also labeled with $W_K$ and $\dot{m}_{\text{verdichteter}}$.
+
+``````latex
+
+
+d) \quad \dot{m}_2 \quad \boxed{T_{AB}} \quad \dot{m}_2
+
+a) \quad T_{XY}
+
+\begin{description}
+    \item[Graph Description:] 
+    The graph is a plot with the x-axis labeled as \( s \left[ \frac{1}{kg \cdot K} \right] \) and the y-axis labeled as \( T_{XY} \). There are three curves on the graph, each representing different values of \( P \). The curves are labeled as follows:
+    \begin{itemize}
+        \item The first curve is labeled \( P_0 \).
+        \item The second curve is labeled \( P_1 = P_0 \).
+        \item The third curve is labeled \( P_2 = P_1 \).
+    \end{itemize}
+    There are arrows pointing upwards along the curves, indicating the direction of increasing values. The points on the curves are marked with numbers 2, 4, and 6, respectively.
+\end{description}
+
+``````latex
+
+

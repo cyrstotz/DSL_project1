@@ -1,0 +1,30 @@
+TASK 3d  
+The following calculations are performed using interpolation from Table 1 at a pressure of \( p = 1.0025 \, \text{bar} \):  
+
+1. **Interpolation for \( u_{\text{frost}} \):**  
+\[
+u_{\text{frost}} = (1.0025 \, \text{bar} - 1.000 \, \text{bar}) \cdot \frac{-333.458 \, \frac{\text{m}^2}{\text{kg}} + 333.492 \, \frac{\text{m}^2}{\text{kg}}}{1.0004 \, \text{bar} - 1.000 \, \text{bar}} + (-333.492 \, \frac{\text{m}^2}{\text{kg}})
+\]  
+\[
+u_{\text{frost}} = -333.482 \, \frac{\text{m}^2}{\text{kg}}
+\]  
+
+2. **Interpolation for \( u_{\text{flüssig}} \):**  
+\[
+u_{\text{flüssig}} = (1.0025 \, \text{bar} - 1.000 \, \text{bar}) \cdot \frac{-0.045 \, \frac{\text{m}^2}{\text{kg}} + 0.033 \, \frac{\text{m}^2}{\text{kg}}}{1.0004 \, \text{bar} - 1.000 \, \text{bar}} + (-0.033 \, \frac{\text{m}^2}{\text{kg}})
+\]  
+\[
+u_{\text{flüssig}} = -0.033 \, \frac{\text{m}^2}{\text{kg}}
+\]  
+
+3. **Calculation for ice mass fraction \( x_{\text{Eis}} = 0.6 \):**  
+\[
+m_{\text{Eis}} = 0.6 \cdot 0.1 \, \text{kg} = 0.06 \, \text{kg}
+\]  
+
+4. **Specific internal energy calculation:**  
+\[
+u = u_f + x \cdot (u_{\text{Eis}} - u_f)
+\]  
+
+No diagrams or graphs are present on the page.

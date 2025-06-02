@@ -1,0 +1,27 @@
+The energy balance for the reactor is expressed as:  
+\[
+0 = \dot{m}_{\text{in}} \left( h_{\text{in}} - h_{\text{out}} \right) + \dot{Q}_{\text{out}} - \dot{W}
+\]  
+Since there is no work (\( \dot{W} = 0 \)), the equation simplifies to:  
+\[
+0 = \dot{m}_{\text{in}} \left( h_{\text{in}} - h_{\text{out}} \right) + \dot{Q}_{\text{out}}
+\]  
+
+Using the enthalpy values from the water tables (Table A-2):  
+\[
+h_{\text{in}}(70^\circ\text{C}) = 292.58 \, \text{kJ/kg}
+\]  
+\[
+h_{\text{out}}(100^\circ\text{C}) = h_{\text{sat,liq}}(100^\circ\text{C}) + x_D \cdot h_{\text{fg}}(100^\circ\text{C}) = 419.01 \, \text{kJ/kg} + 0.005 \cdot 2257.0 \, \text{kJ/kg} = 430.39 \, \text{kJ/kg}
+\]  
+
+Substituting these values into the equation:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} \left( h_{\text{in}} - h_{\text{out}} \right)
+\]  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \frac{\text{kg}}{\text{s}} \cdot \left( 292.58 \, \frac{\text{kJ}}{\text{kg}} - 430.39 \, \frac{\text{kJ}}{\text{kg}} \right)
+\]  
+\[
+\dot{Q}_{\text{out}} = -41.27 \, \text{kW}
+\]

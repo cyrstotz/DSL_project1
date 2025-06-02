@@ -1,0 +1,20 @@
+To determine the thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant, the entropy balance for steady-state flow processes in the cooling jacket is applied:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \left( s_{\text{in}} - s_{\text{out}} \right) + \frac{\dot{Q}}{T} = 0 \quad \text{(no entropy generation)}
+\]  
+Rearranging:  
+\[
+\frac{\dot{Q}}{T} = \dot{m} \left( s_{\text{out}} - s_{\text{in}} \right)
+\]  
+Thus:  
+\[
+T = \frac{\dot{Q}}{\dot{m} \left( s_{\text{out}} - s_{\text{in}} \right)}
+\]  
+Substituting:  
+\[
+\dot{Q} = -\dot{Q}_{\text{out}}, \quad \dot{Q}_{\text{in}} = -\frac{\dot{Q}_{\text{out}}}{\dot{m}} = 207.273 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+The entropy difference is expressed as:  
+\[
+s_{\text{out}} - s_{\text{in}} = c_p \ln \left( \frac{T_{\text{KF,out}}}{T_{\text{KF,in}}} \right)
+\]

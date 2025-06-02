@@ -1,0 +1,43 @@
+TASK 1c  
+Using the entropy balance equation and the given mean temperature \( T_{\text{KF}} = 295 \, \text{K} \):  
+\[
+0 = \dot{m}(s_e - s_a) + \sum_i \frac{\dot{Q}_i}{T_i} + \dot{S}_{\text{gen}}
+\]  
+From Table 4.2, the entropy values are:  
+\[
+s_e = 0.9549 \, \frac{\text{kJ}}{\text{kg·K}}, \quad s_a = 1.3069 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+Substituting into the entropy generation equation:  
+\[
+\dot{S}_{\text{gen}} = \dot{m}(s_a - s_e) + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+\[
+\dot{S}_{\text{gen}} = 0.3 \, \frac{\text{kg}}{\text{s}} \left( 1.3069 \, \frac{\text{kJ}}{\text{kg·K}} - 0.9549 \, \frac{\text{kJ}}{\text{kg·K}} \right) + \frac{62.182 \, \text{kW}}{295 \, \text{K}}
+\]  
+\[
+\dot{S}_{\text{gen}} = 0.316 \, \frac{\text{kJ}}{\text{K·s}}
+\]  
+
+---
+
+TASK 1d  
+Energy balance equation:  
+\[
+\frac{dE}{dt} = \sum_i \dot{m}_i \left[ h_i(t) + \frac{w_i^2(t)}{2} + g z_i(t) \right] + \sum_i \dot{Q}_i(t) - \sum_i \dot{W}_i(t)
+\]  
+For the cooling process:  
+\[
+Q_{R,12} = \Delta m_{12} \left( h_{20^\circ\text{C}} - h_{70^\circ\text{C}} \right) + m_{\text{total},1} \left( h_c - h_{70^\circ\text{C}} \right)
+\]  
+Where:  
+\[
+h_{20^\circ\text{C}} = 83.96 \, \frac{\text{kJ}}{\text{kg}}, \quad h_{70^\circ\text{C}} = 292.98 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_c = 119.04 + x_D \cdot 2257 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Substituting \( x_D = 0.005 \):  
+\[
+h_c = 119.04 + 0.005 \cdot 2257 = 430.325 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Values are referenced from Table 4.2.

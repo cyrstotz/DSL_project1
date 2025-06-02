@@ -1,0 +1,64 @@
+TASK 3c  
+Energy balance for the gas mixture:  
+\[
+\Delta E = M_{\text{Gas},2} \cdot U_{\text{Gas},2} - M_{\text{Gas},1} \cdot U_{\text{Gas},1} = -Q_{12} - W_{12}
+\]  
+If \( T_{\text{EW},2} = T_{\text{G},2} \), then no more heat is exchanged.  
+Thus:  
+\[
+T_{\text{G},2} = T_{\text{EW},2} = 0^\circ\text{C} = 273.15 \, \text{K}
+\]  
+Additionally, the pressure remains constant:  
+\[
+p_{\text{G},2} = p_{\text{G},1} = 1.4 \, \text{bar}
+\]  
+The mass also remains constant:  
+\[
+M_{\text{G},2} = M_{\text{G},1} = 0.00342 \, \text{kg}
+\]  
+The volume of the gas in state 2 is calculated as:  
+\[
+V_{\text{G},2} = \frac{M_{\text{G},2} \cdot R_{\text{G}} \cdot T_{\text{G},2}}{p_{\text{G},2}} = 0.001109 \, \text{m}^3
+\]  
+
+Work done during the process:  
+\[
+W_{12} = p_{\text{G},1} \cdot (V_{\text{G},2} - V_{\text{G},1}) = -284.48 \, \text{J}
+\]  
+
+Heat transferred:  
+\[
+Q_{12} = M_{\text{Gas}} \cdot (U_{\text{G},1} - U_{\text{G},2}) - W_{12} = M_{\text{G}} \cdot c_V \cdot (T_{\text{G},1} - T_{\text{G},2}) - W_{12}
+\]  
+\[
+Q_{12} = 1367.5 \, \text{J}
+\]  
+
+TASK 3d  
+The energy balance for the ice-water mixture:  
+\[
+m_{\text{EW}} \cdot (U_{\text{EW},2} - U_{\text{EW},1}) = Q_{12} \quad (\text{Work is zero, as the system is isolated.})
+\]  
+
+Internal energy change:  
+\[
+\Delta E = \Delta U = \text{(crossed out term)}
+\]  
+
+Internal energy at state 1:  
+\[
+U_{\text{EW},1} = U_{\text{Liquid}}(0^\circ\text{C}, 1.4 \, \text{bar}) + x_{\text{Ice},1} \cdot (U_{\text{Ice}}(0^\circ\text{C}, 1.4 \, \text{bar}) - U_{\text{Liquid}}(0^\circ\text{C}, 1.4 \, \text{bar}))
+\]  
+\[
+U_{\text{EW},1} = -200.117 \, \text{kJ/kg}
+\]  
+
+Internal energy at state 2:  
+\[
+U_{\text{EW},2} = U_{\text{Liquid}}(0^\circ\text{C}, 1.4 \, \text{bar}) + x_{\text{Ice},2} \cdot (U_{\text{Ice}}(0^\circ\text{C}, 1.4 \, \text{bar}) - U_{\text{Liquid}}(0^\circ\text{C}, 1.4 \, \text{bar}))
+\]  
+
+Energy balance for the ice-water mixture:  
+\[
+m_{\text{EW}} \cdot (U_{\text{EW},2} - U_{\text{EW},1}) = m_{\text{EW}} \cdot \left[ x_{\text{Ice},2} \cdot (U_{\text{Ice}}(0^\circ\text{C}, 1.4 \, \text{bar}) - U_{\text{Liquid}}(0^\circ\text{C}, 1.4 \, \text{bar})) - x_{\text{Ice},1} \cdot (U_{\text{Ice}}(0^\circ\text{C}, 1.4 \, \text{bar}) - U_{\text{Liquid}}(0^\circ\text{C}, 1.4 \, \text{bar})) \right] - Q_{12}
+\]

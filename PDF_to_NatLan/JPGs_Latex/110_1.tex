@@ -1,0 +1,87 @@
+TASK 3a  
+The problem begins with determining the gas pressure \( p_{g,1} \) and mass \( m_g \) in state 1.  
+
+The cross-sectional area \( A \) of the cylinder is calculated using the formula for the area of a circle:  
+\[
+A = \pi r^2 = \pi \left(\frac{d}{2}\right)^2 = \pi \left(\frac{0.1 \, \text{m}}{2}\right)^2 = 0.00785 \, \text{m}^2
+\]  
+
+A force balance is applied to the piston, considering atmospheric pressure \( p_0 \), piston weight \( m_K g \), and the weight of the ice-water mixture \( m_{\text{EW}} g \):  
+\[
+p_0 A + m_K g + m_{\text{EW}} g = p_{g,1} A
+\]  
+Rearranging for \( p_{g,1} \):  
+\[
+p_{g,1} = \frac{p_0 A + m_K g + m_{\text{EW}} g}{A}
+\]  
+
+Substituting values:  
+\[
+p_{g,1} = \frac{1.05 \, \text{N/m}^2 \cdot 0.00785 \, \text{m}^2 + 32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2 + 0.1 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{0.00785 \, \text{m}^2}
+\]  
+\[
+p_{g,1} = 128853.00737 \, \text{Pa}
+\]  
+Converting to bar:  
+\[
+p_{g,1} = 1.2885 \, \text{bar}
+\]  
+
+Next, the mass \( m_g \) of the gas is determined using the ideal gas law:  
+\[
+p V = m R T
+\]  
+Rearranging for \( m_g \):  
+\[
+m_g = \frac{p V}{R T}
+\]  
+
+The gas constant \( R \) is calculated:  
+\[
+R = \frac{R_u}{M_g} = \frac{8.314 \, \text{J/mol·K}}{50 \, \text{kg/kmol}} = 0.16628 \, \text{J/g·K}
+\]  
+
+Substituting values:  
+\[
+m_g = \frac{1.2885 \, \text{bar} \cdot 3.14 \, \text{L}}{0.16628 \, \text{J/g·K} \cdot (500 + 273.15) \, \text{K}}
+\]  
+Converting units and simplifying:  
+\[
+m_g = \frac{128850 \, \text{Pa} \cdot 0.00314 \, \text{m}^3}{0.16628 \, \text{J/g·K} \cdot 773.15 \, \text{K}}
+\]  
+\[
+m_g = 3.1471 \, \text{g}
+\]  
+
+TASK 3b  
+The problem now addresses the equilibrium state where \( x_{\text{ice},2} > 0 \), and the gas and ice-water mixture reach thermal equilibrium.  
+
+The temperature \( T_{g,2} \) is equal to \( T_{\text{EW},2} \), and the gas pressure \( p_{g,2} \) remains the same as \( p_{g,1} \):  
+\[
+p_{g,2} = p_{g,1} = 1.2885 \, \text{bar}
+\]  
+
+The ideal gas law is applied again:  
+\[
+p V = R T
+\]  
+Rearranging for \( V_a \):  
+\[
+V_a = \frac{R T}{p}
+\]  
+
+Substituting values:  
+\[
+V_a = \frac{0.16628 \, \text{J/g·K} \cdot (500 + 273.15) \, \text{K}}{1.2885 \, \text{bar}}
+\]  
+Converting units and simplifying:  
+\[
+V_a = \frac{0.16628 \, \text{J/g·K} \cdot 773.15 \, \text{K}}{128850 \, \text{Pa}}
+\]  
+\[
+V_a = 0.997745 \, \text{m}^3/\text{kg}
+\]  
+
+Additional equations and derivations related to the pressure-volume relationship are written but not fully resolved.  
+
+No diagrams are present on this page.

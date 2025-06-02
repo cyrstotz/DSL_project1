@@ -1,0 +1,108 @@
+
+``````latex
+
+
+\section*{Aufgabe 3}
+
+\subsection*{a) ges: $P_{g,1}$, $m_g$}
+
+\[
+R = \frac{\bar{R}}{M} = \frac{8.314 \, \frac{\text{kJ}}{\text{kmol} \cdot \text{K}}}{50 \, \frac{\text{kg}}{\text{kmol}}} = 0.1663 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+
+\[
+C_v = 0.633 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+
+\[
+C_p = R + C_v = 0.7993 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+
+\[
+P_{g,1} = \text{Druck von oben}
+\]
+
+\[
+\Rightarrow P_{g,1} = 1 \, \text{bar} + g \cdot \frac{(m_u + m_{EW})}{A} \quad \text{wobei} \quad A = (10 \, \text{cm})^2 \cdot \pi
+\]
+
+\[
+\Leftrightarrow P_{g,1} = 1 \, \text{bar} + 9.81 \, \frac{\text{m}}{\text{s}^2} \cdot \frac{(32 \, \text{kg} + 0.1 \, \text{kg})}{\frac{\pi}{100} \, \text{m}^2} = 1 \, \text{bar} + 0.1 \, \text{bar} = 1.1 \, \text{bar}
+\]
+
+Weil das Gas perfekt ist gilt:
+
+\[
+pV = mRT
+\]
+
+also:
+
+\[
+m_g = \frac{P_{g,1} \cdot V_{g,1}}{R \cdot T_{g,1}} = \frac{1.1 \, \text{bar} \cdot 3.14 \, \text{L}}{0.1663 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}} \cdot 500^\circ \text{C}} = 2.688 \, \text{g}
+\]
+
+\subsection*{b)}
+
+Wenn $x_{eis,2} > 0$ ist, heisst das, dass $T_{ew,2} = 0^\circ \text{C}$ ist.
+
+Da das EW und das Gas im thermodynamischen Gleichgewicht stehen, ist auch $T_{gr,2} = 0^\circ \text{C}$
+
+$P_{gr,2}$ findet man auch dank $pV = mRT$, aber man braucht es nicht.
+
+``````latex
+
+
+\[
+p_{g,2} = \frac{m_{g,1} \cdot R \cdot T_{g,2}}{V}
+\]
+
+da der Druck von aussen der gleiche bleibt (\Delta m = 0)
+
+\[
+p_{g,2} = p_{g,1} = 1.1 \text{ bar}
+\]
+
+\subsection*{c) ges: $Q_{12}$}
+
+In diesem Fall ist $Q_{12}$ lediglich die Änderung der Enthalpie des Gases, also:
+
+\[
+Q_{12} = m(h_2 - h_1) = m c_p^{ps} (T_2 - T_1) = 0.7933 \frac{\text{kJ}}{\text{kg K}} \cdot 2.68 \text{ kg} \cdot (0^\circ \text{C} - 0^\circ \text{C}) = 
+\]
+
+\[
+= -1.073 \text{ kJ}
+\]
+
+\subsection*{d) ges: $x_{eis,2}$}
+
+$p_{att}$ muss die gleiche bleiben, also $p_{4,ew} = 1 \text{ bar} + \frac{g \cdot m_{kr}}{A} = 1.0993 \text{ bar}$
+
+\[
+u_1 = u_{g1} + x \cdot (u_{ge} - u_{g1})
+\]
+
+durch Interpolation:
+
+\[
+\frac{1.1 \text{ bar} - 1.1 \text{ bar}}{1.1 \text{ bar} - 1 \text{ bar}} = \frac{u_{g1} - (-333.459)}{-333.458 - (-333.462)}
+\]
+
+\[
+u_{g1} = -333.446 \frac{\text{kJ}}{\text{kg}}
+\]
+
+Dasselbe für $u_{ge}$:
+
+\[
+\frac{1.1 \text{ bar} - 1.1 \text{ bar}}{1.1 \text{ bar} - 1 \text{ bar}} = \frac{u_{ge} - (-0.045)}{-0.045 - (-0.033)} \Rightarrow u_{ge} = -0.036 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\Rightarrow u_1 = -333.446 + 0.6 \cdot (-0.036 - (-333.446)) = -133.4 \frac{\text{kJ}}{\text{kg}}
+\]
+
+``````latex
+
+

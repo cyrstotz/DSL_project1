@@ -1,0 +1,61 @@
+Given: \( \text{gas} = \text{CO}_2 \) and \( T_6 \)  
+
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]
+
+\[
+T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]
+
+\[
+T_6 = 431.9 \, \text{K} \cdot \left( \frac{0.5 \, \text{bar}}{0.8 \, \text{bar}} \right)^{\frac{1.4 - 1}{1.4}}
+\]
+
+\[
+T_6 = 328.075 \, \text{K}
+\]
+
+---
+
+Energy balance equation:  
+
+\[
+\frac{dE}{dt} = \sum_i \dot{m}_i \left( h_2 - h_1 + \frac{w_2^2 - w_1^2}{2} \right) + \sum_j \dot{Q}_j - \sum_u \dot{W}_u
+\]
+
+For steady-state operation:  
+
+\[
+0 = \dot{m}_0 \left( h_2 - h_1 + \frac{w_2^2 - w_1^2}{2} \right)
+\]
+
+Rearranging:  
+
+\[
+w_2^2 = 2 \left( h_2 - h_1 \right) + w_1^2
+\]
+
+To calculate \( w_2 \):  
+
+\[
+w_2 = \sqrt{2 \left( h_2 - h_1 \right) + w_1^2}
+\]
+
+Enthalpy calculation:  
+
+\[
+h_2 = h \left( 431.9 \, \text{K} \right) \rightarrow \text{A2}
+\]
+
+\[
+h_2 = h \left( 431 \, \text{K} \right) + 0.9 \cdot \left( h \left( 440 \, \text{K} \right) - h \left( 430 \, \text{K} \right) \right)
+\]
+
+\[
+h_2 = 431.643 \, \text{kJ/kg} + 1.5 \cdot \frac{444.6 \, \text{kJ/kg} - 431.643 \, \text{kJ/kg}}{10}
+\]
+
+\[
+h_2 = 432.364 \, \text{kJ/kg}
+\]

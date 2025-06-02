@@ -1,0 +1,24 @@
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is calculated using the integral of \( T \, dS \). The relationship between entropy and enthalpy changes is expressed as:  
+\[
+T_{\text{KF}} = \frac{\int T \, dS}{S_2 - S_1} = \frac{q_{12}}{S_2 - S_1} = \frac{h_2 - h_1}{S_2 - S_1}
+\]  
+Since the coolant is modeled as an ideal liquid under isobaric conditions, the following simplifications apply:  
+\[
+h_2 - h_1 = c \cdot (T_2 - T_1)
+\]  
+\[
+S_2 - S_1 = c \cdot \ln\left(\frac{T_2}{T_1}\right)
+\]  
+Substituting these into the equation for \( T_{\text{KF}} \):  
+\[
+T_{\text{KF}} = \frac{c \cdot (T_2 - T_1)}{c \cdot \ln\left(\frac{T_2}{T_1}\right)} = \frac{T_2 - T_1}{\ln\left(\frac{T_2}{T_1}\right)}
+\]  
+Given values:  
+\[
+T_2 = 298.15 \, \text{K}, \quad T_1 = 288.15 \, \text{K}
+\]  
+\[
+T_{\text{KF}} = \frac{298.15 - 288.15}{\ln\left(\frac{298.15}{288.15}\right)} = \frac{10}{\ln\left(\frac{298.15}{288.15}\right)} = 293.17 \, \text{K}
+\]  
+
+---

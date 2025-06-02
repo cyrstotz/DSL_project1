@@ -1,0 +1,117 @@
+
+``````latex
+
+
+\section*{3)}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+ & $T_g [^\circ C]$ & $V_g [m^3]$ & $T_{EW}$ \\
+\hline
+$Z_1$ & 500 & 3.14 \cdot 10^{-3} & 0 \\
+\hline
+$Z_2$ &  &  &  \\
+\hline
+\end{tabular}
+
+\[
+m_{EW} = 0.1 \, \text{kg}, \quad i \times x_{Eis,1} = \frac{m_{Eis}}{m_{EW}} = 0.6
+\]
+\[
+D = 10 \, \text{cm}, \quad g = 9.81 \, \frac{\text{m}}{\text{s}^2}
+\]
+
+\subsection*{a)}
+
+\[
+p_{gas} = p_{amb} + p_{column}
+\]
+
+\[
+\Rightarrow p_{gas,1} = 1 \, \text{bar} + g \frac{3Z}{\pi \left( \frac{D}{2} \right)^2} \frac{\text{kg}}{\text{m}^3} \frac{\text{m}}{\text{s}^2} \Rightarrow 32 \, \text{kg} \cdot 9.81 \, \frac{\text{m}}{\text{s}^2} = 39.24 \, \frac{\text{kg} \cdot \text{m}}{\text{s}^2} = 39.24 \, \text{N}
+\]
+
+\[
+\Rightarrow p_{gas,1} = 1 + 0.4 \, [\text{bar}] = 1.4 \, \text{bar}
+\]
+
+\[
+m_{gas} = \frac{pV}{RT} \quad /R = \frac{\overline{R}}{M_d} \cdot 10^{-3}
+\]
+
+\[
+= \frac{1.4 \cdot 10^5 \cdot 3.14 \cdot 10^{-3}}{\frac{\overline{R}}{M_d} \cdot 10^{-3} \cdot 273.15} = 3.42 \, \text{g}
+\]
+
+\subsection*{b)}
+
+\[
+p_{gas} = \text{const.} \quad \Rightarrow \text{weil Thermodyn. ggbw. und das EW innenpresst leistet das EW keinen Beitrag zum Druck, also muss } p_1 = p_2
+\]
+
+``````latex
+
+
+\section*{c)}
+
+\[
+\Delta E = \sum Q_{12} - \sum W_{v,12}
+\]
+
+\[
+W = \int_{1}^{2} p \, dV = p_{\text{gas}} (V_2 - V_1)
+\]
+
+\[
+V_2 = \frac{mRT_2}{p} = \frac{3.42 \cdot 10^{-3} \cdot R \cdot 273.153}{1.4 \cdot 10^5} = 0.01110 \, m^3 \approx 1.11 \, L
+\]
+
+\[
+\implies W = 1.1 \cdot 10^5 \left(1.11 \cdot 10^{-3} + 3.11 \cdot 10^{-3}\right) = 594.843
+\]
+
+\[
+\Delta E = c_v (T_2 - T_1)
+\]
+
+\[
+= 0.633 \, \frac{Ws}{kg \, K} \left(273.153 - 773.15\right)
+\]
+
+\[
+= -316 \, \frac{Ws}{g} \implies \Delta E \cdot m =
+\]
+
+\[
+\implies Q_{12} = \Delta E + W
+\]
+
+\section*{d)}
+
+\[
+x_{2, \text{eis}} = \frac{|u_2| - u_{\text{fest}}}{u_{fl} - u_{\text{fest}}} \quad / \text{mit} \quad T_2 = 0.003^\circ C
+\]
+
+\[
+u_2 = c_v (T_2 - T_1) + u_1
+\]
+
+\[
+= 0.633 \left(273.153 - 773.15\right) + (-333.442)
+\]
+
+\[
+= -449.91 \, \frac{Ws}{g} \quad / u_2 = -333.485 + x_1 (-0.045 + 333.178)
+\]
+
+\[
+= -333.410 \, \frac{Ws}{g}
+\]
+
+\[
+\implies x_{2, \text{eis}} = \frac{1 - 449.91 - (-333.442)}{-0.083 - (-333.442)} = 0.3943 \implies 3.4 \, \% 
+\]
+
+``````latex
+
+

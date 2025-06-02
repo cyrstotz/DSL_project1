@@ -1,0 +1,34 @@
+The thermodynamic mean temperature of the coolant is calculated as:  
+\[
+T_{\text{KF}} = \frac{\int_{T_{\text{KF,in}}}^{T_{\text{KF,out}}} T \, dh}{\int_{T_{\text{KF,in}}}^{T_{\text{KF,out}}} dh}
+\]  
+
+For an ideal liquid with constant heat capacity:  
+\[
+dh = c \, dT \quad \text{and} \quad \int dh = \int c \, dT
+\]  
+
+Thus:  
+\[
+T_{\text{KF}} = \frac{\int_{T_{\text{KF,in}}}^{T_{\text{KF,out}}} T \, c \, dT}{\int_{T_{\text{KF,in}}}^{T_{\text{KF,out}}} c \, dT}
+\]  
+\[
+T_{\text{KF}} = \frac{\int_{T_{\text{KF,in}}}^{T_{\text{KF,out}}} T \, dT}{\int_{T_{\text{KF,in}}}^{T_{\text{KF,out}}} dT}
+\]  
+
+Substituting the limits:  
+\[
+T_{\text{KF}} = \frac{\int_{288.15}^{298.15} T \, dT}{\int_{288.15}^{298.15} dT}
+\]  
+\[
+T_{\text{KF}} = \frac{\frac{T^2}{2} \Big|_{288.15}^{298.15}}{T \Big|_{288.15}^{298.15}}
+\]  
+\[
+T_{\text{KF}} = \frac{\frac{298.15^2}{2} - \frac{288.15^2}{2}}{298.15 - 288.15}
+\]  
+\[
+T_{\text{KF}} = \frac{88715.6225 - 83015.6225}{10}
+\]  
+\[
+T_{\text{KF}} = 293.13 \, \text{K}
+\]

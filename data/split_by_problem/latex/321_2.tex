@@ -1,0 +1,83 @@
+
+``````latex
+
+
+\section*{Problem 2}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a plot with the vertical axis labeled $T \text{ in K}$ and the horizontal axis labeled $S \text{ in } \frac{\text{kJ}}{\text{kg} \cdot \text{K}}$. There are several points and lines drawn on the graph:
+    \begin{itemize}
+        \item Point $P_0$ is at the bottom right of the graph.
+        \item Point $P_3$ is above and to the left of $P_0$.
+        \item Point $P_5$ is to the right of $P_3$.
+        \item There are arrows indicating transitions between points:
+        \begin{itemize}
+            \item From $P_0$ to $P_3$ labeled as 1.
+            \item From $P_3$ to $P_5$ labeled as 2.
+            \item From $P_5$ to $P_0$ labeled as 3.
+            \item From $P_0$ to $P_5$ labeled as 4.
+            \item From $P_5$ to $P_3$ labeled as 5.
+            \item From $P_3$ to $P_0$ labeled as 6.
+        \end{itemize}
+    \end{itemize}
+\end{description}
+
+\subsection*{b)}
+
+\begin{equation*}
+    \frac{T_6}{T_5} = \left( \frac{P_6}{P_5} \right)^{\frac{n-1}{n}}
+\end{equation*}
+
+\begin{equation*}
+    T_6 = T_5 \left( \frac{P_0}{P_5} \right)^{\frac{n-1}{n}} = 439.9 \text{K} \left( \frac{0.994 \text{ bar}}{0.5 \text{ bar}} \right)^{0.4/1.4} = \underline{328.1 \text{ K}}
+\end{equation*}
+
+\textbf{Energiegleich:}
+
+\begin{equation*}
+    0 = \dot{m} \left[ h_5 - h_6 + \frac{(w_5^2 - w_0^2)}{2} \right]
+\end{equation*}
+
+\begin{equation*}
+    h_5 - h_6 = c_p \left( T_5 - T_6 \right) = 1.006 \frac{\text{kJ}}{\text{kg} \cdot \text{K}} (439.9 - 328.1) = 112.4 \frac{\text{kJ}}{\text{kg}}
+\end{equation*}
+
+\begin{equation*}
+    w_0^2 = 2 (h_5 - h_6) + w_5^2 = 2 (112.4) + 220^2 \frac{\text{m}^2}{\text{s}^2} = 224.8 + 48400 = 48624.8 \frac{\text{m}^2}{\text{s}^2}
+\end{equation*}
+
+\begin{equation*}
+    w_0 = \sqrt{48624.8 \frac{\text{m}^2}{\text{s}^2}} = \underline{220.5 \frac{\text{m}}{\text{s}}}
+\end{equation*}
+
+``````latex
+
+
+c)
+\begin{align*}
+\Delta e_{x,str} &= (h_{aus} - h_{ein} - T_0 (s_{aus} - s_{ein}) + \frac{v_{aus}^2 - v_{ein}^2}{2} \\
+h_{aus} - h_{ein} &= h_2 - h_0 = c_p^{15} (T_2 - T_0) = 1006 \frac{kJ}{kgK} \\
+&= 1.006 \frac{kJ}{kgK} (328.16 - 243.15 K) \\
+&= 85.4597 \frac{kJ}{kg} \\
+T_0 (s_{aus} - s_{ein}) &\approx T_0 (s_2 - s_0) = T_0 \left( c_p^{15} \ln \left( \frac{T_2}{T_0} \right) - R \ln \left( \frac{p_0}{p_0} \right) \right) \quad \text{(p_0 = p_2)} \\
+&= 243.15 K / 1.006 \frac{kJ}{kgK} \left( \ln \left( \frac{328.1}{243.15} \right) \right) = 73.2946 \frac{kJ}{kg} \\
+\frac{v_{aus}^2 - v_{ein}^2}{2} &= \frac{v_2^2 - v_0^2}{2} = \frac{507.1 \frac{m^2}{s^2} - 200 \frac{m^2}{s^2}}{2} = 108620.85 \frac{J}{kg} \\
+&= 108.621 \frac{kJ}{kg} \\
+\Delta e_{x,str} &= 85.4597 \frac{kJ}{kg} - 73.2946 \frac{kJ}{kg} + 108.621 \frac{kJ}{kg} \\
+&= 120.786 \frac{kJ}{kg}
+\end{align*}
+
+d)
+\text{Exergiebilanz, stationär, massenspezifisch}
+\begin{align*}
+0 &= \dot{e}_{x,str} + (h_{ein} - h_{aus} - T_0 (s_{ein} - s_{aus}) + \Delta e_{x} + \left( 1 - \frac{T_0}{T_B} \right) q_B - \left( 1 - \frac{T_0}{T_B} \right) w_{strm} - e_{x,verl} \\
+&= -\Delta e_{x,str} \\
+e_{x,verl} &= -\Delta e_{x,str} + \left( 1 - \frac{T_0}{T_B} \right) \frac{q_B}{\dot{m}} \\
+&= -120.786 \frac{kJ}{kg} + \left( 1 - \frac{263.15 K}{1289 K} \right) 1.745 \frac{kJ}{kg} = 898.796 \frac{kJ}{kg}
+\end{align*}
+
+``````latex
+
+

@@ -1,0 +1,23 @@
+Energy balance around the compressor, stationary flow process with \( \dot{m} \):  
+
+0 = \( \dot{m} \) [he - ha + (w2 squared - w2a squared) / 2 + g(z2 - za)] + Q - W  
+adiabatic  
+
+0 = \( \dot{m} \) [h2 - h3] + Q - W → \( \dot{m} \) = W / (h2 - h3)
+
+The temperature \( T_2 \) in the evaporator is \( 257.15 \, \text{K} \), read from Figure 5 (see page 4).  
+
+From Table A-10:  
+At \( 257.15 \, \text{K} \), \( T_2 = -16^\circ \text{C} \).  
+
+From Table A-12:  
+At \( -16^\circ \text{C} \), the saturated vapor is interpolated between \( T_{\text{sat}} = -18.8^\circ \text{C} \) and \( T_{\text{sat}} = -12.73^\circ \text{C} \).  
+
+Interpolation formula:  
+\( y = y_1 + \frac{y_2 - y_1}{x_2 - x_1} (x - x_1) \).  
+
+\( p_2 = 1.4 \, \text{bar} + \frac{1.8 \, \text{bar} - 1.4 \, \text{bar}}{-12.73^\circ \text{C} - (-18.8^\circ \text{C})} (-16^\circ \text{C} + 18.8^\circ \text{C}) = 1.588 \, \text{bar} \).  
+
+From Table A-11:  
+\( h_2 = h_g \) interpolated for \( 1.588 \, \text{bar} \).  
+\( h_2 = 257.77 \, \text{kJ/kg} \).

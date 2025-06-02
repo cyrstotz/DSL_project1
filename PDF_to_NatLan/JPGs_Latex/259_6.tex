@@ -1,0 +1,49 @@
+TASK 2a  
+A graph is drawn representing a qualitative T-s diagram for the jet engine process. The diagram includes labeled isobars and states:  
+- \( p_2 = p_3 \), \( p_4 \), \( p_5 \), \( p_m \), \( p_0 = p_6 \).  
+- The curve between states 5 and 6 is labeled "richtlinie" (guideline).  
+The axes are labeled as \( T \) (temperature) and \( S \) (entropy), with units \( \left[\frac{\text{kJ}}{\text{kg·K}}\right] \).  
+
+TASK 2b  
+The equation for the outlet velocity and temperature is written as:  
+\[
+o = \dot{m} \left[ h_{\text{ena}} + \frac{w_e^2 - w_a^2}{2} \right] + \dot{Q}_5 + \dot{W}_t
+\]  
+The temperature ratio is calculated using:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}}
+\]  
+Substituting values:  
+\[
+T_0 = T_5 \left( \frac{p_0}{p_5} \right)^{\frac{1}{14}} = 328.07 \, \text{K}
+\]  
+Ambient pressure is given as:  
+\[
+p_0 = p_{\text{amb}} = 0.191 \, \text{bar}
+\]  
+
+TASK 2c  
+The mass-specific exergy destruction is calculated as:  
+\[
+\Delta e_{\text{str}} = e_{\text{str},6} - e_{\text{str},0}
+\]  
+The specific exergy at state 6 is expressed as:  
+\[
+e_{\text{str},6} = m e_{\text{str}} = \dot{m} \left[ h_6 - h_0 - T_0 (S_6 - S_0) + \text{ke} + \text{pe} \right]
+\]  
+Simplified to:  
+\[
+e_{\text{str},6} = h_6 - h_0 - T_0 (S_6 - S_0) + \frac{1}{2} w_6^2
+\]  
+The specific exergy at state 0 is:  
+\[
+e_{\text{str},0} = h_0 - T_0 (S_0) + \frac{1}{2} w_0^2
+\]  
+Substituting values:  
+\[
+T_6 = 340 \, \text{K}, \quad w_0 = 320 \, \text{m/s}, \quad T_0 = 263.15 \, \text{K}
+\]  
+The exergy destruction is calculated as:  
+\[
+\Delta e_{\text{str}} = 130065.42 - 20000 = 110065.42 \, \frac{\text{kJ}}{\text{kg}}
+\]

@@ -1,0 +1,45 @@
+The first law of thermodynamics is applied to the transition from state 5 to state 6:  
+\[
+0 = h_5 - h_6 + \frac{w_5^2 - w_6^2}{2}
+\]  
+Rearranging and substituting:  
+\[
+w_6^2 = w_5^2 + 2 c_{p,\text{air}} (T_5 - T_6)
+\]  
+Substituting the known values:  
+\[
+w_6 = \sqrt{507.24 \, \text{m}^2/\text{s}^2} = 257.30 \, \text{m/s}
+\]  
+
+The final velocity at state 6 is calculated as \( w_6 = 257.30 \, \text{m/s} \).
+
+The mass-specific increase in flow exergy is calculated using the formula:  
+\[
+e_{\text{ex,st},6} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2}
+\]  
+The expression for the change in flow exergy is:  
+\[
+\Delta e_{\text{ex,st}} = e_{\text{ex,st},6} - e_{\text{ex,st},0}
+\]  
+Substituting the terms:  
+\[
+e_{\text{ex,st},0} = h_0 - h_0 - T_0 (s_0 - s_0) + \frac{w_0^2}{2}
+\]  
+The gas constant \( R \) is calculated as:  
+\[
+R = c_p - c_v = \frac{c_p}{\kappa} = 0.2874 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+The final expression for \( \Delta e_{\text{ex,st}} \) is:  
+\[
+\Delta e_{\text{ex,st}} = c_p (T_6 - T_0) - c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) + \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]  
+Substituting numerical values:  
+\[
+= 85.43 \, \frac{\text{kJ}}{\text{kg}} - 73.276 \, \frac{\text{kJ}}{\text{kg}} + 108.65 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+The result is:  
+\[
+\Delta e_{\text{ex,st}} = 120.81 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+---

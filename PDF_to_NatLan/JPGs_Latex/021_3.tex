@@ -1,0 +1,53 @@
+TASK 2c  
+The task involves calculating the flow exergy difference \( \Delta e_{\text{str}} \), which is expressed as:  
+\[
+\Delta e_{\text{str}} = e_{\text{str},6} - e_{\text{str},0}
+\]  
+The equation for the specific flow exergy is given as:  
+\[
+\dot{W}_{06} = m \left( h_c - h_0 + \frac{w_c^2}{2} - \frac{w_0^2}{2} \right)
+\]  
+This can be rewritten as:  
+\[
+\dot{W}_{06} = m_{\text{gas}} \left( h_0 - h_c + \frac{(w_0 - w_c)^2}{2} \right)
+\]  
+
+### Interpolation for \( h_0 \):  
+Using Table A-22, interpolation is performed to find \( h_0 \):  
+\[
+\begin{array}{|c|c|}
+\hline
+240 & 240.02 \\
+243 & x \\
+250 & 250.05 \\
+\hline
+\end{array}
+\]  
+The interpolation formula is applied:  
+\[
+h_0 = 243.029 = 240.02 + \frac{(243 - 240)}{250 - 240} \cdot (250.05 - 240.02)
+\]  
+
+### Interpolation for \( h_c \):  
+Similarly, interpolation is performed to find \( h_c \):  
+\[
+\begin{array}{|c|c|}
+\hline
+325 & 325.31 \\
+328.075 & x \\
+330 & 330.34 \\
+\hline
+\end{array}
+\]  
+The interpolation formula is applied:  
+\[
+h_c = 328.2103 = 325.31 + \frac{(328.075 - 325)}{330 - 325} \cdot (330.34 - 325.31)
+\]  
+
+### Final Equation:  
+The flow exergy difference is calculated using:  
+\[
+\Delta e_{\text{str}} = h_c - h_0 - T_0 \cdot (s_c - s_0) + qe
+\]  
+
+No diagrams or graphs are present on this page.

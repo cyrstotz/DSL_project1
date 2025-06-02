@@ -1,0 +1,46 @@
+TASK 2a  
+The ambient temperature is given as \( T_0 = 283.15 \, \text{K} \).  
+
+The exergy destruction is calculated using the formula:  
+\[
+\Delta ex_{\text{str}} = \left( 85.925 \, \frac{\text{kJ}}{\text{kg}} - 283.15 \, \text{K} \cdot \left( 0.303 \, \frac{\text{kJ}}{\text{kg·K}} \right) \right) + \frac{\left( 507.294 \, \frac{\text{m}^2}{\text{s}^2} \right)^2}{2} - \frac{\left( 700 \, \frac{\text{m}^2}{\text{s}^2} \right)^2}{2}
+\]
+
+Breaking down the calculation:  
+\[
+\Delta ex_{\text{str}} = 85.925 \, \frac{\text{kJ}}{\text{kg}} - 73.2772 \, \frac{\text{kJ}}{\text{kg}} + 123.685 \, \frac{\text{kJ}}{\text{kg}} - 257.2926 \, \frac{\text{kJ}}{\text{kg}} - 70 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+Final result:  
+\[
+\Delta ex_{\text{str}} = -120.005 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+---
+
+TASK 2b  
+The task involves determining the entropy production \( \dot{S}_{\text{gen}} \).  
+
+The entropy production is calculated using the formula:  
+\[
+\dot{S}_{\text{gen}} = S_6 - S_0 - \frac{Q_B}{T_B}
+\]
+
+Breaking down the entropy terms:  
+\[
+S_{\text{gen}} = \dot{m} \cdot \left( S_6 - S_0 \right) - \frac{Q_B}{T_B \cdot \dot{m}}
+\]
+
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = 0.303 \, \frac{\text{kJ}}{\text{kg·K}} - \frac{1195 \, \frac{\text{kJ}}{\text{kg}}}{1283 \, \text{K}}
+\]
+
+Final result:  
+\[
+\dot{S}_{\text{gen}} = -0.6257 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Additional notes:  
+- The heat transfer \( Q_B = 1195 \, \frac{\text{kJ}}{\text{kg}} \).  
+- The thermodynamic mean temperature \( T_B = 1283 \, \text{K} \).

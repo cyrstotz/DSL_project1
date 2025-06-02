@@ -1,0 +1,53 @@
+TASK 1c  
+The steady-state flow process is described with the equation:  
+\[
+\dot{m} \cdot s_{\text{out}} - \dot{m} \cdot s_{\text{in}} + \frac{\dot{Q}}{T} + \dot{S}_{\text{gen}} = 0
+\]  
+
+The entropy balance is expressed as:  
+\[
+\frac{ds}{dt} = 0 = \dot{m}_{\text{in}} \cdot s_{\text{in}} - \dot{m}_{\text{out}} \cdot s_{\text{out}} + \dot{m}_{\text{react}} \cdot s_{\text{react}} + \frac{\dot{Q}}{T} + \dot{S}_{\text{gen}}
+\]  
+
+After simplifying for steady-state conditions, the entropy generation term is given as:  
+\[
+\dot{S}_{\text{gen}} = \dot{m}_{\text{in}} \cdot (s_{\text{out}} - s_{\text{in}}) + \dot{m}_{\text{react}} \cdot (s_{\text{out}} - s_{\text{in}})
+\]  
+
+---
+
+TASK 1d  
+The energy balance for the reactor is described for a semi-open system:  
+\[
+\Delta E = m_2 \cdot u_2 - m_1 \cdot u_1 + \Delta KE + \Delta PE = \dot{m} \cdot h + Q
+\]  
+
+From the water tables:  
+- At \( 70^\circ\text{C} \), \( h_f = 292 \, \text{kJ/kg} \).  
+- At \( 70^\circ\text{C} \), \( u_2 = 292.95 \, \text{kJ/kg} \).  
+- At \( 100^\circ\text{C} \), \( u_1 = 418.94 \, \text{kJ/kg} \).  
+
+The total mass at state 2 is:  
+\[
+m_2 = m_1 + \Delta m = 5755 \, \text{kg} + \Delta m
+\]  
+
+The heat released during cooling is:  
+\[
+Q = Q_{\text{out}} = 35 \, \text{MJ} = 35000 \, \text{kJ}
+\]  
+
+Using the energy balance:  
+\[
+u_2 \cdot (m_1 + \Delta m) - m_1 \cdot u_1 = \dot{m} \cdot h + Q
+\]  
+
+Rearranging for \( \Delta m \):  
+\[
+\Delta m \cdot u_2 - \dot{m} \cdot h = m_1 \cdot u_1 + Q - m_1 \cdot u_2
+\]  
+
+Finally, solving for \( \Delta m \):  
+\[
+\Delta m = \frac{m_1 \cdot u_1 + Q - m_1 \cdot u_2}{u_2 - h}
+\]

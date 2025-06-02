@@ -1,0 +1,58 @@
+Item d) The value of \(X_{E12}\) is determined as follows:
+- Energy content around \(EW\) (1st Control Surface):
+  - The rate of change of energy with respect to time is given by:
+    \[
+    \frac{dE}{dt} = \sum_i \dot{m}_i (h_i + \frac{c_i^2}{2} + p_i) + \sum_j \dot{Q}_j - \sum_k \dot{W}_k
+    \]
+  - For adiabatic conditions, the heat transfer rate \(\dot{Q}\) equals zero.
+  - For stationary (isochoric) conditions, the mass flow rate at \(EW\) equals the mass flow rate at \(ei\), and the volume ratio \(\frac{V_{ew}}{V_{ei}}\) remains constant.
+  - The change in internal energy \(m_{ew} (u_2 - u_1)\) equals the heat transfer \(Q_{12}\).
+  - The final internal energy \(u_2\) is calculated as:
+    \[
+    u_2 = \frac{Q_{12}}{m_{ew}} + u_1
+    \]
+  - The initial internal energy \(u_1\) is expressed as:
+    \[
+    u_1 = u_{F,1} + X_{AE1} (u_{P,AE1} - u_{F,1})
+    \]
+  - Since the pressure after \(EW\) is isochoric:
+    \[
+    p_{ei} = p_0 + p_{ext} \quad 1.14 \, \text{bar}
+    \]
+    \[
+    u_{F,1} (1.14 \, \text{bar}) + X_{AE1} (u_{P,AE1} (1.14 \, \text{bar}) - u_{F,1} (1.14 \, \text{bar}))
+    \]
+    \[
+    = -2.33 \, \frac{\text{kJ}}{\text{kg}} + 0.6 \left( -0.645 \, \frac{\text{kJ}}{\text{kg}} - (-333.4 \, \frac{\text{kJ}}{\text{kg}}) \right)
+    \]
+    \[
+    = -1.33 \, \frac{\text{kJ}}{\text{kg}}
+    \]
+  - The final internal energy \(u_2\) is recalculated as:
+    \[
+    = \frac{1500 \, \text{J}}{0.1 \, \text{kg}} + (-133.4102 \, \frac{\text{kJ}}{\text{kg}})
+    \]
+    \[
+    = -118.4102 \, \frac{\text{kJ}}{\text{kg}}
+    \]
+  - The value of \(X_{E12}\) is then calculated as:
+    \[
+    X_{E12} = \frac{u_2 - u_{F,1}}{u_{P,AE1} - u_{F,1}} = \frac{-118.4102 - (-333.4)}{-0.645 - (-333.4)}
+    \]
+    \[
+    = \frac{-118.4102 + 333.4}{0.645 - 333.4}
+    \]
+    \[
+    = 0.65
+    \]
+
+Item 5) Energy content around Gas:
+- The change in energy \(\Delta E\) is given by:
+  \[
+  \left( \Delta E = Q - W \right)
+  \]
+  - \(\Delta E\) is the sum of the energy change in the cylinder \(\Delta E_{Zyl}\) and the energy of the piston \(E_{Kolben}\).
+  - \(W\) represents the work done by volume change, calculated as:
+    \[
+    W = \int p \, dV
+    \]

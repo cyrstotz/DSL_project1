@@ -1,0 +1,119 @@
+Initial conditions for the ice-water mixture (EW) are given as:
+- Temperature \( T_1 = 0^\circ\text{C} \),
+- Ice mass fraction \( x_{\text{ice},1} = 0.6 \),
+- Mass of the EW \( m_{\text{EW}} = 0.1 \, \text{kg} \).
+
+The energy balance for the EW system is written as:
+\[
+\Delta U = U_2 - U_1 = Q - W
+\]
+where \( Q \) is the heat transferred and \( W \) is the work done. The work term is neglected due to incompressibility.
+
+The heat transfer \( Q \) is given as:
+\[
+Q = 1367 \, \text{J}.
+\]
+
+The internal energy \( U \) is calculated using the formula:
+\[
+U = U_f + x (U_g - U_f),
+\]
+where:
+- \( x \) is the mass fraction of the phase,
+- \( U_f \) is the specific internal energy of the solid phase (ice),
+- \( U_g \) is the specific internal energy of the liquid phase (water).
+
+The ice mass fraction \( x \) is calculated as:
+\[
+x = (1 - x_{\text{ice}}) = 0.4.
+\]
+
+From Table 1, the values for internal energy are:
+\[
+U_f = -333.458 \, \text{kJ/kg}, \quad U_g = -0.045 \, \text{kJ/kg}.
+\]
+
+Substituting these values:
+\[
+U_2 = -200.4 \, \text{kJ/kg}.
+\]
+
+The corrected energy balance is written as:
+\[
+m (U_2 - U_1) = Q.
+\]
+
+Rearranging for \( U_2 \):
+\[
+U_2 = \frac{Q}{m} + U_1.
+\]
+
+Substituting \( Q = 1367 \, \text{J} \), \( m = 0.1 \, \text{kg} \), and \( U_1 = -333.458 \, \text{kJ/kg} \):
+\[
+U_2 = -186.73 \, \text{kJ/kg}.
+\]
+
+The ice fraction \( x_{\text{ice},2} \) in state 2 is calculated using:
+\[
+x_{\text{ice},2} = \frac{U - U_{\text{liquid}}}{U_{\text{solid}} - U_{\text{liquid}}}.
+\]
+
+Substituting values:
+\[
+x_{\text{ice},2} = 0.44 \quad \text{(intermediate step)} \quad \Rightarrow x_{\text{ice},2} = 0.600.
+\]
+
+To determine \( p_{g,1} \) and \( m_g \) in state 1:  
+
+The given parameters are:  
+- \( c_V = 0.633 \, \text{kJ/kg·K} \)  
+- \( M_g = 50 \, \text{kg/kmol} \)  
+
+Using the ideal gas law:  
+\[
+p_{g,1} V_{g,1} = m_g R_g T_{g,1}
+\]  
+
+For \( p_{g,1} \): The pressure in the EW and gas must be equal (equilibrium condition).  
+
+External pressure is:  
+\[
+p_{\text{ext}} = 1 \, \text{bar} + p_K
+\]  
+
+The force exerted by the piston is:  
+\[
+F_K = m_K g
+\]  
+
+The pressure exerted by the piston is:  
+\[
+p_K = \frac{F_K}{A} = \frac{m_K g}{A}, \quad A = \left(\frac{D}{2}\right)^2 \pi
+\]  
+
+Substituting values:  
+\[
+p_K = \frac{32 \cdot 9.81}{0.00785} = 0.3396 \, \text{bar}
+\]  
+
+Thus:  
+\[
+p_{\text{ext}} = 1.3396 \, \text{bar} \quad \text{and} \quad p_{g,1} = 1.4 \, \text{bar}
+\]  
+
+For \( m_g \):  
+\[
+m_g = \frac{p_{g,1} V_{g,1}}{R_g T_{g,1}}
+\]  
+
+Given:  
+\[
+V_{g,1} = 0.00314 \, \text{m}^3, \quad R_g = \frac{R}{M} = \frac{8.314}{50} = 166.28 \, \text{J/kg·K}, \quad T_{g,1} = 773.15 \, \text{K}
+\]  
+
+Substituting values:  
+\[
+m_g = \frac{1.4 \cdot 0.00314}{166.28 \cdot 773.15} = 3.42 \, \text{g}
+\]  
+
+---

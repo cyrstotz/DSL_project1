@@ -1,0 +1,29 @@
+The mass flow rate and total reactor mass are given as:  
+\[
+\dot{m}_{\text{in}} = 0.3 \, \text{kg/s}, \quad m_{\text{total}} = 5755 \, \text{kg}.
+\]  
+
+The energy balance equation is written as:  
+\[
+0 = \dot{m} \, (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R + \dot{Q}_{\text{out}} - \dot{W}.
+\]  
+
+Rearranging to solve for the heat flow removed by the coolant:  
+\[
+\dot{Q}_{\text{out}} = -\dot{Q}_R + \dot{m} \, (h_{\text{out}} - h_{\text{in}}).
+\]  
+
+The enthalpy values are calculated using water tables:  
+\[
+h_{\text{in}} = h_f(70^\circ\text{C}) + 0.005 \, (h_g(70^\circ\text{C}) - h_f(70^\circ\text{C})) = 304.65 \, \frac{\text{kJ}}{\text{kg}},
+\]  
+\[
+h_{\text{out}} = h_f(100^\circ\text{C}) + 0.005 \, (h_g(100^\circ\text{C}) - h_f(100^\circ\text{C})) = 430.825 \, \frac{\text{kJ}}{\text{kg}}.
+\]  
+
+Substituting these values:  
+\[
+\dot{Q}_{\text{out}} = -62.2972 \, \frac{\text{kJ}}{\text{s}} = -62.31 \, \text{kW}.
+\]  
+
+---

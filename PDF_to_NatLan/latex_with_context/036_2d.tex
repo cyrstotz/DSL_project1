@@ -1,0 +1,26 @@
+The exergy destruction is calculated as:  
+\[
+\dot{E}_{\text{dest}} = T_0 \dot{S}_{\text{gen}}
+\]  
+Where \( T_0 = 243.15 \, \text{K} \).  
+
+The entropy generation \( \dot{S}_{\text{gen}} \) is derived from the entropy balance:  
+\[
+0 = \dot{m}(S_e - S_a) + \frac{\dot{Q}}{T_{\text{fin}}} + \dot{S}_{\text{gen}}
+\]  
+\[
+\dot{S}_{\text{gen}} = [S_6 - S_0] - \frac{q_B}{1289 \, \text{K}}
+\]  
+
+Substituting values:  
+\[
+S_6 - S_0 = 0.337 \, \frac{\text{kJ}}{\text{kg·K}}, \quad \frac{q_B}{1289 \, \text{K}} = \frac{1195}{1289}
+\]  
+\[
+\dot{S}_{\text{gen}} = 0.337 - \frac{1195}{1289} = -0.59 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Finally, the exergy destruction:  
+\[
+\dot{E}_{\text{dest}} = 243.15 \times \dot{S}_{\text{gen}}
+\]

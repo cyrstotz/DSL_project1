@@ -1,0 +1,130 @@
+
+``````latex
+
+
+\section*{A2}
+
+\begin{align*}
+C_p &= 1.006 \frac{\text{kJ}}{\text{kg K}} \\
+n = k &= 1.4 \\
+PE &= 0
+\end{align*}
+
+\begin{tabular}{c|c|c|c}
+ & $p$ (bar) & $T$ (°C) & $s$ \\
+\hline
+0 & 0.1 & -30° & \\
+1 & $p_1 > p_0$ & $T_1 > T_0$ & \\
+2 & & & $s_1 = s_2$ \\
+3 & $p_3 = p_2$ & & \\
+4 & & & $s_3 < s_4$ \\
+5 & $p_4 = p_5 = 0.5$ & 4 3/7 k & \\
+6 & & & $s_5 = s_6$ \\
+\end{tabular}
+
+\subsection*{a)}
+
+The graph is a Temperature-Entropy ($T$-$s$) diagram with the following details:
+
+- The x-axis is labeled $s \left[ \frac{\text{kJ}}{\text{kg K}} \right]$.
+- The y-axis is labeled $T$ [°C].
+- There are six points labeled 0, 1, 2, 3, 4, 5, and 6.
+- Point 0 is at the origin.
+- Point 1 is higher than point 0, both in terms of $T$ and $s$.
+- Point 2 is vertically above point 1, indicating an isentropic process ($s_1 = s_2$).
+- Point 3 is to the right of point 2, indicating an isobaric process ($p_3 = p_2$).
+- Point 4 is below point 3, indicating a decrease in entropy ($s_3 < s_4$).
+- Point 5 is to the right of point 4, indicating an isobaric process ($p_4 = p_5 = 0.5$ bar).
+- Point 6 is vertically below point 5, indicating an isentropic process ($s_5 = s_6$).
+
+The graph includes the following annotations:
+- "Isobar" between points 1 and 2.
+- "Isentrop" between points 2 and 3.
+- "Isobar" between points 3 and 4.
+- "Isentrop" between points 4 and 5.
+- "Isotherm" along the x-axis.
+
+``````latex
+
+
+\section*{Problem b}
+
+\begin{align*}
+w_s &= 220 \frac{m}{s} \\
+p_s &= 0.5 \text{ bar} \\
+T_s &= 431.9 \text{ K}
+\end{align*}
+
+\textbf{Stat. Fluorper}
+
+\begin{align*}
+0 &= \dot{m} \left[ h_s - h_1 + \frac{w_s^2 - w_1^2}{2} \right] + \cancelto{0}{\dot{Q}} - \dot{W}_t
+\end{align*}
+
+\begin{align*}
+h_s - h_1 &= C_p (T_s - T_1)
+\end{align*}
+
+\begin{align*}
+\dot{W}_t^{rev} &= - \dot{m} \left( \int_{1}^{s} v \, dp + \Delta ke \right)
+\end{align*}
+
+\begin{align*}
+pv &= RT \\
+v &= \frac{RT}{p}
+\end{align*}
+
+\begin{align*}
+\dot{W}_t &= - \dot{m} \left( RT \right)
+\end{align*}
+
+\section*{Problem c}
+
+\begin{align*}
+\dot{m} \cdot ex_{tr} &= \dot{m} \left[ h - h_0 - T_0 (s - s_0) + k_e + \cancel{pe^0} \right]
+\end{align*}
+
+\begin{align*}
+ex_{tr,s} &= h_s - h_0 - T_0 (s_s - s_0) + \frac{w_s^2}{2} \\
+ex_{tr,0} &= h_0 - h_0 - T_0 (s_0 - s_0) + \frac{w_0^2}{2}
+\end{align*}
+
+\begin{align*}
+\Delta ex_{tr} &= h_s - h_0 - T_0 (s_s - s_0) + \frac{w_s^2}{2} - \frac{w_0^2}{2}
+\end{align*}
+
+\begin{align*}
+h_s - h_0 &= C_p (T_s - T_0) \\
+s_s - s_0 &= C_p \ln \left( \frac{T_s}{T_0} \right) - R \ln \left( \frac{p_s}{p_0} \right)
+\end{align*}
+
+\begin{align*}
+\Delta ex_{tr} &= C_p (T_s - T_0) - T_0 C_p \ln \left( \frac{T_s}{T_0} \right) + \frac{w_s^2}{2} - \frac{w_0^2}{2}
+\end{align*}
+
+\begin{align*}
+&= 1.006 \frac{kJ}{kg K} \left[ 340 \text{ K} - (30 + 273.15) \text{ K} \right] - (30 + 273.15) \text{ K} \cdot 1.006 \frac{kJ}{kg K} \ln \left( \frac{340 \text{ K}}{30 + 273.15 \text{ K}} \right) + \frac{340^2}{2} - \frac{200^2}{2} \\
+&= 110.65 \frac{kJ}{kg} \approx 110.1 \frac{MJ}{kg}
+\end{align*}
+
+``````latex
+
+
+\section*{A2 forts}
+
+\subsection*{d)}
+
+\begin{align*}
+    e_{x, \text{verl}} &= T_0 \dot{s}_{\text{erz}} \\
+    0 &= m (s_0 - s_1) + \frac{\dot{Q}}{T} + \dot{s}_{\text{erz}} \\
+    &\text{(Adiabates Triebwerk)} \\
+    \dot{s}_{\text{erz}} &= s_1 - s_0 + \frac{\dot{q}}{T} \\
+    \dot{s}_{\text{erz}} &= c_p \ln \left( \frac{T_1}{T_0} \right) - R \ln \left( \frac{p_1}{p_0} \right) \\
+    e_{x, \text{verl}} &= T_0 c_p \ln \left( \frac{T_1}{T_0} \right) \\
+    T_0 &= 243.15 \, \text{K} \\
+    e_{x, \text{verl}} &= 243.15 \, \text{K} \cdot 1.004 \, \frac{\text{kJ}}{\text{kg K}} \ln \left( \frac{374.0 \, \text{K}}{243.15 \, \text{K}} \right) = 82.009 \, \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+``````latex
+
+

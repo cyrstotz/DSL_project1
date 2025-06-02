@@ -1,0 +1,75 @@
+TASK 1a  
+The energy balance for the reactor is written as:  
+\[
+0 = \dot{m} (h_1 - h_2) + \dot{Q}_R + \dot{Q}_{\text{out}}
+\]  
+where:  
+- \( h_1 \) corresponds to the enthalpy at \( T_1 = 70^\circ\text{C} \), which is saturated liquid.  
+  \( h_1 = 292.98 \, \frac{\text{kJ}}{\text{kg}} \).  
+- \( h_2 \) corresponds to the enthalpy at \( T_2 = 100^\circ\text{C} \), which is also saturated liquid.  
+  \( h_2 = 419.04 \, \frac{\text{kJ}}{\text{kg}} \).  
+
+The heat flow removed by the coolant is calculated as:  
+\[
+-\dot{Q}_{\text{out}} = 0.3 \, \frac{\text{kg}}{\text{s}} \left( 292.98 - 419.04 \right) + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = -62.182 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant is calculated using the formula:  
+\[
+\bar{T} = \frac{\int T \, dS}{S_a - S_e}
+\]  
+For an ideal liquid, this simplifies to:  
+\[
+\bar{T} = \frac{\int_{T_{\text{out}}}^{T_{\text{in}}} \frac{C}{T} \, dT}{S_a - S_e}
+\]  
+Using the arithmetic mean temperature:  
+\[
+\bar{T} = \frac{T_{\text{KF,out}} + T_{\text{KF,in}}}{2}
+\]  
+\[
+\bar{T} = \frac{298.15 + 288.15}{2} = 293.15 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+The entropy production is calculated using the entropy balance:  
+\[
+0 = \dot{m} (s_e - s_a) + \frac{\dot{Q}_{\text{out}}}{\bar{T}} + \dot{S}_{\text{gen}}
+\]  
+The entropy generation term is:  
+\[
+\dot{S}_{\text{gen}} = -0.3 \, \frac{\text{kg}}{\text{s}} \left( 0.9549 - 1.3069 \right) + \frac{62.182 \, \text{kW}}{293.15 \, \text{K}}
+\]  
+\[
+\dot{S}_{\text{gen}} = 0.318 \, \frac{\text{kJ}}{\text{K·s}}
+\]  
+
+---
+
+TASK 1d  
+The mass added to the reactor during cooling is calculated using the energy balance:  
+\[
+m_2 h_2 - m_1 h_1 = \Delta m_{12} h_{\text{in}}
+\]  
+where:  
+- \( m_2 = 5755 + \Delta m_{12} \), \( T_2 = 70^\circ\text{C} \), \( h_2 = 292.95 \, \frac{\text{kJ}}{\text{kg}} \).  
+- \( m_1 = 5755 \, \text{kg} \), \( T_1 = 100^\circ\text{C} \), \( h_1 = 429.378 \, \frac{\text{kJ}}{\text{kg}} \).  
+- \( h_{\text{in}} = 83.95 \, \frac{\text{kJ}}{\text{kg}} \), \( T_{\text{in}} = 20^\circ\text{C} \), saturated liquid.  
+
+Substituting values:  
+\[
+5755 h_2 + \Delta m_{12} h_2 - 5755 h_1 = \Delta m_{12} h_{\text{in}}
+\]  
+\[
+5755 \cdot 292.95 + \Delta m_{12} \cdot 292.95 - 5755 \cdot 429.378 = \Delta m_{12} \cdot 83.95
+\]  
+\[
+\Delta m_{12} = 3756.67 \, \text{kg}
+\]  

@@ -1,0 +1,105 @@
+
+``````latex
+
+\section*{Aufgabe 1}
+
+\subsection*{a)}
+\[
+0 = \dot{m} (h_{\text{ein}} - h_{\text{aus}}) + \dot{Q}_R - \dot{Q}_{\text{aus}}
+\]
+\[
+h_{\text{ein}} \left( \text{Wasser 700°C std.} \right) \quad A-2: \quad 292.88 \frac{\text{kJ}}{\text{kg}}
+\]
+\[
+h_{\text{out}} \left( \text{Wasser 100°C std.} \right) \quad A-2: \quad 419.04 \frac{\text{kJ}}{\text{kg}}
+\]
+\[
+\dot{Q}_{\text{aus}} = 0.3 \frac{\text{kg}}{\text{s}} \left( 292.88 \frac{\text{kJ}}{\text{kg}} - 419.04 \frac{\text{kJ}}{\text{kg}} \right) + 100 \text{kW}
+\]
+\[
+= 62.182 \text{kW}
+\]
+
+\subsection*{b)}
+\[
+\bar{T} = \frac{\int_{s_a}^{s_e} T \, ds}{s_a - s_e}
+\]
+\[
+s_2 - s_1 = \int_{T_1}^{T_2} \frac{c_p}{T} \, dT
+\]
+\[
+= c \left( \ln \left( \frac{T_2}{T_1} \right) \right)
+\]
+
+\subsection*{c)}
+\[
+0 = \dot{m} \left[ s_e - s_a \right] + \sum \frac{\dot{Q}}{T} + \dot{S}_{\text{erz}}
+\]
+\[
+s_a \left( 700°C \, std. \right) \quad A-2: \quad 0.9549 \frac{\text{kJ}}{\text{kgK}}
+\]
+\[
+s_2 \left( 100°C \, std. \right) \quad A-2: \quad 1.3063 \frac{\text{kJ}}{\text{kgK}}
+\]
+\[
+- \dot{S}_{\text{erz}} = 0.3 \frac{\text{kg}}{\text{s}} \left[ 0.9549 \frac{\text{kJ}}{\text{kgK}} - 1.3063 \frac{\text{kJ}}{\text{kgK}} \right] + \frac{62 \text{kW}}{295 \text{K}}
+\]
+\[
+\dot{S}_{\text{erz}} = 325.94 \frac{\text{J}}{\text{K}}
+\]
+
+``````latex
+
+
+d) Im Reaktor: \quad \Delta U = Q_{12} \checkmark \\
+Q_{12} = m \cdot (u_2 - u_1) \\
+
+u_1: \quad 100^\circ C, \quad x_0 = 0.005 \quad \text{Tab A2:} \quad (1-x) \cdot u_f + x \cdot u_g \\
+\quad = 0.995 \cdot 418.34 \frac{\text{kJ}}{\text{kg}} + 0.005 \cdot 2506.5 \frac{\text{kJ}}{\text{kg}} \\
+\quad = 423.38 \frac{\text{kJ}}{\text{kg}} \\
+
+u_2: \quad 70^\circ C, \quad \text{satt. Flüssigkeit} \quad \text{Tab A2:} \quad u_2 = 292.35 \frac{\text{kJ}}{\text{kg}} \\
+
+Q_{12} = 5735 \text{kg} \left( 292.35 \frac{\text{kJ}}{\text{kg}} - 429.38 \frac{\text{kJ}}{\text{kg}} \right) \\
+\quad = -785154 \text{kJ} \\
+
+\noindent\rule{8cm}{0.4pt}
+
+\frac{1}{\dot{m}} \cdot -Q_{12} = \Delta u_{12} (u_2 - u_3) \\
+\Delta m_{12} = \frac{-Q_{12}}{(u_2 - u_3)} \\
+
+u_3 = \text{siedend} \quad 20^\circ C \quad \text{A2:} \quad 83.85 \frac{\text{kJ}}{\text{kg}} \\
+
+\Delta m_{12} = \frac{-Q_{12}}{(292.35 - 83.85) \frac{\text{kJ}}{\text{kg}}} = \frac{785154 \text{kJ}}{209 \frac{\text{kJ}}{\text{kg}}} = 3756.71 \text{kg} \\
+
+e) \quad \Delta S_{12} = \Delta S_{\text{Reaktor}} + \Delta S_{\text{Zufluss}} \\
+
+\Delta S_{\text{Reaktor}} = 5735 \text{kg} \cdot \Delta R (s_2 - s_1) \\
+
+s_1: \quad 100^\circ C \quad x = 0.005 \quad \text{Tab A2:} \quad s_1 = (1-x) \cdot s_f + x \cdot s_g \\
+\quad = 0.995 \cdot 1.3069 \frac{\text{kJ}}{\text{kg K}} + 0.005 \cdot 7.358 \frac{\text{kJ}}{\text{kg K}} \\
+\quad = 1.337 \frac{\text{kJ}}{\text{kg K}} \\
+
+``````latex
+
+
+\begin{itemize}
+    \item[e)] $S_1$ \quad \begin{tabular}{c} 20 \\ 70 \end{tabular} \quad sat \, liq \quad AZ: \quad 0.5549 \, \frac{kJ}{kg \cdot K}
+    \item[] $S_3$ \quad 20^\circ \quad sat \, liq \quad AZ: \quad 0.42366 \, \frac{kJ}{kg \cdot K}
+\end{itemize}
+
+\[
+\Delta S_{Reaktor} = 3755 \, kg \left( 0.954 \, \frac{kJ}{kg \cdot K} - 1.337 \, \frac{kJ}{kg \cdot K} \right) - 2158 \, \frac{kJ}{K}
+\]
+
+\[
+\Delta S_{Zufluss} = m \left( S_{2} - S_{3} \right) = 3756.7 \, \frac{kg}{s} \left( 0.9549 \, \frac{kJ}{kg \cdot K} - 0.2566 \, \frac{kJ}{kg \cdot K} \right) = 2473 \, \frac{kJ}{K}
+\]
+
+\[
+\Delta S_{12} = \left( -2158 + 2473 \right) \, \frac{kJ}{K} = 2.75 \, \frac{kJ}{kg}
+\]
+
+``````latex
+
+

@@ -1,0 +1,163 @@
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+\subsection*{a)}
+
+\text{ges.:} \quad \dot{Q}_{aus}
+
+\text{Stationärer Fließprozess:}
+\[
+0 = \dot{m} (h_e - h_a) + \frac{\omega_e^2 - \omega_a^2}{2} + g(z_e - z_a) + \sum \dot{Q}_j - \sum \dot{W}_k
+\]
+
+\[
+\Rightarrow 0 = \dot{m} (h_e - h_a) + \sum \dot{Q}_j
+\]
+
+\[
+0 = \dot{m} (h_e - h_a) + \dot{Q}_k - \dot{Q}_{aus}
+\]
+
+\[
+\Rightarrow \dot{Q}_{aus} = \dot{m} (h_e - h_a) + \dot{Q}_k
+\]
+
+\[
+= \dot{m} (22,98 \frac{\text{kJ}}{\text{kg}} - 419,04 \frac{\text{kJ}}{\text{kg}}) + \dot{Q}_k
+\]
+
+\[
+= 0,3 \frac{\text{kg}}{\text{s}} (22,98 \frac{\text{kJ}}{\text{kg}} - 419,04 \frac{\text{kJ}}{\text{kg}}) + 100 \text{kW}
+\]
+
+\[
+= 62,182 \frac{\text{kJ}}{\text{s}} = 62,182 \text{kW}
+\]
+
+\text{Werte für } h_e, h_a \text{ kommen aus Tabelle 42!}
+
+\subsection*{b)}
+
+\[
+\overline{T} = \int_{e}^{a} T ds \cdot \frac{1}{s_a - s_e}
+\]
+
+\[
+= \frac{T_{K, \text{aus}} \cdot s_{aus} - T_{K, \text{ein}} \cdot s_{ein}}{s_{aus} - s_{ein}}
+\]
+
+``````latex
+
+
+\section*{c) (mit Lösungsgrößen: $\overline{T}_{KF} = 295 K$)}
+
+\[
+0 = \dot{m}(s_e - s_a) + \sum_i \left( \frac{\dot{Q}_i}{T_i} \right) + \dot{S}_{erz}
+\]
+
+\[
+s_e = 0{,}9549 \frac{kJ}{kg \cdot K}
+\]
+\[
+s_a = 1{,}3069 \frac{kJ}{kg \cdot K} \quad \text{Tabelle 4.2}
+\]
+
+\[
+\Rightarrow \dot{S}_{erz} = \dot{m}(s_a - s_e) + \dot{Q}_{aus} \cdot \frac{1}{T_{KF}} = 
+\]
+
+\[
+= 0{,}3 \frac{kg}{s} \left( 1{,}3069 \frac{kJ}{kg \cdot K} - 0{,}9549 \frac{kJ}{kg \cdot K} \right) + \frac{62{,}182 kW}{295 K}
+\]
+
+\[
+= 0{,}316 \frac{kJ}{K \cdot s}
+\]
+
+\section*{d) Energieerhaltung:}
+
+\[
+\frac{dE}{dt} = \sum_i \dot{m}_i(t) h_i(t) + \dot{m}_e(t) h_e(t) + \sum_i \dot{Q}_i(t) - \sum_i \dot{W}_i(t)
+\]
+
+\[
+Q_{R,12} = \Delta m_{12} (h_{20^\circ C} - h_{70^\circ C}) + m_{gu,1} (h_e - h_{40^\circ C})
+\]
+
+\subsection*{, wobei}
+
+\[
+h_{20^\circ C} = 83{,}96 \frac{kJ}{kg}
+\]
+
+\[
+h_{70^\circ C} = 292{,}98 \frac{kJ}{kg}
+\]
+
+\[
+h_e = \# (119{,}04 + x_d \cdot 0{,}2257) \frac{kJ}{kg}
+\]
+
+\[
+= 430{,}325 \frac{kJ}{kg}
+\]
+
+\[
+\text{Tabelle 4.2}
+\]
+
+``````latex
+
+
+\section*{Fortsetzung 1c)}
+
+\begin{equation*}
+\Delta m_{12} = \frac{Q_{R,12} - m_{gen,1} (h_{e} - h_{20^{\circ}C})}{h_{20^{\circ}C} - h_{70^{\circ}C}}
+\end{equation*}
+
+\begin{equation*}
+= 36,14 \, \text{kg}
+\end{equation*}
+
+\section*{e)}
+
+\begin{equation*}
+\frac{dS}{dt} = \sum_{i} \dot{m}_{i}(t) s_{i}(t) + \int_{6}^{a} \frac{\dot{Q}}{T_{a}} + \dot{S}_{\text{gen}}
+\end{equation*}
+
+\begin{equation*}
+\Rightarrow \Delta S = \sum_{i} \Delta m_{i} \cdot s_{i} + \int_{G}^{a} \frac{Q}{T_{a}} + S_{\text{gen}}
+\end{equation*}
+
+\begin{equation*}
+\Rightarrow \Delta S = \Delta m_{12} \left( s_{20^{\circ}C} - s_{70^{\circ}C} \right) + m_{\text{gen,1}} \left( s_{100^{\circ}C} - s_{70^{\circ}C} \right) + S_{\text{env}}
+\end{equation*}
+
+\begin{equation*}
+\Rightarrow s_{20^{\circ}C} = 0,2966 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\end{equation*}
+
+\begin{equation*}
+s_{70^{\circ}C} = 0,8549 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\end{equation*}
+
+\begin{equation*}
+s_{100^{\circ}C} = \left( 1,3069 + x_{i} \left( 7,3549 - 1,3069 \right) \right) \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\end{equation*}
+
+\begin{equation*}
+= 1,33714
+\end{equation*}
+
+\begin{equation*}
+S_{\text{env}} = 0 \quad (\text{adiabat})
+\end{equation*}
+
+\section*{H2S: Tabelle A-2}
+
+``````latex
+
+

@@ -1,0 +1,35 @@
+Given:  
+Mass flow rate \( \dot{m} = 0.3 \, \text{kg/s} \)  
+Mass of reactor contents \( m_{\text{total}} = 5755 \, \text{kg} \)  
+Steam quality \( x = 0.005 \)  
+Heat released by reaction \( \dot{Q}_R = 100 \, \text{kW} \)  
+
+Temperatures:  
+Inlet temperature \( T_{\text{in}} = 70^\circ \text{C} = 343.15 \, \text{K} \)  
+Outlet temperature \( T_{\text{out}} = 100^\circ \text{C} = 373.15 \, \text{K} \)  
+Reactor temperature \( T_{\text{Reactor}} = 100^\circ \text{C} = 373.15 \, \text{K} \)  
+
+Coolant temperatures:  
+Inlet coolant temperature \( T_{\text{KF,in}} = 288.15 \, \text{K} \)  
+Outlet coolant temperature \( T_{\text{KF,out}} = 298.15 \, \text{K} \)  
+
+Diagram:  
+A rectangular box labeled "cooling jacket" is drawn.  
+Arrows indicate mass flow rates \( \dot{m}_{\text{in}} \) and \( \dot{m}_{\text{out}} \), as well as heat transfer \( Q_{\text{abs}} \).  
+Temperatures \( T_1 = 288.15 \, \text{K} \) and \( T_2 = 298.15 \, \text{K} \) are marked.  
+Pressure \( p_2 = p_1 \) is noted.
+
+Perfect liquid assumption:  
+Energy balance for cooling jacket:  
+\( 0 = \dot{m} [ h_1 - h_2 ] + Q \)  
+
+Simplified:  
+\( Q_{\text{abs}} = \dot{m} [ h_2 - h_1 ] \)  
+\( Q_{\text{abs}} = m \int c_i \, dT \)  
+\( Q_{\text{abs}} = -m c_i (T_c - T_h) \)  
+
+Energy balance for reactor:  
+\( 0 = \dot{m} [ h_e - h_a ] + \dot{Q}_R + \dot{Q}_{\text{abs}} \)  
+
+Simplified:  
+\( Q_{\text{abs}} = m [ h_a - h_e ] - \dot{Q}_R \)

@@ -1,0 +1,58 @@
+TASK 1d  
+The energy balance equation is written as:  
+\[
+m_2 u_2 - m_1 u_1 = \Delta m_{12} (h_2 - h_1)
+\]  
+where \( \Delta m_{12} \) is the mass added, and \( h_2 \) and \( h_1 \) are the specific enthalpies at states 2 and 1, respectively.  
+
+The given values are:  
+\[
+m_1 = 5755 \, \text{kg}
+\]  
+\[
+m_2 = m_1 + \Delta m_{12}
+\]  
+
+The internal energy \( u_2 \) is calculated using the steam quality \( x \) and the saturated liquid and vapor internal energies:  
+\[
+u_2 = x u_g + (1 - x) u_f
+\]  
+where:  
+\[
+u_g = 2506.5 \, \frac{\text{kJ}}{\text{kg}}, \quad u_f = 423.94 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from water tables A-2)}
+\]  
+\[
+x = 0.005
+\]  
+Substituting:  
+\[
+u_2 = 423.32 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The specific enthalpy \( h_2 \) at \( 70^\circ\text{C} \) is:  
+\[
+h_2 = h_f(70^\circ\text{C}) = 2333.8 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from water tables A-2)}
+\]  
+
+The specific enthalpy \( h_1 \) at \( 20^\circ\text{C} \) is:  
+\[
+h_1 = h_f(20^\circ\text{C}) = 745.41 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from water tables A-2)}
+\]  
+
+Using the energy balance equation:  
+\[
+(m_1 + \Delta m_{12}) u_2 - m_1 u_1 = \Delta m_{12} (h_2 - h_1)
+\]  
+Rearranging for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = \frac{-m_1 u_1 + m_1 u_2}{u_2 - h_2 + h_1}
+\]  
+Substituting values:  
+\[
+\Delta m_{12} = \frac{m_1 (u_2 - u_1)}{h_2 - h_1}
+\]  
+\[
+\Delta m_{12} = 4468.31 \, \text{kg}
+\]  
+
+This is the mass of saturated liquid water added to reduce the reactor temperature from \( 100^\circ\text{C} \) to \( 70^\circ\text{C} \).

@@ -1,0 +1,48 @@
+TASK 1a  
+The steady-state energy balance is expressed as:  
+\[
+0 = \dot{m}_{\text{in}} h_{\text{in}} - \dot{m}_{\text{out}} h_{\text{out}} + \dot{Q}_{\text{aus}}
+\]  
+Rearranging for \( \dot{Q}_{\text{aus}} \):  
+\[
+\dot{Q}_{\text{aus}} = \dot{m} (h_{\text{out}} - h_{\text{in}})
+\]  
+where \( \dot{m}_{\text{in}} = \dot{m}_{\text{out}} = \dot{m} \).  
+
+The enthalpy difference \( h_{\text{out}} - h_{\text{in}} \) is calculated as:  
+\[
+h_{\text{out}} - h_{\text{in}} = \int_{T_{\text{in}}}^{T_{\text{out}}} c_{\text{if}} \, dT + v_{\text{if}} (p_2 - p_1)
+\]  
+Since the process is isobaric (\( p_2 = p_1 \)), the pressure term vanishes:  
+\[
+v_{\text{if}} (p_2 - p_1) = 0
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) is calculated as:  
+\[
+T_{\text{KF}} = \frac{\int_{s_a}^{s_e} T \, ds}{s_a - s_e}
+\]  
+Approximating for the given temperature values:  
+\[
+T_{\text{KF}} = \frac{288.15 + 298.15 \, \text{K}}{2} \approx 293.15 \, \text{K}
+\]  
+
+TASK 1c  
+The steady-state entropy balance is expressed as:  
+\[
+0 = \dot{m} (s_e - s_a) + \frac{\dot{Q}_{\text{aus}}}{T_{\text{KF}}} + \dot{S}_{\text{erz}}
+\]  
+Rearranging for \( \dot{S}_{\text{erz}} \):  
+\[
+\dot{S}_{\text{erz}} = \dot{m} (s_a - s_e) - \frac{\dot{Q}_{\text{aus}}}{T_{\text{KF}}}
+\]  
+
+The entropy difference \( s_a - s_e \) is calculated as:  
+\[
+s_a - s_e = \int_{T_{\text{in}}}^{T_{\text{out}}} c \frac{1}{T} \, dT = c \ln \left( \frac{T_{\text{out}}}{T_{\text{in}}} \right)
+\]  
+Substituting the given temperatures:  
+\[
+s_a - s_e = c \ln \left( \frac{298.15}{288.15} \right)
+\]

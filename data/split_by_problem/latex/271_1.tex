@@ -1,0 +1,135 @@
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+\subsection*{a) Stationärer Fließprozess}
+
+Energiebilanz um Reaktor
+
+\[
+0 = \dot{m} \left[ h_c - h_a \right] + \dot{Q}_p + \dot{Q}_{\text{aus}}
+\]
+
+\[
+h_c = h_{p} + x \left( h_{g} - h_{p} \right)
+\]
+
+\[
+= 292,58 \frac{\text{kJ}}{\text{kg}} + 0,035 \left( 2626 \frac{\text{kJ}}{\text{kg}} - 292,58 \frac{\text{kJ}}{\text{kg}} \right)
+\]
+
+\[
+= 384,65 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_a = h_{p} + x \left( h_{g} - h_{p} \right)
+\]
+
+\[
+= 943,4 \frac{\text{kJ}}{\text{kg}} + 0,035 \left( 2626 \frac{\text{kJ}}{\text{kg}} - 943,4 \frac{\text{kJ}}{\text{kg}} \right)
+\]
+
+\[
+= 1020,33 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\dot{Q}_{\text{aus}} = \dot{m} \left[ h_c - h_a \right] + \dot{Q}_p
+\]
+
+\[
+\dot{Q}_{\text{aus}} = \dot{m} \left[ h_a - h_c \right] - \dot{Q}_p
+\]
+
+\[
+\dot{Q}_{\text{aus}} = 0,3 \frac{\text{kg}}{\text{s}} \left[ 1020,33 \frac{\text{kJ}}{\text{kg}} - 384,65 \frac{\text{kJ}}{\text{kg}} \right] - 10 \text{kW}
+\]
+
+\[
+\dot{Q}_{\text{aus}} = 62,5 \text{kW}
+\]
+
+\textbf{Vorzeichenkontrolle:} \underline{$\dot{Q}_{\text{aus}} = 62,5 \text{kW}$}
+
+``````latex
+
+
+\section*{c) Entropiebilanz eines Fließprozesses}
+
+\[
+0 = m \cdot \left( s_e - s_a \right) + \frac{\dot{Q}_{zu}}{T} + S_{\text{erz}}
+\]
+
+\[
+S_{\text{erz}} = -m \left( s_e - s_a \right) - \frac{\dot{Q}_{zu}}{T}
+\]
+
+\subsection*{Ideale Flüssigkeit}
+
+\[
+s_a - s_e = c_{p,w} \ln \left( \frac{T_2}{T_1} \right)
+\]
+
+\subsection*{Energiebilanz in der Kältemischheit}
+
+\[
+0 = m \left( h_{e2} - h_{a1} \right) + \dot{Q}_{zu}
+\]
+
+\[
+m = - \frac{\dot{Q}_{zu}}{\left[ h_{e2} - h_{e1} \right]}
+\]
+
+\[
+= \frac{\dot{Q}_{zu}}{\left[ h_{u} - h_{e} \right]}
+\]
+
+\[
+h_u - h_e = c_{p,f} \left( T_g - T_m \right)
+\]
+
+\[
+\dot{m} = \frac{\dot{Q}_{zu}}{c_{p,f} \left( T_g - T_m \right)}
+\]
+
+\[
+S_{\text{erz}} = - \left( \frac{\dot{Q}_{zu}}{c_{p,f} \left( T_g - T_m \right)} \right) c_{p,f} \ln \left( \frac{T_2}{T_1} \right) - \frac{\dot{Q}_{zu}}{T}
+\]
+
+\[
+= - \left( 62.3 \frac{J}{K} \right)
+\]
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+a)
+
+\begin{align*}
+\Delta s_{12} &= m_{02}g - (m_1 s_1) \\
+m_1 &= 5755 \, \text{kg} \\
+m_2 &= m_1 + \Delta m_2 = 9355 \, \text{kg} \\
+\Rightarrow \text{TAG} \, \Omega \\
+s_1 &= s_2 + x \left( \frac{g_2 - g_1}{g_1} \right) \\
+&= 1.3069 \, \frac{\text{kg} \cdot \text{m}^2}{\text{kg} \cdot \text{h}} \cdot 0.005 \cdot (7.3553 \, \frac{\text{kg} \cdot \text{m}^2}{\text{kg} \cdot \text{h}} - \text{(scribble)} - 1.3069 \, \frac{\text{kg} \cdot \text{m}^2}{\text{kg} \cdot \text{h}}) \\
+&= 1.337 \, \frac{\text{kg} \cdot \text{m}^2}{\text{kg} \cdot \text{h}} \\
+s_2 &= s_2 + x \left( \frac{g_2 - g_1}{g_1} \right) \\
+&= 0.8549 + 0.005 \cdot (7.7553 - 0.8549) \, \frac{\text{kg} \cdot \text{m}^2}{\text{kg} \cdot \text{h}} \\
+&= 0.9389 \, \frac{\text{kg} \cdot \text{m}^2}{\text{kg} \cdot \text{h}} \\
+\Delta s_{02} &= 9355 \, \text{kg} \cdot 0.9389 \, \frac{\text{kg} \cdot \text{m}^2}{\text{kg} \cdot \text{h}} - 5755 \, \text{kg} \cdot 1.337 \, \frac{\text{kg} \cdot \text{m}^2}{\text{kg} \cdot \text{h}}
+\end{align*}
+
+b) Energiebilanz
+
+\begin{align*}
+\Delta E &= m_{02} - m_{01}
+\end{align*}
+
+``````latex
+
+

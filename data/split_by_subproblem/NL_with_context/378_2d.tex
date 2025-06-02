@@ -1,0 +1,22 @@
+Exergy loss calculation:  
+ex_str = dE_ex divided by dt = E_ex,in + E_ex,out - [m_dot * (e_0 + Delta u divided by c)] - E_ex,verl.  
+
+Simplified:  
+ex_str = ex_str,in + ex_str,Q.  
+
+Exergy from heat transfer:  
+ex_str,Q = (1 divided by m_dot) * (1 - T_0 divided by T) * Q_dot = (1 - T_0 divided by T) * q * y.  
+
+Values:  
+q = 1195 kJ/kg, T = 1289 K, T_0 = 243 K.  
+
+Calculation:  
+ex_str,Q = 116.60 kJ/kg + (869.58 kJ/kg * 1 divided by 5.293) = 270.62 kJ/kg.  
+
+Additional notes:  
+y = m_dot_K divided by m_dot_in.  
+m_dot_in = m_dot_K + 5.293 * m_dot_M.  
+m_dot_K divided by m_dot_in = 1 divided by 6.293.  
+
+Final result:  
+ex_str = 270.62 kJ/kg.

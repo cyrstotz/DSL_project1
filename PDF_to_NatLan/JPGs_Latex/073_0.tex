@@ -1,0 +1,46 @@
+TASK 1a  
+The energy balance equation is given as:  
+\[
+Q = \dot{m} \left( h_{\text{in}} - h_{\text{out}} \right) + Q_{\text{aus}}
+\]  
+The heat flow \( Q_{\text{aus}} \) is expressed as:  
+\[
+Q_{\text{aus}} = \dot{m} \left( h_{\text{out}} - h_{\text{in}} \right) = m_{\text{KF}} \left[ c \left( T_{\text{aus}} - T_{\text{ein}} \right) + v_i \cdot \left( p_{\text{aus}} - p_{\text{ein}} \right) \right]
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature \( T \) is calculated using the entropy balance:  
+\[
+T = \frac{\int_{s_a}^{s_e} T \, ds}{s_a - s_e} = \frac{q_{\text{rev}}}{s_a - s_e} = \frac{h_{\text{aus}} - h_{\text{ein}}}{s_{\text{aus}} - s_{\text{ein}}}
+\]  
+Substituting the expression for \( q_{\text{rev}} \):  
+\[
+T = \frac{f \left( T_{\text{aus}} - T_{\text{ein}} \right) + v_i \cdot \left( p_{\text{aus}} - p_{\text{ein}} \right)}{\ln \left( \frac{T_{\text{aus}}}{T_{\text{ein}}} \right)}
+\]  
+Numerical calculation:  
+\[
+T = \frac{T_{\text{aus}} - T_{\text{ein}}}{\ln \left( \frac{T_{\text{aus}}}{T_{\text{ein}}} \right)} = \frac{298.15 \, \text{K} - 288.15 \, \text{K}}{\ln \left( \frac{298.15 \, \text{K}}{288.15 \, \text{K}} \right)} = 293.12 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+The entropy balance is described as:  
+\[
+\dot{S}_{\text{gen}} = \frac{Q_{\text{aus}}}{\bar{T}_{\text{KF}}} + \frac{Q_R}{T_{\text{Reaktor},1}}
+\]  
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = \frac{Q_{\text{aus}}}{T_{\text{KF}}} + \frac{Q_R}{T_{\text{Reaktor},1}}
+\]  
+Numerical calculation:  
+\[
+\dot{S}_{\text{gen}} = \frac{65,000 \, \text{W}}{293 \, \text{K}} + \frac{100,000 \, \text{W}}{373.15 \, \text{K}} = 47.64 \, \frac{\text{W}}{\text{K}}
+\]  
+
+---
+
+Description of crossed-out content:  
+Some entropy-related equations and intermediate steps are crossed out and ignored in the transcription.

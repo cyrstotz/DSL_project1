@@ -1,0 +1,82 @@
+TASK 2b  
+The pressure at state 6 is given as \( p_6 = p_0 = 0.191 \, \text{bar} \). Using the equation for the outlet velocity \( w_6 \), the following steps are performed:  
+
+The energy balance is written as:  
+\[
+O = \dot{m} \left( h_5 + \frac{1}{2} w_5^2 - h_6 - \frac{1}{2} w_6^2 \right) = W
+\]  
+
+From the isentropic relation:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}} = 328.14 \, \text{K}
+\]  
+
+To determine \( w_6 \), the energy balance is expanded:  
+\[
+O = \dot{m} \left( h_0 + \frac{1}{2} w_0^2 - h_6 - \frac{1}{2} w_6^2 \right) + \dot{Q} + \dot{W}
+\]  
+
+Rewriting for \( w_6 \):  
+\[
+\frac{1}{2} w_0^2 = c_p \left( T_0 - T_6 \right) + a_5 (0.2035)
+\]  
+\[
+w_6 = \sqrt{2 \cdot \left( c_p \left( T_0 - T_6 \right) + \frac{1}{2} w_0^2 + a_5 (0.2035) \right)}
+\]  
+Substituting values yields:  
+\[
+w_6 = 438.866 \, \text{m/s}
+\]  
+
+---
+
+TASK 2c  
+The mass-specific increase in flow exergy is calculated as:  
+\[
+ex_{\text{flow},6} - ex_{\text{flow},0} = \left( h_6 - h_0 - T_0 (s_6 - s_0) + \frac{1}{2} w_6^2 - \frac{1}{2} w_0^2 \right)
+\]  
+
+Expanding the terms:  
+\[
+= \left( c_p (T_0 - T_6) - T_0 \left( c_p \ln \frac{T_6}{T_0} - R \ln \frac{p_6}{p_0} \right) + \frac{1}{2} w_6^2 - \frac{1}{2} w_0^2 \right)
+\]  
+
+Substituting values yields:  
+\[
+116.66 \, \text{kJ/kg}
+\]  
+
+---
+
+TASK 2d  
+The exergy destruction is expressed as:  
+\[
+O = ex_{\text{in,st-0-6}} + ex_{R,Q} - ex_{\text{out}}
+\]  
+
+The exergy of heat transfer is given by:  
+\[
+ex_{R,Q} = \left( 1 - \frac{T_0}{T} \right) \dot{Q}
+\]  
+
+The mass flow rate is calculated using:  
+\[
+\dot{m}_{\text{in}} = \frac{\dot{m}_{\text{out}}}{\dot{m}_{\text{core}}} = \dot{m}_{\text{core}} \cdot \frac{\dot{m}_M}{\dot{m}_K}
+\]  
+Substituting values:  
+\[
+\dot{m}_{\text{core}} = 5.203 \, \text{kg/s}, \quad \dot{m}_{\text{out}} = 6.233 \, \text{kg/s}
+\]  
+
+The heat transfer rate is given as:  
+\[
+\dot{Q} = 11.985 \, \text{kJ/s}
+\]  
+
+The exergy destruction is calculated using the above relations.  
+
+No diagrams or graphs are present on this page.

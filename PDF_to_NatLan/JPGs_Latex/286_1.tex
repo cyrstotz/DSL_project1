@@ -1,0 +1,82 @@
+TASK 1c  
+The entropy production is calculated using the equation:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} (s_2 - s_1) + \frac{\dot{Q}_R}{T_{\text{KF}}}
+\]  
+Substituting the values:  
+\[
+\dot{S}_{\text{gen}} = 0.3 \, \text{kg/s} \cdot (s(100^\circ\text{C}) - s(70^\circ\text{C})) + \frac{653 \, \text{kJ}}{285 \, \text{K}} - \frac{100 \, \text{kJ}}{285 \, \text{K}}
+\]  
+
+From the water tables (A2):  
+\[
+s_1(100^\circ\text{C}) = 1.3063 \, \text{kJ/kg·K}, \quad s_2(70^\circ\text{C}) = 0.9349 \, \text{kJ/kg·K}
+\]  
+
+Thus:  
+\[
+\dot{S}_{\text{gen}} = 0.258 \, \text{kJ/s·K}
+\]  
+
+---
+
+TASK 1d  
+The energy balance is used to determine the change in internal energy:  
+\[
+\Delta E = \Delta U = m (\mu_1 - \mu_2)
+\]  
+
+The specific internal energy at state 1 is calculated as:  
+\[
+\mu_1 = x_D \cdot u_{\text{liq}}(70^\circ\text{C}) + (1 - x_D) \cdot u_{\text{liq}}(100^\circ\text{C})
+\]  
+Where \( x_D = 0.005 \).  
+
+The specific internal energy at state 2 is:  
+\[
+\mu_2 = u_{\text{liq}}(70^\circ\text{C})
+\]  
+
+Substituting values:  
+\[
+\mu_1 = 0.005 \cdot 2506.5 + 0.995 \cdot 418.91 = 429.38 \, \text{kJ/kg}
+\]  
+\[
+\mu_2 = 292.35 \, \text{kJ/kg}
+\]  
+
+The total energy change is:  
+\[
+\Delta E = 5755 \cdot (429.38 - 292.35) = 784432.45 \, \text{kJ} = 785.0 \, \text{MJ}
+\]  
+
+---
+
+TASK 1e  
+The mass of saturated liquid water added to the reactor is calculated using the heat transfer equation:  
+\[
+\Delta E = \Delta m \cdot c_{\text{water}} \cdot \Delta T
+\]  
+Where:  
+\[
+\Delta E = (m_{\text{total}} - m_{\text{in}}) \cdot c_{\text{water}} \cdot \Delta T
+\]  
+
+Rearranging:  
+\[
+m_{\text{total}} = \frac{\Delta E}{c_{\text{water}} \cdot \Delta T} + m_{\text{in}}
+\]  
+Using \( c_{\text{water}} = 4.22 \, \text{kJ/kg·K} \):  
+\[
+m_{\text{total}} = \frac{785000 \, \text{kJ}}{4.22 \cdot 30} + 5755 = 18455 \, \text{kg}
+\]  
+
+The added mass is:  
+\[
+\Delta m = m_{\text{total}} - m_{\text{in}} = 18455 - 5755 = 12700 \, \text{kg}
+\]  
+
+Thus:  
+\[
+\Delta m = 3720 \, \text{kg}
+\]

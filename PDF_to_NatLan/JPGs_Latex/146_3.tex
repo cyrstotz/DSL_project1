@@ -1,0 +1,60 @@
+TASK 2c  
+The mass-specific increase in flow exergy is calculated using the formula:  
+\[
+\Delta ex_{\text{str}} = ex_{\text{str},6} - ex_{\text{str},0}
+\]  
+where:  
+\[
+ex_{\text{str},6} - ex_{\text{str},0} = (h_6 - h_0 - T_0(s_6 - s_0)) + \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]  
+
+Values used:  
+- \( h_6 = 328.4 \, \text{kJ/kg} \)  
+- \( w_6 = 510 \, \text{m/s} \)  
+- \( T_6 = 340 \, \text{K} \)  
+- \( h_0 = 243.15 \, \text{kJ/kg} \)  
+- \( T_0 = 243.15 \, \text{K} \)  
+- \( w_0 = 200 \, \text{m/s} \)  
+
+The detailed calculation for \( \Delta ex_{\text{str}} \) is:  
+\[
+\Delta ex_{\text{str}} = \left[ c_p(T_6 - T_0) - T_0 \left( c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) \right) + \frac{w_6^2}{2} - \frac{w_0^2}{2} \right]
+\]  
+
+Substituting values:  
+\[
+\Delta ex_{\text{str}} = \left[ 1.006 \, \frac{\text{kJ}}{\text{kg·K}} (340 \, \text{K} - 243.15 \, \text{K}) - 243.15 \, \text{K} \left( 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \ln \left( \frac{340 \, \text{K}}{243.15 \, \text{K}} \right) - R \ln \left( \frac{p_6}{p_0} \right) \right) + \frac{(510 \, \text{m/s})^2}{2} - \frac{(200 \, \text{m/s})^2}{2} \right]
+\]  
+
+Final result:  
+\[
+\Delta ex_{\text{str}} = 12,127.8 \, \text{J} = 12.1278 \, \text{kJ}
+\]  
+
+---
+
+TASK 2d  
+The exergy destruction in the engine is calculated using the formula:  
+\[
+ex_{\text{dest}} = T_0 \cdot S_{\text{gen}}
+\]  
+
+The entropy generation \( S_{\text{gen}} \) is determined as:  
+\[
+S_{\text{gen}} = S_6 - S_2 = \sum \frac{Q_i}{T_i} + S_{\text{gen}}
+\]  
+
+From the combustion process:  
+\[
+S_6 > S_2 \quad \text{so} \quad S_{\text{gen}} = \frac{q_B}{T_B} = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) - \frac{q_B}{T_B}
+\]  
+
+Substituting values:  
+\[
+S_{\text{gen}} = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \ln \left( \frac{340 \, \text{K}}{243.15 \, \text{K}} \right) - R \ln \left( \frac{p_6}{p_0} \right) - \frac{1195 \, \frac{\text{kJ}}{\text{kg}}}{1289 \, \text{K}}
+\]  
+
+Final result:  
+\[
+S_{\text{gen}} = 0.84 \, \frac{\text{kJ}}{\text{kg·K}} - 0.4
+\]

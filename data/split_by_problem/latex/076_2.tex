@@ -1,0 +1,100 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{itemize}
+    \item The graph is a Temperature-Entropy (T-S) diagram.
+    \item The x-axis is labeled \( s \left( \frac{J}{kg \cdot K} \right) \).
+    \item The y-axis is labeled \( T(K) \).
+    \item There are six points labeled 1, 2, 3, 4, 5, and 6.
+    \item Point 1 is at the bottom left, labeled as \( \rho_1 = \rho_4 = \rho_5 = 0.5 \, \text{bar} \).
+    \item Point 2 is above point 1, connected by a vertical line labeled "adiabat".
+    \item Point 3 is to the right of point 2, connected by a horizontal line labeled "isobar".
+    \item Point 4 is above point 3, connected by a vertical line labeled "isotherm".
+    \item Point 5 is to the right of point 4, connected by a horizontal line labeled "isobar".
+    \item Point 6 is below point 5, connected by a vertical line labeled "adiabat".
+    \item The line connecting points 1, 2, 3, 4, 5, and 6 forms a closed loop.
+    \item The line connecting points 1 and 6 is labeled \( \rho_0 = \rho_6 = 0.193 \, \text{bar} \).
+\end{itemize}
+
+\subsection*{b)}
+
+\begin{align*}
+    w_S &= 220 \, \frac{m}{s} \\
+    T_S &= 431.8 \, K \\
+    \text{isentrope:} \quad s_5 &= s_6 \\
+    \rho_5 &= 0.5 \, \text{bar} \\
+    \rho_6 &= 0.193 \, \text{bar} \\
+    T_S &= 431.8 \, K \\
+    \nu &= 1.4 \\
+    \text{isentrop:} \quad T_6 &= T_S \left( \frac{\rho_6}{\rho_5} \right)^{\frac{\nu - 1}{\nu}} = 431.8 \left( \frac{0.193}{0.5} \right)^{\frac{\nu - 1}{\nu}} = 328.7 \, K \\
+    0 &= \dot{m}_{\text{sec}} \left( h_S - h_C + \frac{w_S^2 - w_C^2}{2} \right) + \dot{m} \left( \cdots \right) \\
+    h_S - h_C &= \frac{w_C^2 - w_S^2}{2} \\
+    2 (h_S - h_C) + w_S^2 &= w_C^2 \\
+    w_C &= \sqrt{2 \cdot c_p \left( T_S - T_1 \right) + w_S^2} \\
+    h_S - h_C &= c_p \left( T_S - T_1 \right) \\
+    w_C &= \sqrt{2 \cdot 1.006 \, \frac{kJ}{kg \cdot K} \left( 431.8 - 328.7 \right) K + (220 \, \frac{m}{s})^2}
+\end{align*}
+
+``````latex
+
+
+c)
+\[
+W_G = 520 \frac{\text{kJ}}{\text{kg}}
+\]
+\[
+T_6 = 340 \text{K}
+\]
+\[
+\Delta e_{\text{ex,istr}} = e_{\text{ex,istr6}} - e_{\text{ex,istr0}}
+\]
+\[
+e_{\text{ex,istr6}} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2}
+\]
+\[
+e_{\text{ex,istr0}} = h_0 - h_0 - T_0 (s_0 - s_0) + \frac{w_0^2}{2}
+\]
+\[
+\Delta e_{\text{ex,istr}} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2 - w_0^2}{2}
+\]
+\[
+T_{u0} = T_0 = 243.15 \text{K}
+\]
+\[
+h_6 - h_0 = c_p \cdot (T_6 - T_0) \quad \text{(stabiles IG)}
+\]
+\[
+s_6 - s_0 = c_p \cdot \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) \quad \text{(IG)}
+\]
+\[
+\Delta e_{\text{ex,istr}} = c_p \cdot \left[ (T_6 - T_0) - T_0 \ln \left( \frac{T_6}{T_0} \right) \right] + \frac{w_6^2 - w_0^2}{2}
+\]
+\[
+\Delta e_{\text{ex,istr}} = 1.006 \frac{\text{kJ}}{\text{kg} \cdot \text{K}} \left[ (340 - 243.15) - 243.15 \cdot \ln \left( \frac{340}{243.15} \right) \right] + \frac{520^2 - 200^2}{2}
+\]
+\[
+\Delta e_{\text{ex,istr}} = 125.42 \frac{\text{kJ}}{\text{kg}}
+\]
+
+d)
+\[
+0 = -\Delta e_{\text{ex,istr}} + q_B \left( 1 - \frac{T_0}{T_B} \right) - \dot{w}_B^0 - \dot{e}_{\text{ex,verl}}
+\]
+\[
+= \text{LexiQ}
+\]
+\[
+\dot{e}_{\text{ex,verl}} = -\Delta e_{\text{ex,istr}} + q_B \left( 1 - \frac{T_0}{T_B} \right)
+\]
+\[
+\dot{e}_{\text{ex,verl}} = -125.42 \frac{\text{kJ}}{\text{kg}} + 1185 \frac{\text{kJ}}{\text{kg}} \left( 1 - \frac{243.15}{278.85} \right) = 84.76 \frac{\text{kJ}}{\text{kg}}
+\]
+
+``````latex
+
+

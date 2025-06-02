@@ -1,0 +1,107 @@
+The goal is to determine the outlet temperature \( T_6 \) and outlet velocity \( w_6 \).  
+
+### Temperature Calculation:  
+The temperature \( T_6 \) is calculated using the ideal gas relation for an adiabatic process:  
+\[
+\left( \frac{T_6}{T_5} \right) = \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}}
+\]  
+where \( n = \kappa = 1.4 \), \( p_6 = p_0 = 0.191 \, \text{bar} \), \( p_5 = 0.5 \, \text{bar} \), and \( T_5 = 431.9 \, \text{K} \).  
+
+Substituting values:  
+\[
+T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}}
+\]  
+\[
+T_6 = 431.9 \cdot \left( \frac{0.191}{0.5} \right)^{\frac{1.4-1}{1.4}}
+\]  
+\[
+T_6 = 328.07 \, \text{K}
+\]  
+
+### Velocity Calculation:  
+The outlet velocity \( w_6 \) is determined using the energy balance for an adiabatic and reversible process.  
+
+Energy balance:  
+\[
+0 = \dot{m} \left[ h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} + g(z_5 - z_6) \right]
+\]  
+Since \( g(z_5 - z_6) \) is negligible, the equation simplifies to:  
+\[
+0 = \dot{m} \left[ h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right]
+\]  
+
+Rewriting:  
+\[
+h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} = 0
+\]  
+
+Further derivations include terms for \( h_5 - h_6 \) and the specific gas constant \( R \):  
+\[
+h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} = \frac{n \cdot R \cdot (T_6 - T_5)}{n-1}
+\]  
+
+Final expression for \( w_6 \):  
+\[
+\dot{m} \cdot \left( \frac{n \cdot R \cdot (T_6 - T_5)}{n-1} \right) = W_t
+\]  
+
+Additional notes:  
+- The integral \( \int_{p_1}^{p_2} v \, dp \) is referenced for work calculations.  
+- \( W_t \) represents turbine work, and the derivation includes terms for \( \dot{m} \cdot R \cdot (T_6 - T_5) \).  
+
+No diagrams are present on this page.
+
+The outlet velocity \( w_6 \) is calculated using the following equation:  
+\[
+w_6 = \sqrt{n \cdot R \cdot (T_6 - T_s) \cdot \frac{1}{n-1} + h_c - h_s + w_s^2} \cdot 2
+\]  
+where \( R = \frac{\bar{R}}{M_{\text{luft}}} \), and the values are:  
+\[
+\bar{R} = 0.296 \, \text{kJ/kg·K}, \quad M_{\text{luft}} = 28.96 \, \text{kg/kmol}, \quad c_p = 1.006 \, \text{kJ/kg·K}, \quad w_s = 220 \, \text{m/s}
+\]  
+
+The resulting outlet velocity is:  
+\[
+w_6 = 310.61 \, \text{m/s}
+\]  
+
+---
+
+The task involves calculating the outlet velocity \( w_6 \) and temperature \( T_6 \) for the jet engine, as well as determining the exergy destruction.
+
+The stationary exergy balance equation is written as:  
+\[
+0 = \dot{m} \left( h_e - \ldots \right) + \dot{Q} e_{x,Q} - W_{\text{turbine}} - \dot{e}_{x,\text{fuel}}
+\]  
+where \( e_{x,\text{fuel}} \) represents the exergy destruction due to fuel combustion.  
+
+The exergy destruction is expressed as:  
+\[
+e_{x,\text{fuel}} = \Delta e_{x,\text{stream},6} + e_{x,Q,6} - W_{\text{turbine}}
+\]  
+Simplifying further:  
+\[
+e_{x,\text{fuel}} = \Delta e_{x,\text{stream},6} - W_{\text{turbine}}
+\]  
+
+For the turbine, the work \( W_{\text{turbine}} \) is calculated using:  
+\[
+W_{\text{turbine}} = -n \cdot R \cdot \frac{T_6 - T_5}{1 - n}
+\]  
+where \( n \) is the efficiency factor, \( R \) is the specific gas constant, \( T_6 \) is the outlet temperature, and \( T_5 \) is the inlet temperature.  
+
+The value of \( W_{\text{turbine}} \) is given as:  
+\[
+W_{\text{turbine}} = -109260.9 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Finally, the exergy destruction is calculated as:  
+\[
+e_{x,\text{fuel}} = 100 \, \frac{\text{kJ}}{\text{kg}} + 109260.9 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Resulting in:  
+\[
+e_{x,\text{fuel}} = 204.26 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+No diagrams or graphs are present on the page.

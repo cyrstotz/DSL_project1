@@ -1,0 +1,53 @@
+TASK 2b  
+The energy balance for the system is analyzed to determine the outlet velocity \( w_6 \). The equation used is:  
+\[
+0 = \dot{m} \left( h_0 - h_6 + \frac{w_0^2 - w_6^2}{2} \right) + \dot{Q} + \dot{W}
+\]  
+where \( w_0 = 200 \, \text{m/s} \).  
+
+The enthalpy difference \( h_0 - h_6 \) is calculated using:  
+\[
+h_0 - h_6 = h(T_6 = 243.19 \, \text{K}) - h(T_0 = T_1)
+\]  
+\[
+h_0 - h_6 = c_p (T_6 - T_0) = 1.006 \cdot (349.4 - 243.19) = 71.9 \, \text{kJ/kg}
+\]  
+
+TASK 2c  
+To find \( T_6 \), the following relationship is used based on the isentropic process between states 5 and 6:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}} = 431.9 \cdot \left( \frac{0.191}{0.5} \right)^{0.4 / 1.4}
+\]  
+\[
+T_6 = 344.4 \, \text{K}
+\]  
+
+TASK 2d  
+The mass flow rate ratio between bypass and core streams is given as:  
+\[
+\frac{\dot{m}_M}{\dot{m}_K} = 5.293
+\]  
+
+The energy balance in the combustion chamber is analyzed:  
+\[
+0 = \dot{m}_K (h_2 - h_3) + \dot{Q}_B
+\]  
+\[
+h_2 - h_3 = c_p (T_2 - T_3) - c_p (T_B) = 1.006 \cdot (1289 - 1289) = 1296.7 \, \text{kJ/kg}
+\]  
+
+The total mass flow rate is calculated:  
+\[
+\dot{m}_\text{total} = \dot{m}_M + \dot{m}_K = 5.293 \dot{m}_K + \dot{m}_K = 5.293 \cdot 0.9215 + 0.9215 = 5.8 \, \text{kg/s}
+\]  
+
+Final total mass flow rate:  
+\[
+\dot{m}_\text{total} = 48778 \, \text{kg/s}
+\]  
+
+No diagrams or graphs are present on this page.

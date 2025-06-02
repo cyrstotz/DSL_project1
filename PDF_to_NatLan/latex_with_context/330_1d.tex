@@ -1,0 +1,59 @@
+A table summarizes the states and heat transfer during cooling from state 1 to state 2:  
+
+| \(Q\)       | \(W\) | \(Z\) | \(T\)       |  
+|-------------|-------|-------|-------------|  
+| \(Q_{\text{out},12} = 35 \, \text{MJ}\) |       | \(0\)   | \(100^\circ\text{C}\) |  
+|             |       | \(1\)   | \(100^\circ\text{C}\) |  
+|             |       | \(2\)   | \(70^\circ\text{C}\)  |  
+
+The mass change (\(\Delta m_{12}\)) is indicated but not explicitly calculated here.
+
+Energy balance for the reactor (no SFP):  
+
+\[
+\Delta E = \Delta m_{12} \left[ h_1 - h_2 \right] - Q_{\text{out},12}
+\]  
+
+\[
+U_2 - U_1 = \Delta m_{12} \left[ h_1 - h_2 \right] - Q_{\text{out},12}
+\]  
+
+Where:  
+\[
+U_2 - U_1 = m_2 u_2 - m_1 u_1
+\]  
+
+Mass balance:  
+\[
+m_2 = m_1 + \Delta m_{12}
+\]  
+
+From Table A-2:  
+\[
+u_1 = u_f(100^\circ\text{C}) = 419.04 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_2 = u_f(70^\circ\text{C}) = 292.95 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Substituting into the energy balance:  
+\[
+(m_1 + \Delta m_{12}) u_2 - m_1 u_1 = \Delta m_{12} \left[ h_1 - h_2 \right] - Q_{\text{out},12}
+\]  
+
+Rearranging:  
+\[
+m_2 u_2 + \Delta m_{12} u_2 - m_1 u_1 - \Delta m_{12} \left[ h_1 - h_2 \right] = m_1 u_1 - Q_{\text{out},12}
+\]  
+
+Simplifying further:  
+\[
+\Delta m_{12} \left[ u_2 - h_1 + h_2 \right] = m_1 (u_1 - u_2) - Q_{\text{out},12}
+\]  
+
+Solving for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = \frac{m_1 (u_1 - u_2) - Q_{\text{out},12}}{u_2 - h_1 + h_2}
+\]  
+
+No diagrams or figures are present on this page.

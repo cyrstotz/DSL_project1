@@ -1,0 +1,44 @@
+The critical pressure \( p_c \) is equal to \( p_0 \) which is 0.1 bar.
+
+Given conditions are:
+- Unknown temperature \( T_G \)
+- Temperature \( T_S \) is 431.9 Kelvin
+- Pressure \( p_S \) is 0.5 bar
+- \( \kappa \) (kappa) is 1.4
+
+Using the isentropic equation:
+\[
+\frac{T_G}{T_S} = \left( \frac{p_G}{p_S} \right)^{\frac{\kappa - 1}{\kappa}}
+\]
+This leads to:
+\[
+T_G = T_S \left( \frac{p_G}{p_S} \right)^{\frac{\kappa - 1}{\kappa}} = 328.07 \text{ Kelvin}
+\]
+
+Energy balance equation:
+\[
+0 = \dot{m} (h_0 - h_6) + \text{canceled terms}
+\]
+\[
+0 = \dot{m} (h_0 - h_6) + \frac{1}{2} (w_0^2 - w_6^2) + \text{canceled terms}
+\]
+
+From the problem statement to assumptions:
+\[
+2(h_6 - h_0) = w_0^2 - w_6^2
+\]
+\[
+w_6^2 = w_0^2 + 2(h_0 - h_6)
+\]
+\[
+w_6^2 = w_0^2 + 2 c_{p,\text{Luft}} (T_0 - T_6)
+\]
+\[
+w_6^2 = 200 \frac{\text{m}^2}{\text{s}^2} + 2 \cdot 1.006 \frac{\text{kJ}}{\text{kg K}} (293.15 - 328.07) \text{ Kelvin}
+\]
+\[
+= 200 \frac{\text{m}^2}{\text{s}^2} + 2 \cdot 1.006 \frac{\text{kJ}}{\text{kg K}} \cdot \frac{1 \text{kg} \cdot \text{m}^2}{\text{s}^2 \cdot 1000} (293.15 - 328.07)
+\]
+\[
+w_6 = \sqrt{450 \frac{\text{m}^2}{\text{s}^2}} = 459.19 \frac{\text{m}}{\text{s}}
+\]

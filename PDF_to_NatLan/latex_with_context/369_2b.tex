@@ -1,0 +1,42 @@
+The following values are provided:  
+\[
+T_5 = 437.94 \, \text{K}, \quad w_5 = 220 \, \text{m/s}, \quad p_5 = 0.5 \, \text{bar}, \quad m_s = \text{mass flow rate}.
+\]
+
+The process is described as adiabatic and stationary. The energy balance equation is:  
+\[
+0 = \dot{m} \left( h_6 - h_5 \right) + \dot{Q} - \dot{W},
+\]  
+where \( \dot{Q} = 0 \) for adiabatic processes. For reversible adiabatic processes, entropy generation \( \dot{S}_{\text{gen}} = 0 \).
+
+The enthalpy at state \( 5 \) is calculated using:  
+\[
+h_5 = c_p \cdot T_5,
+\]  
+where \( c_p = 1.006 \, \text{kJ/kg·K} \) (ideal gas). Substituting values:  
+\[
+h_5 = 1.006 \cdot 437.94 = 439.96 \, \text{kJ/kg}.
+\]
+
+The temperature at state \( 6 \) is calculated using the isentropic relation:  
+\[
+T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}},
+\]  
+where \( \kappa = 1.4 \), \( p_6 = p_0 = 0.191 \, \text{bar} \), and \( p_5 = 0.5 \, \text{bar}. \) Substituting values:  
+\[
+T_6 = 437.94 \cdot \left( \frac{0.191}{0.5} \right)^{\frac{0.4}{1.4}} = 325.07 \, \text{K}.
+\]
+
+The enthalpy at state \( 6 \) is:  
+\[
+h_6 = c_p \cdot T_6 = 1.006 \cdot 325.07 = 327.07 \, \text{kJ/kg}.
+\]
+
+The energy balance for the nozzle is:  
+\[
+0 = \dot{m} \left( h_0 - h_6 \right) + \frac{w_6^2 - w_5^2}{2} + Q.
+\]  
+The enthalpy at state \( 0 \) is:  
+\[
+h_0 = c_p \cdot T_0 = 1.006 \cdot 243.15 = 244.6 \, \text{kJ/kg}.
+\]

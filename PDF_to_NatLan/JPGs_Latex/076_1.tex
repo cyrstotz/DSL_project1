@@ -1,0 +1,67 @@
+TASK 1c  
+**Entropy balance at the reactor wall:**  
+The entropy balance equation is given as:  
+\[
+0 = \frac{\dot{Q}_{\text{out}}}{T_{\text{Reactor}}} - \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} + \dot{S}_{\text{gen}}
+\]  
+The entropy generation rate is expressed as:  
+\[
+\dot{S}_{\text{gen}} = \dot{Q}_{\text{out}} \left( \frac{1}{T_{\text{KF}}} - \frac{1}{T_{\text{Reactor}}} \right)
+\]  
+The reactor temperature is given as \( T_{\text{Reactor}} = 100^\circ\text{C} = 373.15 \, \text{K} \).  
+
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = 62.5 \, \text{kW} \cdot \left( \frac{1}{293.15} - \frac{1}{373.15} \right) = 0.570 \, \frac{\text{W}}{\text{K}}
+\]  
+
+---
+
+TASK 1d  
+**Energy balance for cooling from state 1 to state 2:**  
+The reactor temperature is reduced to \( T_{\text{Reactor},2} = 70^\circ\text{C} \).  
+The mass added is \( \Delta m_{12} \), with inlet temperature \( T_{\text{in,12}} = 20^\circ\text{C} \).  
+The heat released during cooling is \( Q_{R,12} = 35 \, \text{MJ} \).  
+
+**Energy balance equation:**  
+\[
+\Delta E = \Delta U = m_2 u_2 - m_1 u_1 = \Delta m_{12} \, h_{\text{in}} = Q_{R,12}
+\]  
+
+**Assumptions:**  
+\[
+m_2 = m_1 + \Delta m_{12}
+\]  
+
+**Specific internal energy calculations:**  
+\[
+u_1 = u_f(100^\circ\text{C}) + x_0 \cdot \left( u_g(100^\circ\text{C}) - u_f(100^\circ\text{C}) \right)
+\]  
+\[
+u_2 = u_f(70^\circ\text{C}) + x_0 \cdot \left( u_g(70^\circ\text{C}) - u_f(70^\circ\text{C}) \right)
+\]  
+\[
+h_{\text{in}} = u_f(20^\circ\text{C}) + x_0 \cdot \left( u_g(20^\circ\text{C}) - u_f(20^\circ\text{C}) \right)
+\]  
+
+---
+
+TASK 1e  
+**Entropy change from state 1 to state 2:**  
+The entropy change is given by:  
+\[
+\Delta S = m_2 s_2 - m_1 s_1 - \left( \Delta m_{12} s_{\text{in}} \right) - \frac{Q_{\text{out,12}}}{T} + \dot{S}_{\text{gen}}
+\]  
+
+**Specific entropy calculations:**  
+\[
+s_2 = s_f(70^\circ\text{C}) + x_0 \cdot \left( s_g(70^\circ\text{C}) - s_f(70^\circ\text{C}) \right)
+\]  
+\[
+s_1 = s_f(100^\circ\text{C}) + x_0 \cdot \left( s_g(100^\circ\text{C}) - s_f(100^\circ\text{C}) \right)
+\]  
+
+**Mass relationship:**  
+\[
+m_2 = m_1 + \Delta m_{12}
+\]  

@@ -1,0 +1,103 @@
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+\subsection*{a)}
+
+\begin{equation*}
+\frac{\partial E}{\partial t} = \sum_{i} \dot{m}_i(t) \left[ h_i(t) + \frac{c_i^2(t)}{2} + g z_i(t) \right] - \sum_{e} \dot{m}_e(t) \left[ h_e(t) + \frac{c_e^2(t)}{2} + g z_e(t) \right] + \sum_{i} \dot{Q}_i(t) - \sum_{e} \dot{Q}_e(t) - \dot{m}(t)
+\end{equation*}
+
+\begin{equation*}
+0 = \dot{m} (h_e - h_a) + \dot{Q}_{\text{aus}} - \dot{Q}_{\text{aus}} \quad \Rightarrow \quad \dot{Q}_{\text{aus}} = \dot{m} (h_e - h_a) + \dot{Q}_R
+\end{equation*}
+
+\begin{equation*}
+h_e [\text{20°C+1 bar}] = 292.98 \frac{\text{kJ}}{\text{kg}} \quad \text{Aus TAB A-2}
+\end{equation*}
+
+\begin{equation*}
+h_u [\text{200°C+1 bar}] = 419.94 \frac{\text{kJ}}{\text{kg}} \quad \text{Aus TAB A-2}
+\end{equation*}
+
+\begin{equation*}
+\dot{Q}_{\text{aus}} = 0.3 \frac{\text{kg}}{\text{s}} \left[ (292.98 \frac{\text{kJ}}{\text{kg}}) - (419.94 \frac{\text{kJ}}{\text{kg}}) \right] + 100 \text{kW} = 62.182 \text{kW}
+\end{equation*}
+
+\subsection*{b)}
+
+\begin{equation*}
+\frac{\dot{Q}}{T_{\text{UF}}} = \frac{\int_{T_1}^{T_2} c_i^+ (T) dT}{T_2 - T_1} = \frac{\int_{T_1}^{T_2} c_i^+ (T) dT}{T_2 - T_1}
+\end{equation*}
+
+\begin{equation*}
+T_{\text{UF}} = \frac{298.15 \text{K} - 288.15 \text{K}}{\ln \left( \frac{298.15 \text{K}}{288.15 \text{K}} \right)} = 293.12 \text{K}
+\end{equation*}
+
+\subsection*{c)}
+
+\begin{equation*}
+\Delta S = \sum_{i} \frac{\dot{Q}_i}{T_i} + \dot{S}_{\text{erz}} \quad \Rightarrow \quad \dot{S}_{\text{erz}} = - \frac{\dot{Q}_{\text{aus}}}{T_{\text{UF}}} = \frac{62.182 \text{kW}}{293.12 \text{K}} = 212.139 \frac{\text{W}}{\text{K}}
+\end{equation*}
+
+``````latex
+
+1. 
+\[
+\frac{DE}{QE} = \sum_i^j m_i(t) h_i(t) + \sum_i^j q_e:(t) + \sum_i^j c_i(t) - \sum_i^j w_i(t)
+\]
+
+\[
+\Delta E = m_2 u_2 - m_1 u_1 = \sum_i^j Q_i = Q_{aus2} = 35MJ
+\]
+
+\[
+m_2 = m_1 + \Delta m \quad m_2 = 5755kg \quad m_{AB} = x \cdot m_1 \quad m_{NB} = m_1 (1 - x) \quad m_2 = \Delta m
+\]
+
+\[
+u_{1f} [EOC] = 250.65 \frac{u}{kg}
+\]
+
+\[
+u_{1pf} [200^\circ C] = 42.94 \frac{u}{kg}
+\]
+
+\[
+u_{2pf} [200^\circ C] = 292.95 \frac{u}{kg}
+\]
+
+\[
+u_{3f} [200^\circ C] = 87.95 \frac{u}{kg}
+\]
+
+\[
+\Delta t = m_3 \cdot u_3 + m_2 u_2 - m_1 u_1 = 35MJ = \Delta m u_3 + m_2 u_2 + \Delta m u_2 - m_1 u_1
+\]
+
+\[
+\frac{m_1 u_1 - m_1 u_2}{u_3 + u_2} = \frac{m_{A1} u_{A1} + m_{A1} u_{A1} - m_1 u_{2pf} + 35MJ}{u_{3f} + u_{2f}}
+\]
+
+\[
+= \frac{0.005 + 5755kg \cdot 250.65 \frac{u}{kg} + 5755kg \cdot (1 - 0.005) \cdot 42.94 \frac{u}{kg} - 5755kg \cdot 292.95 \frac{u}{kg}}{87.95 \frac{u}{kg} + 292.95 \frac{u}{kg}}
+\]
+
+\[
+\Delta m_2 = 2.176.02kg
+\]
+
+e)
+\[
+\Delta s = m_2 s_2 - m_1 s_1 = \sum \Delta m_i s_i + \sum_i^j \frac{Q_i^o}{T_i} + Ser_2
+\]
+
+\[
+Ser_2 = \Delta m_2 \cdot s_{n2}
+\]
+
+``````latex
+
+

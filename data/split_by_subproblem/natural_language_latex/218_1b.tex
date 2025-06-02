@@ -1,0 +1,49 @@
+The average temperature \( \overline{T}_{\text{KF}} \) is given by the formula:
+\[
+\overline{T}_{\text{KF}} = \frac{\int_{s_a}^{s_e} T \, ds}{s_a - s_e}
+\]
+where the integral from \( s_a \) to \( s_e \) of \( T \, ds \) equals \( h_a - h_e \) according to the first law of thermodynamics. This can be rewritten as:
+\[
+= \frac{h_a - h_e}{s_a - s_e} \quad \text{KF = ideal fluid}
+\]
+Further, \( h_a - h_e \) equals \( c_{\text{KF}} (T_2 - T_1) \) and \( s_a - s_e \) equals \( c_{\text{KF}} \ln \left( \frac{T_2}{T_1} \right) \). Substituting these into the average temperature formula gives:
+\[
+\overline{T}_{\text{KF}} = \frac{c_{\text{KF}} (T_2 - T_1)}{c_{\text{KF}} \ln \left( \frac{T_2}{T_1} \right)} = \frac{(289.15 \, \text{K} - 288.15 \, \text{K})}{\ln \left( \frac{289.15}{288.15} \right)}
+\]
+which simplifies to:
+\[
+= 293.12 \, \text{K}
+\]
+
+In the student solution section, the items listed are:
+- The sum of \( \dot{Q} \)
+- Zero heat transfer over the cooling wall?
+- \( \dot{Q}_{\text{aus}} \) and \( \dot{Q}_{\text{ein}} \)
+- Adiabatic
+
+For the continuous section:
+\[
+(m_1 + \Delta m) h_2 - \Delta m h_i = m_1 h_1
+\]
+Solving for \( \Delta m \) gives:
+\[
+\Delta m = \frac{m_1 h_1 - m_1 h_2}{h_2 - h_i} = \frac{5755 \, \text{kg} \, (429.37 \frac{\text{kJ}}{\text{kg}} - 292.95 \frac{\text{kJ}}{\text{kg}})}{292.95 \frac{\text{kJ}}{\text{kg}} - 83.96 \frac{\text{kJ}}{\text{kg}}} = 3765.11 \, \text{kg}
+\]
+
+For the section involving other \( \Delta S \):
+\[
+\Delta S_{s2} = m_2 S_2 - m_1 S_1 - \Delta m_2 \cdot 3600 \, \text{kg}
+\]
+Values are substituted as:
+\[
+m_2 = 9355 \, \text{kg}, \quad m_1 = 5755 \, \text{kg}
+\]
+\[
+S_2 = S(20^\circ C, x=0) = 0.19549 \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+\[
+S_1 = S(100^\circ C, x=0.005) = sf + x (sg - sf) = 1.30649 \frac{\text{kJ}}{\text{kg} \cdot \text{K}} + 0.005 (7.35549 - 1.30649) = 1.337 \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+\[
+\Delta S_{s2} = 9355 \, \text{kg} \cdot 0.19549 \frac{\text{kJ}}{\text{kg} \cdot \text{K}} - 5755 \, \text{kg} \cdot 1.337 \frac{\text{kJ}}{\text{kg} \cdot \text{K}} = -293.47 \, \text{kJ/K} = -1236.65 \, \text{kJ/K}
+\]

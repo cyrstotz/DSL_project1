@@ -1,0 +1,140 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a Pressure-Entropy (P-s) diagram. The x-axis is labeled as $s \left[ \frac{kJ}{kgK} \right]$ and the y-axis is labeled as $P$. The graph consists of six points labeled 1 through 6. The process between points 1 and 2 is a vertical line labeled "isotherme Verdichtung". The process between points 2 and 3 is a diagonal line labeled "isobare Wärmezufuhr". The process between points 3 and 4 is a vertical line labeled "adiabate, irreversible Turbine". The process between points 4 and 5 is a horizontal line labeled "isobare Mischkammer". The process between points 5 and 6 is a vertical line labeled "isotherme Schubdüse". There are dashed lines indicating isobars and isotherms.
+\end{description}
+
+\subsection*{b)}
+
+\begin{align*}
+    &\text{1HS} \quad h_s - h_6 \\
+    &0 = \dot{m} \left[ h_s - h_6 + \frac{\omega_s^2 - \omega_6^2}{2} + g(z_e - z_a) \right] + \dot{Q} - \dot{W}_s \\
+    &\frac{\dot{m} \omega_s^2}{2} + \frac{\dot{m} \omega_6^2}{2} \\
+    &\frac{\dot{m} \omega_s^2}{2} h_s = \frac{\dot{m} \omega_6^2}{2} h_6 \\
+    &\omega_s^2 h_s = \omega_6^2 h_6 \implies \omega_s \frac{h_s}{h_6} = \omega_6 \\
+    &\text{Aus Tabelle A-22} \\
+    &h_s = \frac{431.63 - 421.26}{431.9 - 430} (431.9 - 430) + 421.26 = 49 + 421.4356 \\
+    &h_s = 421.44 \frac{kJ}{kg} \\
+    &\text{uns ist } h_6? \\
+    &\text{wir benötigen } T_6 \\
+    &T_6 = T_s \left( \frac{P_6}{P_s} \right)^{\frac{n-1}{n}} \quad n = k - \frac{C_p}{C_v} = \frac{1.006 \frac{kJ}{kgK}}{C_p - R} \\
+    &\text{gegeben } n = 1.4
+\end{align*}
+
+``````latex
+
+
+\section*{Aufgabe 2 weiter, 2}
+
+\subsection*{b)}
+
+\[
+T_6 = 431.4 \left( \frac{191,100 \, \text{Pa}}{50,000 \, \text{Pa}} \right)^{\frac{1.4 - 1}{1.4}}
+\]
+
+\[
+= 328.67464 \, \text{K}
+\]
+
+\[
+= \underline{328.1 \, \text{K}}
+\]
+
+\textbf{Interpolation:}
+
+\[
+h_6 = 328.4051 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+= 328.40 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+w_0 = w_s
+\]
+
+\[
+w_0 = \sqrt{\frac{h_s}{k h_6}} = \sqrt{\frac{328.4031}{421.48366}} = 220 \, \text{m} \, \text{s}^{-1}
+\]
+
+\[
+= 194.2051 \, \text{m} \, \text{s}^{-1}
+\]
+
+\[
+\underline{w_6 = 194.2 \, \text{m} \, \text{s}^{-1}}
+\]
+
+\subsection*{c)}
+
+\[
+e_{x,stc} = e_{x,stc,0} = e_{x,stc,6} = (h_{01} - h_0 - T_0 (s_{01} - s_0) + p_0 (v_{01} - v_0))
+\]
+
+\[
+- (h_6 - h_0 - T_0 (s_6 - s_0) + p_0 (v_6 - v_0))
+\]
+
+\[
+= h_{01} + T_0 (s_0 - s_{01} + s_6 - s_0) - h_6
+\]
+
+\[
+e_{x,stc} = h_{01} - h_6 + T_0 (s_6 - s_{01})
+\]
+
+\[
+-30^\circ \text{C} = (273.15 - 30) \, \text{K} = 243.15 \, \text{K}
+\]
+
+\textbf{Tabelle A-22:}
+
+\[
+h_{01} = 250.65 - 240.02 \left( \frac{24 \times 3.75 - 240}{250 - 240} \right) + 240.42
+\]
+
+\[
+= 244.7 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_0 \, \text{kennen wir}
+\]
+
+``````latex
+
+
+\section*{Aufgabe 2.3}
+
+\[
+R = \frac{\bar{R}}{M_{\text{Luft}}}
+\]
+
+\[
+S_6 - S_0 = S_6^\circ (6) - S_6^\circ (0) - R \ln \left( \frac{P_2}{P_1} \right)
+\]
+
+\text{Interpolation:}
+
+\[
+S_6^\circ = 1.54191 - 1.47624 \left( \frac{243.75 - 240}{250 - 240} \right) + 1.47624
+\]
+
+\[
+= 1.4911 \, \text{(result)}
+\]
+
+\[
+c = 1.49113
+\]
+
+``````latex
+
+

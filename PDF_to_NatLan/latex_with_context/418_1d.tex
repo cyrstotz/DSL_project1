@@ -1,0 +1,31 @@
+Energy balance equation:  
+\[
+\frac{dE}{dt} = \sum_i \dot{m}_i \left[ h_i(t) + \frac{w_i^2(t)}{2} + g z_i(t) \right] + \sum_i \dot{Q}_i(t) - \sum_i \dot{W}_i(t)
+\]  
+For the cooling process:  
+\[
+Q_{R,12} = \Delta m_{12} \left( h_{20^\circ\text{C}} - h_{70^\circ\text{C}} \right) + m_{\text{total},1} \left( h_c - h_{70^\circ\text{C}} \right)
+\]  
+Where:  
+\[
+h_{20^\circ\text{C}} = 83.96 \, \frac{\text{kJ}}{\text{kg}}, \quad h_{70^\circ\text{C}} = 292.98 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_c = 119.04 + x_D \cdot 2257 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Substituting \( x_D = 0.005 \):  
+\[
+h_c = 119.04 + 0.005 \cdot 2257 = 430.325 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Values are referenced from Table 4.2.
+
+The mass \( \Delta m_{12} \) is calculated using the energy balance equation:  
+\[
+\Delta m_{12} = \frac{Q_{R,12} - m_{\text{gen},1} \cdot (h_{e} - h_{70^\circ\text{C}})}{h_{20^\circ\text{C}} - h_{70^\circ\text{C}}}
+\]  
+The result is:  
+\[
+\Delta m_{12} = 36.14 \, \text{kg}
+\]  
+
+---

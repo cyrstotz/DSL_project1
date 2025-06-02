@@ -1,0 +1,37 @@
+TASK 2c  
+The mass-specific increase in flow exergy is calculated using the following formula:  
+\[
+\Delta ex_{\text{flow}} = \dot{m} \left( h_6 - h_0 - T_0 \left( s_6 - s_0 \right) \right)
+\]  
+Expanding the entropy term:  
+\[
+\Delta ex_{\text{flow}} = \dot{m} \left[ c_p \left( T_6 - T_0 \right) - T_0 \left( c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) \right) + \frac{w_6^2 - w_0^2}{2} \right]
+\]  
+Substituting values:  
+\[
+\dot{m} = 12.462 \, \frac{\text{kg}}{\text{s}}, \quad T_0 = 288.15 \, \text{K}, \quad w_6 = 220 \, \frac{\text{m}}{\text{s}}, \quad w_0 = 200 \, \frac{\text{m}}{\text{s}}
+\]  
+The entropy term simplifies to:  
+\[
+s_{\text{ext}} = 122.542 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+---
+
+TASK 2d  
+The mass-specific exergy destruction in the engine is calculated using the formula:  
+\[
+ex_{\text{dest}} = \Delta ex_{\text{str}} + ex_q - \dot{W}_{\text{in}}
+\]  
+Substituting terms:  
+\[
+ex_{\text{dest}} = \Delta ex_{\text{str}} + \left( 1 - \frac{T_0}{T_B} \right) q_B
+\]  
+Given values:  
+\[
+T_0 = 288.15 \, \text{K}, \quad T_B = 1289 \, \text{K}, \quad q_B = 1195 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+The result is:  
+\[
+ex_{\text{dest}} = 1070.508 \, \frac{\text{kJ}}{\text{kg}}
+\]

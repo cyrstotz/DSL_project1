@@ -1,0 +1,19 @@
+The thermodynamic mean temperature of the coolant, \( \bar{T}_{\text{KF}} \), is determined using the entropy-temperature relationship:  
+\[
+\bar{T}_{\text{KF}} = \frac{\int T \, ds}{s_{\text{out}} - s_{\text{in}}}
+\]  
+Assuming constant pressure and ideal liquid behavior, the entropy change is approximated as:  
+\[
+s_{\text{out}} - s_{\text{in}} = \frac{c_p \cdot (T_{\text{out}} - T_{\text{in}})}{T_{\text{mean}}}
+\]  
+where \( T_{\text{mean}} \) is the logarithmic mean temperature:  
+\[
+T_{\text{mean}} = \frac{T_{\text{out}} - T_{\text{in}}}{\ln\left(\frac{T_{\text{out}}}{T_{\text{in}}}\right)}
+\]  
+
+Substituting values:  
+\[
+T_{\text{mean}} = \frac{298.15 \, \text{K} - 288.15 \, \text{K}}{\ln\left(\frac{298.15}{288.15}\right)} = 293.72 \, \text{K}
+\]  
+
+Thus, \( \bar{T}_{\text{KF}} \) is approximately \( 293.72 \, \text{K} \).

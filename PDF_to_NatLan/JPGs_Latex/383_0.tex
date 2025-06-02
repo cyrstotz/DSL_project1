@@ -1,0 +1,82 @@
+TASK 1a  
+The energy balance for a steady-state process is given as:  
+\[
+0 = \dot{m}_{\text{in}} \left( h_{\text{ein}} - h_{\text{aus}} \right) + \dot{Q}_R - \dot{Q}_{\text{out}} - \dot{W}
+\]  
+where \( \dot{m}_{\text{ein}} = \dot{m}_{\text{aus}} = \dot{m} \).  
+
+Rearranging to solve for \( \dot{Q}_{\text{out}} \):  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \left( h_{\text{ein}} - h_{\text{aus}} \right) + \dot{Q}_R
+\]  
+
+Substituting the values:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \left( 292.38 \, \frac{\text{kJ}}{\text{kg}} - 930.12 \, \frac{\text{kJ}}{\text{kg}} \right) + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = 58.86 \, \text{kW}
+\]  
+
+The enthalpy at the inlet, \( h_{\text{ein}} \), is determined from the saturated liquid table at \( T = 70^\circ\text{C} \):  
+\[
+h_{\text{ein}} = h_f(T = 70^\circ\text{C}) = 292.38 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The outlet enthalpy, \( h_{\text{aus}} \), is calculated using the steam quality \( x_D \) at \( T = 100^\circ\text{C} \):  
+\[
+x_D = \frac{h_{\text{aus}} - h_f}{h_g - h_f}
+\]  
+
+Rearranging:  
+\[
+h_{\text{aus}} = h_f + x_D \left( h_g - h_f \right)
+\]  
+
+Substituting values from the saturated liquid/vapor table at \( T = 100^\circ\text{C} \):  
+\[
+h_{\text{aus}} = 419.05 \, \frac{\text{kJ}}{\text{kg}} + 0.005 \left( 2631.3 \, \frac{\text{kJ}}{\text{kg}} - 419.05 \, \frac{\text{kJ}}{\text{kg}} \right)
+\]  
+\[
+h_{\text{aus}} = 930.12 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant, \( T_{\text{KF}} \), is calculated as:  
+\[
+T_{\text{KF}} = \frac{T_{\text{KF,in}} + T_{\text{KF,out}}}{2}
+\]  
+
+Substituting the values:  
+\[
+T_{\text{KF}} = \frac{288.15 \, \text{K} + 298.15 \, \text{K}}{2} = 293.15 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+The entropy production rate, \( \dot{S}_{\text{erz}} \), is determined using the entropy balance:  
+\[
+0 = \dot{m} \left( s_{\text{ein}} - s_{\text{aus}} \right) + \frac{\dot{Q}_R}{T_{\text{Reactor,1}}} - \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} + \dot{S}_{\text{erz}}
+\]  
+
+Rearranging:  
+\[
+\dot{S}_{\text{erz}} = \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} + \dot{m} \left( s_{\text{ein}} - s_{\text{aus}} \right) - \frac{\dot{Q}_R}{T_{\text{Reactor,1}}}
+\]  
+
+The entropy at the outlet, \( s_{\text{aus}} \), is calculated using the steam quality \( x_D \):  
+\[
+s_{\text{aus}} = s_f + x_D \left( s_g - s_f \right)
+\]  
+
+Substituting values from the saturated liquid/vapor table at \( T = 100^\circ\text{C} \):  
+\[
+s_{\text{aus}} = 1.3069 \, \frac{\text{kJ}}{\text{kg·K}} + 0.005 \left( 7.3569 \, \frac{\text{kJ}}{\text{kg·K}} - 1.3069 \, \frac{\text{kJ}}{\text{kg·K}} \right)
+\]  
+\[
+s_{\text{aus}} = 1.3374 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+

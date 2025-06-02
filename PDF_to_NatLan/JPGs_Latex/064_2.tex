@@ -1,0 +1,76 @@
+TASK 2a  
+A qualitative \( T \)-\( s \) diagram is drawn, showing the thermodynamic process of the jet engine. The diagram includes labeled isobars and key states:  
+- State 1: Inlet air conditions.  
+- State 2: After compression.  
+- State 3: Combustion.  
+- State 4: Expansion in the turbine.  
+- State 5: Mixing chamber.  
+- State 6: Nozzle exit.  
+
+The axes are labeled as follows:  
+- \( T \) (temperature) on the vertical axis.  
+- \( s \) (entropy) on the horizontal axis.  
+
+The process lines indicate compression, combustion, expansion, and mixing, with arrows showing the direction of the process.  
+
+---
+
+TASK 2b  
+The temperature \( T_6 \) is calculated using the following equation:  
+\[
+\frac{T_5}{T_6} = \left( \frac{p_5}{p_6} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+\frac{431.9}{T_6} = \left( \frac{0.5}{0.191} \right)^{\frac{0.4}{1.4}}
+\]  
+Solving for \( T_6 \):  
+\[
+T_6 = 328.07 \, \text{K}
+\]  
+
+The energy balance equation is written as:  
+\[
+0 = \dot{m} \left( h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right) - \dot{W}
+\]  
+Where:  
+\[
+\dot{m} = \dot{m}_{\text{specific}}
+\]  
+\[
+h_5 - h_6 = c_p (T_5 - T_6)
+\]  
+\[
+c_p (T_5 - T_6) = 1.006 \cdot (431.9 - 328.07) = 104.45 \, \text{kJ/kg}
+\]  
+
+---
+
+TASK 2c  
+The outlet velocity \( w_6 \) is calculated using the following equation:  
+\[
+w_6^2 = w_5^2 - \frac{R}{1 - \kappa} (T_5 - T_6) + \frac{w_5^2 - w_6^2}{2}
+\]  
+Substituting values:  
+\[
+104.45 - \frac{w_6^2}{2} + \frac{R}{1 - \kappa} (431.9 - 328.07) = 0
+\]  
+Where:  
+\[
+R = c_p - c_v = c_p \left( 1 - \frac{1}{\kappa} \right) = 1.006 \cdot (1 - 0.714) = 0.129 \, \text{kJ/kg·K}
+\]  
+
+Rearranging and solving for \( w_6 \):  
+\[
+104.45 - \frac{w_6^2}{2} + 7.61 = 0
+\]  
+\[
+w_6^2 = 2017
+\]  
+\[
+w_6 = \sqrt{2017} = 44.94 \, \text{m/s}
+\]  
+
+---
+
+No additional diagrams or content are visible beyond the calculations provided.

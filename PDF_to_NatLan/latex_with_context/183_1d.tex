@@ -1,0 +1,35 @@
+The energy balance in the reactor is:  
+\[
+m_2 \cdot u_2 - m_1 \cdot u_1 = \Delta m_{12} \cdot h_{\text{in},12} + Q_{R,12}
+\]  
+
+With \( h_{\text{in},12} \) at \( 20^\circ\text{C} \):  
+\[
+h_p(20^\circ\text{C}) = 83.95 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Given:  
+\[
+m_1 = 5755 \, \text{kg}
+\]  
+\[
+m_2 = m_1 + \Delta m_{12}
+\]  
+
+Specific internal energy values:  
+\[
+u_1(20^\circ\text{C}) = u_p(20^\circ\text{C}) = 83.95 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_2(70^\circ\text{C}) = u_p(70^\circ\text{C}) = 292.95 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Substituting into the equation:  
+\[
+m_1 \cdot u_2 + \Delta m_{12} \cdot u_2 - m_1 \cdot u_1 = \Delta m_{12} \cdot h_{\text{in},12} + Q_{R,12}
+\]  
+
+Rearranging for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = \left( m_1 \cdot u_1 - m_1 \cdot u_2 + Q_{R,12} \right) \cdot \frac{1}{u_2 - h_{\text{in},12}}
+\]

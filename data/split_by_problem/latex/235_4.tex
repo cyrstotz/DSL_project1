@@ -1,0 +1,84 @@
+
+``````latex
+
+
+\section*{Aufgabe 4}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a pressure-temperature ($p$-$T$) diagram. The $y$-axis is labeled $p$ and ranges from 1 mbar to higher pressures. The $x$-axis is labeled $T$ and ranges from lower to higher temperatures. There is a curve starting from the lower left and moving upwards to the right, labeled "Tripel". There are three points marked on the graph: point 1 on the curve, point 2 above point 1 on a horizontal line labeled "Isobar", and point 3 below point 1 on a vertical line labeled "Isotherm". The temperature at point 1 is marked as $263.15K = T_i$.
+\end{description}
+
+\subsection*{b)}
+
+\begin{align*}
+    T_2 &= T_i - 6K = 257.15K = -16^\circ C \\
+    \text{TAB - 10:} \\
+    h_{2} &= h_{fg}(T_2) = 238.74 \frac{kJ}{kg} \\
+    s_{2} &= s_{g}(T_2) = 0.9298 \frac{kJ}{kgK} = s_{3} \\
+    h_{3} &= h_{8bar, s_3} = h_{f}(8bar, 0.9066 \frac{kJ}{kgK}) + \frac{s_3 - 0.9066 \frac{kJ}{kgK}}{0.9374 - 0.9066 \frac{kJ}{kgK}} \left( h_{fg}(8bar, 0.9374 \frac{kJ}{kgK}) \right) \\
+    h_{f}(8bar, 0.9066 \frac{kJ}{kgK}) &= 271.31 \frac{kJ}{kg} \\
+    \text{TAB - A 12:} \\
+    h_{fg}(8bar, 0.9066 \frac{kJ}{kgK}) &= 284.15 \frac{kJ}{kg} \\
+    h_{fg}(8bar, 0.9374 \frac{kJ}{kgK}) &= 273.66 \frac{kJ}{kg}
+\end{align*}
+
+``````latex
+
+
+\section*{Energiebilanz Kompressor}
+
+\begin{equation*}
+\frac{dE}{dt} = \sum \dot{m}_i \left( h_i + \frac{v^2}{2} + g z \right) + \sum \dot{Q}_j - \sum \dot{W}_n
+\end{equation*}
+
+adiabat
+
+\begin{equation*}
+0 = \dot{m} (h_2 - h_3) - \dot{W}_{23}
+\end{equation*}
+
+\begin{equation*}
+\dot{W}_{23} = -\dot{W}_K
+\end{equation*}
+
+\begin{equation*}
+\dot{m} = \frac{-\dot{W}_K}{h_2 - h_3} = 2,89 \frac{kg}{h}
+\end{equation*}
+
+\section*{c)}
+
+\subsection*{TAD-411:}
+
+\begin{equation*}
+h_f = h_f (8 \text{ bar}) = 93,42 \frac{kJ}{kg}
+\end{equation*}
+
+\begin{equation*}
+h_f = h_1 = 93,42 \frac{kJ}{kg}
+\end{equation*}
+
+\begin{equation*}
+T_{4} = 37,33^\circ C = T_{1}
+\end{equation*}
+
+\begin{equation*}
+h_{1,f} (T_1) = h_f (30^\circ C) + \frac{37,33 - 30}{32 - 30} (h_{f} [32^\circ C] - h_f [30^\circ C]) =
+\end{equation*}
+
+\begin{equation*}
+h_{1,g} (T_1) = h_g (30^\circ C) + \frac{37,33 - 30}{32 - 30} (h_{g} [32^\circ C] - h_g [30^\circ C]) =
+\end{equation*}
+
+\subsection*{TAB-A10:}
+
+\begin{equation*}
+h_f (30^\circ C) = 91,43
+\end{equation*}
+
+\begin{equation*}
+h_f (32^\circ C) = 94,39
+\end{equation*}
+
+```

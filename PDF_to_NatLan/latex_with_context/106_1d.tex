@@ -1,0 +1,36 @@
+A table is provided summarizing the states:  
+
+| State | \( T \) | \( x \) | \( m \) | \( Q_{R,12} \) |  
+|-------|---------|---------|---------|----------------|  
+| 1     | \( 100^\circ\text{C} \) | \( x_0 = 0.005 \) | \( m_1 = 5755 \, \text{kg} \) | \( Q_{R,12} = 35 \, \text{MJ} \) |  
+| 2     | \( 70^\circ\text{C} \) | \( x = 1 \) | \( m_2 = m_1 + \Delta m_{12} \) | — |  
+
+The energy balance equation is written as:  
+\[
+m_2 u_2 - m_1 u_1 = \Delta m_{12} h_{\text{ein}} + Q_{R,12}
+\]  
+Rearranging for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} h_{\text{ein}} - \Delta m_{12} u_2 = m_1 u_2 - m_1 u_1 - Q_{R,12}
+\]  
+\[
+\Delta m_{12} = \frac{m_1 (u_2 - u_1) - Q_{R,12}}{h_{\text{ein}} - u_2}
+\]  
+
+Substituting values:  
+\[
+h_{\text{ein}}[20^\circ\text{C}, x=1] = 2538.4 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_1[100^\circ\text{C}, x=0.005] = 429.38 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_2[70^\circ\text{C}, x=1] = 2463.6 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Final result:  
+\[
+\Delta m_{12} = 170.8 \, \text{kg}
+\]  
+
+A small sketch is drawn showing the reactor with heat transfer \( Q_{R,12} \) and the addition of mass \( \Delta m_{12} \) at \( T_{\text{in,12}} = 20^\circ\text{C} \).

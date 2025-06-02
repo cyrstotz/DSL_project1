@@ -1,0 +1,64 @@
+TASK 1a  
+The heat flow \( \dot{Q}_{\text{out}} \) removed by the coolant is calculated using the energy balance equation:  
+\[
+\frac{dE}{dt} = \dot{m} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R - \dot{Q}_{\text{out}} - \dot{W}_{\text{in}}
+\]  
+From the calculation, \( \dot{Q}_{\text{out}} = 85.21 \, \text{kW} \).  
+
+The inlet and outlet steam qualities are given as:  
+\[
+x_{\text{in}} = 1, \text{ saturated liquid}
+\]  
+\[
+x_{\text{out}} = 1, \text{ saturated liquid}
+\]  
+
+Using water tables (TAB-A2), the enthalpy values are:  
+\[
+h_{\text{in}} = h_f(70^\circ\text{C}) = 2626.8 \, \text{kJ/kg}
+\]  
+\[
+h_{\text{out}} = h_f(100^\circ\text{C}) = 2676.1 \, \text{kJ/kg}
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is derived using the entropy relation:  
+\[
+T dS = dq
+\]  
+
+The mean temperature is calculated as:  
+\[
+T_{\text{KF}} = \frac{\int_{1}^{2} T dS}{s_2 - s_1} = \frac{\int_{1}^{2} dq}{c_{\text{KF}} \ln\left(\frac{T_2}{T_1}\right)} = \frac{q_{12}}{c_{\text{KF}} \ln\left(\frac{T_2}{T_1}\right)} = \frac{h_2 - h_1}{c_{\text{KF}} \ln\left(\frac{T_2}{T_1}\right)}
+\]  
+
+From the energy balance:  
+\[
+\frac{dE}{dt} = \dot{m} (h_2 - h_1) + \dot{Q}_R - \dot{Q}_{\text{out}} - \dot{W}_{\text{in}}
+\]  
+
+Thus:  
+\[
+h_2 - h_1 = -\frac{\dot{Q}_{\text{out}}}{\dot{m}}
+\]  
+
+---
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) is calculated based on the heat transfer between the reactor and the cooling jacket.  
+
+A diagram is drawn showing \( T_{\text{KF}} \) increasing \( \dot{Q}_{\text{out}} \), with arrows indicating heat flow from the reactor to the coolant.  
+
+The entropy production is given by:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} - \frac{\dot{Q}_{\text{out}}}{T_{\text{Reactor}}}
+\]  
+
+From the calculation:  
+\[
+\dot{S}_{\text{gen}} = 46.15 \, \text{W/K}
+\]  
+
+Additional note: The calculation was performed using reference values from the provided tables.

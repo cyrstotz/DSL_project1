@@ -1,0 +1,24 @@
+The mass-specific increase in flow exergy \( \Delta ex_{\text{str}} \) is calculated as:  
+\( \Delta ex_{\text{str}} = ex_{\text{str},6} - ex_{\text{str},0} \).  
+
+Formula:  
+\( \dot{m} \cdot ex_{\text{str}} = \dot{m} \cdot \left[ h_6 - h_0 - T_0 \cdot (s_6 - s_0) + \frac{w_6^2}{2} - \frac{w_0^2}{2} \right] \).  
+
+Given:  
+\( h_6 - h_0 = c_p \cdot (T_6 - T_0) \),  
+\( s_6 - s_0 = c_p \cdot \ln \left( \frac{T_6}{T_0} \right) - R \cdot \ln \left( \frac{p_6}{p_0} \right) \),  
+\( c_p = 1.006 \, \text{kJ/kg·K} \), \( R = c_p - c_v = 0.287 \, \text{kJ/kg·K} \),  
+\( T_6 = 328.075 \, \text{K} \), \( T_0 = 243.15 \, \text{K} \),  
+\( p_6 = p_5 = 0.5 \, \text{Bar} \), \( p_0 = 0.191 \, \text{Bar} \).  
+
+Calculation:  
+\( s_6 - s_0 = 1.006 \cdot \ln \left( \frac{328.075}{243.15} \right) - 0.287 \cdot \ln \left( \frac{0.5}{0.191} \right) \).  
+Result: \( s_6 - s_0 = 0.301 \, \text{kJ/kg·K} \).  
+
+\( \Delta s = 243.15 \cdot 0.301 = 73.22 \, \text{kJ/kg} \).  
+Final entropy change: \( \Delta S_{12} = 73.22 \, \text{kJ/kg} \).
+
+Delta ke equals w squared subscript 2 divided by 2 minus w squared subscript 5 divided by 2.  
+Delta ex subscript str equals 85.43 kilojoules per kilogram minus 73.27 kilojoules per kilogram plus w squared subscript 2 divided by 2 minus w squared subscript 5 divided by 2.  
+w subscript 2 squared divided by 2 equals 12 times 12 divided by 2 equals 48050 divided by 51 squared equals w subscript 5 squared divided by 2 equals 12 times 12 divided by 2 equals 48050 divided by 51 squared.  
+Delta ex subscript str equals 85.43 plus 73.27 plus 48.050 equals 60.21 kilojoules per kilogram.

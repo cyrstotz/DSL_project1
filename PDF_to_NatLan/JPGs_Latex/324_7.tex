@@ -1,0 +1,43 @@
+TASK 2a  
+A graph is drawn representing the jet engine process on a \( T \)-\( s \) diagram. The axes are labeled as follows:  
+- The vertical axis is \( T \) (temperature in Kelvin).  
+- The horizontal axis is \( s \) (specific entropy in \( \text{kJ}/\text{kg·K} \)).  
+
+The diagram includes several curves representing isobars (constant pressure lines), labeled \( p_0 \), \( p_1 \), and \( p_2 \). A process path is drawn, connecting points 0, 1, 2, 3, 4, 5, and 6. The path includes:  
+- Compression from state 0 to state 1.  
+- Adiabatic compression from state 1 to state 2.  
+- Isobaric heat addition from state 2 to state 3.  
+- Expansion through the turbine from state 3 to state 4.  
+- Mixing from state 4 to state 5.  
+- Expansion through the nozzle from state 5 to state 6.  
+
+TASK 2b  
+The steady-state energy balance for the nozzle is written as:  
+\[
+w_6 = \sqrt{w_5^2 + 2(h_5 - h_6)}
+\]  
+where \( w_6 \) is the outlet velocity, \( w_5 \) is the inlet velocity, and \( h_5 \) and \( h_6 \) are the specific enthalpies at states 5 and 6, respectively.  
+
+The reversible adiabatic temperature relation is given as:  
+\[
+\frac{T_G}{T_S} = \left( \frac{p_G}{p_S} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+where \( \kappa = 1.4 \), \( T_G \) is the gas temperature, \( T_S \) is the stagnation temperature, \( p_G \) is the gas pressure, and \( p_S \) is the stagnation pressure.  
+
+The temperature \( T_6 \) is calculated as:  
+\[
+T_6 = T_S \cdot \left( \frac{p_G}{p_S} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = 431.5 \cdot \left( \frac{p_G}{p_S} \right)^{\frac{1.4 - 1}{1.4}} = 320 \, \text{K}
+\]  
+
+The enthalpy difference \( h_5 - h_6 \) is calculated using the specific heat capacity \( c_p \):  
+\[
+h_5 - h_6 = c_p (T_5 - T_6)
+\]  
+Substituting values:  
+\[
+h_5 - h_6 = 1.006 \cdot (431.5 - 320) = 104 \, \text{kJ/kg}
+\]

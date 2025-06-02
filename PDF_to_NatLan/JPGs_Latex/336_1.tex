@@ -1,0 +1,47 @@
+TASK 1d  
+The temperature \( T_{\text{in,12}} \) is given as \( 20^\circ\text{C} \), and the final temperature is \( 70^\circ\text{C} \).  
+
+To calculate the change in internal energy \( \Delta u \) for the temperature range \( 20^\circ\text{C} \) to \( 70^\circ\text{C} \), the following equation is used:  
+\[
+\Delta u = u_f(70) - u_f(20)
+\]  
+From the water tables (A-2):  
+\[
+u_f(70) - u_f(20) = 292.95 - 83.94 = 209 \, \text{kJ/kg}
+\]  
+
+The internal energy change for the reactor contents is calculated for the temperature range \( 100^\circ\text{C} \) to \( 70^\circ\text{C} \), assuming the steam quality changes from \( x = 0.005 \) to \( x = 0 \).  
+
+The specific internal energy change \( \Delta u_{\text{gen}} \) is determined using the formula:  
+\[
+\Delta u_{\text{gen}} = u_f(70) - u_f(100) + x \cdot (u_g(100) - u_f(100))
+\]  
+From the water tables (A-2):  
+\[
+u_f(100) = 427.37 \, \text{kJ/kg}, \quad u_g(100) = 2566.5 \, \text{kJ/kg}, \quad u_f(70) = 292.95 \, \text{kJ/kg}
+\]  
+Substituting values:  
+\[
+\Delta u_{\text{gen}} = 292.95 - 427.37 + 0.005 \cdot (2566.5 - 427.37)
+\]  
+\[
+\Delta u_{\text{gen}} = 292.95 - 427.37 + 0.005 \cdot 2139.13 = -736.472 \, \text{kJ/kg}
+\]  
+
+The energy balance is applied:  
+\[
+\frac{dE}{dt} = m_{\text{gen}} \cdot \Delta u_{\text{gen}} + m_{\text{in}} \cdot \Delta u_{\text{in}} = 0
+\]  
+Rearranging to solve for \( m_{\text{in}} \):  
+\[
+m_{\text{in}} = -\frac{m_{\text{gen}} \cdot \Delta u_{\text{gen}}}{\Delta u_{\text{in}}}
+\]  
+Substituting values:  
+\[
+m_{\text{in}} = -\frac{5755 \cdot (-736.472)}{209} = 3756.64 \, \text{kg}
+\]  
+
+Thus, the mass \( \Delta m_{12} \) of saturated liquid water added is:  
+\[
+\Delta m_{12} = 3756.64 \, \text{kg}
+\]

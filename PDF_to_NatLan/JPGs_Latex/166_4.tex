@@ -1,0 +1,59 @@
+TASK 2a  
+A diagram is drawn representing a thermodynamic process in a jet engine on a \( T \)-\( s \) (temperature-entropy) diagram. The diagram includes labeled states: \( 1 \), \( 2 \), \( 3 \), \( 4 \), \( 5 \), and \( 6 \). Isobars \( p_0 \) and \( p_5 \) are indicated, with arrows showing the progression of the process. The curve transitions from state \( 1 \) to \( 6 \), with state \( 5 \) marked as the mixing chamber.  
+
+TASK 2b  
+The process is described as a reversible adiabatic (isentropic) process. Using the first law of thermodynamics:  
+\[
+0 = \dot{m} \left( h_e + \frac{w_e^2}{2} - h_a - \frac{w_a^2}{2} \right) + \sum Q - \sum W
+\]  
+This simplifies to:  
+\[
+h_e + \frac{w_e^2}{2} = h_a + \frac{w_a^2}{2}
+\]  
+
+For an isentropic process (\( \kappa = 1.4 \)):  
+\[
+\frac{T_2}{T_1} = \left( \frac{p_2}{p_1} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = T_5 \left( \frac{p_0}{p_5} \right)^{\frac{\kappa - 1}{\kappa}} = 328.07 \, \text{K}
+\]  
+
+The enthalpy difference is expressed as:  
+\[
+h_e - h_a = w_a
+\]  
+\[
+h_e - h_a + \frac{w_e^2}{2} = \frac{w_a^2}{2}
+\]  
+\[
+w_a = \sqrt{2(h_e - h_a) + w_e^2}
+\]  
+
+Using specific heat capacity:  
+\[
+h_e - h_a = c_p \left( T_a - T_2 \right) = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \left( 431.9 \, \text{K} - 328.07 \, \text{K} \right)
+\]  
+
+TASK 2c  
+The mass-specific increase in flow exergy is calculated as:  
+\[
+\Delta ex_{\text{flow}} = ex_{\text{flow},6} - ex_{\text{flow},0}
+\]  
+\[
+= h_6 - h_0 - T_0 (s_6 - s_0) + \Delta ke
+\]  
+Substituting terms:  
+\[
+= c_p (T_6 - T_0) - T_0 \left( c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) \right) + \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]  
+
+Given values:  
+\[
+T_6 = 340 \, \text{K}, \quad T_0 = 243.15 \, \text{K}, \quad w_6 = 530 \, \text{m/s}, \quad w_0 = 200 \, \text{m/s}
+\]  
+The final result is:  
+\[
+\Delta ex_{\text{flow}} = 121.272 \, \frac{\text{kJ}}{\text{kg}}
+\]

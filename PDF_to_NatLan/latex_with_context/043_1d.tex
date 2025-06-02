@@ -1,0 +1,37 @@
+The energy balance for the cooling process is set up as:  
+\[
+0 = \dot{m}_{\text{in}} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_{R,12}
+\]  
+Rearranging to find \( h_{\text{out}} \):  
+\[
+h_{\text{out}} = h_{\text{in}} + \Delta m_{12}
+\]  
+
+For a semi-open system, the energy balance is expressed as:  
+\[
+m_2 u_2 - m_1 u_1 = \Delta m_{12} (h_{\text{added}}) + Q_{R,12} - W_{\text{in}}
+\]  
+Using water table values:  
+\[
+u_2 (20^\circ\text{C}) = 292.55 \, \text{kJ/kg}, \quad u_1 (100^\circ\text{C}) = 418.94 \, \text{kJ/kg}
+\]  
+The enthalpy of the added water:  
+\[
+h_{\text{added}} (20^\circ\text{C}) = 83.95 \, \text{kJ/kg}
+\]  
+The total mass at state 2:  
+\[
+m_2 = m_1 + \Delta m_{12}, \quad m_1 = 5755 \, \text{kg}
+\]  
+Rearranging for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = \frac{m_1 u_1 - m_2 u_2 + Q_{R,12}}{(u_2 - h_{\text{added}})}
+\]  
+Substituting values:  
+\[
+\Delta m_{12} = \frac{5755 \cdot (418.94 - 292.55) + 100 \, \text{kJ}}{(292.55 - 83.95)}
+\]  
+Final result:  
+\[
+\Delta m_{12} = 349.725 \, \text{kg}
+\]

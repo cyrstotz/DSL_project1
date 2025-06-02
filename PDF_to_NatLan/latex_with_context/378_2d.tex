@@ -1,0 +1,28 @@
+The exergy destruction is calculated using the exergy balance equation:  
+\[
+\dot{E}_{ex,t} = \dot{E}_{ex,in} + \dot{E}_{ex,Q} - \left[ \dot{V}_u \left( e_0 + \frac{\Delta U(t)}{\text{d}t} \right) \right] = \dot{E}_{ex,vel}
+\]  
+Simplifying for steady-state conditions:  
+\[
+\dot{E}_{ex,t} = \dot{E}_{ex,in} + \dot{E}_{ex,Q}
+\]  
+The exergy transfer due to heat is expressed as:  
+\[
+e_{ex,Q} = \frac{\dot{E}_{ex,Q}}{\dot{m}} = \frac{1}{\dot{m}} \left( 1 - \frac{T_0}{T} \right) \dot{Q} = \left( 1 - \frac{T_0}{T} \right) q \cdot y
+\]  
+Substituting the values:  
+\[
+q = 1195 \, \text{kJ/kg}, \quad T = 1289 \, \text{K}, \quad y = \text{mass ratio}
+\]  
+The mass ratio \( y \) is defined as:  
+\[
+y = \frac{\dot{m}_K}{\dot{m}_\text{total}} = \frac{1}{6.293}
+\]  
+Calculating \( e_{ex,Q} \):  
+\[
+e_{ex,Q} = 116.60 \, \text{kJ/kg} + \frac{869.58 \, \text{kJ/kg} \cdot 1}{6.293 \, \text{kg}}
+\]  
+Final exergy destruction:  
+\[
+e_{ex,vel} = 270.62 \, \text{kJ/kg}
+\]

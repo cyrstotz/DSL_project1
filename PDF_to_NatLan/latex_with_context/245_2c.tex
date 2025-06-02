@@ -1,0 +1,34 @@
+The mass-specific flow exergy \( ex_{x,st,6} \) is calculated using the following expression:  
+\[
+ex_{x,st,6} = (h_6 - h_0 - T_0(s_6 - s_0)) + \frac{w_6^2}{2} - \left[(h_5 - h_0 - T_0(s_5 - s_0)) + \frac{w_5^2}{2}\right]
+\]  
+Breaking this down:  
+\[
+= (h_6 - h_5) - T_0(s_6 - s_5) + \frac{w_6^2 - w_5^2}{2}
+\]  
+The integral form for entropy and enthalpy differences is used:  
+\[
+= \int c_p dT - T_0 \left(\int \frac{c_p}{T} dt - \ln\left(\frac{p_6}{p_5}\right)\right) + \frac{w_6^2 - w_5^2}{2}
+\]  
+The gas constant \( R \) is calculated as:  
+\[
+R = c_p - c_v = \frac{c_p}{c_p} - c_p \cdot \kappa = 0.287492 \, \text{kJ/kg·K}
+\]  
+The ambient temperature is given as:  
+\[
+T_0 = 293.15 \, \text{K}
+\]  
+Substituting values into the exergy equation:  
+\[
+\Delta ex_{x,st,6} = c_p(T_6 - T_5) - T_0 c_p \ln\left(\frac{T_6}{T_5}\right) - T_0 \ln\left(\frac{p_6}{p_5}\right) + \frac{w_6^2 - w_5^2}{2}
+\]  
+Numerical results:  
+\[
+= -109.95 - 67.26 - 67.255 + 74.437
+\]  
+Final result:  
+\[
+= -167.97 \, \text{kJ/kg}
+\]  
+
+---

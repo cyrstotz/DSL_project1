@@ -1,0 +1,28 @@
+To determine the thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant:  
+\[
+T_{\text{KF}} = \frac{\int_{s_a}^{s_e} T \, dS}{s_a - s_e}
+\]  
+For an ideal liquid, the entropy difference is calculated as:  
+\[
+s_a - s_e = c_p \ln \left( \frac{T_{\text{out}}}{T_{\text{in}}} \right)
+\]  
+where \( c_p \) is the specific heat capacity of the coolant.  
+
+Using the integral:  
+\[
+\int T \, dS = q_{\text{rev}} = h_{\text{out}} - h_{\text{in}}
+\]  
+and substituting:  
+\[
+\int T \, dS = c_p \left( T_{\text{out}} - T_{\text{in}} \right)
+\]  
+
+Given:  
+\[
+T_{\text{out}} = 298.15 \, \text{K}, \quad T_{\text{in}} = 288.15 \, \text{K}
+\]  
+
+The thermodynamic mean temperature is calculated as:  
+\[
+T_{\text{KF}} = 293.12 \, \text{K}
+\]

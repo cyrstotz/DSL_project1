@@ -1,0 +1,22 @@
+The mass-specific flow exergy at state 0 is calculated using the following expression:  
+\[
+\dot{w}_{ex,s,0} = \int \dot{w} \frac{v_0 w_0^2}{2} \, \text{d}a
+\]  
+For \( T_0 \), referenced to the exergy, the flow exergy at state 0 is given as \( 20 \, \text{kJ/kg} \).  
+
+The flow exergy at state 6 is expressed as:  
+\[
+\dot{w}_{ex,s,6} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2}
+\]  
+Expanding the enthalpy and entropy terms:  
+\[
+h_6 - h_0 = c_p (T_6 - T_0) - T_0 \left( c_p \ln \frac{T_6}{T_0} \right) - R \ln \frac{p_6}{p_0} + \frac{w_6^2}{2}
+\]  
+Substituting the values:  
+\[
+85.469 \, \text{kJ/kg} - 73.27 \, \text{kJ/kg} + 128.448 \, \text{kJ/kg} = 136.605 \, \text{kJ/kg}
+\]  
+Thus, the change in flow exergy is:  
+\[
+\Delta \dot{w}_{ex,s} = 116.60 \, \text{kJ/kg}
+\]

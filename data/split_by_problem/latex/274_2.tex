@@ -1,0 +1,120 @@
+
+``````latex
+
+
+\section*{A21 Luft, ideales Gas, stationär, Epot(0)}
+
+\subsection*{a) T-S Diagramm, isobaren Einheiten}
+
+\begin{itemize}
+    \item A graph is drawn with the x-axis labeled $s \, [\frac{kJ}{kgK}]$ and the y-axis labeled $T \, [K]$.
+    \item The graph contains a curve with points labeled 1, 2, 3, 4, 5, and 6.
+    \item The curve is divided into segments:
+        \begin{itemize}
+            \item Segment 1-2: labeled "adiabat"
+            \item Segment 2-3: labeled "isobar"
+            \item Segment 3-4: labeled "adiabat"
+            \item Segment 4-5: labeled "isobar"
+            \item Segment 5-6: labeled "adiabat"
+        \end{itemize}
+    \item The points are connected as follows:
+        \begin{itemize}
+            \item Point 1 to Point 2: a steep curve upwards
+            \item Point 2 to Point 3: a horizontal line to the right
+            \item Point 3 to Point 4: a steep curve downwards
+            \item Point 4 to Point 5: a horizontal line to the right
+            \item Point 5 to Point 6: a steep curve upwards
+        \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item 6-1: \textit{verdichteter adiabat, isentroper wirkungsgrad}
+    \item 1-2: \textit{adiabat revers. Hochdruck}
+    \item 2-3: \textit{isobare wärmezufuhr}
+    \item 3-4: \textit{adiabat, irreversibel}
+    \item 4-5: \textit{isobare wärmeabfuhr}
+    \item 5-6: \textit{reversibel adiabat}
+\end{itemize}
+
+\subsection*{b) $w_0, T_6$}
+
+\begin{equation*}
+    \frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}}
+\end{equation*}
+
+\begin{equation*}
+    T_6 = T_5 \left( \frac{p_0}{p_5} \right)^{\frac{n-1}{n}}
+\end{equation*}
+
+\begin{equation*}
+    = 328.07 \, K
+\end{equation*}
+
+\begin{equation*}
+    c_v = \frac{c_p}{k} = 0.718 \, c
+\end{equation*}
+
+\begin{equation*}
+    s-6 \text{ reversibel adiabat}
+\end{equation*}
+
+\begin{equation*}
+    \frac{dE}{dt} = \sum \dot{m}_i (h_i + \frac{c_i^2}{2}) + \dot{Q} - \dot{W}
+\end{equation*}
+
+\begin{equation*}
+    m \dot{g} (u_6 - u_0) = \dot{m} \left( \frac{w_0^2}{2} - \frac{w_6^2}{2} \right)
+\end{equation*}
+
+\begin{equation*}
+    2 c_v (T_6 - T_0) = \frac{w_0^2}{2} - \frac{w_6^2}{2}
+\end{equation*}
+
+\begin{equation*}
+    w_6^2 = w_0^2 + 2 c_v (T_0 - T_6)
+\end{equation*}
+
+\begin{equation*}
+    w_6 = 199.85 \, m/s
+\end{equation*}
+
+\subsection*{c) $\dot{m} \dot{s$}}
+
+\begin{equation*}
+    \Delta e_{x, str} = e_{x, strG} - e_{x, str0}
+\end{equation*}
+
+\begin{equation*}
+    \```latex
+
+
+\section*{Student Solution}
+
+\subsection*{d)}
+
+\begin{align*}
+    &\text{müs beregn ex,verel} \\
+    &E_{x,verel} = T_0 S_{ex} \\
+    &E_{x,verel} = T_0 \left[ \dot{m} (s_{a-se}) - \frac{\dot{Q}_j}{T_B} \right] \\
+    &= T_0 \left[ \dot{m} (s_{B-se}) - \frac{Q_B}{T_B} \right] \\
+    &= T_0 \left[ \dot{m} \cdot cp \cdot \ln \left( \frac{T_6}{T_0} \right) - \frac{Q_B}{T_B} \right] \\
+    &E_{x,verel} = T_0 \left[ cp \cdot \ln \left( \frac{T_6}{T_0} \right) - \frac{Q_B}{T_B} \right] \\
+    &= -152.15 \, \text{W}
+\end{align*}
+
+\subsection*{b)}
+
+\begin{align*}
+    &\Delta E = m c v_2 - m u_1 + \Delta K + \Delta P E \\
+    &m \dot{s} (u_2 - u_1) = \frac{w_{c2}^2}{2} - \frac{w_{o2}^2}{2} \\
+    &w_{c2}^2 = 2 \dot{m} g s (u_2) \\
+    &0 = \dot{m} (h_2 - h_1 + \frac{w_{o2}^2}{2} - \frac{w_{c2}^2}{2}) + t_2 (\dot{Q} - \dot{W}) \\
+    &Q_B = \dot{m} (h_0 - h_0 + \frac{w_{c2}^2}{2} - \frac{w_{o2}^2}{2}) \\
+    &w_{c2}^2 = \frac{2 \dot{Q}}{m} + h_0 - h_0 + \frac{w_{o2}^2}{2} \\
+    &w_{c2}^2 = \frac{2 \dot{Q}}{m} + 2 (h_0 - h_6) + \frac{w_{o2}^2}{2} \\
+    &= 2 \frac{\dot{Q}}{m} + 2 cp (T_0 - T_6) + \frac{w_{o2}^2}{2}
+\end{align*}
+
+``````latex
+
+

@@ -1,0 +1,45 @@
+TASK 1a  
+The heat flow \( \dot{Q}_{\text{out}} \) is calculated using the energy balance:  
+\[
+\dot{m} \cdot h = \dot{Q}_R = \dot{Q}_{\text{out}}
+\]  
+The enthalpy values are determined from the water tables:  
+\[
+h_{\text{out}} = h_c(100^\circ\text{C}) = 419.06 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_{\text{in}} = h_c(70^\circ\text{C}) = 292.58 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+The heat flow removed by the coolant is then calculated as:  
+\[
+\dot{Q}_{\text{out}} = \dot{Q}_R - \dot{m} \cdot h = 100 \, \text{kW} - \dot{m} \cdot (h_{\text{out}} - h_{\text{in}})
+\]  
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = 100 \, \text{kW} - 0.3 \, \frac{\text{kg}}{\text{s}} \cdot (419.06 - 292.58) \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+\dot{Q}_{\text{out}} = 62.182 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature \( \bar{T}_{\text{KF}} \) of the coolant is calculated as:  
+\[
+\bar{T}_{\text{KF}} = \frac{\dot{Q}_{\text{out}}}{\dot{m}_{\text{KF}} \cdot (s_{\text{A}} - s_{\text{E}})}
+\]  
+Using the relation:  
+\[
+\dot{m} = \frac{\dot{Q}}{h}
+\]  
+and substituting values:  
+\[
+\bar{T}_{\text{KF}} = \frac{\Delta h}{-\Delta s}
+\]  
+The mean temperature is approximated as:  
+\[
+\bar{T}_{\text{KF}} = \frac{376.136 \, \text{kJ} + 38.82 \, \text{kJ}}{f \cdot (T_2 - T_1) + c_p \ln \left( \frac{T_2}{T_1} \right)}
+\]  
+Substituting values:  
+\[
+\bar{T}_{\text{KF}} = -253.12 \, \text{K}
+\]

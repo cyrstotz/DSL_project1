@@ -1,0 +1,45 @@
+The task involves determining the final ice fraction \( x_{\text{ice},2} \) in state 2 using energy balance equations and thermodynamic properties.
+
+### Definitions and Equations:
+1. The final ice fraction \( x_{\text{ice},2} \) is defined as:
+   \[
+   x_{\text{ice},2} = \frac{m_{\text{ice},2}}{m_{\text{EW}}}
+   \]
+   where \( m_{\text{EW}} \) is the total mass of the ice-water mixture.
+
+2. The energy balance for the system is written as:
+   \[
+   0 = \sum \dot{m} h + \dot{Q} - \dot{W}
+   \]
+   Here, heat transfer \( \dot{Q} \) and work \( \dot{W} \) are considered, but no external work is done, so \( \dot{W} = 0 \).
+
+3. The enthalpy terms are expanded:
+   \[
+   0 = m_{\text{EW}} h_1 - m_{\text{EW}} h_2 + m_g \cdot c_V (T_{g,2} - T_{g,1})
+   \]
+   where \( c_V \) is the specific heat capacity of the gas, and \( T_{g,1} \) and \( T_{g,2} \) are the initial and final temperatures of the gas.
+
+4. Using ideal gas assumptions:
+   \[
+   h_1 = U_{\text{FL}} + x_1 (U_{\text{ice}} - U_{\text{FL}})
+   \]
+   \[
+   h_2 = U_{\text{FL}} + x_2 (U_{\text{ice}} - U_{\text{FL}})
+   \]
+
+5. Rearranging the energy balance:
+   \[
+   0 = m_{\text{EW}} (U_{\text{FL}} - U_{\text{FL}}) (x_1 - x_2) + m_g \cdot c_V (T_{g,2} - T_{g,1})
+   \]
+
+6. Solving for \( x_2 \):
+   \[
+   x_2 = x_1 + \frac{m_g \cdot c_V (T_{g,2} - T_{g,1})}{m_{\text{EW}} (U_{\text{ice}} - U_{\text{FL}})}
+   \]
+
+### Numerical Substitution:
+- \( U_{\text{ice}} - U_{\text{FL}} = -333.4 \, \frac{\text{kJ}}{\text{kg}} \)
+- \( U_{\text{FL}} = U_{\text{FL}} (0.00) = -0.05 \, \frac{\text{kJ}}{\text{kg}} \)
+- Other values are substituted based on the problem setup.
+
+The final ice fraction \( x_{\text{ice},2} \) is calculated using the above equations and substituted values.

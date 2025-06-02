@@ -1,0 +1,36 @@
+The steady-state flow process is analyzed using the energy balance equation:  
+\[
+0 = \dot{m}_{\text{KF}} \left( h_e - h_a + \frac{w_e^2 - w_a^2}{2} + g(z_e - z_a) \right) - \dot{Q}_{\text{KF}}
+\]  
+Here, the kinetic and potential energy terms are neglected (\( w_e = w_a = 0 \), \( z_e = z_a \)), simplifying the equation to:  
+\[
+0 = \dot{m}_{\text{KF}} (h_e - h_a) - \dot{Q}_{\text{KF}}
+\]  
+
+For the reactor system, the mass remains constant (\( \dot{m}_{\text{in}} = \dot{m}_{\text{out}} \)), and the energy balance is expressed as:  
+\[
+0 = \dot{m}_{\text{in}} \left( h_e - h_a + \frac{w_e^2 - w_a^2}{2} + g(z_e - z_a) \right) + \dot{Q}_{\text{out}} + \dot{Q}_R
+\]  
+Again, neglecting kinetic and potential energy terms (\( w_e = w_a = 0 \), \( z_e = z_a \)), this simplifies to:  
+\[
+0 = \dot{m}_{\text{in}} (h_e - h_a) + \dot{Q}_{\text{out}} + \dot{Q}_R
+\]  
+
+The enthalpy values are calculated using water tables:  
+\[
+h_e = h_f @ 70^\circ\text{C} = 292.98 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_a = h_f @ 100^\circ\text{C} = 419.04 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Substituting values into the energy balance:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} \cdot (h_e - h_a) + \dot{Q}_R
+\]  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \frac{\text{kg}}{\text{s}} \cdot (292.98 \, \frac{\text{kJ}}{\text{kg}} - 419.04 \, \frac{\text{kJ}}{\text{kg}}) + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = 62.182 \, \text{kW}
+\]

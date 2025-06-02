@@ -1,0 +1,111 @@
+TASK 1a  
+The heat flow removed by the coolant is calculated using the energy balance equation:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} (h_2 - h_1) - \dot{Q}_R
+\]  
+Substituting the given values:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \cdot (419.05 \, \text{kJ/kg} - 292.38 \, \text{kJ/kg}) - 100 \, \text{kW}
+\]  
+\[
+h_2 = h_f(100^\circ\text{C}) = 419.05 \, \text{kJ/kg} \quad \text{(from Table A-2)}
+\]  
+\[
+h_1 = h_f(70^\circ\text{C}) = 292.38 \, \text{kJ/kg} \quad \text{(from Table A-2)}
+\]  
+\[
+\dot{Q}_{\text{out}} = 62.182 \, \text{kW}
+\]  
+Thus, the heat flow removed by the coolant is:  
+\[
+\dot{Q}_{\text{out}} = 62.182 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant is calculated using the logarithmic mean temperature difference formula:  
+\[
+T_{\text{KF}} = \frac{\Delta T_1 - \Delta T_2}{\ln \left( \frac{\Delta T_1}{\Delta T_2} \right)}
+\]  
+Where:  
+\[
+\Delta T_1 = T_{\text{KF,out}} - T_{\text{Reactor}} = 293.15 \, \text{K} - 238.15 \, \text{K}
+\]  
+\[
+\Delta T_2 = T_{\text{KF,in}} - T_{\text{Reactor}} = 288.15 \, \text{K} - 238.15 \, \text{K}
+\]  
+Substituting:  
+\[
+T_{\text{KF}} = \frac{(293.15 - 238.15) - (288.15 - 238.15)}{\ln \left( \frac{293.15 - 238.15}{288.15 - 238.15} \right)}
+\]  
+\[
+T_{\text{KF}} = 293.122 \, \text{K}
+\]  
+Thus, the thermodynamic mean temperature is:  
+\[
+T_{\text{KF}} = 293.122 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+The entropy production due to heat transfer is calculated using:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} (s_2 - s_1) + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+For water:  
+\[
+s_2 = s_f(100^\circ\text{C}) = 1.3029 \, \frac{\text{kJ}}{\text{kg·K}} \quad \text{(from Table A-2)}
+\]  
+\[
+s_1 = s_f(70^\circ\text{C}) = 0.8549 \, \frac{\text{kJ}}{\text{kg·K}} \quad \text{(from Table A-2)}
+\]  
+Substituting:  
+\[
+\dot{S}_{\text{gen}} = 0.3 \, \text{kg/s} \cdot (1.3029 - 0.8549) + \frac{62.182 \, \text{kW}}{293.122 \, \text{K}}
+\]  
+\[
+\dot{S}_{\text{gen}} = 0.1356 \, \frac{\text{kW}}{\text{K}}
+\]  
+
+---
+
+TASK 1d  
+The mass of saturated liquid water added to cool the reactor is calculated using an energy balance:  
+\[
+-\dot{m}_{\text{total},1} \cdot (u_2 - u_1) = \Delta m_{12} \cdot (h_2 - h_1) + Q_{R,12} - Q_{\text{out},12}
+\]  
+From Table A-2:  
+\[
+u_1 = 292.95 \, \frac{\text{kJ}}{\text{kg}}, \quad u_2 = 83.96 \, \frac{\text{kJ}}{\text{kg}}, \quad h_2 = 53.96 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Substituting values:  
+\[
+\Delta m_{12} = \frac{-5755 \cdot (83.96 - 292.95) + 35,000}{53.96 - 292.95}
+\]  
+\[
+\Delta m_{12} = 2031.2 \, \text{kg}
+\]  
+
+---
+
+TASK 1e  
+The entropy change of the reactor contents is calculated using:  
+\[
+\Delta S_{12} = m_2 s_2 - m_1 s_1
+\]  
+Where:  
+\[
+m_2 = m_{\text{total},1} + \Delta m_{12} = 5755 \, \text{kg} + 2031.2 \, \text{kg} = 7786.2 \, \text{kg}
+\]  
+\[
+s_2 = s_f(70^\circ\text{C}) = 0.8549 \, \frac{\text{kJ}}{\text{kg·K}}, \quad s_1 = s_f(100^\circ\text{C}) = 1.3029 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+Substituting:  
+\[
+\Delta S_{12} = 7786.2 \cdot 0.8549 - 5755 \cdot 1.3029
+\]  
+\[
+\Delta S_{12} = 15.18 \, \frac{\text{kJ}}{\text{K}}
+\]  

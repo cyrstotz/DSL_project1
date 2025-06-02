@@ -1,0 +1,53 @@
+The mass-specific increase in flow exergy \( \Delta ex_{\text{flow}} \) is calculated as:  
+\[
+\Delta ex_{\text{flow}} = [h_0 - h_6 - T_0 \cdot (s_0 - s_6)] + \frac{w_0^2 - w_6^2}{2} + \left(1 - \frac{T_0}{T_B}\right) q_B
+\]  
+
+For ideal gas assumptions:  
+1. \( h_0 - h_6 \):  
+\[
+h_0 - h_6 = c_p \cdot (T_0 - T_6) = 1.006 \, \text{kJ/kg·K} \cdot (-30^\circ\text{C} - 328 \, \text{K} + 273.15 \, \text{K})
+\]  
+\[
+h_0 - h_6 = -85.46 \, \text{kJ/kg}
+\]  
+
+2. \( T_0 (s_0 - s_6) \):  
+\[
+T_0 (s_0 - s_6) = T_0 \cdot c_p \cdot \ln\left(\frac{T_0}{T_6}\right) - R \cdot \ln\left(\frac{p_0}{p_6}\right)
+\]  
+\[
+T_0 (s_0 - s_6) = 243.15 \, \text{K} \cdot 1.006 \, \text{kJ/kg·K} \cdot \ln\left(\frac{243.15}{328}\right) - R \cdot \ln\left(\frac{0.191}{0.5}\right)
+\]  
+\[
+T_0 (s_0 - s_6) = -73.3 \, \text{kJ/kg}
+\]  
+
+3. Kinetic energy term:  
+\[
+\frac{w_0^2 - w_6^2}{2} = \frac{(200 \, \text{m/s})^2 - (507.24 \, \text{m/s})^2}{2}
+\]  
+\[
+\frac{w_0^2 - w_6^2}{2} = -108.65 \, \text{kJ/kg}
+\]  
+
+4. Heat transfer term:  
+\[
+\left(1 - \frac{T_0}{T_B}\right) q_B = \left(1 - \frac{243.15 \, \text{K}}{1289 \, \text{K}}\right) \cdot 1195 \, \text{kJ/kg}
+\]  
+\[
+\left(1 - \frac{T_0}{T_B}\right) q_B = 806.95 \, \text{kJ/kg}
+\]  
+
+Combining all terms:  
+\[
+\Delta ex_{\text{flow}} = -85.46 + 73.3 - 108.65 + 806.95
+\]  
+\[
+\Delta ex_{\text{flow}} = 681.14 \, \text{kJ/kg}
+\]  
+
+Finally:  
+\[
+\Delta ex_{\text{flow}} = -\Delta ex_{\text{flow},0} = -681 \, \text{kJ/kg}
+\]

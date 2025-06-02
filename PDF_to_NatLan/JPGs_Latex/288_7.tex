@@ -1,0 +1,25 @@
+TASK 4b  
+The enthalpy at state 2, \( h_2 \), is calculated using the temperature \( T = -22^\circ\text{C} \) and data from Table A-10:  
+\[
+h_2 = h(T = -22^\circ\text{C}) = 260.45 - 258.36 \left(\frac{248 - 22}{24 - 20}\right) + 260.45 = 217.52 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The enthalpy at state 3, \( h_3 \), is calculated using interpolation from Table A-12:  
+\[
+h_3 = 273.66 - 264.15 \left(\frac{0.9374 - 0.9055}{0.9374 - 0.9066}\right) + 273.66 = 265.06 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The energy balance equation is given as:  
+\[
+0 = \dot{m}_{\text{R134a}} (h_2 - h_3) + \dot{Q}_{23} - \dot{W}_{23}
+\]
+
+The heat transfer rate \( \dot{Q}_{23} \) is equal to \( \dot{Q}_K \):  
+\[
+\dot{Q}_{23} = \dot{Q}_K = -28 \, \text{kW}
+\]
+
+The mass flow rate of the refrigerant \( \dot{m}_{\text{R134a}} \) is calculated as:  
+\[
+\dot{m}_{\text{R134a}} = \frac{\dot{Q}_{23}}{h_2 - h_3} = \frac{-0.028}{217.52 - 265.06} = 5.896 \cdot 10^{-4} \, \frac{\text{kg}}{\text{s}}
+\]

@@ -1,0 +1,123 @@
+
+``````latex
+
+
+\section*{2.a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a Temperature-Entropy (T-S) diagram. The x-axis is labeled \( S \) with units \([ \frac{J}{kg \cdot K} ]\). The y-axis is labeled \( T \) with units \([ K ]\). The graph contains a closed loop with six points labeled 1 through 6. The points are connected by lines, some of which are straight and some are curved. The path follows the sequence 1-2-3-4-5-6-1. The region between points 3 and 4 is shaded. The following annotations are present:
+    \begin{itemize}
+        \item \( P_3 = P_2 \)
+        \item \( P_1 = P_4 = P_5 \)
+        \item \( P_6 \)
+        \item \( \dot{Q}_{5,6} \)
+        \item \( \dot{Q}_{5,1} \)
+        \item \( \dot{Q}_{5,6} \)
+        \item \( isobar \) (near the line connecting points 1 and 2)
+        \item \( isentrop \) (near the line connecting points 5 and 6)
+    \end{itemize}
+\end{description}
+
+\section*{2.b)}
+
+\textbf{Energiebilanz am Schaufelgitter}
+
+\[
+w_s = 220 \frac{J}{kg}
+\]
+
+\[
+P_5 = 0.5 \text{ bar} \quad T_5 = 431.9 \text{ K}
+\]
+
+\[
+m_s = \dot{m} \cdot \rho \cdot v \cdot A
+\]
+
+\[
+P_6 = 0.19 \text{ bar} \quad T_6 = T_0 = -30^\circ \text{C} = 243.15 \text{ K}
+\]
+
+\[
+Q = \dot{m} \left[ h_5 - h_1 + \frac{(w_5^2 - w_6^2)}{2} \right] - \dot{W}_{t,56}
+\]
+
+\[
+\dot{W}_{t,56} = \int_{5}^{6} v \, dp + \dot{ske}
+\]
+
+\[
+= -RT_5 \ln \left( \frac{P_6}{P_5} \right) + \frac{(w_6^2 - w_5^2)}{2}
+\]
+
+\[
+V_5 = \frac{RT_5}{P_5}
+\]
+
+\[
+Q = h_5 - h_6 + w_5^2
+\]
+
+``````latex
+
+
+2.c) \\
+\[
+e_{x,str} = h - h_0 - T_0(s - s_0) + ke + \frac{\omega^2 r^2}{2}
+\]
+\[
+e_{x,str,0} = h_0 - h_0 - T_0(s_0 - s_0) + \frac{\omega_0^2 r^2}{2}
+\]
+\[
+= c_p (T - T_0) - T_0 \left( c_p \ln \left( \frac{T}{T_0} \right) - R \ln \left( \frac{P}{P_0} \right) \right) + \frac{\omega^2 r^2}{2}
+\]
+\[
+R = c_p - \frac{c_p}{k}
+\]
+\[
+= 0.287 \left[ \frac{kJ}{kg \cdot K} \right]
+\]
+\[
+= c_p \left( T - T_0 \right) - T_0 \left( c_p \ln \left( \frac{T}{T_0} \right) - R \ln \left( \frac{P}{P_0} \right) \right) + \frac{\omega^2 r^2}{2}
+\]
+\[
+= 130.05 \frac{kJ}{kg} = 130 \frac{MJ}{kg}
+\]
+\[
+e_{x,str,0} = ke = \frac{\omega^2 r^2}{2}
+\]
+\[
+\Delta e_{x,str} = e_{x,str,0} - ke_0
+\]
+
+d) Exergiebilanz um sr. FP (ganzer System). \\
+\[
+0 = E_{x,str,0} - E_{x,str,6} + E_{x,Q,0} - E_{x,Q,6} - E_{x,verl}
+\]
+\[
+e_{x,verl} = -\Delta e_{x,sr} + (-\Delta e_{x,Q})
+\]
+\[
+\Delta e_{x,Q} =
+\]
+
+Über Entropiebilanz: \\
+\[
+0 = \dot{m}_0 s_0 - \dot{m}_6 s_6 + \frac{\dot{Q}_0}{T_0} + S_{erz}
+\]
+\[
+S_{erz} = s_6 - s_0 - \frac{q_6}{T_0}
+\]
+\[
+q_6 = q_B, \quad T = \frac{h_6 - h_0}{s_6 - s_0} = \frac{c_p \Delta T}{c_p \ln \left( \frac{T_0}{T_0} \right)} = 288.87 K, \quad s_6 - s_0 = c_p \ln \left( \frac{T_0}{T_0} \right)
+\]
+\[
+S_{erz} = 3.7 \frac{kJ}{kg \cdot K}
+\]
+\[
+e_{x,verl} = T_0 S_{erz} = -923.856 \frac{kJ}{kg}
+\]
+
+``````latex
+
+

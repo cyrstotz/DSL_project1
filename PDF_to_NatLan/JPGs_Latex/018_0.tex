@@ -1,0 +1,73 @@
+TASK 1a  
+The reactor operates with the following parameters:  
+- Inlet temperature: \( T_{\text{in}} = 70^\circ\text{C} \)  
+- Outlet temperature: \( T_{\text{out}} = 100^\circ\text{C} \)  
+- Coolant inlet temperature: \( T_{\text{KF,in}} = 288.15 \, \text{K} \)  
+- Coolant outlet temperature: \( T_{\text{KF,out}} = 298.15 \, \text{K} \)  
+- Reactor mass: \( m_{\text{ges}} = 5755 \, \text{kg} \)  
+- Steam quality: \( x_D = 0.005 \)  
+- Heat released by the chemical reaction: \( \dot{Q}_R = 100 \, \text{kW} \)  
+
+The pressure in the cooling jacket is constant, and the coolant is modeled as an ideal liquid. Water tables are referenced for calculations.  
+
+The task is to determine the heat flow \( \dot{Q}_{\text{out}} \) removed by the coolant.  
+
+Using the steady-state energy balance:  
+\[
+0 = \dot{m}_{\text{in}} (h_e - h_a) + \dot{m}_{\text{out}} (h_e - h_a) + \dot{Q}_R + \dot{Q}_{\text{out}} - \dot{W}
+\]  
+Since \( \dot{m}_{\text{in}} = \dot{m}_{\text{out}} \), this simplifies to:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} (h_e - h_a) + \dot{Q}_R
+\]  
+
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = 2 \cdot 0.3 \, \text{kg/s} \cdot (292.98 - 419.04) \, \text{kJ/kg} + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = -26.76 \, \text{kW} + 100 \, \text{kW} = 26.36 \, \text{kW}
+\]  
+
+TASK 1b  
+To determine the thermodynamic mean temperature \( T_{\text{KF}} \):  
+\[
+\bar{T}_{\text{KF}} = \frac{\int_{s_a}^{s_e} T \, ds}{s_e - s_a}
+\]  
+Using the relationship \( s_e - s_a = c \ln \frac{T_e}{T_a} \):  
+\[
+\bar{T}_{\text{KF}} = \frac{T_e - T_a}{\ln \frac{T_e}{T_a}}
+\]  
+
+Substituting values:  
+\[
+T_{\text{KF}} = \frac{288.15 - 298.15}{\ln \frac{288.15}{298.15}}
+\]  
+\[
+T_{\text{KF}} = 293.12 \, \text{K}
+\]  
+
+TASK 1c  
+To calculate the entropy production \( \dot{S}_{\text{gen}} \):  
+\[
+0 = \dot{m}_{\text{in}} (s_e - s_a) + \dot{m}_{\text{out}} (s_e - s_a) + \frac{\dot{Q}_{\text{out}}}{\bar{T}_{\text{wall}}} + \dot{S}_{\text{gen}}
+\]  
+Simplifying:  
+\[
+\dot{S}_{\text{gen}} = 2 \dot{m}_{\text{in}} (s_a - s_e) - \frac{\dot{Q}_{\text{out}}}{\bar{T}_{\text{wall}}}
+\]  
+
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = 2 \cdot 0.3 \, \text{kg/s} \cdot (0.36 - 0.2265) \, \frac{\text{kJ}}{\text{kg·K}} - \frac{65 \, \text{kW}}{293.12 \, \text{K}}
+\]  
+\[
+\dot{S}_{\text{gen}} = -0.356 \, \text{kW/K}
+\]  
+
+Additional notes:  
+- \( s_a = s_g(70^\circ\text{C}) = 0.2265 \, \frac{\text{kJ}}{\text{kg·K}} \)  
+- \( s_e = s_g(100^\circ\text{C}) = 0.36 \, \frac{\text{kJ}}{\text{kg·K}} \)  
+- \( \bar{T}_{\text{wall}} = 293.12 \, \text{K} \)  
+
+No diagrams or graphs are present on this page.

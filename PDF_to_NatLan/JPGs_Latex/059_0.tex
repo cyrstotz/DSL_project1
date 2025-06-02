@@ -1,0 +1,57 @@
+TASK 1a  
+The energy balance equation for the reactor is written as:  
+\[
+0 = \dot{m}_{\text{in}} h_{\text{in}} - \dot{m}_{\text{out}} h_{\text{out}} - \dot{Q}_{\text{out}} + \dot{Q}_R
+\]  
+Rearranging to solve for \( \dot{Q}_{\text{out}} \):  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} h_{\text{in}} - \dot{m}_{\text{out}} h_{\text{out}} + \dot{Q}_R
+\]  
+Substituting \( \dot{m}_{\text{in}} = \dot{m}_{\text{out}} \):  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} \left( h_{\text{in}} - h_{\text{out}} \right) + \dot{Q}_R
+\]  
+
+From the water tables:  
+\[
+h_{\text{in}} = h_f(70^\circ\text{C}) = 292.38 \, \text{kJ/kg} \quad \text{(from Table A-2)}
+\]  
+\[
+h_{\text{out}} = h_f(100^\circ\text{C}) = 413.04 \, \text{kJ/kg}
+\]  
+
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \cdot \left( 292.38 - 413.04 \right) + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = 62.182 \, \text{kW}
+\]  
+
+---
+
+TASK 1c  
+The entropy balance equation is written as:  
+\[
+0 = \dot{m}_{\text{in}} \left( s_{\text{in}} - s_{\text{out}} \right) + \frac{\dot{Q}_{\text{out}}}{T} + \dot{S}_{\text{gen}}
+\]  
+Rearranging to solve for \( \dot{S}_{\text{gen}} \):  
+\[
+\dot{S}_{\text{gen}} = \dot{m}_{\text{in}} \left( s_{\text{out}} - s_{\text{in}} \right) + \frac{\dot{Q}_{\text{out}}}{T}
+\]  
+
+From the water tables:  
+\[
+s_{\text{in}} = s_f(70^\circ\text{C}) = 0.9549 \, \text{kJ/kg·K} \quad \text{(from Table A-2)}
+\]  
+\[
+s_{\text{out}} = s_f(100^\circ\text{C}) = 1.3063 \, \text{kJ/kg·K}
+\]  
+
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = 0.3 \, \text{kg/s} \cdot \left( 1.3063 - 0.9549 \right) + \frac{65 \, \text{kW}}{295 \, \text{K}}
+\]  
+\[
+\dot{S}_{\text{gen}} = 0.326 \, \text{kW/K}
+\]  

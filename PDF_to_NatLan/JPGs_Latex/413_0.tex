@@ -1,0 +1,44 @@
+TASK 1a  
+To calculate the heat flow \( \dot{Q}_{\text{out}} \) removed by the coolant, the first law of steady-state thermodynamics for the reactor mixture is applied:  
+\[
+\dot{m} \left[ h_{\text{in}} - h_{\text{out}} \right] + \dot{Q}_R - \dot{Q}_{\text{out}} = 0
+\]  
+Rearranging the equation:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \left( h_{\text{in}} - h_{\text{out}} \right) + \dot{Q}_R
+\]  
+From the water tables:  
+\[
+h_{\text{in}} = 292.58 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(Table A-2)}
+\]  
+\[
+h_{\text{out}} = 419.04 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(Table A-2)}
+\]  
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = 62.182 \, \frac{\text{kJ}}{\text{s}}
+\]  
+
+---
+
+TASK 1b  
+To determine the thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant, the entropy balance for steady-state flow processes in the cooling jacket is applied:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \left( s_{\text{in}} - s_{\text{out}} \right) + \frac{\dot{Q}}{T} = 0 \quad \text{(no entropy generation)}
+\]  
+Rearranging:  
+\[
+\frac{\dot{Q}}{T} = \dot{m} \left( s_{\text{out}} - s_{\text{in}} \right)
+\]  
+Thus:  
+\[
+T = \frac{\dot{Q}}{\dot{m} \left( s_{\text{out}} - s_{\text{in}} \right)}
+\]  
+Substituting:  
+\[
+\dot{Q} = -\dot{Q}_{\text{out}}, \quad \dot{Q}_{\text{in}} = -\frac{\dot{Q}_{\text{out}}}{\dot{m}} = 207.273 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+The entropy difference is expressed as:  
+\[
+s_{\text{out}} - s_{\text{in}} = c_p \ln \left( \frac{T_{\text{KF,out}}}{T_{\text{KF,in}}} \right)
+\]

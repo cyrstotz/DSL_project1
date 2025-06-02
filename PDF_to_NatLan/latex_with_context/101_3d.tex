@@ -1,0 +1,37 @@
+The ice fraction is calculated as:  
+\[
+x_{\text{Eis}} = \frac{m_{\text{Eis}}}{m_{\text{EW}}}
+\]  
+where \( m_{\text{EW}} = 0.1 \, \text{kg} \) and \( T_{\text{EW}} = 0^\circ\text{C} \).  
+
+The external pressure is given as \( p_{\text{aussen}} = 1.14 \, \text{bar} \).  
+
+The pressure exerted by the piston is calculated using:  
+\[
+p_{\text{K}} = p_{\text{amb}} + \frac{F}{A}
+\]  
+where \( F = m_{\text{K}} \cdot g \), \( A = r^2 \cdot \pi \), and \( r = 0.05 \, \text{m} \).  
+
+Substituting:  
+\[
+F = 32 \cdot 9.81 = 313.92 \, \text{N}
+\]  
+\[
+A = (0.05)^2 \cdot \pi = 7.854 \cdot 10^{-3} \, \text{m}^2
+\]  
+\[
+p_{\text{K}} = 1 \cdot 10^5 + \frac{313.92}{7.854 \cdot 10^{-3}} = 1.3983944 \cdot 10^5 \, \text{Pa}
+\]  
+Converting to bar:  
+\[
+p_{\text{K}} = 1.398 \, \text{bar}
+\]  
+Thus, \( p_{\text{aussen}} = 1.14 \, \text{bar} \).  
+
+Additional equations for state 2 are provided but not fully calculated:  
+\[
+h_2 = h_f + x \cdot (h_{\text{solid}} - h_f)
+\]  
+\[
+V_2 = V_f + x \cdot (V_{\text{solid}} - V_f)
+\]

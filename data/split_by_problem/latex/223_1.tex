@@ -1,0 +1,120 @@
+
+``````latex
+
+
+1. a) \textbf{Energiebilanz um Reaktor}
+
+\[
+\frac{dE}{dt} = \dot{m}_{ein}(h_{ein} - h_{aus}) + \dot{Q}_{aus} - \sum \dot{W} + \dot{Q}_R
+\]
+
+\[
+\dot{Q}_{aus} = \dot{m}_{ein}(h_{aus} - h_{ein})
+\]
+
+\[
+h_{ein} = h(T=100^\circ C, x=1) = 2626,8 \frac{kJ}{kg}
+\]
+
+\[
+h_{aus} = h(T=100^\circ C, einp) = 2257,0 \frac{kJ}{kg}
+\]
+
+\[
+\dot{Q}_{aus} = 0,3 \frac{kg}{s} (2257,0 - 2333,8) + 100 kW = 76,96 kW
+\]
+
+b)
+
+\[
+\bar{T} = \frac{\int_{s_e}^{s_a} T \, ds}{s_a - s_e}
+\]
+
+\[
+s_a - s_e = s(298,15 K) - s(285,15 K) = \int_{285,15}^{298,15}
+\]
+
+c) \textbf{Energiebilanz um Reaktor bei stationärer Flüssigkeit mit einem Massenstrom}
+
+\[
+0 = \dot{m}_{ein} [s_{ein} - s_{aus}] + \frac{\dot{Q}_R}{T} - \frac{\dot{Q}_{aus}}{T} + \dot{S}_{erzeugt}
+\]
+
+\[
+\dot{S}_{erzeugt} = \dot{m}_{ein} [s_{aus} - s_{ein}] - \frac{\dot{Q}_R}{T} + \frac{\dot{Q}_{aus}}{T}
+\]
+
+\[
+\dot{S}_{erzeugt} = 0,5 \frac{kg}{s} (7,5549 - 7,1553) - \frac{100 \frac{kJ}{s}}{255 K} + \frac{76,96 \frac{kJ}{s}}{298 K}
+\]
+
+\[
+s_{ein} = s(T=70^\circ C) = 7,1553 \frac{kJ}{kg \cdot K}
+\]
+
+\[
+s_{aus} = s(T=100^\circ C) = 7,5549 \frac{kJ}{kg \cdot K}
+\]
+
+\[
+-\dot{S}_{erzeugt} = -0,2015 \frac{kJ}{kg \cdot K}
+\]
+
+``````latex
+
+
+\section*{a)}
+
+\begin{equation*}
+\frac{dE}{dt} = \dot{m}_{12} (h_{\text{ein}}) + Q_{\text{aus},12}
+\end{equation*}
+
+\begin{equation*}
+u_2 - u_1 = \dot{m}_{12} (h_{\text{ein}}) - Q_{\text{aus},12}
+\end{equation*}
+
+\begin{equation*}
+-(m_{\text{ges},1} + \dot{m}_1) (u_2) - m_{\text{ges},1} (u_1) = \dot{m}_{12} h_{\text{ein}} - Q_{\text{aus},12}
+\end{equation*}
+
+\begin{equation*}
+- \dot{m}_{12} = \frac{m_{\text{ges},1} u_1 - m_{\text{ges},1} u_2 - Q}{u_2 - h_{\text{ein}}}
+\end{equation*}
+
+\begin{equation*}
+h_{\text{ein}} = h(20^\circ C, x=1) = 2538,1 \frac{\text{kJ}}{\text{kg}}
+\end{equation*}
+
+\begin{equation*}
+u_1 = h(105^\circ C, x=1) = 2676,1 \frac{\text{kJ}}{\text{kg}}
+\end{equation*}
+
+\begin{equation*}
+u_2 = h(70^\circ C, x=1) = 2626,8 \frac{\text{kJ}}{\text{kg}}
+\end{equation*}
+
+\begin{equation*}
+- \dot{m}_{12} = \frac{5755 \cdot 2676,1 - 5755 \cdot 2626,8}{2626,8 - 2538,1} = 100 \frac{\text{kg}}{\text{s}}
+\end{equation*}
+
+\section*{e)}
+
+\begin{equation*}
+\Delta S = m_{\text{ges},1} + \Delta m_{12} - m_{\text{ges},1} s_1
+\end{equation*}
+
+\begin{equation*}
+- \Delta \dot{m}_{12} s_1 = 1,5069 + 0,005 (7,355 \cdot 9 - 1,5069) = 1,33714 \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\end{equation*}
+
+\begin{equation*}
+s_2 = s(70^\circ C, x=1) = 7,7553
+\end{equation*}
+
+\begin{equation*}
+\rightarrow \Delta S = 5755 + 3600 (7,7553) - 5755 (1,33714) = 66'230,38 \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\end{equation*}
+
+``````latex
+
+

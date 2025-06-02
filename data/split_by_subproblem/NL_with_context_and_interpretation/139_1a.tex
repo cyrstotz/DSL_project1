@@ -1,0 +1,37 @@
+a)  
+Energy balance equation:  
+dE/dt = Σṁ_in(h_in + v_in²/2 + gz_in) + Q̇_in - Σṁ_out(h_out + v_out²/2 + gz_out)  
+At steady state, dE/dt = 0, as the pressure remains constant.  
+
+Q̇_out = ṁ_in(h_in - h_out) + Q̇_R  
+
+For an ideal liquid:  
+h_in = h_f(T_in), h_out = h_f(T_out)  
+
+Q̇_out = ṁ_in[h_f(T_out) - h_f(T_in)] + Q̇_R  
+
+Substituting values:  
+ṁ_in = 0.3 kg/s, T_in = 70°C, T_out = 100°C, Q̇_R = 100 kW  
+
+Q̇_out = 0.3 × (h_f(100°C) - h_f(70°C)) + 100 kW  
+
+From water tables:  
+h_f(100°C) ≈ 419.17 kJ/kg, h_f(70°C) ≈ 293.83 kJ/kg  
+
+Q̇_out = 0.3 × (419.17 - 293.83) + 100  
+Q̇_out = 0.3 × 125.34 + 100  
+Q̇_out = 37.602 + 100  
+Q̇_out ≈ 137.6 kW  
+
+b)  
+Thermodynamic mean temperature:  
+T̅ = ∫T_dS / S_out - S_in  
+
+S_in and S_out are determined for the given temperature range using water tables.  
+
+c)  
+Entropy production:  
+ΔṠ_erz = ṁ_in(s_out - s_in) + Q̇_R / T̅  
+
+Substituting values:  
+ΔṠ_erz = Q̇_R / T̅

@@ -1,0 +1,56 @@
+The task involves calculating the exergy of a flow. The general formula for flow exergy is given as:  
+\[
+\dot{E}_{\text{ex,f}} = \dot{m} \left[ h - h_0 - T_0 (s - s_0) + \text{ke} + \frac{p^2}{2} \right]
+\]
+
+### Zustand 0 (State 0):  
+The exergy at state 0 is expressed as:  
+\[
+\dot{E}_{\text{ex,0}} = \dot{m} \left[ h_0 - h_0 - T_0 (s_0 - s_0) + \text{ke} \right]
+\]  
+Simplifying further:  
+\[
+\dot{E}_{\text{ex,0}} = \dot{m} \cdot \text{ke} = \dot{m} \cdot \frac{w_0^2}{2}
+\]  
+The kinetic energy term is calculated as:  
+\[
+e_{x,0} = \frac{w_0^2}{2} = \frac{20000 \, \text{m}^2}{\text{s}^2}
+\]
+
+### Zustand 6 (State 6):  
+The exergy at state 6 is expressed as:  
+\[
+e_{x,6} = \left[ h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2} \right]
+\]  
+
+#### Enthalpy Difference:  
+\[
+h_6 - h_0 = c_p (T_6 - T_0) = 97.431 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+#### Entropy Difference:  
+\[
+s_6 - s_0 = \int_{T_0}^{T_6} \frac{c_p}{T} \, dT = c_p \ln \left( \frac{T_6}{T_0} \right)
+\]  
+Substituting values:  
+\[
+s_6 - s_0 = c_p \ln \left( T_6 - T_0 \right) = 0.337 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+#### Final Exergy Calculation:  
+\[
+e_{x,6} = 97.431 \, \frac{\text{kJ}}{\text{kg}} - T_0 \cdot 0.337 \, \frac{\text{kJ}}{\text{kg·K}} + \frac{510 \, \text{m}^2}{\text{s}^2}
+\]  
+Simplifying further:  
+\[
+e_{x,6} = 130065.5 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+No diagrams or figures are present on the page.
+
+The change in flow exergy is calculated as:  
+\[
+\Delta ex = ex_6 - ex_0 = 110065.5 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+---

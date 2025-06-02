@@ -1,0 +1,45 @@
+TASK 3c  
+Energy balance for the gas in a closed system:  
+\[
+\Delta E = \Delta U = Q_{12} - W
+\]  
+Since \( W = 0 \):  
+\[
+Q_{12} = c_V (T_2 - T_1) \cdot m_{\text{gas}}
+\]  
+Substituting values:  
+\[
+Q_{12} = 1.139 \, \text{kJ} = 1140 \, \text{J}
+\]  
+
+---
+
+TASK 3d  
+Given:  
+\[
+m_{\text{EW}} = 0.1 \, \text{kg}, \, T_{\text{EW},1} = 0^\circ\text{C}, \, x_1 = 0.6
+\]  
+Energy balance for the closed system:  
+\[
+Q_{12} = m \left[ u_1 - u_2 \right]
+\]  
+Where:  
+\[
+u_1(x = 0.6, T = 0^\circ\text{C}) = -200.093 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+To find \( u_2 \):  
+\[
+u_2 = \frac{Q_{12}}{m} - u_1
+\]  
+Substituting values:  
+\[
+u_2 = \frac{1500}{0.1} - (-200.1)
+\]  
+
+Interpolation for \( T_2 \):  
+\[
+T_2 = u(T_{\text{known}}) + \frac{T_{\text{gross}} - T_{\text{known}}}{u(T_{\text{gross}}) - u(T_{\text{known}})} \cdot \left[ u_2 - u(T_{\text{known}}) \right]
+\]  
+
+This equation allows for interpolation of \( T_2 \) based on known values of \( u \) at specific temperatures.

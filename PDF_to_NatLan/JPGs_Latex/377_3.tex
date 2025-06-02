@@ -1,0 +1,58 @@
+TASK 2c  
+The change in flow exergy (\( \Delta ex_{\text{flow}} \)) is calculated using the following expression:  
+\[
+\Delta ex_{\text{flow}} = \dot{m}_{\text{gas}} \left[ h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2} \right] - \dot{m}_{\text{gas}} \left[ h_0 - h_0 - T_0 (s_0 - s_0) + \frac{w_0^2}{2} \right]
+\]  
+Simplifying, this becomes:  
+\[
+\Delta ex_{\text{flow}} = \dot{m}_{\text{gas}} \left[ h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2} - \frac{w_0^2}{2} \right]
+\]  
+Using the substance properties:  
+\[
+h_6 - h_0 = c_p (T_6 - T_0), \quad s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+Assuming \( \ln \left( \frac{p_6}{p_0} \right) = 0 \), the equation simplifies further:  
+\[
+\Delta ex_{\text{flow}} = c_p (T_6 - T_0) - T_0 \left[ c_p \ln \left( \frac{T_6}{T_0} \right) \right] - \frac{w_6^2 - w_0^2}{2}
+\]  
+Substituting numerical values:  
+\[
+c_p = 1.006 \, \text{kJ/kg·K}, \quad T_6 = 431.9 \, \text{K}, \quad T_0 = 243.15 \, \text{K}, \quad w_6 = 455.202 \, \text{m/s}, \quad w_0 = 200 \, \text{m/s}
+\]  
+\[
+\Delta ex_{\text{flow}} = 1.006 \cdot (431.9 - 243.15) - 1.006 \cdot 243.15 \cdot \ln \left( \frac{431.9}{243.15} \right) - \frac{455.202^2 - 200^2}{2}
+\]  
+\[
+\Delta ex_{\text{flow}} = 37,551.573 \, \text{J/kg} - 37,594 \, \text{J/kg} - 97,531 \, \text{J/kg}
+\]  
+\[
+\Delta ex_{\text{flow}} = 97,531 \, \text{J/kg}
+\]  
+
+---
+
+TASK 2d  
+The exergy destruction (\( ex_{\text{dest}} \)) is calculated using the following expression:  
+\[
+O = \dot{E}_{\text{ex,sf}} + \dot{E}_{\text{ex,g}} - \sum W - p_0 \frac{dV}{dt} = ex_{\text{val}}
+\]  
+Simplifying:  
+\[
+O = \Delta ex_{\text{sf}} + (1 - \frac{T_0}{T_B}) q_B - W_t = ex_{\text{val}}
+\]  
+Substituting numerical values:  
+\[
+ex_{\text{val}} = \Delta ex_{\text{sf}} + (1 - \frac{T_0}{T_B}) q_B
+\]  
+\[
+\Delta ex_{\text{sf}} = 97,531 \, \text{J/kg}, \quad T_0 = 243.15 \, \text{K}, \quad T_B = 1289 \, \text{K}, \quad q_B = 1195 \, \text{kJ/kg}
+\]  
+\[
+ex_{\text{val}} = 97,531 + (1 - \frac{243.15}{1289}) \cdot 1195
+\]  
+\[
+ex_{\text{val}} = 97,531 + 1069.17 \, \text{kJ/kg}
+\]  
+\[
+ex_{\text{val}} = 1069.17 \, \text{kJ/kg}
+\]

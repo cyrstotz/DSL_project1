@@ -1,0 +1,258 @@
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+\subsection*{(a)}
+
+\[
+\dot{Q}_{\text{aus}} = ?
+\]
+
+\textbf{Kühlflüssigkeit}
+
+\textbf{Energiebilanz:}
+
+\textit{stationär:}
+
+\[
+\frac{dE}{dt} = \sum \dot{m} \left[ h_i + \frac{v^2}{2} + gz \right] + \sum \dot{Q} - \sum \dot{W}
+\]
+
+\[
+0 = \dot{m} \left[ h_{\text{ein}} - h_{\text{aus}} \right] + \dot{Q}_R - \dot{Q}_{\text{aus}}
+\]
+
+\[
+\dot{Q}_{\text{aus}} = \dot{m} \left[ h_{\text{ein}} - h_{\text{aus}} \right] + \dot{Q}_R =
+\]
+
+\textbf{TAB A-2:}
+
+\textit{reines Wasser, siedende Flüssigkeit} $\rightarrow h_f$
+
+\[
+h_f (70^\circ C) = 292,98 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_f (100^\circ C) = 419,04 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\dot{Q}_R = 100 \text{kW}
+\]
+
+\[
+\dot{Q}_{\text{aus}} = 0.3 \frac{\text{kg}}{\text{s}} \left[ h_f (70) - h_f (100) \right] + \dot{Q}_R
+\]
+
+\[
+\dot{Q}_{\text{aus}} = 62,182 \text{kW} \quad \boxed{}
+\]
+
+``````latex
+
+
+(b)
+\[
+\overline{T}_{KF} = \frac{\int_{S_a}^{S_e} T dS}{S_a - S_e}
+\]
+\[
+dH = T dS + V dp \quad \text{isobar}
+\]
+\[
+dH = h_a - h_e
+\]
+\[
+\overline{T}_{KF} = \frac{h_a - h_e}{S_a - S_e}
+\]
+\[
+\overline{T}_{KF} = \frac{h_{aus} - h_{ein}}{S_{aus} - S_{ein}}
+\]
+\text{Ideale Flüssigkeit:}
+\[
+S_{if} = S_p(T)
+\]
+\[
+S_{aus} - S_{ein} = S_p(T_{aus}) - S_p(T_{ein})
+\]
+\[
+h_{aus} - h_{ein} = \int_{T_{ein}}^{T_{aus}} c_{if}(T) dT + v \cdot if(p_{aus} - p_{ein})
+\]
+\[
+= c_{if}(T) \cdot (T_{aus} - T_{ein})
+\]
+\[
+h_0 \quad S_{aus} - S_{ein} = \int_{T_{ein}}^{T_{aus}} \frac{c_{if}(T)}{T} dT = c_{if}(T) \left[ \ln \left( \frac{T_{aus}}{T_{ein}} \right) \right]
+\]
+\[
+\Rightarrow \overline{T}_{KF} = \frac{c_{if} \cdot T_{aus} - T_{ein}}{c_{if} \ln \left( \frac{T_{aus}}{T_{ein}} \right)} = 293,12 K
+\]
+\[
+T_{aus} = 298,15 K
+\]
+\[
+T_{ein} = 288,15 K
+\]
+
+``````latex
+
+
+\section*{Aufgabe 1}
+(C)
+
+\[
+\frac{dS}{dt} = \dot{E} \frac{Q}{T} + \dot{S}_{er}
+\]
+
+\[
+\dot{S}_{aus} - \dot{S}_{ein} = \frac{\dot{Q}_{aus}}{T} + \dot{S}_{er}
+\]
+
+\[
+\dot{S}_{er} = \dot{S}_{aus} - \dot{S}_{ein} + \frac{\dot{Q}_{aus}}{T}
+\]
+
+\[
+\frac{dS}{dt} = \dot{E} \frac{Q}{T} + \dot{S}_{er}
+\]
+
+\[
+\dot{S}_{aus} - \dot{S}_{ein} = \frac{\dot{Q}_{aus}}{T} + \dot{S}_{er}
+\]
+
+stationär $\rightarrow \dot{S}_{er} = \dot{S}_{aus} - \dot{S}_{ein}$
+
+\[
+0 = \dot{m} \left( s_{ein} - s_{aus} \right) + \dot{E} \frac{Q}{T} + \dot{S}_{er}
+\]
+
+\[
+\dot{S}_{er} = \dot{m} \left( s_{aus} - s_{ein} \right) - \left( \frac{\dot{Q}_{aus}}{T_R} + \frac{Q_{aus}}{T_{KF}} \right)
+\]
+
+\[
+\dot{m} = 0.3
+\]
+
+TAB A-2
+
+\[
+s(70) = s_f(70) = 0.3579 \frac{kJ}{kgK}
+\]
+
+\[
+s(100) = s_f(100) = 1.3669 \frac{kJ}{kgK}
+\]
+
+\[
+\dot{S}_{er} = 0.1056 \frac{kJ}{K \cdot s} - \left( \frac{100}{(100+273.15)} \right) + \frac{Q_{aus}}{T_{KF}}
+\]
+
+\[
+\dot{S}_{er} = 49.75 \frac{W}{K}
+\]
+
+``````latex
+
+
+\section*{(d)}
+
+\begin{align*}
+T_R &= 70^\circ \\
+\Delta m_{12} \\
+T_{ein,12} &= 20^\circ C \\
+Q_{R,12} &= 35 \, \text{MJ} \\
+m_2 &= 
+\end{align*}
+
+\subsection*{Energieblanz:}
+
+\subsubsection*{Halboffenes System:}
+\begin{align*}
+ke + pe &= 0 \\
+\Delta E &= m_2 U_2 - m_2 U_1 = m_i h_i + \mathbb{E} Q - \mathbb{E} W^0 \\
+m_2 U_2 - m_1 U_1 &= \Delta m_{12} h_i (20^\circ C) + Q_{aus} \\
+m_2 &= 5255 \, \text{kg} \\
+(m_2 - m_1) h_i (20^\circ C) + Q_{aus}
+\end{align*}
+
+\subsection*{TABA-Z:}
+\begin{align*}
+h_i (20^\circ C) &= h_{pf} (20^\circ C) = 83.96 \, \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+\subsection*{TABA-Z:}
+\begin{align*}
+u_2 &= u_f + x (u_g - u_f) \\
+u_f (100^\circ C) &= 418.92 \\
+u_g (100^\circ C) &= 2506.5 \\
+u_2 &= 429.3778 \, \frac{\text{kJ}}{\text{kg}} \\
+U_2 &= U_f (70^\circ C) = 292.95 \, \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+\begin{align*}
+m_2 U_2 - m_1 U_1 &= m_2 h_i (20^\circ) - m_1 h_i + Q_{aus} \\
+m_2 (u_2 - h_i) &= m_1 U_1 - m_1 h_i + Q_{aus} \\
+m_2 &= \frac{m_2 U_1 - m_1 h_i + Q_{aus}}{(u_2 - h_i)} = 9,679.31 \, \text{kg} \\
+\Delta m_{21} &= m_2 - m_1 = 3,921.31 \, \text{kg}
+\end{align*}
+
+``````latex
+
+
+\section*{Problem 1 (e)}
+
+\begin{equation*}
+    \delta S_{12}
+\end{equation*}
+
+\begin{equation*}
+    m_2 \cdot S_2 - m_1 \cdot S_1 =
+\end{equation*}
+
+\begin{equation*}
+    \Delta S_{12} = 15475 \frac{kJ}{K}
+\end{equation*}
+
+\subsection*{TAB A-Z:}
+
+\begin{equation*}
+    S_1 = S_f + x (S_g - S_f)
+\end{equation*}
+
+\begin{equation*}
+    S_f (100^\circ C) = 1.3069
+\end{equation*}
+
+\begin{equation*}
+    S_g (100^\circ C) = 7.3595
+\end{equation*}
+
+\begin{equation*}
+    x = 0.005
+\end{equation*}
+
+\begin{equation*}
+    S_1 = 1.33717
+\end{equation*}
+
+\begin{equation*}
+    S_2 = S_f (700^\circ C) = \text{TAB A-Z} = 0.9549
+\end{equation*}
+
+\subsection*{aus (d)}
+
+\begin{equation*}
+    M_2 = 9675.31
+\end{equation*}
+
+\begin{equation*}
+    M_1 = 5755
+\end{equation*}
+
+``````latex
+
+

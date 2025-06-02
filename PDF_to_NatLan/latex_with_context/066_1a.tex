@@ -1,0 +1,29 @@
+The energy balance in the reactor is given as:  
+\[
+\dot{Q} = \sum \dot{m}_{\text{in}} \left( h_i + \frac{v_i^2}{2} + g z_i \right) - \sum \dot{m}_{\text{out}} \left( h_e + \frac{v_e^2}{2} + g z_e \right) + \dot{Q}_R - \sum \dot{W}
+\]  
+Neglecting kinetic and potential energy terms, the equation simplifies to:  
+\[
+0 = \dot{m} \left( h_{\text{in}} - h_{\text{out}} \right) + \dot{Q}_R
+\]  
+Rearranging:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \left( h_{\text{out}} - h_{\text{in}} \right) - \dot{Q}_R
+\]  
+
+From Table A-2:  
+- \( h_{\text{in}}(70^\circ\text{C}) = 292.98 \, \text{kJ/kg} \)  
+- \( h_{\text{out}}(100^\circ\text{C}) = 419.04 \, \text{kJ/kg} \)  
+
+Given:  
+\[
+\dot{Q}_R = 100 \, \text{kW}, \quad \dot{m}_{\text{in}} = 0.3 \, \text{kg/s}
+\]  
+
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \cdot (419.04 - 292.98) - 100
+\]  
+\[
+\dot{Q}_{\text{out}} = 137.52 \, \text{kW}
+\]

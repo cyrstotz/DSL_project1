@@ -1,0 +1,64 @@
+TASK 3a  
+The pressure \( p_{g,1} \) and mass \( m_g \) of the gas in state 1 are calculated as follows:  
+
+### Pressure Calculation  
+The pressure \( p_{g,1} \) is determined using the equation:  
+\[
+p_{g,1} = p_{\text{amb}} + g \cdot \frac{(m_K + m_{\text{EW}})}{A}
+\]  
+Substituting values:  
+\[
+p_{\text{amb}} = 1 \, \text{bar} = 100,000 \, \text{Pa}, \quad g = 9.81 \, \text{m/s}^2, \quad m_K = 32 \, \text{kg}, \quad m_{\text{EW}} = 0.1 \, \text{kg}, \quad A = \frac{\pi \cdot D^2}{4}
+\]  
+The cross-sectional area \( A \) is calculated as:  
+\[
+A = \frac{\pi \cdot (0.1 \, \text{m})^2}{4} = 0.00785 \, \text{m}^2
+\]  
+Thus:  
+\[
+p_{g,1} = 100,000 \, \text{Pa} + 9.81 \cdot \frac{(32 + 0.1)}{0.00785} = 140,115 \, \text{Pa} = 140.115 \, \text{kPa}
+\]  
+
+### Mass Calculation  
+The mass \( m_g \) is calculated using the ideal gas law:  
+\[
+m \cdot R \cdot T = p \cdot V \quad \Rightarrow \quad m = \frac{p \cdot V}{R \cdot T}
+\]  
+Substituting values:  
+\[
+R = \frac{8.314}{M_g} = \frac{8.314}{50} = 0.1663 \, \text{kJ/kg·K}, \quad T = 500^\circ\text{C} = 773.15 \, \text{K}, \quad p = 140,115 \, \text{Pa}, \quad V = 0.00314 \, \text{m}^3
+\]  
+\[
+m = \frac{140,115 \cdot 0.00314}{0.1663 \cdot 773.15} = 0.00392 \, \text{kg}
+\]  
+
+---
+
+TASK 3b  
+In state 2, the total heat capacity remains constant.  
+
+The energy balance is expressed as:  
+\[
+m_g \cdot c_p \cdot T_1 + m_{\text{EW}} \cdot c_p \cdot T_1 = m_g \cdot c_p \cdot T_2 + m_{\text{EW}} \cdot c_p \cdot T_2
+\]  
+Where:  
+\[
+c_p = R + c_v = 0.97 \, \text{kJ/kg·K}
+\]  
+
+The mass of the ice-water mixture is divided into ice and water:  
+\[
+m_{\text{EW}} = m_{\text{Eis}} + m_{\text{Wasser}}, \quad m_{\text{Eis}} = 0.06 \, \text{kg}, \quad m_{\text{Wasser}} = 0.04 \, \text{kg}
+\]  
+
+The thermal mass of water is significantly higher than that of the gas. Therefore, the temperature difference is negligible.  
+
+The pressure ratio is calculated as:  
+\[
+\frac{p_2}{p_1} = \frac{T_2}{T_1}
+\]  
+Thus:  
+\[
+p_2 = p_1 \cdot \frac{T_2}{T_1}
+\]  
+

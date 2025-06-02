@@ -1,0 +1,22 @@
+Energy balance in the compressor:  
+Stationary → \( 0 = \dot{m}_{R134a} \cdot [h_2 - h_3 + ke + pe] - \dot{W}_k \)  
+Adiabatic → \( ke + pe = 0 \)  
+
+\( T_2 = T_i - 6K \)  
+\( = -10^\circ \text{C} - 6^\circ \text{C} = -16^\circ \text{C} \)  
+
+\( h_2 = h_f(-16^\circ \text{C}) + x_1(h_g - h_f) = h_s \)  
+\( = 29.73 - 257.74 \, \text{kJ/kg} \) (Table A10)  
+
+Adiabatic reversible → \( s_3 = s_2 = s_{fg}(-16^\circ \text{C}) \)  
+\( = 0.192 + 0.9298 \, \text{kJ/kg·K} \) (Table A10)  
+
+State 2: Superheated vapor (Table A12)  
+Interpolation:  
+\( T_3 = 31.33 + \frac{0.9298 - 0.9666}{0.9374 - 0.9666} \cdot (40 - 31.33) \)  
+\( = 37.8^\circ \text{C} \)  
+
+\( h_3 = 264.15 + \frac{37.8 - 31.33}{40 - 31.33} \cdot (271.66 - 264.15) \)  
+\( = 271.13 \, \text{kJ/kg} \)
+
+\( \dot{m}_{R134a} = \frac{28 \cdot 10^{-3}}{27,313 - 23,237.74} = 0.831 \, \text{kg/s} \)

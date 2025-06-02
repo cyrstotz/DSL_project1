@@ -1,0 +1,45 @@
+TASK 3d  
+The energy balance equation is written as:  
+\[
+\Delta E = \Delta U = Q_{12} - W_{12}^0
+\]  
+
+The equation for the change in internal energy is:  
+\[
+m_{\text{EW}} (h_2 - h_1) = Q_{12}
+\]  
+
+The specific internal energy values \( u_1 \) and \( u_2 \) are given at a pressure of \( 1.4 \, \text{bar} \):  
+\[
+u_{\text{Fest}} = -333.458 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_{\text{Flüssig}} = -0.045 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The specific internal energy \( u_1 \) is calculated as:  
+\[
+u_1 = u_{\text{Flüssig}} + x_{\text{Eis,1}} (u_{\text{Fest}} - u_{\text{Flüssig}})
+\]  
+Substituting values:  
+\[
+u_1 = -0.045 + 0.6 (-333.458 - (-0.045)) = -200.0028 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The specific internal energy \( u_2 \) is calculated as:  
+\[
+u_2 = \frac{Q_{12}}{m_{\text{EW}}} + u_1
+\]  
+Substituting values:  
+\[
+u_2 = \frac{186.4193 \, \frac{\text{kJ}}{\text{kg}}}{0.1 \, \text{kg}} + (-200.0028) = -186.4193 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The final ice fraction \( x_{\text{Eis,2}} \) is determined using the equation:  
+\[
+x_{\text{Eis,2}} = \frac{u_2 - u_{\text{Flüssig}}}{u_{\text{Fest}} - u_{\text{Flüssig}}}
+\]  
+Substituting values:  
+\[
+x_{\text{Eis,2}} = \frac{-186.4193 - (-0.045)}{-333.458 - (-0.045)} = 0.558819 \approx 0.559
+\]

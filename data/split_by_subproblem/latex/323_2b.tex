@@ -1,0 +1,103 @@
+
+
+\subsection*{2b)}
+
+1. HS um Triebwerke:
+
+\[
+0 = \dot{m} (h_e - h_a + \frac{\omega_e^2 - \omega_a^2}{2}) + \dot{Q} - \dot{W}
+\]
+
+\[
+0 = h_o - h_s + \frac{\omega_{out}^2 - \omega_0^2}{2}
+\]
+
+\[
+\omega_e = 2 (h_o - h_s) + \omega_{out}^2 \quad // \quad h_o - h_o = \int_{T_0}^{T_o} c_p(T) dT
+\]
+
+\[
+T_o = T_s \left( \frac{p_o}{p_s} \right)^{\frac{n-1}{n}} = 431.3 K \quad \left( \frac{0.191 \cdot 10^5 Pa}{0.5 \cdot 10^5 Pa} \right)^{\frac{0.4}{1.4}}
+\]
+
+\[
+T_s = 328.075 K
+\]
+
+\[
+\Rightarrow h_o - h_o = c_p (T_o - T_o) = 1.006 \frac{kJ}{kgK} (328.075 K - 243 K)
+\]
+
+\[
+h_o - h_o = 85.41355 \frac{kJ}{kg}
+\]
+
+``````latex
+
+\[
+\Delta h_{02} = -85.435 \frac{\text{kg}}{\text{s}} \left( 6.3 \frac{\text{m}^3}{\text{kg}} \cdot 2 + (200 \frac{\text{m}^2}{\text{s}^2}) \right) = \text{\sout{...}}
+\]
+
+\[
+= -130871 \frac{\text{m}}{\text{s}} \text{ muss aber + sein, da gleiche Richtung wie } w_e
+\]
+
+\[
+\Delta h_{02} = 130871 \frac{\text{m}^2}{\text{s}^2}
+\]
+
+\[
+2c
+\]
+
+\[
+w_0 = 510 \frac{\text{m}}{\text{s}}, \quad T_0 = 340 \text{K}, \quad R = c_p - c_v, \quad c_p = c_v \cdot \kappa, \quad \kappa = \frac{c_p}{c_v}
+\]
+
+\[
+c_v = \frac{c_p}{\kappa}
+\]
+
+\[
+c_v = \frac{1.006 \left( \frac{\text{kJ}}{\text{kg} \cdot \text{K}} \right)}{1.4}
+\]
+
+\[
+c_v = 0.71857 \left( \frac{\text{kJ}}{\text{kg} \cdot \text{K}} \right)
+\]
+
+\[
+0 = e_{1sf+} = \left[ h_c - h_0 - T_0 (s_c - s_0) \right]
+\]
+
+\[
+s_{1sf+} - s_{1sf-} = \int_{T_0}^{T_c} \frac{c_p(T)}{T} dT - R \ln \left( \frac{p_c}{p_0} \right)
+\]
+
+\[
+= c_p(T) \left( T_c - T_0 \right) - R \ln \left( \frac{p_c}{p_0} \right) = 1.006 \left( \frac{\text{kJ}}{\text{kg} \cdot \text{K}} \right) (310 \text{K} - 243.15 \text{K})
+\]
+
+\[
+- \left( 1.006 - 0.71857 \right) \ln \left( \frac{0.891 \cdot 10^5 \text{Pa}}{0.194 \cdot 10^5 \text{Pa}} \right)
+\]
+
+\[
+= 1.006 \left( \frac{\text{kJ}}{\text{kg} \cdot \text{K}} \right) \left( 310 \text{K} - 243.15 \text{K} \right) - 0.28743 \ln \left( \frac{0.891 \cdot 10^5 \text{Pa}}{0.194 \cdot 10^5 \text{Pa}} \right)
+\]
+
+\[
+s_{1sf+} - s_{1sf-} = c_p \ln \left( \frac{T_c}{T_0} \right) = 1.006 \left( \frac{\text{kJ}}{\text{kg} \cdot \text{K}} \right) \cdot 1.0006 \cdot 10^{-3} \left( \frac{\text{kg} \cdot \text{K}}{\text{kJ}} \right) \ln \left( \frac{310 \text{K}}{243.15 \text{K}} \right)
+\]
+
+\[
+= 337.27888 \left( \frac{\text{J}}{\text{kg} \cdot \text{K}} \right)
+\]
+
+\[
+\Delta e_{1sf+} = 85.4355 \left( \frac{\text{kg}}{\text{s}} \right) - 243.15 \text{K} \cdot 337.27888 \left( \frac{\text{J}}{\text{kg} \cdot \text{K}} \right)
+\]
+
+\[
+\Delta e_{1sf+} = 3426.188858 \left( \frac{\text{J}}{\text{kg}} \right)
+\]

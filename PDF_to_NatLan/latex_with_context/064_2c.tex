@@ -1,0 +1,62 @@
+The outlet velocity \( w_6 \) is calculated using the following equation:  
+\[
+w_6^2 = w_5^2 - \frac{R}{1 - \kappa} (T_5 - T_6) + \frac{w_5^2 - w_6^2}{2}
+\]  
+Substituting values:  
+\[
+104.45 - \frac{w_6^2}{2} + \frac{R}{1 - \kappa} (431.9 - 328.07) = 0
+\]  
+Where:  
+\[
+R = c_p - c_v = c_p \left( 1 - \frac{1}{\kappa} \right) = 1.006 \cdot (1 - 0.714) = 0.129 \, \text{kJ/kg·K}
+\]  
+
+Rearranging and solving for \( w_6 \):  
+\[
+104.45 - \frac{w_6^2}{2} + 7.61 = 0
+\]  
+\[
+w_6^2 = 2017
+\]  
+\[
+w_6 = \sqrt{2017} = 44.94 \, \text{m/s}
+\]  
+
+---
+
+No additional diagrams or content are visible beyond the calculations provided.
+
+The mass-specific increase in flow exergy is calculated using the following expression:  
+
+\[
+ex_{\text{flow},6} - ex_{\text{flow},0} = h_6 - h_0 - T_0 \left[ s_6 - s_0 \right] + \frac{w_6^2 - w_0^2}{2}
+\]
+
+Breaking it down:  
+
+\[
+ex_{\text{flow},0} = h_0 - T_0 \left[ s_0 \right] + \frac{w_0^2}{2}
+\]
+
+\[
+ex_{\text{flow},6} - ex_{\text{flow},0} = h_6 - h_0 - T_0 \left[ s_6 - s_0 \right] + T_0 \left[ s_0 \right] - T_0 \left[ s_6 - s_0 \right] + \frac{w_6^2 - w_0^2}{2}
+\]
+
+Simplifying further:  
+
+\[
+= c_p \left( T_6 - T_0 \right) - T_0 \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) + \frac{w_6^2 - w_0^2}{2}
+\]
+
+The final result is:  
+
+\[
+\Delta ex_{\text{flow}} = 1101.06 \, \text{kJ/kg}
+\]
+
+Given values:  
+\[
+T_6 = 340 \, \text{K}, \, T_0 = 243.15 \, \text{K}, \, w_6 = 310 \, \text{m/s}, \, w_0 = 200 \, \text{m/s}
+\]
+
+---

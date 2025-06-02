@@ -1,0 +1,59 @@
+TASK 1a  
+The reactor operates with the following given parameters:  
+- Mass flow rate at the inlet: \( \dot{m}_{\text{in}} = 0.3 \, \text{kg/s} \)  
+- Inlet temperature: \( T_{\text{in}} = 70^\circ\text{C} \)  
+- Steam quality: \( x_D = 0.005 \)  
+
+To calculate the heat flow \( \dot{Q}_{\text{out}} \), the energy balance equation is applied:  
+\[
+0 = \dot{m}_{\text{in}} h_{\text{in}} - \dot{m}_{\text{out}} h_{\text{out}} + \dot{Q}_R - \dot{Q}_{\text{out}} - \dot{W}
+\]  
+Since there is no work (\( \dot{W} = 0 \)), the equation simplifies to:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R
+\]  
+
+Using water tables (Table A-2), the enthalpy values are:  
+- \( h_{\text{in}} = h_f(70^\circ\text{C}) = 292.88 \, \text{kJ/kg} \)  
+- \( h_{\text{out}} = h_f(100^\circ\text{C}) = 419.04 \, \text{kJ/kg} \)  
+
+The mass flow rate is constant: \( \dot{m} = 0.3 \, \text{kg/s} \).  
+The heat released by the chemical reaction is \( \dot{Q}_R = 100 \, \text{kW} \).  
+
+Substituting these values:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R
+\]  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \cdot (292.88 - 419.04) \, \text{kJ/kg} + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = 62.182 \, \text{kW}
+\]  
+
+TASK 1b  
+The exergy balance for the coolant liquid is expressed as:  
+\[
+0 = \dot{E}_{\text{in}} + \dot{E}_{\text{Q}} - \dot{W} - \dot{E}_{\text{out}}
+\]  
+
+TASK 1c  
+The thermodynamic mean temperature of the coolant is given as \( T_{\text{KF}} = 285 \, \text{K} \).  
+
+To calculate the entropy production \( \dot{S}_{\text{gen}} \):  
+\[
+0 = \dot{m} (s_{\text{e2}} - s_{\text{e1}}) + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} - \dot{S}_{\text{gen}}
+\]  
+
+Substituting the values:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+\[
+\dot{S}_{\text{gen}} = \frac{62.182 \, \text{kW}}{285 \, \text{K}}
+\]  
+\[
+\dot{S}_{\text{gen}} = 0.2107 \, \text{kW/K}
+\]  
+
+This represents the entropy production due to heat transfer between the reactor and the cooling jacket.

@@ -1,0 +1,131 @@
+
+``````latex
+
+
+\section*{Aufgabe 2:}
+
+\subsection*{a)}
+
+\begin{itemize}
+    \item The first graph is a plot with the x-axis labeled as $[ \frac{1}{V} \frac{kg}{kJ} ]$ and the y-axis unlabeled.
+    \item There are several points labeled 0, 1, 2, 3, 4, 5, and 6.
+    \item The points are connected by lines with arrows indicating the direction of the process.
+    \item The process starts at point 0, moves to point 1, then to point 2, and so on until point 6.
+    \item The line from point 0 to point 1 is labeled "isentrope".
+    \item The line from point 2 to point 3 is labeled "isotherm".
+    \item The line from point 4 to point 5 is labeled "isentrope".
+    \item The line from point 5 to point 6 is labeled "isotherm".
+\end{itemize}
+
+\begin{itemize}
+    \item The second graph is a plot with the x-axis labeled as $[ \frac{1}{V} \frac{kg}{kJ} ]$ and the y-axis labeled as $T [K]$.
+    \item There are several points labeled 0, 1, 2, 3, 4, 5, and 6.
+    \item The points are connected by lines with arrows indicating the direction of the process.
+    \item The process starts at point 0, moves to point 1, then to point 2, and so on until point 6.
+    \item The line from point 0 to point 1 is labeled "isentrope".
+    \item The line from point 2 to point 3 is labeled "isobar".
+    \item The line from point 4 to point 5 is labeled "isobar".
+    \item The line from point 5 to point 6 is labeled "isotherm".
+\end{itemize}
+
+``````latex
+
+
+b) $p_c = p_0 = 0.1 \text{ bar}$
+
+$T_G = ? \quad ; \quad T_S = 431.9 \text{ K} \quad ; \quad p_S = 0.5 \text{ bar} \quad ; \quad \kappa = 1.4$
+
+\text{isentrope Gleichung:}
+
+\[
+\frac{T_G}{T_S} = \left( \frac{p_G}{p_S} \right)^{\frac{\kappa - 1}{\kappa}} \quad \Rightarrow \quad T_G = T_S \left( \frac{p_G}{p_S} \right)^{\frac{\kappa - 1}{\kappa}} = 328.07 \text{ K}
+\]
+
+\text{Energie Bilanz}
+
+\[
+0 = \dot{m} (h_0 - h_6) + \cancel{\dot{Q}} + \cancel{\sum \dot{W}_t} - \cancel{\sum \dot{W}_t}
+\]
+
+\[
+0 = \dot{m} (h_0 - h_6) + \frac{1}{2} (w_0^2 - w_6^2) + \cancel{\sum Q_j} - \cancel{\sum \dot{W}_t}
+\]
+
+\text{in Aufgabenstellung} \rightarrow \text{Annahmen}
+
+\[
+2(h_6 - h_0) = w_0^2 - w_6^2
+\]
+
+\[
+w_6^2 = w_0^2 + 2(h_0 - h_6)
+\]
+
+\[
+w_6^2 = w_0^2 + 2 c_{p,\text{Luft}} (T_0 - T_6)
+\]
+
+\[
+w_6^2 = 200 \frac{\text{m}^2}{\text{s}^2} + 2 \cdot 1.006 \frac{\text{kJ}}{\text{kg K}} (293.15 - 328.07) \text{ K}
+\]
+
+\[
+= 200 \frac{\text{m}^2}{\text{s}^2} + 2 \cdot 1.006 \frac{\text{kJ}}{\text{kg K}} \cdot \frac{1 \text{kg} \cdot \text{m}^2}{\text{s}^2 \cdot 1000} (293.15 - 328.07)
+\]
+
+\[
+w_6 = \sqrt{450 \frac{\text{m}^2}{\text{s}^2}} = 459.19 \frac{\text{m}}{\text{s}}
+\]
+
+``````latex
+
+
+c) $T_6 = 340 \, K \, ; \, w_6 = 510 \, \frac{m}{s} \, ; \, T_0 = 243.15 \, K$
+
+\[
+\Delta e_{x,st} = e_{x,st,6} - e_{x,st,0}
+\]
+
+\[
+e_{x,st,6} = \dot{m} \left( h_6 - h_0 - T_0 (s_6 - s_0) + \frac{1}{2} w_6^2 \right)
+\]
+
+\[
+= c_p^{ig,luft} (T_6 - T_0) - T_0 \left( c_p^{ig,luft} \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) \right) + \frac{1}{2} w_6^2
+\]
+
+\[
+\dot{m}_{luft} = 28.3 \, \frac{kg}{kmol} \, ; \, R = \frac{R}{M} = 0.2869 \, \frac{kJ}{kg \cdot K}
+\]
+
+\[
+\Rightarrow e_{x,st,6} = \dot{m} \left( 130 \, \frac{kJ}{kg} \right)
+\]
+
+\[
+e_{x,st,0} = \left( h_0 - h_0 - T_0 (s_0 - s_0) + \frac{1}{2} w_0^2 \right) = 40 \, \frac{kJ}{kg}
+\]
+
+\[
+\Rightarrow \Delta e_{x,st} = 90 \, \frac{kJ}{kg}
+\]
+
+``````latex
+
+d) Energiebilanz:
+
+\[
+0 = \dot{m}_{ges} \left( -\Delta e_{x,s,t} \right) + \sum_j \left( 1 - \frac{T_0}{T_j} \right) \dot{Q}_j - \sum_k \dot{W}_{h,k} - \dot{E}_{x,ver1}
+\]
+
+\[
+\dot{E}_{x,ver1} = -\dot{m}_{ges} \Delta e_{x,s,t}
+\]
+
+\[
+\dot{e}_{x,ver1} = -\Delta e_{x,s,t} = -100 \frac{kJ}{kg}
+\]
+
+``````latex
+
+

@@ -1,0 +1,16 @@
+Throttle ~ isenthalpic, isothermal  
+x4 = 0  
+p4 = 8 bar  
+h4 = 93.42 kilojoules per kilogram (from Table A-11)  
+T4 = 31.33  
+
+Diagram: A schematic representation of a cycle with points labeled 4 and other points connected by arrows.  
+
+h1 = 92.42  
+p1 = 6 bar  
+
+Interpolation @ Table A-12:  
+h = (phi(p1) - phi(p2)) / (p1 - p2) * (p - p2) + phi(p2)  
+(This will also be used for P)  
+
+P = (h - phi(p2)) / (phi(p1) - phi(p2)) * (p1 - p2) + p2

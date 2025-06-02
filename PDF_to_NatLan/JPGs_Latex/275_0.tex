@@ -1,0 +1,51 @@
+TASK 1a  
+The energy balance equation is written as:  
+\[
+\frac{dE}{dt} = \dot{m}_e (h_e - h_a) + \dot{Q}_R + \dot{Q}_{\text{out}} - \dot{X}^0 = 0
+\]  
+where \( h_e \) and \( h_a \) are the specific enthalpies at the outlet and inlet, respectively. Using the water tables (Table A2), the enthalpies are calculated as:  
+\[
+h_e = x_D h_f(70^\circ\text{C}) + (1 - x_D) h_f(70^\circ\text{C}) = 304.65 \, \text{kJ/kg} \quad \text{(saturated liquid at \( 70^\circ\text{C} \))}
+\]  
+\[
+h_a = x_D h_f(100^\circ\text{C}) + (1 - x_D) h_f(100^\circ\text{C}) = 403.43033 \, \text{kJ/kg} \quad \text{(saturated liquid at \( 100^\circ\text{C} \))}
+\]  
+The heat flow removed by the coolant is determined as:  
+\[
+\dot{m}_e (h_e - h_a) + \dot{Q}_R - \dot{Q}_{\text{out}} = +62.182 \, \text{kJ/s}
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant is calculated using the equation:  
+\[
+C_{\text{it}} \dot{m} = -\frac{\dot{Q}_{\text{out}}}{\Delta T} = 6.2182 \, \frac{\text{kJ}}{\text{s·K}}
+\]  
+where \( \Delta T \) is the temperature difference of the coolant.  
+The entropy balance equation is written as:  
+\[
+\frac{dS}{dt} = \dot{m}(s_e - s_a) + \frac{\dot{Q}_{\text{out}}}{T} + \dot{S}_{\text{gen}}
+\]  
+The thermodynamic mean temperature \( \bar{T}_h \) is calculated as:  
+\[
+\bar{T}_h = 293.72 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+The entropy production is calculated as:  
+\[
+\bar{T}_1 = 393.15 \, \text{K}, \quad \bar{T}_2 = 293.72 \, \text{K}
+\]  
+The entropy production rate is expressed as:  
+\[
+\frac{dS}{dt} = -\frac{\dot{Q}_{\text{out}}}{T_1} + \frac{\dot{Q}_{\text{out}}}{T_2} + \dot{S}_{\text{gen}}
+\]  
+Simplifying:  
+\[
+-\frac{\dot{Q}_{\text{out}}}{T_1} + \frac{\dot{Q}_{\text{out}}}{T_2} = \dot{S}_{\text{gen}} = 0.053875 \, \frac{\text{kJ}}{\text{s·K}}
+\]  
+
+No diagrams or figures are present on this page.

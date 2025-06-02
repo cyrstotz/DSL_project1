@@ -1,0 +1,50 @@
+TASK 1a  
+The heat flow \( \dot{Q}_{\text{out}} \) is calculated using the energy balance equation:  
+\[
+Q = \dot{m}_{\text{in}} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R
+\]  
+For the cooling jacket, the heat flow removed is:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} (h_{\text{out}} - h_{\text{in}})
+\]  
+
+The enthalpy values are determined from water tables:  
+\[
+h_{\text{in}} = h_f(70^\circ\text{C}) = 292.98 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(Table A2)}
+\]  
+\[
+h_{\text{out}} = h_f(100^\circ\text{C}) = 419.04 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(Table A2)}
+\]  
+
+Substituting into the equation:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \frac{\text{kg}}{\text{s}} \left( 419.04 \, \frac{\text{kJ}}{\text{kg}} - 292.98 \, \frac{\text{kJ}}{\text{kg}} \right) - 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = -67.182 \, \text{kW}
+\]  
+
+The negative sign indicates heat is removed from the system.  
+
+A note is added: "Sign convention summarized according to sign convention rules."  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is calculated using the integral formula:  
+\[
+T_{\text{KF}} = \frac{\int T \, \text{d}S}{S_a - S_e}
+\]  
+
+Given \( S_a - S_e = -C \), the mean temperature simplifies to:  
+\[
+T_{\text{KF}} = \frac{T_{\text{KF,in}} + T_{\text{KF,out}}}{2}
+\]  
+
+Substituting values:  
+\[
+T_{\text{KF}} = \frac{288.15 \, \text{K} + 298.15 \, \text{K}}{2}
+\]  
+\[
+T_{\text{KF}} = 293.15 \, \text{K}
+\]

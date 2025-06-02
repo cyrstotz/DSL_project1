@@ -1,0 +1,52 @@
+TASK 2a  
+The problem involves an ideal gas and air under the following conditions:  
+- Ambient pressure \( p_0 = 0.191 \, \text{bar} \)  
+- Ambient temperature \( T_0 = -30^\circ\text{C} \)  
+
+The process diagram includes states labeled from 0 to 6:  
+- \( p_2 = p_3 \)  
+- \( p_5 = p_2 \)  
+- \( s_1 = s_2 \)  
+- \( s_2 = s_5 \)  
+
+A temperature-entropy (\( T \)-\( s \)) diagram is drawn, showing the thermodynamic process qualitatively:  
+- The diagram includes isobars for \( p_0 \), \( p_2 \), and \( p_5 \).  
+- States 0, 2, 3, 4, 5, and 6 are marked.  
+- The curve transitions from state 0 to state 2, then to state 3, 4, 5, and finally 6.  
+- The temperature at state 5 is \( T_5 = 431.9 \, \text{K} \), and the pressure at state 5 is \( p_5 = 0.5 \, \text{bar} \).  
+- The pressure at state 6 is \( p_6 = p_0 \).  
+
+TASK 2b  
+The outlet velocity \( w_6 \) and temperature \( T_6 \) are calculated using energy balance equations.  
+
+The energy balance equation is:  
+\[
+Q = \dot{m} \left( h_e - h_a + \frac{w_e^2 - w_a^2}{2} \right)
+\]  
+
+The outlet velocity \( w_a \) is derived as:  
+\[
+w_a = \sqrt{h_e - h_a + \frac{w_e^2}{2}}
+\]  
+
+Substituting the enthalpy difference and velocity terms:  
+\[
+w_a = \sqrt{c_p (T_5 - T_6) + \frac{w_e^2}{2}}
+\]  
+
+The temperature \( T_6 \) is calculated using the isentropic relation:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}}
+\]  
+
+Substituting values:  
+\[
+T_6 = 431.9 \left( \frac{0.191}{0.5} \right)^{\frac{1.4 - 1}{1.4}} = 328.07 \, \text{K}
+\]  
+
+Finally, the outlet velocity \( w_a \) is calculated:  
+\[
+w_a = \sqrt{1.006 \, \frac{\text{kJ}}{\text{kg·K}} (431.9 - 328.07) + \frac{220^2}{2}} = 682.79 \, \text{m/s}
+\]  
+
+A small diagram is drawn showing the nozzle with labeled inlet velocity \( w_e = 220 \, \text{m/s} \), outlet velocity \( w_a \), and temperature \( T_6 = 328.07 \, \text{K} \).

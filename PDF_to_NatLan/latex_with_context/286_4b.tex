@@ -1,0 +1,29 @@
+The first law of thermodynamics is applied to the system:  
+\[
+0 = \dot{m} (h_{\text{in}} - h_{\text{out}}) + \dot{Q} - \dot{W}
+\]  
+Rearranging for the mass flow rate:  
+\[
+\dot{m} = \frac{\dot{W}}{h_3 - h_2}
+\]
+
+The refrigerant temperature \( T_i \) is given as \( -8^\circ\text{C} \).  
+The temperature \( T_2 \) is equal to \( T_i \).  
+
+The enthalpy \( h_{12} \) is interpolated from Table A-10:  
+\[
+h_{12} = \frac{h_g(-8^\circ\text{C}) - h_g(-12^\circ\text{C})}{-8^\circ\text{C} - (-12^\circ\text{C})} \cdot (-8^\circ\text{C} - (-10^\circ\text{C})) + h_g(-12^\circ\text{C})
+\]  
+Values are substituted into the equation:  
+\[
+h_{12} = \frac{264.78 - 243.73}{4} \cdot 2 + 243.73
+\]  
+
+The mass flow rate \( \dot{m}_{\text{R134a}} \) is calculated using the formula:  
+\[
+\dot{m}_{\text{R134a}} = \frac{\dot{Q}_K}{h_{12}}
+\]  
+From Table A-12, \( h_{12} = 264.15 \). Substituting values:  
+\[
+\dot{m}_{\text{R134a}} = \frac{28 \, \text{kW}}{264.15 - 243.73} = \frac{28}{20.42} = 1.37 \, \text{kg/s}
+\]

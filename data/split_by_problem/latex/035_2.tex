@@ -1,0 +1,192 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+\subsection*{a) T-s Diagramm}
+
+\begin{itemize}
+    \item Graph description:
+    \begin{itemize}
+        \item The graph is a T-s diagram with temperature \( T \) on the vertical axis and entropy \( s \) on the horizontal axis.
+        \item The vertical axis is labeled \( T[K] \).
+        \item The horizontal axis is labeled \( s \left[ \frac{kJ}{kg \cdot K} \right] \).
+        \item There are several points labeled on the graph: \( O \), \( 1 \), \( 2 \), \( 3 \), \( 4 \), \( 5 \), and \( 6 \).
+        \item The path from \( O \) to \( 1 \) is a curved line with a downward slope.
+        \item The path from \( 1 \) to \( 2 \) is a vertical line labeled \( s = \text{const} \).
+        \item The path from \( 2 \) to \( 3 \) is a line with an upward slope.
+        \item The path from \( 3 \) to \( 4 \) is a line with a steeper upward slope.
+        \item The path from \( 4 \) to \( 5 \) is a horizontal line labeled \( p = p_4 = p_5 \).
+        \item The path from \( 5 \) to \( 6 \) is a vertical line labeled \( s = \text{const} \).
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item \( O \rightarrow 1 \): \( s \downarrow, T \downarrow \)
+    \item \( 1 \rightarrow 2 \): isentrope \( s_1 = s_2 \)
+    \item \( 2 \rightarrow 3 \): isobar \( T \uparrow \)
+    \item \( 3 \rightarrow 4 \): \( s \uparrow \)
+    \item \( 4 \rightarrow 5 \): \( p_4 = p_5 \)
+    \item \( 5 \rightarrow 6 \): \( s_5 = s_6 \)
+\end{itemize}
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{b) Energiebilanz}
+
+\[
+0 = \dot{m} (h_s - h_6 + \frac{w_5^2 - w_6^2}{2} + g(z_5 - z_6)) + \dot{Q} - \dot{W}
+\]
+
+\subsubsection*{Isentrope}
+
+\[
+s_5 = s_6
+\]
+
+\[
+s_5^0 (431.3 k) = \frac{2.0887 - 2.06533}{440 - 430} (431.3 - 430) + 2.06533
+\]
+
+\[
+= 2.06977 \quad \text{(Wert von A-22)}
+\]
+
+\[
+s_6 - s_5 = s_6^0 - s_5^0 - R \ln \left( \frac{p_6}{p_5} \right) = 0
+\]
+
+\[
+R = \frac{8314}{28.57} = 287
+\]
+
+\[
+p_0 = p_0 = 0.181 \, \text{bar}
+\]
+
+\[
+p_5 = 0.5 \, \text{bar}
+\]
+
+\[
+s_6^0 = s_5^0 + R \ln \left( \frac{p_6}{p_5} \right)
+\]
+
+\[
+= 2.06977 + 287 \cdot \ln \left( \frac{0.181}{0.5} \right) \cdot 10^3
+\]
+
+\[
+= 1.7935 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+\]
+
+\[
+s^0 (T = 325 K) = 1.78249
+\]
+
+\[
+s^0 (T = 330 K) = 1.7935
+\]
+
+\[
+T_6 = 330 - \frac{330 - 325}{1.7935 - 1.78249} \cdot (1.7935 - 1.78249) + 325 \quad \text{(Wert von A-22)}
+\]
+
+\[
+= 328.5 \, \text{K}
+\]
+
+\[
+0 = \dot{m} (h_s - h_6 + \frac{w_5^2}{2} - \frac{w_6^2}{2})
+\]
+
+\[
+w_6^2 = 2 \cdot (h_s - h_6 + \frac{w_5^2}{2})
+\]
+
+\[
+h_s = \frac{441.61 - 431.4}{440 - 430} (431.9 - 430) + 431.43 \quad \text{(Wert von A-22)}
+\]
+
+\[
+= 433.36 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_6 = \frac{330.54 - 325.31}{330 - 325} (328.5 - 325) + 325.31 \quad \text{(Wert von A-22)}
+\]
+
+\[
+= 328.87 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+w_6 = \sqrt{2 \cdot (433.36 - 328.87) \cdot 10^3 + \frac{220^2}{2}} = 507 \, \frac{\text{m}}{\text{s}}
+\]
+
+``````latex
+
+\section*{Aufgabe 2}
+
+\subsection*{c)}
+
+\[
+-\Delta_{ex,str} = h_0 - h_6 - T_0 (s_0^0 - s_6^0) - \frac{w_6^2}{2} + \Delta p e^0
+\]
+
+\[
+h_6 (340 K) = 340.42
+\]
+
+\[
+s_6^0 (340 K) = 1.8279
+\]
+
+\[
+h_0 (243 K) = \frac{250.05 - 240.02}{250 - 240} (243 - 240) + 240.02
+\]
+
+\[
+= 243.03 \frac{kJ}{kg}
+\]
+
+\[
+s_0^0 (243 K) = \frac{1.51917 - 1.47824}{250 - 240} (243 - 240) + 1.47824
+\]
+
+\[
+= 1.480513 \frac{kJ}{kg \cdot K}
+\]
+
+\[
+-\Delta_{ex,str} = h_0 - h_6 - T_0 (s_0^0 - s_6^0 - R \ln \left( \frac{p_0}{p_6} \right) ) + \frac{w_0^2}{2} - \frac{w_6^2}{2}
+\]
+
+\[
+= 243.03 - 340.42 - 243 (1.480513 - 1.8279 - 287 \ln \left( \frac{0.18}{0.5} \right) ) + \frac{200^2}{2} + \frac{w_0^2}{2}
+\]
+
+\[
+= -95 \frac{kJ}{kg}
+\]
+
+\[
+\Delta_{ex,str} = 95 \frac{kJ}{kg}
+\]
+
+\subsection*{d)}
+
+\[
+\dot{E}_{x,verl} = T_0 \cdot \dot{S}_{erz}
+\]
+
+\[
+\dot{S}_{erz} =
+\]
+
+``````latex
+
+

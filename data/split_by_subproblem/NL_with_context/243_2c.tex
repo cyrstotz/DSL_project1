@@ -1,0 +1,11 @@
+The exergy balance equation is written as:  
+\( \dot{E}_{ex,str} = \dot{m} (h_6 - h_0 - T_0 (s_6 - s_0)) + \dot{e} \)
+
+The enthalpy difference \( h_6 - h_0 \) is calculated as:  
+\( h_6 - h_0 = c_p (T_6 - T_0) = 700 \, \text{kJ/kg} \cdot \ln \left(\frac{340.1 - 273.15 + 30}{340.1 - 273.15 + 30}\right) = 57.0 \, \text{kJ/kg} \)
+
+The entropy difference \( T_0 (s_6 - s_0) \) is calculated as:  
+\( T_0 (s_6 - s_0) = T_0 c_p \ln \left(\frac{T_6}{T_0}\right) = (273.15 - 30) \cdot 1.006 \, \text{kJ/kg·K} \cdot \ln \left(\frac{340.1}{273.15}\right) = 170 \, \text{kJ/kg} \)
+
+The final exergy is calculated as:  
+\( \dot{E}_{ex,str} = \dot{m} (57 - 52 + 170) = 635 \, \text{kJ/kg} \)

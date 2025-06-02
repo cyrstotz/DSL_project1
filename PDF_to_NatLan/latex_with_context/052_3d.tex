@@ -1,0 +1,24 @@
+The internal energy of the ice-water mixture \( U_{\text{EW},2} \) is calculated as:  
+\[
+U_{\text{EW},2} = U_{\text{ice},1} + x_2 \cdot (U_{\text{liq}} - U_{\text{ice}})
+\]  
+Substituting values:  
+\[
+U_{\text{EW},2} = -280.052 \, \frac{\text{kJ}}{\text{kg}} + x_2 \cdot (0 + 333.401)
+\]  
+The heat transfer equation is:  
+\[
+m \cdot (u_2 - u_1) = Q_{12} - W_{12}
+\]  
+Rearranging:  
+\[
+u_2 - u_1 = \frac{Q_{12}}{m}
+\]  
+Substituting \( u_2 = \frac{Q_{12}}{m} + u_1 \):  
+\[
+u_2 = \frac{Q_{12}}{m} + u_1 + 333.401
+\]  
+Solving for \( x_2 \):  
+\[
+x_2 = \frac{Q_{12} + m \cdot u_1 + 333.401}{333.401} = 0.43233
+\]

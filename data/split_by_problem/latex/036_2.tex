@@ -1,0 +1,110 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a Temperature-Entropy (T-s) diagram. The x-axis is labeled $s \, [\frac{kJ}{kgK}]$ and the y-axis is labeled $T \, [K]$. The graph consists of six points labeled 1 through 6. The points are connected by various curves and lines, indicating different thermodynamic processes:
+    \begin{itemize}
+        \item Point 1 to Point 2: Isentropic process (vertical line).
+        \item Point 2 to Point 3: Isobaric process (curved line).
+        \item Point 3 to Point 4: Isobaric process (curved line).
+        \item Point 4 to Point 5: Isentropic process (vertical line).
+        \item Point 5 to Point 6: Isobaric process (curved line).
+        \item Point 6 to Point 1: Isentropic process (vertical line).
+    \end{itemize}
+    The graph also includes annotations indicating the nature of the processes (isobaric or isentropic) and a note that $P_3 = P_0 \rightarrow$ isobaric.
+\end{description}
+
+\subsection*{b)}
+
+\[
+w_s
+\]
+
+\[
+0 = \dot{m}_{ges} \left[ h_5 - h_0 + \frac{w_5^2 - w_0^2}{2} \right] * = -\dot{W}_v
+\]
+
+\[
+w_5 = 220 \, \frac{m}{s}
+\]
+
+\[
+h_5 - h_4 = \int_{T_0}^{T_5} c_p(t) \, dt = \Delta t \, c_p = \left[ 4 \cdot 319.9 \, K - 7 \right] 1.006 \, \frac{kJ}{kgK}
+\]
+
+\[
+\sqrt{-\left( \frac{\dot{W}_v}{\dot{m}_{ges}} + h_0 - h_5 \right) 2 + w_5^2} = w_6
+\]
+
+\[
+\dot{W}_v = \int_1^2 P \, dV = \frac{1}{1 - \nu} \left( P_2 V_2 - P_1 V_1 \right) = \frac{R \left( T_5 - T_0 \right)}{7 - 7.4} =
+\]
+
+\[
+P_0 = RT
+\]
+
+\[
+R = c_p - c_v \quad R = 0.287 \, \frac{kJ}{kgK}
+\]
+
+\[
+K = \frac{c_p}{c_v} = 7.4 \quad c_p = \frac{c_p}{7.4} = \frac{2.006}{7.4} = 0.719 \, \frac{kJ}{kgK}
+\]
+
+``````latex
+
+
+\section*{c)}
+
+\begin{align*}
+\Delta e_{x, in} &= e_{x, t} - e_{x, s, t, 0} \\
+\Delta e_{x, in} &= h_0 - h_0 - t_0 (s_0 - s_0) + \frac{1}{2} \left( w_2^2 - w_0^2 \right) + \Delta p e
+\end{align*}
+
+\begin{align*}
+h_0 - h_0 &= \int_{T_0}^{T_0} c_p \, dt \Rightarrow c_p (T_0 - T_0) = c_p (3(10K) \frac{2}{243.15}) = 97.43 \, \frac{\text{kJ}}{\text{kg}}
+\end{align*}
+
+\begin{align*}
+s_0 - s_0 &= \int_{T_0}^{T_0} \frac{c_p}{T} \, dt - R \ln \left( \frac{p_0}{p_0} \right) \\
+&= \ln \left( \frac{T_0}{T_0} \right) c_p - R \ln \left( \frac{p_0}{p_0} \right) = \ln \left( \frac{340K}{243.15K} \right) 1.006 - 0.287 \left( \frac{p_0}{p_0} \right) \\
+&= 6.337 \, \frac{\text{kJ}}{\text{kgK}}
+\end{align*}
+
+\begin{align*}
+\Delta e_{x, t} &= 97.43 - 243.15 (0.337) + \frac{5 \cdot 10^2 - 2 \cdot 0^2}{2} = 110 \, \text{MW} \, (110.085 \, \text{MW})
+\end{align*}
+
+\section*{d)}
+
+\begin{align*}
+\dot{E}_{x, verl} &= T_0 \dot{S}_{evz} \quad t_0 = 243.15K
+\end{align*}
+
+\begin{align*}
+\Delta \dot{S}_{evz} \, \text{aus Entropiebilanz} \\
+0 &= \dot{m} [s_e - s_a] + \frac{\dot{Q}}{T_y} + \dot{S}_{irr, evz}
+\end{align*}
+
+\begin{align*}
+\Delta \dot{S}_{evz} &= [s_a - s_e] - \frac{\dot{Q}}{T_{jin}} = [s_0 - s_0] - \frac{q_b}{7283K}
+\end{align*}
+
+\begin{align*}
+\Delta s_0 - s_0 &= 0.337 \, \frac{\text{kJ}}{\text{kgK}} \quad 0.337 - \frac{1.195}{7283K} \\
+\dot{S}_{evz} &= -0.59 \quad \text{Fehler muss 70 sein.}
+\end{align*}
+
+\begin{align*}
+\dot{E}_{x, verl} &= 243.15K \cdot \dot{S}_{evz}
+\end{align*}
+
+``````latex
+
+

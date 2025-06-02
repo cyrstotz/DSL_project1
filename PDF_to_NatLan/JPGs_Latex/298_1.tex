@@ -1,0 +1,89 @@
+TASK 1d  
+The goal is to determine \( \Delta m_{12} \), the mass of saturated liquid water added to the reactor, so that the reactor temperature \( T_{R,2} \) reaches \( 70^\circ\text{C} \).  
+
+Given data:  
+\[
+T_{\text{in,12}} = 20^\circ\text{C}, \quad Q_{R,12} = 35 \, \text{MJ}
+\]  
+
+An energy balance for the isolated system is applied:  
+\[
+\Delta E = m_2 u_2 - m_1 u_1 = \Delta m_{12} h_{\text{ein}} + Q_{R,12} - Q_{\text{out},12}
+\]  
+
+Where:  
+\[
+m_2 = m_1 + \Delta m_{12}, \quad u_2 = u(70^\circ\text{C}, \text{saturated liquid}), \quad m_1 = m_{\text{total},1}, \quad u_1 = u(100^\circ\text{C}, \text{saturated liquid}), \quad h_{\text{ein}} = h(20^\circ\text{C}, \text{saturated liquid})
+\]  
+
+Substituting into the energy balance:  
+\[
+(m_1 + \Delta m_{12}) u_2 - m_1 u_1 = \Delta m_{12} h_{\text{ein}} + Q_{R,12}
+\]  
+
+Rearranging:  
+\[
+\Delta m_{12} (u_2 - h_{\text{ein}}) = m_1 (u_1 - u_2) + Q_{R,12}
+\]  
+
+Solving for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = \frac{m_1 (u_1 - u_2) + Q_{R,12}}{u_2 - h_{\text{ein}}}
+\]  
+
+Substituting numerical values:  
+\[
+m_1 = 5755 \, \text{kg}, \quad u_1 = 418.94 \, \frac{\text{kJ}}{\text{kg}}, \quad u_2 = 252.51 \, \frac{\text{kJ}}{\text{kg}}, \quad h_{\text{ein}} = 83.96 \, \frac{\text{kJ}}{\text{kg}}, \quad Q_{R,12} = 35,000 \, \text{kJ}
+\]  
+
+\[
+\Delta m_{12} = \frac{5755 \, \text{kg} \cdot (418.94 - 252.51) \, \frac{\text{kJ}}{\text{kg}} + 35,000 \, \text{kJ}}{252.51 - 83.96 \, \frac{\text{kJ}}{\text{kg}}}
+\]  
+
+Calculations:  
+\[
+\Delta m_{12} = \frac{3465.44 \, \text{kJ} + 167.43 \, \text{kJ}}{363.58 \, \frac{\text{kJ}}{\text{kg}}}
+\]  
+
+\[
+\Delta m_{12} = 3636.88 \, \text{kg}
+\]  
+
+TASK 1e  
+The goal is to determine the entropy change \( \Delta S_{12} \) of the reactor contents from state 1 to state 2.  
+
+Entropy balance for the isolated system:  
+\[
+\Delta S = m_2 s_2 - m_1 s_1 = \Delta m_{12} s_{\text{ein}} + \sum \frac{Q_i}{T}
+\]  
+
+Where:  
+\[
+\Delta S = m_2 s_2 - m_1 s_1 \quad \text{and} \quad m_2 = m_1 + \Delta m_{12}
+\]  
+
+Substituting:  
+\[
+\Delta S = (m_1 + \Delta m_{12}) s_2 - m_1 s_1
+\]  
+
+Given:  
+\[
+s_2 = s(70^\circ\text{C}, \text{saturated liquid}), \quad s_1 = s(100^\circ\text{C}, \text{saturated liquid}), \quad s_{\text{ein}} = s(20^\circ\text{C}, \text{saturated liquid})
+\]  
+
+Numerical values:  
+\[
+m_1 = 5755 \, \text{kg}, \quad \Delta m_{12} = 3636.88 \, \text{kg}, \quad s_2 = 0.354 \, \frac{\text{kJ}}{\text{kg·K}}, \quad s_1 = 1.306 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Calculations:  
+\[
+\Delta S = (5755 + 3636.88) \cdot 0.354 - 5755 \cdot 1.306
+\]  
+
+\[
+\Delta S = 3.954 \, \text{kJ} + 35 \, \text{kJ} - 1.306 \, \text{kJ} = 12,293.46 \, \frac{\text{kJ}}{\text{K}}
+\]  
+
+Final note: \( Q_{R,12} = Q_{\text{out},12} \) because the system is adiabatic to the surroundings.

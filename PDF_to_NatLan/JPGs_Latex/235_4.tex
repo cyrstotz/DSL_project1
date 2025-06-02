@@ -1,0 +1,56 @@
+TASK 3e  
+The entropy change \( \Delta S_{12} \) is calculated using the heat transfer \( Q_{12} \) and the specific internal energy values of the ice-water mixture.  
+
+The energy balance equation is given as:  
+\[
+\Delta U_{12} = Q_{12}
+\]  
+
+The mass of the ice-water mixture \( m_{\text{EW}} \) and the specific internal energy difference between states 1 and 2 are used:  
+\[
+m_{\text{EW}} (U_2 - U_1) = Q_{12}
+\]  
+
+From the water table (TAB-1), the specific internal energy values are:  
+\[
+U_{\text{flüssig}} = -0.045 \, \frac{\text{kJ}}{\text{kg}}, \quad U_{\text{fest}} = -333.958 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The specific internal energy at state 1 is calculated as:  
+\[
+U_1 = U_{\text{flüssig}} + 0.6 \cdot (U_{\text{fest}} - U_{\text{flüssig}}) = -200.1 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The specific internal energy at state 2 is determined using the heat transfer \( Q_{12} \):  
+\[
+U_2 = \frac{Q_{12}}{m_{\text{EW}}} + U_1 = -188.7 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The pressure \( p_2 \) is calculated using the piston mass and cylinder dimensions:  
+\[
+p_2 = \frac{m_K \cdot g}{\frac{d^2}{4} \cdot \pi} = 2.256 \, \text{bar}
+\]  
+
+From the table, the specific internal energy values at different pressures are interpolated:  
+\[
+U_{\text{fest}} (2 \, \text{bar}) = -333.495 \, \frac{\text{kJ}}{\text{kg}}, \quad U_{\text{fest}} (10 \, \text{bar}) = -333.812 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+U_{\text{fest}} (2.256 \, \text{bar}) = U_{\text{fest}} (2 \, \text{bar}) + \frac{2.256 \, \text{bar} - 2 \, \text{bar}}{10 \, \text{bar} - 2 \, \text{bar}} \cdot (U_{\text{fest}} (10 \, \text{bar}) - U_{\text{fest}} (2 \, \text{bar}))
+\]  
+\[
+= -333.51 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Similarly, for the liquid phase:  
+\[
+U_{\text{flüssig}} (2 \, \text{bar}) = -0.079 \, \frac{\text{kJ}}{\text{kg}}, \quad U_{\text{flüssig}} (10 \, \text{bar}) = -0.332 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+U_{\text{flüssig}} (2.256 \, \text{bar}) = U_{\text{flüssig}} (2 \, \text{bar}) + \frac{2.256 \, \text{bar} - 2 \, \text{bar}}{10 \, \text{bar} - 2 \, \text{bar}} \cdot (U_{\text{flüssig}} (10 \, \text{bar}) - U_{\text{flüssig}} (2 \, \text{bar}))
+\]  
+\[
+= -0.332 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+No diagrams or figures are present on this page.

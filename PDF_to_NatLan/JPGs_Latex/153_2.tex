@@ -1,0 +1,56 @@
+TASK 2a  
+The diagram is a temperature-entropy (\(T\)-\(s\)) plot illustrating the thermodynamic processes in a jet engine. The following features are labeled:  
+- Isobars \(p_2/p_3\), \(p_5=p_4\), and \(p_0=p_6\).  
+- Points 0, 2, 3, 4, 5, and 6 are marked along the process path.  
+- The graph shows the progression of states, including compression, combustion, and expansion.  
+- Axes are labeled as \(T \, [\text{K}]\) for temperature and \(s \, [\text{L}/\text{kg}] \, [\text{J}/\text{kg·K}]\) for entropy.  
+
+Additional equations are written:  
+\[
+\dot{p} = \frac{nRT}{V}, \quad T = \frac{\rho V^{\gamma}}{nR}
+\]
+
+---
+
+TASK 2b  
+Given \(p_0 = p_6 = 0.191 \, \text{bar}\) and \(s_3 = s_6\), the following calculations and relationships are provided:  
+
+1. Energy balance equation:  
+\[
+Q = \dot{m} \left[ h_5 - h_6 + \frac{w_5^2 - w_0^2}{2} \right] > 0
+\]
+
+2. Entropy change equation:  
+\[
+\Delta S = 0 = c_p \ln \left( \frac{T_6}{T_5} \right) - R \ln \left( \frac{p_6}{p_5} \right)
+\]
+
+3. Relationships between specific heat capacities:  
+\[
+c_v = \frac{c_p}{\kappa}, \quad R = c_p - c_v
+\]
+
+4. Temperature and pressure relationship:  
+\[
+c_p \ln \left( \frac{T_6}{T_5} \right) = R \ln \left( \frac{p_6}{p_5} \right)
+\]
+
+5. Expression for \(T_6\):  
+\[
+T_6 = T_5 e^{\frac{R \ln \left( \frac{p_6}{p_5} \right)}{c_p}}
+\]
+
+6. Energy balance reformulated:  
+\[
+Q = \dot{m} \left[ c_p (T_6 - T_5) + \frac{w_5^2 - w_0^2}{2} \right]
+\]
+
+7. Rearranged equation for mass flow rate:  
+\[
+\dot{m} c_p (T_5 - T_6) = \frac{w_5^2 - w_0^2}{2} \dot{m}
+\]
+
+8. Final expression for work:  
+\[
+\dot{W}_6 = \sqrt{-2 c_p (T_5 - T_6)} + w_5^2
+\]

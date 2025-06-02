@@ -1,0 +1,73 @@
+TASK 2d  
+The mass-specific exergy destruction \( \Delta ex_{\text{str}} \) is calculated using the following formula:  
+\[
+\Delta ex_{\text{str}} = h_a - h_e - T_0 (s_a - s_e) + \frac{\dot{w}_e - w_0^2}{2}
+\]  
+Substituting the values:  
+\[
+\Delta ex_{\text{str}} = 232.33 \, \frac{\text{J}}{\text{kg}}
+\]  
+
+The temperature-dependent entropy term \( T_0(s_a - s_e) \) is expressed as:  
+\[
+T_0(s_a - s_e) = T_0 c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_c}{p_0} \right)
+\]  
+Substituting the values:  
+\[
+T_0(s_a - s_e) = 58.373 \, \frac{\text{J}}{\text{kg}}
+\]  
+
+The enthalpy difference \( h_a - h_e \) is calculated as:  
+\[
+h_a - h_e = c_p \Delta T = 65.37 \, \frac{\text{J}}{\text{kg}}
+\]  
+
+The initial velocity \( w_0 \) is given as:  
+\[
+w_0 = 200 \, \text{m/s}
+\]  
+
+The kinetic energy difference \( \Delta ke \) is:  
+\[
+\Delta ke = 108.652 \, \text{J}
+\]  
+
+It is noted that a mass flow rate of \( 700 \, \frac{\text{L}}{\text{kg}} \) is used for further calculations.
+
+---
+
+TASK 2e  
+The exergy destruction \( \dot{E}_{\text{dest}} \) is calculated using the following formula:  
+\[
+\dot{E}_{\text{dest}} = \dot{m}_{\text{ges}} \Delta ex_{\text{str}} + \dot{m}_K \left( 1 - \frac{T_0}{T} \right) \dot{Q}_B - \dot{W}_t - \dot{E}_{\text{ver}}
+\]  
+
+The specific exergy \( ex_{\text{ver}} \) is defined as:  
+\[
+ex_{\text{ver}} = \frac{E_{\text{ver}}}{\dot{m}_{\text{ges}}}
+\]  
+
+Substituting into the formula:  
+\[
+ex_{\text{ver}} = -\Delta ex_{\text{str}} + \left( 1 - \frac{T_0}{T} \right) \frac{\dot{m}_K}{\dot{m}_{\text{ges}}} q_B
+\]  
+\[
+ex_{\text{ver}} = 51.127 \, \frac{\text{J}}{\text{kg}}
+\]  
+
+The total mass flow rate is expressed as:  
+\[
+\dot{m}_M + \dot{m}_K = \dot{m}_{\text{ges}}
+\]  
+Given the ratio:  
+\[
+5.293 \dot{m}_K + \dot{m}_K = 6.293 \dot{m}_K = \dot{m}_{\text{ges}}
+\]  
+\[
+\frac{1}{6.293} = \frac{\dot{m}_K}{\dot{m}_{\text{ges}}}
+\]  
+
+The temperature \( T \) is equal to the mean temperature of combustion:  
+\[
+T = \bar{T}_B
+\]

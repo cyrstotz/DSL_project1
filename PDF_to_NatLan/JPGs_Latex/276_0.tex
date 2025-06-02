@@ -1,0 +1,64 @@
+TASK 1a  
+The energy balance for a steady-state system is written as:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \left[ h_e - h_a \right] + \dot{Q}_R - \dot{Q}_{\text{ms}}
+\]  
+The mass flow rate is given as \( \dot{m} = 0.3 \, \text{kg/s} \). Using the enthalpy values from Table A2:  
+\[
+h_a(100^\circ\text{C}, x = 0.005) = 430.325 \, \text{kJ/kg}, \quad h_e(70^\circ\text{C}, x = 0.005) = 304.443 \, \text{kJ/kg}
+\]  
+The heat flow removed by the coolant is calculated as:  
+\[
+\dot{Q}_{\text{ms}} = -37.703 \, \text{kJ/s} + \dot{Q}_R
+\]  
+Adding the reaction heat flow \( \dot{Q}_R = 100 \, \text{kW} \), the total heat flow removed is:  
+\[
+\dot{Q}_{\text{out}} = +62.3 \, \text{kW}
+\]  
+This heat flow exits the system.
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant, \( T_{\text{KF}} \), is determined using the entropy balance:  
+\[
+T_{\text{KF}} = \frac{\int T \, dS}{S_a - S_e} = \frac{q_{\text{rev}}}{S_a - S_e} = \frac{\dot{Q}_{\text{ms}}}{\dot{m} (S_a - S_e)}
+\]  
+From Table A2:  
+\[
+S_a(100^\circ\text{C}, x = 0.005) = 1.837 \, \frac{\text{kJ}}{\text{kg·K}}, \quad S_e(70^\circ\text{C}, x = 0.005) = 0.889 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+Substituting values:  
+\[
+T_{\text{KF}} = \frac{62.18}{1.837 - 0.889} = 295 \, \text{K}
+\]  
+The system is modeled only for the fluid, assuming steady-state operation and negligible pressure differences (\( \Delta P = 0 \)).
+
+The entropy balance for the fluid is expressed as:  
+\[
+0 = \dot{m}_{\text{KF}} \left[ S_e - S_a \right] + \frac{\dot{Q}_{\text{KF}}}{T_{\text{KF}}}
+\]  
+Rearranging:  
+\[
+T_{\text{KF}} = \frac{\dot{Q}_{\text{KF}}}{\dot{m}_{\text{KF}} \left[ S_a - S_e \right]}
+\]  
+Alternatively, \( T_{\text{KF}} \) can be calculated using:  
+\[
+T_{\text{KF}} = c_p \ln \left( \frac{T_1}{T_e} \right)
+\]
+
+---
+
+TASK 1c  
+The entropy balance for the entire system is written as:  
+\[
+\dot{S}_{\text{gen}} = \dot{m}_W \left[ S_e^W + S_a^W \right] + \dot{m}_{\text{KF}} \left[ S_e^{\text{KF}} + S_a^{\text{KF}} \right] + \frac{\dot{Q}_{\text{ms}}}{T_{\text{KF}}} + \dot{S}_{\text{ext}}
+\]  
+From Table A2:  
+\[
+S_e(70^\circ\text{C}, x = 0.005) = 0.589 \, \frac{\text{kJ}}{\text{kg·K}}, \quad S_a(100^\circ\text{C}, x = 0.005) = 1.337 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+The entropy change for the coolant is expressed as:  
+\[
+\left[ S_e^{\text{KF}} - S_a^{\text{KF}} \right] = c_p \ln \left( \frac{T_e}{T_a} \right)
+\]  

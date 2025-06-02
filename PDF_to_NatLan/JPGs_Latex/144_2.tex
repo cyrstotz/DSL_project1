@@ -1,0 +1,51 @@
+TASK 2a  
+The diagram is a qualitative representation of the jet engine process on a temperature-entropy (\( T \)-\( s \)) diagram. It includes labeled isobars and key states:  
+- State 0 represents ambient conditions.  
+- States 1, 2, and 3 show the compression process.  
+- State 4 represents the combustion chamber.  
+- States 5 and 6 depict the turbine and nozzle processes.  
+The isobars are labeled \( p_2 = p_3 \) and \( p_5 = 0.5 \, \text{bar} \).  
+
+TASK 2b  
+The isentropic relationship is used to calculate \( T_G \):  
+\[
+T_G = T_5 \left( \frac{p_C}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_G = 431.9 \, \text{K} \left( \frac{0.191}{0.5} \right)^{\frac{0.4}{1.4}} = 328.97 \, \text{K}
+\]  
+
+The first law of thermodynamics is applied to determine \( w_G \):  
+\[
+\dot{E}_{\text{kin}} = \dot{m} \left( h_5 + \frac{w_5^2}{2} - h_6 - \frac{w_6^2}{2} \right) + \sum \dot{Q}_i - \sum \dot{W}_n
+\]  
+Rearranging for \( w_G \):  
+\[
+w_G = \sqrt{2 \left( c_p (T_5 - T_6) + \frac{w_5^2}{2} \right)}
+\]  
+Substituting values:  
+\[
+w_G = \sqrt{2 \left( c_p (431.9 - 328.97) + \frac{220^2}{2} \right)} = 487.8 \, \text{m/s}
+\]  
+
+TASK 2c  
+The mass-specific increase in flow exergy is calculated using the formula:  
+\[
+\Delta ex_{\text{flow}} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]  
+Breaking it into components:  
+\[
+h_6 - h_0 = c_p (T_G - T_0), \quad s_6 - s_0 = c_p \ln \left( \frac{T_G}{T_0} \right)
+\]  
+Substituting values:  
+\[
+\Delta ex_{\text{flow}} = c_p (T_G - T_0) - T_0 c_p \ln \left( \frac{T_G}{T_0} \right) + \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]  
+\[
+\Delta ex_{\text{flow}} = 1.006 \left( 340 - (-30) \right) - (-30) \cdot 1.006 \ln \left( \frac{340}{243.15} \right) + \frac{220^2}{2} - 0
+\]  
+Final result:  
+\[
+\Delta ex_{\text{flow}} = 125.47 \, \frac{\text{kJ}}{\text{kg}}
+\]

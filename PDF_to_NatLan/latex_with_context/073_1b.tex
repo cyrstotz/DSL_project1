@@ -1,0 +1,14 @@
+The thermodynamic mean temperature \( T \) is calculated using the entropy balance:  
+\[
+T = \frac{\int_{s_a}^{s_e} T \, ds}{s_a - s_e} = \frac{q_{\text{rev}}}{s_a - s_e} = \frac{h_{\text{aus}} - h_{\text{ein}}}{s_{\text{aus}} - s_{\text{ein}}}
+\]  
+Substituting the expression for \( q_{\text{rev}} \):  
+\[
+T = \frac{f \left( T_{\text{aus}} - T_{\text{ein}} \right) + v_i \cdot \left( p_{\text{aus}} - p_{\text{ein}} \right)}{\ln \left( \frac{T_{\text{aus}}}{T_{\text{ein}}} \right)}
+\]  
+Numerical calculation:  
+\[
+T = \frac{T_{\text{aus}} - T_{\text{ein}}}{\ln \left( \frac{T_{\text{aus}}}{T_{\text{ein}}} \right)} = \frac{298.15 \, \text{K} - 288.15 \, \text{K}}{\ln \left( \frac{298.15 \, \text{K}}{288.15 \, \text{K}} \right)} = 293.12 \, \text{K}
+\]  
+
+---

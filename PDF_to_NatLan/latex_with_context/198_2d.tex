@@ -1,0 +1,26 @@
+The specific exergy destruction \( ex_{\text{tur}} \) is calculated using an entropy balance:  
+\[
+ex_{\text{tur}} = T_0 \cdot \dot{S}_{\text{gen}}
+\]  
+The entropy generation rate \( \dot{S}_{\text{gen}} \) is expressed as:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \cdot (s_0 - s_6) + \frac{\dot{Q}_B}{T_0}
+\]  
+Substituting the entropy difference:  
+\[
+s_0 - s_6 = c_p \ln \left( \frac{T_6}{T_0} \right)
+\]  
+Numerical calculation:  
+\[
+s_0 - s_6 = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \cdot \ln \left( \frac{328.085 \, \text{K}}{243.15 \, \text{K}} \right)
+\]  
+\[
+s_0 - s_6 = 0.3014 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+Finally, the exergy destruction:  
+\[
+ex_{\text{tur}} = 243.15 \, \text{K} \cdot 0.3014 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+ex_{\text{tur}} = 73.285 \, \frac{\text{kJ}}{\text{kg}}
+\]

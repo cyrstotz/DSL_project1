@@ -1,0 +1,23 @@
+Energy balance at the nozzle:  
+\( 0 = \dot{m}_{ges} (h_5 - h_6) + \frac{(w_5^2 - w_6^2)}{2} \)  
+
+Rearranging:  
+\( 2 (h_5 - h_6) = w_5^2 - w_6^2 \)  
+\( w_6 = \sqrt{w_5^2 - 2 (h_5 - h_6)} \)  
+
+\( h_5 \): interpolated from Table A22 at 430 K and 460 K:  
+- \( h_5 = 431.43 + \frac{(440 - 430)}{(433.3612 - 431.43)} \)  
+- Result: \( h_5 = 433.3612 \, \text{kJ/kg} \).  
+
+\( h_6 \): isentropic nozzle:  
+\( S_6 = S_5 = 2.06379 \, \text{kJ/kg·K} \).  
+
+Interpolated from Table A22:  
+- \( S_6 = 2.06379 + \frac{(2.05870 - 2.06379)}{(430 - 440)} \).  
+- Result: \( S_6 = 2.05870 \, \text{kJ/kg·K} \).  
+
+\( T_6 \):  
+\( T_6 = T_5 \left( \frac{p_0}{p_5} \right)^{\frac{n-1}{n}} \), where \( n = 1.4 \).  
+
+Calculation:  
+\( T_6 = T_5 \left( \frac{p_0}{p_5} \right)^{\frac{n-1}{n}} = 328.075 \, \text{K} \).

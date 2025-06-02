@@ -1,0 +1,78 @@
+TASK 1a  
+The heat flow \( \dot{Q}_{\text{out}} \) removed by the coolant is calculated using the energy balance:  
+\[
+\dot{Q}_{\text{out}} = \dot{Q}_R - \dot{Q}_W
+\]  
+The heat flow through the cooling jacket \( \dot{Q}_W \) is expressed as:  
+\[
+\dot{Q}_W = \dot{m} (h_e - h_a) + \dot{Q}_W
+\]  
+Substituting values:  
+\[
+\dot{Q}_W = \dot{m} (h_a - h_e)
+\]  
+From the water tables:  
+\[
+h_e = 292.98 + 0.005 (2626.5 - 292.98) = 304.85 \, \text{kJ/kg}
+\]  
+\[
+h_a = 419.01 + 0.005 (2676.1 - 419.01) = 430.33 \, \text{kJ/kg}
+\]  
+Using the given mass flow rate \( \dot{m} = 0.3 \, \text{kg/s} \):  
+\[
+\dot{Q}_W = 0.3 (430.33 - 304.85) = 37.7 \, \text{kW}
+\]  
+The total heat flow removed by the coolant is:  
+\[
+\dot{Q}_{\text{out}} = 100 \, \text{kW} - 37.7 \, \text{kW} = 62.3 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is calculated using:  
+\[
+T_{\text{KF}} = \frac{\int T}{S_a - S_e} = \frac{T_a - T_e}{S_a - S_e}
+\]  
+Simplified further:  
+\[
+T_{\text{KF}} = \frac{T_a - T_e}{c \ln \frac{T_a}{T_e}}
+\]  
+Given \( T_a = 298 \, \text{K} \), \( T_e = 288.15 \, \text{K} \), and \( S_a - S_e = c \ln \frac{T_a}{T_e} \):  
+\[
+T_{\text{KF}} = 298 \, \text{K}
+\]  
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) is calculated using:  
+\[
+0 = \dot{m} [S_e - S_a] + \frac{\dot{Q}_W}{T} + \dot{S}_{\text{gen}}
+\]  
+Rearranging:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} [S_a - S_e] - \frac{\dot{Q}_W}{T}
+\]  
+Substituting values:  
+\[
+\dot{Q}_W = 37.7 \, \text{kW}, \, T = 298 \, \text{K}
+\]  
+\[
+\dot{S}_{\text{gen}} = \frac{37.7}{298} = 127.8 \, \text{J/K}
+\]  
+
+TASK 1d  
+The mass \( \Delta m_{12} \) of saturated liquid water added during cooling is calculated using the energy balance:  
+\[
+\Delta U = \Delta m (h_1 - h_2) + Q_{12} - Q_{R,12}
+\]  
+Simplified:  
+\[
+\Delta U = \Delta m (h_1 - h_2)
+\]  
+Using the specific heat capacity \( c_p \):  
+\[
+m_1 T_2 c_p - m_1 T_1 c_p = \Delta m (h_1 - h_2) - T_2 c_p
+\]  
+Rearranging for \( \Delta m \):  
+\[
+\Delta m = \frac{m_1 T_2 c_p - m_1 T_1 c_p}{(h_1 - h_2) - T_2 c_p}
+\]  
+Values for \( h_1 \), \( h_2 \) are obtained from water tables (Table A-2). The result is described as "calculated with \( \Delta m \) given."

@@ -1,0 +1,80 @@
+TASK 3a  
+The gas pressure \( p_{g,1} \) is calculated using the force equilibrium:  
+\[
+F_c = F_p = F_{pa}
+\]  
+The equation for pressure is derived as:  
+\[
+p_s = m_K \cdot g + \rho_{\text{amb}} \cdot \left( \frac{D}{2} \right)^2 \pi = \left( \frac{D}{2} \right)^2 \pi \cdot p_{\text{amb}}
+\]  
+Substituting values, the gas pressure is determined to be:  
+\[
+p_{g,1} = p_s = 1.40 \, \text{bar} \quad \text{(denoted as A)}  
+\]  
+
+The gas mass \( m_g \) is calculated using the ideal gas law:  
+\[
+m_g = \frac{p V}{R T}  
+\]  
+The gas constant \( R \) is calculated as:  
+\[
+R = \frac{R}{M} = \frac{4157}{25} = 166.28  
+\]  
+Substituting values, the gas mass is determined to be:  
+\[
+m_g = 3.449 \, \text{g} \quad \text{(denoted as B)}  
+\]  
+
+---
+
+TASK 3b  
+The gas pressure \( p_{g,2} \) is equal to \( p_{g,1} = 1.40 \, \text{bar} \), as the process is isobaric. This is because the weight of the EW or external pressure does not change.  
+
+The energy balance equation is given as:  
+\[
+\Delta E = 0 \quad \text{and} \quad m_{\text{EW}} c (T_2 - T_{\text{EW}}) = m_g c_v (T_2 - T_{g,1})  
+\]  
+Rearranging for \( T_2 \):  
+\[
+T_2 = \frac{m_g c_v T_{g,1} - m_{\text{EW}} c T_{\text{EW}}}{m_g c_v - m_{\text{EW}} c}  
+\]  
+Substituting values, the resulting temperature is:  
+\[
+T_2 = 0.003^\circ \text{C}  
+\]  
+
+---
+
+TASK 3c  
+Using the energy balance for the gas:  
+\[
+\Delta E = Q - \dot{W}  
+\]  
+The heat transfer \( Q \) is calculated as:  
+\[
+Q = m_g (u_2 - u_1) = m_g c_v (T_2 - T_{g,1}) = -1.082 \, \text{kJ}  
+\]  
+The heat transfer value is confirmed as:  
+\[
+Q = 1.082 \, \text{kJ}  
+\]  
+
+---
+
+TASK 3d  
+Using the energy balance equation:  
+\[
+\Delta E = m_{\text{EW}} (u_2 - u_1) = Q_{12} + \dot{W}  
+\]  
+The specific internal energy \( u_2 \) is calculated as:  
+\[
+u_2 = u_1 + \frac{Q_{12}}{m_{\text{EW}}}  
+\]  
+Interpolating values:  
+\[
+u_2 = u_f(0^\circ\text{C}) + x_{\text{ice},2} \cdot (u_{lf}(0^\circ\text{C}) - u_f(0^\circ\text{C})) = -200.0928 + (1 - x_{\text{ice},2})  
+\]  
+Solving for \( x_{\text{ice},2} \):  
+\[
+x_{\text{ice},2} = 0.555  
+\]  

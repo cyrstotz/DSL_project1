@@ -1,0 +1,32 @@
+The energy balance for the compressor is written as:  
+\[
+\dot{W}_K = \dot{m}_{\text{R134a}} \cdot (h_e - h_a)
+\]  
+where \( h_e \) is the specific enthalpy at the exit of the compressor, and \( h_a \) is the specific enthalpy at the inlet.  
+
+The enthalpy values are calculated as follows:  
+\[
+h_e = h_2 = h(T_2) = h(-18^\circ\text{C}) = 236.53 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_a = h(p = 8 \, \text{bar}) = 264.15 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The temperature \( T_2 \) is determined as:  
+\[
+T_2 = T_i - 6 \, \text{K}
+\]  
+where \( T_i = -18^\circ\text{C} \).  
+
+The mass flow rate \( \dot{m}_{\text{R134a}} \) is calculated using:  
+\[
+\dot{m}_{\text{R134a}} = \frac{\dot{W}_K}{h(T_2) - h(p = 8 \, \text{bar})}
+\]  
+Substituting values:  
+\[
+\dot{m}_{\text{R134a}} = \frac{0.088 \, \text{kW}}{28 \, \text{W}} \cdot \frac{1}{236.53 - 264.15 \, \frac{\text{kJ}}{\text{kg}}}
+\]  
+The result is:  
+\[
+\dot{m}_{\text{R134a}} = 10.00101 \, \frac{\text{kg}}{\text{s}}
+\]

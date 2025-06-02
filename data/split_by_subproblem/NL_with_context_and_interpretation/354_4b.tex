@@ -1,0 +1,26 @@
+The mass flow rate of R134a is denoted as \( \dot{m}_{R134a} \).  
+
+The temperature in the evaporator is calculated:  
+- \( T_i - 6K \).  
+
+From the diagram:  
+- \( T_i = -10°C \).  
+- \( T_f = -16°C \).  
+
+From \( x_2 = n \), entropy and enthalpy are determined using Table A-10:  
+- \( s_g(-16°C) = 0.5298 \, \text{kJ/kg·K} \).  
+- \( h_g(-16°C) = 237.74 \, \text{kJ/kg} \).  
+
+Since the compressor is adiabatic and reversible:  
+- \( s_2 = s_3 \).
+
+From Table A-12, the enthalpy can now be determined using entropy. It is also known from A-10:  
+s2 = s3 = 6.528 kilojoules per kilogram Kelvin  
+
+h3 = h(8 bar, 40°C) - h(8 bar, saturated) / (s3 - s(8 bar, saturated)) + h(8 bar, saturated)  
+= 277.37 kilojoules per kilogram  
+
+Therefore, for the balance equation under the compressor, assuming adiabatic:  
+0 = ṁ(h2 - h3) + Q̇ - Ẇ  
+
+ṁ = Ẇ / (h2 - h3) = 8.34 × 10^-4 kilograms per second

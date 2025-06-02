@@ -1,0 +1,59 @@
+The energy balance equation is written as:  
+\[
+\frac{dE}{dt} = \sum_i \dot{m}_i \left[ h_i + \frac{c^2}{2} + \frac{g z}{2} \right] - \dot{Q} - \dot{W}
+\]
+
+The change in internal energy is expressed as:  
+\[
+\Delta U = \Delta m_{12} h_{\text{ein}} + \dot{Q}
+\]
+
+From this, the equation for mass flow is derived:  
+\[
+m_2 u_2 - m_1 u_1 = \Delta m_{12} h_{\text{ein}} + \dot{Q}
+\]
+
+Substituting \( m_2 = m_1 + \Delta m_{12} \):  
+\[
+(m_1 + \Delta m_{12}) u_2 - m_1 u_1 = \Delta m_{12} h_{\text{ein}} + \dot{Q}
+\]
+
+Rearranging terms:  
+\[
+-\dot{Q} + m_1 (u_2 - u_1) = \Delta m_{12} h_{\text{ein}} - \Delta m_{12} u_2
+\]
+
+Factoring out \( \Delta m_{12} \):  
+\[
+-\dot{Q} + m_1 (u_2 - u_1) = \Delta m_{12} (h_{\text{ein}} - u_2)
+\]
+
+Solving for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = \frac{m_1 (u_2 - u_1) - \dot{Q}}{h_{\text{ein}} - u_2}
+\]
+
+The boiling liquid is assumed to have a steam quality \( x = 0.5 \).  
+
+The enthalpy at the inlet is calculated as:  
+\[
+h_{\text{ein}} = 83.96 + 0.5 (2538.1 - 83.96) = 1311.03 \, \frac{\text{kJ}}{\text{kg}}
+\]
+(using Table A-2).  
+
+The internal energy at state 1 is calculated as:  
+\[
+u_1 = 418.94 + 0.005 (2506.5 - 418.94) = 423.3778 \, \frac{\text{kJ}}{\text{kg}}
+\]
+(using Table A-2).  
+
+The internal energy at state 2 is calculated as:  
+\[
+u_2 = 292.35 + 0.5 (2463.6 - 292.35) = 1381.275 \, \frac{\text{kJ}}{\text{kg}}
+\]
+(using Table A-2).  
+
+Finally, the mass \( \Delta m_{12} \) is calculated as:  
+\[
+\Delta m_{12} = \frac{5755 \, \text{kg} (1381.275 \, \frac{\text{kJ}}{\text{kg}} - 423.3778 \, \frac{\text{kJ}}{\text{kg}}) + 35 \, \text{MJ}}{1311.03 \, \frac{\text{kJ}}{\text{kg}} - 1381.275 \, \frac{\text{kJ}}{\text{kg}}}
+\]

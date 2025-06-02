@@ -1,0 +1,79 @@
+Simplified setup:  
+A sketch is shown with a cylinder divided into two chambers. The bottom chamber contains gas, and the top chamber contains an ice-water mixture. A piston rests on the ice-water mixture, exerting pressure. The sketch includes labels for the piston mass (\(m_K\)), ice-water mass (\(m_{\text{EW}}\)), and gravitational acceleration (\(g\)).
+
+The cross-sectional area of the cylinder is calculated as:  
+\[
+A_{Zyl} = A = \pi \cdot D^2 / 4 = \pi \cdot (25 \, \text{cm})^2 / 4 = \frac{\pi}{400} \, \text{m}^2
+\]
+
+Force equilibrium is expressed as:  
+\[
+p_{g,1} \cdot A = (m_K + m_{\text{EW}}) \cdot g + p_{\text{amb}} \cdot A
+\]
+
+Rearranging for \(p_{g,1}\):  
+\[
+p_{g,1} = \frac{g \cdot (m_K + m_{\text{EW}})}{A} + p_{\text{amb}}
+\]
+
+Substituting values:  
+\[
+p_{g,1} = \frac{9.81 \, \text{m/s}^2 \cdot (32 \, \text{kg})}{\frac{\pi}{400} \, \text{m}^2} + 10^5 \, \text{Pa}
+\]
+
+Result:  
+\[
+p_{g,1} = 1.4008 \, \text{bar}
+\]
+
+The gas constant \(R\) is calculated as:  
+\[
+R = \frac{R_u}{M_g} = \frac{8.314 \, \text{J/(mol·K)}}{50 \, \text{kg/kmol}} = 0.16628 \, \text{kJ/(kg·K)}
+\]
+
+The initial temperature is converted:  
+\[
+T_{g,1} = 500^\circ\text{C} + 273.15 \, \text{K} = 773.15 \, \text{K}
+\]
+
+The gas mass \(m_g\) is calculated using the ideal gas law:  
+\[
+p_{g,1} \cdot V_1 = m_g \cdot R \cdot T_1
+\]
+
+Rearranging for \(m_g\):  
+\[
+m_g = \frac{p_{g,1} \cdot V_1}{R \cdot T_1} = \frac{140090 \, \text{Pa} \cdot 3.14 \cdot 10^{-3} \, \text{m}^3}{0.16628 \, \text{kJ/(kg·K)} \cdot 773.15 \, \text{K}}
+\]
+
+Result:  
+\[
+m_g = 3.422 \, \text{g}
+\]
+
+---
+
+The problem involves determining the volume fraction. The following equations and calculations are provided:
+
+\[
+u_{2,v} = u_{f,1\text{bar},v} + x_2 \cdot (u_{g,1\text{bar},v} - u_{f,1\text{bar},v})
+\]
+
+\[
+x_2 = \frac{u_{2,v} - u_{f,1\text{bar},v}}{u_{g,1\text{bar},v} - u_{f,1\text{bar},v}}
+\]
+
+Substituting values:
+
+\[
+x_2 = \frac{600.73 \, \frac{\text{kJ}}{\text{kg}} + 0.092 \, \frac{\text{kJ}}{\text{kg}}}{-333.458 \, \frac{\text{kJ}}{\text{kg}} + 0.045 \, \frac{\text{kJ}}{\text{kg}}}
+\]
+
+The result is calculated as:
+
+\[
+x_2 = -1.120
+\]
+
+The conclusion states:  
+"Something is incorrect."

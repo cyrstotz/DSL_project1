@@ -1,0 +1,52 @@
+TASK 4a  
+A graph is drawn with the vertical axis labeled as \( p \) (pressure) and the horizontal axis labeled as \( T \) (temperature in Kelvin). No specific data points, curves, or phase regions are shown; the graph appears to be a blank coordinate system.
+
+---
+
+TASK 4b  
+The equation for the work done by the compressor is given as:  
+\[
+W_K = \dot{m}_R (h_2 - h_3)
+\]  
+Rearranging to solve for the refrigerant mass flow rate:  
+\[
+\dot{m}_R = \frac{W_K}{h_2 - h_3}
+\]  
+
+Entropy values are equated:  
+\[
+s_2 = s_3 = s(f, p)
+\]  
+The enthalpy at state 2 is expressed as:  
+\[
+h_2 = h_g(T_x)
+\]  
+The enthalpy at state 3 is determined via interpolation using the pressure \( s_3 \).
+
+---
+
+TASK 4c  
+The enthalpy at state 4 is given as:  
+\[
+h_4 = h_1 = h_f(8 \, \text{bar}) = 93.42 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The pressure at state 2 is:  
+\[
+p_2 = p_1 = 8 \, \text{bar}, \quad T = -22^\circ\text{C}
+\]  
+
+The vapor quality \( x_1 \) is calculated as:  
+\[
+x_1 = \frac{h_1 - h_f(1.2132 \, \text{bar})}{h_g(1.2132 \, \text{bar}) - h_f(1.2132 \, \text{bar})}
+\]  
+
+Interpolation is performed for \( h_f \) and \( h_g \) values:  
+\[
+h_f(1.2132 \, \text{bar}) = 27.74 \, \frac{\text{kJ}}{\text{kg}}, \quad h_g(1.2132 \, \text{bar}) = 234.07 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Substituting into the vapor quality equation:  
+\[
+x_1 = \frac{93.42 \, \frac{\text{kJ}}{\text{kg}} - 27.74 \, \frac{\text{kJ}}{\text{kg}}}{234.07 \, \frac{\text{kJ}}{\text{kg}} - 27.74 \, \frac{\text{kJ}}{\text{kg}}} = 0.3376
+\]

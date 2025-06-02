@@ -1,0 +1,115 @@
+
+``````latex
+
+
+\section*{Aufgabe 4}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a Pressure-Temperature (P-T) diagram. The x-axis is labeled $T$ (Temperature) and the y-axis is labeled $P$ (Pressure). The graph shows a dome-shaped curve representing the phase boundaries. The left side of the dome is labeled "flüssigebiet" (liquid region), the right side is labeled "Dampfgebiet" (vapor region), and the area under the dome is labeled "Mischgebiet" (mixed region). The top of the dome is labeled "kritischer Punkt" (critical point). There are four points marked on the graph: point 1 at the bottom left of the dome, point 2 at the bottom right of the dome, point 3 at the top right of the dome, and point 4 at the top left of the dome. A yellow rectangle connects points 1, 2, 3, and 4, representing a cycle. The left side of the rectangle is labeled "gesättigtes Flüssigkeit" (saturated liquid), and the right side is labeled "gesättigter Dampf" (saturated vapor).
+\end{description}
+
+\subsection*{b)}
+
+\begin{align*}
+    T_1 &= T_0 - 6K \\
+    T_0 &= -10^\circ C = 263.15K \\
+    T_1 &= 257.15K = -16^\circ C \\
+    &\left( 
+    \begin{aligned}
+        &\text{aus TAB A-10} \\
+        &h_f (T = -16^\circ C) = h_f (T = -16^\circ C) = 293.30 \frac{kJ}{kg} \\
+        &h_1 = h_4 = 293.30 \frac{kJ}{kg} \quad \text{(Drossel isenthalp)}
+    \end{aligned}
+    \right) \\
+    P_3 &= P_4 = 8 \text{ bar} \\
+    x_4 &= 0 \quad \text{aus TAB A-11} \\
+    h_4 &= h_g (T_4 = 8 \text{ bar}) + 263.15 \frac{kJ}{kg}
+\end{align*}
+
+\begin{align*}
+    \left( 
+    \frac{P_1}{P_4} = \left( \frac{T_1}{T_4} \right)^{\frac{n}{n-1}}
+    \right)
+\end{align*}
+
+\begin{align*}
+    1 \text{ HS am Verdichter} \\
+    \dot{m} \left( h_2 - h_3 \right) = \dot{Q} - \dot{W}_k \\
+    \dot{W}_k = \dot{m} \left( h_2 - h_3 \right) \\
+    \dot{m} R \Delta s_{4a} = \frac{W_k}{h_2 - h_3}
+\end{align*}
+
+``````latex
+
+
+\section*{Student Solution}
+
+\subsection*{c)}
+
+\[
+x_1 = \frac{h_4 - h_{af}}{h_{fg} - h_{af}}
+\]
+
+Drossel isenthalp $\rightarrow h_4 = h_3 = 26.0 \frac{\text{kJ}}{\text{kg}}$
+
+\[
+\text{TAB A10}
+\]
+
+\[
+h_{af}(T_2 = -16^\circ) = 29.30 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\text{TAB A10}
+\]
+
+\[
+h_{fg}(T_2 = -16^\circ) = 237.4 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+x_1 = \frac{26.0 \frac{\text{kJ}}{\text{kg}} - 29.30 \frac{\text{kJ}}{\text{kg}}}{237.4 \frac{\text{kJ}}{\text{kg}} - 29.30 \frac{\text{kJ}}{\text{kg}}} = \frac{-3.3 \frac{\text{kJ}}{\text{kg}}}{208.1 \frac{\text{kJ}}{\text{kg}}} = -0.0158
+\]
+
+\subsection*{d)}
+
+\[
+\varepsilon_k = \frac{\dot{Q}_{zu}}{\dot{W}_k} = \frac{\dot{Q}_{zu}}{\dot{Q}_{ab} + \dot{Q}_{zu}}
+\]
+
+1 Hs am Verdampfer
+
+\[
+0 = \dot{m} \left[ h_4 - h_2 \right] + \dot{Q}_k
+\]
+
+\[
+\rightarrow \dot{Q}_k = \dot{m} \left[ h_4 - h_2 \right] = \dot{m} R134a \left[ h_4 - h_2 \right]
+\]
+
+\[
+\text{TAB A10 @ } T_2 = -22^\circ C
+\]
+
+\[
+h_2 - h_f = 21.12 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_4 = 29.30 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\rightarrow \dot{Q}_k = \dot{m} \frac{h_{fg}}{h_{fg}} \left( 21.12 \frac{\text{kJ}}{\text{kg}} - 29.30 \frac{\text{kJ}}{\text{kg}} \right) = 8.36 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\rightarrow \varepsilon_k = \frac{\dot{Q}_{zu}}{\dot{W}_k} = \frac{0.00837 \frac{\text{kJ}}{\text{s}}}{0.078 \frac{\text{kJ}}{\text{s}}} = 0.259
+\]
+
+\subsection*{e)}
+
+```

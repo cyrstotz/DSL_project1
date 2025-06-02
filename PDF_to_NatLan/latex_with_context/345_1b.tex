@@ -1,0 +1,21 @@
+The thermodynamic mean temperature of the coolant is calculated using the equation:  
+\[
+\bar{T}_{\text{KF}} = \frac{\int T \, dS}{\int dS}
+\]  
+
+For constant pressure:  
+\[
+\int T \, dS = \int c_p \cdot T \cdot \frac{dT}{T} = c_p \cdot \int T \, d(\ln T)
+\]  
+
+This simplifies to:  
+\[
+\bar{T}_{\text{KF}} = c_p \cdot \frac{\int T \, d(\ln T)}{\int dS} = c_p \cdot \ln \left( \frac{T_2}{T_1} \right)
+\]  
+
+Substituting values:  
+\[
+\bar{T}_{\text{KF}} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)} = \frac{298.15 - 288.15}{\ln \left( \frac{298.15}{288.15} \right)} = 203.72 \, \text{K}
+\]  
+
+---

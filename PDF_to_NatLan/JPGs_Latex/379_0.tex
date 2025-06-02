@@ -1,0 +1,91 @@
+TASK 3a  
+The gas pressure \( p_{g,1} \) is calculated using the equation:  
+\[
+p_{g,1} = p_{\text{amb}} + p_{m_K} + p_{m_{\text{EW}}} - p_{\text{amb}} + \frac{F_G}{A}
+\]  
+Substituting values:  
+\[
+p_{g,1} = 1 \, \text{bar} + \frac{9.81 \cdot (0.1 \, \text{kg} + 32 \, \text{kg})}{7.854 \cdot 10^{-3} \, \text{m}^2}
+\]  
+\[
+p_{g,1} = 1 \, \text{bar} + 40034.2 \, \text{Pa} = 1.400942 \, \text{bar}
+\]  
+
+The gas mass \( m_g \) is calculated using the ideal gas law:  
+\[
+p V = m_g R T
+\]  
+Rearranging:  
+\[
+m_g = \frac{p V}{R T}
+\]  
+Substituting values:  
+\[
+R = 8314 \, \text{J/(kmol·K)}, \, M_g = 50 \, \text{kg/kmol}, \, R = \frac{8314}{50} = 166.28 \, \text{J/(kg·K)}
+\]  
+\[
+m_g = \frac{1.400942 \cdot 10^5 \, \text{Pa} \cdot 3.14 \cdot 10^{-3} \, \text{m}^3}{166.28 \, \text{J/(kg·K)} \cdot 773.15 \, \text{K}}
+\]  
+\[
+m_g = 0.003426 \, \text{kg} \quad \text{or} \quad m_g = 3.42 \, \text{g}
+\]  
+
+---
+
+TASK 3b  
+The ice fraction \( x_{\text{ice},2} > 0 \) implies that the final temperature \( T_{g,2} \) and \( T_{\text{EW},2} \) must be \( 0^\circ\text{C} \).  
+
+Thermal equilibrium is established:  
+\[
+Q = 0 \quad \text{and} \quad T_{g,2} = T_{\text{EW},2} = 0^\circ\text{C}
+\]  
+
+The pressure in the gas remains constant:  
+\[
+p_{g,2} = p_{g,1} = 1.400942 \, \text{bar}
+\]  
+
+Explanation: Since the ice fraction is greater than zero, the ice-water temperature remains constant at \( 0^\circ\text{C} \). Additionally, in state 2, no heat transfer occurs anymore, meaning the gas temperature must also be \( 0^\circ\text{C} \). The piston force remains constant, keeping the gas pressure unchanged.  
+
+---
+
+TASK 3c  
+The gas volume \( V_{g,2} \) is calculated using:  
+\[
+V_{g,2} = \frac{m_g R T_{g,2}}{p_s}
+\]  
+Substituting values:  
+\[
+V_{g,2} = \frac{0.003426 \cdot 166.28 \cdot 273.15}{1.400942 \cdot 10^5}
+\]  
+\[
+V_{g,2} = 0.0071 \, \text{m}^3 = 7.1 \, \text{L}
+\]  
+
+The energy balance is expressed as:  
+\[
+\Delta U = Q_{12} - W_v
+\]  
+Where:  
+\[
+\Delta U = U_2 - U_1 = m_g c_V (T_2 - T_1)
+\]  
+\[
+W_v = \int p \, dV = p_g (V_2 - V_1)
+\]  
+
+Substituting values:  
+\[
+Q_{12} = m_g c_V (500 \, \text{K}) + p_g (-0.002 \, \text{m}^3)
+\]  
+\[
+Q_{12} = 0.003426 \cdot 0.633 \cdot 500 + 1.400942 \cdot 10^5 \cdot (-0.002)
+\]  
+\[
+Q_{12} = 1388.2 \, \text{J}
+\]  
+
+Finally, the equilibrium condition is stated:  
+\[
+Q_{12} \to 0 \quad \text{and} \quad Q_m = 1388.2 \, \text{J}
+\]

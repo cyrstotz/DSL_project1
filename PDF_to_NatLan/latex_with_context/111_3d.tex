@@ -1,0 +1,32 @@
+The energy balance for the ice-water mixture (EW) system is considered:  
+\[
+\Delta E = Q_{12} - \sum W_V
+\]  
+For incompressible fluids, \( dV = 0 \), and the energy change is:  
+\[
+\Delta E = m_{\text{EW}} \cdot (U_{\text{EW},2} - U_{\text{EW},1})
+\]  
+Using the relation:  
+\[
+U_{\text{EW},2} = U_{\text{EW},1} + x_{\text{ice},2} \cdot (U_{\text{ice}} - U_{\text{fluid}})
+\]  
+From the table:  
+\[
+U_{\text{EW},1} = U_{\text{fluid}} + x_{\text{ice},1} \cdot (U_{\text{ice}} - U_{\text{fluid}})
+\]  
+Substituting values:  
+\[
+U_{\text{EW},1} = -0.0145 + 0.6 \cdot (-333.858 + 0.0145) = -200.0928 \, \text{kJ/kg}
+\]  
+At \( T_{\text{EW}} = 0^\circ\text{C} \):  
+\[
+U_{\text{EW},2} = -185.0928 \, \text{kJ/kg}
+\]  
+The ice fraction \( x_{\text{ice},2} \) is calculated:  
+\[
+x_{\text{ice},2} = \frac{U_{\text{EW},2} - U_{\text{fluid}}}{U_{\text{ice}} - U_{\text{fluid}}}
+\]  
+Substituting values:  
+\[
+x_{\text{ice},2} = \frac{-185.0928 - 0.033}{-333.942 - 0.033} = 0.555
+\]

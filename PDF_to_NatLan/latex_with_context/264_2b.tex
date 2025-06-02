@@ -1,0 +1,68 @@
+The first law of thermodynamics (1HS) is applied to the nozzle:  
+\[
+\dot{m} \left( h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right) = 0
+\]  
+Neglecting potential energy and assuming adiabatic conditions, the equation simplifies to:  
+\[
+\dot{m} \frac{w_5^2}{2} + \dot{m} h_5 = \dot{m} \frac{w_6^2}{2} + \dot{m} h_6
+\]  
+
+Rearranging for \( w_6 \):  
+\[
+w_6 = \sqrt{w_5^2 + 2(h_5 - h_6)}
+\]  
+
+From Table A-22, \( h_5 \) and \( h_6 \) are interpolated:  
+\[
+h_5 = 431.43 \, \text{kJ/kg}, \quad h_6 = 421.26 \, \text{kJ/kg}
+\]  
+Interpolating further:  
+\[
+h_s = 431.43 - 421.26 + (431.9 - 430) + 421.26 = 421.44 \, \text{kJ/kg}
+\]  
+
+The temperature \( T_6 \) is calculated using the isentropic relation:  
+\[
+T_6 = T_c \left( \frac{p_6}{p_s} \right)^{\frac{n-1}{n}}
+\]  
+Where:  
+\[
+n = \frac{c_p}{c_v} = \frac{1.006 \, \text{kJ/kg·K}}{c_p - R}, \quad \text{given } n = 1.4
+\]  
+
+Further calculations are required to determine \( T_6 \).  
+
+No diagrams are provided for this subtask.
+
+The temperature \( T_6 \) is calculated using the following formula:  
+\[
+T_6 = 431.9 \left( \frac{191,100 \, \text{Pa}}{50,000 \, \text{Pa}} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+where \( \kappa = 1.4 \). Substituting the values:  
+\[
+T_6 = 328.67469 \, \text{K} \approx 328.1 \, \text{K}
+\]  
+
+Interpolation is performed using Table A-22 to determine \( h_6 \):  
+\[
+h_6 = 325.31 + \frac{328.1 - 325}{330 - 325} \times (330.34 - 325.31)
+\]  
+This yields:  
+\[
+h_6 = 328.4031 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The outlet velocity \( w_6 \) is calculated using:  
+\[
+w_0 = w_s = \sqrt{\frac{h_s}{h_6}}
+\]  
+Substituting the values:  
+\[
+w_6 = \sqrt{\frac{220 \, \text{m/s}^2}{328.4031 / 421.48366}} = 194.2051 \, \text{m/s}
+\]  
+Thus:  
+\[
+w_6 = 194.2 \, \text{m/s}
+\]  
+
+---

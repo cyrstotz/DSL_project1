@@ -1,0 +1,32 @@
+TASK 3d  
+The heat released during the process is calculated using the formula:  
+\[
+|Q_{12}| = m \cdot (U_2 - U_1)
+\]  
+
+The internal energy \( U_2 \) is determined as follows:  
+\[
+U_2 = \frac{Q_{12}}{m} + U_1
+\]  
+Substituting the values:  
+\[
+U_2 = \frac{1500 \, \text{J}}{0.1 \, \text{kg}} + (-133.1262 \, \frac{\text{kJ}}{\text{kg}})
+\]  
+\[
+U_2 = -118.1262 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The initial internal energy \( U_1 \) is calculated using interpolation from Table A1:  
+\[
+U_1 = -333.458 + 0.6 \cdot (-0.0015 \cdot (-333.458))
+\]  
+\[
+U_1 = -133.1262 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Interpolation is performed using the EW table at \( T = 0.003^\circ \text{C} \):  
+\[
+x = \frac{U_2 - U_{\text{test}}}{U_{\text{flüssig}} - U_{\text{test}}} = 0.645
+\]  
+
+This concludes the calculation of the final ice fraction \( x \).

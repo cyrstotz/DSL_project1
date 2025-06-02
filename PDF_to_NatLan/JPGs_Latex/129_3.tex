@@ -1,0 +1,88 @@
+TASK 3a  
+The pressure \( p_{g,1} \) and mass \( m_g \) are calculated using the following equations:  
+
+1. The pressure \( p_{g,1} \) is derived from the force balance equation:  
+\[
+m_K g + m_{\text{EW}} g + p_{\text{amb}} A = p_{g,1} A
+\]  
+where \( A = \frac{\pi D^2}{4} \).  
+
+Substituting values:  
+\[
+p_{g,1} = p_{\text{amb}} + \frac{g}{A} (m_K + m_{\text{EW}})
+\]  
+\[
+p_{g,1} = 1.401 \, \text{bar}
+\]  
+
+2. The mass \( m_g \) is calculated using the ideal gas law:  
+\[
+m_g = \frac{\rho V}{R T} = \frac{p_{g,1} V_{g,1} M_g}{R T_{g,1}}
+\]  
+Substituting values:  
+\[
+m_g = \frac{1.401 \cdot 3.14 \cdot 10^{-3} \cdot 50}{8.314 \cdot (500 + 273.15)}
+\]  
+\[
+m_g = 3.42 \, \text{g}
+\]  
+
+---
+
+TASK 3b  
+The pressure \( p_{g,2} \) and temperature \( T_{g,2} \) are determined:  
+
+1. The pressure \( p_{g,2} \) is equal to \( p_{g,1} \) because the piston maintains the same force balance:  
+\[
+p_{g,2} = p_{g,1} = 1.401 \, \text{bar}
+\]  
+
+2. Since \( x_{\text{ice},2} > 0 \), the temperature of the ice-water mixture (EW) must remain at \( 0^\circ\text{C} \) due to phase equilibrium. Thus:  
+\[
+T_{g,2} = 0^\circ\text{C}
+\]  
+
+---
+
+TASK 3c  
+The heat transferred \( Q_{12} \) from the gas to the ice-water mixture is calculated using the specific heat capacity:  
+\[
+Q_{12} = c_p m_g (T_{2} - T_{1})
+\]  
+where \( c_p = \frac{R}{M_g} + c_V \).  
+
+Substituting values:  
+\[
+c_p = \frac{8.314}{50} + 0.633 = 0.799 \, \text{kJ/kg·K}
+\]  
+\[
+Q_{12} = 0.799 \cdot 3.42 \cdot (500 - 0)
+\]  
+\[
+Q_{12} = 1366.8 \, \text{J}
+\]  
+
+---
+
+TASK 3d  
+The final ice fraction \( x_{\text{ice},2} \) is calculated using the energy balance:  
+
+1. The heat transfer equation is:  
+\[
+Q_{12} = U_{\text{ice}} m_{\text{ice},1} + U_{\text{fl}} m_{\text{fl},1} - U_{\text{ice}} m_{\text{ice},2} - U_{\text{fl}} m_{\text{fl},2}
+\]  
+where \( m_{\text{fl},1} = 0.4 \, m_{\text{EW}} \) and \( m_{\text{ice},1} = 0.6 \, m_{\text{EW}} \).  
+
+2. Rearranging for \( x_{\text{ice},2} \):  
+\[
+x_{\text{ice},2} = \frac{U_{\text{ice}} m_{\text{ice},1} + U_{\text{fl}} m_{\text{fl},1} - Q_{12} - U_{\text{fl}} m_{\text{EW}}}{U_{\text{ice}} - U_{\text{fl}}}
+\]  
+
+Substituting values:  
+\[
+x_{\text{ice},2} = \frac{0.6 \cdot (-333.459) + 0.4 \cdot (-0.045) - 1366.8 / 1000}{-333.459 - (-0.045)}
+\]  
+\[
+x_{\text{ice},2} = 0.560
+\]  
+

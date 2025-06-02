@@ -1,0 +1,42 @@
+TASK 1a  
+The system is described as steady-state, with no work (\( W = 0 \)), negligible kinetic energy, and no potential energy changes. The energy balance is expressed as:  
+\[
+\dot{Q} = \dot{m} \cdot (h_{\text{out}} - h_{\text{in}})
+\]  
+where \( \dot{Q} \) is the heat flow, \( \dot{m} \) is the mass flow rate, and \( h_{\text{out}} \) and \( h_{\text{in}} \) are the specific enthalpies at the outlet and inlet, respectively.  
+
+From Table A2, the properties of saturated liquid water are used:  
+- At \( T_{\text{in}} = 70^\circ\text{C} \):  
+  \[
+  h_{\text{in}} = 292.98 \, \text{kJ/kg}, \quad \rho_{\text{in}} = 0.9779 \, \text{kg/L}
+  \]  
+- At \( T_{\text{out}} = 100^\circ\text{C} \):  
+  \[
+  h_{\text{out}} = 419.04 \, \text{kJ/kg}, \quad \rho_{\text{out}} = 0.9584 \, \text{kg/L}
+  \]  
+
+The heat flow removed by the coolant is calculated as:  
+\[
+\dot{Q} = \dot{m} \cdot (h_{\text{out}} - h_{\text{in}}) = 0.3 \, \text{kg/s} \cdot (419.04 \, \text{kJ/kg} - 292.98 \, \text{kJ/kg}) = 37.81 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant, \( \bar{T}_{\text{KF}} \), is determined using the entropy-temperature relationship:  
+\[
+\bar{T}_{\text{KF}} = \frac{\int T \, ds}{s_{\text{out}} - s_{\text{in}}}
+\]  
+Assuming constant pressure and ideal liquid behavior, the entropy change is approximated as:  
+\[
+s_{\text{out}} - s_{\text{in}} = \frac{c_p \cdot (T_{\text{out}} - T_{\text{in}})}{T_{\text{mean}}}
+\]  
+where \( T_{\text{mean}} \) is the logarithmic mean temperature:  
+\[
+T_{\text{mean}} = \frac{T_{\text{out}} - T_{\text{in}}}{\ln\left(\frac{T_{\text{out}}}{T_{\text{in}}}\right)}
+\]  
+
+Substituting values:  
+\[
+T_{\text{mean}} = \frac{298.15 \, \text{K} - 288.15 \, \text{K}}{\ln\left(\frac{298.15}{288.15}\right)} = 293.72 \, \text{K}
+\]  
+
+Thus, \( \bar{T}_{\text{KF}} \) is approximately \( 293.72 \, \text{K} \).

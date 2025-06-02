@@ -1,0 +1,55 @@
+TASK 2a  
+The process is illustrated in a T-s diagram. The diagram shows a thermodynamic cycle with labeled points:  
+- Point \( O \) represents the ambient state.  
+- Point \( 1 \) is the inlet to the compressor.  
+- Point \( 2 \) is the outlet of the compressor.  
+- Point \( 3 \) is the inlet to the combustion chamber.  
+- Point \( 4 \) is the outlet of the combustion chamber.  
+- Point \( 5 \) is the outlet of the turbine.  
+- Point \( 6 \) is the nozzle exit.  
+
+The diagram includes isobars \( p_0 \) and \( p_2 \), which curve upwards. The cycle follows the sequence \( O \to 1 \to 2 \to 3 \to 4 \to 5 \to 6 \), with arrows indicating the direction of the process.  
+
+---
+
+TASK 2b  
+The nozzle is modeled as a reversible adiabatic process (isentropic). The temperature at the nozzle exit \( T_6 \) is calculated using the isentropic relation:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa-1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{\kappa-1}{\kappa}}
+\]  
+\[
+T_6 = 431.9 \cdot \left( \frac{0.191}{0.5} \right)^{\frac{1.4-1}{1.4}}
+\]  
+\[
+T_6 = 431.9 \cdot 0.4941 = 328.07 \, \text{K}
+\]  
+
+For the stationary flow process around the nozzle, the energy balance is:  
+\[
+0 = \dot{m} \left[ h_e - h_a + \frac{w_e^2 - w_a^2}{2} \right]
+\]  
+Rearranging:  
+\[
+0 = h_5 - h_6 + \frac{w_6^2 - w_5^2}{2}
+\]  
+Using \( h = c_p T \):  
+\[
+w_6 = \sqrt{2 c_p (T_5 - T_6) + w_5^2}
+\]  
+Substituting values:  
+\[
+w_6 = \sqrt{2 \cdot 1.006 \, \text{kJ/kg·K} \cdot (431.9 - 328.07) \, \text{K} + 220^2 \, \text{m}^2/\text{s}^2}
+\]  
+\[
+w_6 = \sqrt{2 \cdot 1.006 \cdot 103.83 + 220^2}
+\]  
+\[
+w_6 = \sqrt{507.25 \, \text{m}^2/\text{s}^2}
+\]  
+\[
+w_6 = 507.25 \, \text{m/s}
+\]

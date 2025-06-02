@@ -1,0 +1,52 @@
+TASK 9a  
+Two diagrams are drawn:  
+1. The first diagram is a pressure (\(p\)) versus temperature (\(T\)) plot, showing a complex curve with multiple loops. This appears to represent a thermodynamic cycle.  
+2. The second diagram is also a pressure (\(p\)) versus temperature (\(T\)) plot, with labeled points and arrows indicating transitions. The curve includes a phase boundary and a region labeled "Assay." The temperature axis includes a marked value of \(-20^\circ\text{C}\).  
+
+TASK 9b  
+Using the first law of thermodynamics:  
+\[
+W_k = \dot{m} (h_2 - h_3)
+\]  
+The inlet temperature is given as \(T_i = -20^\circ\text{C}\).  
+
+The outlet temperature is calculated as:  
+\[
+T_2 = T_i - 6 = -26^\circ\text{C}
+\]  
+
+From the tables (reference A-10), the enthalpy at \(T_2 = -26^\circ\text{C}\) and \(x = 1\):  
+\[
+h_2 = 231.82 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+For \(h_3\), entropy is used:  
+\[
+s_2 = s_3 = 0.9390 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Using interpolation:  
+\[
+h_3 = h_3(8 \, \text{bar}, s_3) = \frac{289.39 - 273.66}{0.9390 - 0.9379} \cdot (0.9390 - 0.9379) + 273.66 = 274.29 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Mass flow rate is calculated as:  
+\[
+\dot{m} = \frac{W_k}{h_2 - h_3} = \frac{28 \cdot 10^3}{231.82 - 274.29} = 0.658 \, \frac{\text{kg}}{\text{s}}
+\]  
+
+TASK 9c  
+The pressures are equal:  
+\[
+p_1 = p_2 = 1.0199 \, \text{bar} \quad \text{(from table A-10)}
+\]  
+
+The enthalpy at state 1 is equal to the enthalpy at state 2 due to the throttle:  
+\[
+h_1 = h_2
+\]  
+
+From table A-11, the enthalpy at \(8 \, \text{bar}\) and \(x = 0\):  
+\[
+h_a = 93.92 \, \frac{\text{kJ}}{\text{kg}}
+\]

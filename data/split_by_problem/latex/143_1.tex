@@ -1,0 +1,181 @@
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+\subsection*{a)}
+
+E-Bilanz Reaktor: (stationär) (siedendes Wasser)
+
+\[
+0 = \dot{m}_{\text{ein}} (h_{\text{ein}} - h_{\text{aus}}) + \dot{Q}_R + \dot{Q}_{\text{aus}}
+\]
+
+\[
+0 = \dot{m}_{\text{ein}} (h_{\text{ein}} - h_{\text{aus}}) + \dot{Q}_R + \dot{Q}_{\text{aus}} \quad \text{mit} \quad \dot{m}_{\text{ein}} = \dot{m}_{\text{aus}}
+\]
+
+Tab A2:
+
+\[
+h_{\text{ein}} = h_f (70^\circ C) = 292.98 \quad \text{(siedende Flüssigkeit)}
+\]
+
+\[
+h_{\text{aus}} = h_f (100^\circ C) = 419.04
+\]
+
+\[
+\dot{Q}_R = \dot{m}_{\text{ein}} (h_{\text{aus}} - h_{\text{ein}}) + \dot{Q}_R = 137.818 \, \text{kW}
+\]
+
+\subsection*{b)}
+
+Entropiebilanz Kühlfl.:
+
+\[
+0 = \dot{m}_{\text{KF}} (s_{\text{ein}} - s_{\text{aus}}) + \dot{Q}_{\text{aus}} \quad \text{da Druck sich nicht ändert} \rightarrow \text{reversibel}
+\]
+
+E-Bilanz KF von KF:
+
+\[
+0 = \dot{m}_{\text{KF}} (h_{\text{ein}} - h_{\text{aus}}) + \dot{Q}_{\text{aus}}
+\]
+
+\[
+\dot{m}_{\text{KF}} \frac{\dot{Q}_{\text{aus}}}{h_{\text{aus}} - h_{\text{ein}}} \quad \text{druck ändert sich nicht} \rightarrow \text{reversibel}
+\]
+
+\[
+\bar{T} = \frac{\int_{S_{\text{KF, aus}}}^{S_{\text{KF, ein}}} T \, dS}{S_2 - S_1} = \frac{q_{\text{rev}}}{S_2 - S_1} = \frac{h_2 - h_1}{S_2 - S_1}
+\]
+
+\[
+h_2 - h_1 = c (T_2 - T_1) + v (p_2 - p_1) \quad \text{mit} \quad c = \text{Wärmekapazität des KF}
+\]
+
+\[
+S_2 - S_1 = c \ln \left( \frac{T_2}{T_1} \right)
+\]
+
+\[
+\bar{T} = \frac{c (T_2 - T_1)}{c \ln \left( \frac{T_2}{T_1} \right)} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)} = 293.72 \, K
+\]
+
+\[
+T_1 = T_{\text{KF, ein}} \quad T_2 = T_{\text{KF, aus}}
+\]
+
+Rückseite! Aufgabe c auf separatem Blatt
+
+``````latex
+
+
+\section*{Aufgabe 1}
+
+\subsection*{c)}
+
+\begin{align*}
+&\text{\# S-Bilanz KF-Seite: Kühlwand:} \\
+&0 = \dot{Q}_{\text{ausl}} + \frac{\dot{Q}_{\text{aus}}}{T} + \dot{S}_{\text{erz}} \\
+&\Rightarrow \dot{S}_{\text{erz}} = \dot{Q}_{\text{aus}} \left( \frac{1}{T} - \frac{1}{T_{\text{Reaktor,1}}} \right) \\
+&\Rightarrow \dot{S}_{\text{erz}} = 0.1908 \, \text{kW/K}
+\end{align*}
+
+\subsection*{Graphical Description}
+
+There is a diagram on the right side of the page. The diagram consists of a rectangle labeled "Wand" (wall). The rectangle is divided into two halves by a vertical line. The left half is labeled "Reaktor-Seite" (reactor side) and the right half is labeled "KF-Seite" (cooling fluid side). 
+
+There are two arrows pointing outwards from the center of the rectangle, one pointing to the left and labeled "\(\dot{Q}_{\text{aus}}\)" and one pointing to the right and labeled "\(\dot{Q}_{\text{aus}}\)". 
+
+Additionally, there is a note below the diagram stating:
+\[
+\dot{Q}_{\text{aus}} = 737.878 \, \text{kW}
+\]
+
+``````latex
+
+
+d) E-bilanz: \quad \Delta E = \Delta U \quad ; \quad Q_{R,12} = -35 \, \text{MJ}
+
+\[
+\Rightarrow U_2 - U_1 = \Delta m_{12} \cdot h(20^\circ \text{C}) + Q_{R,12}
+\]
+
+\[
+m_{ges,1} = 5755 \, \text{kg} = m_1
+\]
+
+\[
+m_{ges,2} = m_{ges,1} + \Delta m_{12} = m_2
+\]
+
+\[
+m_2 U_2 - m_1 U_1 = \Delta m_{12} \cdot h(20^\circ \text{C}) + Q_{R,12}
+\]
+
+\[
+\Delta m_{12} (U_2 - h(20^\circ \text{C})) = m_1 (u_1 - U_2) + Q_{R,12}
+\]
+
+\[
+\Delta m_{12} = \frac{m_1 (u_1 - U_2) + Q_{R,12}}{U_2 - h(20^\circ \text{C})}
+\]
+
+Tab A-2:
+
+\[
+h(20^\circ \text{C}) = h_f(20^\circ \text{C}) = 83.96
+\]
+
+\[
+u_2 = u_f(70^\circ \text{C}) = 292.95
+\]
+
+\[
+u_1 = u_f(100^\circ \text{C}) = 418.94
+\]
+
+\[
+\Rightarrow \Delta m_{12} = 3302 \, \text{kg}
+\]
+
+e) S-Bilanz:
+
+\[
+\Delta S_{12} = \Delta m_{12} \cdot s(20^\circ \text{C}) + \frac{Q_{R,12}}{T} + S_{12}
+\]
+
+Tab A-2:
+
+\[
+s(20^\circ \text{C}) = s_f(20^\circ \text{C}) = 0.2966
+\]
+
+\[
+\Delta S_{12} = m_2 \cdot s_2 - m_1 \cdot s_1
+\]
+
+\[
+m_2 = m_1 + \Delta m_{12} = 9056 \, \text{kg}
+\]
+
+Tab A-2:
+
+\[
+s_2 = s_f(70^\circ \text{C}) = 0.9549
+\]
+
+\[
+s_1 = s_f(100^\circ \text{C}) = 1.3069
+\]
+
+\[
+\Rightarrow \Delta S_{12} = 1726.36 \, \frac{\text{kJ}}{\text{K}}
+\]
+
+``````latex
+
+

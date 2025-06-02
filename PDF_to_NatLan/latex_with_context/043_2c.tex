@@ -1,0 +1,29 @@
+The mass-specific flow exergy \( ex_{\text{flow}} \) is determined using the following equation:  
+\[
+ex_{\text{flow}} = (h_{\text{aus}} - h_{\text{ein}} - T_0 \cdot (s_{\text{aus}} - s_{\text{ein}}) + \frac{1}{2} (w_{\text{ein}}^2 - w_{\text{aus}}^2))
+\]  
+Where:  
+\[
+h_{\text{aus}} - h_{\text{ein}} = c_p \cdot (T_{\text{aus}} - T_{\text{ein}}) = 1.006 \cdot (340 - 243.15)
+\]  
+This assumes an ideal gas and uses intermediate solutions.  
+
+The entropy term is calculated as:  
+\[
+-T_0 \cdot (s_{\text{aus}} - s_{\text{ein}}) = -T_0 \cdot \left( c_p \cdot \ln\left(\frac{T_{\text{aus}}}{T_{\text{ein}}}\right) - R \cdot \ln\left(\frac{p_{\text{aus}}}{p_{\text{ein}}}\right) \right)
+\]  
+Substituting values:  
+\[
+-243.15 \cdot (1.006 \cdot \ln\left(\frac{340}{243.15}\right) - 82.0093 \cdot \ln\left(\frac{p_{\text{aus}}}{p_{\text{ein}}}\right))
+\]  
+
+Combining terms:  
+\[
+ex_{\text{flow}} = 92.434 \, \text{kJ} - 82.0093 \, \text{kJ} + \frac{1}{2} (40000 - w_6^2)
+\]  
+Substituting \( w_6^2 \):  
+\[
+ex_{\text{flow}} = 94.628 \, \text{kJ} - \Delta ex_{\text{dest}}
+\]  
+
+The result is adjusted to ensure positivity.

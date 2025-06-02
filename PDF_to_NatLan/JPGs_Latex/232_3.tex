@@ -1,0 +1,39 @@
+TASK 2d  
+The equation for exergy destruction is expressed as:  
+\[
+0 = \Delta ex_{\text{str}} + ex_Q - W_{\text{in}} - ex_{\text{vel}}
+\]  
+
+The exergy due to heat transfer is calculated as:  
+\[
+ex_Q = \left( 1 - \frac{T_0}{T} \right) Q = \left( 1 - \frac{243.15}{1289} \right) \cdot 1195 = 969.58 \, \text{kJ/kg}
+\]  
+
+The exergy due to velocity is derived as follows:  
+\[
+ex_{\text{vel}} = T_0 \cdot \Delta S_{\text{str}} = T_0 \cdot (S_2 - S_1)
+\]  
+
+The entropy difference \( S_2 - S_1 \) is calculated using the following steps:  
+\[
+S_2 - S_1 = \frac{Q}{T} - R \ln \left( \frac{p_0}{p} \right)
+\]  
+where \( p_c = p_0 \).  
+
+Substituting values:  
+\[
+S_2 - S_1 = \ln \left( \frac{T}{T_0} \right) - R \ln \left( \frac{p_0}{p} \right)
+\]  
+\[
+= \ln \left( \frac{310 \, \text{K}}{243.15 \, \text{K}} \right) - \frac{1.239 \, \text{kJ/kg·K}}{1289 \, \text{K}}
+\]  
+\[
+= 1.262 \, \text{kJ/kg·K}
+\]  
+
+Finally, the velocity exergy is calculated as:  
+\[
+ex_{\text{vel}} = 243.15 \cdot 1.262 = 306.855 \, \text{kJ/kg}
+\]  
+
+The result is boxed and underlined for emphasis.

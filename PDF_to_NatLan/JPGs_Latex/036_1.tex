@@ -1,0 +1,66 @@
+TASK 1b  
+The thermodynamic mean temperature of the coolant is expressed as:  
+\[
+T_{\text{KF}} = \frac{\int_{e}^{a} T \, dS}{S_a - S_e}
+\]
+
+---
+
+TASK 1c  
+The entropy production rate \( \dot{S}_{\text{evz}} \) is calculated as follows:  
+\[
+0 = \dot{m}[S_e - S_a] + \sum \frac{\dot{Q}}{T} + \dot{S}_{\text{evz}}
+\]  
+Rearranging for \( \dot{S}_{\text{evz}} \):  
+\[
+\dot{S}_{\text{evz}} = \dot{m}[S_a - S_e] - \sum \frac{\dot{Q}}{T}
+\]  
+From water tables (A-2):  
+\[
+S_e = 0.9549 \, \frac{\text{kJ}}{\text{kg·K}}, \quad S_a = 1.3069 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+Substituting values:  
+\[
+\dot{S}_{\text{evz}} = 0.3 \, \frac{\text{kg}}{\text{s}} \left( 1.3069 - 0.9549 \right) + \frac{\dot{Q}}{T} = 0.326 \, \frac{\text{kg}}{\text{K·s}}
+\]  
+Where \( \dot{Q} = 4 \, \text{kW} \) and \( T = 295 \, \text{K} \).
+
+---
+
+TASK 1d  
+The energy balance for the system is given by:  
+\[
+0 = \dot{m}[h_e - h_a] + \dot{Q}_R
+\]  
+Assuming \( W = 0 \):  
+\[
+\dot{m} = \frac{\dot{Q}_R}{h_a - h_e} = 65 \, \text{kW}
+\]  
+For an isolated system:  
+\[
+\Sigma Q = \Delta E = U + KE + PE
+\]  
+The heat released during cooling is:  
+\[
+Q_{40} = E_2 - E_1 = Q_{R,12}
+\]  
+The temperature change is related to the mass and specific heat:  
+\[
+\Delta E = m c \Delta T
+\]  
+Where:  
+\[
+20^\circ\text{C} \to \Delta m_{12}, \quad 70^\circ\text{C} \to 5755 \, \text{kg}
+\]
+
+---
+
+TASK 1e  
+The entropy change \( \Delta S_{12} \) is calculated as:  
+\[
+\Delta S = S_2 - S_1 = m(S_2 - S_1) = \sum \frac{\dot{Q}}{T} + \dot{S}_{\text{evz}}
+\]  
+Given:  
+\[
+m = 5755 \, \text{kg}, \quad S_1 = 0.9549 \, \frac{\text{kJ}}{\text{kg·K}}, \quad S_2 = 0.2966 \, \frac{\text{kJ}}{\text{kg·K}} \, \text{(A-2)}
+\]

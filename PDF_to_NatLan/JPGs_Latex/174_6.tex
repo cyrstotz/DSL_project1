@@ -1,0 +1,40 @@
+TASK 2a  
+A graph is drawn representing the jet engine process in a temperature-entropy (\( T \)-\( s \)) diagram. The diagram includes labeled isobars (\( p_0 \), \( p_1 \), \( p_2 \)) and points corresponding to states \( 0 \), \( 1 \), \( 2 \), \( 3 \), \( 4 \), \( 5 \), and \( 6 \). The process paths are connected with curves and lines, indicating compression, combustion, expansion, and mixing. The axes are labeled as \( T \) (temperature) and \( s \) (entropy), with units \( \text{K} \) and \( \text{kJ/kg·K} \), respectively.  
+
+---
+
+TASK 2b  
+The following values are provided for the jet engine states:  
+\[
+w_5 = 220 \, \text{m/s}, \quad p_5 = 0.5 \, \text{bar}, \quad T_5 = 431.9 \, \text{K}
+\]
+\[
+p_0 = 0.191 \, \text{bar}, \quad w_6 = 570 \, \text{m/s}, \quad T_6 = 340 \, \text{K}
+\]
+
+---
+
+TASK 2c  
+The mass-specific exergy destruction is calculated as:  
+\[
+\Delta ex_{\text{str}} = ex_{\text{str},b} - ex_{\text{str},0}
+\]
+The specific exergy at state \( 0 \) is expressed as:  
+\[
+ex_{\text{str},0} = [h_0 - h_0 - T_0(s_0 - s_0) + tke]
+\]
+Expanding the equation:  
+\[
+ex_{\text{str},0} = c_p \left( T_6 - T_0 \right) - T_0 \left( s_6 - s_0 \right) + tke
+\]
+Substituting values:  
+\[
+= 1.006 \, \text{kJ/kg·K} \left( 340 \, \text{K} - 431.9 \, \text{K} \right) - 243.15 \, \text{K} \left( 4.006 \, \text{kJ/kg·K} \left( \frac{340 \, \text{K}}{243.15 \, \text{K}} \right) \right)
+\]
+\[
++ \frac{1}{2} \left( 570 \, \text{m/s} \right)^2
+\]
+The final result is:  
+\[
+ex_{\text{str},6} = 65.04 \, \text{kJ/kg}
+\]

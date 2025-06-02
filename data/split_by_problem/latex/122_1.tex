@@ -1,0 +1,188 @@
+
+``````latex
+
+
+1) \quad KE = PE = 0
+
+\textbf{Prozess: stationärer Fließprozess mit Massenstrom}
+
+\[
+0 = \dot{m} \left( h_{\text{ein}} - h_{\text{aus}} \right) + \dot{Q}_R - \dot{W}_t
+\]
+
+\[
+h_{\text{ein}} \text{ mit } (T=70^\circ \text{ gesättigt}) \quad \text{Tab}
+\]
+
+\[
+h_{\text{aus}} = h_f + x_D \left( h_g - h_f \right)
+\]
+
+\[
+h_f = \text{Tab A-2 (T=100^\circ \text{C})} = 419.04 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_g = \text{Tab A-2 (T=100^\circ \text{C})} = 2676.1 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_{\text{aus}} = 430.33 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_{\text{ein}} = \text{Tab A-2 (T=70^\circ \text{C})} \left\{
+\begin{array}{l}
+h_f = 293.38 \, \frac{\text{kJ}}{\text{kg}} \\
+h_g = 2626.8 \, \frac{\text{kJ}}{\text{kg}}
+\end{array}
+\right.
+\]
+
+a) \quad \text{WF}
+
+\textbf{ideale Flüssigkeit}
+
+\[
+c_p^{\text{if}} = c_v^{\text{if}} = c^{\text{if}}(T) = f
+\]
+
+\[
+\Delta T = 10 \, \text{K}
+\]
+
+\[
+h_{\text{ein}} = h_f + x_D \left( h_g - h_f \right) = 3041.6491 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\dot{m} = 0.3 \, \frac{\text{kg}}{\text{s}}
+\]
+
+\[
+0 = \dot{m} \left( h_{\text{ein}} - h_{\text{aus}} \right) + \dot{Q}_R - \dot{Q}_{\text{aus}}
+\]
+
+\[
+\dot{Q}_{\text{aus}} = \dot{m} \left( h_{\text{ein}} - h_{\text{aus}} \right) + \dot{Q}_R = \underline{62.256 \, \mu \text{W}}
+\]
+
+``````latex
+
+\begin{itemize}
+    \item[(b)] 
+    \[
+    \overline{T} = \frac{\int_{s_e}^{s_a} T \, ds}{s_a - s_e}
+    \]
+    \[
+    s_a - s_e = \int_{T_1}^{T_2} \frac{cif(T)}{T} \, dT = 0.73376 \, \frac{\text{kJ}}{\text{kgK}}
+    \]
+    \[
+    = cif \cdot \ln \left( \frac{T_2}{T_1} \right)
+    \]
+    \[
+    cif = \dot{m} \cdot \Delta t = 21.66 \, \frac{\text{kJ}}{\text{kgK}}
+    \]
+    \[
+    \overline{T} = \frac{\int_{s_e}^{s_a} T \, ds}{s_a - s_e} \left( \frac{T_2 - T_1}{s_a - s_e} \right) + T_1 = 254.514 \, K
+    \]
+    
+    \item[(c)]
+    \[
+    0 = \dot{m} (s_e - s_a) + \sum \frac{\dot{Q}}{T} + S_{erz}
+    \]
+    \[
+    S_{erz} = \dot{m} (s_a - s_e) - \sum \frac{\dot{Q}}{T}
+    \]
+    \[
+    = \dot{m} (s_a - s_e) + \frac{\dot{Q}_{aus}}{T}
+    \]
+    \[
+    S_{erz} = 0.44209 \, \frac{\text{kW}}{\text{h}}
+    \]
+\end{itemize}
+
+``````latex
+
+
+\section*{Problem 1}
+
+\subsection*{(a)}
+
+\[
+T
+\]
+
+1. \(100^\circ C\)
+
+2. \(70^\circ C\)
+
+\[
+T_{\text{ein}} = 20^\circ C
+\]
+
+\[
+Q_{R,12} = Q_{\text{aus},12} = 35 \, \text{MJ}
+\]
+
+\text{halb offen}
+
+\[
+\Delta E = m_2 u_2 - m_1 u_1 = \Delta m_{12} (h_e) + \cancel{\sum Q} - \cancel{\sum W}
+\]
+
+\[
+h_e = \text{Tab A-2} \left( T = 20^\circ C, h_f \right) = 83.16 \, \frac{\text{W}}{\text{kg}}
+\]
+
+\[
+m_2 = m_1 + \Delta m_{12}
+\]
+
+\[
+m_2 = 5755 \, \text{kg}
+\]
+
+\[
+u_f = \text{Tab A-2} \left( T = 100^\circ C, u_f \right) = 426.94 \, \frac{\text{W}}{\text{kg}}
+\]
+
+\[
+u_2 = \text{Tab A-2} \left( T = 100^\circ C, u_f \right) = 292.55 \, \frac{\text{W}}{\text{kg}}
+\]
+
+\[
+m_1 u_2 + \Delta m_{12} u_2 - m_1 u_1 = \Delta m_{12} h_e
+\]
+
+\[
+m_1 (u_2 - u_1) = \Delta m_{12} (h_e - u_2)
+\]
+
+\[
+m_1 \frac{u_2 - u_1}{h_e - u_2} = \Delta m_{12} = 3486.41 \, \text{kg}
+\]
+
+``````latex
+
+e) \quad \Delta S = m_2 s_2 - m_1 s_1
+
+\[
+= m_1 (s_2 - s_1) + \Delta \dot{m} s_2
+\]
+
+\[
+s_1 = \text{Tab A-2} \left( T = 100^\circ, s_f \right) = 1.306 \frac{\text{kJ}}{\text{kg K}}
+\]
+
+\[
+s_2 = \text{Tab A-2} \left( T = 20^\circ, s_f \right) = 0.958 \frac{\text{kJ}}{\text{kg K}}
+\]
+
+\[
+\Delta S = 1411.88 \frac{\text{kJ}}{\text{K}}
+\]
+
+``````latex
+
+

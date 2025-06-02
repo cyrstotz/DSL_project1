@@ -1,0 +1,77 @@
+TASK 3a  
+The goal is to determine the gas pressure \( p_{g,1} \) and mass \( m_g \) in state 1.  
+
+**Given:**  
+\[
+T_{g,1} = 500^\circ\text{C} = 773.15 \, \text{K}, \quad V_{g,1} = 3.14 \, \text{L} = 0.00314 \, \text{m}^3
+\]  
+
+A diagram is drawn showing a cylinder with atmospheric pressure \( p_0 \), the piston mass \( m_K \), and the membrane exerting pressure \( p_1 \).  
+
+The pressure \( p_1 \) is calculated using the formula:  
+\[
+p_1 \cdot A = p_0 \cdot A + m_K \cdot g + m_{\text{EW}} \cdot g
+\]  
+Rearranging:  
+\[
+p_1 = p_0 + \frac{m_K \cdot g}{A} + \frac{m_{\text{EW}} \cdot g}{A}
+\]  
+
+The cross-sectional area \( A \) is determined as:  
+\[
+A = \frac{\pi D^2}{4}
+\]  
+
+Substituting values:  
+\[
+p_1 = 100000 \, \text{Pa} + \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{\frac{\pi \cdot (0.1 \, \text{m})^2}{4}} + \frac{0.1 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{\frac{\pi \cdot (0.1 \, \text{m})^2}{4}}
+\]  
+\[
+p_1 = 5.01 \, \text{bar}
+\]  
+
+The gas mass \( m_g \) is calculated using the ideal gas law:  
+\[
+m_g = \frac{p \cdot V}{R \cdot T}
+\]  
+Substituting values:  
+\[
+m_g = \frac{5.01 \cdot 0.00314}{287 \cdot 773.15} = 0.255 \, \text{kg}
+\]  
+
+---
+
+TASK 3b  
+**Given:**  
+\[
+p_{g,1} = 1.5 \, \text{bar}, \quad m_g = 3.6 \, \text{kg}
+\]  
+
+It is stated that all energy released is absorbed by the gas. Using the energy balance:  
+\[
+m_{\text{EW}} \cdot c_{\text{EW}} \cdot \Delta T = m_g \cdot c_{g} \cdot \Delta T
+\]  
+
+Substituting values:  
+\[
+0.1 \, \text{kg} \cdot c_{\text{EW}} \cdot \Delta T = m_g \cdot c_{g} \cdot \Delta T
+\]  
+
+---
+
+TASK 3c  
+The transferred heat is calculated using the formula:  
+\[
+Q_{12} = m \cdot (u_2 - u_1) = Q_{12} - W
+\]  
+
+Substituting values:  
+\[
+Q_{12} = 3.6 \cdot c_V \cdot (273.15 \, \text{K} - 773.15 \, \text{K})
+\]  
+\[
+Q_{12} = -1.38 \, \text{J} \quad \text{(negative indicates heat loss)}
+\]  
+\[
+|Q_{12}| = 1.38 \, \text{J}
+\]  

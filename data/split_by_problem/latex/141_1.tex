@@ -1,0 +1,110 @@
+
+``````latex
+
+\section*{Aufgabe 1}
+
+\subsection*{a)}
+\[
+\dot{Q}_{\text{aus}} = 
+\]
+\[
+\text{Bilanz am Reaktor}:
+\]
+\[
+\dot{Q} = \dot{m} \left[ h_e - h_a \right] + \dot{Q}_R + \dot{Q}_{\text{aus}}
+\]
+\[
+\dot{Q}_{\text{aus}} = \dot{m} \left[ h_a - h_e \right] - \dot{Q}_R
+\]
+\[
+= 0.3 \frac{\text{kg}}{\text{s}} \left[ 449.04 - 292.58 \right] - 400 \text{ kW} = -62.18 \text{ kW}
+\]
+\[
+h_a (100^\circ \text{C}) = 449.04 \quad (\text{aus Tds A-2})
+\]
+\[
+h_e (70^\circ \text{C}) = 292.58 \quad (\text{aus Tds A-2})
+\]
+
+\subsection*{b)}
+\[
+T_{\text{KF}} = \frac{\int s \, T ds}{s_a - s_e} = \frac{h_a - h_e}{s_a - s_e} = c_p \ln \left( \frac{T_2}{T_1} \right) \div (T_2 - T_1) = 0.003^\circ \text{C}
+\]
+\[
+\int s \, T ds = \int dh + v dp
+\]
+\[
+\text{ideale Flüssigkeit:} \quad v dp = 0, \quad \text{weil inkompressibel}
+\]
+
+\subsection*{c)}
+\[
+\dot{S}_{\text{e}} = \text{Entropieabgang für ein geschlossenes System}
+\]
+\[
+\dot{S}_{\text{e}} = \dot{m} \cdot (s_2 - s_1) = \frac{\dot{Q}_R}{T} + \dot{S}_{\text{e}}
+\]
+\[
+\dot{S}_{\text{e}} = \dot{m} (s_2 - s_1) - \frac{\dot{Q}_R}{T}
+\]
+
+``````latex
+
+
+d) \quad \text{Energieänderung:} \quad \Delta m_{12}
+
+\text{Treaktor} \quad z = 70^\circ
+
+\Rightarrow \text{ nur } \text{ nur ein kollabierendes System}
+
+\text{E-Bilanz für kollabierendes System}
+
+m_2 u_2 - m_1 u_1 + \Delta Q_e = \Delta E = \Delta m_{12} \left( h_e + \frac{u_e^2}{2} + g z_e \right)
+
+\text{vernachlässigt} \quad \text{vernachlässigt}
+
+m_2 \, i_{n2} - m_1 \, u_1 = \Delta m_{12} \, h_e
+
+\Delta m_{12} = \frac{m_2 \, u_2 - m_1 \, u_1}{h_e}
+
+h_e = 83.96 \, \frac{\text{kJ}}{\text{kg}}
+
+\Delta m_{12} = \frac{(m_1 + \Delta m_{12}) u_2 - m_1 u_1}{h_e}
+
+m_2 = (5755 - \Delta m_{12})
+
+m_1 = 5755 \, \text{kg}
+
+u_2 \, (70^\circ) = 292.28 \, \frac{\text{kJ}}{\text{kg}}
+
+u_1 \, (100^\circ) = 418.94 \, \frac{\text{kJ}}{\text{kg}}
+
+h_e = 83.96
+
+\Delta m_{12} \left( 1 - \frac{u_2}{h_e} \right) = \frac{m_1 \, u_2 - m_1 \, u_1}{h_e}
+
+\text{Tobi:} \quad A = c \quad \Delta m_{12} = \frac{M_1 (u_2 - u_1)}{h_e - u_2}
+
+= 3474.3 \, \text{kg}
+
+e) \quad \Delta S_{12} \quad \text{zwischen} \quad 1 \rightarrow 2
+
+\text{Entropieänderung anhand kollabierendes System}
+
+\Delta S_{12} = M_2 \, S_2 - M_1 \, S_1
+
+= (m_1 + m_2) S_2 - m_1 S_1
+
+\text{Tobi:} \quad A = c \quad \Delta m_{12} = \frac{M_1 (u_2 - u_1)}{h_e - u_2}
+
+S_1 = 1.3064 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+
+S_2 = 0.9519 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}
+
+= \frac{(5755 \, \text{kg} \cdot 3474.3 \, \text{kJ}) \cdot 0.9519 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}} - 5755 \, \text{kg} \cdot 1.3064 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}}{1.3064 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}}
+
+= 1292.14 \, \text{kJ}
+
+``````latex
+
+

@@ -1,0 +1,16 @@
+The diagram shows a cross-sectional view of a reactor wall with heat transfer. The reactor contains water (H\(_2\)O), and heat (\(Q_{\text{out}}\)) is transferred through the wall to the coolant. The coolant flows parallel to the wall, as indicated by arrows. The wall is labeled "Wand" (German for "wall"), and the coolant is labeled "Kühlmittel" (German for "coolant").  
+
+The entropy balance for the wall is described as follows:  
+\[
+O = \frac{\dot{Q}_{\text{out}}}{T_{H_2O}} - \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} + \dot{S}_{\text{gen}}
+\]
+where \(T_{H_2O} = T_R = 100^\circ\text{C} = 373.15 \, \text{K}\) and \(T_{\text{KF}} = 295 \, \text{K}\).  
+
+The entropy generation rate (\(\dot{S}_{\text{gen}}\)) is calculated as:  
+\[
+\dot{S}_{\text{gen}} = \dot{Q}_{\text{out}} \left( \frac{1}{T_{H_2O}} - \frac{1}{T_{\text{KF}}} \right)
+\]
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = 65 \, \text{kW} \left( \frac{1}{295 \, \text{K}} - \frac{1}{373.15 \, \text{K}} \right) = 4.194 \times 10^{-2} \, \text{kW/K}
+\]

@@ -1,0 +1,90 @@
+**State 1:**  
+The reactor has the following properties:  
+- Mass \( m_1 = 5755 \, \text{kg} \)  
+- Temperature \( T_1 = 100^\circ\text{C} \)  
+- Steam quality \( x_1 = 0.005 \)  
+
+**State 2:**  
+After cooling, the reactor properties are:  
+- Mass \( m_2 = m_1 + \Delta m \)  
+- Temperature \( T_2 = 70^\circ\text{C} \)  
+- Steam quality \( x_2 = 0.005 \)  
+
+**Energy balance using the first law of thermodynamics:**  
+The first law is applied as:  
+\[
+m_2 u_2 - m_1 u_1 + \Delta KE + \Delta PE = \Delta m h_{\text{m}} + \sum Q - W
+\]  
+Here, kinetic and potential energy changes (\( \Delta KE \), \( \Delta PE \)) are negligible, and heat input equals heat output (\( Q_{\text{in}} = Q_{\text{out}} \)).  
+
+Rearranging for \( \Delta m \):  
+\[
+\Delta m = \frac{m_2 u_2 - m_1 u_1}{h_{\text{m}}}
+\]  
+
+**Internal energy calculations:**  
+For state 1:  
+\[
+u_1 = u_f + x \cdot (u_g - u_f)
+\]  
+From water tables:  
+\[
+u_f = 418.94 \, \frac{\text{kJ}}{\text{kg}}, \quad u_g = 2506.5 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Substituting:  
+\[
+u_1 = 418.94 + 0.005 \cdot (2506.5 - 418.94) = 428.38 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+For state 2:  
+\[
+u_2 = u_f(70) + x \cdot (u_g(70) - u_f(70))
+\]  
+From water tables:  
+\[
+u_f(70) = 292.95 \, \frac{\text{kJ}}{\text{kg}}, \quad u_g(70) = 2498.6 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Substituting:  
+\[
+u_2 = 292.95 + 0.005 \cdot (2498.6 - 292.95) = 303.8 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+**Specific enthalpy of added mass (\( h_{\text{m}} \)):**  
+For \( T_{\text{in}} = 20^\circ\text{C} \), \( x = 0.005 \):  
+\[
+h_{\text{m}} = h_f(20) + x \cdot (h_g(20) - h_f(20))
+\]  
+From water tables:  
+\[
+h_f(20) = 83.96 \, \frac{\text{kJ}}{\text{kg}}, \quad h_g(20) = 2538.1 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Substituting:  
+\[
+h_{\text{m}} = 83.96 + 0.005 \cdot (2538.1 - 83.96) = 96.23 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+**Diagram description:**  
+The diagram shows a rectangular reactor with inlet and outlet streams labeled. The inlet stream is marked with \( \Delta m \), and both inlet and outlet heat flows are labeled as \( 35 \, \text{MJ} \). The reactor is labeled as operating under constant volume (\( V = \text{const.} \)).
+
+The mass \( \Delta m_{12} \) is calculated using the energy balance equation:  
+\[
+\Delta m_{12} = \frac{(m_1 + \Delta m_{12}) u_2 - m_1 u_1}{u_{\text{in}}}
+\]  
+Rearranging terms:  
+\[
+\Delta m_{\text{in}} = m_1 u_2 + \Delta m_{12} u_2 - m_1 u_1
+\]  
+Simplifying further:  
+\[
+\Delta m (u_{\text{in}} - u_2) = m_1 u_2 - m_1 u_1
+\]  
+Finally:  
+\[
+\Delta m_{12} = \frac{m_1 (u_2 - u_1)}{u_{\text{in}} - u_2}
+\]  
+The calculated value is:  
+\[
+\Delta m_{12} = 3452 \, \text{kg}
+\]  
+
+---

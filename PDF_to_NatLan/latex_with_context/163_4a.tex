@@ -1,0 +1,42 @@
+The energy balance equation is written as:  
+\[
+0 = \dot{m} \left[ h_2 - h_3 \right] + \Delta e_{\text{cycle}} + \dot{Q}_K - \dot{W}_K
+\]  
+where \( \dot{W}_K = \dot{m}_{\text{R134a}} \left( h_2 - h_3 \right) \).  
+
+Assumptions:  
+- \( p_1 = p_2 \).  
+- \( T_K = T_i \), and \( x > 0 \) (vapor quality is positive).  
+- The throttling process is isenthalpic.  
+
+From Table A-11:  
+At \( p = 8 \, \text{bar} \), \( h_4(8 \, \text{bar}) = h_f(8 \, \text{bar}) = 83.142 \, \frac{\text{kJ}}{\text{kg}} \).  
+Thus, \( h_1 = h_4 = 83.142 \, \frac{\text{kJ}}{\text{kg}} \).  
+
+From the solution:  
+\( T_2 = -72^\circ\text{C} \).  
+Using Table A-10:  
+\( h_2 = h_g(-72^\circ\text{C}) = 734.08 \, \frac{\text{kJ}}{\text{kg}} \).  
+
+For \( h_3 \):  
+The entropy \( s_2 = s_3 = s_g(-72^\circ\text{C}) = 0.8351 \, \frac{\text{kJ}}{\text{kg·K}} \).  
+
+Using linear interpolation from Table A-12:  
+For \( 8 \, \text{bar} \), superheated vapor:  
+\[
+h_3 = h \left( 0.8351 \, \frac{\text{kJ}}{\text{kg·K}} \right) = h \left( 0.83741 \right) - h \left( 0.80666 \right) \cdot \frac{0.8351 - 0.80666}{0.83741 - 0.80666}
+\]  
+Substituting values:  
+\[
+h_3 = 277.95 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Description of the diagram:  
+The diagram is a \( p \)-\( T \) plot showing the refrigeration cycle. It includes four states labeled 1, 2, 3, and 4. The process between states 1 and 2 is isentropic, while the process between states 3 and 4 is isobaric. The axes are labeled as \( p \) (pressure) and \( T \) (temperature).
+
+A p-T diagram is drawn with labeled phase regions. The diagram includes four states:  
+- State 1: Isobaric evaporation.  
+- State 2: Reversible adiabatic compression.  
+- State 3: Isobaric condensation.  
+- State 4: Adiabatic expansion.  
+The diagram shows a closed cycle with arrows indicating the transitions between states.

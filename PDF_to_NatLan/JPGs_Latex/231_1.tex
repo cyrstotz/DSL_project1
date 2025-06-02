@@ -1,0 +1,75 @@
+TASK 1d  
+Energy balance:  
+\[
+0 = \dot{m}(h_c - h_a) + Q_{R,12}
+\]  
+From the water tables (Tabelle A2):  
+\[
+h_c = h(20^\circ\text{C}) = 83.68 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_a = h(70^\circ\text{C}) = 292.85 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The equation for the mass balance is:  
+\[
+m_2 u_2 - m_1 u_1 = \Delta m_{12} h_i + Q_{R,12} - \Sigma W
+\]  
+Since the system is adiabatic to the surroundings and no work is done:  
+\[
+m_2 u_2 - m_1 u_1 = \Delta m_{12} h_e + Q_{R,12}
+\]  
+
+Given:  
+\[
+m_1 = 5755 \, \text{kg}, \quad m_2 = m_1 + \Delta m
+\]  
+From the water tables (Tabelle A2):  
+\[
+u_1 = u_f + x(u_g - u_f) = 418.84 \, \frac{\text{kJ}}{\text{kg}} + 0.005(2506.5 - 418.84) = 429.378 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_2 = u_f + x(u_g - u_f) = 292.85 \, \frac{\text{kJ}}{\text{kg}} + 0.005(2468.6 - 292.85) = 303.835 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Substituting into the energy balance:  
+\[
+m_2 u_2 + \Delta m_{12} h_e - m_1 u_1 - Q_{R,12} = 0
+\]  
+Rearranging for \( \Delta m_{12} \):  
+\[
+\Delta m_{12} = \frac{m_1 (u_2 - u_1) - Q_{R,12}}{h_e - u_2}
+\]  
+Substituting values:  
+\[
+\Delta m_{12} = \frac{5755 \, \text{kg} (303.835 \, \frac{\text{kJ}}{\text{kg}} - 429.378 \, \frac{\text{kJ}}{\text{kg}}) - 35 \, \text{MJ}}{83.68 \, \frac{\text{kJ}}{\text{kg}} - 303.835 \, \frac{\text{kJ}}{\text{kg}}}
+\]  
+\[
+\Delta m_{12} = 340.02 \, \text{kg}
+\]  
+
+---
+
+TASK 1e  
+Entropy change:  
+\[
+\Delta S_{12} = m_2 s_2 - m_1 s_1
+\]  
+From the water tables (Tabelle A2):  
+\[
+s_1 = s_f + x(s_g - s_f) = 1.33714 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+s_2 = s_f + x(s_g - s_f) = 0.9838 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Substituting values:  
+\[
+m_2 = 5755 \, \text{kg} + 340.02 \, \text{kg} = 6095.02 \, \text{kg}
+\]  
+\[
+\Delta S_{12} = m_2 s_2 - m_1 s_1 = 6095.02 \, \text{kg} \cdot 0.9838 \, \frac{\text{kJ}}{\text{kg·K}} - 5755 \, \text{kg} \cdot 1.33714 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+\Delta S_{12} = -1398.6 \, \frac{\text{kJ}}{\text{K}}
+\]

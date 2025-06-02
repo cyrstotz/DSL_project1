@@ -1,0 +1,27 @@
+Given values:  
+- \( p \) [bar]: 0.151  
+- \( T \) [K]: 213.15  
+- \( w \) [m/s]: 200  
+- \( v \) [m³/kg]: Not provided  
+
+Equations and calculations:  
+- \( R = c_p - c_v = 2.87943 \, \text{kJ/kg·K} \)  
+- \( c_v = \frac{c_p}{\kappa} = 2.87943 \, \text{kJ/kg·K} \times 0.714857 = 2.06533 \, \text{kJ/kg·K} \)  
+
+Process 5 → 6:  
+- Adiabatic reversible process:  
+  - \( s_5 = s_6 \)  
+  - \( s(T_5) = 2.66533 \, \text{kJ/kg·K} \)  
+  - \( s(T_6) = 2.66533 \, \text{kJ/kg·K} \)  
+  - \( T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{R}{c_p}} \)  
+  - \( T_6 = 431.3 \, \text{K} \times \left( \frac{0.151}{0.5} \right)^{\frac{2.87943}{2.87943}} = 328.097 \, \text{K} \)  
+
+Energy balance:  
+- \( \Delta ex_{str} = c_p (T_6 - T_5) + \frac{w_6^2}{2} - \frac{w_5^2}{2} \)  
+- First law (5 → 6):  
+  - \( h_6 - h_5 + \frac{w_6^2}{2} - \frac{w_5^2}{2} = 0 \)  
+  - \( w_6 = \sqrt{2 (c_p (T_6 - T_5) + h_5 - h_6)} \)  
+  - \( w_6 = \sqrt{2 (2.87943 \times (328.097 - 431.3) + 236.755)} \, \text{m/s} \)  
+
+Final velocity:  
+- \( w_6 = 236.755 \, \text{m/s} \).

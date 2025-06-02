@@ -1,0 +1,50 @@
+TASK 1a  
+The heat flow \( \dot{Q}_{\text{out}} \) is calculated using the energy balance equation:  
+\[
+0 = \dot{m} (h_e - h_a) + \sum Q - \sum \dot{W}
+\]  
+Since there is no work term (\( \sum \dot{W} = 0 \)), the equation simplifies to:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} (h_{\text{em}} - h_{\text{aus}}) + \dot{Q}_R
+\]  
+Substituting the given values:  
+\[
+\dot{m} = 0.3 \, \text{kg/s}, \quad h_{\text{em}} = h_f(70^\circ\text{C}) = 292.98 \, \text{kJ/kg}, \quad h_{\text{aus}} = h_f(100^\circ\text{C}) = 419.04 \, \text{kJ/kg}, \quad \dot{Q}_R = 100 \, \text{kW}
+\]  
+The calculation proceeds as:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \cdot (292.98 - 419.04) + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = 62.182 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature \( \bar{T} \) of the coolant is determined using the entropy balance:  
+\[
+\bar{T} = \frac{\int_{S_a}^{S_e} T \, dS}{S_e - S_a}
+\]  
+Given values:  
+\[
+S_a = 7.3069, \quad S_e = 0.9549
+\]  
+The entropy difference is:  
+\[
+S_e - S_a = 0.352
+\]  
+The integral \( \int_{S_a}^{S_e} T \, dS \) is calculated as:  
+\[
+T_a S_a - T_e S_e = 343.75 \cdot 0.9549 - 373.75 \cdot 7.3069
+\]  
+\[
+= 487.6697 - 327.6179
+\]  
+\[
+= 159.986
+\]  
+Thus, the mean temperature is:  
+\[
+\bar{T} = \frac{159.986}{0.352} = 159.986 \, \text{K}
+\]  

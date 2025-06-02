@@ -1,0 +1,48 @@
+The energy balance equation is set up as:  
+\[
+0 = m_{\text{ges}} \left[ h_2 - h_3 \right] + W_x
+\]  
+The work term is expressed as:  
+\[
+W_x = m_{\text{ges}} \left[ h_2 - h_3 \right]
+\]  
+Rearranging for \(m_{\text{ges}}\):  
+\[
+-\frac{W_x}{h_2 - h_3} = m_{\text{ges}}
+\]  
+
+Values are calculated as follows:  
+\[
+h_2 = h_g(277.15 \, \text{K}) = h_g(4^\circ\text{C}) = 249.53 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-10)}
+\]  
+\[
+h_3 = h_f(8 \, \text{bar}) = 269.15 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+m_{\text{ges}} = \frac{0.28 \, \text{kW}}{h_2 - h_3}
+\]  
+
+Entropy values are determined:  
+\[
+s_2 = s_g(4^\circ\text{C}) = 0.9169 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+s_3 = s_2 = 0.9169 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Interpolation is performed for enthalpy values at 8 bar:  
+\[
+h(8 \, \text{bar}, 0.9169 \, \frac{\text{kJ}}{\text{kg·K}}) = 267.33 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Using Table A-12, interpolation steps are shown:  
+\[
+h(8 \, \text{bar}, x_1) = 264.15 \, \frac{\text{kJ}}{\text{kg}}, \quad h(8 \, \text{bar}, x_2) = 273.66 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+y = \frac{(x - x_1)}{(x_2 - x_1)} \cdot (y_2 - y_1) + y_1 = 267.33 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Finally, the mass flow rate is calculated:  
+\[
+\dot{m}_{\text{ges}} = h_3 - h_2 = 0.0157 \, \frac{\text{kg}}{\text{s}}
+\]

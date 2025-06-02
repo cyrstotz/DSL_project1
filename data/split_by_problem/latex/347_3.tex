@@ -1,0 +1,77 @@
+
+``````latex
+
+
+\section*{Aufgabe 3}
+
+\subsection*{a)}
+\begin{align*}
+    \text{ges: } & p_{01} \text{ und } m_g \\
+    \text{Gewicht auf Gas lastend: } & m_{ew} + m_c + p_{\text{membran}} = 0.1 \text{kg} + 3 \text{kg} = 3.2 \text{kg} \\
+    & m_g = 32.1 \text{kg} \cdot 9.81 \frac{\text{m}}{\text{s}^2} = 314.901 \text{N} \\
+    & p_0 = p_1 + \frac{F_g}{A} = p_{\text{amb}} + \frac{F_g}{A} \\
+    & p_0 = \text{graph with a sinusoidal wave pattern, amplitude of the wave is approximately 0.05 m, and the wave is centered around 314.901 N. The x-axis is labeled in meters (m) and the y-axis in Newtons (N).} \\
+    & p_{01} = 1.401 \text{ bar}
+\end{align*}
+
+\subsection*{b)}
+\begin{align*}
+    \text{ideales Gas: } & m_g = \frac{p_{01} \cdot V_m}{R_{01} \cdot T_1} \\
+    \text{mit: } & R_{01} = \frac{8.314 \frac{\text{m}^3}{\text{mol} \cdot \text{K}}}{50 \frac{\text{m}^2}{\text{mol}}} = 0.16623 \frac{\text{J}}{\text{g} \cdot \text{K}} \\
+    & m_g = \frac{1.401 \cdot 10^5 \text{ Pa} \cdot 0.00349 \text{ m}^3}{0.16623 \frac{\text{J}}{\text{g} \cdot \text{K}} \cdot (500 + 273.15) \text{ K}} = 3.422 \text{ g}
+\end{align*}
+
+\subsection*{c)}
+\begin{align*}
+    T_{02} = T_{\text{ewz}} \text{ da GGW im Zustand 2} \\
+    \text{Wasser im Zustand 1: } & 0^\circ \text{C bei } x = 0 \text{ im 2-Phasengebiet} \\
+    \text{nach Tab 1 bei 0°C } & p_{\text{ew}} = 1.4 \text{ bar} \\
+    \text{Zustand 2: } & p_{\text{ewz}} = p_{\text{ew}} \text{ (immer noch im 2-Phasen-Gebiet), deshalb} \\
+    & T_{02} = T_{\text{ewz}} = 0^\circ \text{C}
+\end{align*}
+
+\begin{align*}
+    p_{01} = p_{02} = 1.401 \text{ bar, dies gilt, da Membran und Kolben reibungsfrei sind} \\
+    \text{und die Masse, welche auf dem Gas lastet, unveränderlich ist.}
+\end{align*}
+
+\subsection*{d)}
+\begin{align*}
+    \text{Energiebilanz am geschlossenen System:} & \\
+    \Delta oE = m_g (u_2 - u_1) = Q_{12} - W_{12} \\
+    W_{12} = \int p \, dV = p_a (V_2 - V_1) & \text{ mit } V_{g2} = \frac{m_g}{p_{02}} \\
+    V_{g2} = 0.000111 \text{ m}^3 \Rightarrow V_{g2} = \frac{1.401 \cdot 10^5 \text{ Pa}}{0.000111 - 0.00349 \text{ m}^3} = -294.5 \text{ J} \\
+    u_2 - u_1 = c_v (T_{g2} - T_g```latex
+
+
+\section*{d)}
+
+zuerst müssen wir $u_{m}$ berechnen.
+
+\textbf{analogie: um Wasserdampf:} $x_{m}$ gleich wie $x_{gas}$, alle Werte aus Tafel 1 bis 2.1 bar
+
+\[
+L_{q} = u_{f} + x \left( u_{eis} - u_{f,gas} \right) = \left( -0.045 + 0.6 \cdot \left( -333.859 + 0.045 \right) \frac{kJ}{kg} \right)
+\]
+
+\[
+u_{m} = -200.0828 \frac{kJ}{kg}
+\]
+
+\textbf{Energieerhaltung am Eis zugeflossen:} $m_{ew} \left( u_{2} - u_{1} \right) = \left| Q_{12} \right| - Q_{2,EW}$
+
+\[
+L_{q} u_{2} = u_{1} + \frac{\left| Q_{12} \right|}{m_{ew}} = -200.0828 \frac{kJ}{kg} + \frac{1.3675 \frac{kJ}{kg}}{0.1 \text{kg}} = -186.4 \frac{kJ}{kg} = u_{2}
+\]
+
+\textbf{nach $x_{2}$ aufgelöst:} $x_{2} = \frac{u_{2} - u_{f}}{u_{ris} - u_{f}}$
+
+\textbf{Werte in 1.8bar Tafel, da wir immer noch in Wasserdampf sind und $p_{1} = p_{2}$, $T_{1} = T_{2}$}
+
+\[
+x_{2} = \frac{-186.4 + 0.045}{-333.859 + 0.045} = 0.555 = x_{2}
+\]
+
+``````latex
+
+

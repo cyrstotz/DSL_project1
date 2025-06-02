@@ -1,0 +1,33 @@
+The calculation for \( p_2 \) involves the formula:  
+\[
+p_2 = p_1 \cdot \left( \frac{T_2}{T_1} \right)^{\frac{n-1}{n}}
+\]  
+where \( n = \frac{c_p}{c_V} \), \( c_p = c_V + R/M \), and \( M = 50 \, \text{g/mol} \).  
+
+First, calculate \( c_p \):  
+\[
+c_p = 0.633 + \frac{8.314}{50} = 0.79928 \, \text{kJ/kg·K}
+\]  
+Thus, \( n = \frac{c_p}{c_V} = \frac{0.79928}{0.633} = 1.263 \).  
+
+Substituting \( p_1 = 4.11 \, \text{bar} \), \( T_1 = 773.15 \, \text{K} \), and \( T_2 = 273.15 \, \text{K} \):  
+\[
+p_2 = 4.11 \cdot \left( \frac{273.15}{773.15} \right)^{\frac{1.263-1}{1.263}} = 0.3979 \, \text{bar}
+\]  
+Converting to Pa:  
+\[
+p_2 = 0.3979 \cdot 10^5 = 39790 \, \text{Pa} = 3.97 \times 10^{-3} \, \text{bar}
+\]
+
+The heat \( Q_{12} \) is calculated using the formula:  
+\[
+Q_{12} = W_{12} = \int_{1}^{2} p \, dV = \frac{R(T_2 - T_1)}{1 - n}
+\]  
+Substituting the values:  
+\[
+Q_{12} = \frac{8.314 \cdot (773.15 - 273.15)}{1 - 1.263} \cdot 10^{-3}
+\]  
+After performing the calculation:  
+\[
+Q_{12} = -15806.1 \, \text{J} = -1580.6 \, \text{J}
+\]

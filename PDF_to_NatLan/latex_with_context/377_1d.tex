@@ -1,0 +1,47 @@
+The energy balance for the system is written as:  
+\[
+M_2 U_2 - M_1 U_1 = \Delta M \, h_{\text{ein}} + Q - W
+\]  
+where \( h_{\text{ein}} = h_f(20^\circ\text{C}) = 83.36 \, \text{kJ/kg} \), and \( Q = Q_{\text{aus}} = 35 \, \text{MJ} \).  
+
+The mass \( M_1 \) is given as \( M_1 = m_{\text{ges}} = 5755 \, \text{kg} \), and \( M_2 = m_{\text{ges}} + \Delta M \).  
+
+Rewriting the energy balance:  
+\[
+m_2 U_2 - m_1 U_1 = \Delta M \, h_{\text{ein}} + (-Q_{\text{aus}})
+\]  
+\[
+m_1 U_2 + \Delta m U_2 - m_1 U_1 = \Delta m h_{\text{ein}} + (-Q_{\text{aus}})
+\]  
+\[
+\Delta m (U_2 - h_{\text{ein}}) = m_1 U_1 + (-Q_{\text{aus}})
+\]  
+
+Solving for \( \Delta m \):  
+\[
+\Delta m = \frac{m_1 U_1 + Q}{U_2 - h_{\text{ein}}}
+\]  
+
+The internal energy values are calculated using water tables:  
+\[
+U_a = U_f(100^\circ\text{C}) + x \cdot (U_g(100^\circ\text{C}) - U_f(100^\circ\text{C}))
+\]  
+where \( x = 0.005 \). Substituting:  
+\[
+U_a = 418.94 + 0.005 \cdot (2086.94 - 418.94) = 418.94 \, \text{kJ/kg}
+\]  
+
+For \( U_2 \):  
+\[
+U_2 = U_f(70^\circ\text{C}) = 292.35 \, \text{kJ/kg}
+\]  
+
+Substituting values:  
+\[
+\Delta m = \frac{5755 \cdot 418.94 \, \text{kJ/kg} - 35 \cdot 10^3 \, \text{kJ}}{292.35 - 83.36}
+\]  
+\[
+\Delta m = 11368.9 \, \text{kg}
+\]  
+
+---

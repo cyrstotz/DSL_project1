@@ -1,0 +1,39 @@
+The efficiency epsilon_k is given by the ratio of the heat input rate to the work rate, which is also equal to the ratio of the heat input rate to the sum of the heat output rate and the heat input rate:
+
+\[
+\varepsilon_k = \frac{\dot{Q}_{zu}}{\dot{W}_k} = \frac{\dot{Q}_{zu}}{\dot{Q}_{ab} + \dot{Q}_{zu}}
+\]
+
+1 hour at the evaporator:
+
+\[
+0 = \dot{m} \left[ h_4 - h_2 \right] + \dot{Q}_k
+\]
+
+This implies:
+
+\[
+\dot{Q}_k = \dot{m} \left[ h_4 - h_2 \right] = \dot{m} R134a \left[ h_4 - h_2 \right]
+\]
+
+From Table A10 at temperature T_2 equals negative 22 degrees Celsius:
+
+\[
+h_2 - h_f = 21.12 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+h_4 = 29.30 \frac{\text{kJ}}{\text{kg}}
+\]
+
+This leads to:
+
+\[
+\dot{Q}_k = \dot{m} \frac{h_{fg}}{h_{fg}} \left( 21.12 \frac{\text{kJ}}{\text{kg}} - 29.30 \frac{\text{kJ}}{\text{kg}} \right) = 8.36 \frac{\text{kJ}}{\text{kg}}
+\]
+
+Finally, the efficiency epsilon_k is calculated as:
+
+\[
+\varepsilon_k = \frac{\dot{Q}_{zu}}{\dot{W}_k} = \frac{0.00837 \frac{\text{kJ}}{\text{s}}}{0.078 \frac{\text{kJ}}{\text{s}}} = 0.259
+\]

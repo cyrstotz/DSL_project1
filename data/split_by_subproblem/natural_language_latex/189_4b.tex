@@ -1,0 +1,33 @@
+Energy balance at the compressor:
+
+- Steady flow process
+
+The energy rate equation is given by:
+Energy rate equals the mass flow rate of R134a times the difference in enthalpy between state 2 and state 3 plus the power of the compressor.
+
+The mass flow rate of R134a can be calculated as:
+Mass flow rate of R134a equals the power of the compressor divided by the difference in enthalpy between state 3 and state 2.
+
+For enthalpy at state 2:
+The temperature at state 2 is 26 degrees Celsius.
+
+The enthalpy at state 2 is equal to the enthalpy of gas at negative 26 degrees Celsius, which is 231.62 kilojoules per kilogram, as found in Table A-10 at negative 26 degrees Celsius.
+
+For enthalpy at state 3:
+Assuming an isentropic process, the entropy at state 3 equals the entropy at state 2, which is the entropy of gas at negative 26 degrees Celsius, 0.9390, as found in Table A-12 at 26 degrees Celsius.
+
+Interpolate enthalpy at state 3 from Table A-12 using entropy at state 3:
+For entropy at state 3 equals 0.9390, the enthalpy of gas is 273.66 kilojoules per kilogram and the enthalpy of fluid is 284.30 kilojoules per kilogram.
+
+The enthalpy at state 3 is calculated as 273.61 plus the ratio of the difference in enthalpy of fluid and gas over the difference in entropy, multiplied by the difference in entropy from 0.9390 to 0.9374, resulting in 274.17 kilojoules per kilogram.
+
+The mass flow rate of R134a is then calculated as 0.000648 kilojoules per second divided by the difference in enthalpy between state 3 and state 2, which equals 0.00214 kilograms per second.
+
+Additional notes:
+- Adiabatic throttling implies internal energy at state i equals internal energy at state 1.
+- Isobaric condensation implies the pressure at state 4 equals the pressure at state 3, which is 8 bar.
+- Additional information states that internal energy at state 2 equals internal energy at state 3 equals the internal energy of steam, which is 0.025 kilojoules per kilogram.
+
+A small sketch of a process diagram is present.
+
+The exergy efficiency is calculated as the ratio of the heat removed to the heat added, which equals the sum of the work of the compressor and the heat of the compressor over the heat removed.

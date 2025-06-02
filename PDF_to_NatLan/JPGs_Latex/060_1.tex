@@ -1,0 +1,62 @@
+TASK 1c  
+Entropy balance:  
+\[
+0 = \dot{m} \cdot s_{2} - s_{1} + \sum \frac{\dot{Q}_{j}}{T_{j}}
+\]
+\[
+\Rightarrow -s_{\text{gen}} = \frac{83.96}{295} = 0.33880 \, \text{kW/K} = 0.3388 \, \text{kW/K}
+\]
+
+---
+
+TASK 1d  
+Energy balance:  
+\[
+\text{Initial conditions:} \quad T_{\text{in,12}} = 20^\circ\text{C}, \quad T_{\text{Reactor}} = 70^\circ\text{C}, \quad Q_R = 35 \, \text{MJ}
+\]
+
+\[
+\frac{dE}{dt} = \dot{m}_{12} \cdot [h_{m2}] + Q_R = E_{100^\circ\text{C}} - E_{70^\circ\text{C}} = m \cdot (u_{100} - u_{70})
+\]
+
+\[
+E_{100^\circ\text{C}} = U_{100} + PE + KE = U_{100} \quad \text{and} \quad E_{70^\circ\text{C}} = U_{70} = m \cdot u_{70}
+\]
+
+\[
+\dot{m}_{12} \cdot [h_{m2}] + Q_R = 5755 \cdot \left( \frac{1.337 - 0.889}{1} \right) = 26004.1 \cdot 10^3
+\]
+
+Using entropy values from tables:  
+\[
+s_{100} = 1.3069 + 0.005 \cdot (2.348 - 1.3069) = 2.337414 \quad \text{(Table A2)}
+\]
+\[
+s_{70} = 0.5545 + 0.005 \cdot (7.7553 - 0.5545) = 0.58082
+\]
+
+Further calculations:  
+\[
+\dot{m}_{12} = \frac{Q_R - 26004.1 \cdot 10^3}{83.96 \cdot 10^3} = 4680 \, \text{kg}
+\]
+
+---
+
+TASK 1e  
+Entropy change:  
+\[
+s_{100} = 418.21 + 0.005 \cdot (706 - 418.21) = 423.30
+\]
+\[
+s_{70} = 252.35 + (246.56 - 252.35) \cdot 0.005 = 30.35
+\]
+
+Energy balance:  
+\[
+\dot{m}_{12} \cdot [h_{m2}] + Q_R = 5755 \cdot (423.3 - 703.8) = 7724.41
+\]
+
+Final mass calculation:  
+\[
+\dot{m}_{12} = \frac{81 \cdot 10^3}{83.96 \cdot 10^3} = 8000 \, \text{kg}
+\]

@@ -1,0 +1,38 @@
+The outlet velocity (\( w_6 \)) and temperature (\( T_6 \)) are calculated.  
+
+Given:  
+\[
+T_5 = 431.9 \, \text{K}, \, p_5 = 0.5 \, \text{bar}, \, w_5 = 220 \, \text{m/s}, \, p_6 = p_0 = 0.191 \, \text{bar}.
+\]  
+
+The polytropic relation is used to find \( T_6 \):  
+\[
+n = \kappa = 1.4, \quad \frac{T_2}{T_1} = \left( \frac{p_2}{p_1} \right)^{\frac{n-1}{n}}.
+\]  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}} \quad \Rightarrow \quad T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}}.
+\]  
+Substituting values:  
+\[
+T_6 = 431.9 \cdot \left( \frac{0.191}{0.5} \right)^{\frac{1.4-1}{1.4}} = 328.07 \, \text{K}.
+\]  
+
+The energy balance is applied to find \( w_6 \):  
+\[
+0 = \dot{m} \left[ h_6 - h_5 + \frac{w_6^2}{2} - \frac{w_5^2}{2} \right].
+\]  
+Rearranging:  
+\[
+w_6 = \sqrt{w_5^2 + 2 \cdot (h_5 - h_6)}.
+\]  
+
+Using enthalpy values from tables:  
+\[
+h_5 = A-21(431.9 \, \text{K}) = 433.64 \, \frac{\text{kJ}}{\text{kg}}, \quad h_6 = A-21(328.07 \, \text{K}) = 328.42 \, \frac{\text{kJ}}{\text{kg}}.
+\]  
+Substituting:  
+\[
+w_6 = \sqrt{220^2 + 2 \cdot (433.64 - 328.42)}.
+\]  
+
+Final calculation for \( w_6 \) is left incomplete on the page.

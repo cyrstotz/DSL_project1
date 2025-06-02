@@ -1,0 +1,62 @@
+TASK 2a  
+The process is illustrated in a \( T \)-\( s \) diagram. The diagram includes labeled isobars and states (0, 1, 2, 3, 4, 5, 6). The following details are provided:  
+- \( p_z = 0.5 \, \text{bar} \)  
+- \( p_0 = 0.191 \, \text{bar} \)  
+- \( T_5 = 431.9 \, \text{K} \)  
+- \( T_0 = 243.15 \, \text{K} \)  
+- \( s_1 = s_2 \), \( s_3 = s_4 \), \( p_1 = p_4 = p_5 \), \( p_6 = p_0 \), \( s_5 = s_6 \).  
+
+The diagram shows the thermodynamic process with transitions between states, including compression, combustion, and expansion phases.  
+
+---
+
+TASK 2b  
+The temperature \( T_6 \) is calculated using the isentropic relation:  
+\[
+T_6 = T_5 \left( \frac{p_0}{p_5} \right)^{\frac{\kappa - 1}{\kappa}} \approx 378.07 \, \text{K}.
+\]  
+
+An energy balance for the nozzle is applied:  
+\[
+\dot{m}_{\text{GES}} \left( c_{p,\text{LUFT}} (T_5 - T_6) + \frac{w_5^2 - w_6^2}{2} \right) = 0.
+\]  
+
+The outlet velocity \( w_6 \) is determined:  
+\[
+w_6 = \sqrt{2 c_{p,\text{LUFT}} (T_5 - T_6) + w_5^2} \approx 507.25 \, \text{m/s}.
+\]  
+
+---
+
+TASK 2c  
+The mass-specific increase in flow exergy \( \Delta ex_{\text{STR}} \) is calculated as:  
+\[
+\Delta ex_{\text{STR}} = ex_{\text{STR},6} - ex_{\text{STR},0}.
+\]  
+
+Using the relation:  
+\[
+ex_{\text{STR}} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2 - w_0^2}{2},
+\]  
+and substituting values:  
+\[
+ex_{\text{STR}} = c_{p,\text{LUFT}} (T_6 - T_0) - T_0 c_{p,\text{LUFT}} \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) + \frac{w_6^2 - w_0^2}{2}.
+\]  
+
+The result is approximately:  
+\[
+\Delta ex_{\text{STR}} \approx 112.21 \, \text{kJ/kg}.
+\]  
+
+---
+
+TASK 2d  
+An exergy balance is applied:  
+\[
+\dot{Q} = 0, \quad \dot{W} = 0.
+\]  
+
+The exergy destruction \( \Delta ex_{\text{STR}} \) is expressed as:  
+\[
+\Delta ex_{\text{STR}} = ex_{\text{VERL}}.
+\]  

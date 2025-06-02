@@ -1,0 +1,37 @@
+TASK 2a  
+The task involves drawing a \( T \)-\( s \) diagram for the jet engine process.  
+
+### Diagram Description:  
+The diagram is a \( T \)-\( s \) plot with temperature (\( T \)) on the vertical axis (in Kelvin) and entropy (\( s \)) on the horizontal axis (in \( \text{kJ}/\text{kg·K} \)).  
+- The process begins at state \( 0 \) (ambient conditions) and progresses through states \( 1 \), \( 2 \), \( 3 \), \( 4 \), \( 5 \), and \( 6 \).  
+- The curve labeled \( p_2 = p_1 \) represents an isobaric process.  
+- State \( 0 \) is at ambient pressure (\( p_0 \)).  
+- State \( 1 \) is connected to state \( 2 \) via an adiabatic compression process.  
+- State \( 3 \) is at a higher temperature and entropy, representing combustion.  
+- States \( 4 \) and \( 5 \) follow an adiabatic expansion process in the turbine.  
+- State \( 6 \) is the nozzle exit, where the pressure equals \( p_0 \).  
+
+### Table of States:  
+A table is provided summarizing the states with pressure (\( p \)), temperature (\( T \)), entropy (\( s \)), and enthalpy (\( h \)):  
+\[
+\begin{array}{|c|c|c|c|c|}
+\hline
+\text{State (z)} & p \, [\text{bar}] & T \, [\text{K}] & s \, [\text{kJ}/\text{kg·K}] & h \, [\text{kJ}/\text{kg}] \\
+\hline
+1 & 0.5 & - & - & - \\
+2 & - & - & s_2 = s_1 & - \\
+3 & - & - & - & - \\
+4 & 0.5 & - & - & - \\
+5 & 0.5 & 431.9 & - & - \\
+6 & 0.191 & 328.075 & s_6 = s_5 & - \\
+0 & 0.191 & - & - & - \\
+\hline
+\end{array}
+\]
+
+### Additional Notes:  
+- The gas is modeled as ideal, and the process is assumed to be isentropic with \( \kappa = 1.4 \).  
+- The temperature at state \( 6 \) is calculated using the formula:  
+\[
+T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]

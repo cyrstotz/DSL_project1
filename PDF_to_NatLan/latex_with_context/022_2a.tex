@@ -1,0 +1,42 @@
+The process is represented qualitatively in a temperature-entropy (\(T\)-\(s\)) diagram. The diagram includes labeled isobars and key states (0, 1, 2, 3, 4, 5, 6). The axes are marked as follows:  
+- The vertical axis is labeled \(T [K]\), representing temperature in Kelvin.  
+- The horizontal axis is labeled \(s [\text{kJ}/\text{kg·K}]\), representing entropy in kilojoules per kilogram per Kelvin.  
+
+The diagram shows a series of curves and lines connecting the states, with arrows indicating the direction of the process. The isobars are clearly drawn as dashed lines, and the transitions between states are highlighted.
+
+The entropy difference between states 5 and 6 is calculated using the following formula:  
+\[
+s_6 - s_5 = s^0(T_6) - s^0(T_5) - R \ln\left(\frac{p_6}{p_5}\right)
+\]  
+where:  
+- \( s^0(T) \) is the standard entropy at temperature \( T \),  
+- \( R = c_p - c_v = 0.2874 \, \text{kJ/kg·K} \),  
+- \( c_p = 1.006 \, \text{kJ/kg·K} \),  
+- \( c_v = 0.7186 \, \text{kJ/kg·K} \).  
+
+The standard entropy values are interpolated from Table A-22:  
+\[
+s^0(T_5) = s^0(431.9 \, \text{K}) = 1.79331 \, \text{kJ/kg·K}
+\]  
+\[
+s^0(T_6) = s^0(336.9 \, \text{K}) = \text{interpolated value from A-22}
+\]  
+
+Interpolation is performed as follows:  
+\[
+T_6 = 340 - 330 \quad \text{(temperature range for interpolation)}
+\]  
+\[
+s^0(T_6) = \left(\frac{1.79327 - 1.78249}{340 - 330}\right) \cdot (336.9 - 330) + 1.78249
+\]  
+\[
+s^0(T_6) = 1.78249 + \text{interpolated increment} = 1.78249 + 0.01084 = 1.79333 \, \text{kJ/kg·K}
+\]  
+
+Substituting into the entropy difference formula:  
+\[
+s_6 - s_5 = 1.79333 - 1.79331 - 0.2874 \ln\left(\frac{0.5}{0.191}\right)
+\]  
+\[
+s_6 - s_5 = -0.00002 - 0.2874 \cdot 0.916 = -0.2633 \, \text{kJ/kg·K}
+\]

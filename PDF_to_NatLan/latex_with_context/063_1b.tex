@@ -1,0 +1,38 @@
+The thermodynamic mean temperature of the coolant is calculated using the following relation:  
+
+\[
+T_{\text{KF}} = \frac{-\int_{T_2}^{T_1} T \, dS}{S_2 - S_1} = \frac{h_{\text{a}} - h_{\text{e}}}{S_{\text{a}} - S_{\text{e}}}
+\]  
+
+The entropy integral is given as:  
+
+\[
+\int_{T_2}^{T_1} T \, dS = q
+\]  
+
+Using the first law of thermodynamics:  
+
+\[
+q = h_{\text{a}} - h_{\text{e}}
+\]  
+
+Substituting values:  
+
+\[
+T_{\text{KF}} = c \cdot \ln \left( \frac{T_{\text{a}}}{T_{\text{e}}} \right)
+\]  
+
+Numerical calculation:  
+
+\[
+T_{\text{KF}} = \frac{298.15 \, \text{K} - 288.15 \, \text{K}}{\ln \left( \frac{298.15 \, \text{K}}{288.15 \, \text{K}} \right)}
+\]  
+
+\[
+T_{\text{KF}} = 293.72 \, \text{K}
+\]  
+
+---
+
+**Description of Diagram:**  
+The diagram shows a rectangular reactor with inlet and outlet streams labeled at \( 70^\circ\text{C} \) and \( 100^\circ\text{C} \), respectively. Heat flow \( Q_{\text{out}} \) is depicted as exiting the reactor through the cooling jacket, with coolant temperatures labeled as \( 288.15 \, \text{K} \) (inlet) and \( 298.15 \, \text{K} \) (outlet).

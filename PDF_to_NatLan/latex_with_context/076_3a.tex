@@ -1,0 +1,35 @@
+To determine the gas pressure \( p_{g,1} \) and mass \( m_g \) in state 1, the following calculations are performed:
+
+1. **Given constants and equations**:  
+   - \( c_V, \text{gas} = 0.633 \, \frac{\text{kJ}}{\text{kg·K}} \)  
+   - \( M_g = 50 \, \frac{\text{kg}}{\text{kmol}} \)  
+   - \( R_g = \frac{8.314}{M_g} = 0.16628 \, \frac{\text{kJ}}{\text{kg·K}} \)  
+
+2. **Temperature and volume**:  
+   - \( T_{g,1} = 500^\circ\text{C} = 773.15 \, \text{K} \)  
+   - \( V_{g,1} = 3.14 \, \text{L} = 3.14 \times 10^{-3} \, \text{m}^3 \)  
+
+3. **Cross-sectional area of the cylinder**:  
+   - \( A_K = \pi \left(\frac{D}{2}\right)^2 = \pi \left(\frac{0.1}{2}\right)^2 = 0.00785 \, \text{m}^2 \)  
+
+4. **Gas pressure calculation**:  
+   The gas pressure \( p_g \) is calculated using:  
+   \[
+   p_g = p_{\text{amb}} + m_K \cdot g \cdot \frac{1}{A_K} + m_{\text{EW}} \cdot g \cdot \frac{1}{A_K}
+   \]  
+   Substituting values:  
+   \[
+   p_{g,1} = 1 \, \text{bar} + \frac{g \cdot (32 + 0.1)}{A_K} = 1.4 \, \text{bar}
+   \]  
+
+5. **Gas mass calculation**:  
+   Using the ideal gas law \( \rho \cdot V = m \cdot R \cdot T \):  
+   \[
+   m = \frac{p_g \cdot V}{R_g \cdot T}
+   \]  
+   Substituting values:  
+   \[
+   m = \frac{1.4 \, \text{bar} \cdot 3.14 \times 10^{-3} \, \text{m}^3}{0.16628 \, \frac{\text{kJ}}{\text{kg·K}} \cdot 773.15 \, \text{K}} = 3.47 \, \text{g}
+   \]  
+
+---

@@ -1,0 +1,82 @@
+TASK 1a  
+The energy balance equation is written as:  
+\[
+0 = \dot{m}(h) + \dot{Q} - \dot{W} \quad \text{(steady-state, isothermal)}
+\]  
+The heat flow is expressed as:  
+\[
+\dot{Q} = -\dot{m}(h_{\text{in}} - h_{\text{out}})
+\]  
+For the specific case:  
+\[
+\dot{Q} = \dot{m} c_p (T_{\text{in}} - T_{\text{out}})
+\]  
+Alternatively:  
+\[
+\dot{Q} = \dot{m} \cdot (T_{\text{tables, out}} - T_{\text{tables, in}})
+\]  
+
+Using the given values:  
+\[
+\dot{Q} = \dot{m}(h_{\text{in}} - h_{\text{out}}) = 14.82 \, \text{kW}
+\]  
+From the water tables (Table A-2):  
+\[
+h_{\text{in}} = h_g(T = 70^\circ\text{C}) = 2626.8 \, \text{kJ/kg}
+\]  
+\[
+h_{\text{out}} = h_g(T = 100^\circ\text{C}) = 2676.2 \, \text{kJ/kg}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant is calculated as:  
+\[
+T_{\text{KF}} = \frac{T_2 - T_1}{\ln\left(\frac{T_2}{T_1}\right)} = 156.28 \, \text{K}
+\]  
+
+The heat flow equation is expanded:  
+\[
+Q_{\text{aus}} = Q_R + Q_K = 100 - 14.82 = 85.18 \, \text{kW}
+\]  
+
+TASK 1c  
+The entropy production rate is given by:  
+\[
+\dot{S}_{\text{gen}} = -\dot{m}(s_2 - s_1) - \frac{\dot{Q}_R}{T} + \frac{\dot{Q}_{\text{aus}}}{T}
+\]  
+Substituting values:  
+\[
+s_1 = 7.7553 \, \text{kJ/kg·K}, \quad s_2 = 7.3549 \, \text{kJ/kg·K}
+\]  
+\[
+\dot{S}_{\text{gen}} = -0.238 \, \text{kW/K}
+\]  
+
+TASK 1d  
+The energy balance for cooling is written as:  
+\[
+\Delta E = \dot{m}(h) + \dot{Q} - \dot{W}
+\]  
+The mass balance is expressed as:  
+\[
+M_2 = M_1 + \Delta m_{12}
+\]  
+The energy equation is expanded:  
+\[
+M_2 U_2 - M_1 U_1 = \Delta m_{12}(h_{\text{in}}) + \dot{Q}
+\]  
+Substituting values:  
+\[
+U_2 = U_g(70^\circ\text{C}) = 2469.6 \, \text{kJ/kg}, \quad U_1 = 2402.9 \, \text{kJ/kg}
+\]  
+\[
+h_{\text{in}} = 2538.1 \, \text{kJ/kg}, \quad \dot{Q} = 35 \, \text{MJ}
+\]  
+The mass change is calculated as:  
+\[
+\Delta m_{12} = \frac{M_1(C_{u2} - U_1) - \dot{Q}}{h_{\text{in}} - U_2}
+\]  
+Result:  
+\[
+\Delta m_{12} = 5092.8 \, \text{kg}
+\]

@@ -1,0 +1,23 @@
+\( \dot{m}_{in} - \dot{m}_{out} = 0 \)  
+\( m_{total} = 5755 \, \text{kg} \)  
+\( T_{Reactor,1} = 100^\circ \text{C} \)  
+\( x_D = 0.005 \)  
+\( T_{in,12} = 20^\circ \text{C} \)  
+\( x_{D,2} = 0 \)  
+
+The system starts with a mass containing 0.005 steam as vapor and the rest as boiling liquid at 100°C.  
+
+Energy balance for the stationary system:  
+\( \dot{E} = \frac{d}{dt} (\text{KE}) + \frac{d}{dt} (\text{PE}) + \frac{d}{dt} (\text{U}) = \dot{Q} - \dot{W} \)  
+=> \( \dot{u} = \dot{Q} \)  
+
+Internal energies are taken from A-2:  
+\( u_{Dampf}(100^\circ \text{C}) = 2506.5 \, \text{kJ/kg} \)  
+\( u_{Flüssig}(100^\circ \text{C}) = 419.08 \, \text{kJ/kg} \)  
+\( u_{Flüssig}(70^\circ \text{C}) = 293.75 \, \text{kJ/kg} \)  
+
+=>  
+\( \Delta m_{12} = \frac{Q_{12} - m_{total} \cdot u_{Flüssig}(70^\circ \text{C}) - m_{total} \cdot (x_D \cdot u_{Dampf}(100^\circ \text{C}) + (1 - x_D) \cdot u_{Flüssig}(100^\circ \text{C}))}{u_{Flüssig}(70^\circ \text{C})} \)  
+
+=>  
+\( \Delta m_{12} \approx 2794.6 \, \text{kg} \)

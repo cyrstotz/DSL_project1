@@ -1,0 +1,55 @@
+TASK 1a  
+The energy balance equation for the reactor is written as:  
+\[
+0 = \dot{m}_{\text{in}} h_{\text{ein}} - \dot{m}_{\text{aus}} h_{\text{aus}} + \dot{Q} - \dot{W} + \dot{Q}_R
+\]  
+From Table A-2:  
+\[
+h_{\text{ein}} = h_f(70^\circ\text{C}) = 282.38 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_{\text{aus}} = h_f(100^\circ\text{C}) = 419.04 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+The heat flow removed by the coolant is calculated as:  
+\[
+\dot{Q}_{\text{aus}} = \dot{m}_{\text{aus}} h_{\text{aus}} - \dot{m}_{\text{ein}} h_{\text{ein}} - \dot{Q}_R
+\]  
+Substituting values:  
+\[
+\dot{Q}_{\text{aus}} = \dot{m}_{\text{in}} (h_{\text{aus}} - h_{\text{ein}}) - \dot{Q}_R
+\]  
+\[
+\dot{Q}_{\text{aus}} = -62.18 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant is determined using the entropy balance:  
+\[
+\bar{T} = \frac{\int S \, \text{d}S}{S_a - S_e}
+\]  
+From the enthalpy relation:  
+\[
+\text{d}H = T \, \text{d}S + V \, \text{d}p
+\]  
+For an isobaric process (\( \text{d}p = 0 \)):  
+\[
+\bar{T} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)}
+\]  
+Substituting values:  
+\[
+\bar{T} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)} = 283.12 \, \text{K}
+\]  
+
+TASK 1c  
+The entropy production is calculated using the entropy balance:  
+\[
+0 = \frac{\dot{Q}_{\text{aus}}}{T_{\text{Reactor}}} - \frac{\dot{Q}_{\text{aus}}}{\bar{T}} + \dot{S}_{\text{gen}}
+\]  
+Rearranging:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{aus}}}{\bar{T}} - \frac{\dot{Q}_{\text{aus}}}{T_{\text{Reactor}}}
+\]  
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = 0.045 \, \frac{\text{kW}}{\text{K}}
+\]

@@ -1,0 +1,28 @@
+The mass flow rate of R134a (\( \dot{m}_{R134a} \)) is queried.  
+
+State (2-3): The process is described as isentropic because it is reversible and adiabatic.  
+
+The equation for energy balance is written:  
+\( \dot{m}_{R134a} \cdot (h_e - h_a) + \sum_i \dot{Q}_j - \sum_n \dot{W}_j = 0 \).  
+It is noted that "Der Prozess ist stationär" (The process is stationary).  
+
+Additional notes:  
+- Energy balance at the throttle (isentropic).  
+- \( \dot{m}(0) = 0 \).  
+- Energy balance during compression:  
+  \( \dot{m} \cdot (h_2 - h_3) = 28 \, \text{W} \).
+
+Mass flow rate \( \dot{m} \) is calculated as:  
+\( \dot{m} = \frac{28 \, \text{W}}{h_2 - h_3} \)  
+
+At \( x_2 = 1 \), the refrigerant is fully vaporized (saturated vapor).  
+
+What is \( T_i \)?  
+- 5 mbar below the triple point and 10 K above sublimation.  
+- \( p = 1 \, \text{mbar} \) and \( T_i = -10^\circ \text{C} = 263 \, \text{K} \).  
+- Evaporator temperature \( T_{\text{Verdampfer}} = 257 \, \text{K} \).  
+
+Enthalpy values:  
+\( h_2 = h_{2g} \)  
+\( h_3 = h_{3,f} \) (fully compressed at 8 bar).  
+From the table: \( h_{3,f} = h_3 = 93.42 \, \text{kJ/kg} \) (Table A-11).

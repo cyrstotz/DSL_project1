@@ -1,0 +1,73 @@
+
+``````latex
+
+
+\section*{Teil 1 Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph Description:] The graph is a plot with the vertical axis labeled \( T \) (temperature) and the horizontal axis labeled \( s \) (entropy). The graph consists of a closed loop with four distinct points labeled 1, 2, 3, and 4. The path from point 1 to point 2 is labeled "isobar", the path from point 2 to point 3 is labeled "isotherm", the path from point 3 to point 4 is labeled "isobar", and the path from point 4 to point 1 is labeled "isotherm". There is an additional point labeled 6 connected to point 4 by a vertical line. The path from point 4 to point 6 is labeled "expander". The path from point 6 to point 1 is labeled "isotherm". The graph also includes arrows indicating the direction of the process along the paths.
+\end{description}
+
+\subsection*{b)}
+
+\begin{align*}
+    &\text{Für } T_0: \\
+    &\text{Prozess 1-6: Energiegleichung} \\
+    &\frac{dE}{dt} = \dot{m} (h_1 - h_6) + \frac{\dot{m} (u_1^2 - u_6^2)}{2} \\
+    &\text{Potential} \quad \text{entfällt} = \text{konstant} \\
+    &T_0 = T_6 \quad \frac{K_E}{\dot{m}} = \frac{u_1^2}{2} \\
+    &T_0 = 75 \left( \frac{P_1}{P_6} \right)^{\frac{R}{c_p}} = 7.97 \cdot 10^1 \\
+    &\frac{0.75 \cdot 10^3}{0.56} = 3.2 \cdot 10^3 + 0.5 \cdot K = T_6 \\
+    &h_1 - h_6 = \frac{u_1^2 - u_6^2}{2} \\
+    &u_6 = \sqrt{2 \left( h_1 - h_6 \right) + u_1^2 - 2u_6} \\
+    &u_6 = \sqrt{2 \cdot c_p (T_1 - T_6) + \left( \frac{u_1^2}{2} \right)} \\
+    &u_6 = \sqrt{2 \cdot 1005 \frac{J}{kg \cdot K} \left( 7.31 \cdot 10^2 - 3.2 \cdot 0.75 \cdot 10^3 K \right) + \left( 2 \cdot 0.5 \cdot 10^3 \frac{J}{kg} \right)} \\
+    &u_6 = 3.2 \cdot 7.829 \frac{m}{s} = u_6
+\end{align*}
+
+\begin{align*}
+    &R = \frac{c_p (T_1 - T_6)}{u_1 - u_6} \\
+    &K = c_p \cdot v = \frac{c_p}{R} \\
+    &u = 0.2 \cdot 7.4 \cdot \frac{(3.2 \cdot 0.75 \cdot 10^3 - 7.1 \cdot 10^2)}{2} \\
+    &u = 7.1 \cdot 0.6 \cdot \frac{(7.1 \cdot 10^2 - 3.2 \cdot 0.75 \cdot 10^3)}{2} \\
+    &u = 7.1 \cdot 0.6 \cdot \frac{(7.1 \cdot 10^2 - 3.2 \cdot 0.75 \cdot 10^3)}{2} \\
+    &u = 7.1 \cdot 0.6 \cdot \frac{(7.1 \cd```latex
+
+
+\begin{equation*}
+a) \quad \dot{H}_2 - \dot{H}_1 = T_0 \left( \dot{S}_2 - \dot{S}_1 \right) + \frac{\dot{m} v_2^2}{2} - \frac{\dot{m} v_1^2}{2} + \dot{Q} \left( T_0 - T_s \right) - \int \left( \dot{Q} \frac{T_0}{T_s} \right) - R \left( \frac{\dot{m} p_2}{\rho_2} - \frac{\dot{m} p_1}{\rho_1} \right) = \dot{m} c_p \left( T_2 - T_1 \right)
+\end{equation*}
+
+\begin{equation*}
+= 7.005 \left( 1.5 \ln \left( \frac{3.2 \cdot 10^5}{2.9 \cdot 10^5} \right) - 2.9 \cdot 10^5 \ln \left( \frac{3.2 \cdot 10^5}{2.9 \cdot 10^5} \right) \right) + \frac{3.2 \cdot 10^5}{2} \left( \frac{2.0 c_p}{2} \right)
+\end{equation*}
+
+\begin{equation*}
+= 96,200 + \frac{96,200}{2}
+\end{equation*}
+
+\begin{equation*}
+= \frac{c_p \dot{m}}{T_0} \left( \dot{H}_2 - \dot{H}_1 \right) + \frac{v_2^2}{2} - \frac{v_1^2}{2} + \dot{Q} \left( T_0 - T_s \right) - \int \left( \dot{Q} \frac{T_0}{T_s} \right) - R \left( \frac{\dot{m} p_2}{\rho_2} - \frac{\dot{m} p_1}{\rho_1} \right)
+\end{equation*}
+
+\begin{equation*}
+b) \quad \frac{d}{dt} \left( \dot{m} \dot{H}_2 \right) = \dot{m} \left( \frac{dH_2}{dt} \right) + \dot{m} \left( \frac{dH_1}{dt} \right) = \dot{m} \left( \frac{dH_2}{dt} \right) - R \left( \frac{\dot{m} p_2}{\rho_2} \right)
+\end{equation*}
+
+\begin{equation*}
+= \dot{m} c_p \left( T_2 - T_1 \right) \ln \left( \frac{2.9 \cdot 10^5}{2.9 \cdot 10^5} \right) = 7.005 \frac{2.9 \cdot 10^5}{2.9 \cdot 10^5} \ln \left( \frac{2.9 \cdot 10^5}{2.9 \cdot 10^5} \right)
+\end{equation*}
+
+\begin{equation*}
+= 7.005 \frac{2.9 \cdot 10^5}{2.9 \cdot 10^5} \ln \left( \frac{2.9 \cdot 10^5}{2.9 \cdot 10^5} \right) = 0.3617 \frac{kJ}{kg}
+\end{equation*}
+
+\begin{equation*}
+\dot{Q}_{\text{rev}} = T_0 \dot{S}_{\text{rev}} = 7.005 \left( 1.5 \ln \left( \frac{3.2 \cdot 10^5}{2.9 \cdot 10^5} \right) \right) = 7.276 \frac{kJ}{kg}
+\end{equation*}
+
+\end```latex
+
+

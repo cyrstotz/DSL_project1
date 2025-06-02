@@ -1,0 +1,40 @@
+a) Steady-state flow process  
+Energy balance around the reactor  
+
+0 = mass flow rate times (enthalpy at the outlet minus enthalpy at the inlet) plus heat flow from the reaction plus heat flow out  
+
+\( h_e \): enthalpy at the outlet  
+\( h_a \): enthalpy at the inlet  
+
+From Table A-2:  
+\( h_e = h_p + x \times (h_g - h_p) \)  
+\( = 292.98 \, \text{kJ/kg} + 0.005 \times (2626 \, \text{kJ/kg} - 292.98 \, \text{kJ/kg}) \)  
+\( = 304.65 \, \text{kJ/kg} \)  
+
+\( h_a = h_p + x \times (h_g - h_p) \)  
+\( = 419.17 \, \text{kJ/kg} + 0.005 \times (2626 \, \text{kJ/kg} - 419.17 \, \text{kJ/kg}) \)  
+\( = 430.33 \, \text{kJ/kg} \)  
+
+\( \dot{Q}_{out} = \dot{m}_{in} \times (h_e - h_a) + \dot{Q}_R \)  
+\( \dot{Q}_{out} = \dot{m}_{in} \times (h_a - h_e) - \dot{Q}_R \)  
+\( \dot{Q}_{out} = 0.3 \, \text{kg/s} \times (430.33 \, \text{kJ/kg} - 304.65 \, \text{kJ/kg}) - 100 \, \text{kW} \)  
+\( \dot{Q}_{out} = 62.5 \, \text{kW} \)  
+
+Verification:  
+\( \dot{Q}_{out} = 62.5 \, \text{kW} \)
+
+ΔS₁₂ = m₂s₂ - m₁s₁  
+
+m₁ = 5755 kilograms  
+m₂ = m₁ + Δm₁₂ = 9335 kilograms  
+
+=> TAG A₂  
+s₁ = s₀ + x (sᵥ - sₗ)  
+= 1.3069 kilojoules per kilogram Kelvin + 0.005 (2.3549 kilojoules per kilogram Kelvin - 1.3069 kilojoules per kilogram Kelvin)  
+= 1.337 kilojoules per kilogram Kelvin  
+
+s₂ = s₁ + x (sᵥ - sₗ)  
+= 0.9549 + 0.005 (2.7553 - 0.9549) kilojoules per kilogram Kelvin  
+= 0.9839 kilojoules per kilogram Kelvin  
+
+ΔS₁₂ = 9335 kilograms × 0.9839 kilojoules per kilogram Kelvin - 5755 kilograms × 1.337 kilojoules per kilogram Kelvin

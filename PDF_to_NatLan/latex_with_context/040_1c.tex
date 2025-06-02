@@ -1,0 +1,18 @@
+The entropy generation rate for the reactor is calculated using the following equation:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \left( s_{\text{out}} - s_{\text{in}} \right) + \frac{\dot{Q}_{\text{KF}}}{T_{\text{KF}}} + \frac{\dot{Q}_R}{T_R}
+\]  
+Where:  
+- \( s_{\text{out}} \) and \( s_{\text{in}} \) are the specific entropy values at the outlet and inlet, respectively.  
+- \( \dot{Q}_{\text{KF}} \) is the heat flow to the cooling jacket, and \( T_{\text{KF}} = 373.15 \, \text{K} \).  
+- \( \dot{Q}_R \) is the reaction heat flow, and \( T_R = 100^\circ\text{C} \).  
+
+The entropy values are obtained from the water tables:  
+\[
+s_{\text{out}} = 1.3069 \, \frac{\text{kJ}}{\text{kg·K}}, \quad s_{\text{in}} = 0.9509 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Substituting these values:  
+\[
+\dot{S}_{\text{gen}} = 26.9 \, \frac{\text{kW}}{\text{K}}
+\]

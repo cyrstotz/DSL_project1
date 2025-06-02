@@ -1,0 +1,57 @@
+The page contains calculations and expressions related to exergy and energy balances in a turbine system.  
+
+The exergy equation is written as:  
+\[
+O = \dot{W}_{\text{turbine}}
+\]  
+\[
+O = \dot{Q}_{\text{estr}} + \left(1 - \frac{T_0}{T_j}\right) \dot{Q}_j - \dot{W}_{\text{turbine}} - \text{Ex}_{\text{verlust}}
+\]  
+
+Further simplifications are shown:  
+\[
+\text{Ex}_{\text{verlust}} = \dot{Q}_{\text{estr}} - \dot{W}_{\text{turbine}}
+\]  
+\[
+= 100 \, \frac{\text{MJ}}{\text{kg}}
+\]  
+
+There is a note regarding the turbine:  
+"Logically, the adiabatic turbine is considered."  
+
+An energy balance for the turbine is expressed as:  
+\[
+\frac{\dot{W}_{\text{turbine}}}{\dot{m}} = \frac{(h_3 - h_4)}{c_V (T_3 - T_4)} + \dot{Q}_j
+\]  
+
+No diagrams or additional figures are present on this page.
+
+The change in flow exergy \( \Delta ex_{\text{flow}} \) is calculated as:  
+\[
+\Delta ex_{\text{flow}} = ex_6 - ex_0
+\]
+
+The detailed expression for \( ex_6 - ex_0 \) is:  
+\[
+(n_6 - e_0) - T_0 (s_6 - s_0) + p_0 \left( V_6 - V_0 \right)
+\]
+
+Breaking this down further:  
+\[
+= c_p (T_6 - T_0) - T_0 \, c_p \left( \frac{T_c}{T_1} \right) - R \ln \left( \frac{p_6}{p_0} \right) + p_0 (V_6 - V_0)
+\]
+
+Additional relationships are provided:  
+\[
+V_0 = \frac{R \, T}{p_0}, \quad V_6 = \frac{R \, T}{p_0}
+\]
+
+The gas constant \( R \) is expressed as:  
+\[
+R = c_p \left( 1 - \frac{1}{r_c} \right)
+\]
+
+The heat capacity ratio \( c_v \) is given as:  
+\[
+c_v = \frac{c_p}{r_c}
+\]

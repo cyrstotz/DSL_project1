@@ -1,0 +1,77 @@
+**Subtask a)**  
+The energy balance equation is written as:  
+\[
+E = \dot{m}_{\text{in}} (h_{\text{ein}} - h_{\text{aus}}) + \dot{Q}_{\text{aus}} + \dot{Q}_R
+\]  
+Using the enthalpy values from the water tables:  
+\[
+h_{\text{ein}} = h_f(70^\circ\text{C}) = 292.98 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_{\text{aus}} = h_f(100^\circ\text{C}) = 419.04 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+The heat flow removed by the coolant is calculated as:  
+\[
+\dot{Q}_{\text{aus}} = -62.782 \, \text{kW}
+\]  
+
+---
+
+**Subtask b)**  
+The thermodynamic mean temperature of the coolant is determined using the following equation:  
+\[
+T_{\text{KF}} = \frac{\int T_{\text{KF}} \, dS_{\text{KF}}}{\Delta S_{\text{KF}}}
+\]  
+After simplification, the result is:  
+\[
+T_{\text{KF}} = 293.72 \, \text{K}
+\]  
+
+---
+
+**Subtask c)**  
+The entropy production at the reactor wall is calculated using the entropy balance equation:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{aus}}}{T_{\text{KF}}}
+\]  
+Substituting the values:  
+\[
+\dot{S}_{\text{gen}} = \frac{-62.782 \, \text{kW}}{293.72 \, \text{K}} = -272.794 \, \frac{\text{W}}{\text{K}}
+\]  
+
+---
+
+**Subtask d)**  
+The energy balance for the cooling process from state 1 to state 2 is written as:  
+\[
+E = \dot{m}_2 (h_{\text{ein,2}} - h_{\text{aus,2}}) + \dot{Q}_{\text{out,12}} = 0
+\]  
+The mass added to the reactor is calculated as:  
+\[
+\Delta m_{12} = \frac{\dot{Q}_{\text{out,12}}}{h_{\text{ein,2}} - h_{\text{aus,2}}}
+\]  
+Using the enthalpy values:  
+\[
+h_{\text{ein,2}} = h_f(20^\circ\text{C}) = 83.96 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_{\text{aus,2}} = h_f(70^\circ\text{C}) + x_D \cdot (h_g(70^\circ\text{C}) - h_f(70^\circ\text{C})) = 292.95 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+\Delta m_{12} = 3756.84 \, \text{kg}
+\]  
+
+---
+
+**Subtask e)**  
+The entropy change of the reactor contents is calculated as:  
+\[
+\Delta S_{12} = m_2 s_2 - m_1 s_1 = m_2 s_2 - m_1 s_f(70^\circ\text{C}) - m_1 x_D s_g(70^\circ\text{C})
+\]  
+Using the entropy values:  
+\[
+s_f(70^\circ\text{C}) = 0.954 \, \frac{\text{kJ}}{\text{kg·K}}, \quad s_g(70^\circ\text{C}) = 7.33 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+\Delta S_{12} = -9387.6 \, \frac{\text{kJ}}{\text{K}}
+\]

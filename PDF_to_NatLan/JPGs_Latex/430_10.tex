@@ -1,0 +1,53 @@
+TASK 3c
+
+The energy balance equation is written as:
+\[
+\frac{dE}{dt} = \dot{Q}_{12} - \sum \dot{W}_n
+\]
+Here, the term \( \sum \dot{W}_n \) is zero due to negligible volume work.
+
+The relationship for the energy change is expressed as:
+\[
+U_2 - U_1 = Q_{12}
+\]
+
+The internal energy \( U_1 \) is calculated using:
+\[
+U_1 = U_f + x \cdot (U_g - U_f)
+\]
+where \( x \) is the ice mass fraction, \( U_f \) is the internal energy of saturated liquid, and \( U_g \) is the internal energy of saturated vapor.
+
+From Table 1:
+\[
+U_f = -0.045 \, \frac{\text{kJ}}{\text{kg}}, \quad U_g = 0.6 \cdot (-33.3 \, \frac{\text{kJ}}{\text{kg}} + 0.045 \, \frac{\text{kJ}}{\text{kg}})
+\]
+\[
+U_1 = -200.09 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The internal energy of the ice-water mixture is:
+\[
+U_1 = U_{\text{in EW}} = -200.09 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The internal energy \( U_2 \) is calculated as:
+\[
+U_2 = Q_{12} + U_1 = 1366.4 \, \text{kJ} - 200.1 \, \text{kJ} = 1166.3 \, \text{kJ}
+\]
+
+The ice mass fraction \( x \) is determined using:
+\[
+x = \frac{U_2 - U_f}{U_g - U_f}
+\]
+Substituting values:
+\[
+x = \frac{-1166.3 \, \text{kJ} + 0.045 \, \frac{\text{kJ}}{\text{kg}}}{0.6 \cdot (-33.3 \, \frac{\text{kJ}}{\text{kg}} + 0.045 \, \frac{\text{kJ}}{\text{kg}})}
+\]
+\[
+x = 0.5587
+\]
+
+The mass of ice in equilibrium is calculated as:
+\[
+m_{2,\text{ice}} = x_{2,\text{ice}} \cdot m_{\text{EW}} = 0.5587 \cdot 0.1 \, \text{kg} = 0.05587 \, \text{kg}
+\]

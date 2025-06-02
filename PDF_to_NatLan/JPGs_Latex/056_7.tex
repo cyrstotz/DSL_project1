@@ -1,0 +1,91 @@
+TASK 1a  
+The mass flow rate at the inlet is given as:  
+\[
+\dot{m}_{\text{in}} = 0.3 \, \text{kg/s}
+\]  
+This is a steady-state flow process.  
+
+The energy balance equation is written as:  
+\[
+0 = \dot{m}_{\text{in}} (h_{\text{in}} - h_{\text{out}}) + \Sigma \dot{Q}
+\]  
+where:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R
+\]  
+
+The enthalpy values are determined from the water tables:  
+\[
+h_{\text{in}} = h_f(70^\circ\text{C}) = 2676.8 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_{\text{out}} = h_f(100^\circ\text{C}) = 419.0 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-2)}
+\]  
+
+Substituting these values:  
+\[
+\dot{Q}_{\text{out}} = 85.24 \, \text{kW}
+\]  
+
+It is noted that \(\dot{Q}_{\text{out}}\) is defined as negative.  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant is calculated using the integral:  
+\[
+\bar{T} = \frac{\int T \, ds}{s_a - s_e}
+\]  
+For an ideal fluid, this simplifies to:  
+\[
+\bar{T} \approx \frac{T_{\text{in}} + T_{\text{out}}}{2} \approx 293.15 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+The entropy production is calculated using the entropy balance equation:  
+\[
+0 = \dot{m} (s_e - s_a) + \frac{-\dot{Q}}{\bar{T}} + \dot{S}_{\text{gen}}
+\]  
+Rearranging for entropy generation:  
+\[
+\dot{S}_{\text{gen}} = \dot{m}_{\text{in}} (s_{\text{out}} - s_{\text{in}}) + \frac{\dot{Q}}{\bar{T}}
+\]  
+
+The entropy values are determined from the water tables:  
+\[
+s_{\text{in}} = s_f(70^\circ\text{C}) = 7.2533 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+s_{\text{out}} = s_f(100^\circ\text{C}) = 7.3543 \, \frac{\text{kJ}}{\text{kg·K}} \quad \text{(from Table A-3)}
+\]  
+
+Substituting these values:  
+\[
+\dot{S}_{\text{gen}} = 0.41 \, \frac{\text{kW}}{\text{K}}
+\]  
+
+It is noted that this entropy production occurs between the water and the coolant, contributing to the total entropy.  
+
+---
+
+TASK 1d  
+The mass flow rate is zero:  
+\[
+\dot{m} = 0
+\]  
+The temperatures are given as:  
+\[
+T_{\text{KF,in}} = 70^\circ\text{C}, \quad T_{\text{KF,out}} = 70^\circ\text{C}
+\]  
+
+The inlet temperature of the added mass is:  
+\[
+T_{\text{in,12}} = 20^\circ\text{C}
+\]  
+
+The heat released during cooling is:  
+\[
+Q_{R,12} = Q_{\text{out,12}} = 35 \, \text{MJ}
+\]  

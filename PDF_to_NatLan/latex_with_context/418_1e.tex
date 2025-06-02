@@ -1,0 +1,31 @@
+The entropy change \( \Delta S \) is derived using the entropy balance equation:  
+\[
+\frac{dS}{dt} = \sum_i \dot{m}_i(t) \cdot s_i(t) + \int_G \frac{\dot{Q}}{T_G} + \dot{S}_{\text{gen}}
+\]  
+This simplifies to:  
+\[
+\Delta S = \sum_i \Delta m_i \cdot s_i + \int_G \frac{Q}{T_G} + S_{\text{gen}}
+\]  
+Substituting the terms for this problem:  
+\[
+\Delta S = \Delta m_{12} \cdot (s_{20^\circ\text{C}} - s_{70^\circ\text{C}}) + m_{\text{gen},1} \cdot (s_{100^\circ\text{C}} - s_{70^\circ\text{C}}) + S_{\text{gen}}
+\]  
+
+Values used:  
+\[
+s_{20^\circ\text{C}} = 0.2966 \, \frac{\text{kJ}}{\text{kg·K}}, \quad s_{70^\circ\text{C}} = 0.9549 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+s_{100^\circ\text{C}} = 1.3069 + x_D \cdot (7.3549 - 1.3069) \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+Resulting in:  
+\[
+s_{100^\circ\text{C}} = 1.33714 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Since the system is adiabatic:  
+\[
+S_{\text{gen}} = 0
+\]  
+
+Reference for values: Table A-2.

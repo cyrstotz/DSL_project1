@@ -1,0 +1,53 @@
+TASK 4b  
+The table summarizes the states in the refrigeration cycle:  
+
+\[
+\begin{array}{|c|c|c|c|}
+\hline
+\text{State} & T \, (\text{K}) & P \, (\text{bar}) & \text{Process Description} \\
+\hline
+1 & 31.33 & 1 & \text{Adiabatic process: Isentropic expansion, } h_4 = h_1 \\
+2 & 220 & 1 & \text{Isobaric evaporation, } \dot{Q}_K \\
+3 & 31.33 & 5 & \text{Isentropic compression, } s_2 = s_3 \\
+4 & 31.33 & 8 & x_4 = 0 \\
+\hline
+\end{array}
+\]
+
+The enthalpy at state 4 is equal to the enthalpy at state 1:  
+\[
+h_4 = h_1 = h_f(5 \, \text{bar}) \approx 93.42 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-11)}  
+\]
+
+The entropy at state 2 is equal to the entropy at state 3:  
+\[
+s_2 = s_3 = s_g(8 \, \text{bar}) \approx 0.9066 \, \frac{\text{kJ}}{\text{kg·K}} \quad \text{(from Table A-11)}  
+\]
+
+For the isentropic process between states 2 and 3:  
+\[
+s_2 = s_3 = 0.9066 \, \frac{\text{kJ}}{\text{kg·K}}  
+\]
+
+Using the first law of thermodynamics for the compressor:  
+\[
+\frac{dE}{dt} = \dot{m}_{\text{R134a}} (h_2 - h_3) + \dot{Q} - \dot{W}_K  
+\]
+
+Rearranging to find the mass flow rate of the refrigerant:  
+\[
+\dot{m}_{\text{R134a}} = \frac{\dot{W}_K}{h_2 - h_3}  
+\]
+
+---
+
+TASK 4c  
+For state 1:  
+\[
+h_1 = h_f(5 \, \text{bar}) \approx 93.42 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-11)}  
+\]
+
+The vapor quality \( x_1 \) is calculated as:  
+\[
+x_1 = \frac{h_1 - h_f}{h_g - h_f}  
+\]

@@ -1,0 +1,67 @@
+TASK 2a  
+A qualitative \( T \)-\( s \) diagram is drawn, showing the thermodynamic process of the jet engine. The diagram includes labeled isobars at \( p_0 = 0.191 \, \text{bar} \) and \( p_5 = 0.5 \, \text{bar} \). The temperature axis ranges from \( -30^\circ\text{C} \) to higher values, and the entropy axis is labeled in \( \text{kJ/kg·K} \). States 0, 1, 2, 3, 4, 5, and 6 are marked along the process path.
+
+---
+
+TASK 2b  
+The energy balance for the entire engine is written as:  
+\[
+0 = \dot{m} \cdot (h_{\text{in}} - h_{\text{out}}) + \frac{1}{2} w_0^2 - \frac{1}{2} w_6^2
+\]  
+Using the specific enthalpy difference:  
+\[
+h_{\text{in}} - h_{\text{out}} = c_p (T_0 - T_6)
+\]  
+The energy balance equation becomes:  
+\[
+0 = c_p (T_0 - T_6) + \frac{1}{2} w_0^2 - \frac{1}{2} w_6^2
+\]  
+
+For the nozzle:  
+\[
+0 = c_p (T_5 - T_6) + \frac{1}{2} w_6^2 - \frac{1}{2} w_0^2
+\]  
+Rearranging:  
+\[
+c_p (T_0 - T_6) + \frac{1}{2} w_0^2 = c_p (T_5 - T_6) + \frac{1}{2} w_6^2
+\]  
+
+---
+
+TASK 2c  
+The mass-specific increase in flow exergy is calculated as:  
+\[
+\Delta ex_{\text{flow}} = h_c - h_0 - T_0 (s_c - s_0) + \frac{1}{2} w_6^2 - \frac{1}{2} w_0^2
+\]  
+Substituting values:  
+\[
+\Delta ex_{\text{flow}} = c_p (T_G - T_0) - T_0 \left( c_p \ln \left( \frac{T_G}{T_0} \right) \right) + \frac{1}{2} w_6^2 - \frac{1}{2} w_0^2
+\]  
+Given \( T_G = 340 \, \text{K} \) and \( w_6 = 510 \, \text{m/s} \), the result is:  
+\[
+\Delta ex_{\text{flow}} = 165.17 \, \text{kJ/kg}
+\]  
+
+---
+
+TASK 2d  
+The exergy destruction rate is expressed as:  
+\[
+\frac{dE_{\text{ex,dest}}}{dt} = \dot{E}_{\text{ex,in}} - \dot{E}_{\text{ex,out}}
+\]  
+The change in exergy destruction is:  
+\[
+\Delta ex_{\text{dest}} = ex_{\text{in}} - ex_{\text{out}}
+\]  
+Substituting:  
+\[
+\Delta ex_{\text{dest}} = \left( 1 - \frac{T_0}{T_G} \right) \dot{q} - ex_{\text{reversible}}
+\]  
+Where:  
+\[
+ex_{\text{reversible}} = \left( 1 - \frac{T_0}{T_G} \right) \dot{q}
+\]  
+The final value is:  
+\[
+ex_{\text{reversible}} = 809.1 \, \text{kJ/kg}
+\]  

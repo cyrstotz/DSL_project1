@@ -1,0 +1,27 @@
+The change in flow exergy \( \Delta ex_{str} \):  
+\( \Delta ex_{str} = ex_{str,6} - ex_{str,0} \)  
+
+Using the integral \( R = \frac{c_p, Luft}{c_p, Luft - R} \):  
+\( \Delta ex_{str} = h_6 - h_0 - T_0 \cdot (s_6 - s_0) + \frac{w_6^2}{2} - \left( \frac{h_0 - T_0 \cdot (s_0 - s_0)}{T_0} \right) - \frac{w_0^2}{2} \)  
+
+Simplified:  
+\( = h_6 - h_0 - T_0 \cdot (s_6 - s_0) + \frac{w_6^2}{2} - \frac{w_0^2}{2} \)  
+
+Further expanded:  
+\( = c_p, Luft \cdot (T_6 - T_0) - T_0 \cdot (c_p, Luft \cdot \ln \left( \frac{T_6}{T_0} \right) - R \cdot \ln \left( \frac{p_6}{p_0} \right)) + \frac{w_6^2}{2} - \frac{w_0^2}{2} \)  
+
+Final result:  
+\( = 76.26 \, \frac{I}{kg} \)
+
+\( ex_{verl} = T_0 \cdot s_{erg} \)  
+
+The entropy balance yields:  
+\( 0 = \dot{s}_{in} - \dot{s}_{out} + \frac{\dot{q}_A}{T_A} + \dot{s}_{erg} \)  
+
+\( \Rightarrow \dot{s}_{erg} = (\dot{s}_{in} - \dot{s}_{out}) - \frac{q_A}{T_B} \)  
+
+\( = c_{p,eff} \cdot \ln \left( \frac{T_6}{T_0} \right) - R \cdot \ln \left( \frac{p_6}{p_0} \right) - \frac{q_A}{T_A} \)  
+
+\( = \)  
+
+\( ex_{verl} = T_0 \cdot s_{erg} \)

@@ -1,0 +1,38 @@
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) is calculated using the integral expression:  
+\[
+T_{\text{KF}} = \frac{\int_{e}^{a} T \, ds}{S_a - S_e}
+\]  
+
+For the liquid substance model, the entropy difference \( S_a - S_e \) is expressed as:  
+\[
+S_a - S_e = \int_{T_e}^{T_a} c_{\text{l}} \frac{dT}{T} = c_{\text{l}} \ln \left( \frac{T_a}{T_e} \right)
+\]  
+
+Substituting into the integral, the mean temperature is calculated as:  
+\[
+T_{\text{KF}} = \frac{T_a - T_e}{\ln \left( \frac{T_a}{T_e} \right)} = 291.63 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+The entropy balance for steady-state heat transfer is written as:  
+\[
+0 = \dot{m}_{\text{in}} \left( S_{\text{in}} - S_{\text{out}} \right) + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+
+From the water tables (A-2), the entropy values are:  
+\[
+S_{\text{in}} = 0.9560 \, \frac{\text{kJ}}{\text{kg·K}}, \quad S_{\text{out}} = 1.3069 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+The entropy generation rate is then calculated as:  
+\[
+\dot{S}_{\text{gen}} = \left( S_{\text{out}} - S_{\text{in}} \right) \dot{m}_{\text{in}} - \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = -0.498 \, \frac{\text{kW}}{\text{K}}
+\]

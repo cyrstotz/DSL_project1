@@ -1,0 +1,44 @@
+The system is described as a semi-open system. The energy balance equation is written as:  
+\[
+\Delta E = \Delta m_{12} h_{12} + Q_{R,12} + Q_{\text{out},12}
+\]  
+From the mass balance:  
+\[
+m_{12} - m_{11} = \Delta m_{12}
+\]  
+Rearranging gives:  
+\[
+\Delta m_{12} = \frac{m_{12} h_{12} - m_{11} h_{11}}{h_{12}}
+\]  
+
+The enthalpy values are calculated as follows:  
+\[
+h_{11} = u_f(100^\circ\text{C}) + x_D (u_g - u_f) = 429.378 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_{12} = u_f(70^\circ\text{C}) + x_0 (u_g - u_f) = 303.368 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The mass \( m_{12} \) is given as:  
+\[
+m_{12} = m_{11} + \Delta m_{12}
+\]  
+
+The enthalpy \( h_{12} \) is calculated as:  
+\[
+h_{12} = h_{11} + h_{12} = 126.06 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Substituting into the mass balance equation:  
+\[
+\Delta m_{12} = \frac{m_{12} h_{12} - m_{11} h_{11}}{h_{12}}
+\]  
+\[
+\Delta m_{12} = \frac{m_{12} h_{12} - m_{11} h_{11}}{h_{12} \left(1 + \frac{1}{h_{12}}\right)} = \frac{h_{12} - h_{11}}{h_{12}}
+\]  
+The final result for \( \Delta m_{12} \) is:  
+\[
+\Delta m_{12} = 5680 \, \text{kg}
+\]  
+
+---

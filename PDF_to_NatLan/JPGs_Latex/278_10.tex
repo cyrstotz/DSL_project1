@@ -1,0 +1,59 @@
+TASK 4b  
+The pressures are given as \( p_2 = p_3 = p_4 = 8 \, \text{bar} \) and \( p_2 = p_1 = p_{\text{evap}} \).  
+
+The enthalpy at state 2 is \( h_2 = h_f(8 \, \text{bar}) = 93.42 \, \frac{\text{kJ}}{\text{kg}} \), and the entropy is \( s_2 = s_1 \).  
+
+The mass flow rate of the refrigerant is calculated using:  
+\[
+\dot{m}_{\text{R134a}} = \frac{W_k}{h_2 - h_3} = \frac{-28 \, \text{kW}}{(237.74 - 93.42) \, \frac{\text{kJ}}{\text{kg}}} = 1.80 \, \frac{\text{kg}}{\text{s}}
+\]  
+
+The enthalpy at state 3 is \( h_3 = h_g(257.15 \, \text{K}) = h_g(-16^\circ\text{C}) = 237.74 \, \frac{\text{kJ}}{\text{kg}} \) (from Table A10).  
+
+The temperature difference is calculated as:  
+\[
+T_2 - T_1 = T_i - T_{\text{evap}} = T_{\text{sub}} + 10 \, \text{K} - 6 \, \text{K} = (273.15 \, \text{K} - 20 \, \text{K}) + 4 \, \text{K} = 257.15 \, \text{K} = -16^\circ\text{C}
+\]  
+
+The entropy at state 3 is calculated as:  
+\[
+s_3 = s_g(257.15 \, \text{K}) = s_g(-16^\circ\text{C}) = 0.9298 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+The entropy at state 1 is \( s_1 = s_2 = 0.9298 \, \frac{\text{kJ}}{\text{kg·K}} \).  
+
+The enthalpy at state 1 is calculated using interpolation:  
+\[
+h_1(8 \, \text{bar}, s_2) = 264.15 \, \frac{\text{kJ}}{\text{kg}} - \frac{(273.66 - 264.15)}{(0.9298 - 0.8066)} \cdot (0.9298 - 0.8066) = 253.32 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+---
+
+TASK 4c  
+The enthalpy at state 2 is \( h_2 = 93.42 \, \frac{\text{kJ}}{\text{kg}} \). Using interpolation:  
+\[
+h_f(-16^\circ\text{C}) + x_2 \cdot (h_g - h_f)
+\]  
+
+The vapor quality \( x_2 \) is calculated as:  
+\[
+x_2 = \frac{h_2 - h_f}{h_g - h_f} = \frac{93.42 - h_f}{h_g - h_f} = 0.3076
+\]  
+
+---
+
+TASK 4d  
+The coefficient of performance is calculated as:  
+\[
+\epsilon_K = \frac{\dot{Q}_K}{\dot{W}_K} = \frac{252.8}{28} = 9.28
+\]  
+
+The heat transfer rate is:  
+\[
+\dot{Q}_K = \dot{m}_{\text{R134a}} \cdot (h_2 - h_1) = 1.80 \, \frac{\text{kg}}{\text{s}} \cdot (237.74 - 93.42) \, \frac{\text{kJ}}{\text{kg}} = 259.8 \, \text{kW}
+\]  
+
+---
+
+TASK 4e  
+The temperature would stabilize at \( T_2 = -16^\circ\text{C} \).

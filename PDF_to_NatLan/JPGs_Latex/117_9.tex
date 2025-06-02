@@ -1,0 +1,80 @@
+TASK 4b  
+The required refrigerant mass flow rate \( \dot{m}_{\text{R134a}} \) is calculated using the following energy balance for the compressor:  
+
+\[
+\dot{W}_K = 28 \, \text{W}
+\]
+
+The steady-state flow process assumes negligible kinetic and potential energy changes (\( w_2^2 - w_3^2 = 0 \), \( z_2 - z_3 = 0 \)) and adiabatic operation. The energy equation simplifies to:  
+
+\[
+0 = \dot{m} \cdot (h_2 - h_3) + \dot{W}_K
+\]
+
+Rearranging for \( \dot{m} \):  
+
+\[
+\dot{m} = \frac{\dot{W}_K}{h_2 - h_3}
+\]
+
+TASK 4c  
+The entropy at state 2 equals the entropy at state 3 due to isentropic compression:  
+
+\[
+s_2 = s_3 \quad \text{(isentropic process)}
+\]
+
+At state \( A \), the vapor quality \( x_A = 0 \), and the enthalpy \( h_A \) is given as:  
+
+\[
+h_A = h_f (8 \, \text{bar}) = 93.42 \, \text{kJ/kg} \quad \text{(Table A-11)}
+\]
+
+TASK 4e  
+The initial temperature \( T_i \) is calculated as:  
+
+\[
+T_i = T_{\text{subl}} + 70 \, \text{K} = 70 \, \text{K}
+\]
+
+For the heat transfer process:  
+
+\[
+T_2 = T_i - 6 \, \text{K} = 64 \, \text{K}
+\]
+
+The enthalpy at state 2 is:  
+
+\[
+h_2 = h_g (64 \, \text{K}) = h_g
+\]
+
+The temperature at state \( T_i \) is recalculated as:  
+
+\[
+T_i = T_{\text{subl}} + 70 \, \text{K} = 0^\circ \text{C} + 70 \, \text{K} = 70^\circ \text{C}
+\]
+
+The temperature difference yields:  
+
+\[
+T_2 = 70^\circ \text{C} - 30^\circ \text{C} = 40^\circ \text{C}
+\]
+
+The enthalpy at state 2 is:  
+
+\[
+h_2 = h_g (40^\circ \text{C}) = 194.19 \, \text{kJ/kg} \quad \text{(Table A-10)}
+\]
+
+The entropy at state 3 is calculated using the saturated vapor and liquid entropy values:  
+
+\[
+s_3 = s_g (40^\circ \text{C}) = 0.9769 \, \text{kJ/kg·K}
+\]
+
+The vapor quality \( x_3 \) at state 3 is determined as:  
+
+\[
+x_3 = \frac{s_3 - s_f (8 \, \text{bar})}{s_g (8 \, \text{bar}) - s_f (8 \, \text{bar})} = \frac{0.9769 - 0.3459}{0.9066 - 0.3459}
+\]

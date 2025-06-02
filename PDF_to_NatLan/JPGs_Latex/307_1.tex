@@ -1,0 +1,40 @@
+TASK 2b  
+The heat flow removed by the coolant is given as \( \dot{Q}_{\text{aus}} = 65 \, \text{kW} \).  
+
+The thermodynamic mean temperature \( \bar{T}_{\text{KF}} \) is calculated using the following equation:  
+\[
+\bar{T}_{\text{KF}} = \frac{\int_{T_{\text{ein}}}^{T_{\text{aus}}} T \, dS}{S_{\text{aus}} - S_{\text{ein}}} = \frac{\dot{Q}_{\text{KV}}}{S_{\text{aus}} - S_{\text{ein}}}
+\]
+
+From the energy balance:  
+\[
+q_{\text{KV}} = h_{\text{aus}} - h_{\text{ein}} = c^i F (T_{\text{aus}} - T_{\text{ein}})
+\]
+
+The entropy difference is expressed as:  
+\[
+S_{\text{aus}} - S_{\text{ein}} = \int_{T_{\text{ein}}}^{T_{\text{aus}}} \frac{c^i F}{T} \, dT = c^i F \ln \left( \frac{T_{\text{aus}}}{T_{\text{ein}}} \right)
+\]
+
+Thus, the thermodynamic mean temperature becomes:  
+\[
+\bar{T}_{\text{KF}} = \frac{T_{\text{aus}} - T_{\text{ein}}}{\ln \left( \frac{T_{\text{aus}}}{T_{\text{ein}}} \right)} = 293.123 \, \text{K}
+\]
+
+---
+
+TASK 2c  
+The entropy balance is written as:  
+\[
+0 = \dot{m}_K (s_{\text{ein}} - s_{\text{aus}}) + \frac{\dot{Q}_{\text{aus}}}{\bar{T}_{\text{KF}}} + \dot{S}_{\text{rez}}
+\]
+
+Rearranging for entropy generation:  
+\[
+\dot{S}_{\text{rez}} = \dot{m}_K (s_{\text{aus}} - s_{\text{ein}}) - \frac{\dot{Q}_{\text{aus}}}{\bar{T}_{\text{KF}}}
+\]
+
+Substituting the entropy difference:  
+\[
+\dot{S}_{\text{rez}} = \dot{m}_K c^i F \ln \left( \frac{T_{\text{aus}}}{T_{\text{ein}}} \right) - \frac{\dot{Q}_{\text{aus}}}{\bar{T}_{\text{KF}}}
+\]

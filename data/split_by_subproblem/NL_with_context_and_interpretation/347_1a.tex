@@ -1,0 +1,18 @@
+Energy balance for the reactor, steady state with Δp = 0 and W = 0:  
+Q out = m in (h in - h out) + Q reaction - Q loss  
+(with Q loss defined as negative in the calculation).  
+
+Q loss = m in (h water at 100°C - h water at 70°C) + Q reaction  
+
+In the reactor, boiling liquid is present → we are in a two-phase region.  
+
+h in = h saturated liquid at 70°C with T = 70°C and x = 0.005:  
+h f70 = 292.9 kilojoules per kilogram  
+h g70 = 2626.8 kilojoules per kilogram (from Table A-2 at 70°C)  
+
+h in = h f70 + x (h g70 - h f70) = 309.649 kilojoules per kilogram = h in  
+
+h out = h saturated liquid at 100°C:  
+h out = h f100 = 419.0 kilojoules per kilogram (from Table A-2 at 100°C).  
+
+Q loss = 0.3 kilograms per second × (309.649 kilojoules per kilogram - 419.0 kilojoules per kilogram) + 100 kilowatts = 62.93 kilowatts = Q loss.

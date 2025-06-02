@@ -1,0 +1,149 @@
+
+``````latex
+
+
+\section*{Thermodynamik 1}
+
+\subsection*{Aufgabe 3}
+
+\subsubsection*{a)}
+
+\[
+p_{1,g} = p_{amb} + \frac{F_g}{A}
+\]
+
+\[
+F_g = 32 \, \text{kg} \cdot 9.81 \, \frac{\text{m}}{\text{s}^2} = 313.92 \, \text{N}
+\]
+
+\[
+A = \pi \left(\frac{D}{2}\right)^2 = 0.007853982 \, \text{m}^2
+\]
+
+\[
+p_{1,g} = 1 \, \text{bar} + \frac{F_g}{A} = 10^5 \, \text{Pa} + 39963.59 \, \text{Pa} = 1.4 \, \text{bar}
+\]
+
+Um die Masse des Gases zu bestimmen können wir nun das ideale Gasgesetz anwenden:
+
+\[
+m_g = \frac{p_{1,g} \, V_{1,g}}{R \, T_{1,g}} = \frac{1.4 \, \text{bar} \cdot 3.14 \cdot 10^{-3} \, \text{m}^3}{0.16625 \, \frac{\text{m}^3 \cdot \text{bar}}{\text{kg} \cdot \text{K}} \cdot 273.15 \, \text{K}} = 0.00342 \, \text{kg}
+\]
+
+\[
+R = \frac{R}{M_{gas}} = 0.16625 \, \frac{\text{m}^3 \cdot \text{bar}}{\text{kg} \cdot \text{K}}
+\]
+
+\[
+m_g = 3.42 \, \text{g}
+\]
+
+\subsubsection*{b)}
+
+Der Druck des Gases hat sich nicht verändert, da keine neuen Komponenten hinzugekommen sind, die neuen Druck ausüben.
+
+\[
+p_{2,g} = p_{1,g} = 1.4 \, \text{bar}
+\]
+
+Wenn nun im Zustand 2 keine Wärme mehr zwischen dem Gas und dem EW übertragen wird, dann darf es keinen Temperaturunterschied zwischen dem EW und dem Gas haben, was bedeutet, dass
+
+\[
+T_{2,g} = 0^\circ \text{C}
+\]
+
+\subsubsection*{Graphical Description}
+
+There is a diagram on the right side of the page. It shows a vertical cylinder with a piston inside it. The piston is at the top of the cylinder, and there is a weight hanging from the piston. The weight is represented by a downward arrow labeled with "F_g". The cylinder is closed at the bottom and open at the top where the piston is located. The piston is shown to be movable within the cylinder.
+
+``````latex
+
+
+c) Um diese Aufgabe zu lösen brauchen wir die Energiebilanz
+\[
+\frac{dE}{dt} = \sum_i \dot{m}_i \left( h_i + \frac{c_i^2}{2} + \frac{g z_i}{2} \right) + \sum_j \dot{Q}_j - \sum_k \dot{W}_k
+\]
+
+\textbf{System:}
+
+\begin{description}
+    \item[Description of the diagram:] The diagram shows a rectangular box with a horizontal line at the top representing the system boundary. Inside the box, there is a small circle at the top center with a vertical line extending downwards, representing a piston or similar mechanism. Below the piston, there are two small rectangles side by side, representing different phases or components within the system.
+\end{description}
+
+\[
+m_{u1} - m_{u2} = Q_{u2}
+\]
+
+\[
+u_1 = u_{\text{flüssig}} (1 \text{ bar}) + x_{\text{eis,1}} \left( u_{\text{fest}} (1 \text{ bar}) - u_{\text{flüssig}} (1 \text{ bar}) \right)
+\]
+
+\[
+u_{\text{flüssig}} (1 \text{ bar}) = -0.045 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+u_{\text{fest}} (1 \text{ bar}) = 333.458 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+u_1 = -200.0928 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+u_2 = 
+\]
+
+\[
+m \cdot (u_2 - u_1) = \dot{Q} \quad \text{(nach Energiebilanz; gelöst mit System Gas)}
+\]
+
+\[
+u_{2,\text{gas}} - u_1 = c_v (T_2 - T_1) = c_v (0^\circ \text{C} - 500^\circ \text{C}) = 0.632 \frac{\text{kJ}}{\text{kgK}} \cdot (-500 \text{K}) = -331.5 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\dot{m}_{\text{gas}} (u_2 - u_1) = Q
+\]
+
+\[
+\dot{Q} = -1.134 \text{ kJ} \quad \text{(so viel Wärme wird dem Gas entzogen)}
+\]
+
+d)
+
+\[
+m_{\text{gas}} (u_{2,\text{eis}} - u_{1,\text{gas}}) = -Q
+\]
+
+\[
+u_{1,\text{gas}} = u_{\text{flüssig}} (1 \text{ bar}) + x_{\text{eis}} (u_{\text{fest}} (1 \text{ bar}) - u_{\text{flüssig}} (1 \text{ bar}))
+\]
+
+\[
+u_{\text{flüssig}} (1 \text{ bar}) = -0.045 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+u_{\text{fest}} (1 \text{ bar}) = 333.458 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+u_1 = -200.0928 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+m_{\text{gas}} \cdot u_{2,\text{eis}} = Q \cdot m_{\text{gas}} = -18.875 \text{ kJ}
+\]
+
+\[
+u_{2,\text{eis}} = -18.875 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+x_{2,\text{eis}} = \frac{u_{2,\text{eis}} - u_{\text{flüssig}} (1 \text{ bar})}{u_{\text{fest}} (1 \text{ bar}) - u_{\text{flüssig}} (1 \text{ bar})} = 0.566
+\]
+
+``````latex
+
+

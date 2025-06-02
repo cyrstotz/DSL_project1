@@ -1,0 +1,68 @@
+TASK 4a  
+A table is provided with labeled columns: \( z_{\text{ut}} \), \( P \), \( V \), \( T \), and \( x \). The rows correspond to states 1 through 4, with the following details:  
+- State 1: \( T = T_i \), \( x = 1 \). This represents isobaric evaporation at 6 K below \( T_i \).  
+- State 2: \( P = 6 \, \text{bar} \), \( x = 1 \). This corresponds to isentropic compression.  
+- State 3: \( P = 8 \, \text{bar} \), \( x = 0 \). This represents isobaric condensation.  
+- State 4: \( P = 8 \, \text{bar} \), \( x = 0 \), \( T = T_i \). This corresponds to adiabatic expansion.  
+
+A sketch is included showing the process flow, with arrows indicating transitions between states. The transitions are labeled as "isobaric evaporation, 6 K" and "adiabatic throttle."
+
+---
+
+TASK 4b  
+The steady-state energy balance is written as:  
+\[
+0 = \dot{m}_R \left( h_2 - h_3 \right) - \dot{W}_K
+\]  
+Rearranging for the mass flow rate:  
+\[
+\dot{m}_R = \frac{\dot{W}_K}{h_2 - h_3}
+\]  
+Given:  
+\[
+\dot{W}_K = 25 \, \text{W}
+\]  
+The enthalpies \( h_2 \) and \( h_3 \) are to be determined:  
+\[
+h_2 (6 \, \text{bar}, x = 1) = \ldots  
+\]  
+\[
+h_3 (6 \, \text{bar}, x = 0) = \ldots  
+\]  
+Additional notes indicate \( T_3 \approx 55.5 \, \text{°C} \).
+
+---
+
+TASK 4c  
+The throttle is described as isenthalpic and adiabatic:  
+\[
+h_4 = h_1
+\]  
+The temperature at state 4 is given as:  
+\[
+T_4 (8 \, \text{bar}, x = 0) = 31.33 \, \text{°C}
+\]  
+From the table, \( T_{\text{eb}} = -11 \, \text{°C} \).
+
+Using the first law of thermodynamics for the throttle:  
+\[
+0 = \dot{Q} - \dot{W} + \dot{m}_R \left( h_4 - h_1 \right)
+\]  
+Since \( h_4 = h_1 \), no heat or work is exchanged.
+
+For state 1:  
+\[
+x = 1, \quad T = 31.33 \, \text{°C}, \quad h_4 = h_f + x h_g
+\]  
+Values from the table:  
+\[
+h_f = 94.39, \quad h_g = 264.48
+\]  
+At \( T = 30 \, \text{°C} \):  
+\[
+h_f = 94.39, \quad h_g = 263.5
+\]  
+At \( T = 32 \, \text{°C} \):  
+\[
+h_f = 94.39, \quad h_g = 264.48
+\]

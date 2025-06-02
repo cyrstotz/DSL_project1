@@ -1,0 +1,56 @@
+TASK 2b  
+The outlet velocity \( w_6 \) is calculated using the following equation:  
+\[
+w_6^2 = w_5^2 - \frac{\dot{W}_{\text{en}}}{\dot{m}} + \left[h_5 - h_6\right]
+\]  
+The work per unit mass flow rate, \( \frac{\dot{W}_{\text{en}}}{\dot{m}} \), is determined as:  
+\[
+\frac{\dot{W}_{\text{en}}}{\dot{m}} = R \frac{T_6 - T_5}{1 - \kappa} = 0.12367 \, \frac{\text{J}}{\text{g}} \left[328.07 \, \text{K} - 431.13 \, \text{K}\right] / 0.4
+\]  
+This results in:  
+\[
+\frac{\dot{W}_{\text{en}}}{\dot{m}} = -741.42 \, \frac{\text{J}}{\text{g}}
+\]  
+The outlet velocity \( w_6 \) is then calculated as:  
+\[
+w_6 = \sqrt{\left(200 \, \frac{\text{m}}{\text{s}}\right)^2 + \frac{741.42 \, \frac{\text{J}}{\text{g}}}{\dot{m}_{\text{gas}}} + 104.45 \, \frac{\text{J}}{\text{kg}}}
+\]  
+
+---
+
+TASK 2c  
+The mass-specific increase in flow exergy \( \Delta ex_{\text{flow}} \) is calculated using the following equation:  
+\[
+\Delta ex_{\text{flow}} = \frac{\dot{E}}{\dot{m}} = \left[h_0 - h_6 - T_0 \left(s_0 - s_6\right) + \frac{1}{2} \left(w_0^2 - w_6^2\right)\right]
+\]  
+
+The enthalpy difference \( h_0 - h_6 \) is determined as:  
+\[
+h_0 - h_6 = -\left[h_c - h_0\right] = \exp\left[T_0 - T_6\right] = 1.1006 \, \frac{\text{J}}{\text{kg}} \left[293.15 \, \text{K} - 328.07 \, \text{K}\right]
+\]  
+This results in:  
+\[
+h_0 - h_6 = -85.3559 \, \frac{\text{J}}{\text{kg}}
+\]  
+
+The entropy difference \( s_6 - s_0 \) is calculated as:  
+\[
+s_6 - s_0 = \int_{T_0}^{T_6} c_p(T) \frac{1}{T} \, dT - R \ln\left(\frac{p_6}{p_0}\right)
+\]  
+With \( p_6 = p_0 \), the equation simplifies to:  
+\[
+s_6 - s_0 = \ln\left(\frac{T_0}{T_6}\right) \cdot c_p = 0.3013 \, \frac{\text{J}}{\text{kg·K}}
+\]  
+Thus:  
+\[
+s_0 - s_6 = -\left(s_6 - s_0\right) = -0.3013 \, \frac{\text{J}}{\text{kg·K}}
+\]  
+
+Finally, the flow exergy is calculated as:  
+\[
+\Delta ex_{\text{flow}} = -85.3559 \, \frac{\text{J}}{\text{kg}} + 243 \, \dot{m} \left(-0.3013 \, \frac{\text{J}}{\text{kg·K}} + \frac{1}{2} \left[\left(200 \, \frac{\text{m}}{\text{s}}\right)^2 - \left(510 \, \frac{\text{m}}{\text{s}}\right)^2\right]\right)
+\]  
+This results in:  
+\[
+\Delta ex_{\text{flow}} = 2.167 \times 10^7 \, \frac{\text{J}}{\text{kg}}
+\]  

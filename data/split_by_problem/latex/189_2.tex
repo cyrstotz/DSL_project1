@@ -1,0 +1,112 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{center}
+\textbf{Graph Description:}
+
+The graph is a Temperature-Entropy (T-S) diagram. The x-axis is labeled $S \left(\frac{kJ}{kg \cdot K}\right)$ and the y-axis is labeled $T (K)$. The graph consists of six points labeled 0 through 5. The points are connected by various lines:
+
+- Point 0 to Point 1: A vertical line labeled "isotherm".
+- Point 1 to Point 2: A horizontal line labeled "isotherm".
+- Point 2 to Point 3: A diagonal line labeled "45°".
+- Point 3 to Point 4: A vertical line labeled "isotherm".
+- Point 4 to Point 5: A horizontal line labeled "isotherm".
+- Point 5 to Point 6: A vertical line labeled "isotherm".
+
+There are also several dashed lines indicating different isotherms and isentropes. The pressures at various points are labeled as $p_0 = p_6$, $p_2 = p_5$, $p_4$, and $p_A$.
+
+\end{center}
+
+\subsection*{b)}
+
+\textbf{Energiebilanz am Schubdüse:}
+
+\[
+0 = \dot{m} \left( h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right)
+\]
+
+\[
+\Rightarrow 2(h_5 - h_6) = w_5^2 - w_6^2
+\]
+
+\[
+\Rightarrow w_6 = \sqrt{2(h_5 - h_6) + w_5^2}
+\]
+
+\textbf{$h_5$: interpolieren aus TAB A22 @ 430 K \& 460 K}
+
+\[
+\begin{array}{ccc}
+430 & 431,43 & 441,61 \\
+431,43 & h_5 & 431,43 + 410 - 430 \\
+410 & 441,61 & (431,43 - 430) \\
+\end{array}
+\]
+
+\[
+= (33,3612 \frac{kJ}{kg})
+\]
+
+\textbf{$h_6$: isentrop Schubdüse $\Rightarrow S_5 = S_6 = 2,06379 \frac{kJ}{kg \cdot K}$}
+
+\[
+\begin{array}{ccc}
+430 & 2,06333 & 2,05878 \\
+431,43 & S_5 & 2,06333 + 2,05878 - 2,06333 \\
+410 & 2,05870 & (431,43 - 430) \\
+\end{array}
+\]
+
+\[
+= 2,06379 \frac{kJ}{kg \cdot K}
+\]
+
+\textbf{Interpoliert aus TAB A22}
+
+\textbf{Rückseite}
+
+\[
+T_6: \frac{T_6}{T_5} = \left( \frac{p_0}{p_5} \right)^{\frac{n-1}{n}}
+\]
+
+\[
+n = 1,4
+\]
+
+\[
+\Rightarrow T_6 = T_5 \left( \frac{p_0}{p_5} \right)^{\frac{n-1}{n}} = 328,075 K
+\]
+
+``````latex
+
+
+\section*{h\textsubscript{6}: Interpolieren aus TAB-A22 (mit T\textsubscript{0})}
+
+\[
+\begin{array}{cccc}
+325 \, \text{K} & & 325,31 \\
+326,075 \, \text{K} & & h_6 \\
+330 \, \text{K} & & 330,34 \\
+\end{array}
+\]
+
+\[
+\Rightarrow h_6 = 325,31 + \frac{330,34 - 325,31}{330 - 325} \cdot (326,075 - 325)
+\]
+
+\[
+= 326,4035 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\Rightarrow w_i = \sqrt{2(h_1 - h_2) + w_2^2} = 219,52 \, \frac{\text{m}}{\text{s}}
+\]
+
+``````latex
+
+

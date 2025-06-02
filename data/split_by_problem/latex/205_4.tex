@@ -1,0 +1,146 @@
+
+``````latex
+
+
+\section*{Aufgabe}
+
+\subsection*{a)}
+
+\begin{description}
+    \item[Graph:] 
+    The graph is a pressure-temperature ($p$-$T$) diagram. The vertical axis is labeled $p$ (bar) and the horizontal axis is labeled $T$ (°C). There is a dome-shaped curve representing the phase boundary. Inside the dome, there are four points labeled 1, 2, 3, and 4. Point 1 is on the left side of the dome, point 2 is on the right side of the dome, point 3 is above point 2, and point 4 is above point 1. There are arrows indicating the transitions between these points: from 1 to 4, from 4 to 3, from 3 to 2, and from 2 to 1. The transition from 2 to 1 is labeled as "isobar".
+\end{description}
+
+\subsection*{b)}
+
+\textbf{Stationärer Fließprozess:}
+
+\[
+0 = \dot{m}(h_{a} - h_{a} + \frac{\Delta E_{PE}}{\dot{m}}) + \dot{Q} - \dot{W}
+\]
+
+\[
+2 \rightarrow 3: \quad 0 = \dot{m}(h_{2} - h_{3}) + \dot{Q}_{23} - \dot{W}_{k}
+\]
+
+\[
+\dot{m}(h_{2} - h_{3}) = \dot{W}_{k}
+\]
+
+\[
+\dot{m} = \frac{\dot{W}_{k}}{h_{2} - h_{3}} \quad \rightarrow p_{3} = 8 \text{ bar}
+\]
+
+\[
+x_{2} = 1 \rightarrow \text{gesättigter Dampf}
+\]
+
+\[
+\text{isobar:} \quad p_{3} = p_{u}, \quad p_{2} = p_{u}
+\]
+
+\[
+x_{u} = 0 \rightarrow h_{u} \text{ aus Tab. A-M für 8 bar}
+\]
+
+\[
+h_{u} = h_{f}(8 \text{ bar}) = 93.42 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+2 \rightarrow 3 \rightarrow \text{reversibel adiabatisch} \rightarrow \Delta s = 0
+\]
+
+\textbf{Entropie Bilanz, 2 $\rightarrow$ 3:}
+
+\[
+0 = \dot{m}(s_{2} - s_{3}) + \frac{\dot{Q}}{T} + \dot{s}_{z}
+\]
+
+\[
+\Delta s = 0
+\]
+
+\[
+s_{03} = s_{3}
+\]
+
+\textbf{p-pH:} $T_{a} = 10 \text{K über Sublimationspunkt}$
+
+\textbf{b-pi:} $5 \text{mbar unter Tripelpunkt} \rightarrow p_{2} = 1 \text{mbar}$
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\subsection*{b)}
+\textbf{Phasen- \& Sublimationspunkt: Linie Lei Tripel}\\
+\textbf{b) siehe Diagramm Abb. 5: $T_i = -10^\circ$C}
+
+\begin{align*}
+T_{\text{verd}} &= T_i - 6K \\
+T_{\text{verd}} &= -16^\circ\text{C}
+\end{align*}
+
+\begin{align*}
+h_{l2} &= h_g(-16^\circ\text{C}) \quad \text{in Tab. A-10} \\
+h_g &= h_2 = 237.74 \frac{kJ}{kg} \quad \Rightarrow s_2 = s_3 = 0.529 \frac{kJ}{kgK}
+\end{align*}
+
+\begin{align*}
+s_2 = s_3 &= s_3 (8 \text{bar}) \quad \text{in Tab. A-12} \\
+s_3 (31.33^\circ\text{C}) &= 0.9066 \frac{kJ}{kgK}, \quad h(31.33^\circ\text{C}) = 294.15 \frac{kJ}{kg} \\
+s(40^\circ\text{C}) &= 0.9374 \frac{kJ}{kgK}, \quad h(40^\circ\text{C}) = 273.66 \frac{kJ}{kg}
+\end{align*}
+
+\textbf{h\_3 interpolieren}
+
+\begin{align*}
+h_3 &= \frac{h(40^\circ\text{C}) - h(31.33^\circ\text{C})}{s(40^\circ\text{C}) - s(31.33^\circ\text{C})} \cdot (s_3 - s(31.33^\circ\text{C})) + h(31.33^\circ\text{C}) \\
+h_3 &= 271.313 \frac{kJ}{kg}
+\end{align*}
+
+\section*{Aufgabe 4}
+
+\subsection*{b)}
+\begin{align*}
+\dot{m} &= \frac{\dot{W}}{h_2 - h_3}, \quad \Rightarrow \dot{m} = -0.02 \frac{kJ}{kg} \\
+\dot{m} &= 8.34 \cdot 10^{-4} \frac{kg}{s}
+\end{align*}
+
+\textbf{Verbal Description of Graphical Content:}
+
+There is a horizontal line graph with a wavy line running through the middle of the graph. The x-axis is a straight horizontal line, and the y-axis is a straight vertical line. The wavy line oscillates above and below the x-axis, indicating some form of periodic behavior.
+
+``````latex
+
+\section*{Aufgabe 4}
+
+\subsection*{c)}
+\begin{itemize}
+    \item Prozess: adiabatisch, isenthalp
+    \item \( h_{g} = h_{1} = h_{2} \)
+    \item \( h_{g} = h_{1} \rightarrow h_{g} = 93.42 \frac{kJ}{kg} = h_{1} \)
+    \item \( h_{f} \) in Tafel A10 für -16°C nach h interpolieren für \( x_{1} \)
+    \item \( h_{f} (-16°C) = 25.3 \frac{kJ}{kg} \)
+    \item \( h_{g} (-16°C) = 237.79 \frac{kJ}{kg} \)
+    \item \( h_{1} = (1 - x_{1}) h_{f} + x_{1} h_{g} \)
+    \item \( h_{1} - h_{f} = x_{1} (h_{g} - h_{f}) \)
+    \item \( x_{1} = \frac{h_{1} - h_{f}}{h_{g} - h_{f}} \)
+    \item \( x_{1} = 0.3076 \)
+\end{itemize}
+
+\subsection*{d)}
+\begin{itemize}
+    \item \( \varepsilon_{K} \rightarrow \) Kältemaschine
+    \item \( \varepsilon_{K} = \frac{\dot{Q}_{zu}}{\left| \dot{W}_{K} \right|} \)
+    \item \( \dot{Q}_{zu} = \dot{Q}_{K} \rightarrow \dot{Q}_{K} \rightarrow 1. HS \) stationärer Fliexp. \( \rightarrow 1 - 2 \)
+    \item \( 0 = \dot{m} (h_{1} - h_{2}) + \dot{Q}_{K} - \dot{W}_{K} \rightarrow \) isobar
+    \item \( \dot{Q}_{K} = \dot{m} (h_{2} - h_{1}) \rightarrow h_{1} = 93.42 \frac{kJ}{kg} \rightarrow \) siehe c)
+    \item \( h_{2} = 237.79 \frac{kJ}{kg} \rightarrow \) siehe b)
+    \item \( \dot{Q}_{K} = 0.12 kJ \)
+    \item \( \dot{W}_{t} = \dot{W}_{K} = 0.028 kW \)
+    \item \( \varepsilon_{K} = \frac{\dot{Q}_{K}}{\left| \dot{W}_{K} \right|} = 4.2857 \)
+\end{itemize}
+
+```

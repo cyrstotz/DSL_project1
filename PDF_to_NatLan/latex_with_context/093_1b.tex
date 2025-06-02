@@ -1,0 +1,24 @@
+An energy balance equation is written:  
+\[
+Q = \dot{m}_{\text{R134a}} \left( h_2 - h_3 \right) + \dot{Q}_K - \dot{W}_K
+\]  
+The enthalpy \( h_2 \) is defined as \( h_{\text{R134a}} \) at \( T = T_i - 6 \, \text{K} \) and \( p = 0.5 \, \text{bar} \), with vapor quality \( x = 0.9 \).  
+The enthalpy \( h_3 \) is also \( h_{\text{R134a}} \), but the specific details are crossed out and unclear.  
+Entropy is noted as \( s_2 = s_3 \).
+
+The thermodynamic mean temperature \( T_{\text{KF}} \) is calculated using the integral expression:  
+\[
+T_{\text{KF}} = \frac{\int_{e}^{a} T \, ds}{S_a - S_e}
+\]  
+
+For the liquid substance model, the entropy difference \( S_a - S_e \) is expressed as:  
+\[
+S_a - S_e = \int_{T_e}^{T_a} c_{\text{l}} \frac{dT}{T} = c_{\text{l}} \ln \left( \frac{T_a}{T_e} \right)
+\]  
+
+Substituting into the integral, the mean temperature is calculated as:  
+\[
+T_{\text{KF}} = \frac{T_a - T_e}{\ln \left( \frac{T_a}{T_e} \right)} = 291.63 \, \text{K}
+\]  
+
+---

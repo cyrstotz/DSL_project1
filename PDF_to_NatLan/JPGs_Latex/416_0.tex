@@ -1,0 +1,46 @@
+TASK 1a  
+The diagram shows a reactor with labeled inlet and outlet streams. The inlet mass flow rate \( \dot{m}_{\text{in}} \) enters the reactor, and the outlet mass flow rate \( \dot{m}_{\text{out}} \) exits. Heat flow \( \dot{Q}_R = 100 \, \text{kW} \) is released inside the reactor and removed via \( \dot{Q}_{\text{out}} \).  
+
+The energy balance equation is:  
+\[
+0 = \dot{m} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R - \dot{Q}_{\text{out}}
+\]  
+
+The enthalpy values are:  
+\[
+h_{\text{in}} = 292.39 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-2, at } 70^\circ\text{C}\text{)}
+\]  
+\[
+h_{\text{out}} = h_f(100^\circ\text{C}) = 419.04 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-2)}
+\]  
+
+The heat flow removed by the coolant is calculated as:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R = 62.182 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) is defined as:  
+\[
+T = \frac{T_{\text{abs,in}} - T_{\text{abs,out}}}{S_a - S_e}
+\]  
+
+The entropy difference is given by:  
+\[
+S_a - S_e = c_{\text{wm}} \ln \left( \frac{T_a}{T_c} \right)
+\]  
+
+The energy balance equation remains:  
+\[
+0 = \dot{m} (h_e - h_a) + \dot{Q}_{\text{out}}
+\]  
+
+The temperature difference \( \Delta T \) is considered, and \( \dot{Q}_{\text{out}} \) is used to calculate the mean temperature.  
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) is calculated as:  
+\[
+\dot{S}_{\text{gen}} = - \left( \dot{m} c_{\text{wm}} \ln \left( \frac{T_{\text{out}}}{T_{\text{in}}} \right) + \frac{\dot{Q}_{\text{out}}}{235 \, \text{K}} \right)
+\]  
+
+The entropy production accounts for the heat transfer and temperature difference of the coolant.

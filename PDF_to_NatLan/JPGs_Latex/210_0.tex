@@ -1,0 +1,32 @@
+TASK 1a  
+The problem involves determining the heat flow \( \dot{Q}_{\text{out}} \) removed by the coolant. A diagram is drawn showing a reactor with inlet and outlet streams. The inlet stream enters at \( T_{\text{in}} = 70^\circ\text{C} \) and \( \dot{m}_{\text{in}} = 0.3 \, \text{kg/s} \), while the outlet stream exits at \( T_{\text{out}} = 100^\circ\text{C} \). The coolant enters at \( T_{\text{KF,in}} = 288.15 \, \text{K} \) and exits at \( T_{\text{KF,out}} = 298.15 \, \text{K} \). The reactor contains pure water with steam quality \( x = 0.005 \).  
+
+The energy balance equation is written as:  
+\[
+0 = \dot{m} \left[ h_1 - h_2 \right] + \dot{Q}_{\text{out}}
+\]  
+
+The heat flow \( \dot{Q}_{\text{out}} \) is calculated using:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \left[ h_2 - h_1 \right]
+\]  
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \left[ h(70^\circ\text{C}) - h(100^\circ\text{C}) \right]
+\]  
+\[
+\dot{Q}_{\text{out}} = 0.3 \left[ 292.98 - 415.04 \right] \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+\dot{Q}_{\text{out}} = -37.818 \, \frac{\text{kJ}}{\text{s}} = -37.818 \, \text{kW}
+\]  
+
+TASK 1b  
+The entropy production equation is written as:  
+\[
+\frac{dS}{dt} = \sum \dot{m}_i s_i + \sum \frac{\dot{Q}}{T} + \dot{S}_{\text{gen}}
+\]  
+The term \( \frac{dS}{dt} \) is crossed out, indicating steady-state operation (\( \text{stFP} \)). The equation simplifies to:  
+\[
+\sum \dot{m}_i s_i + \sum \frac{\dot{Q}}{T} + \dot{S}_{\text{gen}}
+\]

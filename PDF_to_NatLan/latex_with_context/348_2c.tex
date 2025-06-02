@@ -1,0 +1,22 @@
+The mass-specific exergy destruction \( ex_{\text{dest}} \) is calculated as the difference between the exergy at state 6 and state 0, with reference to ambient conditions. The formula used is:  
+\[
+ex_{\text{dest}} = ex_{6} - ex_{0}
+\]  
+This is based on the ideal gas assumption and includes terms for enthalpy and entropy differences, as well as kinetic energy contributions.  
+
+The detailed calculation is:  
+\[
+ex_{\text{dest}} = (h_6 - h_0) - T_0 (s_6 - s_0) + \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]  
+Substituting values:  
+\[
+T_0 = 243.15 \, \text{K}, \quad w_6 = 220 \, \text{m/s}, \quad w_0 = 200 \, \text{m/s}
+\]  
+\[
+s_6 - s_0 = c_p \ln\left(\frac{T_6}{T_0}\right) = 85.46 \, \frac{\text{J}}{\text{kg·K}} \ln\left(\frac{431.9}{243.15}\right) = 30.14 \, \frac{\text{J}}{\text{kg·K}}
+\]  
+\[
+ex_{\text{dest}} = 120.8 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+---

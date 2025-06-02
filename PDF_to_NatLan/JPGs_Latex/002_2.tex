@@ -1,0 +1,49 @@
+TASK 2a  
+The problem setup includes the following parameters:  
+- Airspeed \( w_{\text{air}} = 200 \, \text{m/s} \)  
+- Ambient pressure \( p_0 = 0.191 \, \text{bar} \)  
+- Ambient temperature \( T_0 = -30^\circ\text{C} \)  
+- Heat added per unit mass \( q_B = 1195 \, \text{kJ/kg} \)  
+- Mean temperature during combustion \( \bar{T}_B = 1289 \, \text{K} \)  
+- Air is modeled as a perfect gas.  
+
+A qualitative \( T \)-\( s \) diagram is drawn to represent the jet engine process.  
+- The diagram shows labeled states (0, 1, 2, 3, 4, 5, 6).  
+- The process begins at state 0 and progresses through compression (state 1 to state 2), combustion (state 3), turbine expansion (state 4), mixing (state 5), and nozzle exit (state 6).  
+- Isobars are indicated with red lines, and the entropy axis is labeled as \( s \) in \( \text{kJ/kg·K} \).  
+- The temperature axis is labeled as \( T \) in \( \text{K} \).  
+- The pressure at state 2 is equal to the pressure at state 3 (\( p_2 = p_3 \)), and the pressure at state 6 equals the ambient pressure (\( p_6 = p_0 \)).  
+
+TASK 2b  
+An energy balance is performed around the jet engine.  
+The following equations and relationships are derived:  
+1. The temperature at state 6 (\( T_6 \)) is calculated using the isentropic relation:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+where \( \kappa = 1.4 \).  
+The result is \( T_6 = 325.07 \, \text{K} \).  
+
+2. The energy balance equation is written as:  
+\[
+0 = \dot{m} \left( h_0 - h_1 \right) + q_B - \dot{Q}
+\]  
+\[
+0 = \dot{m} \left( h_1 - h_B \right) + \left( w_e^2 - w_a^2 \right) + Q
+\]  
+\[
+0 = 2 \left( h_1 - h_B \right) + \left( w_e^2 - w_a^2 \right)
+\]  
+\[
+2 \left( h_1 - h_B \right) = Q + \left( w_e^2 - w_a^2 \right)
+\]  
+
+The equations are used to calculate the outlet velocity \( w_6 \) and other thermodynamic properties.  
+
+A block diagram is included to visually represent the energy flow and key states in the jet engine process. The diagram shows the inlet and outlet streams, heat addition \( q_B \), and the relationship between pressures and temperatures at various states.  
+
+Additional notes:  
+- \( n = 1.4 \) is used for the isentropic exponent.  
+- Intermediate calculations for \( T_6 \) and other variables are shown.  
+
+No further content is visible.

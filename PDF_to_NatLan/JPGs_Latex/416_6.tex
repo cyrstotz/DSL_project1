@@ -1,0 +1,35 @@
+TASK 2c  
+The mass-specific increase in flow exergy is calculated as:  
+\[
+\Delta ex_{\text{flow}} = ex_{\text{flow},6} - ex_{\text{flow},0}
+\]  
+The flow exergy at state 6 and state 0 is expressed as:  
+\[
+ex_{\text{flow},0} = h_6 - h_0 - T_0(s_6 - s_0) + \frac{w_6^2 - w_0^2}{2}
+\]  
+Expanding the terms:  
+\[
+\Delta ex = c_p(T_6 - T_0) - T_0 \ln \left( \frac{T_6}{T_0} \right) + \frac{w_6^2 - w_0^2}{2}
+\]  
+The temperature \( T_0 \) is given as \( 340 \, \text{K} \), and the velocity \( w_6 \) is \( 150 \, \text{m/s} \).  
+The calculated value for \( \Delta ex \) is approximately \( 1100.65 \, \text{J/kg} \), which simplifies to \( 110 \, \text{kJ/kg} \).  
+
+---
+
+TASK 2d  
+The steady-state flow process (stat. FP) is described using the following equation:  
+\[
+0 = \dot{ex}_{\text{in}} + \left( 1 - \frac{T_0}{T} \right) \frac{\dot{Q}}{T} - \dot{W} - \dot{ex}_{\text{out}}
+\]  
+This assumes an adiabatic turbine.  
+
+The turbine work rate is expressed as:  
+\[
+\dot{W}_t = \dot{W}_{\text{turb}} - \dot{W}_{\text{comp}}
+\]  
+Expanding the turbine work term:  
+\[
+\dot{W}_{\text{turb}} = h_6 - h_5 + \frac{w_6^2 - w_5^2}{2} + q_B
+\]  
+The heat transfer term \( q_B \) is included in the calculation.  
+

@@ -1,0 +1,62 @@
+The next section addresses the cooling process from state 1 to state 2.  
+
+State 1:  
+Mass \( m_{\text{total},1} = 5755 \, \text{kg} \), steam quality \( x = 0.005 \), temperature \( T = 100^\circ\text{C} \).  
+
+State 2:  
+Temperature \( T = 70^\circ\text{C} \), steam quality \( x = 0 \). Heat released during cooling is \( Q_{\text{out},12} = 35 \, \text{MJ} \).  
+
+The system is described as "half-open," and the energy balance is written as:  
+\[
+\Delta E = m_2 u_2 - m_1 u_1 = \Delta m_{12} h_i + Q_{12} - W_{\text{in}}
+\]  
+
+The mass at state 2 is expressed as:  
+\[
+m_2 = m_1 + \Delta m_{12}
+\]  
+
+The internal energy values are calculated using water tables:  
+\[
+u_2 = U(70^\circ\text{C}, x = 0) = 292.45 \, \text{kJ/kg} \quad \text{[Table A2]}
+\]  
+\[
+u_1 = U(100^\circ\text{C}, x = 0.005) = 418.36 + 0.005 (2586.5 - 418.36) = 429.37 \, \text{kJ/kg} \quad \text{[Table A2]}
+\]  
+
+The enthalpy at the inlet is:  
+\[
+h_i = h(20^\circ\text{C}, x = 0) = 83.36 \, \text{kJ/kg} \quad \text{[Table A2]}
+\]  
+
+The heat balance is summarized as:  
+\[
+\sum \dot{Q}_i = Q_{R,12} - Q_{\text{out},12} = 0
+\]  
+
+The page ends with a note indicating continuation on the next page.  
+
+Description of Diagram:  
+The diagram is a rectangular schematic with arrows labeled \( Q_{\text{out}} \) and \( Q_{\text{in}} \) pointing outward and inward, respectively. It represents heat transfer across a cooling wall.
+
+The energy balance equation is written as:  
+\[
+(m_1 + \Delta m) h_2 - \Delta m h_i = m_1 h_1
+\]  
+Rearranging terms:  
+\[
+m_1 h_2 + \Delta m h_2 - \Delta m h_i = m_1 h_1
+\]  
+Solving for \( \Delta m \):  
+\[
+\Delta m = \frac{m_1 h_1 - m_1 h_2}{h_2 - h_i}
+\]  
+Substituting values:  
+\[
+\Delta m = \frac{5755 \, \text{kg} \cdot 429.3778 \, \text{kJ/kg} - 292.95 \, \text{kJ/kg}}{292.95 \, \text{kJ/kg} - 83.96 \, \text{kJ/kg}}
+\]  
+\[
+\Delta m = 3765.11 \, \text{kg}
+\]  
+
+---

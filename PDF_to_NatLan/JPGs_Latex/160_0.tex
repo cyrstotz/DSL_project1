@@ -1,0 +1,56 @@
+TASK 1a  
+The steady-state flow process is described using the energy and entropy balance equations.  
+
+The energy balance equation is:  
+\[
+0 = \dot{m}(s_e - s_a) + \frac{\dot{Q}_{\text{out}}}{T} + \dot{S}_{\text{gen}}
+\]  
+For an adiabatic process (\( \dot{S}_{\text{gen}} = 0 \)), this simplifies to:  
+\[
+0 = \dot{m}(h_e - h_a) + \dot{Q}_{\text{out}}
+\]  
+
+The heat flow removed by the coolant is given by:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}(h_a - h_e)
+\]  
+
+The enthalpy difference (\( h_a - h_e \)) is expressed as:  
+\[
+h_a - h_e = c_{\text{if}}(T_a - T_e) + \frac{v}{\rho}(p_a - p_e)
+\]  
+Here, \( p_2 = p_a \), indicating equal pressures.  
+
+A diagram is included showing the heat flow \( \dot{Q}_{\text{out}} \) between the inlet and outlet temperatures \( T_{\text{KF,a}} \) and \( T_{\text{KF,e}} \).  
+
+Finally, the heat flow is simplified to:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} c_{\text{if}} (T_{\text{KF,a}} - T_{\text{KF,e}})
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature \( T \) is calculated using the entropy balance:  
+\[
+T = \frac{\int_{s_e}^{s_a} T \, ds}{s_a - s_e}
+\]  
+
+Using the relation \( \frac{q}{T} = s \), this simplifies to:  
+\[
+T = \frac{\dot{Q}_{\text{out}}}{s_a - s_e}
+\]  
+
+The entropy difference \( s_a - s_e \) is expressed as:  
+\[
+s_a - s_e = \int_{T_1}^{T_s} c_{\text{if}} \frac{1}{T} \, dT = c_{\text{if}} \ln \left( \frac{T_s}{T_1} \right)
+\]  
+
+Substituting this into the equation for \( T \):  
+\[
+T = \frac{\dot{Q}_{\text{out}}}{c_{\text{if}} \ln \left( \frac{T_s}{T_1} \right)}
+\]  
+
+This provides the thermodynamic mean temperature based on the heat flow and temperature range.  
+
+No additional diagrams or figures are present on this part of the page.

@@ -1,0 +1,42 @@
+The expression for the specific exergy \( ex_{\text{str}} \) is given as:  
+\[
+ex_{\text{str}} = h - h_0 - T_0(s - s_0) + ke + pe
+\]  
+where \( ke = \frac{w^2}{2} \) and \( pe = gz \).  
+
+The simplified form of \( ex_{\text{str}} \) is:  
+\[
+ex_{\text{str},6} = h - h_0 - T_0(s_6 - s_0) + \frac{w_6^2}{2}
+\]  
+
+Substituting the terms:  
+\[
+h - h_0 = c_p(T - T_0), \quad s_6 - s_0 = c_p \ln\left(\frac{T_6}{T_0}\right) - R \ln\left(\frac{p_6}{p_0}\right)
+\]  
+
+Thus:  
+\[
+ex_{\text{str},6} = c_p(T - T_0) - T_0 \left[ c_p \ln\left(\frac{T_6}{T_0}\right) - R \ln\left(\frac{p_6}{p_0}\right) \right] + \frac{w_6^2}{2}
+\]  
+
+The constant \( R = c_p - \frac{c_p}{\kappa} \) is calculated as:  
+\[
+R = 0.287 \, \text{kJ/kg·K}
+\]  
+
+Numerical values are substituted:  
+\[
+130.005 \, \text{kJ/kg} = 130 \, \text{MJ/t}
+\]  
+
+The specific exergy at ambient conditions is:  
+\[
+ex_{\text{str},0} = ke = \frac{w_0^2}{2}
+\]  
+
+The change in specific exergy is:  
+\[
+\Delta ex_{\text{str}} = ex_{\text{str},6} - ke_0
+\]  
+
+---

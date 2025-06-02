@@ -1,0 +1,49 @@
+TASK 1d  
+The temperature decreases from \( T_1 = 100^\circ\text{C} \) to \( T_2 = 70^\circ\text{C} \), resulting in \( \Delta T = 30 \, \text{K} \). The heat released during this cooling process is given as \( Q_R = Q_{\text{out}} = 35 \, \text{MJ} \).  
+
+The specific internal energy values are calculated using water tables:  
+\[
+u_f(100^\circ\text{C}) = 419.94 \, \text{kJ/kg}, \quad u_f(70^\circ\text{C}) = 293.25 \, \text{kJ/kg}
+\]  
+
+The energy balance equation is written as:  
+\[
+Q_{\text{out}} = m_{\text{total},1} \cdot u_f(70^\circ\text{C}) + m_{\text{added}} \cdot u_f(20^\circ\text{C}) - m_{\text{total},1} \cdot u_f(100^\circ\text{C})
+\]  
+
+Rearranging for \( m_{\text{added}} \):  
+\[
+m_{\text{added}} = \frac{Q_{\text{out}} - m_{\text{total},1} \cdot (u_f(70^\circ\text{C}) - u_f(100^\circ\text{C}))}{u_f(20^\circ\text{C}) - u_f(70^\circ\text{C})}
+\]  
+
+Substituting values:  
+\[
+u_f(20^\circ\text{C}) = 83.95 \, \text{kJ/kg}, \quad m_{\text{total},1} = 5755 \, \text{kg}
+\]  
+
+\[
+m_{\text{added}} = \frac{35,000 - 5755 \cdot (293.25 - 419.94)}{83.95 - 293.25}
+\]  
+
+The calculated mass \( m_{\text{added}} \) is approximately \( 3589.106 \, \text{kg} \).  
+
+---
+
+TASK 1e  
+The entropy change \( \Delta S_{12} \) of the reactor contents is calculated using the formula:  
+\[
+\Delta S_{12} = m_{\text{total},1} \cdot s_{f,2} - m_{\text{total},1} \cdot s_{f,1} + m_{\text{added}} \cdot s_{f,3}
+\]  
+
+Using entropy values from water tables:  
+\[
+s_f(100^\circ\text{C}) = 1.307 \, \text{kJ/kg·K}, \quad s_f(70^\circ\text{C}) = 0.950 \, \text{kJ/kg·K}, \quad s_f(20^\circ\text{C}) = 0.292 \, \text{kJ/kg·K}
+\]  
+
+Substituting values:  
+\[
+\Delta S_{12} = 5755 \cdot (0.950 - 1.307) + 3589.106 \cdot 0.292
+\]  
+
+The entropy change \( \Delta S_{12} \) is approximately \( -1222.53 \, \text{kJ/K} \).  
+

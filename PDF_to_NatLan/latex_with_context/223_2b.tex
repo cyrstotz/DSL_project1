@@ -1,0 +1,39 @@
+The energy balance for the jet engine system (considering the entire engine) is expressed as:  
+\[
+\frac{dE}{dt} = \dot{m}_{\text{air}} \left( h_0 - h_6 + \frac{w_{\text{out}}^2}{2} - \frac{w_6^2}{2} \right) + \sum_i \dot{Q}_i - \sum_o \dot{W}_o
+\]  
+where:  
+- \( h_0 \) and \( h_6 \) are the specific enthalpies at states 0 and 6.  
+- \( w_{\text{out}} \) and \( w_6 \) are the velocities at the outlet and state 6.  
+- \( \sum_i \dot{Q}_i \) is the sum of heat inputs.  
+- \( \sum_o \dot{W}_o \) is the sum of work outputs.  
+
+Further derivations include:  
+\[
+w_6^2 = 2 h_0 - 2 h_6 + w_{\text{out}}^2
+\]  
+and  
+\[
+h_0 - h_6 = \int_{T_0}^{T_6} c_p \, dT
+\]  
+
+To determine \( T_6 \):  
+\[
+T_6 = T_5 \left( \frac{P_0}{P_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+where \( \kappa = 1.4 \). Substituting values:  
+\[
+T_6 = 431.5 \, \text{K} \times \left( \frac{0.191}{0.15} \right)^{\frac{1.4 - 1}{1.4}} = 328.08747 \, \text{K}
+\]  
+
+Calculating \( h_0 - h_6 \):  
+\[
+h_0 - h_6 = c_p (743.15 \, \text{K} - 328.08747 \, \text{K}) = -85.134 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Finally, solving for \( w_6 \):  
+\[
+w_6 = \sqrt{2 (-85.134) + 200 \, \frac{\text{m}^2}{\text{s}^2}}
+\]  
+
+The final result for \( w_6 \) is left incomplete.

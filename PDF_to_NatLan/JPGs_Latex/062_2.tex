@@ -1,0 +1,63 @@
+TASK 1a  
+The reactor operates with the following conditions:  
+- Inlet temperature \( T_{\text{in}} = 70^\circ\text{C} \).  
+- Outlet temperature \( T_{\text{out}} = 100^\circ\text{C} \).  
+- Reactor temperature \( T_{\text{Reactor}} = 100^\circ\text{C} \).  
+
+---
+
+TASK 1a (subtask a)  
+The heat flow \( \dot{Q}_{\text{out}} \) removed by the coolant is calculated using the energy balance:  
+\[
+0 = \dot{m} (h_{\text{ein}} - h_{\text{aus}}) + \dot{Q}_R - \dot{Q}_{\text{aus}}
+\]  
+\[
+\dot{Q}_{\text{aus}} = \dot{m} (h_{\text{ein}} - h_{\text{aus}}) + \dot{Q}_R = 0.3 \, \frac{\text{kg}}{\text{s}} \left( 301.65 \, \frac{\text{kJ}}{\text{kg}} - 430.34 \, \frac{\text{kJ}}{\text{kg}} \right) + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{aus}} = 62.29 \, \text{kW}
+\]  
+
+A diagram is drawn showing the reactor system with labeled heat flows \( \dot{Q}_{\text{out}} \), \( \dot{Q}_R = 100 \, \text{kW} \), and mass flow \( \dot{m} \).  
+
+---
+
+TASK 1a (subtask b)  
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is calculated as:  
+\[
+T_{\text{KF}} = \frac{T_{\text{aus,KF}} - T_{\text{ein,KF}}}{\ln \left( \frac{T_{\text{aus,KF}}}{T_{\text{ein,KF}}} \right)}
+\]  
+\[
+T_{\text{KF}} = \frac{298.15 - 288.15}{\ln \left( \frac{298.15}{288.15} \right)} = 293.42 \, \text{K}
+\]  
+
+A note mentions that the pressure does not change significantly.  
+
+---
+
+TASK 1a (subtask c)  
+The entropy production \( \dot{S}_{\text{gen}} \) is calculated using:  
+\[
+0 = \dot{m} (s_{\text{ein}} - s_{\text{aus}}) + \frac{\dot{Q}_R - \dot{Q}_{\text{aus}}}{T_{\text{KF}}} + \dot{S}_{\text{gen}}
+\]  
+\[
+\dot{S}_{\text{gen}} = \dot{m} (s_{\text{aus}} - s_{\text{ein}}) + \frac{\dot{Q}_{\text{aus}} - \dot{Q}_R}{T_{\text{KF}}}
+\]  
+\[
+\dot{S}_{\text{gen}} = 0.3 \, \frac{\text{kg}}{\text{s}} \left( 1.334 \, \frac{\text{kJ}}{\text{kg·K}} - 7.955 \, \frac{\text{kJ}}{\text{kg·K}} \right) + \frac{62.29 \, \text{kW} - 100 \, \text{kW}}{293.42 \, \text{K}}
+\]  
+\[
+\dot{S}_{\text{gen}} = -2.04 \, \frac{\text{kJ}}{\text{s·K}}
+\]  
+
+A note mentions that the negative entropy production is due to the system not being closed.  
+
+Additional calculations for \( s_{\text{ein}} \) and \( s_{\text{aus}} \):  
+\[
+s_{\text{ein}} = x_0 \, g_f(70^\circ\text{C}) + (1 - x_0) \, g_g(70^\circ\text{C}) = 7.955 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+s_{\text{aus}} = x_0 \, g_f(100^\circ\text{C}) + (1 - x_0) \, g_g(100^\circ\text{C}) = 1.334 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+No diagrams are present for this subtask.

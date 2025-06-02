@@ -1,0 +1,26 @@
+The outlet velocity \( w_6 \) and temperature \( T_6 \) are determined using the first law of thermodynamics for a flying system under steady-state conditions.  
+
+The energy balance equation is:  
+\[
+0 = \dot{m} \left[ h_6 - h_4 + \frac{w_6^2}{2} - \frac{w_4^2}{2} \right] + \dot{Q}_{\text{in}}
+\]  
+
+Rearranging for \( w_6^2 \):  
+\[
+w_6^2 = 2 \left( h_4 - h_6 \right) + w_4^2 + 2 \frac{\dot{Q}_{\text{in}}}{\dot{m}}
+\]  
+
+Substituting \( h_4 - h_6 = c_p^{\text{air}} \left( T_4 - T_6 \right) \):  
+\[
+w_6^2 = 2 c_p^{\text{air}} \left( T_4 - T_6 \right) + w_4^2 + 2 \frac{\dot{Q}_{\text{in}}}{\dot{m}}
+\]  
+
+Given values:  
+\[
+T_4 = 1289 \, \text{K}, \quad T_6 = 431.9 \, \text{K}, \quad w_4 = 220 \, \text{m/s}, \quad \dot{Q}_{\text{in}} = 1195 \, \text{kJ/kg}, \quad c_p^{\text{air}} = 1.006 \, \text{kJ/kg·K}
+\]  
+
+Substitute and solve for \( w_6 \):  
+\[
+w_6 = \sqrt{2 \cdot 1.006 \cdot (1289 - 431.9) + 220^2 + 2 \cdot 1195}
+\]

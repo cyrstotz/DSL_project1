@@ -1,0 +1,185 @@
+
+``````latex
+
+
+\section*{Aufgabe 3}
+
+\subsection*{a) vereinfacht:}
+
+\begin{center}
+\begin{tabular}{c}
+\begin{minipage}{0.3\textwidth}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{diagram.png}
+\end{center}
+\end{minipage}
+\end{tabular}
+\end{center}
+
+\noindent
+The diagram shows a container with a piston on top. The piston is labeled with $(m_k + m_{EV}) \cdot g$ and the area below the piston is labeled with $V_1$.
+
+\[
+R = \frac{R_m}{M_g} = \frac{8.314 \frac{\text{J}}{\text{mol K}}}{50 \frac{\text{kg}}{\text{mol}}} = 0.16628 \frac{\text{kJ}}{\text{kg K}}
+\]
+
+\[
+A_{Zyl} = A = \pi \cdot \frac{D^2}{4} = \pi \cdot 25 \text{cm} = \frac{\pi}{400} \text{m}^2
+\]
+
+\noindent
+Kräftegleichgewicht:
+
+\[
+p_{g,1} \cdot A = (m_k + m_{EV}) \cdot g + p_{amb} \cdot A
+\]
+
+\[
+p_{g,1} = \frac{g \cdot (m_k + m_{EV}) + p_{amb} \cdot A}{A}
+\]
+
+\[
+= \frac{9.81 \frac{\text{m}}{\text{s}^2} \cdot (32 \text{kg}) + 10^5 \text{Pa}}{\frac{\pi}{400} \text{m}^2} = 1.4008 \text{bar}
+\]
+
+\[
+T_{g,1} = 500 \text{K} - 273.15 \text{K} = 273.15 \text{K}
+\]
+
+\[
+p_{4} \cdot V_1 = m_g \cdot R \cdot T_1
+\]
+
+\[
+m_g = \frac{p_{1,1} \cdot V_1}{R \cdot T_1} = \frac{140090 \text{Pa} \cdot 3.14 \cdot 10^{-3} \text{m}^3}{0.16628 \frac{\text{kJ}}{\text{kg K}} \cdot 273.15 \text{K}} = 3.422 \text{kg}
+\]
+
+\subsection*{b)}
+
+Der Druck $p_{g,2} = p_{g,1}$, da die $m_g$ die Masse \& der Umgebungsdruck nicht verändert.
+
+Da noch immer Eis vorhanden ist (sog. thermodynamische Gleichgewicht herrscht) ist die Temperatur des Gases gleich der des Eises/Wassers und somit 0°C bzw. 273.15 K.
+
+\subsection*{c)}
+
+\noindent
+geschlossene Systeme:
+
+\[
+E_2 - E_1 = Q_{12} - W_{u,12}
+\]
+
+\[
+U_2 - U_1 = Q_{12} - U_{v,12}
+\]
+
+\[
+V_2 = \frac{m \cdot R \cdot T_2}{p_2 ( = p_1)}
+\]
+
+\[
+= \frac{3.422 \text{kg} \cdot 0.16628 \frac{\text{kJ}}{\text{kg K}} \cdot 273.15 \text{K}}{140090 \text{Pa}} = 1.11 \text{L}
+\]
+
+``````latex
+
+
+\[
+W_{v,12} = \int_{v_1}^{v_2} p \, dV \quad \text{(p ist konst.)}
+\]
+
+\[
+= \int_{3,14 \cdot 10^{-3}}^{1,4 \cdot 10^{-3}} 1,4009 \cdot 10^5 \, dV
+\]
+
+\[
+= 1,4009 \cdot 10^5 \cdot \left(1,4 \cdot 10^{-3} - 3,14 \cdot 10^{-3}\right)
+\]
+
+\[
+= -284,4 \, \frac{J}{m} = -873,16 \, \frac{J}{kg}
+\]
+
+\[
+u_2 = u_1 + v_{u,12} = q_{12}
+\]
+
+\[
+q_{12} = c_v \cdot (T_2 - T_1) + v_{u,12} \quad \text{(perfektes Gas)}
+\]
+
+\[
+= 0,653 \, \frac{kJ}{kg \cdot K} \cdot (273,15K - 273,15K) \cdot 3,622 \, \frac{J}{g} - 873,16 \, \frac{J}{kg}
+\]
+
+\[
+= -2056 \, J
+\]
+
+\subsection*{d) Geschlossenes System mit Wasser:}
+
+\[
+u_{2,w} = u_{1,w} \quad \text{(Änderung der inneren Energie ist 0)}
+\]
+
+\[
+e_2 = e_1 + q_{12} - \frac{p}{v}
+\]
+
+\[
+u_2 = u_1 + q_{12}
+\]
+
+\[
+p_w = p_{amb} + 30 \, \frac{kg}{m^3} \cdot g
+\]
+
+\[
+p_w = p_{amb} + 30 \, \frac{kg}{m^3} \cdot 9,81 \, \frac{m}{s^2} \cdot \frac{1}{400 \, m^3}
+\]
+
+\[
+= 1,3992 \, bar \approx 1,4 \, bar
+\]
+
+\[
+u_f = u_{f,4bar} + x \cdot (u_{f,4bar} - u_{f,4bar})
+\]
+
+\[
+= (0,945 + 0,6 \cdot (335,458 + 0,045)) \, \frac{kJ}{kg}
+\]
+
+\[
+= -200,09 \, \frac{J}{g}
+\]
+
+\[
+u_{2,w} = \frac{q_{12}}{m} + u_{1,w}
+\]
+
+\[
+= \frac{2056 \, J - 200,09 \, \frac{J}{g}}{3,622 \, \frac{J}{g}}
+\]
+
+\[
+= -400,73 \, \frac{J}{g}
+\]
+
+\textbf{Fortsetzung auf anderem Blatt!}
+
+``````latex
+
+
+\section*{Aufgabe 3}
+\subsection*{a) Vollsätzung:}
+
+\begin{align*}
+U_{2,v} &= U_{1,4\%bar,v} + X_2 \cdot \left( U_{1,fe,1\%bar,v} - U_{1,4\%bar,v} \right) \\
+X_2 &= \frac{U_{2,v} - U_{1,4\%bar,v}}{U_{1,fe,1\%bar,v} - U_{1,4\%bar,v}} &= \frac{600,73 \frac{kJ}{kg} + 0,023 \frac{kJ}{kg}}{-333,438 + 0,045 \frac{kJ}{kg}} \\
+&= -1,202 \quad \Rightarrow \text{Etwas ist falsch}
+\end{align*}
+
+``````latex
+
+

@@ -1,0 +1,15 @@
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is calculated using entropy changes:  
+\[
+T_{\text{KF}} = \frac{\int T dS}{S_a - S_e}
+\]  
+For constant \( c_p \) and pressure:  
+\[
+S_a - S_e = c_p \ln \left( \frac{T_2}{T_1} \right) - R \ln \left( \frac{p_2}{p_1} \right)
+\]  
+With \( T_2 = 298.15 \, \text{K} \), \( T_1 = 288.15 \, \text{K} \), and \( p \) constant:  
+\[
+T_{\text{KF}} = \frac{c_p (T_2 - T_1)}{c_p \ln \left( \frac{T_2}{T_1} \right)} = \frac{10 \, \text{K}}{\ln \left( \frac{298.15}{288.15} \right)}
+\]  
+\[
+T_{\text{KF}} = 243.12 \, \text{K} = 19.97^\circ\text{C}
+\]

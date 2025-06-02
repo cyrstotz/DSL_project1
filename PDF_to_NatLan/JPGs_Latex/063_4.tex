@@ -1,0 +1,45 @@
+TASK 2a  
+The diagram is a qualitative \( T \)-\( s \) plot representing the thermodynamic process of a jet engine. The temperature \( T \) is plotted on the vertical axis (in Kelvin), and the entropy \( s \) is plotted on the horizontal axis (in \( \text{kJ}/\text{kg·K} \)). The process includes labeled states:  
+- State 0 (ambient conditions)  
+- State 1 (after compression)  
+- State 2 (bypass/core split)  
+- State 3 (combustion)  
+- State 4 (turbine exit)  
+- State 5 (mixer exit)  
+- State 6 (nozzle exit).  
+
+The diagram shows isobaric and adiabatic processes, with arrows indicating the flow direction. The combustion process is highlighted as a significant increase in temperature.  
+
+TASK 2b  
+Using the first law of thermodynamics:  
+\[
+0 = \dot{m}_{\text{gas}} \left[ h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right]
+\]  
+Rearranging:  
+\[
+0 = h_5 - h_6 + \frac{w_5^2}{2} - \frac{w_6^2}{2}
+\]  
+Solving for \( w_6 \):  
+\[
+w_6 = \sqrt{2 \left[ h_5 - h_6 + \frac{w_5^2}{2} \right]}
+\]  
+
+The temperature \( T_6 \) is calculated using the isentropic relation:  
+\[
+T_6 = T_s \left( \frac{p_6}{p_s} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_s = 437.9 \, \text{K}, \quad p_6 = 0.5 \, \text{bar}, \quad p_s = 0.791 \, \text{bar}
+\]  
+\[
+T_6 = 437.9 \, \text{K} \times \left( \frac{0.5 \, \text{bar}}{0.791 \, \text{bar}} \right)^{\frac{1.4 - 1}{1.4}} = 328 \, \text{K}
+\]  
+
+Finally, calculating \( w_6 \):  
+\[
+w_6 = \sqrt{2 \cdot 7.006 \, \text{kJ}/\text{kg·K} \cdot (437.9 \, \text{K} - 328 \, \text{K}) + 220^2 \, \text{m}^2/\text{s}^2}
+\]  
+\[
+w_6 = 220.9 \, \text{m/s}
+\]

@@ -1,0 +1,79 @@
+The task involves calculating the flow exergy difference \( \Delta e_{\text{str}} \), which is expressed as:  
+\[
+\Delta e_{\text{str}} = e_{\text{str},6} - e_{\text{str},0}
+\]  
+The equation for the specific flow exergy is given as:  
+\[
+\dot{W}_{06} = m \left( h_c - h_0 + \frac{w_c^2}{2} - \frac{w_0^2}{2} \right)
+\]  
+This can be rewritten as:  
+\[
+\dot{W}_{06} = m_{\text{gas}} \left( h_0 - h_c + \frac{(w_0 - w_c)^2}{2} \right)
+\]  
+
+### Interpolation for \( h_0 \):  
+Using Table A-22, interpolation is performed to find \( h_0 \):  
+\[
+\begin{array}{|c|c|}
+\hline
+240 & 240.02 \\
+243 & x \\
+250 & 250.05 \\
+\hline
+\end{array}
+\]  
+The interpolation formula is applied:  
+\[
+h_0 = 243.029 = 240.02 + \frac{(243 - 240)}{250 - 240} \cdot (250.05 - 240.02)
+\]  
+
+### Interpolation for \( h_c \):  
+Similarly, interpolation is performed to find \( h_c \):  
+\[
+\begin{array}{|c|c|}
+\hline
+325 & 325.31 \\
+328.075 & x \\
+330 & 330.34 \\
+\hline
+\end{array}
+\]  
+The interpolation formula is applied:  
+\[
+h_c = 328.2103 = 325.31 + \frac{(328.075 - 325)}{330 - 325} \cdot (330.34 - 325.31)
+\]  
+
+### Final Equation:  
+The flow exergy difference is calculated using:  
+\[
+\Delta e_{\text{str}} = h_c - h_0 - T_0 \cdot (s_c - s_0) + qe
+\]  
+
+No diagrams or graphs are present on this page.
+
+The mass-specific increase in flow exergy (\( \Delta ex_{\text{str}} \)) is calculated using the following formula:  
+\[
+\Delta ex_{\text{str}} = c_p (T_0 - T_0 \ln \left( \frac{T_0}{T_0} \right)) - R \ln \left( \frac{p_0}{p_0} \right) + \frac{(w_6^2 - w_0^2)}{2}
+\]
+
+The specific heat capacity at constant pressure (\( c_p \)) is determined as:  
+\[
+c_p = \frac{c_p}{\kappa} = \frac{1.006 \, \frac{\text{kJ}}{\text{kg·K}}}{1.4} = 0.719 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+The specific gas constant (\( R \)) is calculated as:  
+\[
+R = c_p - c_v = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} - 0.719 \, \frac{\text{kJ}}{\text{kg·K}} = 0.287 \, \frac{\text{kJ}}{\text{kg·K}}
+\]
+
+The detailed calculation for \( \Delta ex_{\text{str}} \) is:  
+\[
+\Delta ex_{\text{str}} = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \left( 388.075 \, \text{K} - 215.15 \, \text{K} - 243.15 \, \text{K} \ln \left( \frac{1.006 \, \frac{\text{kJ}}{\text{kg·K}}}{928.028 \, \text{K}} \right) \right) - 0.287 \, \frac{\text{kJ}}{\text{kg·K}} \ln(0) + \frac{(510 \, \frac{\text{m}}{\text{s}} - 200 \, \frac{\text{m}}{\text{s}})^2}{2}
+\]
+
+The result is:  
+\[
+\Delta ex_{\text{str}} = 480.62 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+---

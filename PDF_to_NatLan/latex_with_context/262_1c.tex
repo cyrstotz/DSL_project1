@@ -1,0 +1,36 @@
+The entropy balance equation is written as:  
+\[
+\frac{dS}{dt} = \frac{E}{T} + \frac{Q}{T} + \dot{S}_{\text{gen}}
+\]  
+
+For a stationary system, the entropy balance simplifies to:  
+\[
+\dot{S}_{\text{gen}} = S_{\text{aus}} - S_{\text{ein}} + \frac{Q_{\text{aus}}}{T}
+\]  
+
+Further simplification leads to:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \left( S_{\text{aus}} - S_{\text{ein}} \right) - \left( \frac{\dot{Q}_R}{T_R} + \frac{Q_{\text{aus}}}{T_{\text{KF}}} \right)
+\]  
+
+Using data from Table A-2:  
+\[
+s(70) = s_f(70) = 0.3579 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+s(100) = s_f(100) = 1.3609 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = 0.1056 \, \frac{\text{kJ}}{\text{K·s}} - \frac{100}{100 + 273.15} + \frac{Q_{\text{aus}}}{T_{\text{KF}}}
+\]  
+
+Finally, the entropy generation rate is calculated as:  
+\[
+\dot{S}_{\text{gen}} = 49.95 \, \frac{\text{W}}{\text{K}}
+\]  
+
+Additional notes:  
+- The mass flow rate is given as \( \dot{m} = 0.3 \, \text{kg/s} \).  
+- The term \( Q_{\text{aus}} / T_{\text{KF}} \) is noted as negative.

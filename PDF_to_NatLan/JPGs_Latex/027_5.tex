@@ -1,0 +1,84 @@
+TASK 3d  
+The problem involves determining the final ice fraction \( x_{2,\text{ice}} \) in state 2 using an energy balance and data from Table 1.
+
+### Initial Conditions:
+- State 1: \( x_{\text{ice},1} = 0.6 \)
+- State 2: \( x_{\text{ice},2} = ? \)
+- Heat transferred from the gas: \( Q = 1075 \, \text{J} \)
+
+### Energy Balance:
+The energy balance equation is given as:  
+\[
+\Delta E = Q + W_{12}
+\]  
+Since the system is incompressible, \( W_{12} = 0 \), so:  
+\[
+\Delta E = Q = 1075 \, \text{J}
+\]  
+
+Using the energy balance:  
+\[
+m(u_2 - u_1) = 1075 \, \text{J}
+\]  
+Where \( m = 0.1 \, \text{kg} \) (mass of the ice-water mixture).  
+
+### Reference Data from Table 1:
+At \( 0^\circ\text{C} \):  
+- \( u_{2,\text{fl}} = -333.458 \, \text{kJ/kg} \)  
+- \( u_{2,\text{sol}} = -0.045 \, \text{kJ/kg} \)  
+
+### Calculations:
+1. **Determine \( u_1 \):**  
+\[
+u_1 = u_{2,\text{fl}} + x_{\text{ice},1} (u_{2,\text{sol}} - u_{2,\text{fl}})
+\]  
+Substituting values:  
+\[
+u_1 = -333.458 + 0.6 (-0.045 - (-333.458))
+\]  
+\[
+u_1 = -333.458 + 0.6 (333.413)
+\]  
+\[
+u_1 = -200.0928 \, \text{kJ/kg}
+\]  
+
+2. **Determine \( u_2 \):**  
+\[
+u_2 = \frac{Q}{m} + u_1
+\]  
+Substituting values:  
+\[
+u_2 = \frac{1075}{0.1} + (-200.0928)
+\]  
+\[
+u_2 = 10750 - 200.0928
+\]  
+\[
+u_2 = -189.3498 \, \text{kJ/kg}
+\]  
+
+3. **Determine \( x_{2,\text{ice}} \):**  
+\[
+u_2 = u_{2,\text{fl}} + x_{2,\text{ice}} (u_{2,\text{sol}} - u_{2,\text{fl}})
+\]  
+Rearranging for \( x_{2,\text{ice}} \):  
+\[
+x_{2,\text{ice}} = \frac{u_2 - u_{2,\text{fl}}}{u_{2,\text{sol}} - u_{2,\text{fl}}}
+\]  
+Substituting values:  
+\[
+x_{2,\text{ice}} = \frac{-189.3498 - (-333.458)}{-0.045 - (-333.458)}
+\]  
+\[
+x_{2,\text{ice}} = \frac{144.1082}{333.413}
+\]  
+\[
+x_{2,\text{ice}} = 0.568
+\]  
+
+### Final Result:
+The final ice fraction in state 2 is:  
+\[
+x_{2,\text{ice}} = 0.568
+\]

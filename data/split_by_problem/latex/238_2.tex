@@ -1,0 +1,119 @@
+
+``````latex
+
+
+\section*{Thermodynamik 1}
+
+\subsection*{Aufgabe 2}
+
+\begin{itemize}
+    \item[a)] 
+    \begin{center}
+        \textbf{Graph Description:}
+        
+        The graph is a Temperature (T) vs. Entropy (s) diagram. The x-axis is labeled \( s \left[ \frac{kJ}{kg \cdot K} \right] \) and the y-axis is labeled \( T \left[ K \right] \). There are six points labeled 1 through 6. The process from 1 to 2 is a vertical line (isobar), from 2 to 3 is a curved line (adiabatic), from 3 to 4 is another vertical line (isobar), from 4 to 5 is another curved line (adiabatic), and from 5 to 6 is another vertical line (isobar). There is a small cycle labeled "C" with a note "wie es wirklich verläuft" and an isotherm line.
+    \end{center}
+    
+    \item[b)] 
+    \textbf{Stellen wir die Energiebilanz auf:}
+    
+    \[
+    \frac{dE}{dt} = \sum \dot{m} \left( h_i + \frac{ke}{pe} \right) + \sum \dot{Q} - \sum \dot{W}
+    \]
+    
+    \textit{(Note: The term "o, da adiab" and "eine Schaufelzelle verrichtet keine Arbeit" are crossed out.)}
+    
+    \[
+    \frac{T_6}{T_5} = \left( \frac{p_c}{p_s} \right)^{\frac{n-1}{n}} \Rightarrow T_6 = \left( \frac{p_c}{p_s} \right)^{\frac{n-1}{n}} T_5 = 0.7586 \cdot 431.9K \Rightarrow T_6 = 328.07K
+    \]
+    
+    \[
+    0 = \dot{m} \left[ h_5 - h_6 + \frac{w_5^2}{2} - \frac{w_6^2}{2} \right]
+    \]
+    
+    \[
+    h_5 - h_6
+    \]
+    
+    \[
+    h_5 - h_6 = c_p (T_5 - T_6) = 1.006 \frac{kJ}{kg \cdot K} (431.9K - 328.07K) = 104.44825 \frac{kJ}{kg}
+    \]
+    
+    \[
+    \frac{w_5^2}{2} = h_5 - h_6 + \frac{w_6^2}{2}
+    \]
+    
+    \[
+    w_6^2 = 2 \left( h_5 - h_6 + \frac{w_6^2}{2} \right)
+    \]
+    
+    \[
+    w_6 = \sqrt{2 \left( h_5 - h_6 + \frac{w_6^2}{2} \right)} = \sqrt{2 \cdot 104.448} = 20.47 \frac{m}{s}
+    \]
+    
+\end{itemize}
+
+``````latex
+
+
+\section*{c)}
+
+\[
+ex_{str} = \left[ h - h_0 - T_0 (s - s_0) + ke + pe \right]
+\]
+
+\[
+ex_{str,0} = \left[ \right]
+\]
+
+\[
+ex_{str,c} - ex_{str,0} = \left[ h_c - h_0 - T_0 (s_c - s_0) + \frac{\omega_2^2}{2} - \frac{\omega_1^2}{2} \right]
+\]
+
+\[
+h_c - h_0 = cp \left( T_c - T_0 \right) = 1.006 \frac{kJ}{kg \cdot K} \left( 328.01K - 243.15K \right) = 85.4295 \frac{kJ}{kg}
+\]
+
+\[
+s_c - s_0 = cp \ln \left( \frac{T_c}{T_0} \right) - R \ln \left( \frac{p_c}{p_0} \right) = 1.006 \frac{kJ}{kg \cdot K} \ln \left( \frac{328.01K}{243.15K} \right) - 0.2856 \frac{kJ}{kg \cdot K} \ln \left( \frac{1.49 \text{bar}}{1 \text{bar}} \right)
+\]
+
+\[
+M_{air} = 28.97 \frac{kg}{kmol} \quad \text{(von TAB A-1)}
+\]
+
+\[
+R = \frac{\overline{R}}{M_{air}} = 0.2856 \frac{kJ}{kg \cdot K}
+\]
+
+\[
+s_c - s_0 = 0.30134 \frac{kJ}{kg \cdot K}
+\]
+
+\[
+\Delta ex_{str,c} = ex_{str,c} - ex_{str,0} = \left[ 85.4295 \frac{kJ}{kg} - 243.15K \cdot (0.30134 \frac{kJ}{kg \cdot K}) + \frac{(220.4 \frac{m}{s})^2}{2} - \frac{(200 \frac{m}{s})^2}{2} \right]
+\]
+
+\[
+\Delta ex_{str} = -4315.67 \frac{kJ}{kg}
+\]
+
+\section*{d)}
+
+\[
+\Delta ex_{str} = 100 \frac{kJ}{kg}
+\]
+
+Von der Zusammenfassung wissen wir dass bei stationären Flussprozessen das folgende gilt:
+
+\[
+0 = -\Delta ex_{str} + \dot{e}_{x,Q} - \dot{m}_{in} \cdot ex_{in} - ex_{verl}
+\]
+
+\[
+ex_{verl} = -\Delta ex_{str} = -100 \frac{kJ}{kg}
+\]
+
+``````latex
+
+

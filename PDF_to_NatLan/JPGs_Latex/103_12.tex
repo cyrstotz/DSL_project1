@@ -1,0 +1,68 @@
+TASK 4b
+
+The mass flow rate of the refrigerant is calculated using the formula:
+\[
+\dot{m} = \frac{W_K}{h_3 - h_1} = \frac{-28 \, \text{W}}{237.74 \, \frac{\text{kJ}}{\text{kg}} - 771.3 \, \frac{\text{kJ}}{\text{kg}}} = 0.000835 \, \frac{\text{kg}}{\text{s}}
+\]
+
+---
+
+TASK 4c
+
+The enthalpy at state 4 is equal to \( h_4 \), which corresponds to the saturated liquid at 8 bar. Since the vapor quality \( x = 0 \), the enthalpy is:
+\[
+h_4 = h_f(8 \, \text{bar}) = 93.42 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+---
+
+TASK 4d
+
+The coefficient of performance \( \epsilon_K \) is calculated using the formula:
+\[
+\epsilon_K = \frac{\dot{Q}_{zu}}{\dot{W}_K} = \frac{\dot{Q}_K}{-28 \, \text{W}}
+\]
+
+The energy balance for the cooling process is:
+\[
+\dot{m}(h_1 - h_4) + \dot{Q}_K = 0
+\]
+
+Substituting values:
+\[
+0.000835 \, \frac{\text{kg}}{\text{s}} \left( 93.42 \, \frac{\text{kJ}}{\text{kg}} - 237.74 \, \frac{\text{kJ}}{\text{kg}} \right) + \dot{Q}_K = 0
+\]
+
+Solving for \( \dot{Q}_K \):
+\[
+\dot{Q}_K = 119.8 \, \text{W}
+\]
+
+Thus:
+\[
+\epsilon_K = \frac{119.8 \, \text{W}}{-28 \, \text{W}} = 4.27
+\]
+
+---
+
+TASK 4e
+
+The temperature at state 1 is given as \( T_1 = -16^\circ\text{C} \). At state 1, the enthalpy is calculated as:
+\[
+h_1 = h_f(-16^\circ\text{C}) + x_1(h_g(-16^\circ\text{C}) - h_f(-16^\circ\text{C})
+\]
+
+Substituting values:
+\[
+h_1 = 93.42 \, \frac{\text{kJ}}{\text{kg}} + x_1(237.79 \, \frac{\text{kJ}}{\text{kg}} - 93.42 \, \frac{\text{kJ}}{\text{kg}})
+\]
+
+Solving for \( x_1 \):
+\[
+x_1 = 0.31
+\]
+
+Finally, the temperature remains constant:
+\[
+T_1 = T_2
+\]

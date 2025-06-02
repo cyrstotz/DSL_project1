@@ -1,0 +1,41 @@
+TASK 2c  
+The expression for the specific exergy destruction \( ex_{\text{str}} \) is given as:  
+\[
+ex_{\text{str}} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]  
+Substituting the values:  
+\[
+ex_{\text{str}} = c_p (T_6 - T_0) - T_0 \cdot c_p \ln \left( \frac{T_6}{T_0} \right) + \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]  
+Numerical calculation yields:  
+\[
+ex_{\text{str}} = 120.805 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+TASK 2d  
+The specific exergy destruction \( ex_{\text{tur}} \) is calculated using an entropy balance:  
+\[
+ex_{\text{tur}} = T_0 \cdot \dot{S}_{\text{gen}}
+\]  
+The entropy generation rate \( \dot{S}_{\text{gen}} \) is expressed as:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \cdot (s_0 - s_6) + \frac{\dot{Q}_B}{T_0}
+\]  
+Substituting the entropy difference:  
+\[
+s_0 - s_6 = c_p \ln \left( \frac{T_6}{T_0} \right)
+\]  
+Numerical calculation:  
+\[
+s_0 - s_6 = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \cdot \ln \left( \frac{328.085 \, \text{K}}{243.15 \, \text{K}} \right)
+\]  
+\[
+s_0 - s_6 = 0.3014 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+Finally, the exergy destruction:  
+\[
+ex_{\text{tur}} = 243.15 \, \text{K} \cdot 0.3014 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+ex_{\text{tur}} = 73.285 \, \frac{\text{kJ}}{\text{kg}}
+\]

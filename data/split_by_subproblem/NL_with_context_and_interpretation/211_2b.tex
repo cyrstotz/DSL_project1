@@ -1,0 +1,24 @@
+The energy balance equation is written:  
+\( \dot{Q} = \dot{m} (h_{ein} + k_{ein}) - \dot{m} (h_{aus} + k_{aus}) + \dot{Q}_B \).  
+
+Simplified:  
+\( 0 = \dot{m} (h_{ein} - h_{aus} + k_{ein} - k_{aus}) + \dot{Q}_B \).  
+
+Further expanded:  
+\( 0 = \frac{w_{ein}^2}{2} - \frac{w_{aus}^2}{2} + \dot{Q}_B + h_{ein} - h_{aus} \).  
+
+The equation for \( w_{aus}^2 \):  
+\( w_{aus}^2 = w_{ein}^2 + 2q_B + 2c_p (T_6 - T_1) \).  
+
+Entropy relation for \( T_6 \):  
+\( s_6 = s_5 \).  
+\( s_5 - s_6 = c_p \ln(T_5 / T_6) - R \ln(p_5 / p_6) = 0 \).  
+
+Solving for \( \ln(T_5 / T_6) \):  
+\( \ln(T_5 / T_6) = \frac{R}{c} \ln(p_5 / p_6) \).  
+
+Using \( T_6 = T_5 (p_6 / p_5)^{R/c} \):  
+\( T_6 = 431.9 \, K \cdot (0.191 \, bar / 0.5 \, bar)^{0.4 / 1.4} = 328.07 \, K \).  
+
+Final velocity \( w_{aus} \):  
+\( w_{aus} = \sqrt{w_{ein}^2 + 2q_B + 2c_p (T_6 - T_1)} = 206.36 \, m/s \).

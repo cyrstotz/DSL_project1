@@ -1,0 +1,44 @@
+The process from state \( 5 \) to state \( 6 \) is described as isentropic.  
+
+The temperature at state \( 6 \), \( T_6 \), is calculated using the isentropic relation:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting the given values:  
+\[
+T_6 = 431.9 \, \text{K} \left( \frac{0.191 \times 10^5 \, \text{Pa}}{0.5 \times 10^5 \, \text{Pa}} \right)^{\frac{0.4}{1.4}}
+\]  
+\[
+T_6 = 328.07 \, \text{K}
+\]  
+
+Next, the energy balance at the nozzle is applied:  
+\[
+0 = \dot{m} \left[ h_6 - h_5 + \frac{w_6^2}{2} - \frac{w_5^2}{2} \right] + \dot{Q} + \dot{W}
+\]  
+Since the nozzle is adiabatic and there is no work transfer:  
+\[
+0 = h_6 - h_5 + \frac{w_6^2}{2} - \frac{w_5^2}{2}
+\]  
+
+Using the ideal gas assumption:  
+\[
+h_5 - h_6 = c_p (T_5 - T_6)
+\]  
+\[
+h_5 - h_6 = 1.006 \, \text{kJ/kg·K} \times (431.9 \, \text{K} - 328.07 \, \text{K}) = 104.45 \, \text{kJ/kg}
+\]  
+
+Rearranging for \( w_6 \):  
+\[
+w_6^2 = w_5^2 + 2 (h_5 - h_6)
+\]  
+Substituting \( w_5 = 220 \, \text{m/s} \):  
+\[
+w_6 = \sqrt{220^2 + 2 \times 104.45 \times 10^3}
+\]  
+\[
+w_6 = 507.25 \, \text{m/s}
+\]  
+
+The outlet velocity at state \( 6 \) is \( w_6 = 507.25 \, \text{m/s} \).

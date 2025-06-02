@@ -1,0 +1,143 @@
+
+``````latex
+
+
+1. 
+\begin{itemize}
+    \item[a)]
+    \begin{align*}
+        \dot{m} (h_e - h_a) - \dot{m} (h_{e,u} + \dot{Q} - \dot{W}) &= 0 \\
+        \dot{Q} &= \dot{m} (h_e - h_a) + \dot{Q} - \dot{W} \\
+        \dot{Q} &= \dot{m} (h_e - h_a) \\
+        h_e &= h_e (70^\circ C) \quad \text{(Tabelle A-2)} \\
+        &= 292.98 \frac{\text{kJ}}{\text{kg}} \\
+        h_a &= h_a (70^\circ C) \quad \text{(Tab. A-2)} \\
+        &= 419.04 \frac{\text{kJ}}{\text{kg}} \\
+        \dot{Q} &= \dot{m} (h_a - h_e) \\
+        &= 0.3 \frac{\text{kg}}{\text{s}} (419.04 \frac{\text{kJ}}{\text{kg}} - 292.98 \frac{\text{kJ}}{\text{kg}}) \\
+        &= 37.818 \text{kW} \\
+        -\dot{Q}_{\text{aus}} &= \dot{Q} - \dot{Q}_R \\
+        &= 37.818 \text{kW} - 100 \text{kW} \\
+        &= -62.182 \text{kW} \\
+        \dot{Q}_{\text{aus}} &= 62.182 \text{kW}
+    \end{align*}
+    
+    \item[b)]
+    \begin{align*}
+        \overline{T} &= \frac{\int_{s_1}^{s_2} T ds}{s_2 - s_1} \quad ds = \frac{dQ}{T} \\
+        &= \frac{\int_{s_1}^{s_2} \frac{dQ}{T}}{s_2 - s_1} \\
+        &= \frac{\Delta Q}{\ln \left( \frac{T_2}{T_1} \right)} \\
+        &= \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)} \\
+        &= \frac{298.15 \text{K} - 258.15 \text{K}}{\ln \left( \frac{298.15 \text{K}}{258.15 \text{K}} \right)} \\
+        &= 283.12 \text{K}
+    \end{align*}
+\end{itemize}
+
+``````latex
+
+
+\section*{c)}
+
+\textit{nur um Formel:}
+
+\[
+U = \frac{Q}{T} + S_{cr2}
+\]
+
+\[
+S_{cr2} = \frac{Q}{T}
+\]
+
+\[
+= \frac{63.78 \, \text{kW}}{293.12 \, \text{K}}
+\]
+
+\[
+= 0.21 \, \frac{\text{kW}}{\text{K}}
+\]
+
+\[
+= 212.73 \, \frac{\text{W}}{\text{K}}
+\]
+
+\section*{d)}
+
+\[
+m_2 u_2 - m_1 u_1 = \Delta m \, h + Q - \dot{V}_0
+\]
+
+\[
+m_2 = 5.755 \, \text{kg} \quad \Delta m
+\]
+
+\[
+m_2 = 5.755 \, \text{kg} \quad \text{m}
+\]
+
+\[
+u_1 = u_f (20^\circ \text{C}) + x (u_g (20^\circ \text{C}) - u_f (20^\circ \text{C})) = 429.38 \, \frac{\text{kJ}}{\text{kg}} + 0.005 (2506.5 \, \frac{\text{kJ}}{\text{kg}} - 429.38 \, \frac{\text{kJ}}{\text{kg}})
+\]
+
+\[
+u_2 = u_f (70^\circ \text{C}) + x (u_g (70^\circ \text{C}) - u_f (70^\circ \text{C})) = 302.83 \, \frac{\text{kJ}}{\text{kg}} + 0.005 (2594.6 \, \frac{\text{kJ}}{\text{kg}} - 302.83 \, \frac{\text{kJ}}{\text{kg}})
+\]
+
+\[
+h = h_f (20^\circ \text{C}) = 83.96 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\textit{einsetzen}
+
+\[
+(5.755 \, \text{kg} - \Delta m) \cdot 302.83 \, \frac{\text{kJ}}{\text{kg}} - 5.755 \, \text{kg} \cdot 429.38 \, \frac{\text{kJ}}{\text{kg}} = \Delta m \cdot 83.96 \, \frac{\text{kJ}}{\text{kg}} + 35 \cdot 10^3 \, \text{kJ}
+\]
+
+\textit{solve for} \(\Delta m\)
+
+\[
+\Delta m = 1.77252 \cdot 10^3 \, \text{kg}
+\]
+
+\[
+= 1773 \, \text{kg}
+\]
+
+``````latex
+
+
+\section*{Problem 1 e)}
+
+\[
+\Delta S = m_2 s_2 - m_1 s_1
+\]
+
+\[
+s_1 = s_c (70^\circ C) + x \cdot (s_g (700^\circ C) - s_c (70^\circ C))
+\]
+\[
+= 7.306 \frac{kJ}{kgK} + 0.005 \cdot (7.375 \frac{kJ}{kgK} - 7.306 \frac{kJ}{kgK})
+\]
+\[
+= 7.337 \frac{kJ}{kgK}
+\]
+
+\[
+s_2 = s_c (70^\circ C) + x \cdot (s_g (70^\circ C) - s_c (70^\circ C))
+\]
+\[
+= 0.956 \frac{kJ}{kgK} + 0.005 \cdot (2.785 \frac{kJ}{kgK} - 0.956 \frac{kJ}{kgK})
+\]
+\[
+= 0.968 \frac{kJ}{kgK}
+\]
+
+\[
+\Delta S = (5755 kg - 3600 kg) \cdot 0.968 \frac{kJ}{kgK} - 5255 kg \cdot 7.337 \frac{kJ}{kgK}
+\]
+\[
+= 5563.4 \frac{kJ}{K}
+\]
+
+``````latex
+
+

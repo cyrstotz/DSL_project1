@@ -1,0 +1,66 @@
+TASK 2b  
+The equation for the outlet velocity \( w_6 \) is derived using the energy balance:  
+\[
+\frac{w_5^2 - w_6^2}{2} = c_p \, (T_6 - T_5)
+\]  
+Substituting the given values:  
+\[
+c_p = 1.006 \, \text{kJ/kg·K}, \quad T_5 = 431.91 \, \text{K}, \quad T_6 = 328.07 \, \text{K}
+\]  
+\[
+\frac{w_5^2 - w_6^2}{2} = 1.006 \, \text{kJ/kg·K} \cdot (328.07 - 431.91) \, \text{K}
+\]  
+\[
+= -104.45 \, \text{kJ/kg}
+\]  
+Rearranging to solve for \( w_6 \):  
+\[
+w_6 = \sqrt{2 \cdot (-104.45 \, \text{kJ/kg}) + w_5^2}
+\]  
+Substituting \( w_5 = 220 \, \text{m/s} \):  
+\[
+w_6 = \sqrt{2 \cdot (-104.45 \, \text{kJ/kg}) + (220 \, \text{m/s})^2}
+\]  
+\[
+w_6 = 510 \, \text{m/s}
+\]  
+
+TASK 2c  
+The mass-specific increase in flow exergy \( \Delta ex_{\text{flow}} \) is calculated as:  
+\[
+\Delta ex_{\text{flow}} = h_6 - h_0 - T_0 \cdot (s_6 - s_0) + \frac{w_6^2 - w_0^2}{2}
+\]  
+Substituting the given values:  
+\[
+\Delta ex_{\text{flow}} = c_p \, (T_6 - T_0) - T_0 \cdot c_p \cdot \ln\left(\frac{T_6}{T_0}\right) - R \cdot \ln\left(\frac{p_6}{p_0}\right) + \frac{w_6^2 - w_0^2}{2}
+\]  
+Where:  
+\[
+R = c_p - \frac{c_p}{\kappa} = 1.006 - \frac{1.006}{1.4} = 0.287 \, \text{kJ/kg·K}
+\]  
+\[
+T_0 = 273.15 - 30 = 243.15 \, \text{K}
+\]  
+Substituting into the equation:  
+\[
+\Delta ex_{\text{flow}} = 1.006 \cdot (328.07 - 243.15) - 243.15 \cdot 1.006 \cdot \ln\left(\frac{328.07}{243.15}\right) - 0.287 \cdot \ln\left(\frac{1}{1}\right) + \frac{220^2 - 510^2}{2}
+\]  
+\[
+\Delta ex_{\text{flow}} = 1.006 \cdot 84.92 - 243.15 \cdot 1.006 \cdot \ln\left(\frac{328.07}{243.15}\right) - 0.287 \cdot \ln(1) + \frac{220^2 - 510^2}{2}
+\]  
+\[
+\Delta ex_{\text{flow}} = -171.8 \, \text{kJ/kg}
+\]  
+
+TASK 2d  
+The exergy destruction \( ex_{\text{dest}} \) is calculated as:  
+\[
+ex_{\text{dest}} = \frac{Q_{12}}{T_0} \cdot (s_2 - s_1)
+\]  
+Substituting the given values:  
+\[
+ex_{\text{dest}} = \frac{110 \, \text{kJ/kg}}{243.15} \cdot \ln\left(\frac{328.07}{243.15}\right)
+\]  
+\[
+ex_{\text{dest}} = 1.27 \, \text{kJ/kg}
+\]  

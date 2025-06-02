@@ -1,0 +1,71 @@
+TASK 1a  
+The problem involves a steady-state flow process. The heat flow \( \dot{Q}_{\text{out}} \) removed by the coolant is calculated using the enthalpy difference between the inlet and outlet temperatures, as well as the reaction heat \( \dot{Q}_R \).  
+
+\[
+Q = \dot{m}_{\text{in}} \left( h(70^\circ\text{C}) - h(100^\circ\text{C}) \right) + \dot{Q}_R + \dot{Q}_{\text{out}}
+\]  
+
+Using the water table data (Table A-2), the enthalpy difference is:  
+\[
+\dot{Q}_{\text{out}} = \dot{m}_{\text{in}} \left( h(100^\circ\text{C}) - h(70^\circ\text{C}) \right) - \dot{Q}_R
+\]  
+
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \cdot \left( 418.04 \, \text{kJ/kg} - 292.68 \, \text{kJ/kg} \right) - 100 \, \text{kW}
+\]  
+
+\[
+\dot{Q}_{\text{out}} = -62.18 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is calculated using the logarithmic mean temperature difference formula:  
+
+\[
+T_{\text{KF}} = \frac{\int T \, dS}{S_4 - S_3} = \frac{Q_{\text{out}}}{S_4 - S_3}
+\]  
+
+This simplifies to:  
+\[
+T_{\text{KF}} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)}
+\]  
+
+Substituting values:  
+\[
+T_2 = 292.15 \, \text{K}, \quad T_1 = 288.15 \, \text{K}
+\]  
+
+\[
+T_{\text{KF}} = \frac{292.15 - 288.15}{\ln \left( \frac{292.15}{288.15} \right)}
+\]  
+
+\[
+T_{\text{KF}} = 233.12 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) is calculated using the entropy balance equation:  
+
+\[
+\dot{S}_{\text{gen}} = \dot{m} \left( S_4 - S_3 \right) + \frac{\dot{Q}_R}{T_{\text{Reactor}}
+\]  
+
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \cdot (S_4 - S_3) \cdot \frac{\dot{Q}_R}{100^\circ\text{C}}
+\]  
+
+\[
+\dot{S}_{\text{gen}} = -0.268 \, \text{kW/K}
+\]  
+
+Adjustments are made for water calculations:  
+\[
+\dot{S}_{\text{gen}} = 0.268 \, \text{kW/K}
+\]  
+

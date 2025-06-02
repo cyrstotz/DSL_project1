@@ -1,0 +1,77 @@
+The energy balance equation is written as:  
+\[
+\dot{m} \cdot (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R = 0
+\]  
+where \( h_{\text{in}} \) and \( h_{\text{out}} \) represent the specific enthalpies at the inlet and outlet, respectively.  
+
+The enthalpy values are calculated using the water tables:  
+\[
+h_{\text{in}} = h_{\text{sat, liquid}}(70^\circ\text{C}) = 293.85 \, \text{kJ/kg}
+\]  
+\[
+h_{\text{out}} = h_{\text{sat, liquid}}(100^\circ\text{C}) = 419.17 \, \text{kJ/kg}
+\]  
+
+Substituting into the energy balance:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \cdot (h_{\text{out}} - h_{\text{in}}) - \dot{Q}_R
+\]  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \cdot (419.17 - 293.85) \, \text{kJ/kg} - 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = -0.0226 \, \text{kW}
+\]
+
+The page contains a table and some calculations related to jet engine thermodynamics. Below is the transcription of the content:
+
+### Table Description:
+The table lists various states (labeled as "Zustände") from 0 to 6, with corresponding values for pressure \( P \, [\text{bar}] \), temperature \( T \, [^\circ\text{C}] \), velocity \( w \, [\text{m/s}] \), and specific enthalpy \( h \, [\text{kJ/kg}] \).  
+
+| Zustand | \( P \, [\text{bar}] \) | \( T \, [^\circ\text{C}] \) | \( w \, [\text{m/s}] \) | \( h \, [\text{kJ/kg}] \) |
+|---------|-------------------------|----------------------------|------------------------|--------------------------|
+| 0       | 0.191                   | -30                        | 200                    |                          |
+| 1       |                         |                            |                        |                          |
+| 2       |                         |                            |                        |                          |
+| 3       |                         |                            |                        |                          |
+| 4       |                         |                            |                        |                          |
+| 5       | 0.5                     | 431.9                      | 220                    |                          |
+| 6       | 0.5                     |                            |                        |                          |
+
+### Notes and Calculations:
+1. \( w_6 = \sqrt{2 \cdot \left( h_5 - h_6 \right) + w_5^2} \)  
+   This formula calculates the velocity \( w_6 \) at state 6 based on enthalpy differences and the velocity at state 5.  
+
+2. \( h_6 = h_5 - 0.297 \, \text{kJ/kg} \)  
+   The enthalpy at state 6 is determined by subtracting a specific value from the enthalpy at state 5.  
+
+3. \( h_5 = 657.4 \, \text{kJ/kg} \)  
+   The specific enthalpy at state 5 is given as \( 657.4 \, \text{kJ/kg} \).  
+
+4. \( w_5 = 220 \, \text{m/s} \)  
+   The velocity at state 5 is explicitly stated as \( 220 \, \text{m/s} \).  
+
+5. \( T_0 = -30^\circ\text{C} \), \( P_0 = 0.191 \, \text{bar} \)  
+   Ambient conditions are noted for state 0.  
+
+### Additional Notes:
+- The table and calculations appear to be part of a solution for determining the outlet velocity \( w_6 \) and other thermodynamic properties of the jet engine process.  
+- The handwritten notes suggest the use of energy balance equations and specific enthalpy values to compute the desired quantities.  
+
+No diagrams or graphs are present on this page.
+
+The page contains a diagram illustrating a thermodynamic process on a \( T \)-\( s \) diagram. The axes are labeled as follows:  
+- The vertical axis represents temperature (\( T \)) in Kelvin (\( K \)).  
+- The horizontal axis represents entropy (\( s \)) in \( \frac{\text{kJ}}{\text{kg·K}} \).  
+
+The diagram includes several curves and points labeled with numbers:  
+1. Point 0 is the starting state.  
+2. Point 1 is connected to point 0 via an isobaric compression curve.  
+3. Point 2 is connected to point 1 via an isobaric combustion curve.  
+4. Point 3 is connected to point 2 via an adiabatic expansion curve.  
+5. Point 4 is connected to point 3 via a mixing process.  
+6. Point 5 is connected to point 4 via an isobaric cooling curve.  
+
+The curves are annotated with descriptions such as "isobaric compression," "isobaric combustion," "adiabatic expansion," and "isobaric cooling."  
+
+This diagram qualitatively represents the thermodynamic process of a jet engine, as described in the problem setup for Task 2.

@@ -1,0 +1,119 @@
+
+``````latex
+
+
+\section*{Aufgabe 2}
+
+\textbf{Gegeben:} \\
+$W_u = 300 \frac{\text{kJ}}{\text{kg}}$, $c_p = 1.000 \frac{\text{kJ}}{\text{kgK}}$, $n = k = 1.4$
+
+\begin{tabular}{c|c|c|c|c|c|c}
+Zustand & $T$ [K] & $p$ [bar] & $Q$ & $W$ & $h$ & $s$ \\
+\hline
+1 & 300 & 0.5 & 0 & & 5.4 & \\
+2 & & & & & & \\
+3 & & & & & & \\
+4 & & & & & & \\
+5 & 439 K & 0.5 & 0 & & 5.5 & \\
+6 & 293.9 K & 9.4 & & & 5.5 & \\
+\end{tabular}
+
+\textbf{Daten:} \\
+$\dot{m} = \frac{\dot{m}_1}{\dot{m}_2} = 5 \frac{\text{kg}}{\text{s}}$ \\
+$\frac{T_1}{T_2} = 1.589 K$ \\
+\textit{Unterer Heizwert:} \\
+$W_u = 300 \frac{\text{kJ}}{\text{kg}}$
+
+\textbf{a)} \\
+\textbf{Graph:} \\
+The graph is a plot with the x-axis labeled $s \left[ \frac{\text{kJ}}{\text{kgK}} \right]$ and the y-axis labeled $T$ [K]. The plot contains six points labeled 1 through 6. The points are connected by lines in the following sequence: 1 to 2, 2 to 3, 3 to 4, 4 to 5, and 5 to 6. The points are distributed as follows:
+- Point 1 is at the bottom left.
+- Point 2 is slightly above and to the right of point 1.
+- Point 3 is higher up and to the right of point 2.
+- Point 4 is slightly below and to the right of point 3.
+- Point 5 is at the same height as point 4 but further to the right.
+- Point 6 is directly below point 5.
+
+\textbf{b)} \\
+\textbf{Gegeben:} $W_b$, $T_6$
+
+\begin{enumerate}
+    \item $T_6$ mit Hilfe der Zustandsänderung \\
+    \[
+    \frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{k-1}{k}} \implies T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{k-1}{k}}
+    \]
+    \[
+    T_6 = 293.9 K
+    \]
+
+    \item Energiebilanz von 5 $\rightarrow$ 6 \\
+    \[
+    \dot{E}_{\text{kin}} = 0
+    \]
+    \[
+    \dot{E}_{\text{pot}} = 0
+    \]
+    \[
+    \dot{Q} - \dot{W} = \sum \dot{m}_i \left( h_i + \frac{v_i^2}{2} + gz_i \right)_{\text{Ein}} - \sum \dot{m}_e \left( h_e + \frac{v_e^2}{2} + gz_e \right)_{\text{Aus}}
+    \]
+    \[
+    0 = \dot{m} \left( h_5 - h_6 + \frac{1}{2} v_5^2 - \frac{1}{2} v_6^2 \right) - \dot{W}
+    \]
+\end{enumerate}
+
+``````latex
+
+
+\section*{c)}
+\text{Annahme:} \quad \dot{m}_0 = 350 \, \frac{\text{kg}}{\text{h}}
+
+\text{ges.} \quad \Delta e_{\text{str}} \quad \text{zwischen} \quad 0 - 6 \quad \Rightarrow \text{Exergiebilanz einer Strömung}
+
+\[
+\Delta e_{\text{str}} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{v_6^2}{2} - \frac{v_0^2}{2}
+\]
+
+\[
+= c_p^0 (T_6 - T_0) - T_0 \left( c_p^0 \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) \right) + \frac{v_6^2}{2} - \frac{v_0^2}{2}
+\]
+
+\[
+= c_p^0 (T_6 - T_0) - T_0 c_p^0 \ln \left( \frac{T_6}{T_0} \right) + T_0 R \ln \left( \frac{p_6}{p_0} \right) + \frac{v_6^2}{2} - \frac{v_0^2}{2}
+\]
+
+\text{mit} \quad c_p^0 = 1.006 \, \frac{\text{kJ}}{\text{kgK}}, \quad T_0 = 30^\circ \text{C}, \quad T_6 = 293.7 \, \text{K}
+
+\[
+\Rightarrow \Delta e_{\text{str}} = 540.57 \, \frac{\text{kJ}}{\text{kg}} - 46.37 \, \frac{\text{kJ}}{\text{kg}} + 110.05 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\Rightarrow \Delta e_{\text{str}} = 603.7 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\section*{d)}
+\text{ges.} \quad e_{3, \text{verl}}
+
+\text{Exergiebilanz:} \quad \text{(1)} \rightarrow \text{(2)} \quad \text{da adiabatisch}
+
+\[
+\frac{dE_X}{dt} = \sum \dot{m} e_{\text{str}} + \sum \dot{E}_X - \sum \dot{W} - \rho_0 \frac{dV}{dt} - E_{3, \text{verl}} \quad \Bigg| \dot{m}
+\]
+
+\[
+\Leftrightarrow C = e_{\text{str}} - W - e_{3, \text{verl}}
+\]
+
+\[
+e_{3, \text{verl}} = e_{\text{str}} - W
+\]
+
+\text{Energiegleichung:} \quad \text{(1)} \rightarrow \text{(2)}
+
+\[
+0 = \dot{m} (ri + kei + pei) + \sum \dot{Q} - \sum \dot{W}
+\]
+
+``````latex
+
+

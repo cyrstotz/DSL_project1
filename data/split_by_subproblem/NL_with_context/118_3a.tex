@@ -1,0 +1,31 @@
+A table is presented with the following columns:  
+- \( T_g \) [°C]  
+- \( V_g \) [m³]  
+- \( T_{EW} \)  
+
+Row \( Z_1 \):  
+- \( T_g = 500 \)  
+- \( V_g = 3.14 \times 10^{-3} \)  
+- \( T_{EW} = 0 \)  
+
+Row \( Z_2 \):  
+- Blank entries.  
+
+Equations and values:  
+\( m_{EW} = 0.1 \, \text{kg}, \, x_{Eis,1} = \frac{m_{Eis}}{m_{EW}} = 0.6 \)  
+\( D = 10 \, \text{cm}, \, g = 9.81 \, \text{m/s}^2 \)  
+
+Equation for gas pressure:  
+\( p_{gas} = p_{amb} + p_{Kolben} \)  
+
+Calculation:  
+\( p_{gas,1} = 1 \, \text{bar} + g \cdot \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{\pi \cdot (D/2)^2} \)  
+\( \rightarrow p_{gas,1} = 1 + 0.4 \, \text{bar} = 1.4 \, \text{bar} \)  
+
+Equation for gas mass:  
+\( m_{gas} = \frac{p \cdot V}{R \cdot T} \)  
+\( R = \frac{R}{M_g} \cdot 10^3 \)  
+
+Calculation:  
+\( m_{gas} = \frac{1.4 \cdot 10^5 \cdot 3.14 \cdot 10^{-3}}{R/M_g \cdot 10^3 \cdot 773.15} \)  
+\( \rightarrow m_{gas} = 3.42 \, \text{g} \)

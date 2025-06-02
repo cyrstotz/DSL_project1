@@ -1,0 +1,21 @@
+\( \frac{dQ}{dt} = \dot{m} \cdot h_{inlet} + Q + W \)  
+\( Q = \dot{m} \cdot (h_2 - h_3) + W \)  
+
+\( h_2 = h_{g}(T_2) \)  
+\( T_2 = -6^\circ C \)  
+\( p_3 = 8 \, \text{bar} \)  
+
+From Table A-10:  
+\( h_{g}(4) = 244.9 \, \text{kJ/kg} \)  
+\( h_{g}(8) = 292.54 \, \text{kJ/kg} \)  
+
+Interpolation:  
+\( h_2 = 292.54 + \frac{-8 + 8}{-4.8} \cdot (244.9 - 292.54) \)  
+\( h_2 = 245.72 \, \text{kJ/kg} \)  
+
+\( s_2 = 0.92587 + \frac{8 - 6}{8 - 4} \cdot (0.9239 - 0.92587) \)  
+\( s_2 = 0.9226 \, \text{kJ/kg·K} \)
+
+W equals m dot multiplied by (h3 minus h2).  
+
+m dot equals W divided by (h3 minus h2) equals 28 times 10 to the power of negative 3 kilowatts divided by (268.82 minus 243.72) equals 0.00115 kilograms per second.

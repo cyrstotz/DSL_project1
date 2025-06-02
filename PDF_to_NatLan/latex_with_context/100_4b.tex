@@ -1,0 +1,20 @@
+The refrigerant mass flow rate is calculated using the following parameters:  
+- \( x_4 = 0 \)  
+- \( h_4 = 93.42 \, \text{kJ/kg} \)
+
+The enthalpy \( h_3 \) is interpolated using the formula:  
+\[
+h_3 = h_{\text{sat}} + \frac{h(40) - h_{\text{sat}}}{s(r0) - s_{\text{sat}}} \cdot (s_{82} - s_{\text{sat}})
+\]  
+The interpolated value for \( h_3 \) is calculated as \( h_3 = 272.95 \, \text{kJ/kg} \).  
+
+The work \( -W_{12} \) is calculated using:  
+\[
+-W_{12} = m(h_2 - h_3)
+\]  
+Rearranging for \( m \):  
+\[
+m = \frac{-W_{12}}{h_2 - h_3} = 1.52 \, \text{kg}
+\]  
+
+---

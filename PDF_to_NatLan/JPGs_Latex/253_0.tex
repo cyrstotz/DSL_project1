@@ -1,0 +1,47 @@
+TASK 1a  
+The first law of thermodynamics is applied to a reactor without a cooling jacket:  
+\[
+\dot{m} \cdot (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R - \dot{Q}_{\text{out}} = 0
+\]  
+Rearranging to solve for the heat flow removed by the coolant:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \cdot (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R
+\]  
+
+From the water tables (Tab A-2):  
+\[
+h_{\text{in}} = h(70^\circ\text{C}, x = 0) = 292.98 \, \text{kJ/kg}
+\]  
+\[
+h_{\text{out}} = h(100^\circ\text{C}, x = 0) = 419.09 \, \text{kJ/kg}
+\]  
+
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = 62.182 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature \( \bar{T} \) of the coolant is calculated as:  
+\[
+\bar{T} = \frac{\dot{Q}_{\text{out}}}{S_{\text{KF,out}} - S_{\text{KF,in}}}
+\]  
+Using the heat flow expression:  
+\[
+\bar{T} = \frac{\dot{Q}_{\text{out}}}{\dot{m}_{\text{KF}} \cdot c_{\text{KF}} \cdot \ln\left(\frac{T_{\text{KF,out}}}{T_{\text{KF,in}}}\right)}
+\]  
+
+---
+
+Additional derivations for the first law of thermodynamics applied to the cooling jacket are shown but partially crossed out. The corrected expression for the heat flow is:  
+\[
+\dot{Q}_{\text{out}} = -c_{\text{KF}} \cdot (T_{\text{in}} - T_{\text{out}}) \cdot \dot{m}_{\text{KF}}
+\]  
+This simplifies to:  
+\[
+-\dot{Q}_{\text{out}} = \frac{i_{\text{KF}}}{c_{\text{KF}}} \cdot (T_{\text{in}} - T_{\text{out}})
+\]  
+
+No diagrams or figures are present on the page.

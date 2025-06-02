@@ -1,0 +1,45 @@
+The reactor mass \( m_1 \) is given as \( 5755 \, \text{kg} \), with steam quality \( x_1 = 0.005 \) and temperature \( T_1 = 100^\circ\text{C} \). The inlet temperature is \( T_{\text{in}} = 20^\circ\text{C} \). The final mass \( m_2 \) is calculated as \( m_2 = m_1 + \Delta m \), where \( \Delta m \) is the mass added to reduce the temperature to \( T_2 = 70^\circ\text{C} \).
+
+The energy balance equation is:  
+\[
+m_2 u_2 - m_1 u_1 + \Delta m h_{\text{in}} - \Delta m h_{\text{out}} = Q_{\text{out},12}
+\]
+
+At \( T_1 = 100^\circ\text{C} \), the specific internal energy \( u_1 \) is calculated as:  
+\[
+u_1 = u_f(100^\circ\text{C}) + x_1 \left( h_g(100^\circ\text{C}) - h_f(100^\circ\text{C}) \right)
+\]  
+Substituting values:  
+\[
+u_1 = 418.99 \, \frac{\text{kJ}}{\text{kg}} + 0.005 \left( 2506.5 \, \frac{\text{kJ}}{\text{kg}} - 418.99 \, \frac{\text{kJ}}{\text{kg}} \right) = 429.38 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+At \( T_2 = 70^\circ\text{C} \), the specific internal energy \( u_2 \) is calculated as:  
+\[
+u_2 = u_f(70^\circ\text{C}) + x_1 \left( h_g(70^\circ\text{C}) - h_f(70^\circ\text{C}) \right)
+\]  
+Substituting values:  
+\[
+u_2 = 202.95 \, \frac{\text{kJ}}{\text{kg}} + 0.005 \left( 2496.9 \, \frac{\text{kJ}}{\text{kg}} - 202.95 \, \frac{\text{kJ}}{\text{kg}} \right) = 303.83 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The specific enthalpy of the inlet water at \( T_{\text{in}} = 20^\circ\text{C} \) is calculated as:  
+\[
+h_{\text{in}} = h_f(20^\circ\text{C}) + x_1 \left( h_g(20^\circ\text{C}) - h_f(20^\circ\text{C}) \right)
+\]  
+Substituting values:  
+\[
+h_{\text{in}} = 79.77 \, \frac{\text{kJ}}{\text{kg}} + 0.005 \left( 2536.2 \, \frac{\text{kJ}}{\text{kg}} - 79.77 \, \frac{\text{kJ}}{\text{kg}} \right) = 87.08 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+The energy balance is rearranged to solve for \( \Delta m \):  
+\[
+\Delta m = \frac{Q_{\text{out},12} + m_1 (u_1 - u_2)}{u_2 - h_{\text{in}}}
+\]  
+Substituting values:  
+\[
+\Delta m = \frac{35 \, \text{MJ} + 5755 \, \text{kg} \cdot (429.38 \, \frac{\text{kJ}}{\text{kg}} - 303.83 \, \frac{\text{kJ}}{\text{kg}})}{303.83 \, \frac{\text{kJ}}{\text{kg}} - 87.08 \, \frac{\text{kJ}}{\text{kg}}}
+\]  
+\[
+\Delta m = 3495 \, \text{kg}
+\]

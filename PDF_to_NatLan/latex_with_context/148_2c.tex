@@ -1,0 +1,37 @@
+The mass-specific increase in flow exergy is calculated using the formula:  
+\[
+ex_{\text{flow},6} - ex_{\text{flow},0} = h_e - h_a - T_0(s_e - s_a) + \Delta ke
+\]  
+Where:  
+- \( h_e \) and \( h_a \) are enthalpies at states 6 and 0, respectively.  
+- \( s_e \) and \( s_a \) are entropies at states 6 and 0, respectively.  
+- \( T_0 \) is the ambient temperature.  
+- \( \Delta ke \) is the change in kinetic energy.
+
+The enthalpy difference is expressed as:  
+\[
+h_e - h_a = c_p(T_0 - T_6) - T_0 \left( c_p \ln \frac{T_0}{T_6} \right) - R \ln \frac{p_0}{p_6} + \Delta ke
+\]  
+Where:  
+- \( c_p = 1.006 \, \text{kJ/kg·K} \) is the specific heat capacity at constant pressure.  
+- \( R = 0.287 \, \text{kJ/kg·K} \) is the specific gas constant.  
+- \( T_6 = 526.918 \, \text{K} \) (calculated earlier).  
+- \( T_0 = 243.15 \, \text{K} \).  
+- \( p_0 \) and \( p_6 \) are pressures at states 0 and 6, respectively.  
+
+Substituting values:  
+\[
+c_p(243.15 - 526.918) - 243.15 \left( 1.006 \ln \frac{243.15}{526.918} \right) - R \ln \frac{p_0}{p_6} + \Delta ke
+\]  
+\[
+R \ln \frac{p_0}{p_6} = R \ln \frac{0.191}{0.5}
+\]  
+\[
+\Delta ke = \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]  
+Where \( w_6 = 489.44 \, \text{m/s} \) and \( w_0 = 200 \, \text{m/s} \).  
+
+Final calculations yield:  
+\[
+\Delta ex_{\text{flow}} = 196079.16 \, \text{J}
+\]

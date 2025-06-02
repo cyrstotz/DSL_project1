@@ -1,0 +1,26 @@
+The thermodynamic mean temperature of the coolant is calculated using the integral definition:  
+\[
+\bar{T}_{\text{KF}} = \frac{\int T \, ds}{s_a - s_e}
+\]  
+For reversible processes:  
+\[
+\bar{T}_{\text{KF}} = \frac{q_{\text{rev}}}{s_a - s_e}
+\]  
+Substituting enthalpy and entropy values:  
+\[
+q_{\text{rev}} = h_{\text{KF,in}} + h_{\text{KF,out}}
+\]  
+Using the Stoffmodel (material model):  
+\[
+\bar{T}_{\text{KF}} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)}
+\]  
+Where:  
+\[
+T_2 = T_{\text{KF,out}}, \, T_1 = T_{\text{KF,in}}
+\]  
+The final result is:  
+\[
+\bar{T}_{\text{KF}} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)} = 293.722 \, \text{K}
+\]  
+
+---

@@ -1,0 +1,56 @@
+TASK 1a  
+The energy balance for the reactor in steady-state conditions is expressed as:  
+
+\[
+0 = \dot{Q}_R - \dot{Q}_{\text{aus}} + \dot{m}_{\text{in}} \left( h_e - h_a \right)
+\]
+
+Rearranging the equation to solve for the heat flow removed by the coolant (\( \dot{Q}_{\text{aus}} \)):  
+
+\[
+\dot{Q}_{\text{aus}} = \dot{Q}_R + \dot{m}_{\text{in}} \left( h_e - h_a \right)
+\]
+
+The enthalpy at the outlet (\( h_e \)) is calculated as:  
+
+\[
+h_e = h_f(70^\circ\text{C}) + x_D \left( h_g(70^\circ\text{C}) - h_f(70^\circ\text{C}) \right)
+\]
+
+Using values from Table A-2:  
+
+\[
+h_f(70^\circ\text{C}) = 292.98 \, \frac{\text{kJ}}{\text{kg}}, \quad h_g(70^\circ\text{C}) = 2626.8 \, \frac{\text{kJ}}{\text{kg}}, \quad x_D = 0.005
+\]
+
+Substituting these values:  
+
+\[
+h_e = 292.98 + 0.005 \left( 2626.8 - 292.98 \right)
+\]
+
+\[
+h_e = 304.65 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+Similarly, the enthalpy at the inlet (\( h_a \)) is calculated analogously:  
+
+\[
+h_a = h_f(100^\circ\text{C}) + x_D \left( h_g(100^\circ\text{C}) - h_f(100^\circ\text{C}) \right)
+\]
+
+Using values from Table A-2:  
+
+\[
+h_f(100^\circ\text{C}) = 419.04 \, \frac{\text{kJ}}{\text{kg}}, \quad h_g(100^\circ\text{C}) = 2676.1 \, \frac{\text{kJ}}{\text{kg}}, \quad x_D = 0.005
+\]
+
+Substituting these values:  
+
+\[
+h_a = 419.04 + 0.005 \left( 2676.1 - 419.04 \right)
+\]
+
+\[
+h_a = 430.325 \, \frac{\text{kJ}}{\text{kg}}
+\]

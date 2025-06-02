@@ -1,0 +1,24 @@
+The energy balance equation for the reactor is written as:  
+\[
+0 = \dot{m}(h_e - h_a) + \dot{Q}_R - \dot{Q}_{\text{aus}}
+\]  
+Rearranging to solve for the heat flow removed by the coolant:  
+\[
+\dot{Q}_{\text{aus}} = \dot{m}(h_e - h_a) + \dot{Q}_R
+\]  
+
+The enthalpy difference \( h_e - h_a \) is calculated using the specific enthalpy values of saturated liquid water at \( T_e = 70^\circ\text{C} \) and \( T_a = 100^\circ\text{C} \):  
+- At \( T_e = 70^\circ\text{C} \): \( h_e = 292.98 \, \text{kJ/kg} \)  
+- At \( T_a = 100^\circ\text{C} \): \( h_a = 419.04 \, \text{kJ/kg} \)  
+
+Substituting into the equation:  
+\[
+\dot{Q}_{\text{aus}} = 0.3 \left(292.98 \cdot 10^3 - 419.04 \cdot 10^3\right) + 100 \cdot 10^3
+\]  
+\[
+\dot{Q}_{\text{aus}} = -62.182 \, \text{kW}
+\]  
+
+The heat flow removed by the coolant is negative, indicating heat is leaving the reactor system.  
+
+---

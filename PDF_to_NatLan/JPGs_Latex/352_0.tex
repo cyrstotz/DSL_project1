@@ -1,0 +1,55 @@
+TASK 1a  
+The energy balance equation is written as:  
+\[
+\frac{dE}{dt} = \sum \dot{m} h + \sum \dot{Q} - \sum \dot{W}
+\]  
+For steady-state conditions, this simplifies to:  
+\[
+0 = \dot{m} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R - \dot{Q}_{\text{out}}
+\]  
+The heat flow removed by the coolant is expressed as:  
+\[
+\dot{Q}_{\text{out}} = \dot{Q}_R - \dot{m} (h_{\text{in}} - h_{\text{out}})
+\]  
+The enthalpy values are determined using water tables:  
+\[
+h_{\text{in}} = h(70^\circ\text{C}, \text{saturated liquid}) = h(70^\circ\text{C}, 0.3142 \, \text{bar}) = 232.88 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_{\text{out}} = h(100^\circ\text{C}, \text{saturated liquid}) = h(100^\circ\text{C}, 1.014 \, \text{bar}) = 419.04 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+Substituting the values:  
+\[
+\dot{Q}_{\text{out}} = 100 - 0.3 (232.88 - 419.04)
+\]  
+\[
+\dot{Q}_{\text{out}} = 62.2 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant is calculated using the logarithmic mean temperature difference:  
+\[
+T_{\text{KF}} = \frac{T_{\text{out}} - T_{\text{in}}}{\ln \left( \frac{T_{\text{out}}}{T_{\text{in}}} \right)}
+\]  
+Substituting the values:  
+\[
+T_{\text{KF}} = \frac{298.15 - 288.15}{\ln \left( \frac{298.15}{288.15} \right)}
+\]  
+\[
+T_{\text{KF}} = 293.1 \, \text{K}
+\]  
+
+TASK 1c  
+The entropy production rate is expressed as:  
+\[
+\frac{dS}{dt} = \sum \dot{m} s + \frac{\dot{Q}}{T} + \dot{S}_{\text{gen}}
+\]  
+For steady-state conditions:  
+\[
+0 = \dot{m} (s_{\text{KF,out}} - s_{\text{KF,in}}) + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}} + \dot{S}_{\text{gen}}
+\]  
+The entropy production rate is calculated using the ideal fluid assumption:  
+\[
+s_{\text{KF,out}} - s_{\text{KF,in}} = \int_{T_{\text{in}}}^{T_{\text{out}}} \frac{c_p}{T} \, dT
+\]  
+This integral represents the entropy change of the coolant between inlet and outlet temperatures.

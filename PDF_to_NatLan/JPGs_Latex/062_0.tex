@@ -1,0 +1,85 @@
+TASK 3a  
+The universal gas constant \( R \) is calculated as:  
+\[
+R = \frac{8.314 \, \text{kJ}}{\text{kmol·K}} \cdot \frac{1}{50 \, \text{kg/kmol}} = 0.166 \, \text{kJ/kg·K}.
+\]
+
+The pressure of the gas in state 1, \( p_{g,1} \), is determined using the following relationships:  
+The cross-sectional area \( A \) of the cylinder is:  
+\[
+A = \pi \left( \frac{D}{2} \right)^2.
+\]
+
+The pressure \( p_{g,1} \) is expressed as:  
+\[
+p_{g,1} = p_{\text{EW},1} + \frac{m_K \cdot g}{A} + p_{\text{amb}},
+\]
+where \( p_{\text{EW},1} \) is the pressure exerted by the ice-water mixture, \( m_K \) is the mass of the piston, \( g \) is the gravitational acceleration, and \( p_{\text{amb}} \) is the ambient pressure.
+
+Substituting values:  
+\[
+p_{g,1} = p_{\text{EW},1} + \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{\pi \left( \frac{0.1 \, \text{m}}{2} \right)^2} + 1.013 \, \text{bar}.
+\]
+
+After calculation, \( p_{g,1} \) is approximately \( 1.40 \, \text{bar} \).
+
+The gas mass \( m_g \) is calculated using the ideal gas law:  
+\[
+pV = mRT.
+\]
+
+Given:  
+\[
+T_{g,1} = 773.15 \, \text{K}, \quad p_{g,1} = 1.40 \cdot 10^5 \, \text{Pa}, \quad V_{g,1} = 3.14 \cdot 10^{-3} \, \text{m}^3, \quad R = 0.166 \, \text{kJ/kg·K}.
+\]
+
+Substituting:  
+\[
+m_g = \frac{p_{g,1} \cdot V_{g,1}}{R \cdot T_{g,1}} = \frac{1.40 \cdot 10^5 \cdot 3.14 \cdot 10^{-3}}{0.166 \cdot 10^3 \cdot 773.15} = 3.43 \, \text{g}.
+\]
+
+---
+
+TASK 3c  
+The final gas temperature \( T_{g,2} \) is given as:  
+\[
+T_{g,2} = 0.008^\circ \text{C}.
+\]
+
+The energy balance is expressed as:  
+\[
+\frac{dE}{dt} = -Q - W - \frac{dU}{dt}.
+\]
+
+The change in internal energy \( \Delta U \) is calculated as:  
+\[
+\Delta U = -Q_{12} - W_v = m_g \cdot (u_2 - u_1),
+\]
+where \( W_v \) represents work done by the gas.
+
+The specific internal energy \( u_2 - u_1 \) is calculated using:  
+\[
+u_2 - u_1 = c_V \cdot (T_{g,2} - T_{g,1}),
+\]
+where \( c_V = 0.633 \, \text{kJ/kg·K} \), \( T_{g,1} = 773.15 \, \text{K} \), and \( T_{g,2} = 273.153 \, \text{K} \).
+
+Substituting:  
+\[
+u_2 - u_1 = 0.633 \cdot (273.153 - 773.15) = -316.448 \, \text{kJ/kg}.
+\]
+
+The work \( W_v \) is expressed as:  
+\[
+W_v = -p_{\text{amb}} \cdot (V_{g,2} - V_{g,1}) - m_g \cdot g \cdot (z_2 - z_1),
+\]
+where \( z_2 - z_1 \) represents the height difference.
+
+The volume \( V_{g,2} \) is calculated using:  
+\[
+p_{g,2} \cdot V_{g,2} = m_g \cdot R \cdot T_{g,2}.
+\]
+
+Substituting:  
+\[
+V_{g,2} = \frac{m_g \cdot R \cdot T_{g,2}}{p_{g,2}}.
+\]

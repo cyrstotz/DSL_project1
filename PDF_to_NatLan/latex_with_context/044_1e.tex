@@ -1,0 +1,32 @@
+The task involves determining the entropy change \( \Delta S_{12} \) of the reactor contents from state 1 to state 2.  
+
+The entropy balance equation is:  
+\[
+\Delta S_{12} = m_2 \cdot s_2 - m_1 \cdot s_1
+\]
+
+From the water tables:  
+- \( s_2(70^\circ\text{C}, x=0) = 0.5545 \, \frac{\text{kJ}}{\text{kg·K}} \)  
+- \( s_1(100^\circ\text{C}, x=0.005) = s_f + x \cdot (s_g - s_f) \), where:  
+  \[
+  s_f = 1.3065 \, \frac{\text{kJ}}{\text{kg·K}}, \quad s_g = 7.3395 \, \frac{\text{kJ}}{\text{kg·K}}
+  \]
+  Substituting \( x = 0.005 \):  
+  \[
+  s_1 = 1.3065 + 0.005 \cdot (7.3395 - 1.3065) = 1.3337 \, \frac{\text{kJ}}{\text{kg·K}}
+  \]
+
+The mass balance equation is:  
+\[
+m_2 = m_1 + \Delta m = 5755 + 3924.31 = 9679.31 \, \text{kg}
+\]
+
+Substituting into the entropy equation:  
+\[
+\Delta S_{12} = 9679.31 \cdot 0.5545 - 5755 \cdot 1.3337
+\]
+
+Result:  
+\[
+\Delta S_{12} = 1237 \, \frac{\text{kJ}}{\text{K}}
+\]

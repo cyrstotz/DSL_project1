@@ -1,0 +1,43 @@
+The energy balance for a steady-state process is given as:  
+\[
+0 = \dot{m}_{\text{in}} \left( h_{\text{ein}} - h_{\text{aus}} \right) + \dot{Q}_R - \dot{Q}_{\text{out}} - \dot{W}
+\]  
+where \( \dot{m}_{\text{ein}} = \dot{m}_{\text{aus}} = \dot{m} \).  
+
+Rearranging to solve for \( \dot{Q}_{\text{out}} \):  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \left( h_{\text{ein}} - h_{\text{aus}} \right) + \dot{Q}_R
+\]  
+
+Substituting the values:  
+\[
+\dot{Q}_{\text{out}} = 0.3 \, \text{kg/s} \left( 292.38 \, \frac{\text{kJ}}{\text{kg}} - 930.12 \, \frac{\text{kJ}}{\text{kg}} \right) + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = 58.86 \, \text{kW}
+\]  
+
+The enthalpy at the inlet, \( h_{\text{ein}} \), is determined from the saturated liquid table at \( T = 70^\circ\text{C} \):  
+\[
+h_{\text{ein}} = h_f(T = 70^\circ\text{C}) = 292.38 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The outlet enthalpy, \( h_{\text{aus}} \), is calculated using the steam quality \( x_D \) at \( T = 100^\circ\text{C} \):  
+\[
+x_D = \frac{h_{\text{aus}} - h_f}{h_g - h_f}
+\]  
+
+Rearranging:  
+\[
+h_{\text{aus}} = h_f + x_D \left( h_g - h_f \right)
+\]  
+
+Substituting values from the saturated liquid/vapor table at \( T = 100^\circ\text{C} \):  
+\[
+h_{\text{aus}} = 419.05 \, \frac{\text{kJ}}{\text{kg}} + 0.005 \left( 2631.3 \, \frac{\text{kJ}}{\text{kg}} - 419.05 \, \frac{\text{kJ}}{\text{kg}} \right)
+\]  
+\[
+h_{\text{aus}} = 930.12 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+---

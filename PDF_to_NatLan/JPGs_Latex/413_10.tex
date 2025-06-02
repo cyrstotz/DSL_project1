@@ -1,0 +1,29 @@
+TASK 4a  
+A graph is drawn with pressure \( P \, [\text{Pa}] \) on the vertical axis and temperature \( T \, [\text{K}] \) on the horizontal axis. The graph includes the following features:  
+- A curve labeled "Tripelpunkt" (triple point), separating the "Feucht-Flüssig" (wet-liquid) region from the "Gas" (gas) region.  
+- The curve extends into a "supercritical" region beyond the critical point.  
+
+TASK 4b  
+The refrigerant used is R134a.  
+The pressures at states 3 and 4 are given as \( P_3 = P_4 = 8 \, \text{bar} \).  
+
+The steady-state process in the compressor is described as adiabatic and reversible.  
+
+**Entropy balance:**  
+\[
+\dot{m} (s_2 - s_3) + \frac{\dot{Q}}{T} + \dot{S}_{\text{gen}} = 0
+\]  
+Since the process is reversible and adiabatic, \( s_2 = s_3 \), and the terms \( \frac{\dot{Q}}{T} \) and \( \dot{S}_{\text{gen}} \) are zero.  
+
+**Energy balance:**  
+\[
+\dot{m} (h_2 - h_3) - \dot{W}_k = 0
+\]  
+Rearranging for the mass flow rate:  
+\[
+\dot{m}_{\text{R134a}} = \frac{\dot{W}_k}{h_2 - h_3}
+\]  
+
+From Table A11:  
+- \( h_{3,f} = 93.42 \, \text{kJ/kg} \)  
+- \( h_{3,g} = 264.15 \, \text{kJ/kg} \)  

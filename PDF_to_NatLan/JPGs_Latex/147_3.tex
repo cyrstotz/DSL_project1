@@ -1,0 +1,61 @@
+TASK 2b  
+The equation for the outlet velocity \( w_6 \) is derived using the energy balance:  
+\[
+(h_0 - h_6) \cdot 2 = w_6^2 - w_0^2
+\]  
+Rearranging for \( w_6^2 \):  
+\[
+w_6^2 = w_0^2 + 2 \cdot (h_0 - h_6)
+\]  
+Since \( c_p \) is constant and the gas is ideal, the enthalpy difference is expressed as:  
+\[
+h_0 - h_6 = c_p \cdot (T_6 - T_0)
+\]  
+Substituting values:  
+\[
+w_6 = \sqrt{w_0^2 + 2 \cdot c_p \cdot (T_6 - T_0)}
+\]  
+\[
+w_6 = \sqrt{220^2 \, \text{m}^2/\text{s}^2 + 2 \cdot 1.006 \, \text{kJ}/\text{kg·K} \cdot (328.07 \, \text{K} - 243.15 \, \text{K})}
+\]  
+\[
+w_6 = 507.25 \, \text{m/s}
+\]  
+
+---
+
+TASK 2c  
+The specific exergy at state 6 is calculated as:  
+\[
+ex_{\text{str},6} = h_6 - h_0 - T_0 \cdot (s_6 - s_0) + ke_6 + pe_6
+\]  
+Under the assumptions, \( ke_6 = 0 \) and \( pe_6 = 0 \). Similarly, at state 0:  
+\[
+ex_{\text{str},0} = h_0 - h_0 - T_0 \cdot (s_0 - s_0) + ke_0 + pe_0 = 0
+\]  
+The change in specific exergy is:  
+\[
+\Delta ex_{\text{str}} = h_6 - h_0 - T_0 \cdot (s_6 - s_0) + ke_6 - ke_0
+\]  
+Expanding entropy terms:  
+\[
+\Delta ex_{\text{str}} = c_p \cdot (T_6 - T_0) - T_0 \cdot (c_p \cdot \ln\left(\frac{T_6}{T_0}\right) - R \cdot \ln\left(\frac{p_6}{p_0}\right)) + \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]  
+Substituting values:  
+\[
+T_0 = 273.15 \, \text{K} - 30 \, \text{K} = 243.15 \, \text{K}
+\]  
+\[
+\Delta ex_{\text{str}} = 1.006 \, \text{kJ}/\text{kg·K} \cdot (328.07 \, \text{K} - 243.15 \, \text{K}) - 243.15 \, \text{K} \cdot 1.006 \, \text{kJ}/\text{kg·K} \cdot \ln\left(\frac{328.07 \, \text{K}}{243.15 \, \text{K}}\right)
+\]  
+\[
++ \frac{507.25^2}{2} - \frac{200^2}{2}
+\]  
+\[
+= 120.808 \, \text{kJ}/\text{kg}
+\]  
+
+---
+
+TASK 2d  
+No content provided for this subtask.

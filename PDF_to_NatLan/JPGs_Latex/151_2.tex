@@ -1,0 +1,53 @@
+TASK 2a  
+The diagram is a T-s diagram (temperature vs. entropy) illustrating the thermodynamic processes in a jet engine. The following processes are labeled:  
+- **Isentropic compression**: The curve from state 1 to state 2.  
+- **Non-isentropic compression**: A nearby curve also labeled for compression.  
+- **Isobaric combustion**: The horizontal line from state 2 to state 3.  
+- **Non-isentropic turbine**: The curve from state 3 to state 4.  
+- **Isentropic turbine**: A nearby curve also labeled for turbine expansion.  
+- **Isobaric mixing**: The horizontal line from state 4 to state 5.  
+- **Isentropic nozzle expansion**: The curve from state 5 to state 6.  
+
+The axes are labeled:  
+- Vertical axis: \( T \) [K] (temperature).  
+- Horizontal axis: \( s \) [\frac{u}{kgK}] (specific entropy).  
+
+TASK 2b  
+The outlet velocity \( w_6 \) and temperature \( T_6 \) are calculated as follows:  
+
+Given:  
+\[
+T_5 = 431.9 \, \text{K}, \quad p_5 = 0.5 \, \text{bar}, \quad w_5 = 220 \, \text{m/s}, \quad p_6 = p_0 = 0.151 \, \text{bar}
+\]  
+
+The isentropic relation is used:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}} = 431.9 \cdot \left( \frac{0.151}{0.5} \right)^{\frac{0.4}{1.4}} \approx 328.07 \, \text{K}
+\]  
+
+Energy conservation is applied:  
+\[
+\Delta E = 0 = \dot{Q} + \dot{W} + \Delta KE + \Delta PE
+\]  
+Since heat transfer (\( \dot{Q} \)) and potential energy (\( \Delta PE \)) are negligible:  
+\[
+\Delta KE = -\dot{W}
+\]  
+
+The kinetic energy difference is calculated:  
+\[
+\Delta KE = c_p \cdot (T_6 - T_5) = c_p \cdot (328.07 - 431.9) = -74.605 \, \text{kJ/kg}
+\]  
+
+The velocity difference is derived:  
+\[
+\Delta w = \sqrt{2 \cdot 74.605} = 12.215 \, \text{m/s}
+\]  
+Thus, the outlet velocity is:  
+\[
+w_6 = w_5 + \Delta w = 220 + 12.215 = 232.215 \, \text{m/s}
+\]

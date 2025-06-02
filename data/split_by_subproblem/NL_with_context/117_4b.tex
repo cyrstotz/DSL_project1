@@ -1,0 +1,29 @@
+A table is drawn with the following columns:  
+- "p(low)"  
+- "T"  
+- "h" (enthalpy)  
+- "h_c" (enthalpy change)  
+- "q_dot/w_dot" (heat flow/work flow)  
+- "x"  
+- "Notes"  
+
+The rows contain the following information:  
+1. Row 1: "QK"  
+2. Row 2: "WK = 28W," "x = 1," "adiabatic reversible"  
+3. Row 3: "Qabs"  
+4. Row 4: "p = 8," "x = 0"
+
+Mass flow rate \( \dot{m}_R \):  
+\( \dot{W}_k = 28 \, \text{W} \)  
+
+Steady-state energy balance at the condenser with \( ke = pe = 0 \) and adiabatic:  
+\( 0 = \dot{m}_k \cdot (h_2 - h_3) + \frac{w_2^2 - w_3^2}{2} + g \cdot (z_2 - z_3) + \dot{Q}_k - \dot{W}_k \)  
+
+\( \rightarrow \dot{W}_k = \dot{m}_k \cdot (h_2 - h_3) \)  
+\( \rightarrow \dot{m}_k = \frac{\dot{W}_k}{h_2 - h_3} \)  
+
+Entropy:  
+\( s_2 = s_3 \, \text{(isentropic)} \)  
+
+\( x_A = 0 \)  
+\( h_A = h_f (8 \, \text{bar}) = 93.42 \, \text{kJ/kg} \, \text{(Table A-11)} \)

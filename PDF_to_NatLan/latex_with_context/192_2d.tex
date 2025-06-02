@@ -1,0 +1,61 @@
+A system boundary diagram is drawn, labeled "Sys. Grenze," showing inlet and outlet mass flows (\( \dot{m}_i \) and \( \dot{m}_o \)) with no heat transfer (\( \dot{Q} = 0 \)) and no work transfer (\( \dot{W} = 0 \)). A note indicates that work is used for compression.  
+
+The exergy balance equation is written as:  
+\[
+\frac{dE_x}{dt} = \sum \dot{E}_{x,\text{in}} - E_{x,\text{ver}}
+\]  
+This expands to:  
+\[
+\dot{e}_{x,0} - \dot{e}_{x,6} - e_{x,\text{ver}}
+\]  
+A note clarifies that \( \dot{Q} \neq 0 \).  
+
+Description of the diagram:  
+The diagram represents a steady-state system boundary with labeled input and output mass flows. It indicates no heat or work transfer across the boundary, with compression work occurring internally.
+
+The equation for exergy destruction is given as:  
+\[
+O = ex_{0} - ex_{6} + 
+\]  
+
+Using entropy considerations, the exergy destruction is expressed as:  
+\[
+O = \dot{m} (s_e - s_a) + \frac{\dot{Q}}{T} + \dot{S}_{0-z}
+\]  
+
+Breaking it down further:  
+\[
+O = s_e - s_a + \frac{\dot{Q}}{T} + \dot{S}_{0-z}
+\]  
+
+Where \( \dot{S}_{0-z} \) is defined as:  
+\[
+\dot{S}_{0-z} = \frac{ex_{\text{vol}}}{T_0}
+\]  
+
+Substituting into the equation:  
+\[
+O = s_0 - s_e + \frac{\dot{Q}}{T} + \frac{ex_{\text{vol}}}{T_0}
+\]  
+
+Rewriting in logarithmic form:  
+\[
+c \ln \left( \frac{T_0}{T_6} \right) + \frac{\dot{Q}}{T} + \frac{ex_{\text{vol}}}{T_0} = 0
+\]  
+
+Given values:  
+\[
+\dot{Q} = 1195 \, \text{kJ/kg}, \quad T = 1289 \, \text{K}
+\]  
+
+The exergy destruction term \( ex_{\text{vol}} \) is calculated as:  
+\[
+ex_{\text{vol}} = \left( -c \ln \left( \frac{T_0}{T_6} \right) + \frac{\dot{Q}}{T} \right) \cdot T_0
+\]  
+
+Final result:  
+\[
+ex_{\text{vol}} = -152.1 \, \text{kJ/kg}
+\]  
+
+This value is underlined in the solution.

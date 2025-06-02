@@ -1,0 +1,65 @@
+TASK 4b  
+The refrigerant mass flow rate \( \dot{m}_{\text{R134a}} \) is being calculated. The inlet temperature \( T_i = 10^\circ\text{C} \) and outlet temperature \( T_n = 4^\circ\text{C} \) are specified.  
+
+A schematic diagram of the refrigeration cycle is drawn, showing four states (1, 2, 3, and 4) with arrows indicating the flow of work \( \dot{W}_K \).  
+
+The steady-state energy balance is written as:  
+\[
+0 = \dot{m} (h_2 - h_3) + \dot{W}_K
+\]  
+The process is described as adiabatic and reversible, with \( s_2 = s_3 \).  
+
+From Table A-11, the enthalpy at state 4 is given as:  
+\[
+h_4 = h_{\text{eq}}(8 \, \text{bar}) = 93.42 \, \text{kJ/kg} = h_1
+\]  
+
+The enthalpy at state 3 is determined using the throttling process:  
+\[
+h_3 = h_4 \quad \text{(no change in enthalpy during throttling)}
+\]  
+
+The mass flow rate is calculated using the equation:  
+\[
+\dot{m} = \frac{\dot{W}_K}{h_2 - h_3}
+\]  
+
+---
+
+TASK 4c  
+The enthalpy at state 1 is given as:  
+\[
+h_1 = h_4 = 93.42 \, \text{kJ/kg}
+\]  
+
+The vapor quality \( x_1 \) at state 1 is calculated using the formula:  
+\[
+h_1 = h_f + x_1 (h_g - h_f)
+\]  
+Rearranging for \( x_1 \):  
+\[
+x_1 = \frac{h_1 - h_f}{h_g - h_f}
+\]  
+
+From Table A-10 at \( T = 4^\circ\text{C} \):  
+\[
+h_f = 55.35 \, \text{kJ/kg}, \quad h_g = 184.15 \, \text{kJ/kg}
+\]  
+
+Substituting values:  
+\[
+x_1 = \frac{93.42 - 55.35}{184.15 - 55.35} = 0.196
+\]  
+
+---
+
+TASK 4d  
+The coefficient of performance \( \epsilon_K \) is calculated using the formula:  
+\[
+\epsilon_K = \frac{\dot{Q}_K}{\dot{W}_K}
+\]  
+
+---
+
+TASK 4e  
+The pressure decreases, causing \( T_i \) to decrease as well. This occurs because the process is no longer isothermal due to the continued heat removal.

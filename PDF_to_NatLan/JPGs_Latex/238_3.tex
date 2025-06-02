@@ -1,0 +1,50 @@
+TASK 2c  
+The specific exergy is expressed as:  
+\[
+ex_{\text{str}} = \left[ h - h_0 - T_0 (s - s_0) + ke + pe \right]
+\]  
+
+For the outlet stream:  
+\[
+ex_{\text{str},6} = ex_{\text{str},0} = \left[ h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2} - \frac{w_0^2}{2} \right]
+\]  
+
+The enthalpy difference is calculated as:  
+\[
+h_6 - h_0 = c_p (T_6 - T_0) = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \cdot (328.07 \, \text{K} - 243.15 \, \text{K}) = 85.4295 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The entropy difference is calculated as:  
+\[
+s_6 - s_0 = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \cdot \ln \left( \frac{328.07 \, \text{K}}{243.15 \, \text{K}} \right) - 0.2856 \, \frac{\text{kJ}}{\text{kg·K}} \cdot \ln \left( \frac{0.5 \, \text{bar}}{0.191 \, \text{bar}} \right)
+\]  
+\[
+s_6 - s_0 = 0.3613 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+The specific exergy change is then:  
+\[
+\Delta ex_{\text{str}} = ex_{\text{str},6} - ex_{\text{str},0} = \left[ 85.4295 \, \frac{\text{kJ}}{\text{kg}} - 243.15 \, \text{K} \cdot (0.3613 \, \frac{\text{kJ}}{\text{kg·K}}) + \frac{(220 \, \text{m/s})^2}{2} - \frac{(200 \, \text{m/s})^2}{2} \right]
+\]  
+\[
+\Delta ex_{\text{str}} = -4315.67 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+---
+
+TASK 2d  
+The specific exergy destruction is given as:  
+\[
+\Delta ex_{\text{str}} = -100 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+From the summary, it is known that for stationary flow processes, the following applies:  
+\[
+0 = -\Delta ex_{\text{str}} + \dot{ex}_Q - \dot{N}_{\text{in}} - ex_{\text{verl}}
+\]  
+
+The exergy loss is calculated as:  
+\[
+ex_{\text{verl}} = -\Delta ex_{\text{str}} = -100 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+

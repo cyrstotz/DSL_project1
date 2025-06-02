@@ -1,0 +1,58 @@
+TASK 2c  
+The mass-specific increase in flow exergy is calculated using the formula:  
+\[
+e_{\text{ex,st},6} = h_6 - h_0 - T_0 (s_6 - s_0) + \frac{w_6^2}{2}
+\]  
+The expression for the change in flow exergy is:  
+\[
+\Delta e_{\text{ex,st}} = e_{\text{ex,st},6} - e_{\text{ex,st},0}
+\]  
+Substituting the terms:  
+\[
+e_{\text{ex,st},0} = h_0 - h_0 - T_0 (s_0 - s_0) + \frac{w_0^2}{2}
+\]  
+The gas constant \( R \) is calculated as:  
+\[
+R = c_p - c_v = \frac{c_p}{\kappa} = 0.2874 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+The final expression for \( \Delta e_{\text{ex,st}} \) is:  
+\[
+\Delta e_{\text{ex,st}} = c_p (T_6 - T_0) - c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right) + \frac{w_6^2}{2} - \frac{w_0^2}{2}
+\]  
+Substituting numerical values:  
+\[
+= 85.43 \, \frac{\text{kJ}}{\text{kg}} - 73.276 \, \frac{\text{kJ}}{\text{kg}} + 108.65 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+The result is:  
+\[
+\Delta e_{\text{ex,st}} = 120.81 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+---
+
+TASK 2d  
+The entropy production is calculated using the formula:  
+\[
+0 = s_e - s_a + \frac{q}{T} + s_{0z}
+\]  
+For an adiabatic process (\( q = 0 \)):  
+\[
+s_{0z} = \Delta s_{06} = c_p \ln \left( \frac{T_6}{T_0} \right) - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+Substituting numerical values:  
+\[
+s_{0z} = 0.3014 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+The velocity-related exergy is:  
+\[
+e_{v,\text{vel}} = T_0 s_{0z}
+\]  
+Substituting values:  
+\[
+e_{v,\text{vel}} = 73.276 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+---
+
+Description of the diagram:  
+A graph is drawn with temperature \( T \) on the vertical axis and entropy \( s \) on the horizontal axis. The curve represents the thermodynamic process, with labeled points 0, 2, and 6. Point 2 is shown as an intermediate state between points 0 and 6.

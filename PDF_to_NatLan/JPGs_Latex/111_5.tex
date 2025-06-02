@@ -1,0 +1,59 @@
+TASK 3a  
+Determine the gas pressure \( p_{g,1} \) and mass \( m_g \) in state 1 using equilibrium conditions at the membrane:  
+
+The gas pressure \( p_{g,1} \) is calculated as:  
+\[
+p_{g,1} \cdot A = p_{\text{amb}} \cdot A + (m_K + m_{\text{EW}}) \cdot g
+\]  
+Substituting values:  
+\[
+p_{g,1} = \frac{10^5 + \frac{(32 + 0.1) \cdot 9.81}{0.12 \cdot \pi \cdot 0.1^2}}{10^5} = 1.401 \, \text{bar}
+\]  
+
+Using the ideal gas law:  
+\[
+p_{g,1} V_{g,1} = m_g R T_{g,1}
+\]  
+The specific gas constant \( R \) is calculated as:  
+\[
+R = \frac{\bar{R}}{M_g} = \frac{8.314}{50} = 0.16628 \, \text{kJ/kg·K}
+\]  
+
+Solving for \( m_g \):  
+\[
+m_g = \frac{p_{g,1} \cdot V_{g,1}}{R \cdot T_{g,1}} = \frac{1.401 \cdot 10^5 \cdot 3.14 \cdot 10^{-3}}{0.16628 \cdot 773.15} = 3.422 \, \text{g}
+\]  
+
+---
+
+TASK 3b  
+Determine \( T_{g,2} \) and \( p_{g,2} \) in state 2 under thermodynamic equilibrium conditions:  
+
+Thermodynamic equilibrium implies:  
+\[
+T_{g,2} = T_{\text{EW},2}, \quad \text{where } x_{\text{ice},2} > 0 \text{ and } x_{\text{ice},2} \neq 1
+\]  
+Thus:  
+\[
+T_{\text{EW},2} = T_{\text{EW},1} = 0^\circ\text{C} \quad \text{(two-phase equilibrium)}
+\]  
+\[
+T_{g,2} = 0^\circ\text{C}
+\]  
+
+The pressure \( p_{g,2} \) is analogous to \( p_{g,1} \), and equilibrium conditions give:  
+\[
+p_{g,2} = p_{g,1} = 1.5 \, \text{bar}
+\]  
+
+---
+
+TASK 3c  
+State 2 is a thermodynamic equilibrium, meaning:  
+\[
+T_{g,2} = T_{\text{EW},2}, \quad x_{\text{ice},2} > 0 \quad \text{and } x_{\text{ice},2} \neq 1
+\]  
+Thus:  
+\[
+T_{\text{EW},2} = T_{\text{EW},1} = 0^\circ\text{C}, \quad T_{g,2} = T_{\text{EW},2} = 0^\circ\text{C}
+\]

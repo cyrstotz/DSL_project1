@@ -1,0 +1,79 @@
+TASK 1d  
+The problem involves calculating the mass \( \Delta m_{12} \) of saturated liquid water added to the reactor to reduce the temperature from \( T_{R,1} = 100^\circ\text{C} \) to \( T_{R,2} = 70^\circ\text{C} \). The following equations and values are used:
+
+1. **Initial State (1):**  
+   - \( T_{R,1} = 100^\circ\text{C} \)  
+   - Steam quality: \( x_D = 0.005 \)  
+   - Reactor mass: \( m_1 = 5755 \, \text{kg} \)  
+
+2. **Final State (2):**  
+   - \( T_{R,2} = 70^\circ\text{C} \)  
+   - Steam quality: \( x_2 = 0 \) (saturated liquid)  
+   - Reactor mass: \( m_2 = m_1 + \Delta m_{12} \)  
+
+The system is modeled as a closed energy balance:  
+\[
+\Delta E = m_2 u_2 - m_1 u_1 = \Delta m_{12} h_{\text{in}} + Q_{R,12}
+\]  
+Rearranging:  
+\[
+(m_1 + \Delta m_{12}) u_2 - m_1 u_1 = \Delta m_{12} h_{\text{in}} + Q_{R,12}
+\]  
+\[
+m_1 u_2 - Q_{R,12} - m_1 u_1 = \Delta m_{12} (h_{\text{in}} - u_2)
+\]  
+\[
+\Delta m_{12} = \frac{m_1 u_2 + Q_{R,12} - m_1 u_1}{h_{\text{in}} - u_2}
+\]
+
+### Thermodynamic Properties:
+- **Inlet enthalpy \( h_{\text{in}} \):**  
+  At \( T_{\text{in}} = 20^\circ\text{C} \), \( x = 0 \):  
+  \[
+  h_{\text{in}} = h_f = 83.96 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-2)}
+  \]
+
+- **Final internal energy \( u_2 \):**  
+  At \( T_{R,2} = 70^\circ\text{C} \), \( x_2 = 0 \):  
+  \[
+  u_2 = u_f = 292.95 \, \frac{\text{kJ}}{\text{kg}} \quad \text{(from Table A-2)}
+  \]
+
+- **Initial internal energy \( u_1 \):**  
+  At \( T_{R,1} = 100^\circ\text{C} \), \( x_1 = 0.005 \):  
+  \[
+  u_1 = x_1 u_g + (1 - x_1) u_f  
+  \]  
+  Substituting values:  
+  \[
+  u_1 = 0.005 (2506.5 \, \frac{\text{kJ}}{\text{kg}}) + (1 - 0.005)(419.89 \, \frac{\text{kJ}}{\text{kg}})  
+  \]  
+  \[
+  u_1 = 429.37 \, \frac{\text{kJ}}{\text{kg}}
+  \]
+
+### Mass Calculation:
+Substituting into the energy balance equation:  
+\[
+\Delta m_{12} = \frac{m_1 u_2 + Q_{R,12} - m_1 u_1}{h_{\text{in}} - u_2}
+\]  
+Given:  
+- \( m_1 = 5755 \, \text{kg} \)  
+- \( Q_{R,12} = 35 \, \text{MJ} = 35000 \, \text{kJ} \)  
+
+\[
+\Delta m_{12} = \frac{5755 (292.95) + 35000 - 5755 (429.37)}{83.96 - 292.95}
+\]  
+\[
+\Delta m_{12} = \frac{1686467.25 + 35000 - 2470703.35}{-208.99}
+\]  
+\[
+\Delta m_{12} = \frac{-747236.1}{-208.99} = 3589.37 \, \text{kg}
+\]
+
+### Final Result:
+\[
+\Delta m_{12} = 3589.37 \, \text{kg}
+\]  
+
+No diagrams or graphs are present on this page.

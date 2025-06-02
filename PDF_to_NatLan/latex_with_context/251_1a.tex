@@ -1,0 +1,57 @@
+**Subtask a)**  
+The first law of thermodynamics for the cooling jacket is expressed as:  
+\[
+0 = \dot{m}_{\text{KF}} \left( h_{\text{KF,in}} - h_{\text{KF,out}} \right) + \dot{Q}_{\text{out}}
+\]  
+For the reactor, the first law is:  
+\[
+0 = \dot{m}_{\text{Reactor}} \left( h_{\text{e}} - h_{\text{a}} \right) + \dot{Q}_{\text{R}} - \dot{Q}_{\text{out}}
+\]  
+The heat flow removed by the coolant is calculated as:  
+\[
+\dot{Q}_{\text{out}} = \dot{Q}_{\text{R}} - \dot{m}_{\text{Reactor}} \left( h_{\text{e}} - h_{\text{a}} \right)
+\]  
+Using the enthalpy values:  
+\[
+h_{\text{e}} \, (70^\circ\text{C}) = 292.98 \, \text{kJ/kg} \quad \text{(Table A2)}
+\]  
+\[
+h_{\text{a}} \, (100^\circ\text{C}) = 419.06 \, \text{kJ/kg} \quad \text{(Table A2)}
+\]  
+The result is:  
+\[
+\dot{Q}_{\text{out}} = 62.482 \, \text{kW}
+\]  
+
+---
+
+**Subtask b)**  
+The thermodynamic mean temperature of the coolant is calculated as:  
+\[
+T_{\text{KF}} = \frac{S_{\text{a}} - S_{\text{e}}}{S_{\text{a}} - S_{\text{e}}} \quad \text{(data visible)}
+\]  
+Using entropy values:  
+\[
+s_{\text{a}} = s_{\text{g}}(70^\circ\text{C}) = 0.9598 \, \frac{\text{kJ}}{\text{kg·K}} \quad \text{(Table A2)}
+\]  
+\[
+s_{\text{e}} = s_{\text{g}}(100^\circ\text{C}) = 1.3065 \, \frac{\text{kJ}}{\text{kg·K}} \quad \text{(Table A2)}
+\]  
+The mean temperature is:  
+\[
+T_{\text{KF}} = 355.13 \, \text{K}
+\]  
+
+---
+
+**Subtask c)**  
+The entropy production rate is calculated as:  
+\[
+\dot{S}_{\text{gen}} = -\frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = -\frac{65 \, \text{kW}}{255 \, \text{K}} = 220.3 \, \frac{\text{J}}{\text{K}}
+\]  
+
+---

@@ -1,0 +1,229 @@
+
+``````latex
+
+
+\section*{2a)}
+
+\begin{itemize}
+    \item The graph is a Temperature-Entropy (T-S) diagram.
+    \item The x-axis is labeled $S \, [\frac{kJ}{kg \cdot K}]$.
+    \item The y-axis is labeled $T \, [K]$.
+    \item There is a dome-shaped curve in the middle of the graph, representing the phase change region.
+    \item Two straight lines intersect the dome-shaped curve, one with a positive slope and one with a negative slope.
+\end{itemize}
+
+\section*{b)}
+
+\subsection*{1. HS um Schubdüse:}
+
+\[
+0 = \dot{m}_{\text{ges}} \left[ h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right] + \dot{Q} - W_t
+\]
+
+\begin{itemize}
+    \item adiabatic reversible $\rightarrow \dot{Q} = 0$
+\end{itemize}
+
+\subsection*{Entrop. bilanz:}
+
+\[
+0 = \dot{m}_{\text{ges}} \left[ s_5 - s_6 \right] + \frac{\dot{Q}}{T} + S_{\text{erzeugt}}
+\]
+
+\begin{itemize}
+    \item $S_{\text{erzeugt}} = 0$, adiabatic
+    \item $0$, conv. ad.
+\end{itemize}
+
+\[
+S_5 = S_6
+\]
+
+\begin{itemize}
+    \item \textit{hin ausrechnen mit $^\circ C$ statt Kelvin in Tabelle gerechnet dementsprechend überxall bei Temperatur +273.15}
+\end{itemize}
+
+\subsection*{S_5 bestimmen}
+
+\[
+h_5 = \text{interpolation in TAB-A-22}
+\]
+
+\[
+h_5 = 441.61 - 431.43
+\]
+
+\[
+\frac{440 - 430}{431.9 - 430} \cdot 431.43
+\]
+
+\[
+= 433.36 \frac{kJ}{kg}
+\]
+
+\subsection*{s_5 interpolieren:}
+
+\[
+s_6 - s_5 = s^0 (T_6) - s^0 (T_s) - R \ln \left( \frac{P_6}{P_s} \right)
+\]
+
+\begin{itemize}
+    \item \textit{falsch}
+    \item \textit{finden}
+\end{itemize}
+
+\section*{Graphical Description}
+
+\begin{itemize}
+    \item The graph is a Temperature-Entropy (T-S) diagram.
+    \item The x-axis is labeled $S \, [\frac{kJ}{kg \cdot K}]$.
+    \item The y-axis is labeled $T \, [K]$.
+    \item There is a dome-shaped curve in the middle of the graph, representing the phase change region.
+    \item There are several points labeled 0, 1, 2, 3, 4, 5, and 6.
+    \item Point 0 is at the bottom left of the dome.
+    \item Point 1 is slightly above point 0.
+    \item Point 2 is to the right of point 1, on an isobar line.
+    \item Point 3 is above point 2, on another isobar line.
+    \item Point 4 is to the left of point 3, on an isobar line.
+    \item Point 5 is below point 4, on another isobar line.
+    \item Point 6 is to the left of point 5, on an isobar line.
+    \item Arrows indicate the direction of the process from point 0 to point 6.
+    \item The isobar lines are dashed and labeled as "isobar".
+    \item The mass flow rates $\dot{m}_1$, $\dot{m}_2$, and $\dot{m}_{\text{ges}}$ are indicated at various points.
+\end{itemize}
+
+``````latex
+
+\[
+S_s^0 = \frac{2.0887 - 2.0653}{440 - 430} (431.3 - 430) + 2.0653
+\]
+
+\[
+= 2.0657
+\]
+
+\[
+T_6 = T_5 = 431.3 \, K
+\]
+
+\[
+S_6 - S_s^B = 0 = S^0(T_6) - S^0(T_5) - R \ln \left( \frac{P_6}{P_5} \right)
+\]
+
+\[
+C_V = \frac{C_P}{k} = 0.7186 \, \frac{kJ}{kg \cdot K}
+\]
+
+\[
+R = C_P - C_V = 0.2874 \, \frac{kJ}{kg \cdot K}
+\]
+
+\[
+S^0(T_6) = S^0(T_5) + R \ln \left( \frac{P_6}{P_5} \right)
+\]
+
+\[
+= 1.7931 \, \frac{kJ}{kg \cdot K}
+\]
+
+\[
+\text{interpolieren in A-22}
+\]
+
+\[
+T_6 = \frac{340 - 330}{1.7931 - 1.78249} \cdot (1.7931 - 1.78249) + 330
+\]
+
+\[
+= 336.81^\circ C
+\]
+
+\[
+w_t = -n \int_5^6 \rho \, dv
+\]
+
+\[
+W_t = -m_{ges} \cdot n \int_5^6 \rho \, dv
+\]
+
+\[
+\left( \frac{P}{P_5} \right)^{\frac{n-1}{n}} = \left( \frac{V_5}{V} \right)^{n-1}
+\]
+
+``````latex
+
+
+\section*{Problem c}
+
+\begin{align*}
+    w_6 &= 510 \, \text{m/s} \\
+    T_6 &= 340 \, \text{K}
+\end{align*}
+
+\[
+\Delta \dot{E}_{x,str} = \left[ h_{a6} - h_{a0} - T_0 \left( s_{a6} - s_{a0} \right) + \Delta ke + \Delta pe \right]
+\]
+
+\[
+\Delta ke = \frac{w_6^2 - w_0^2}{2} = \frac{510^2 - 200^2}{2} = 110.08 \, \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\Delta pe = 0
+\]
+
+\section*{Problem d}
+
+\[
+\dot{e}_{x,verl} = T_0 \dot{s}_{erz}
+\]
+
+\text{Entropie:}
+
+\[
+0 = s_0 - s_6 + \frac{q}{T} + \dot{s}_{erz}
+\]
+
+\[
+\dot{s}_{erz} = s_6 - s_0 = s^0(T_6) - s^0(T_0) - R \ln \left( \frac{p_6}{p_0} \right)
+\]
+
+\[
+\left( \frac{p_6}{p_0} = 0 \right)
+\]
+
+\[
+s^0(T_6) \quad \text{(aus b)} = 1.7337 \, \frac{\text{kJ}}{\text{kg K}}
+\]
+
+\[
+s^0(T_0) = 1.4911
+\]
+
+\[
+T_0 = 273.15 - 30 = 243.15 \, \text{K}
+\]
+
+\text{Interpolieren in A-22:}
+
+\[
+s(T_0) = \frac{1.59117 - 1.47824}{250 - 240} \cdot (243.15 - 240) + 1.47824
+\]
+
+\[
+= 1.4911 \, \frac{\text{kJ}}{\text{kg K}}
+\]
+
+``````latex
+
+\[
+s_{ex} = 1.7931 - 1.4911 = 0.30186 \frac{kJ}{kg \cdot K}
+\]
+
+\[
+e_{x, vol} = T_0 \cdot s_{ex} = 73.42 \frac{kJ}{kg}
+\]
+
+``````latex
+
+

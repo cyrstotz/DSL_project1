@@ -1,0 +1,37 @@
+The energy balance for the reactor system is written as:  
+\[
+\Delta E = m_2 U_2 - m_1 U_1 + \Delta m_{\text{in}} h_{\text{in}} + \dot{Q}_{R} - \dot{Q}_{\text{out}}
+\]  
+where \( \dot{Q}_{R} \) is the heat released by the chemical reaction and \( \dot{Q}_{\text{out}} \) is the heat removed by the coolant.  
+
+The mass added to the reactor is calculated as:  
+\[
+\Delta m_{\text{in}} = m_2 - m_1 = m_{\text{total},2} - m_{\text{total},1}
+\]  
+where \( m_{\text{total},2} = m_1 + \Delta m_{\text{in}} \).  
+
+The heat flow removed by the coolant is expressed as:  
+\[
+\dot{Q}_{\text{out}} = \frac{(\Delta m_{\text{in}} + m_1) U_2 - m_1 U_1}{h_{\text{in}} - U_2}
+\]  
+
+Substituting values:  
+\[
+\Delta m_{\text{in}} = \frac{m_2 U_2 - m_1 U_1}{h_{\text{in}} - U_2}
+\]  
+where:  
+- \( h_{\text{in}} = h_f(20^\circ\text{C}) = 83.96 \, \frac{\text{kJ}}{\text{kg}} \) (from Table A-2)  
+- \( U_2 = h_f(70^\circ\text{C}) = 292.85 \, \frac{\text{kJ}}{\text{kg}} \)  
+- \( U_1 = h_f(100^\circ\text{C}) = 419.54 \, \frac{\text{kJ}}{\text{kg}} \)  
+
+The reactor mass at state 1 is:  
+\[
+m_1 = m_{\text{total},1} = 5755 \, \text{kg}
+\]  
+
+After calculation:  
+\[
+\Delta m_{\text{in}} = 3469.69 \, \text{kg}
+\]  
+
+---

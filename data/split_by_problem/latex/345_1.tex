@@ -1,0 +1,107 @@
+
+``````latex
+
+1. a) 
+\[
+0 = \dot{m}(h_e - h_a) + \dot{Q}_R - \dot{Q}_{\text{aus}}
+\]
+\[
+h_e = 202.98 \frac{kJ}{kg} \quad \text{TAB A-2}
+\]
+\[
+h_a = 419.04 \frac{kJ}{kg} \quad \text{TAB A-2}
+\]
+\[
+\dot{Q}_{\text{aus}} = \dot{m}(h_e - h_a) + \dot{Q}_R = 62.18 \, kW
+\]
+
+b) 
+\[
+\bar{T} = \frac{\int_{T_e}^{T_a} T dS}{s_a - s_e}
+\]
+\[
+\int_{T_e}^{T_a} T dS = \int_{T_e}^{T_a} dH - V dp \quad \downarrow \quad p \text{ konstant}
+\]
+\[
+= \frac{h_a - h_e}{s_a - s_e}
+\]
+\[
+s_a - s_e = \int_{T_e}^{T_a} \frac{c_{if}}{T} dT = c_{if} \ln \left( \frac{T_a}{T_e} \right)
+\]
+\[
+h_a - h_e = \int_{T_e}^{T_a} c_{if} dT = c_{if} (T_a - T_e)
+\]
+\[
+\bar{T} = \frac{T_a - T_e}{\ln \left( \frac{T_a}{T_e} \right)} = 293.12 \, K
+\]
+
+c) 
+\[
+0 = \dot{m}(s_e^w - s_a^w) + \frac{\dot{Q}_{\text{aus}}}{T} + \dot{S}_{\text{erz}}
+\]
+\[
+0 = \dot{m}(h_e - h_a) + \dot{Q}_{\text{aus}}
+\]
+\[
+\dot{Q}_{\text{aus}} = \dot{m}(h_a - h_e) = \dot{m}
+\]
+\[
+s_e^w = 0.959 \frac{kJ}{kgK} \quad \text{TAB A-2}
+\]
+\[
+s_a^w = 1.3069 \frac{kJ}{kgK} \quad \text{TAB A-2}
+\]
+\[
+\dot{S}_{\text{erz}} = \dot{m}(s_a^w - s_e^w) + \frac{\dot{Q}_{\text{aus}}}{T} = 0.3178 \frac{kJ}{K}
+\]
+
+d) 
+\[
+n_2 u_2 - m_1 u_1 = \Delta m_2 h_2 + 35 MJ - 35 MJ
+\]
+\[
+u_1 = h_1 - x_1 2506.5 + (1 - x_1) \cdot 418.04 \quad \text{TAB A-2}
+\]
+\[
+= 429.38 \frac{kJ}{kg}
+\]
+\[
+u_2 = 202.95 \frac{kJ}{kg} \quad \text{TAB A-2}
+\]
+\[
+m_2 = 5755 kg
+\]
+\[
+n_2 = m_1 + \Delta m_2
+\]
+\[
+h_2 = 83.06 \frac{kJ}{kg} \quad \text{TAB A-2}
+\]
+\[
+(m_1 + \Delta m_2) u_2 - m_1 u_1 = \Delta m_2 h_2
+\]
+
+``````latex
+
+\begin{itemize}
+    \item[d)] 
+    \begin{align*}
+        m_1 h_2 + \Delta m_{12} h_2 - m_1 h_1 &= \Delta m_{12} h_2 \\
+        \Delta m_{12} (h_2 - h_2) &= m_1 h_1 - m_1 h_2 \\
+        \Delta m_{12} &= 3756.9 \, \text{kg}
+    \end{align*}
+    
+    \item[e)] 
+    \begin{align*}
+        \Delta S_{m2} &= m_2 s_2 - m_1 s_1 \\
+        s_1 &= x_0 \cdot 7.359 + (1 - x_0) \cdot 1.306 \quad \text{TAB A-2} \\
+        &= 7.337 \frac{\text{kJ}}{\text{kg K}} \\
+        s_2 &= 0.0549 \\
+        \Delta S_{m2} &= (m_1 + \Delta m_{12}) \cdot s_2 - m_1 s_1 \\
+        &= 738.7 \frac{\text{kJ}}{\text{K}}
+    \end{align*}
+\end{itemize}
+
+``````latex
+
+

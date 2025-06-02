@@ -1,0 +1,53 @@
+TASK 1a  
+The energy balance for the reactor wall is written as:  
+\[
+0 = \dot{m} (h_{\text{out}} - h_{\text{in}}) + \dot{Q}_{\text{out}}
+\]  
+The heat flow removed by the coolant is expressed as:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} c (T_{\text{out}} - T_{\text{in}})
+\]  
+Entropy change is calculated as:  
+\[
+\Delta S = \frac{\dot{Q}_{\text{out}}}{T}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature of the coolant is derived using the entropy integral:  
+\[
+\bar{T} = \frac{\int_{T_{\text{in}}}^{T_{\text{out}}} T \, dS}{S_{\text{out}} - S_{\text{in}}} = \frac{q_{\text{rev}}}{s_{\text{out}} - s_{\text{in}}} = \frac{c_p (T_{\text{out}} - T_{\text{in}})}{c_p \ln \left( \frac{T_{\text{out}}}{T_{\text{in}}} \right)}
+\]  
+Substituting values:  
+\[
+\bar{T} = 293.12 \, \text{K}
+\]  
+
+TASK 1c  
+The entropy production at the reactor wall is calculated as:  
+\[
+\dot{S}_{\text{gen}} = \frac{\dot{Q}_{\text{out}}}{\bar{T}} = \frac{65 \, \text{kW}}{293.12 \, \text{K}} = 0.222 \, \text{kW/K}
+\]  
+
+TASK 1d  
+The energy balance for the reactor during cooling is expressed as:  
+\[
+\Delta E = m_{12} (h_2 - h_1) + Q_{R,12}
+\]  
+The entropy balance is written as:  
+\[
+\Delta s = s_{m,2} (h_2 - h_1) + Q_{R,12}
+\]  
+Rearranging:  
+\[
+\Delta m_{12} = \frac{u_2 - u_1 - Q_{R,12}}{u_2 - u_1}
+\]  
+
+TASK 1e  
+The entropy change of the reactor contents is given by:  
+\[
+\Delta S = s_{m,2} - s_{m,1} + \frac{Q_{R,12}}{\bar{T}_{12}}
+\]  
+The mean temperature during cooling is calculated as:  
+\[
+\bar{T}_{12} = \frac{T_2 - T_1}{\ln \left( \frac{T_2}{T_1} \right)}
+\]

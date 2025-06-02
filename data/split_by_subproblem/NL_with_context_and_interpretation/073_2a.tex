@@ -1,0 +1,26 @@
+A T-s diagram is drawn with the x-axis labeled as 's [kJ/kg·K]' and the y-axis labeled as 'T [K]'. The diagram shows a process with points labeled 1, 2, 3, and 4,5. Two dashed lines represent isobars, labeled 'p = p6' and 'p = pA'. The process starts at point 1, moves vertically to point 2, then diagonally to point 3, and finally descends to point 4,5.  
+
+Below the diagram, a table is provided with columns labeled 'T [K]', 'p [bar]', and 'w [m/s]'. The rows are numbered 1 to 6. Only row 5 has values filled in:  
+- T = 431.9 K  
+- p = 0.5 bar  
+- w = 220 m/s
+
+\( \dot{E}_{verl} = T_0 \dot{S}_{erz} = 0 \) (since reversible)  
+
+\( 0 = \dot{m} (h_s - h_c - T_0 (s_s - s_c) + \frac{1}{2} (\dot{w}_0^2 - \dot{w}_5^2)) - \dot{W}_t \)  
+
+\( \dot{W}_t = \frac{R (T_6 - T_5)}{\kappa - 1} \) (ideal gas and isentropic)  
+
+\( \dot{W}_t = \dot{m} \cdot c_p \cdot T_0 \)  
+
+=> \( 0 = \dot{m} (h_s - h_c - T_0 (s_s - s_c) + \frac{1}{2} (\dot{w}_0^2 - \dot{w}_5^2)) - \frac{R (T_6 - T_5)}{\kappa - 1} - \dot{m} \cdot c_p \cdot T_0 \)  
+
+\( \frac{1}{2} \dot{w}_0^2 = \frac{R (T_6 - T_5)}{\kappa - 1} + \frac{1}{2} \dot{w}_5^2 + T_0 (s_s - s_c) + h_c - h_s \)  
+
+\( (s_s - s_c) = c_p \ln \left( \frac{T_s}{T_6} \right) - R \ln \left( \frac{p_s}{p_6} \right) \)  
+
+\( (h_c - h_s) = c_p (T_6 - T_s) \)  
+
+=> \( \frac{1}{2} \dot{w}_0^2 = \frac{R (T_6 - T_5)}{\kappa - 1} + \frac{1}{2} \dot{w}_5^2 + T_0 \left[ c_p \ln \left( \frac{T_s}{T_6} \right) - R \ln \left( \frac{p_s}{p_6} \right) \right] + c_p (T_6 - T_s) \)  
+
+=> \( \dot{w}_0 = \sqrt{\frac{2 R (T_6 - T_5)}{\kappa - 1} - \dot{w}_5^2 + 2 T_0 \left[ c_p \ln \left( \frac{T_s}{T_6} \right) - R \ln \left( \frac{p_s}{p_6} \right) \right] + c_p (T_6 - T_s)} \)

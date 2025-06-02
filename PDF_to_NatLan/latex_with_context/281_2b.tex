@@ -1,0 +1,93 @@
+The task involves determining \( w_6 \) (outlet velocity) and \( T_6 \) (outlet temperature).  
+
+The process is described as adiabatic and reversible, implying \( s = \text{const} \) (isentropic process).  
+
+The temperature ratio is given by:  
+\[
+\frac{T_6}{T_5} = \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+where \( \kappa \) is the specific heat ratio.  
+
+The outlet temperature \( T_6 \) is calculated as:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = 431.9 \, \text{K} \left( \frac{0.5 \, \text{bar}}{0.191 \, \text{bar}} \right)^{\frac{1.4 - 1}{1.4}}
+\]  
+\[
+T_6 = 568.6 \, \text{K}
+\]  
+
+The entropy remains constant (\( s = \text{const} \)).  
+
+The energy balance equation is provided as:  
+\[
+0 = \dot{m} \left( h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right)
+\]  
+This equation relates the enthalpy difference and velocity terms for the flow.
+
+The equation for the outlet velocity \( w_6 \) is derived using the energy balance:
+
+\[
+2 \dot{m} (h_5 - h_6) + \dot{m} \left( \frac{w_5^2}{2} \right) = \dot{m} \frac{w_6^2}{2}
+\]
+
+The enthalpy \( h_5(431.9, 0.5) \) is interpolated using the following formula:
+
+\[
+h_5(431.9, 0.5) = \frac{h(440) - h(430)}{440 - 430} \cdot (431.9 - 430) + h(430)
+\]
+
+Substituting values:
+
+\[
+h_5(431.9, 0.5) = \frac{447.61 - 437.43}{10} \cdot (1.9) + 437.43
+\]
+
+\[
+h_5(431.9, 0.5) = 433.36
+\]
+
+The enthalpy \( h_6(-30^\circ\text{C}, 0.191) \) is interpolated similarly:
+
+\[
+h_6(-30^\circ\text{C}, 0.191) = \frac{h(250) - h(240)}{250 - 240} \cdot (249.75 - 240) + h(240)
+\]
+
+Substituting values:
+
+\[
+h_6(-30^\circ\text{C}, 0.191) = \frac{250.05 - 240.02}{10} \cdot (9.75) + 240.02
+\]
+
+\[
+h_6(-30^\circ\text{C}, 0.191) = 249.15
+\]
+
+For an ideal gas, the enthalpy difference is given by:
+
+\[
+h(T_2) - h(T_1) = c_p (T_2 - T_1)
+\]
+
+Using the energy balance:
+
+\[
+w_6^2 = 2 \cdot c_p (T_5 - T_6) + w_5^2
+\]
+
+Substituting values:
+
+\[
+w_6 = \sqrt{2 \cdot 1.006 (568.6 - 431.9) + (220)^2}
+\]
+
+\[
+w_6 = \sqrt{22606 + 48400}
+\]
+
+\[
+w_6 = 568.71 \, \text{m/s}
+\]

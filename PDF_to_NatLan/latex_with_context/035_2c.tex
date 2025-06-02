@@ -1,0 +1,33 @@
+The expression for the exergy destruction is given as:  
+\[
+-\Delta ex_{\text{str}} = h_0 - h_6 - T_0(S_0^o - S_6^o - R \ln \left(\frac{p_0}{p_6}\right)) + \frac{w_0^2}{2} - \frac{w_6^2}{2}
+\]  
+
+The following values are calculated:  
+\[
+h_6(340 \, \text{K}) = 340.42
+\]  
+\[
+S_6^o(340 \, \text{K}) = 1.8279
+\]  
+\[
+h_0(243 \, \text{K}) = \frac{250.05 - 240.02}{250 - 240} (243 - 240) + 240.02 = 243.03 \, \text{kJ/kg}
+\]  
+\[
+S_0^o(243 \, \text{K}) = \frac{1.51917 - 1.47824}{250 - 240} (243 - 240) + 1.47824 = 1.480513 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Substituting into the exergy destruction equation:  
+\[
+-\Delta ex_{\text{str}} = 243.03 - 340.42 - 243(1.480513 - 1.8279 - 287 \ln \left(\frac{0.191}{0.5}\right)) + \frac{200^2}{2} - \frac{510^2}{2}
+\]  
+\[
+= -95 \, \text{kJ/kg}
+\]  
+
+Thus, the exergy destruction is:  
+\[
+\Delta ex_{\text{str}} = 95 \, \text{kJ/kg}
+\]  
+
+---

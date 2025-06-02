@@ -1,0 +1,73 @@
+The energy balance equation is written as:  
+\[
+\Delta U = \sum \dot{Q}_j - \sum \dot{W}_n
+\]  
+
+For the specific case:  
+\[
+\Delta U = Q_{12} - W_{12}
+\]  
+
+The internal energy change is expressed as:  
+\[
+U_2 - U_1 = Q_{12} - W_{12}
+\]  
+
+The equation is simplified further:  
+\[
+u_2 - u_1 = q_{12} - w_{12}
+\]  
+
+It is noted that the mass remains constant.  
+
+The heat transfer \( Q_{12} \) is expressed as:  
+\[
+Q_{12} = U_2 - U_1 + W_{12}
+\]  
+
+This includes contributions from the gas (volume work):  
+\[
+Q_{12} = m_{\text{EW}} (u_{\text{EW},2} - u_{\text{EW},1}) + m_g (u_{g,2} - u_{g,1}) + \int_{1}^{2} p \, dV
+\]  
+
+The integral term for \( p \, dV \) is simplified:  
+\[
+\int_{1}^{2} p \, dV = p (V_2 - V_1)
+\]  
+
+Here, the pressure is given as \( 9 \, \text{bar} \).  
+
+The isentropic relation is introduced:  
+\[
+\frac{T_2}{T_1} = \left( \frac{V_1}{V_2} \right)^{n-1}
+\]  
+
+The polytropic exponent \( n \) is calculated:  
+\[
+n = \frac{k \cdot R + c_v}{c_v} = 1.2627
+\]  
+
+The volume ratio is derived:  
+\[
+\frac{V_1}{V_2} = \left( \frac{T_2}{T_1} \right)^{\frac{1}{n-1}}
+\]  
+
+The final volume \( V_2 \) is calculated using:  
+\[
+V_2 = V_1 \cdot \frac{1}{\left( \frac{T_2}{T_1} \right)^{\frac{1}{n-1}}}
+\]  
+
+Substituting values:  
+\[
+V_2 = V_1 \cdot \frac{1}{\left( \frac{273.15}{500 + 273.15} \right)^{\frac{1}{n-1}}} = 0.1682
+\]  
+
+The relationship between \( V_2 \) and \( V_1 \) is given as:  
+\[
+V_2 = m_g \cdot v_2
+\]  
+
+Finally, the integral term is evaluated:  
+\[
+p \int_{1}^{2} dV = 0.06667
+\]

@@ -1,0 +1,50 @@
+The process is illustrated in a T-s diagram. The diagram shows six states labeled 1 through 6, with isobars \( p_0 \), \( p_1 \), \( p_2 \), and \( p_3 \) drawn as curves. The states are connected by arrows indicating the transitions between them.  
+
+State descriptions are provided in a table:  
+- **State 1**: \( T = -30^\circ\text{C} \), \( s = s_1 \), \( p = p_0 \).  
+- **State 2**: \( T = T_2 \), \( s_3 > s_1 \), \( p_2 > p_0 \).  
+- **State 3**: \( T = T_3 \), \( s_2 > s_2 \), \( p_3 > p_2 \).  
+- **State 4**: \( T = T_4 \), \( s_3 > s_3 \), \( p_4 < p_3 \).  
+- **State 5**: \( T = 98.9^\circ\text{C} \), \( s_5 > s_3 \), \( p = p_4 \).  
+- **State 6**: \( T = T_6 \), \( s_6 = s_5 \), \( p = p_0 \).  
+
+The table also includes notes about pressure relationships and entropy changes between states.
+
+The enthalpy at state 5 is given as:  
+\[
+h_5 = 953.26 \, \text{kJ/kg}
+\]  
+
+Using the isentropic relationship, the temperature at state 6 is calculated as:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+
+Substituting values:  
+\[
+T_6 = 328.075 \, \text{K}
+\]  
+
+The enthalpy at state 6 is determined using interpolation:  
+\[
+h_6 = h(325 \, \text{K}) + \frac{(h(330 \, \text{K}) - h(325 \, \text{K}))}{5 \, \text{K}} \times (3.075 \, \text{K})
+\]  
+Resulting in:  
+\[
+h_6 = 333.93 \, \text{kJ/kg}
+\]  
+
+The energy balance equation is:  
+\[
+0 = \dot{m} \left( h_5 - h_6 \right) + \frac{w_5^2 - w_6^2}{2}
+\]  
+
+Rearranging for \( w_6 \):  
+\[
+w_6^2 = 2 \left( h_5 - h_6 \right) + w_5^2
+\]  
+
+Substituting values:  
+\[
+w_6 = 998.26 \, \text{m/s}
+\]

@@ -1,0 +1,58 @@
+In the reactor, the change in internal energy \( \Delta U \) is equal to the heat released \( Q_{12} \):  
+\[
+Q_{12} = m \cdot (u_2 - u_1)
+\]  
+
+The specific internal energy at state 1 (\( u_1 \)) is calculated using the steam quality \( x_D = 0.005 \) and the saturated liquid and vapor values from Table A2:  
+\[
+u_1 = (1 - x) \cdot u_f + x \cdot u_g  
+\]  
+\[
+u_1 = 0.995 \cdot 418.34 \, \text{kJ/kg} + 0.005 \cdot 2505.6 \, \text{kJ/kg}  
+\]  
+\[
+u_1 = 423.38 \, \text{kJ/kg}
+\]  
+
+The specific internal energy at state 2 (\( u_2 \)) corresponds to saturated liquid at \( 70^\circ \text{C} \), taken from Table A2:  
+\[
+u_2 = 292.35 \, \text{kJ/kg}
+\]  
+
+The total heat released during cooling (\( Q_{12} \)) is calculated as:  
+\[
+Q_{12} = m_{\text{total}} \cdot (u_2 - u_1)  
+\]  
+\[
+Q_{12} = 5755 \, \text{kg} \cdot (292.35 \, \text{kJ/kg} - 423.38 \, \text{kJ/kg})  
+\]  
+\[
+Q_{12} = -785154 \, \text{kJ}
+\]  
+
+The mass of saturated liquid water added (\( \Delta m_{12} \)) is determined using the energy balance:  
+\[
+-Q_{12} = \Delta m_{12} \cdot (u_2 - u_3)
+\]  
+Rearranging:  
+\[
+\Delta m_{12} = \frac{-Q_{12}}{u_2 - u_3}
+\]  
+
+The specific internal energy at state 3 (\( u_3 \)) corresponds to saturated liquid at \( 20^\circ \text{C} \), taken from Table A2:  
+\[
+u_3 = 83.85 \, \text{kJ/kg}
+\]  
+
+Substituting values:  
+\[
+\Delta m_{12} = \frac{785154 \, \text{kJ}}{292.35 \, \text{kJ/kg} - 83.85 \, \text{kJ/kg}}  
+\]  
+\[
+\Delta m_{12} = \frac{785154 \, \text{kJ}}{208.5 \, \text{kJ/kg}}  
+\]  
+\[
+\Delta m_{12} = 3756.71 \, \text{kg}
+\]  
+
+---

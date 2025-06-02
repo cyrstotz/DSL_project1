@@ -1,0 +1,71 @@
+TASK 1a  
+The heat flow \( \dot{Q}_{\text{out}} \) is the difference between the reaction heat \( \dot{Q}_R = 100 \, \text{kW} \) and the heat flow leaving the reactor through the outlet stream.  
+
+The energy balance equation is written as:  
+\[
+\frac{dE}{dt} = \dot{m} (h_{\text{in}} - h_{\text{out}}) + \dot{Q}_R + \dot{W}
+\]  
+where \( \dot{W} \) is neglected.  
+
+The heat flow leaving the reactor is calculated as:  
+\[
+\dot{Q}_W = \dot{m} (h_{\text{out}} - h_{\text{in}})
+\]  
+
+From the saturated liquid water tables, the enthalpy values are:  
+\[
+h_{\text{in}} = 252.50 \, \text{kJ/kg}, \quad h_{\text{out}} = 417.04 \, \text{kJ/kg}
+\]  
+
+The heat flow leaving the reactor is:  
+\[
+\dot{Q}_W = 0.3 \, \text{kg/s} \cdot (417.04 - 252.50) \, \text{kJ/kg} = 37.878 \, \text{kW}
+\]  
+
+The heat flow removed by the coolant is:  
+\[
+\dot{Q}_{\text{out}} = \dot{Q}_R - \dot{Q}_W = 100 \, \text{kW} - 37.878 \, \text{kW} = 62.122 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) of the coolant is calculated using:  
+\[
+T_{\text{KF}} = \frac{\Delta S}{\Delta Q} = \frac{T_{\text{out}} - T_{\text{in}}}{\ln \left( \frac{T_{\text{out}}}{T_{\text{in}}} \right)}
+\]  
+
+Substituting the values:  
+\[
+T_{\text{KF}} = \frac{298.15 - 288.15}{\ln \left( \frac{298.15}{288.15} \right)} = 253.121 \, \text{K}
+\]  
+
+The heat flow removed by the coolant is expressed as:  
+\[
+\dot{Q}_{\text{out}} = (\dot{m}_{\text{KF}} \cdot (h_{\text{out}} - h_{\text{in}})) + \dot{Q}_R
+\]  
+
+For isobaric processes, the enthalpy difference is approximated as:  
+\[
+h_{\text{out}} - h_{\text{in}} = c_p (T_{\text{out}} - T_{\text{in}}) + v (p_{\text{out}} - p_{\text{in}})
+\]  
+
+The entropy difference is given by:  
+\[
+s_{\text{out}} - s_{\text{in}} = c_p \ln \left( \frac{T_{\text{out}}}{T_{\text{in}}} \right)
+\]  
+
+---
+
+TASK 1c  
+The entropy production \( \dot{S}_{\text{gen}} \) due to heat transfer between the reactor and the cooling jacket is calculated using:  
+\[
+\dot{S}_{\text{gen}} = \dot{Q}_{\text{out}} \left( \frac{1}{T_{\text{Reactor}}} - \frac{1}{T_{\text{KF}}} \right)
+\]  
+
+Substituting the values:  
+\[
+\dot{S}_{\text{gen}} = 62.122 \, \text{kW} \cdot \left( \frac{1}{373.15} - \frac{1}{253.121} \right) = 0.04615 \, \text{kW/K}
+\]  
+
+The entropy production is positive, indicating irreversibility in the system.

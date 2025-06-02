@@ -1,0 +1,44 @@
+To determine the gas pressure \( p_{g,1} \) and mass \( m_g \) in state 1:
+
+### Gas Pressure \( p_{g,1} \):
+The equation for \( p_{g,1} \) is derived as follows:  
+\[
+p_{g,1} = p_{\text{amb}} + p_{\text{heben}} + p_{\text{EW}}
+\]
+Where:  
+- \( p_{\text{amb}} = 1 \, \text{bar} \) (ambient pressure)  
+- \( p_{\text{heben}} = \frac{m_{\text{EW}} \cdot g}{\pi \cdot \left(\frac{D}{2}\right)^2} \) (pressure due to the ice-water mixture)  
+- \( p_{\text{EW}} = \frac{m_K \cdot g}{\pi \cdot \left(\frac{D}{2}\right)^2} \) (pressure due to the piston)  
+
+Substituting values:  
+\[
+p_{g,1} = 1 \, \text{bar} + \frac{0.1 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{\pi \cdot \left(5 \cdot 10^{-2} \, \text{m}\right)^2} + \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{\pi \cdot \left(5 \cdot 10^{-2} \, \text{m}\right)^2}
+\]
+\[
+p_{g,1} = 1.105 \cdot 10^5 \, \text{N/m}^2 + 140094.441 \, \text{N/m}^2
+\]
+\[
+p_{g,1} = 1.401 \, \text{bar}
+\]
+
+### Gas Mass \( m_g \):
+The equation for \( m_g \) is:  
+\[
+m_g = \frac{p_{g,1} \cdot M_g \cdot V_{g,1}}{R \cdot T_{g,1}}
+\]
+Where:  
+- \( p_{g,1} = 1.401 \cdot 10^5 \, \text{N/m}^2 \)  
+- \( M_g = 50 \, \text{kg/kmol} \)  
+- \( V_{g,1} = 3.14 \cdot 10^{-3} \, \text{m}^3 \)  
+- \( R = 8.314 \, \text{J/(mol·K)} \)  
+- \( T_{g,1} = 773.15 \, \text{K} \)  
+
+Substituting values:  
+\[
+m_g = \frac{1.401 \cdot 10^5 \cdot 50 \cdot 3.14 \cdot 10^{-3}}{8.314 \cdot 773.15}
+\]
+\[
+m_g = 3.422 \, \text{g}
+\]  
+
+No diagrams or figures are present on this page.

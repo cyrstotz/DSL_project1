@@ -1,0 +1,75 @@
+TASK 1a  
+The energy balance equation is written as:  
+\[
+\frac{dE}{dt} = \dot{m} \left[ h_i + ke_i + pe_i \right] + \dot{Q} - \sum \dot{W}
+\]  
+For steady-state conditions:  
+\[
+0 = \dot{m} \left[ h_{\text{in}} - h_{\text{out}} + 0 + 0 \right] + \dot{Q}_{\text{out}} + \dot{Q}_R
+\]  
+This simplifies to:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \left[ h_{\text{Reactor,in}} - h_{\text{Reactor,out}} \right] + \dot{Q}_R
+\]  
+Substituting values:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \cdot C_p \left( T_{\text{Reactor,in}} - T_{\text{Reactor,out}} \right) + \dot{Q}_R = 0.3 \cdot \left( 288.15 - 298.15 \right) + 100 \, \text{kW}
+\]  
+\[
+\dot{Q}_{\text{out}} = -70 \, \text{kW}
+\]  
+
+TASK 1b  
+The thermodynamic mean temperature \( T_{\text{KF}} \) is calculated as:  
+\[
+T_{\text{KF}} = \frac{\int_{S_a}^{S_e} T \, dS}{S_a - S_e}
+\]  
+For an adiabatic process:  
+\[
+\Delta S = \frac{\delta Q}{T} = \Delta S \cdot T
+\]  
+Thus:  
+\[
+T_{\text{KF}} = \frac{h_a - h_e}{S_a - S_e}
+\]  
+Substituting values:  
+\[
+T_{\text{KF}} = \frac{C_p \cdot (T_e - T_a)}{\ln \left( \frac{T_e}{T_a} \right)} = \frac{298.15 \, \text{K} - 288.15 \, \text{K}}{\ln \left( \frac{288.15}{298.15} \right)}
+\]  
+\[
+T_{\text{KF}} = 283.1277 \, \text{K}
+\]  
+
+TASK 1c  
+The entropy production rate \( \dot{S}_{\text{gen}} \) is given by:  
+\[
+\dot{S}_{\text{gen}} = \dot{m} \left[ S_e - S_a \right] + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+Substituting values:  
+\[
+\dot{S}_{\text{gen}} = 0.3 \, \text{kg/s} \cdot \left[ C_p \ln \left( \frac{T_a}{T_e} \right) \right] + \frac{\dot{Q}_{\text{out}}}{T_{\text{KF}}}
+\]  
+
+TASK 1d  
+The energy balance for cooling from state 1 to state 2 is written as:  
+\[
+\Delta E = m_2 u_2 - m_1 u_1 = \sum \dot{m} \left[ h_i + \frac{w_i^2}{2} + g z_i \right] + \Delta Q - \sum \dot{W}
+\]  
+For the system:  
+\[
+m_{\text{total},2} - m_{\text{total},1} = \Delta m_{12} \cdot h_e
+\]  
+Substituting values:  
+\[
+Q_{R,12} = 35 \, \text{MJ}
+\]  
+Using water table values:  
+\[
+u_f (20^\circ\text{C}) = 83.75 \, \text{kJ/kg}, \quad u_f (100^\circ\text{C}) = 418.94 \, \text{kJ/kg}, \quad h_e (20^\circ\text{C}) = 83.96 \, \text{kJ/kg}
+\]  
+\[
+\Delta m_{12} = \frac{5755 \cdot g + \Delta m_{12} \cdot 83.85 - 5755 \cdot 418.94 + 35000 \, \text{kJ}}{83.96}
+\]  
+\[
+\Delta m_{12} = 0
+\]

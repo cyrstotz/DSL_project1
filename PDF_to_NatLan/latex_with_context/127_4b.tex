@@ -1,0 +1,50 @@
+The energy balance for the compressor is given as:  
+\[
+0 = \dot{m} \left[ h_2 - h_3 \right] + \dot{Q} - \dot{W}_{\text{K}}
+\]  
+where \(h_2\) and \(h_3\) are enthalpies at states 2 and 3, respectively, and \(\dot{W}_{\text{K}}\) is the work done by the compressor.  
+
+The entropy at state 2 is equal to the entropy at state 3:  
+\[
+s_2 = s_3 = 0.9066 \, \text{kJ/kg·K}
+\]  
+
+The enthalpy at state 3 is calculated using the isobaric condition:  
+\[
+h_3 = h_3(8 \, \text{bar}) = 264.15 \, \text{kJ/kg}
+\]  
+
+For the throttle (expansion valve), the energy balance is:  
+\[
+0 = \dot{m} \left[ h_4 - h_1 \right]
+\]  
+where \(h_4 = h_1\), indicating that enthalpy remains constant during throttling.  
+
+The pressure at state 4 is equal to the pressure at state 3:  
+\[
+p_4 = p_3
+\]
+
+The refrigerant mass flow rate \( \dot{m}_R \) is calculated using the formula:  
+\[
+\dot{m}_R = \frac{\dot{Q}_K}{h_u}
+\]  
+where \( T_2 = -22^\circ\text{C} \) and \( S_1 = S_f \).  
+
+The enthalpy \( h_u \) is given as:  
+\[
+h_u = h_f
+\]  
+and specifically:  
+\[
+h_u = h_f(80 \, \text{cm}) = 93.2 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+The vapor quality \( x \) is calculated as:  
+\[
+x = \frac{h_u - h_f(p_1, T_1)}{h_g(p_1, T_1) - h_f(p_1, T_1)}
+\]  
+which can also be expressed in terms of entropy:  
+\[
+x = S_u - S_f(p_1, T_1)
+\]

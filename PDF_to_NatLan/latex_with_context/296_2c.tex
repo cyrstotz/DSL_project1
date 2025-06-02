@@ -1,0 +1,57 @@
+The kinetic energy change (\( \Delta KE \)) is ignored. The work \( W \) is calculated using:  
+\[
+W = \sqrt{2 \, (h_6 - h_5)}
+\]  
+The integral form of work is given as:  
+\[
+KE = W = \int_{5}^{6} p \, dV
+\]  
+
+The outlet velocity \( w_6 \) is calculated using:  
+\[
+\frac{w_6^2}{2} = \frac{\kappa}{\kappa - 1} \, (T_2 - T_1)
+\]  
+Substituting values:  
+\[
+\frac{w_6^2}{2} = c_p \, \Delta T = 92.95 \, \text{kJ/kg}
+\]  
+\[
+w_6^2 = 92.95 \, \text{kJ/kg} \quad \Rightarrow \quad w_6 = 430 \, \text{m/s}
+\]
+
+The mass-specific increase in flow exergy is calculated as:  
+\[
+\Delta ex_{\text{str}} = ex_{\text{str},6} - ex_{\text{str},0}
+\]  
+The expression for flow exergy is given by:  
+\[
+ex_{\text{str}} = h - h_0 - T_0 (s - s_0) + ke
+\]  
+Substituting for the specific states:  
+\[
+ex_{\text{str},6} - ex_{\text{str},0} = h_6 - h_0 - T_0 (s_6 - s_0) + ke_6 - ke_0
+\]  
+Using the specific heat capacity \( c_p \), the temperature difference, and entropy terms:  
+\[
+= c_p \Delta T_{6,0} - T_0 c_p \ln \left( \frac{T_6}{T_0} \right) - T_0 R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+Where \( p_6 = p_0 \).  
+
+The calculation proceeds as:  
+\[
+= 1.006 \, \text{kJ/kg·K} \left( 310 \, \text{K} - 243.15 \, \text{K} \right) - (243.15 \, \text{K}) \cdot 1.006 \ln \left( \frac{310}{243.15} \right)
+\]  
+\[
+= 67.226 \, \text{kJ/kg}
+\]  
+
+Adding the kinetic energy term:  
+\[
+ke = \frac{w^2}{2} = \frac{(220 \, \text{m/s})^2}{2} = 24.2 \, \text{kJ/kg}
+\]  
+Final result:  
+\[
+\Delta ex_{\text{str}} = 145.47 \, \text{kJ/kg}
+\]  
+
+---

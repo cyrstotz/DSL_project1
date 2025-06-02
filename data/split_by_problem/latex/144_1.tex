@@ -1,0 +1,120 @@
+
+``````latex
+
+
+\section*{Problem A}
+
+\subsection*{a)}
+
+1. HS:
+\[
+\frac{d\dot{E}}{dt} = \sum \dot{m}_i \left( h_i + \frac{c_i^2}{2} + g z_i \right) - \sum \dot{m}_e \left( h_e + \frac{c_e^2}{2} + g z_e \right) + \sum \dot{Q} - \sum \dot{W}_{\text{in}}
+\]
+
+\[
+0 = \dot{m} (\dot{h}_{\text{ein}} - \dot{h}_{\text{aus}}) + \dot{Q}_e - \dot{Q}_{\text{aus}}
+\]
+
+\[
+\Rightarrow \dot{Q}_{\text{aus}} = \dot{m} (\dot{h}_{\text{ein}} - \dot{h}_{\text{aus}}) + \dot{Q}_e
+\]
+
+\[
+\dot{h}_{\text{ein}} \text{ aus TAB A-2: } \dot{h}_{\text{ein}} = 292.98 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\dot{h}_{\text{aus}} \text{ aus TAB A-2: } \dot{h}_{\text{aus}} = 419.04 \frac{\text{kJ}}{\text{kg}}
+\]
+
+\[
+\Rightarrow \dot{Q}_{\text{aus}} = 0.3 \frac{\text{kg}}{\text{s}} \left( 292.98 - 419.04 \right) \frac{\text{kJ}}{\text{kg}} + 100 \text{kJ}
+\]
+
+\[
+= 62.182 \text{kJ}
+\]
+
+\subsection*{b)}
+
+\[
+T_k = \frac{\int_{s_a}^{s_e} T \, ds}{s_a - s_e} = \frac{h_a - h_e}{s_a - s_e}
+\]
+
+\[
+\text{ideale Flüssigkeit: } h_a - h_e = c_p (T_A - T_E) + v_f (p_E - p_A)
+\]
+
+\[
+s_a - s_e = c_p \ln \left( \frac{T_A}{T_E} \right)
+\]
+
+\[
+\Rightarrow \frac{T_k}{T_E} = \frac{c_p \ln \left( \frac{T_A}{T_E} \right)}{c_p \ln \left( \frac{T_A}{T_E} \right)} = \frac{T_A - T_E}{\ln \left( \frac{T_A}{T_E} \right)}
+\]
+
+\[
+\Rightarrow T_k = \frac{T_A - T_E}{\ln \left( \frac{T_A}{T_E} \right)} = 293.12 \text{K}
+\]
+
+\subsection*{c)}
+
+Entropiebilanz:
+\[
+\frac{d\dot{S}}{dt} = \sum \frac{\dot{Q}_i}{T_i} + \dot{S}_{\text{erz}}
+\]
+
+\[
+\Rightarrow \dot{S}_{\text{erz}} = \frac{\dot{Q}_{\text{aus}}}{T_k} = \frac{62.182 \text{kJ}}{293.12 \text{K}} = 0.212 \frac{\text{kJ}}{\text{K}}
+\]
+
+\subsection*{d)}
+
+1. HS:
+\[
+\Delta \dot{E} = \dot{m}_{12} \dot{h}_{\text{ein}} + \dot{Q}_{12}
+\]
+
+\[
+\Delta \dot{E} = \sum \dot{m}_i \left( h_i + \frac{c_i^2}{2} + g z_i \right) + \sum \dot{Q} - \sum \dot{W}_{\text{in}}
+\]
+
+\[
+\dot{m}_{12} \dot{u}_2 - \dot{m}_{12} \dot{u}_1 = \dot{m}_{12} \dot{h}_{\text{ein}} + \dot{Q}_{12}
+\]
+
+\[
+\dot{u}_```latex
+
+
+1) a) \text{Werte:} \quad h_{\text{ein}} \text{ aus TAB A2:} \quad h_{\text{ein}} = 83.896 \frac{\text{kJ}}{\text{kg}}
+
+\[
+\Rightarrow m_{\text{ges,1}} (u_2 - u_1) + c_{\text{sm,2}} u_2 = c_{\text{sm,2}} h_{\text{ein}} + Q_R
+\]
+
+\[
+\Rightarrow c_{\text{sm,2}} = \frac{m_{\text{ges,1}} (u_2 - u_1) - Q_R}{h_{\text{ein}} - u_2}
+\]
+
+\[
+= \frac{3928.8}{3923.45 \text{ kg}}
+\]
+
+e) \quad \Delta S_{1\rightarrow2} = (m_{\text{ges,1}} + c_{\text{sm,2}}) s_2 - m_{\text{ges,1}} s_1
+
+\[
+\Rightarrow s_1 = 4.287 \frac{\text{kJ}}{\text{kg K}} \quad 1.377 \frac{\text{kJ}}{\text{kg K}}
+\]
+
+\[
+s_2 = 0.254 \frac{\text{kJ}}{\text{kg K}}
+\]
+
+\[
+\Rightarrow \Delta S_{1\rightarrow2} = 1547.5 \frac{\text{kJ}}{\text{K}}
+\]
+
+``````latex
+
+

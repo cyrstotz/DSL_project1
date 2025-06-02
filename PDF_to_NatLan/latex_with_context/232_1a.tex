@@ -1,0 +1,36 @@
+The problem begins with the given parameters:  
+\[
+\dot{m}_{\text{in}} = 0.3 \, \text{kg/s}, \quad T_{\text{in}} = 70^\circ\text{C}, \quad T_{\text{out}} = 100^\circ\text{C}, \quad x_D = 0.005
+\]  
+The heat released by the chemical reaction is:  
+\[
+\dot{Q}_R = 100 \, \text{kW}
+\]  
+
+The energy balance for the reactor without a jacket is written as:  
+\[
+0 = \dot{m} \cdot (h_{\text{out}} - h_{\text{in}}) + \dot{Q}_{\text{out}} - \dot{Q}_R
+\]  
+
+From the water tables:  
+\[
+h_{\text{in}} = 292.38 \, \text{kJ/kg} \quad \text{at } T_{\text{in}} = 70^\circ\text{C}
+\]  
+\[
+h_{\text{out}} = 419.04 \, \text{kJ/kg} \quad \text{at } T_{\text{out}} = 100^\circ\text{C}
+\]  
+
+Substituting into the energy balance:  
+\[
+\dot{Q}_{\text{out}} = \dot{m} \cdot (h_{\text{out}} - h_{\text{in}}) - \dot{Q}_R
+\]  
+\[
+\dot{Q}_{\text{out}} = 0.3 \cdot (419.04 - 292.38) - 100
+\]  
+\[
+\dot{Q}_{\text{out}} = -62.182 \, \text{kW}
+\]  
+
+This indicates that the heat flow removed by the coolant is \( 62.182 \, \text{kW} \).  
+
+---

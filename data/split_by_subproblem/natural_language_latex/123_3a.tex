@@ -1,0 +1,55 @@
+a) Required: \( p_{3,1} / m_g \)
+
+Water is inhomogeneous, therefore calculated separately!
+
+The initial pressure \( p_{0,f} \) in the membrane is given by the formula:
+\[
+p_{0,f} = \frac{F_{mk} + F_{g,E}}{A}
+\]
+where \( F_{mk} \) and \( F_{g,E} \) are forces and \( A \) is the area.
+
+The balance of forces and pressures is described by:
+\[
+p_0 \cdot A + m_{mk} \cdot g + m_{ew} \cdot g = p_{3,1} \cdot A
+\]
+which leads to the expression for \( p_{3,1} \):
+\[
+p_{3,1} = \frac{p_0 \cdot A + m_{mk} \cdot g + m_{ew} \cdot g}{A} = \frac{1.05 \cdot 0.1^2 \cdot \frac{\pi}{4}}{0.1^2 \cdot \frac{\pi}{4}} + \frac{32 \cdot 9.81 + 0.1 \cdot 9.81}{0.1^2 \cdot \frac{\pi}{4}}
+\]
+Calculating the above gives:
+\[
+p_{3,1} = 785.398 + 343.02 + 0.981 = 1100.069 \text{ Pa} = 1.1 \text{ bar}
+\]
+
+The relationship between pressure, volume, and mass of gas is given by:
+\[
+p_{3,1} V_0 = m_g R T \quad \Rightarrow m_g = \frac{p_{3,1} V_0}{R T} = \frac{1.100 \cdot 3 \cdot 10^{-3}}{166.28 \cdot 773.15} = 3.422 \cdot 10^{-3} \text{ kg}
+\]
+where \( R \) is calculated as:
+\[
+R = \frac{8.314 \, \text{J}}{\text{mol K}} \cdot \frac{1}{50 \, \frac{\text{kg}}{\text{mol}}} = 166.28 \, \frac{\text{J}}{\text{kg K}}
+\]
+Thus, the mass \( m_g \) is:
+\[
+m_g = 3.422 \, \text{g}
+\]
+
+The change in internal energy due to heat transfer is calculated as:
+\[
+(a) = m \cdot c_V (T_2 - T_1) = Q
+\]
+\[
+T_2 - T_2 = \frac{Q}{m \cdot c_V} \quad \rightarrow \quad T_2 = \frac{Q}{m \cdot c_V} + T_1 = \frac{11500 \, \text{J}}{0.1 \, \text{kg} \cdot 0.653 \, \frac{\text{kJ}}{\text{kg} \cdot \text{K}}} + 273.15 \, \text{K} = 286.846 \, \text{K}
+\]
+\[
+\Delta u = \frac{11500 \, \text{J}}{0.1 \, \text{kg}} = 115 \, \frac{\text{kJ}}{\text{kg}}
+\]
+\[
+\Delta u_{Eis1} (\text{in water}) = -333.458 \, \frac{\text{kJ}}{\text{kg}}
+\]
+\[
+u_{Felsig} (\text{in water}) = 0.045 \, \frac{\text{kJ}}{\text{kg}}
+\]
+\[
+\Delta u = u_{FI} + x \cdot (u_{FEis} - u_{FI}) \quad \Rightarrow \quad x = \frac{\Delta u - u_{FI}}{u_{FEis} - u_{FI}} = \frac{115 - 0.045}{333.458 - 0.045}
+\]

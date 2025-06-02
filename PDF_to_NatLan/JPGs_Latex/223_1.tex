@@ -1,0 +1,56 @@
+TASK 1d  
+The energy balance equation is given as:  
+\[
+\frac{dE}{dt} = \Delta m_{12} \cdot h_{\text{in}} + Q_{\text{out},12}
+\]  
+
+Rearranging for \( \Delta m_{12} \):  
+\[
+u_2 - u_1 = \Delta m_{12} \cdot h_{\text{in}} - Q_{\text{out},12}
+\]  
+\[
+-\left( m_{\text{total},1} + \Delta m_{12} \right) \cdot u_2 - m_{\text{total},1} \cdot u_1 = \Delta m_{12} \cdot h_{\text{in}} - Q_{\text{out},12}
+\]  
+\[
+-\Delta m_{12} = \frac{m_{\text{total},1} \cdot u_1 - m_{\text{total},1} \cdot u_2 - Q}{u_2 - h_{\text{in}}}
+\]  
+
+Values used:  
+\[
+h_{\text{in}} = h(20^\circ\text{C}, x=1) = 2538.1 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_1 = u(100^\circ\text{C}, x=1) = 2676.1 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+u_2 = u(70^\circ\text{C}, x=1) = 2626.8 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Substituting into the equation:  
+\[
+\Delta m_{12} = \frac{5755 \cdot 2676.1 - 5755 \cdot 2626.8 - 100}{2626.8 - 2538.1}
+\]  
+
+---
+
+TASK 1e  
+The entropy change \( \Delta S \) is calculated as:  
+\[
+\Delta S = m_{\text{total},1} \cdot \Delta s_2 - m_{\text{total},1} \cdot s_1
+\]  
+
+Values used:  
+\[
+s_1 = s(100^\circ\text{C}, x=1) = 1.5069 + 0.005 \cdot (7.7553 - 1.5069) = 1.33714 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+s_2 = s(70^\circ\text{C}, x=1) = 7.7553 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Substituting into the equation:  
+\[
+\Delta S = 5755 + 3600 \cdot 7.7553 - 5755 \cdot 1.33714
+\]  
+\[
+\Delta S = 66'230.38 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  

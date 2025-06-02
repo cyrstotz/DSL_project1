@@ -1,0 +1,71 @@
+TASK 1a  
+The energy balance equation is written as:  
+\[
+Q_{\text{out}} = \dot{m} \left[ h_1 - h_2 \right] - \dot{Q}_R + Q_R
+\]  
+where:  
+\[
+Q_{\text{out}} = \dot{m} \left[ h_1 - h_2 \right] + \dot{Q}_R
+\]  
+
+The enthalpy values are determined as follows:  
+- \( h_1 \): Enthalpy at \( 70^\circ \text{C} \), taken from water tables (A-2), \( h_1 = 292.58 \, \text{kJ/kg} \).  
+- \( h_2 \): Enthalpy at \( 100^\circ \text{C} \), taken from water tables (A-2), \( h_2 = 419.04 \, \text{kJ/kg} \).  
+
+Substituting the values into the equation:  
+\[
+Q_{\text{out}} = 0.3 \left[ 292.58 - 419.04 \right] + 100
+\]  
+\[
+Q_{\text{out}} = 62.182 \, \text{kW}
+\]  
+
+---
+
+TASK 1b  
+The thermodynamic mean temperature \( \bar{T} \) is calculated using the formula:  
+\[
+\bar{T} = \frac{\int T \, dQ}{S_a - S_e}
+\]  
+
+Simplified as:  
+\[
+\bar{T} = \frac{h_a - h_e}{S_a - S_e}
+\]  
+
+The entropy values are:  
+- \( S_a \): Taken from water tables (A-2), \( S_a = 0.3864 \, \text{kJ/kg·K} \).  
+- \( S_e \): Taken from water tables (A-2), \( S_e = 0.2245 \, \text{kJ/kg·K} \).  
+
+The enthalpy values are:  
+- \( h_a \): Taken from water tables (A-2), \( h_a = 62.55 \, \text{kJ/kg} \).  
+- \( h_e \): Taken from water tables (A-2), \( h_e = 124.85 \, \text{kJ/kg} \).  
+
+Substituting into the formula:  
+\[
+\bar{T} = \frac{62.55 - 124.85}{0.3864 - 0.2245}
+\]  
+\[
+\bar{T} = 293.214 \, \text{K}
+\]  
+
+---
+
+TASK 1c  
+The entropy balance equation is written as:  
+\[
+Q = \dot{m} \left[ S_e - S_a \right] + \frac{\dot{Q}_R}{T_R} + S_{\text{gen}}
+\]  
+
+The entropy generation term is calculated as:  
+\[
+S_{\text{gen}} = \dot{m} \left[ S_a - S_e \right] - \frac{Q_R}{T_R} - \frac{Q_{\text{out}}}{\bar{T}}
+\]  
+
+Substituting the values:  
+\[
+S_{\text{gen}} = 458.785 \, \text{kW/K}
+\]  
+
+---  
+No diagrams or figures are present on the page.

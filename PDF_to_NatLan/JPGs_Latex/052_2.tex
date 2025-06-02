@@ -1,0 +1,53 @@
+TASK 2a  
+The table provided lists values for different states in the jet engine process:  
+
+\[
+\begin{array}{|c|c|c|c|c|}
+\hline
+\text{State (Z)} & p \, [\text{bar}] & T \, [\text{K}] & h & s \\
+\hline
+1 & & & & \\
+2 & & & & \\
+3 & & & & \\
+4 & & & & \\
+5 & 0.5 & 431.9 & & \\
+6 & 0.191 & 328.075 & & \\
+\hline
+\end{array}
+\]
+
+Below the table, a graph is drawn representing the temperature \( T \) versus entropy \( s \).  
+
+The graph shows the thermodynamic process of the jet engine in a \( T \)-\( s \) diagram:  
+- The process begins at state 1 and moves to state 2, labeled as "isentropic compression."  
+- From state 2 to state 3, there is a heat addition process.  
+- State 3 to state 4 is labeled "adiabatic expansion."  
+- States 4 to 5 and 5 to 6 are shown as further processes, with state 6 labeled "exit."  
+- The axes are labeled \( T \, [\text{K}] \) for temperature and \( s \, [\frac{\text{kJ}}{\text{kg·K}}] \) for entropy.  
+
+TASK 2b  
+The calculation for the temperature \( T_6 \) at state 6 is shown:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]
+Substituting values:  
+\[
+T_6 = 431.9 \left( \frac{0.191}{0.5} \right)^{\frac{0.4}{1.4}} = 328.075 \, \text{K}
+\]
+
+The outlet velocity \( w_6 \) is calculated using the energy balance:  
+\[
+w_6^2 = w_5^2 + 2 \left( h_5 - h_6 \right) - w_5^2
+\]
+Rewriting:  
+\[
+w_6 = \sqrt{w_5^2 + 2 c_p \left( T_5 - T_6 \right) - w_5^2}
+\]
+Substituting values:  
+\[
+w_6 = \sqrt{220^2 + 2 \cdot c_p \cdot (431.9 - 328.075) - 220^2}
+\]
+Final result:  
+\[
+w_6 = 220.474 \, \text{m/s}
+\]

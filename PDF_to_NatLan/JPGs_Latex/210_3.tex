@@ -1,0 +1,83 @@
+TASK 2b  
+The following calculations are performed to determine the outlet velocity \( w_6 \) and temperature \( T_6 \) for the jet engine:
+
+### Given Data:
+- \( c_p = 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \)  
+- \( \kappa = 1.4 \)  
+- \( p_e = p_0 = 0.191 \, \text{bar} = 19100 \, \text{Pa} \)  
+- \( w_5 = 220 \, \frac{\text{m}}{\text{s}} \)  
+- \( p_5 = 0.5 \, \text{bar} \)  
+- \( T_5 = 431.9 \, \text{K} \)  
+
+---
+
+### Step 1: Calculate \( T_c \) using the adiabatic coefficient  
+The temperature \( T_c \) is calculated as:  
+\[
+T_c = T_5 \left( \frac{p_c}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_c = 431.9 \, \text{K} \left( \frac{0.191 \, \text{bar}}{0.5 \, \text{bar}} \right)^{\frac{0.4}{1.4}}
+\]  
+\[
+T_c = 431.9 \, \text{K} \cdot \left( 0.382 \right)^{0.2857} = 328.07 \, \text{K}
+\]  
+
+---
+
+### Step 2: Apply steady flow energy equation for \( w_6 \)  
+The steady flow process is modeled as an adiabatic, reversible process. The energy equation is:  
+\[
+O = \dot{m} \left[ h_5 - h_6 + \frac{(w_5)^2 - (w_6)^2}{2} + p_e \cdot O \right]
+\]  
+Simplifying:  
+\[
+O = h_5 - h_6 + \frac{w_5^2 - w_6^2}{2}
+\]  
+
+---
+
+### Step 3: Relate enthalpy difference to temperature difference  
+Using \( h_5 - h_6 = c_p \Delta T = c_p (T_5 - T_6) \):  
+\[
+c_p (T_5 - T_6) = \frac{w_5^2 - w_6^2}{2}
+\]  
+Rearranging:  
+\[
+c_p (T_5 - T_6) + \frac{w_6^2}{2} = \frac{w_5^2}{2}
+\]  
+\[
+w_6^2 = 2 c_p (T_5 - T_6) + w_5^2
+\]  
+
+---
+
+### Step 4: Solve for \( w_6 \)  
+Substitute values:  
+\[
+w_6^2 = 2 \cdot 1.006 \cdot (431.9 - 328.1) + (220)^2
+\]  
+\[
+w_6^2 = 2 \cdot 1.006 \cdot 103.8 + 48400
+\]  
+\[
+w_6^2 = 208.7 + 48400 = 48608.7
+\]  
+\[
+w_6 = \sqrt{48608.7} \approx 507.2 \, \frac{\text{m}}{\text{s}}
+\]  
+
+---
+
+### Final Results:
+- Outlet velocity:  
+\[
+w_6 \approx 507.2 \, \frac{\text{m}}{\text{s}}
+\]  
+- Outlet temperature:  
+\[
+T_6 = T_c = 328.07 \, \text{K}
+\]  
+
+No diagrams or graphs are present on the page.

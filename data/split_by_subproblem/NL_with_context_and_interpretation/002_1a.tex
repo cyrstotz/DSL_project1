@@ -1,0 +1,36 @@
+Given:  
+Mass flow rate \( \dot{m} = 0.3 \, \text{kg/s} \)  
+Total mass \( m_{\text{total}} = 5755 \, \text{kg} \)  
+Steam quality \( x = 0.005 \)  
+
+Heat flow \( \dot{Q}_R = 100 \, \text{kW} \)  
+
+Temperatures:  
+\( T_{\text{in}} = 70^\circ \text{C} = 343.15 \, \text{K} \)  
+\( T_{\text{out}} = 100^\circ \text{C} = 373.15 \, \text{K} \)  
+\( T_{\text{Reactor}} = 100^\circ \text{C} = 373.15 \, \text{K} \)  
+
+Coolant temperatures:  
+\( T_{\text{KF,in}} = 288.15 \, \text{K} \)  
+\( T_{\text{KF,out}} = 298.15 \, \text{K} \)  
+
+Diagram:  
+A rectangular box labeled "cooling jacket" with arrows indicating inlet and outlet flows.  
+Inlet: \( \dot{m}_{\text{in}} \), \( T_1 = 288.15 \, \text{K} \)  
+Outlet: \( \dot{m}_{\text{out}} \), \( T_2 = 298.15 \, \text{K} \)  
+Pressure \( p_2 = p_1 \)  
+
+Perfect liquid assumption:  
+Energy balance around cooling jacket:  
+\( 0 = \dot{m} \left[ h_1 - h_2 \right] + Q \)  
+
+Steady-state heat transfer:  
+\( \dot{Q}_{\text{ab}} = \dot{m} \left[ h_2 - h_1 \right] \)  
+\( = \dot{m} \int_{T_1}^{T_2} c_i \, dT \)  
+\( = -m \, c_i \left( T_c - T_h \right) \)  
+
+Energy balance around reactor:  
+\( 0 = \dot{m} \left[ h_e - h_a \right] + \dot{Q}_R + \dot{Q}_{\text{ab}} \)  
+
+Heat transfer equation:  
+\( \dot{Q}_{\text{ab}} = m \left[ h_a - h_e \right] - \dot{Q}_R \)

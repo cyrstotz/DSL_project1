@@ -1,0 +1,42 @@
+A table is presented with the following columns: T, P, V, and X_ice.  
+
+For the gas (g):  
+- Row 1:  
+  - T = 500 degrees Celsius  
+  - P = 740,744 Pa  
+- Row 2:  
+  - T = T_end  
+
+For the ice-water mixture (EW):  
+- Row 1:  
+  - T = 0 degrees Celsius  
+  - X_ice = 0.6  
+- Row 2:  
+  - T = T_end  
+
+Below the table:  
+
+Pressure (p) is calculated using the formula:  
+p = F / A  
+
+Area (A) of the piston:  
+A = pi * D^2 / 4  
+
+D = 10 cm = 0.1 m  
+
+A = (0.1 m)^2 * pi / 4 = 0.00785  
+
+Force (F) is calculated as:  
+F = m * a = (m_K + m_EW) * g = 374.9 N  
+
+Gas pressure (p_g):  
+p_g = p_amb + F / A = 740,744 Pa  
+
+Mass of the gas (m_g):  
+p * V = m * R * T  
+
+R = R_specific = R_universal / M_g = 0.16628  
+
+V = 3.14 L = 3.14 dm^3 = 0.00314 m^3  
+
+m = p * V / (R * T) = 3.422 kg

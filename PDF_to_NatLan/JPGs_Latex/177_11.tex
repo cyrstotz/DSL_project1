@@ -1,0 +1,64 @@
+TASK 4b  
+The refrigerant mass flow rate \( \dot{m}_{\text{R134a}} \) is calculated using the first law of thermodynamics applied to the compressor between states 2 and 3:  
+\[
+0 = \dot{m}_{\text{R134a}} (h_2 - h_3) + \dot{W}_K
+\]  
+Here, \( h_2 \) is the enthalpy at state 2, and \( h_3 \) is the enthalpy at state 3.  
+
+Given:  
+\[
+h_2 = h_g(-22^\circ\text{C}) = 237.08 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+At state 3, entropy is conserved (\( s_2 = s_3 \)):  
+\[
+s_2 = s_g(-22^\circ\text{C}) = 0.9351 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+\[
+s_3 = 0.9351 \, \frac{\text{kJ}}{\text{kg·K}}
+\]  
+
+Using the entropy relation for \( h_3 \):  
+\[
+h_3(p_{\text{bar}}, s_3) = 0.9351 \, \frac{\text{kJ}}{\text{kg·K}} = 269.15 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+\[
+h_3 = 264.18 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Substituting into the first law equation:  
+\[
+\dot{m}_{\text{R134a}} = \frac{-\dot{W}_K}{h_2 - h_3} = \frac{-0.028 \, \text{kW}}{234.08 \, \frac{\text{kJ}}{\text{kg}} - 269.18 \, \frac{\text{kJ}}{\text{kg}}}
+\]  
+\[
+\dot{m}_{\text{R134a}} = 3.349 \, \frac{\text{kg}}{\text{h}}
+\]  
+
+---
+
+TASK 4c  
+The vapor quality \( x_1 \) of the refrigerant at state 1 after expansion is determined.  
+
+Given:  
+\[
+x_1 = 0
+\]  
+At state 4:  
+\[
+p_4 = 8 \, \text{bar}
+\]  
+The throttling process is isenthalpic and adiabatic, with no work done:  
+\[
+h_4 = h_1
+\]  
+
+From the refrigerant table:  
+\[
+h_f(p_{\text{bar}}) = 93.42 \, \frac{\text{kJ}}{\text{kg}}
+\]  
+
+Using the enthalpy relation:  
+\[
+h_1 = h_f + x(h_g - h_f)
+\]  
+At \( 1 \, \text{bar} \), \( T_{\text{bar}} \), and \( p_{\text{amb}} \), the enthalpy values are referenced from the refrigerant table.  
+

@@ -1,0 +1,62 @@
+TASK 2b  
+The temperature \( T_6 \) for an ideal gas is calculated using the equation:  
+\[
+T_6 = T_5 \left( \frac{p_6}{p_5} \right)^{\frac{n-1}{n}}
+\]  
+Substituting values, \( T_6 = 328.075 \, \text{K} \).
+
+The outlet velocity \( w_6 \) is determined using the energy balance:  
+\[
+h_e + \frac{w_e^2}{2} = h_a + \frac{w_a^2}{2}
+\]  
+\[
+h_5 + \frac{w_5^2}{2} = h_6 + \frac{w_6^2}{2}
+\]  
+Rearranging for \( w_6 \):  
+\[
+w_6 = \sqrt{2(h_5 - h_6) + w_5^2}
+\]  
+Substituting values, \( w_6 = 507.94 \, \text{m/s} \).
+
+The enthalpy difference \( h_5 - h_6 \) is calculated as:  
+\[
+h_5 - h_6 = \int_{T_5}^{T_6} c_p \, dT
+\]  
+Approximated as:  
+\[
+h_5 - h_6 = c_p (T_5 - T_6) = 104667.95 \, \frac{\text{J}}{\text{kg}}
+\]
+
+---
+
+TASK 2c  
+The mass-specific increase in flow exergy \( e_{x,\text{st,h}} \) is given by:  
+\[
+e_{x,\text{st,h}} = (h_6 - h_0 - T_0 (s_6 - s_0)) + \frac{w_6^2}{2}
+\]  
+
+The specific heat at constant volume \( c_v \) is calculated as:  
+\[
+c_v = c_p - \frac{R}{M}
+\]  
+\[
+R = \frac{\bar{R}}{M} = 288.982 \, \frac{\text{J}}{\text{kg·K}}
+\]  
+\[
+c_v = 715.01 \, \frac{\text{J}}{\text{kg·K}}
+\]
+
+The entropy difference \( s_6 - s_0 \) is calculated as:  
+\[
+s_6 - s_0 = \int_{T_0}^{T_6} \frac{c_p}{T} \, dT - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+Approximated as:  
+\[
+s_6 - s_0 = c_p (\ln(T_6) - \ln(T_0)) - R \ln \left( \frac{p_6}{p_0} \right)
+\]  
+Substituting values, \( s_6 - s_0 = 301.361 \, \frac{\text{J}}{\text{kg·K}} \).
+
+Finally, the flow exergy is calculated as:  
+\[
+e_{x,\text{st,h}} = 156239.168 \, \frac{\text{J}}{\text{kg}}
+\]

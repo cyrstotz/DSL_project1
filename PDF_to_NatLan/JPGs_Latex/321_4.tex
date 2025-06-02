@@ -1,0 +1,70 @@
+TASK 3a  
+The pressure \( p_{g,1} \) is calculated as the sum of three components:  
+\[
+p_{g,1} = p_{\text{EW}} + p_{\text{amb}} + p_u
+\]  
+
+1. Calculation of \( p_{\text{EW}} \):  
+\[
+p_{\text{EW}} = \frac{m_{\text{EW}} \cdot g}{\pi \cdot (0.05)^2}
+\]  
+Substituting values:  
+\[
+p_{\text{EW}} = \frac{0.2 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{\pi \cdot 0.0025 \, \text{m}^2} = 124.405 \, \text{Pa}
+\]  
+
+2. Ambient pressure:  
+\[
+p_{\text{amb}} = 1 \, \text{bar} = 200,000 \, \text{Pa}
+\]  
+
+3. Calculation of \( p_u \):  
+\[
+p_u = \frac{m_K \cdot g}{\pi \cdot (0.05)^2}
+\]  
+Substituting values:  
+\[
+p_u = \frac{32 \, \text{kg} \cdot 9.81 \, \text{m/s}^2}{\pi \cdot 0.0025 \, \text{m}^2} = 39,981.5 \, \text{Pa}
+\]  
+
+Adding these components:  
+\[
+p_{g,1} = 124.405 \, \text{Pa} + 200,000 \, \text{Pa} + 39,981.5 \, \text{Pa} = 140,044 \, \text{Pa} = 1.4 \, \text{bar}
+\]  
+
+Next, the gas pressure-volume relationship is used:  
+\[
+p_{g,1} \cdot V_{g,1} = m_{g,1} \cdot R \cdot T_{g,1}
+\]  
+
+The gas constant \( R \) is calculated:  
+\[
+R = \frac{8.314 \, \text{J/mol·K}}{50 \, \text{kg/kmol}} = 166.28 \, \text{J/kg·K}
+\]  
+
+The mass of the gas \( m_{g,1} \) is determined:  
+\[
+m_{g,1} = \frac{p_{g,1} \cdot V_{g,1}}{R \cdot T_{g,1}}
+\]  
+Substituting values:  
+\[
+m_{g,1} = \frac{140,044 \, \text{Pa} \cdot 3.14 \cdot 10^{-3} \, \text{m}^3}{166.28 \, \text{J/kg·K} \cdot 773.15 \, \text{K}} = 3.4217 \cdot 10^{-3} \, \text{kg} = 3.4217 \, \text{g}
+\]  
+
+---
+
+TASK 3b  
+The pressure \( p_{g,2} \) is equal to \( p_{g,1} \):  
+\[
+p_{g,2} = p_{g,1}
+\]  
+This is because the weight of the piston and the weight of the ice-water mixture, as well as the ambient pressure, do not change.  
+
+The temperature \( T_{g,2} \) is calculated using the heat transfer equation:  
+\[
+T_{g,2} = \frac{0.2 \, \text{kg} \cdot 773.15 \, \text{K} + 3.4217 \cdot 10^{-3} \, \text{kg} \cdot 773.15 \, \text{K}}{0.2 \, \text{kg} + 3.4217 \cdot 10^{-3} \, \text{kg}}
+\]  
+Simplifying:  
+\[
+T_{g,2} = 289.694 \, \text{K} = 16.54^\circ\text{C}
+\]  

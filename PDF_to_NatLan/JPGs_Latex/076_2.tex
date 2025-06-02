@@ -1,0 +1,64 @@
+TASK 2a  
+A qualitative \( T \)-\( s \) diagram is drawn to represent the jet engine process. The diagram includes labeled isobars and states:  
+- State 1: Adiabatic compression.  
+- State 2: Isobaric heat addition.  
+- State 3: Irreversible adiabatic expansion.  
+- State 5: Mixing chamber.  
+- State 6: Nozzle exit.  
+
+The isobars are labeled as follows:  
+- \( p_2 = p_3 \)  
+- \( p_1 = p_4 = p_5 = 0.5 \, \text{bar} \)  
+- \( p_0 = p_6 = 0.191 \, \text{bar} \)  
+
+The axes are labeled:  
+- \( T \) (temperature in Kelvin) on the vertical axis.  
+- \( s \) (entropy in \( \frac{\text{J}}{\text{kg·K}} \)) on the horizontal axis.  
+
+Dashed lines indicate transitions between states, and the process flow is clearly marked.  
+
+---
+
+TASK 2b  
+The outlet velocity \( w_6 \) and temperature \( T_6 \) are calculated as follows:  
+
+Given:  
+- \( w_5 = 220 \, \frac{\text{m}}{\text{s}} \)  
+- \( T_5 = 431.8 \, \text{K} \)  
+
+Isentropic assumption: \( s_5 = s_6 \).  
+
+Pressure values:  
+- \( p_5 = 0.5 \, \text{bar} \)  
+- \( p_6 = 0.191 \, \text{bar} \)  
+
+Using the isentropic relation:  
+\[
+T_6 = T_5 \cdot \left( \frac{p_6}{p_5} \right)^{\frac{\kappa - 1}{\kappa}}
+\]  
+Substituting values:  
+\[
+T_6 = 431.8 \cdot \left( \frac{0.191}{0.5} \right)^{\frac{1.4 - 1}{1.4}} = 328.7 \, \text{K}
+\]  
+
+Energy balance for outlet velocity \( w_6 \):  
+\[
+0 = \dot{m}_{\text{sec}} \cdot \left( h_5 - h_6 + \frac{w_5^2 - w_6^2}{2} \right) + x
+\]  
+
+Specific enthalpy difference:  
+\[
+h_5 - h_6 = c_p \cdot (T_5 - T_6)
+\]  
+
+Rearranging for \( w_6 \):  
+\[
+w_6 = \sqrt{2 \cdot c_p \cdot (T_5 - T_6) + w_5^2}
+\]  
+
+Substituting values:  
+\[
+w_6 = \sqrt{2 \cdot 1.006 \, \frac{\text{kJ}}{\text{kg·K}} \cdot (431.8 - 328.7) \, \text{K} + (220 \, \frac{\text{m}}{\text{s}})^2}
+\]  
+
+The final expression for \( w_6 \) is prepared but not fully calculated on the page.

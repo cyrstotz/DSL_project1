@@ -1,0 +1,85 @@
+\( p_{g,1} \): Zustand 1  
+\( m_g \): im Zylinder  
+
+Diagram:  
+A cylinder is shown with labels for \( p_{g,1} \) (gas pressure), \( m_g \) (mass of gas), and \( p_{amb} \) (ambient pressure). Forces are indicated with arrows: \( m_{ew} \cdot g \) (mass of EW times gravity), \( m_g \cdot g \) (mass of gas times gravity), and \( p_{g,1} \) acting upward.  
+
+Equations:  
+\( p = \frac{F}{A} \)  
+\( g = 9.81 \)  
+
+\( p_{g,1} = \frac{m_{ew} \cdot g}{A} + \frac{m_g \cdot g}{A} + p_{amb} \)  
+
+Cylinder:  
+\( A = \pi r^2 = \pi \left( \frac{D}{2} \right)^2 \)  
+\( A = \pi \left( \frac{0.11}{2} \right)^2 \)  
+\( A = 0.009854 \, \text{m}^2 \)  
+
+\( p_{g,1} = 170094.92 \, \text{Pa} \)  
+\( = 1.701 \, \text{bar} \)  
+
+---
+
+\( m_g \):  
+\( pV = mRT \)  
+
+\( m_g = \frac{pV}{RT} \)  
+\( m_g = 0.003921 \, \text{kg} \)  
+\( = 3.921 \, \text{g} \)  
+
+\( V_1 = 3.14 \, \text{L} \)  
+\( = 3.14 \cdot 10^{-3} \, \text{m}^3 \)  
+
+\( T_1 = 500^\circ \text{C} \rightarrow 773.15 \, \text{K} \)  
+
+---
+
+Constants:  
+\( c_V = 0.633 \, \text{kJ/kg·K} \)  
+\( M_g = 50 \, \text{kg/kmol} \)  
+
+\( R = \frac{R}{M_g} = \frac{8.314 \, \text{m}^3 \cdot \text{Pa}/\text{mol·K}}{50 \, \text{kg/kmol}} \)  
+\( = 0.16628 \, \text{m}^3 \cdot \text{Pa}/\text{kg·K} \)  
+\( = R \)
+
+\( x_{EW,2} > 0 \)  
+
+Since state 2 represents an equilibrium state and the EW is still present, \( T_{g,2} \) must have the same temperature as the EW, which is \( T = 0^\circ C \).  
+
+Since the piston is given as frictionless, it does not affect the temperature or hinder equilibrium.  
+
+\( T_{g,2} = 0^\circ C \)  
+
+---
+
+\( x_{\text{Eis},2} \)
+
+\( x_{\text{Eis},1} = 0.6 \)
+
+From above, \( Q_{\text{ab}} \) is given. We take \( 1500 \, \text{kJ} \) from the task.
+
+Energy:
+\( \Delta U_{21} = m_{\text{EW}} \cdot f \cdot T + Q_{12} - W_{\text{n}} \)
+
+Released heat:
+\( Q_{12} = -Q_{12} \)
+
+\( \Delta U_{21} = -Q_{12} \)
+
+\( m_{\text{EW}} (U_2 - U_1) = -Q_{12} \)
+
+\( U_2 = -\frac{Q_{12}}{m_{\text{EW}}} + U_1 \)
+
+\( U_1 = U_{\text{fest}} + x (U_{\text{flüssig}} - U_{\text{fest}}) \)
+
+Values from the given table:
+\( x = 0.6 \), \( p = 1.76 \, \text{bar} \)
+
+\( U_1 = -13.94102 \, \text{kJ/kg} \)
+
+\( U_2 = \frac{-1500 \cdot 10^3}{m_{\text{EW}}} + U_1 = -28.94102 \, \text{kJ/kg} \)
+
+Interpolation with the given table:
+\( x_{\text{Eis},2} = \frac{-333.558 - (-0.085)}{1 - 0} \)
+
+\( x_{\text{Eis},2} = -333.558 - (-0.085) + 1 \cdot 0.085 \)

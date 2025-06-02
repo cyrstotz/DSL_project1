@@ -1,0 +1,43 @@
+A diagram is drawn showing a reactor with inlet and outlet mass flows (\( \dot{m}_{in} \) and \( \dot{m}_{out} \)), heat flow released by the reaction (\( \dot{Q}_R = 100 \, \text{kW} \)), and heat flow removed through the cooling jacket (\( \dot{Q}_{out} \)).  
+
+The first law of thermodynamics is written:  
+\[
+\dot{m}(h_1 - h_2 + \frac{v^2}{2} + gz) + \Sigma \dot{Q} - \dot{W} = 0 \quad (\text{stationary})
+\]  
+
+Assumptions:  
+\( 0 < x_D < 1 \quad \rightarrow \quad \text{ND-Gebiet} \)  
+
+State 1:  
+\( T_1 = 70^\circ \text{C}, \, x_D = 0.005 \)  
+\[
+h_1 = h_f(70) + x_D(h_g(70) - h_f(70))
+\]  
+\[
+h_1 = 304.65 \, \text{kJ/kg}
+\]  
+From the water table:  
+\[
+h_f = 292.58, \, h_g = 2626.8 \quad \text{(Table A2)}
+\]  
+
+State 2:  
+\( T_2 = 100^\circ \text{C} \)  
+\[
+h_2 = h_f(100) + x_D(h_g(100) - h_f(100))
+\]  
+\[
+h_2 = 430.33 \, \text{kJ/kg}
+\]  
+From the water table:  
+\[
+h_f = 419.04, \, h_g = 2676.1 \quad \text{(Table A2)}
+\]  
+
+Energy balance:  
+\[
+\dot{m}(h_1 - h_2) + 100 \, \text{kW} - \dot{Q}_{out} = 0
+\]  
+\[
+\dot{Q}_{out} = 62.3 \, \text{kW}
+\]
