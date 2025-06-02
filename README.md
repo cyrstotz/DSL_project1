@@ -1,13 +1,13 @@
 # ETH Code Clustering Repository
 
-This sub repository contains scripts and workflows for embedding, clustering, and demonstrating how to use the OpenAI API with Azure used in the report for the DSL Project
+This sub repository contains scripts and workflows for embedding, clusterin and how to use the OpenAI API with Azure used in the report for the DSL Project
 
 ---
 
 ## Repository Contents
 
 ### 1. `data` Folder
-   Contains `split_by_subproblem` and `split_by_problem` with all data used in the report
+   Contains `split_by_subproblem` and `split_by_problem` with all data used in the report. For each embedding we have the tex files as well as the json files.
 
 
 
@@ -49,15 +49,14 @@ This sub repository contains scripts and workflows for embedding, clustering, an
 ├── embedder_clean_no_key.py
 ├── final_results.ipynb
 └── latex_to_naturalLanguage.py
-
-   - `data`: has all data used in the report (.tex, .json and .csv)
-   - `PDF_to_NatLan`: has the files that create from PDF JPG and then in `demo_pdf_to_NatLan`to text and from `pages_to_tasks` we put the text together according to the subquestions.
+ 
   
 
 ### 3. `Scripts`
    - `embedder_clean_no_key.py`: example API call of OpenAI models for embeddings
    - `final_results.ipynb`: Jupyter notebook for evaluation of all different models tested in the report
-   - `latex_to_naturalLanguage.py`: transforms LaTeX files into 
+   - `latex_to_naturalLanguage.py`: transforms LaTeX files into
+   -  `PDF_to_NatLan`: has the files that create from PDF JPG and then in `demo_pdf_to_NatLan`to text and from `pages_to_tasks` we put the text together according to the subquestions.
      
 ### 4. `.gitignore`
    Configured to ignore: `venv/` (virtual environments) , `env` (include credentials of OpenAI) and other system files. 
